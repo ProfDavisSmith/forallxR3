@@ -1,0 +1,744 @@
+\label{ch.logicgates}
+\chapter{Formal Logic and Computer Circuits}
+Modern computers are built from circuits and these are built from electrical logic gates. Those concrete gates have two states, either on (also called `open'), where (roughly) the electricity is allowed to flow, and off (`closed'), where (roughly) the electricity is halted. Whether these gates are on or off depends on the input they receive. These gates either take one or two inputs and the different gates behave differently according to what input(s) they receive. 
+
+These gates are based on the connectives in formal logic and they give the same output according to the input(s) as those connectives. For example, the NOT gate takes one input and flips it from `off' (false) to `on' (true) for the output. This is identical to the negation. Similarly, the OR gate takes two inputs and if either is on (true), it outputs on (true), otherwise off (false). Again, this is identical to the disjunction. 
+
+Because the electrical circuits, at this primitive level, have not forgotten their heritage, it remains possible (and will always remain possible) to express complex circuits in terms of our logical connectives and to construct our propositional logic sentences as electrical circuits. We can, and will, also illustrate concepts like tautologies, contradictions, equivalency, and validity in terms of these logic gates. 
+
+\section{Translating The PL Connectives to Logic Gates}
+
+There are three (3) logic gates which are seen as standard as compared to the five (5) connectives used in Propositional Logic. These gates are the AND gate, the OR gate, and the NOT gate. Some circuit systems reduce these three into a singular NAND gate, which we can represent in PL as \enot(\metav{A}\eand\metav{B}). This lack of resources should not worry you, as we know from a previous module that we can use the equivalency rules to get logically equivalent sentences using just the connectives conjunction, disjunction, and negation. Our first step, then, is to express these simple connectives in terms of logic gates and then we can use those to construct more complicated sentences/ciruitry.
+
+\subsection{Translating Negation, Conjunction, and Disjunction}
+
+By design, the three most basic logic gates have direct counterparts in PL. The NOT gate is \emph{the same as} negation, the AND gate is \emph{the same as} conjunction, and the OR gate is \emph{the same as} negation. As you should recall, negation flips the truth value of the sentence, conjunction is only true when both conjuncts are true, and disjunction is only false when both disjuncts are false. Using the standard symbols in America for the logic gates, we have the NOT gate represented as:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+          ++ (-1,0) node (A){\metav{A}}
+          %++ (0,-0.4) node (B){\metav{B}}
+        (NOT1.output)
+          ++(1,0) node (NOT1out){};
+    \draw
+       (A)--(NOT1.input)
+       %(B)--(AND1.input 3)
+       (NOT1.output)--(NOT1out){};
+    \end{tikzpicture} 
+
+You should notice that there is a line to the right of the circle, this is the \emph{output}. If, in this example, \metav{A} is `on', then the output is not active (meaning that it is `closed'). If \metav{A} is `off', then the output is on. This is the same as negation. Treating T as `on' and F as `off', we see that the output of the above simple circuit is the same as the output of \enot\metav{A}. 
+
+Conjunction and disjunction are different from negation in that they take two sentences as their input but only have one output. The logic gates mirror this feature by having two inputs and only one output as well. As before, using the standard representation used in the US, we have the AND gate which is represented as (representing `\metav{A}\eand\metav{B}'):
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[and gate US,GateCfg](AND1){}
+        (AND1.input 1)
+          ++ (-1,0) node (A){\metav{A}}
+          ++ (0,-0.4) node (B){\metav{B}}
+        (AND1.output)
+          ++(1,0) node (AND1out){};
+    \draw
+       (A)--(AND1.input 1)
+       (B)--(AND1.input 3)
+       (AND1.output)--(AND1out){};
+    \end{tikzpicture} 
+
+The output, in this case is only `on' (true) when both of the inputs are `on', otherwise it is `off' (closed, false). The third and final gate, the OR gate, is shown like so:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[or gate US,GateCfg](AND1){}
+        (AND1.input 1)
+          ++ (-1,0) node (A){\metav{A}}
+          ++ (0,-0.4) node (B){\metav{B}}
+        (AND1.output)
+          ++(1,0) node (AND1out){};
+    \draw
+       (A)--(AND1.input 1)
+       (B)--(AND1.input 3)
+       (AND1.output)--(AND1out){};
+    \end{tikzpicture} 
+    
+
+This, again, mirrors exactly the logical connective which we have, disjunction. The next step is to combine these three gates to get equivalent representations for the other two connectives in Propositional Logic, namely the conditional and biconditional. 
+
+\subsection{Translating Conditional and Biconditional}
+
+For these two, we need to combine these gates to make our truth conditions come out. To do this, we need to use the equivalency rules seen previously to construct sentences which are equivalent to the conditional and biconditional but use only the negation, conjunction, or disjunction. Starting with the conditional, we know that the sentence \metav{A}\eif\metav{B} is equivalent to \enot\metav{A}\eor\metav{B}. Looking to the main operator of this sentence, we see that it is a disjunction and we know how to translate those. The right disjunct is just a simple sentence, so we don't need to mess around with converting that. The left disjunct, on the other hand, has a negation as its operator and then has no further dependent operators. So, in this case, we treat the operator sort of like a simple sentence, and fill in the main operators from right to left. We end up with something which looks like this:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[or gate US,GateCfg](AND1){}
+        (AND1.input 1)
+          ++ (-1,0) node[not gate US,GateCfg] (NA){}
+	  (NA.input)
+	    ++ (-1,0) node (A){\metav{A}}
+          ++ (0,-0.4) node (B){\metav{B}}
+        (AND1.output)
+          ++(1,0) node (AND1out){};
+    \draw
+       (A)--(NA.input)
+       (NA.output)--(AND1.input 1)
+       (B)--(AND1.input 3)
+       (AND1.output)--(AND1out){};
+    \end{tikzpicture} 
+ 
+This gives us the equivalent of \enot\metav{A}\eor\metav{B}, which is the equivalent of \metav{A}\eif\metav{B}. 
+The biconditional is a bit more involved because its equivalent phrasing is a fair bit longer. Remember that the biconditional is so called because it is a conjunction of two conditionals. For example, \metav{A}\eiff\metav{B} is equivalent to (\metav{A}\eif\metav{B})\eand(\metav{B}\eif\metav{A}). Since we have a representation for `\eif' and `\eand', we can construct the circuits for this. First off, the main operator of (\metav{A}\eif\metav{B})\eand(\metav{B}\eif\metav{A}) is `\eand', which we know is an AND gate in this circuit system. So, we will start with that:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[and gate US,GateCfg](AND1){}
+        (AND1.input 1)
+          ++ (-1,0) node (A){}
+          ++ (0,-0.4) node (B){}
+        (AND1.output)
+          ++(1,0) node (AND1out){};
+    \draw
+       (A)--(AND1.input 1)
+       (B)--(AND1.input 3)
+       (AND1.output)--(AND1out){};
+    \end{tikzpicture} 
+
+ We now have two inputs which need to be filled and for both of these, the `main' operator is a conditional, so we will fill those in:
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[and gate US,GateCfg](AND1){}
+        (AND1.input 2) 
+            + (-2,-0.5) node[or gate US,GateCfg](OR2){}
+	  (AND1.input 1) 
+            + (-2,0.5) node[or gate US,GateCfg](OR1){}
+        (OR1.input 1)
+            + (-1,0) node[not gate US, draw](N){}%top not
+        (OR2.input 1)
+            + (-1,0) node[not gate US, draw](N2){}%bottom not
+	  (N.input)
+	     + (-1,0) node (A){\metav{A}}
+	  (N2.input)
+	     + (-1,0) node (B){\metav{B}}
+	  (A.center)
+	     + (0.5,0) node (A2){\textbullet}
+	  (B.center)
+	     + (0.75,0) node (B2){\textbullet}
+	  (B.center)
+	     + (0.5,0) node (B3){};
+    \draw
+        (AND1.input 1) -- ++(-0.75,0) |- (OR1.output)
+        (AND1.input 3) -- ++(-0.75,0) |- (OR2.output)
+        (N.output)--(OR1.input 1)
+        (N2.output)--(OR2.input 1)
+        (A) -- (N.input)
+        (B) -- (N2.input)
+        (A2.center |- B3)
+           + (0,5pt) edge (A2.center)
+            arc (90:-90:5pt) |- (OR2.input 3)
+        (B2.center) |- (OR1.input 3)
+        (AND1.output) -- ++(1,0) node [midway,anchor=south]{};
+    \end{tikzpicture} 
+    
+You should notice a couple of things about this diagram. First, there are little bullets, \textbullet,  on the line between the main input (either \metav{A} or \metav{B}). These bullets indicate that we are `branching' off from that line, meaning that the same value is being used as an input in multiple places. Next, you might notice that there is a decorative arc as one line crosses another. This is purely decorative and used to indicate that the lines (wires) are not being crossed. On a more semantic level, however, there are several lessons which this particular diagram demonstrates which we will explore next.
+
+\section{Translating Complex Sentences from PL to Circuits}
+
+In the previous section, I hinted at a more general way to translate complex sentences from PL to circuits. Right now, we have means to represent the connectives and the simple sentences using logic gates, so the next step is to combine them into longer sentences. The general method we will employ is to work from right to left; that is, we will be working from the last logic gate, which gives the final output, backwards to the simple sentences. The logic gate which gives this final output is the same as the main operator in a sentence in PL. For example, suppose we wanted to construct this sentence as a circuit:
+
+\begin{center}
+\enot(\metav{A}\eif (\metav{B}\eand\metav{C}))
+\end{center}
+
+The first thing we want to do is identify the main operator, which in this case is the negation `\enot'. So, we write down the representation for that:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+           ++ (-1,0) node (N1in){}
+	  (NOT1.output)
+	    ++ (1,0) node (N1out){};
+    \draw
+        (N1in)--(NOT1.input)
+        (N1out)--(NOT1.output){};
+\end{tikzpicture}  
+
+The next most important operator in the sentence is the conditional `\eif', so we connect the output for the `conditional gate' with the input for the NOT gate. This is because the output for the NOT gate depends on the input it gets in the same way as the truth value for a connective depends on the truth value of the simpler sentences. We add in the conditional like so:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+           ++ (-1,0) node[or gate US,GateCfg] (OR1){}
+	  (NOT1.output)
+	    ++ (1,0) node (N1out){}
+	  (OR1.input 1)
+	    ++ (-1.2,0) node[not gate US,GateCfg] (NOT2){}
+	  (OR1.input 3)
+	    ++ (-1.2,0) node (OR1in){}
+	  (NOT2.output)
+	    ++ (-1,0) node (N2in){};
+    \draw
+        (OR1.output)--(NOT1.input)
+        (N1out)--(NOT1.output)
+        (NOT2.output)--(OR1.input 1)
+        (OR1in)--(OR1.input 3)
+        (N2in)--(NOT2.input){};
+\end{tikzpicture}  
+
+The antecedent of the conditonal is a simple sentence \metav{A}, so we can plug that in without much worry. It may be the case that \metav{A} appears later in some sentences, so at this stage it is best to treat it as a temporary place holder. We fill in the antecedent like so:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+           ++ (-1,0) node[or gate US,GateCfg] (OR1){}
+	  (NOT1.output)
+	    ++ (1,0) node (N1out){}
+	  (OR1.input 1)
+	    ++ (-1.2,0) node[not gate US,GateCfg] (NOT2){}
+	  (OR1.input 3)
+	    ++ (-1.2,0) node (OR1in){}
+	  (NOT2.input)
+	    ++ (-1,0) node (N2in){\metav{A}};
+    \draw
+        (OR1.output)--(NOT1.input)
+        (N1out)--(NOT1.output)
+        (NOT2.output)--(OR1.input 1)
+        (OR1in)--(OR1.input 3)
+        (N2in)--(NOT2.input){};
+\end{tikzpicture}  
+
+The consequent is not a simple sentence, however, so we can't just plug it in. The dominate operator for that subsentence is a conjunction `\eand', so we add that to our construction:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+           ++ (-1,0) node[or gate US,GateCfg] (OR1){}
+	  (NOT1.output)
+	    ++ (1,0) node (N1out){}
+	  (OR1.input 1)
+	    ++ (-1.2,0.5) node[not gate US,GateCfg] (NOT2){}
+	  (OR1.input 3)
+	    ++ (-1.2,0) node (OR1in){}
+	  (OR1.input 1)
+	    ++ (-0.5,0) node (OR1incorner){}
+	  (OR1.input 3)
+	    ++ (-0.5,0) node (OR1incornertwo){}
+	  (OR1.input 3)
+	    ++ (-1.2,-0.5) node[and gate US,GateCfg] (AND1){}
+	  (NOT2.input)
+	    ++ (-1,0) node (N2in){\metav{A}}
+	  (AND1.input 1)
+	    ++ (-1,0) node (ANDin1){}
+	  (AND1.input 3)
+	    ++ (-1,0) node (ANDin2){}
+	  (AND1.output)
+	    ++ (0.2,0) node (corner){};
+    \draw
+        (OR1.output)--(NOT1.input)
+        (N1out)--(NOT1.output)
+        (NOT2.output)-|(OR1incorner.center)
+        (OR1incorner.center)--(OR1.input 1)
+        (AND1.output)|-(corner.center)
+        (corner.center)|-(OR1incornertwo.center)
+        (OR1incornertwo.center)|-(OR1.input 3)
+        (N2in)--(NOT2.input)
+        (ANDin1)--(AND1.input 1)
+        (ANDin2)--(AND1.input 3){};
+\end{tikzpicture}  
+
+The conjunctions requires two sentences as conjuncts and looking at the example sentence, these are simple sentences, so we will just fill those in for the last step:
+
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[not gate US,GateCfg](NOT1){}
+        (NOT1.input)
+           ++ (-1,0) node[or gate US,GateCfg] (OR1){}
+	  (NOT1.output)
+	    ++ (1,0) node (N1out){}
+	  (OR1.input 1)
+	    ++ (-1.2,0.5) node[not gate US,GateCfg] (NOT2){}
+	  (OR1.input 3)
+	    ++ (-1.2,0) node (OR1in){}
+	  (OR1.input 1)
+	    ++ (-0.5,0) node (OR1incorner){}
+	  (OR1.input 3)
+	    ++ (-0.5,0) node (OR1incornertwo){}
+	  (OR1.input 3)
+	    ++ (-1.2,-0.5) node[and gate US,GateCfg] (AND1){}
+	  (NOT2.input)
+	    ++ (-1,0) node (N2in){\metav{A}}
+	  (AND1.input 1)
+	    ++ (-1,0) node (ANDin1){\metav{B}}
+	  (AND1.input 3)
+	    ++ (-1,0) node (ANDin2){\metav{C}}
+	  (AND1.output)
+	    ++ (0.2,0) node (corner){};
+    \draw
+        (OR1.output)--(NOT1.input)
+        (N1out)--(NOT1.output)
+        (NOT2.output)-|(OR1incorner.center)
+        (OR1incorner.center)--(OR1.input 1)
+        (AND1.output)|-(corner.center)
+        (corner.center)|-(OR1incornertwo.center)
+        (OR1incornertwo.center)|-(OR1.input 3)
+        (N2in)--(NOT2.input)
+        (ANDin1)--(AND1.input 1)
+        (ANDin2)--(AND1.input 3){};
+\end{tikzpicture}  
+
+Let's try another example. There are other methods we could have used rather than working backwards from the main operator, though I do believe that this is the most efficient. Consider the following logical sentence: 
+\begin{center}
+((\metav{A}\eif\metav{B})\eand\enot\metav{A})\eif\enot\metav{B}
+\end{center}
+As you can see, this sentence uses the conditional, `\eif', twice. The first thing we could do is use the Material Conditional rule, MC, to replace those with a combination of negations and disjunctions, like so:
+\begin{center}
+\enot((\enot\metav{A}\eor\metav{B})\eand\enot\metav{A})\eor\enot\metav{B}
+\end{center}
+With this, we can easily begin to translate over from PL to circuits, in a reverse order to how we did it last time. There are two different simple sentences used in this sentence, \metav{A} and \metav{B}. Each is used twice; for \metav{A}, both times are negated and for \metav{B}, one time negated, the other time not. This means that we can start by writing out the simple sentences and their immediate connectives, like so:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node (A){\metav{A}}
+          ++ (1,0) node[not gate US,GateCfg] (NOT1){}
+	  (A)
+	    ++ (0,-1) node (B){\metav{B}}
+	  (B)
+          ++ (1,0) node[not gate US,GateCfg] (NOT2){}
+	  (NOT1.output)
+	    ++ (1,0) node (NOT1out){}
+	  (NOT2.output)
+	    ++ (1,0) node (NOT2out){};
+    \draw
+	  (A)--(NOT1.input)
+	  (B)--(NOT2.input)
+	  (NOT1.output)--(NOT1out)
+	  (NOT2.output)--(NOT2out){};
+\end{tikzpicture}  
+
+Now that we have all of the different simple sentences covered, we can start showing how they are connected and to which gates. Starting with \enot\metav{A}\eor\metav{B}, we can add this to our circuits by having the output of the NOT gate linked to \metav{A} go into one of the inputs for an OR gate and then having the input for the NOT gate linked to \metav{B} branch off to link with the other input for that OR gate, like so: 
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node (A){\metav{A}}
+          ++ (1,0) node[not gate US,GateCfg] (NOT1){}
+	  (A)
+	    ++ (0,-1) node (B){\metav{B}}
+	  (B)
+          ++ (1,0) node[not gate US,GateCfg] (NOT2){}
+	  (NOT1.output)
+	    ++ (0.5,0) node (NOT1out){}
+	  (NOT2.output)
+	    ++ (1,0) node (NOT2out){}
+	  (NOT1out)
+	    ++ (1,-0.5) node[or gate US,GateCfg] (OR1){}
+	  (OR1.output)
+	    ++ (1,0) node (OR1out){}
+	  (B)
+	    ++ (0.5,0) node (B1){\textbullet};
+    \draw
+	  (A)--(NOT1.input)
+	  (B)--(NOT2.input)
+	  (NOT1.output)|-(NOT1out.center)
+	  (NOT1out.center)|-(OR1.input 1)
+	  (B1.center)|-(OR1.input 3)
+	  (NOT2.output)--(NOT2out)
+	  (OR1.output)--(OR1out){};
+\end{tikzpicture}  
+
+Moving forward, the OR gate we just added is one of the conjuncts for a conjunction and the other is \enot\metav{A}. We have a `wire' which has the same value as \enot\metav{A} already, namely the one going from the top NOT gate into the OR gate. This means that we can branch from that wire and connect it to an AND gate with the other input being the output of the OR gate, like this:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node (A){\metav{A}}
+          ++ (1,0) node[not gate US,GateCfg] (NOT1){}
+	  (A)
+	    ++ (0,-1) node (B){\metav{B}}
+	  (B)
+          ++ (1,0) node[not gate US,GateCfg] (NOT2){}
+	  (NOT1.output)
+	    ++ (1,0) node (NOT1out){\textbullet}
+	  (NOT2.output)
+	    ++ (1,0) node (NOT2out){}
+	  (NOT1out)
+	    ++ (1,-0.5) node[or gate US,GateCfg] (OR1){}
+	  (OR1.output)
+	    ++ (1,0) node (OR1out){}
+	  (OR1.input 1)
+	    ++ (-0.5,0) node (ANOT1){}
+	  (B)
+	    ++ (0.5,0) node (B1){\textbullet}
+	  (OR1out)
+	    ++ (0.5,0.3) node[and gate US,GateCfg](AND1){}
+	  (AND1.output)
+	    ++ (1,0) node (AND1out){};
+    \draw
+	  (A)--(NOT1.input)
+	  (B)--(NOT2.input)
+	  (NOT1.output)|-(NOT1out.center)
+	  (NOT1out.center)|-(OR1.input 1)
+	  (NOT1out.center)|-(AND1.input 1)
+	  (B1.center)|-(OR1.input 3)
+	  (NOT2.output)--(NOT2out)
+	  (OR1.output)-|(AND1.input 3)
+	  %(ANOT1.center)|-(AND1.input 1)
+	  (AND1.output)--(AND1out){};
+\end{tikzpicture}  
+
+As this diagram sits, we have most of the left disjunct of the main operator, if we were to run the circuits as they are (for the left disjunct), we would get the opposite of what we want. This is because all of that is governed by a negation, which flips the value. So, the next step is to put a negation where the input is the output of the AND gate we just added:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node (A){\metav{A}}
+          ++ (1,0) node[not gate US,GateCfg] (NOT1){}
+	  (A)
+	    ++ (0,-1) node (B){\metav{B}}
+	  (B)
+          ++ (1,0) node[not gate US,GateCfg] (NOT2){}
+	  (NOT1.output)
+	    ++ (1,0) node (NOT1out){\textbullet}
+	  (NOT2.output)
+	    ++ (1,0) node (NOT2out){}
+	  (NOT1out)
+	    ++ (1,-0.5) node[or gate US,GateCfg] (OR1){}
+	  (OR1.output)
+	    ++ (1,0) node (OR1out){}
+	  (OR1.input 1)
+	    ++ (-0.5,0) node (ANOT1){}
+	  (B)
+	    ++ (0.5,0) node (B1){\textbullet}
+	  (OR1out)
+	    ++ (0.5,0.3) node[and gate US,GateCfg](AND1){}
+	  (AND1.output)
+	    ++ (1,0) node[not gate US, GateCfg] (AND1out){};
+    \draw
+	  (A)--(NOT1.input)
+	  (B)--(NOT2.input)
+	  (NOT1.output)|-(NOT1out.center)
+	  (NOT1out.center)|-(OR1.input 1)
+	  (NOT1out.center)|-(AND1.input 1)
+	  (B1.center)|-(OR1.input 3)
+	  (NOT2.output)--(NOT2out)
+	  (OR1.output)-|(AND1.input 3)
+	  %(ANOT1.center)|-(AND1.input 1)
+	  (AND1.output)--(AND1out){};
+\end{tikzpicture}  
+
+With this, we have, finally, reached the main operator, which is the final output for our circuits. This is an OR gate with one of the inputs being the NOT gate which we just added and the other is \enot\metav{B}, which we have at the bottom of the diagram, waiting patiently to be used. All we now need to do is add an OR gate and plug in the correct inputs:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node (A){\metav{A}}
+          ++ (1,0) node[not gate US,GateCfg] (NOT1){}
+	  (A)
+	    ++ (0,-1) node (B){\metav{B}}
+	  (B)
+          ++ (1,0) node[not gate US,GateCfg] (NOT2){}
+	  (NOT1.output)
+	    ++ (1,0) node (NOT1out){\textbullet}
+	  (NOT2.output)
+	    ++ (1,0) node (NOT2out){}
+	  (NOT1out)
+	    ++ (1,-0.5) node[or gate US,GateCfg] (OR1){}
+	  (OR1.output)
+	    ++ (1,0) node (OR1out){}
+	  (OR1.input 1)
+	    ++ (-0.5,0) node (ANOT1){}
+	  (B)
+	    ++ (0.5,0) node (B1){\textbullet}
+	  (OR1out)
+	    ++ (0.5,0.3) node[and gate US,GateCfg](AND1){}
+	  (AND1.output)
+	    ++ (0.5,0) node[not gate US, GateCfg] (NOT3){}
+	  (NOT3.output)
+	    ++ (1,-0.6) node[or gate US,GateCfg] (OR2){}
+	  (NOT3.output)
+	    ++ (0.3,0) node (corner){}
+	  (OR2.output)
+	    ++ (1,0) node (OR2out){};
+    \draw
+	  (A)--(NOT1.input)
+	  (B)--(NOT2.input)
+	  (NOT1.output)|-(NOT1out.center)
+	  (NOT1out.center)|-(OR1.input 1)
+	  (NOT1out.center)|-(AND1.input 1)
+	  (B1.center)|-(OR1.input 3)
+	  (NOT2.output)--(NOT2out)
+	  (OR1.output)-|(AND1.input 3)
+	  %(ANOT1.center)|-(AND1.input 1)
+	  (AND1.output)--(NOT3.input)
+	  %(NOT3.output)|-(OR2.input 1)
+	  (NOT3.output)|-(corner.center)
+	  (corner.center)|-(OR2.input 1)
+	  (NOT2.output)|-(OR2.input 3)
+	  (OR2.output)--(OR2out){};
+\end{tikzpicture}  
+
+And we are done. Here, I have illustrated 2 different ways of converting PL sentences into electrical circuits. In the first way, you identify the main operator and then work backwards, filling in the translated forms of the connectives as you go. It is certainly possible to use the equivalency rules in this method to reduce the conditionals and biconditionals (if present) to some combination of negations, conjunctions, and disjunctions. In the second method, you start with the simple sentences (which are, for circuits, the most basic inputs) and then work forward, addng in the logic gates as they appear as connectives in the sentence. With this method, it is wise to reduce the connectives down to negations, conjunctions, or disjunctions first. 
+
+\section{Translating from Circuits to PL}
+
+It is also possible to apply these methods in reverse, taking an arrangement of logic gates and circuits and then translating it to a propositional logic sentence while preserving the nature of the outputs. This is actually a wise choice as doing so will allow you to use the truth tables and other methods to determine failure points and hardware glitches which may occur and identify how to fix them. It is certainly possible for a circuit to seem unresponsive, i.e. never turning on, only to find out, after translating, that it contained a contradiction in the PL form, which meant that no set of possible inputs would make it active. Similarly, it is certainly possible that a circuit remains on constantly because it contains a tautology, meaning that no set of inputs would make it flip off. 
+
+The general method for translating the circuits to Propositional Logic is similar to translating from PL to circuits, only in reverse, as I mentioned. Suppose, for example, that we have the following circuit which we wish to translate to PL:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[or gate US, GateCfg] (OR1){}
+        	++ (1,0) node (OR1out){}
+        (OR1.input 1)
+        	++ (-1.5,0.5) node[and gate US, GateCfg] (AND1){}
+	  (OR1.input 3)
+	  	++ (-1.5,-0.5) node[and gate US,GateCfg] (AND2){}
+	  (AND1.input 1)
+	  	++ (-1,0) node[not gate US,GateCfg] (NOT1){}
+	  (AND1.output)
+	  	++ (0.5,0) node (corner1){}
+	  (AND2.input 3)
+	  	++ (-1,0) node[not gate US,GateCfg] (NOT2){}
+	  (AND2.output)
+	  	++ (0.5,0) node (corner2){}
+	  (NOT1.input)
+	  	++ (-1,0) node (A){\metav{A}}
+	  (NOT2.input)
+	  	++ (-1,0) node (B){\metav{B}}
+	  (A)
+	  	++ (0.5,0) node (branch1) {\textbullet}
+	  (B)
+	  	++ (0.75,0) node (branch2) {\textbullet}
+	  (branch2.center)
+	  	++ (0,0) node (B2){};
+    \draw
+	(OR1.output)--(OR1out)
+	(AND1.output)|-(corner1.center)
+	(corner1.center)|-(OR1.input 1)
+	(AND2.output)|-(corner2.center)
+	(corner2.center)|-(OR1.input 3)
+	(AND1.input 1)--(NOT1.output)
+	(AND2.input 3)--(NOT2.output)
+	(A)--(NOT1.input)
+	(B)--(NOT2.input)
+	(branch2.center |- branch2.center)
+           + (0,5pt) edge (branch2.center)
+            arc (-90:90:5pt) |- (AND1.input 3)
+	(branch1.center)|-(AND2.input 1){};
+\end{tikzpicture}  
+
+Some with experience in computer circuits might recognize this as a part of an `adder', which is the fundamental circuit used in binary addition, which is how computers preform their calculations.  To start converting this to PL, we first look for the main operator. In circuits, this is the final output and, in these diagrams, this is the rightmost gate. In this case, as we can see, it is an OR gate. So, we write that down:
+
+\begin{center}
+\ldots\eor\ldots
+\end{center}
+
+Both the OR gate and the disjunction require two disjuncts, which I used `\ldots' to mark. Following the wires back from the inputs for the OR gate tells us that the two disjuncts are both conjunctions. We can add those pretty easily:
+
+\begin{center}
+(\ldots\eand\ldots)\eor(\ldots\eand\ldots)
+\end{center}
+ 
+Now we have four (4) necessary conjuncts in the sentence. Working from the top down, we see that the left conjunct for the first conjunction is a negated sentence (namely, \enot\metav{A}), the right conjunct for the first is simply \metav{B}, the left conjunct for the second conjunction is \metav{A}, and the right conjunct for the second conjunction is \enot\metav{B}. Filling these in we have:
+
+\begin{center}
+(\enot\metav{A}\eand\metav{B})\eor(\metav{A}\eand\enot\metav{B})
+\end{center}
+
+And with that, we are done translating the circuit to PL. Looking at this PL-sentence, what can it tell us about the circuit which we translated from? Well, doing a truth table for this will tell us that it is only true when the truth values of \metav{A} and \metav{B} differ. This fact translates back to the circuit as it tells us that the circuit will only output `on' when one of the inputs is `on' while the other is `off'. If that is how the circuit should function in the context of its use, then great, but if we wanted it to return `on' only when the activation state is the same, we can see that this would be accomplished by negating the sentence. We can then use the equivalency rules from PL to get this:
+
+\begin{center}
+(\enot\metav{A}\eor\metav{B})\eand(\metav{A}\eor\enot\metav{B})
+\end{center}
+
+Which amounts to a simple biconditional which, in circuits, looks like this:
+
+\begin{tikzpicture}[
+        font=\sffamily,
+        thick,
+        GateCfg/.style={
+            logic gate inputs={normal,normal,normal},
+            draw,
+            scale=1
+        }
+    ]
+    \path
+        (0,0) node[and gate US, GateCfg] (OR1){}
+        	++ (1,0) node (OR1out){}
+        (OR1.input 1)
+        	++ (-1.5,0.5) node[or gate US, GateCfg] (AND1){}
+	  (OR1.input 3)
+	  	++ (-1.5,-0.5) node[or gate US,GateCfg] (AND2){}
+	  (AND1.input 1)
+	  	++ (-1,0) node[not gate US,GateCfg] (NOT1){}
+	  (AND1.output)
+	  	++ (0.5,0) node (corner1){}
+	  (AND2.input 3)
+	  	++ (-1,0) node[not gate US,GateCfg] (NOT2){}
+	  (AND2.output)
+	  	++ (0.5,0) node (corner2){}
+	  (NOT1.input)
+	  	++ (-1,0) node (A){\metav{A}}
+	  (NOT2.input)
+	  	++ (-1,0) node (B){\metav{B}}
+	  (A)
+	  	++ (0.5,0) node (branch1) {\textbullet}
+	  (B)
+	  	++ (0.75,0) node (branch2) {\textbullet}
+	  (branch2.center)
+	  	++ (0,0) node (B2){};
+    \draw
+	(OR1.output)--(OR1out)
+	(AND1.output)|-(corner1.center)
+	(corner1.center)|-(OR1.input 1)
+	(AND2.output)|-(corner2.center)
+	(corner2.center)|-(OR1.input 3)
+	(AND1.input 1)--(NOT1.output)
+	(AND2.input 3)--(NOT2.output)
+	(A)--(NOT1.input)
+	(B)--(NOT2.input)
+	(branch2.center |- branch2.center)
+           + (0,5pt) edge (branch2.center)
+            arc (-90:90:5pt) |- (AND1.input 3)
+	(branch1.center)|-(AND2.input 1){};
+\end{tikzpicture}  
+
+
+With that note, we have some strong reasons to think that formal logic can be useful in bug-testing circuits and then, scaling up, digital computer programs. Suppose that we wanted to set up a system of logic gates or a computer program such that it will only return a `success',\metav{C}, if and only if certain conditions, $A_1,A_2,\ldots,A_n$ are met. These conditions are, likely, the outputs of various `subcircuits'. For simplicity's sake, we will also suppose that we want all of them to be on in order to get \metav{C} to be on. Cases where we want all or some to be off would be handled by adding a negation (NOT gate) to the ones we want off. Translating $A_1,A_2,\ldots,A_n$, and \metav{C} into Propositional Logic and then using a truth table to test for validity (with \metav{C} being the conclusion) is a very easy test to tell whether there could be a bug in the system, cases where all of the conditions are met but the success is not returned (this would be the equivalent of invalid). Similarly, running a truth table would be a fast way to isolate cases where it's possible for not all of the conditions to be met and \metav{C} is returned (this would be a case where the conclusion is true and at least one of the premises is false). Along the same train of thought, it could be the case that two or more circuits or lines of code are never on together. In such a case, we have circuits representing jointly impossible sentences and this, again, is easily tested for using Propositional Logic.    
+

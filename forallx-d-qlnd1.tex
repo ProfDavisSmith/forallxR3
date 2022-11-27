@@ -1,0 +1,413 @@
+\part{Natural Deduction in QL 1}
+\label{ch.qlnd1}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 24 The Basic Rules for QL}
+\section{Part 24.1 The Rules in PL are Allowed In QL}
+The language of QL makes use of all of the connectives of PL. So proofs in QL will use all of the basic and derived rules from Propositional Logic. This means that we can prove, for example, this argument:
+\begin{earg}
+\item[]Everyone is wearing yellow stockings.
+\item[]If everyone is wearing yellow stockings, then everyone is cross gartered.
+\item[]If everyone is wearing yellow stockings and everyone is cross gartered, then Olivia is displeased.
+\item[\therefore] Olivia is displeased.
+\end{earg}
+We can, with relative ease, make the following symbolization key and, from that, the following symbolization:
+\begin{ekey}
+\item[domain] people in Olivia's court (including Olivia)
+\item[Yx] x is wearing yellow stockings.
+\item[Cx] x is cross gartered.
+\item[Dx] x is displeased.
+\item[m] Malvolio
+\item[o] Olivia
+\end{ekey}
+With this, we can symbolize the argument like so:
+\begin{center}
+$\forall$ xYx, $\forall$ xYx\eif $\forall$ xCx,($\forall$ xYx\eand $\forall$ xCx)\eif Do \therefore Do
+\end{center}
+Notice that to prove this, we do not need to mess around with the quantifiers, though there will be many arguments both in this class and in the real-world, so to speak, where you will need to fiddle with quantifiers. The extra symbols may look scary, but they can be treated as blocks which you can shift around. For this argument, we don't need to break down blocks which we haven't handled in similar arguments in PL. So, we can prove it like so:
+\begin{fitchproof}
+\hypo[1]{a}{\forall xYx}
+\hypo[3]{c}{(\forall xYx \eand \forall  xCx) \eif Do}
+\hypo[2]{b}{\forall  xYx \eif \forall  xCx}
+\have[4]{d}{\forall  xCx}\ce{b,a}
+\have[5]{e}{\forall  xYx\eand \forall xCx}\ai{a,d}
+\have[6]{f}{Do}\ce{c,e}
+\end{fitchproof}	
+
+A key thing to remember is that when you use the operations from PL in QL, you need to be sure that the main operator, the connective which governs the entire sentence, is not a quantifier. In this module, you will be learning the introduction and the elimination rules for the quantifiers and in the next one, you will be learning the special equivalency rule(s) for quantifiers. That said, you can also use the equivalency rules from PL in QL without much worry. I have mentioned this a few times and likely will need to say it a few more, QL is an extension of PL, not a replacement. For example, take the following argument:
+\begin{earg}
+\item[]Malvolio found the letter.
+\item[]If Malvolio found the letter, then he is wearing yellow stockings and is cross gartered.
+\item[]If someone is wearing yellow stockings and is cross gartered, then Olivia is displeased.
+\item[\therefore ] Olivia is displeased.
+\end{earg}
+Adding Lx: x found the letter to our symbolization key, we can symbolize this argument as:
+\begin{center}
+Lm,Lm\eif (Ym\eand Cm),$\exists$ x(Yx\eand Cx)\eif Do \therefore Do
+\end{center}
+Thinking about it for just a moment, one can see that this argument is certainly valid, but we cannot prove it using merely the rules in PL. The first few moves to get to the conclusion involve things which should be easily understandable and in our ‘mental theater'. But, to get to the conclusion, we need to be able to move from Malvolio is wearing yellow stockings and is cross gartered (Ym\eand Cm) to someone is wearing yellow stockings and is cross gartered ($\exists$ x(Yx\eand Cx)). Such a move, in ordinary reasoning, might seem obvious and we often gloss over it, without paying it much mind. It should be clear by now, however, that the Devil is in the details and when we gloss over a logical inference, there is a high liklihood that something could have gone wrong and lead us astray.
+\section{Part 24.2 Universal Quantifier Rules (Elimination and Introduction)}
+\subsection{Universal elimination}
+From the claim that everything is F, you can infer that any particular thing is F. You name it; it’s F. There are many examples of us using this sort of reasoning in daily life. For example, suppose that you are in a restaurant and the cooks are being very, very slow in delivering the orders. Since they are being so slow, you can be sure that everyone in the restaurant is hungry ('Hx'). From this, you can go from the general to the particular and say that your friend Drew ('d') in the restaurant is hungry. We can symbolize this argument like so:
+\begin{center}
+$\forall$  xHx \therefore  Hd
+\end{center}
+Often, this sort of logical move is implied, not made explicit. But, as I have mentioned before, the devil is in the details. If we are going to make an error in our reasoning, it is going to likely be in these sort of implied moves and good, logical thinkers cannot allow for these sorts of mistakes. Every logical move is explicit. For an example of this move being implied in ordinary reason but needs to be explicit in QL, take this argument, in English:
+\begin{earg}
+\item[]All parrots can talk.
+\item[]Polly is a parrot.
+\item[\therefore ] Polly can talk.
+\end{earg}
+This should seem like a familiar logical structure, as I have used it before in the previous content. Logically, we treat statements of the form "all X's are Y's" as conditionals, "for all x, if x is X, the x is Y". So, the above argument would be symbolized like this:
+\begin{center}
+$\forall$  x(Px\eif Tx),Pp \therefore  Tp
+\end{center}
+ The implied move, in both of the arguments above, is to go from a statement about all things to a statement about one thing in particular. This is not  an equivalency rule, it cannot be done on only parts of statements or statements where the universal quantifier is not the main operator (we will explore this more below). With that caveat in mind, we can prove the first argument with relative ease:
+\begin{fitchproof}
+\hypo[1]{a}{\forall xHx}
+\have[2]{b}{Hd}\Ae{a}
+\end{fitchproof}
+Notice the citation there, $\forall$ E, this is Universal Elimination. We obtained line 2 by dropping the universal quantifier and replacing every instance of ‘x’ with ‘d'. If we supposed that Berry ('b') was also in the restaurant, we could have equally concluded with:
+
+\begin{fitchproof}
+\hypo[1]{a}{\forall xHx}
+\have[2]{b}{Hb}\Ae{a}
+\end{fitchproof}
+
+We obtained line 2 here by dropping the universal quantifier and replacing every instance of ‘x’ with ‘b’. We could have done the same with any other name we wanted. This motivates the universal elimination rule ($\forall$E):
+\factoidbox{\begin{fitchproof}
+\have[m]{a}{\forall xA\ldots x\ldots x\ldots}
+\have[n]{b}{A\ldots c\ldots c\ldots}\Ae{a}
+\end{fitchproof}}
+
+The notation here was introduced previously. The point is that you can obtain any substitution instance of a universally quantified formula: replace every instance of the quantified variable with any name you like. We should emphasize that (as with every elimination rule) you can only apply the $\forall$ E rule when the universal quantifier is the main logical operator. So the following is banned:
+\begin{fitchproof}
+\hypo[1]{a}{\forall xSx\eif Cr}
+\have[2]{b}{Sb\eif Cr}\by{naughty attempt to invoke $\forall$E}{a}
+\end{fitchproof}
+
+This is illegitimate, since `$\forall$x'  is not the main logical operator in line 1. To see why, suppose that the domain is restaurant workers, ‘Sx' symbolizes "x is out sick", ‘Cx' symbolizes ‘x is closed', ‘b' is ‘Berry', and ‘r' is the restaurant. So, the argument would sound something like this in English:
+\begin{earg}
+\item[]If all the restaurant workers are out sick, then the restaurant is closed.
+\item[\therefore] If Berry is out sick, then the restaurant is closed.
+\end{earg}
+This reasoning doesn't quite flow, a restaurant can function without one of its workers (though it will be a pain for the rest I am sure). This means that we can't do reasoning like this and be absolutely sure it will work. (If you still need a reminder as to why this sort of inference should be banned, reread Part 19.)
+\subsection{Universal introduction}
+
+Suppose you had shown of each particular thing that it is F (and that there are no other things to consider). Then you would be justified in claiming that everything is F. This would motivate the following proof rule. If you had established each and every single substitution instance of ‘$\forall$x Fx', then you can infer ‘$\forall$x Fx’.
+
+Unfortunately, that rule would be utterly unusable. To establish each and every single substitution instance would require proving ‘Fa’, ‘Fb’, \ldots , ‘F$j_2$’, \ldots , ‘F$r_{79002}$’, \ldots , and so on. Indeed, since there are infinitely many names in QL, this process would never come to an end. So we could never apply that rule. We need to be a bit more cunning in coming up with our rule for introducing universal quantification. A solution will be inspired by considering:
+\begin{center}
+$\forall$x Fx \therefore  $\forall$y Fy
+\end{center}
+This argument should obviously be valid. After all, alphabetical variation ought to be a matter of taste, and of no logical consequence. But how might our proof system reflect this? Suppose we begin a proof thus:
+\begin{fitchproof}
+\hypo[1]{d}{\forall xFx}
+\have[2]{b}{Fa}\Ae{d}
+\end{fitchproof}
+
+We have proved ‘Fa’.  And, of course, nothing stops us from using the same justification to prove ‘Fb’, ‘Fc’, \ldots , ‘F$j_2$’, \ldots , ‘F$r_{79002}$, \ldots , and so on until we run out of space, time, or patience. But reflecting on this, we see that there is a way to prove Fc, for any name c. And if we can do it for any thing, we should surely be able to say that ‘F’ is true of everything. This therefore justifies us in inferring ‘$\forall$y Fy’, thus:
+\begin{fitchproof}
+\hypo[1]{d}{\forall xFx}
+\have[2]{b}{Fa}\Ae{d}
+\have[3]{c}{\forall yFy}\Ai{b}
+\end{fitchproof}
+
+The crucial thought here is that ‘a’ was just some arbitrary name. There was nothing special about it—we might have chosen any other name—and still the proof would be fine. And this crucial thought motivates the universal introduction rule ($\forall$I):
+\factoidbox{\begin{fitchproof}
+\have[m]{a}{A\ldots c\ldots c\ldots}
+\have[n]{b}{\forall xA\ldots x\ldots x\ldots}\Ai{a}
+\end{fitchproof}
+\textbullet c must not occur in any undischarged assumption
+and also x must not occur in A\ldots c\ldots c\ldots}
+
+A crucial aspect of this rule, though, is bound up in the first constraint. This constraint ensures that we are always reasoning at a sufficiently general level. To see the constraint in action, consider this terrible argument:
+\begin{earg}
+\item[]Everyone loves Kylie Minogue; 
+\item[\therefore] everyone loves themselves.
+\end{earg}
+We might symbolize this obviously invalid inference pattern as:
+\begin{center}
+$\forall$ x Lxk \therefore  $\forall$ x Lxx
+\end{center}
+Now, suppose we tried to offer a proof that vindicates this argument:
+\begin{fitchproof}
+\hypo[1]{a}{\forall xLxk}
+\have[2]{b}{Lkk}
+\have[3]{c}{\forall xLxx}\by{naughty attempt to invoke $\forall$I}{b}
+\end{fitchproof}
+
+This is not allowed, because ‘k’ occurred already in an undischarged assumption, namely, on line 1. The crucial point is that, if we have made any assumptions about the object we are working with, then we are not reasoning generally enough to to use a rule like $\forall$ I.
+
+Although the name may not occur in any undischarged assumption, it may occur in a discharged assumption. That is, it may occur in a subproof that we have already closed. For example, this is just fine:
+\begin{fitchproof}
+\open
+	\hypo[1]{a}{Gd}\by{AS}{}
+	\have[2]{b}{Gd}\by{R}{a}
+\close
+\have[3]{c}{Gd\eif Gd}\ci{a-b}
+\have[4]{d}{\forall z(Gz\eif Gz)}\Ai{c}
+\end{fitchproof}
+In this case, there was nothing special about ‘d', either used or implied. It was just a random name, so we could generalize. This tells us that ‘$\forall$z (Gz\eif Gz)’ is a theorem. And that is as it should be.
+
+We should emphasize one last point. As per the conventions covered previously, the use of $\forall$ I requires that we are replacing every instance of the name c in A\ldots c\ldots c\ldots  with the variable x. If we only replace some names and not others, we end up ‘proving’ silly things. For example, consider the argument:
+\begin{earg}
+\item[]Everyone is as old as themselves; so everyone is as old as Judi Dench.
+\end{earg}
+We might symbolise this as follows:
+\begin{center}
+$\forall$ x Oxx \therefore  $\forall$ x Oxd
+\end{center}
+But now suppose we tried to vindicate this terrible argument with the following:
+\begin{fitchproof}
+\hypo[1]{a}{\forall xOxx}
+\have[2]{b}{Odd}
+\have[3]{c}{\forall xOxd}\by{naughty attempt to invoke $\forall$I}{b}
+\end{fitchproof}
+
+Fortunately, our rules do not allow for us to do this: the attempted proof is banned, since it doesn’t replace every occurrence of ‘d’ in line 2 with an ‘x’.
+\section{Part 24.3 Existential Quantifier Rules (Introduction and Elimination)}
+\subsection{Existential Introduction}
+
+From the claim that some particular thing is F, you can infer that something is F. This should seem obvious and, as a result, we ought to allow:
+\begin{fitchproof}
+\hypo[1]{a}{Raad}
+\have[2]{b}{\exists xRaax}\Ei{a}
+\end{fitchproof}
+
+Here, we have replaced the name ‘d’ with a variable ‘x’, and then existentially quantified over it. The reasoning, in words, might look like this:
+
+\factoidbox{We know that Raad. ‘d' is a thing, so we know that for some thing, x, Raax. (which is, symbolically, ‘$\exists$ xRaax'.)}
+
+At the time time, we could have applied the same reasoning to ‘a' and gotten similar results, this means that we can allow:
+\begin{fitchproof}
+\hypo[1]{a}{Rxxd}
+\have[2]{b}{\exists xRxxd}\Ei{a}
+\end{fitchproof}
+
+Here we have replaced both instances of the name ‘a’ with a variable, and then existentially generalized. But we do not need to replace both instances of a name with a variable: if Narcissus loves himself, then there is someone who loves Narcissus. So we also allow:
+\begin{fitchproof}
+\hypo[1]{a}{Rxxd}
+\have[2]{b}{\exists xRxad}\Ei{a}
+\end{fitchproof}
+
+Here we have replaced just one instance of the name ‘a’ with a variable, and then existentially generalized. These observations motivate our introduction rule, although to explain it, we will need to introduce some new notation. Where A is a sentence containing the name c, we can emphasize this by writing ‘A\ldots c\ldots c\ldots ’. We will write ‘A\ldots x\ldots c\ldots ’ to indicate any formula obtained by replacing some or all of the instances of the name c with the variable x. Armed with this, our introduction rule is:
+\factoidbox{\begin{fitchproof}
+\have[m]{a}{A\ldots c\ldots c\ldots}
+\have[n]{b}{\exists xA\ldots x\ldots c\ldots}\Ei{a}
+\end{fitchproof}
+\textbullet x must not occur in A\ldots c\ldots c\ldots} 
+
+The constraint is included to guarantee that any application of the rule yields a sentence of QL. Thus the following is allowed:
+\begin{fitchproof}
+\hypo[1]{a}{Raad}
+\have[2]{b}{\exists xRxad}\Ei{a}
+\have[3]{c}{\exists y\exists xRxyd}\Ei{b}
+\end{fitchproof}
+But this is banned:
+\begin{fitchproof}
+\hypo[1]{a}{Raad}
+\have[2]{b}{\exists xRxad}\Ei{a}
+\have[3]{c}{\exists x\exists xRxxd}\Ei{b}
+\end{fitchproof}
+
+since the expression on line 3 contains clashing variables, and so is not a sentence of QL.
+
+\subsection{Existential elimination}
+
+Suppose we know that something is F. The problem is that simply knowing this does not tell us which thing is F. So it would seem that from ‘$\exists$x Fx’ we cannot immediately conclude ‘Fa’, ‘F$e_{23}$’, or any other substitution instance of the sentence. What can we do? Suppose we know that something is F, and that everything which is F is also G. In (almost) natural English, we might reason thus:
+\factoidbox{
+Since something is F, there is some particular thing which is an F. We do not know anything about it, other than that it’s an F, but for convenience, let’s call it ‘Becky’. So: Becky is F. Since everything which is F is G, it follows that Becky is G. But since Becky is G, it follows that something is G. And nothing depended on which object, exactly, Becky was. So, something is G.}
+
+We might try to capture this reasoning pattern in a proof as follows:
+\begin{fitchproof}
+\hypo[1]{a}{\exists xFx}
+\hypo[2]{b}{\forall x(Fx\eif Gx)}
+\open
+\hypo[3]{c}{Fb}\by{AS}{}
+\have[4]{d}{Fb\eif Gb}\Ae{b}
+\have[5]{e}{Gb}\ce{d,c}
+\have[6]{f}{\exists xGx}\Ei{e}
+\close
+\have[7]{g}{\exists x Gx}\Ae{a,c-f}	
+\end{fitchproof}
+Breaking this down: we started by writing down our assumptions. At line 3, we made an additional assumption: ‘Fb’. This was just a substitution instance of ‘$\exists$ x Fx’. On this assumption, we established ‘$\exists$ x Gx’. Note that we had made no special assumptions about the object named by ‘b’; we had only assumed that it satisfies ‘Fx’. So nothing depends upon which object it is. And line 1 told us that something satisfies ‘Fx’, so our reasoning pattern was perfectly general. We can discharge the specific assumption ‘F (b)’, and simply infer ‘$\exists$ x Gx’ on its own. Putting this together, we obtain the existential elimination rule ($\exists$E):
+\factoidbox{\begin{fitchproof}
+\have[m]{a}{\exists xA\ldots x\ldots x\ldots }
+\open
+\hypo[n]{b}{	A\ldots c\ldots c\ldots }\by{AS}{}
+\have[p]{P}{\exists xB}
+\close
+\have[r]{R}{\exists xB}\Ee{a, b-P}	
+\end{fitchproof}}
+
+There are some essential rules to keep in mind for applying this:
+\factoidbox{
+\textbullet c must not occur in any assumption undischarged before line n\\
+\textbullet c must not occur in $\exists$ xA\ldots x\ldots x\ldots \\
+\textbullet c must not occur in $\exists$ xB}
+
+As with universal introduction, the constraints are extremely important. To see why, consider the following terrible argument:
+\begin{earg}
+\item[]Tim Button is a lecturer.
+\item[]Someone is not a lecturer.
+\item[]So Tim Button is both a lecturer and not a lecturer.
+\end{earg}
+We might symbolize this obviously invalid inference pattern as follows:
+\begin{center}
+Lb,$\exists$ x \enot Lx \therefore  Lb\eand \enot Lb
+\end{center}
+Now, suppose we tried to offer a proof that vindicates this argument:
+\begin{fitchproof}
+\hypo[1]{a}{Lb}
+\hypo[2]{b}{\exists x\enot Lx}
+\open
+	\hypo[3]{c}{\enot Lb}\by{AS}{}
+	\have[4]{d}{Lb\eand \enot Lb}\ai{a,c}
+\close
+\have[5]{e}{Lb\eand \enot Lb}\by{naughty use of $\exists$E}{a,c-d}	
+\end{fitchproof}
+The last line of the proof is not allowed. The name that we used in our substitution instance for ‘$\exists$ x \enot Lx’ on line 3, namely ‘b’, occurs in line 4. The this would be no better:
+\begin{fitchproof}
+\hypo[1]{a}{Lb}
+\hypo[2]{b}{\exists x\enot Lx}
+\open
+\hypo[3]{c}{\enot Lb}\by{AS}{}
+\have[4]{d}{Lb\eand \enot Lb}\ai{a,c}
+\have[5]{f}{\exists x(Lx\eand \enot Lx)}\Ei{d}
+\close
+\have[6]{e}{Lb\eand \enot Lb}\by{naughty attempt to invoke $\exists$E}{a, c-f}	
+\end{fitchproof}
+
+The last line is still not allowed. For the name that we used in our substitution instance for ‘$\exists$ x \enot Lx’, namely ‘b’, occurs in an undischarged assumption, namely line 1. The moral of the story is this. If you want to squeeze information out of an existential quantifier, choose a new name for your substitution instance. That way, you can guarantee that you meet all the constraints on the rule for $\exists$ E.
+
+It will pay off to keep how this rule works in mind, as this sort of assumption, where you give a name to something and operate using that name, is generalized and applied to possible circumstances (called ‘worlds') in Modal Logics, which we will cover in Module 10.
+
+\godel
+
+\chapter{Part 25 Tips for and an Example of Proofs in QL}
+
+Previously, we discussed strategies for constructing proofs using the basic rules of natural deduction for PL. The same principles apply to the rules for the quantifiers. If we want to prove a quantifier sentence $\forall$ xAx or $\exists$ xAx. We can work backward by justifying the sentence we want by $\forall$ I or $\exists$ I and trying to find a proof of the corresponding premise of that rule. And to work forward from a quantified sentence, we apply $\forall$ E or $\exists$ E, as the case may be.
+
+Specifically, suppose you want to prove $\forall$ xAx. To do so using $\forall$ I, we would need a proof of Ac for some name c which does not occur in any undischarged assumption. To apply the corresponding strategy, i.e., to construct a proof of $\forall$ xAx by working backward, is thus to write Ac above it and then to continue to try to find a proof of that sentence.
+\begin{fitchproof}
+\ellipsesline					
+\have[m]{b}{Ac}{}			
+\have[n]{c}{\forall xAx}\Ai{b}	
+\end{fitchproof}
+Ac is obtained from Ax by replacing every free occurrence of x in Ax by c. For this to work, c must satisfy the special condition. We can ensure that it does by always picking a name that does not already occur in the proof constructed so far. (Of course, it will occur in the proof we end up constructing—just not in an assumption that is undischarged at line m.)
+
+To work backward from a sentence $\exists$ xAx we similarly write a sentence above it that can serve as a justification for an application of the $\exists$ I rule, i.e., a sentence of the form Ac
+\begin{fitchproof}
+\ellipsesline
+\have[m]{b}{Ac}{}
+\have[n]{c}{\exists xAx}\Ei{b}	
+\end{fitchproof}
+
+This looks just like what we would do if we were working backward from a universally quantified sentence. The difference is that whereas for $\forall$ I we have to pick a name c which does not occur in the proof (so far), for $\exists$ I we may and in general must pick a name c which already occurs in the proof. Just like in the case of \eor I, it is often not clear which c will work out, and so to avoid having to backtrack you should work backward from existentially quantified sentences only when all other strategies have been applied.
+
+By contrast, working forward from sentences $\exists$ xAx generally always works and you won’t have to backtrack. Working forward from an existentially quantified sentence takes into account not just $\exists$ xAx but also whatever sentence B you would like to prove. It requires that you set up a subproof above B, wherein B is the last line, and a substitution instance Ac of $\exists$ xAx as the assumption. In order to ensure that the condition on c that governs $\exists$ E is satisfied, chose a name c which does not already occur in the proof.
+\begin{fitchproof}
+\ellipsesline
+\have[m]{b}{\exists xAx}				
+\ellipsesline
+\hypo[k]{k}{P_k}		
+\open
+\hypo[n]{d}{Ac}\by{AS}{}
+\have[\ ]{e}{\ldots}	
+\have[p]{f}{Bc}
+\have[q]{g}{\exists xBx}\Ei{f}
+\close
+\have[r]{h}{\exists xBx}\Ee{b,d-g}	
+\end{fitchproof}
+You’ll then continue with the goal of proving B, but now inside a subproof in which you have an additional sentence to work with, namely Ac.
+
+Lastly, working forward from $\forall$ xAx means that you can always write down Ac and justify it using $\forall$ E, for any name c. Of course, you wouldn’t want to do that willy-nilly. Only certain names c will help in your task of proving whatever goal sentence you are working on. So, like working backward from $\exists$ xAx, you should work forward from $\forall$ xAx only after all other strategies have been applied. Let’s consider as an example the argument:
+\begin{center}
+$\forall$ x(Ax\eif B) \therefore $\exists$ xAx\eif B
+\end{center}
+To start constructing a proof, we write the premise at the top and the conclusion at the bottom.
+\begin{fitchproof}
+\hypo{1}{\forall x(Ax \eif B)}
+\ellipsesline
+\have[r]{7}{\exists x\,Ax\eif B}
+\end{fitchproof}
+The strategies for connectives of PL still apply, and you should apply them in the same order: first work backward from conditionals, negated sentences, conjunctions, and now also universal quantifiers, then forward from disjunctions and now existential quantifiers, and only then try to apply \eif E, ¬E, \eor I, $\forall$ E, or $\exists$ I. In our case, that means, working backward from the conclusion:
+\begin{fitchproof}
+\hypo{1}{\forall x(Ax \eif B)}
+\open
+\hypo{2}{\exists xAx}\by{AS}{}
+\ellipsesline
+\have[q]{z}{B}
+\close
+\have[r]{7}{\exists x\,Ax\eif B}\ci{2-z}
+\end{fitchproof}
+
+Our next step should be to work forward from $\exists$ x Ax on line 2. For that, we have to pick a name not already in our proof. Since no names appear, we can pick any name, say ‘d’
+\begin{fitchproof}
+\hypo{1}{\forall x(Ax \eif B)}
+\open
+\hypo{2}{\exists xAx}\by{AS}{}
+\open
+\hypo{3}{Ad}\by{AS}{}
+\ellipsesline
+\have[p]{z}{B}
+\close
+\have[q]{y}{B}\Ee{2-z}
+\close
+\have[r]{7}{\exists x\,Ax\eif B}\ci{2-y}
+\end{fitchproof}
+
+Now we’ve exhausted our primary strategies, and it is time to work forward from the premise $\forall$ x (Ax \eif  B). Applying $\forall$ E means we can justify any instance of Ac \eif  B, regardless of what c we choose. Of course, we’ll do well to choose d, since that will give us Ad\eif B. Then we can apply \eif E to justify B, finishing the proof.
+\begin{fitchproof}
+\hypo{1}{\forall x(Ax \eif B}
+\open
+\hypo{2}{\exists xAx}\by{AS}{}
+\open
+\hypo{3}{Ad}\by{AS}{}
+\have{4}{Ad\eif B}\Ae{1}
+\have{5}{B}\ce{4,3}
+\close
+\have{6}{B}\Ee{2-5}
+\close
+\have{7}{\exists x\,Ax\eif B}\ci{2-6}
+\end{fitchproof}
+
+Now let’s construct a proof of the converse. We begin with
+
+\begin{fitchproof}
+\hypo{1}{\exists xAx \eif B}
+\ellipsesline
+\have[r]{7}{\forall x(Ax\eif B)}
+\end{fitchproof}
+
+Note that the premise is a conditional, not an existentially quantified sentence, so we should not (yet) work forward from it. Working backward from the conclusion, $\forall$ x (Ax \eif  B), leads us to look for a proof of Ad \eif  B:
+\begin{fitchproof}
+\hypo{1}{\exists xAx \eif B}
+\ellipsesline
+\have[q]{6}{Ad\eif B}
+\have[r]{7}{\forall x(Ax\eif B)}\Ai{6}
+\end{fitchproof}
+
+And working backward from Ad\eif  B means we should set up a subproof with Ad as an assumption and B as the last line:
+\begin{fitchproof}
+\hypo{1}{\exists xAx \eif B}
+\open
+\hypo{2}{Ad}\by{AS}{}
+\ellipsesline
+\have[p]{5}{B}
+\close
+\have[q]{6}{Ad\eif B}\ci{2-5}
+\have[r]{7}{\forall x(Ax\eif B)}\Ai{6}
+\end{fitchproof}
+
+Now we can work forward from the premise on line 1. That’s a conditional, and its consequent happens to be the sentence B we are trying to justify. So we should look for a proof of its antecedent, $\exists$ x Ax. Of course, that is now readily available, by $\exists$I from line 2, and we’re done:
+\begin{fitchproof}
+\hypo{1}{\exists xAx \eif B}
+\open
+\hypo{2}{Ad}\by{AS}{}
+\have{3}{\exists xAx}\Ei{2}
+\have{4}{B}\ce{1,3}
+\close
+\have{5}{Ad\eif B}\ci{2-4}
+\have{6}{\forall x(Ax\eif B)}\Ai{5}
+\end{fitchproof}

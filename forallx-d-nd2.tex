@@ -1,0 +1,496 @@
+\part{Natural Deduction 2}
+\label{ch.plnd2}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 15 The Idea Behind Equivalency}
+At the moment, you have almost all of the tools necessary to prove any argument (so long as it is deals with simple sentences) and you would have all of those tools if we didn't have different ways of expressing the same thing. Some of you might have noticed from the exercises for truth tables that there are a few different ways of symbolizing certain English sentences and those different symbolizations are all logically equivalent. This leaves a gaping hole in our ability to handle and prove arguments. Take, as an example, this argument:
+\begin{center}
+\enot P\eor Q, (P\eif Q)\eif R $\vDash$ R
+\end{center}
+We could make a truth table for this argument and see that it is valid but our natural deduction system, currently, doesn't have the tools necessary to make a proof for it. In any language, there are going to be multiple ways of expressing the same thing and PL is no different. What we need is a way to move between statements, to change one to something logically equivalent to it. We will now introduce some derived rules that may be applied to part of a sentence. These are called rules of equivalency but they are also called the rules of replacement because they can be used to replace the whole sentence or just a part of the sentence with a logically equivalent expression. Noticing these is very useful in daily life. Sometimes, we will miss some entailment or string of reasoning because the initial bit or some component of it is not phrased in a way we are familiar or it is phrased in a way which conceals the entailment. This phrasing is not necessarily lying, because the two statements mean the same thing but it is in bad faith. Knowing these rules of equivalency will help you navigate around these sort of situations.  
+\section{Part 15.1 Double Negation and Communativity}
+\subsection{Double Negation}
+The first rule of equivalence (equivalency rule) which we will have at our disposal is called double negation, which we will abbreviate for citations as `DN'. In languages like standard English, when you have two negatives, they cancel each other out. In formal logical languages like this one, this is true as well. That said, you should be aware that context and emphasis can prevent them from doing so. Consider: `Jane is not not happy'. Arguably, one cannot infer `Jane is happy', since the first sentence should be understood as meaning the same as `Jane is not unhappy'. But in the right contexts, that first statement could mean `Jane is in a state of profound indifference'. Similarly, a person might say `I didn't do nothing', which if DN had its way would mean that they did something. Such contextual and vernacular cues should be taken into consideration when you are interpreting the statements.  As usual, moving to PL forces us to sacrifice certain nuances of English expressions. Double negation works like this:
+
+\factoidbox{$
+\enot \enot \metav{A} \Leftrightarrow \metav{A}
+$}
+
+In this definition, I am using `$\Leftrightarrow$ to mean that they are interchangeable. The arrow is double-headed because rules of replacement work in both directions. If you find two negations set up like this anywhere in a sentence, you can drop them both or, if you wanted, you can slap on two negations wherever you like. The general way it appears in an argument looks something like this:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{a}{\metav{A}}
+\have[n]{b}{\enot \enot \metav{A}} \dn{a}
+\end{fitchproof}}
+or as:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{a}{\enot \enot \metav{A}}
+\have[n]{b}{\metav{A}} \dn{a}
+\end{fitchproof}}
+
+As an example, take this argument:
+\begin{center}
+\enot P\eif Q,\enot Q $\vDash$ P
+\end{center}
+Without the double negation rule, we would get \enot \enot P using MT, which is not the same thing as the conclusion we are after (though logically equivalent) and we couldn't move to the one we are after. So, we apply DN to that line and get the conclusion we are after.
+\begin{fitchproof}
+\hypo[1]{a}{\enot P\eif Q}
+\hypo[2]{b}{\enot Q}
+\have[3]{c}{\enot \enot P} \mt{a,b}
+\have[4]{d}{P} \dn{c}
+\end{fitchproof}
+
+A word of warning: This cannot be done if there is anything between the two negations: For example, this cannot be done on \enot (\enot P\eif Q) to get P\eif Q. In this case, the negation is negating the entirety of \enot P\eif Q, not just \enot P. This only works when the negation is negating a negation. For another example, take a look at this argument:
+\begin{center}
+(\enot \enot P\eand R)\eif Q, P\eand R $\vDash$ Q
+\end{center}
+You might think that we could simply use conditional elimination to clear this up, but the antecedent and the line we have aren't identical. So, we need to use double negation:
+\begin{fitchproof}
+\hypo[1]{a}{(\enot \enot P\eand R)\eif Q}
+\hypo[2]{b}{P\eand R}
+\have[3]{c}{(P\eand R)\eif Q} \dn{a}
+\have[4]{d}{Q}\ce{c,b}
+\end{fitchproof}
+
+Notice that I was able to do this inside of the sentence, where the negation was not the main operator. This is unique to rules of equivalence and can only be done by them.
+
+\subsection{Commutativity}
+
+One simple rule of replacement is commutivity (abbreviated Comm), which says that we can swap the order of conjuncts in a conjunction or the order of disjuncts in a disjunction. We define the rule this way:
+\factoidbox{\begin{earg}
+\item[]$(\metav{A}\eand \metav{B}) \Leftrightarrow (\metav{B}\eand \metav{A})$
+\item[]$(\metav{A}\eor \metav{B}) \Leftrightarrow (\metav{B}\eor \metav{A})$
+\item[]$(\metav{A}\eiff \metav{B}) \Leftrightarrow (\metav{B}\eiff \metav{A})$
+\end{earg}}
+
+As before, the bold arrows mean that you can take a subformula on one side of the arrow and replace it with the subformula on the other side. For an example of this reasoning at work, take a look at this argument:
+\begin{center}
+(M\eor P)\eif (P\eand M ) $\vDash$ (P\eor M ) \eif  (M\eand P )
+\end{center}
+It is possible to give a proof of this using only the basic rules (once you have conditional introduction), but it will be long and inconvenient. With the Comm rule, we can provide a proof easily:
+\begin{fitchproof}
+\hypo[1]{a}{(M\eor P)\eif (P\eand M)}
+\have[2]{b}{(P\eor M)\eif (P\eand M)}\comm{a}	
+\have[3]{c}{(P\eor M)\eif (M\eand P)}\comm{b}	
+\end{fitchproof}
+If you recall the section about the characteristic truth tables, three of our connectives were symmetric, meaning that it did not matter if you flipped the order of the two subformulae. This is essentially the idea here, transferred into our deductive system.
+\section{Part 15.2 Material Conditional and Biconditional Exchange}
+\subsection{Material Conditional}
+
+You might have noticed that there is a funny similarity to how \eif E and \eor E work. This is not just some interesting coincidence, rather because A \eif  B is what's called a `material conditional', it is equivalent to \enot A \eor  B. With the appropriate equivalency rule, it is possible to have all of the functionality of \eor E, \eif E, and MT with only \eor E and this equivalency rule, though, I will admit, it does become cumbersome, so \eif E and MT are kept around to make thing simpler. The equivalency rule which makes this possible is abbreviated as MC for `material conditional'. It takes two forms:
+\factoidbox{\begin{earg}
+\item[]$(A \eif  B) \Leftrightarrow (\enot A \eor  B)$
+\item[]$(A \eor  B) \Leftrightarrow (\enot A \eif  B)$
+\end{earg}}
+
+To see this move in action,consider this argument:
+\begin{center}
+\enot P\eor Q,(P\eif Q)\eif (\enot R\eif S) $\vDash$ R\eor S
+\end{center}
+As always, we could prove this argument using only the basic rules (once we have the last ones). With rules of equivalency, though, the proof is much simpler:
+\begin{fitchproof}
+\hypo[1]{A1}{\enot P\eor Q}
+\hypo[2]{A2}{(P\eif Q)\eif (\enot R\eif S)}
+\have[3]{A3}{(\enot P\eor Q)\eif (\enot R\eif S)}\mc{A2}	
+\have[4]{A4}{\enot R\eif S}\ce{A3,A1}	
+\have[5]{A5}{R\eor S}\mc{A4}
+\end{fitchproof}	
+\subsection{Biconditional Exchange}
+
+Up until this point, we have not had any ability to work with biconditionals. Pretty much any valid argument which concludes with a biconditional and does not contain one in the premises is outside of our ability to prove. For a simplistic example, here is a valid argument which is beyond our current ability to prove: 
+\begin{center}
+P\eiff Q $\vDash$ P\eif Q
+\end{center}
+Remember that biconditionals are false when the `parts' are different values, true-false for example and conditionals are only false when the antecedent is true and the consequent is false. This means that, without drawing up a truth table, we can claim that the argument is valid. But, how can we prove this? We need a way to breakdown biconditionals. This equivalency rule captures the relation between conditionals and biconditionals. We will call this rule biconditional exchange and abbreviate it \eiff ex.
+\factoidbox{
+$[(A\eif B)\eand (B\eif A)] \Leftrightarrow (A\eiff B)$}
+
+As you can see, this turns the biconditional into a conjunction of two conditionals (hence the name `bi-conditional'). This means that we can use it to prove things. For example, let's look at this argument:
+\begin{center}
+P\eiff Q, P $\vDash$ Q
+\end{center}
+This argument is valid and we can use this rule to prove it. The simple proof involves \eif E and \eiff ex:
+\begin{fitchproof}
+\hypo[1]{A1}{P\eiff Q}
+\hypo[2]{A2}{P}
+\have[3]{A3}{(P\eif Q)\eand (Q\eif P)} \bcx{A1}	
+\have[4]{A4}{P\eif Q}\ae{A3}	
+\have[5]{A5}{Q}\ce{A4,A2}
+\end{fitchproof}
+
+Once you have \eif I in your tool-bag, you can use this equivalency rule to generate (create) biconditionals, as all you need to do is prove that the two conditionals are true and then conjoin them.
+\section{Part 15.3 De Morgan's Laws and Tautology}
+\subsection{De Morgan's Laws}
+Two more replacement rules are called De Morgan's Laws, named for the 19th century British logician August De Morgan (although De Morgan did discover these laws, he was not the first to do so). The rules capture useful relations between negation, conjunction, and disjunction. Here are the rules, for simplicity's sake and because they are so similar, we will use the same abbreviation for both, DeM:
+\factoidbox{\begin{earg}
+\item[]$\enot (A\eor B) \Leftrightarrow (\enot A\eand \enot B)$
+\item[]$\enot (A\eand B) \Leftrightarrow (\enot A\eor \enot B)$
+\end{earg}}
+
+These may look complicated on their face, but English, at least, has a commonplace phrasing which exactly mirrors the first one. In English, we say "neither... nor...". This way of phrasing a disjunction is to negate it. We are essentially saying "it is not the case that either... or...". Similarly, when this phrasing is used, we are saying that both are false, which is exactly what the first one says. For the second one, if you are at all familiar with coding, circuitry, or Minecraft, then you have likely encountered something called a `nand gate'. This operation is very powerful and, in fact, some logical systems only have one connective, `|', often called the Sheffer Stroke, which represents the nand gate and some computer circuitry only contains nand gates.  The nand gate is, essentially, a negated conjunction. A negated conjunction is only false when both of the conjuncts, A and B, are true (because that's the only time a conjunction is true). This is the same for \enot A\eor \enot B, meaning they are interchangeable. 
+
+With this rule, we can introduce one of my favorite sequence of moves in logic. This proof and the sequence of moves it represents moves through all the connectives (except for the biconditional) and illustrates how they are connected. Here is the argument:
+\begin{center}
+\enot (P\eif Q) $\vDash$ P\eand \enot Q
+\end{center}
+\begin{fitchproof}
+\hypo[1]{A1}{\enot (P\eif Q)}
+\have[2]{A2}{\enot (\enot P\eor Q)}\by{MC}{A1}
+\have[3]{A3}{\enot \enot P\eand \enot Q}\by{DeM}{A2}
+\have[4]{A4}{P\eand \enot Q} \by{DN}{A3}	
+\end{fitchproof}
+To break this down, we know that a conditional is only false when the antecedent is true and the consequent is false, so the validity of this argument should be clear. However, the proof of it is very interesting. We know that the truth value of a conditional is equivalent to that of a disjunction with the left disjunct negated (this was, roughly, the justification of the MC rule), so we can replace the conditional with that construction (this is line 2). We know that a disjunction can only be false when both disjuncts are false (this would be the only way for line 2 to be true), so we negate both of the disjuncts and flip the connective (changing it from a disjunction to a conjunction). And finally, we drop the double negation because the two of them cancel each other out.
+
+\demorgan
+
+\subsection{Tautology}
+
+The name of this rule should not be confused with the idea of necessarily true statements, as it does not apply to necessarily true statements. Rather, it applies in cases of redundancy. You may have noticed that two of our connectives. conjunction and disjunction, when both parts are the same thing, entail that it is true. For example, I have a cat named Molly who likes to mew ('meow', make the cat sounds) for various different reasons. Through logical reasoning, I can easily, in several contexts, come to the conclusion that either Molly will mew or Molly will mew. This is redundant, I should have just as easily skipped this intermediate conclusion and jumped right to the claim that Molly will mew. Since we need to be very explicit about every logical move we make, we need a rule which will account for this. This is where we get the tautology rule, abbreviated as TAUT:
+\factoidbox{\begin{earg}
+\item[]$(A\eor A) \Leftrightarrow (A)$
+\item[]$(A\eand A) \Leftrightarrow (A)$
+\end{earg}}
+This is an equivalency rule, just like all of the others in this section, so it can be applied to just a part of the sentence or to the entirety of it (if the conditions are met). For example, it can be very useful in proving all of these arguments:
+\begin{earg}
+\item[]\enot (\enot P\eif P) $\vDash$ \enot P
+\item[]P\eif (Q\eand Q),Q\eif R $\vDash$ P\eif R
+\item[](S\eor S)\eif R,S $\vDash$ R
+\item[]P\eif \enot (Q\eand Q),Q $\vDash$ \enot P
+\end{earg}
+Looking back over my experience hearing this rule in action or using it, I have always been most impressed when it is used as a finishing blow from the used of DIL (the dilemma rule). In such a case, the opposing side makes a claim that at least one of two things is true, A\eor B, and then, through reasoning, we come to the conclusion that if A is true, then they are wrong and if B is true, then they are wrong. This puts the opposing side in quite a tough spot because if they hold firm to A\eor B, either way, they are wrong and we can prove it! Using W to mean that they are wrong, here is the quick proof:
+\begin{fitchproof}
+\hypo[1]{A1}{A\eor B}			
+\hypo[2]{A2}{A\eif W}
+\hypo[3]{A3}{B\eif W}			
+\have[4]{A4}{W\eor W} \by{DIL}{A1,A2,A3}	
+\have[5]{A5}{W} \by{TAUT}{A4}
+\end{fitchproof}	
+
+As an added, final note, some natural deduction systems ignore or do not use TAUT (they don't have it) and instead expect the reasoner to use convoluted and lengthy series of steps to arrive at this conclusion. Some try to circumvent this by taking the example I just gave and defining DIL that way, saying that it only applies then the consequent of both of the conditionals is the same and then they get it (i.e. A\eor B, A\eif C, B\eif C $\vDash$ C). I found that the inclusion of TAUT is worth it because of the ease it adds to the system while retaining much of the usefulness of DIL.
+\chapter{Part 16 Indirect Proofs}
+\section{Part 16.1 Conditional Proofs}
+As you may recall from Part 13.4, I avoided introducing you to the Conditional Introduction rule (\eif I) because it was significantly different and a little bit more complicated than the others we were covering. This is because \eif I is a concluding citation to an indirect proof. The rule for conditional introduction is also quite easy to motivate. The following argument should be valid:
+\factoidbox{\begin{earg}
+\item[] Ludwig is an economist. 
+\item[\therefore] If Ludwig is a hothead, then Ludwig is both an economist and a hothead.
+\end{earg}}
+
+We can symbolize this argument with E for Ludwig is an economist and H for Ludwig is a hothead like so:
+\begin{center}
+E $\vDash$ H\eif (E\eand H)
+\end{center}
+If you wanted, you could run a truth table for this argument and you would see that the only lines where the conclusion is false are those where E is false. This is a bit of a problem because, right now, we do not have a way of proving this sort of argument in a way which follows what could be considered reasonable straight-forward, logic. If someone doubted that this was valid, we might try to convince them otherwise by explaining ourselves with this sort of reasoning:
+\factoidbox{
+We start off with the fact that Ludwig is an economist. We will now suppose, for the stake of argument, that Ludwig is a hothead. So, by conjunction introduction, Ludwig is both an economist and a hothead. Of course, that's conditional on the assumption that Ludwig is a hothead. But this just means that, if Ludwig is a hothead, then he is both an economist and a hothead.
+}
+This methodology for getting to the conclusion is translated over into our natural deduction system like so, starting with the premise "Ludwig is an economist":
+	\begin{fitchproof}
+		\hypo[1]{A1}{E}
+	\end{fitchproof}				
+
+The next thing we did is to make an additional assumption ('Ludwig is a hothead'), for the sake of argument. To indicate that we are no longer dealing merely with our original assumption ('E'), but with some additional assumption, we continue our proof as follows:
+	\begin{fitchproof}
+		\hypo[1]{A1}{E}
+		\open
+			\hypo[2]{a}{H}\by{AS}{}
+	\end{fitchproof}				
+Note that we are not claiming, on line 2, to have proved `H' from line 1, rather we are making an additional assumption. So, on line 2, we say that we are making an assumption by writing `AS'. Since this is an additional assumption, we draw a line under it (to indicate that it is an assumption) and by indenting it with a further vertical line (to indicate that it is an additional assumption). With this extra assumption in place, we are in a position to use \eand I. So we can continue our proof:
+\begin{fitchproof}
+	\hypo[1]{A1}{E}
+	\open
+		\hypo[2]{A2}{H}\by{AS}{}
+		\have[3]{A3}{E \eand H} \ae{A1,A2}
+	\close
+\end{fitchproof}
+
+So we have now shown that, on the additional assumption, `H', we can obtain `E\eand H'. We can therefore conclude that, if `H' obtains, then so does `E\eand H'. Or, to put it more briefly, we can conclude `E\eif (E\eand H)':
+\begin{fitchproof}
+\hypo[1]{A1}{E}
+\open
+	\hypo[2]{A2}{H}\by{AS}{}
+	\have[3]{A3}{E \eand H}\ae{A1,A2}
+\close
+\have[4]{A4}{H\eif (E\eand H)} \ci{A2-A3}
+\end{fitchproof}				
+
+Notice that the citation uses a dash `-' rather than a comma `,'. This is because \eif I is citing everything in the assumption. In this particular case, this was just two lines, but in others, the citation could cover a great number. To save time and ink, rather than listing all of the lines which appear in the assumption, we use the dash to say that this comes from lines n through m, for numbers n and m. Also notice that the closing of the assumption is on the same level as the initial premises. This is because we have shown in the indirect proof, that it is true given the premises. Here is the structure of this rule put abstractly:
+\factoidbox{\begin{fitchproof}
+\open
+	\hypo[m]{A2}{\metav{A}}\by{AS}{}
+	\ellipsesline
+	\have[n]{A3}{\metav{B}}
+\close
+\have[p]{A4}{\metav{A}\eif \metav{B}} \ci{A2-A3}
+\end{fitchproof}}				
+
+\subsection{Derived Rules from Conditional Introduction}
+
+Many of the rules which we have previously covered are sometimes called `derived rules' because they aren't `basic' but rather are derived from other, more basic ones, often using indirect proofs. Many more advanced, less intuitive, natural deduction systems choose one rule (often \eif E) and then show how all of the others are generated from it using indirect proofs, slowly building up their tools `from scratch'. Now that we have the conditional introduction rule, we can now do similar. For example, one of the rules which we already have is hypothetical syllogism, or HS. We can now use the \eif I rule to prove it using \eif E:
+\begin{fitchproof}
+\hypo[1]{A1}{P\eif Q}
+\hypo[2]{B1}{Q\eif R}
+\open
+	\hypo[3]{A2}{P}\by{AS}{}
+	\have[4]{A3}{Q}\ce{A1,A2}
+	\have[5]{B2}{R}\ce{B1,A3}
+\close
+\have[6]{A4}{P\eif R} \ci{A2-B2}
+\end{fitchproof}		
+\section{Part 16.2: Reductio Ad Absurdum (Negation Introduction and Negation Elimination)}
+An effective form of argument is to argue your opponent into contradicting themselves. At that point, you have them on the ropes. They have to give up at least one of their assumptions. For example, suppose that your opponent is arguing that there is a biggest natural number:
+
+\factoidbox{
+Assume there is some greatest natural number. Call it A. That number plus one is also a natural number. Obviously, A + 1 > A. So there is a natural number greater than A. This is impossible, since A is assumed to be the greatest natural number. Therefore, there is no greatest natural number.
+}
+This argument form is traditionally called a reductio. Its full Latin name is reductio ad absurdum, which means ‘reduction to absurdity.’ In a reductio, we assume something for the sake of argument— for example, that there is a greatest natural number. Then we show that the assumption leads to two contradictory sentences; for example, that A is the greatest natural number and that it is not. In this way, we show that the original assumption must have been false.
+
+The basic rules for negation will allow for arguments like this. If we assume something and show that it leads to contradictory sentences, then we have proven the negation of the assumption. This is the negation introduction (\enot I) rule:
+\factoidbox{\begin{fitchproof}
+\open
+	\hypo[m]{M}{\metav{A}}\by{AS}{}
+	\have[n]{N}{\metav{B}}
+	\have[p]{P}{\enot \metav{B}}
+\close
+\have[r]{R}{\enot \metav{A}} \ni{m-p}
+\end{fitchproof}}
+For the rule to apply, the last two lines of the subproof must be an explicit contradiction: some sentence followed on the next line by its negation. To set this up, it is sometimes necessary to use reiteration, the R rule.  Often, when I am writing out proofs, I will write ‘for reductio’ if I am going for a reductio or "for conditional" if I am going for a conditional proof, just to keep things straight, a reminder of why I started the subproof. It is not formally part of the proof and you can leave it out if you find it distracting. To see how the rule works, suppose we want to prove the law of non-contradiction:
+\begin{center}
+\enot (G\eand \enot G)
+\end{center}
+We can prove this without any premises by immediately starting a subproof. We want to apply \enot I to the subproof, so we assume (G\eand \enot G). We then get an explicit contradiction by \eand E. The proof looks like this:
+\begin{fitchproof}
+\open
+	\hypo[1]{M}{G\eand \enot G}\by{AS}{}
+	\have[2]{N}{G} \ae{M}
+	\have[3]{P}{\enot G} \ae{M}
+\close
+\have[4]{R}{\enot (G\eand \enot G)} \ni{M-P}
+\end{fitchproof}
+
+The \enot E rule will work in much the same way. If we assume \enot A and show that it leads to a contradiction, we have effectively proven A. So the rule looks like this:
+\factoidbox{\begin{fitchproof}
+\open
+	\hypo[m]{M}{\enot \metav{A}}\by{AS}{}
+	\have[n]{N}{\metav{B}}
+	\have[p]{P}{\enot \metav{B}}
+\close
+\have[r]{R}{\metav{A}} \ne{M-P}
+\end{fitchproof}}
+
+\subsection{Derived Rules Using \enot I and \enot E}
+
+As I mentioned when discussing the conditional introduction rule, most of the rules in any natural deduction system can be seen as short hand for a long series of valid operations. Many of the rules can be seen as short hand for a complex series of moves involving \eif E and \eif I. Others, however, require us to also use \enot I and/or \enot E. For example, here is the proof for modus tollens (MT):
+\begin{fitchproof}
+\hypo[1]{A}{P\eif Q}
+\hypo[2]{B}{\enot Q}
+\open
+	\hypo[3]{M}{P}\by{AS}{}
+	\have[4]{N}{Q} \ce{A,M}
+	\have[5]{S}{\enot Q} \by{R}{B}
+\close
+\have[6]{R}{\enot P} \ni{M-S}
+\end{fitchproof}
+
+Another rule which can be seen as short-hand for a longer proof is the DIL rule. While the proof for modus tollens is short enough to use on the fly if for some reason you have completely forgotten MT (which likely raises other worries), the proof for the DIL rule is far more involved and it is nice to have this as a short hand:
+\begin{fitchproof}
+\hypo[1]{A}{P\eif Q}
+\hypo[2]{B}{S\eif R}
+\hypo[3]{C}{P\eor S}
+\open
+	\hypo[4]{M}{\enot (Q\eor R)}\by{AS}{}
+	\have[5]{N}{\enot Q\eand \enot R} \dem{M}
+	\have[6]{S}{\enot Q} \ae{N}
+	\have[7]{T}{\enot P} \mt{A,S}
+	\have[8]{U}{S} \oe{C,T}
+	\have[9]{V}{R} \ce{C,U}
+	\have[10]{W}{\enot R} \ae{N}
+\close
+\have[11]{X}{Q\eor R} \ne{M-W}
+\end{fitchproof}
+\chapter{Part 17 Tips For Proofs}
+\section{Part 17.1 Working Backwards from What You Want}
+Often, when you are trying to make a proof for some conclusion, C, it will not be directly obvious how you should go about doing it; that is, you aren't sure where to start. In these cases, it is useful to work backwards. Start with the conclusion and then figure out what lines you'll need to get for something like it, then figure out what you need to do to get those lines, and so on. In the `real-world', this is a very useful way of thinking. Often, we will encounter a stance, idea, or purported fact and think something along the lines of "that's obviously true" or "dude, that's obviously false." But, as good, logical, thinkers, we can't stop there; we need some supporting reasons or evidence. So, we figure out what else we will need to believe in order to support this stance and work backwards from there.
+
+My advice, both for proofs in this class and the analogous cases in the `real-world', is to start by looking at the main operator of the conclusion, C, and asking what introduction rule is used to get its main logical operator. For example, if the main operator of the conclusion is a conjunction, plan on using \eand I. This gives you an idea of what should happen before the last line of the proof and in the `real world', it tells us what we would need to `have' in order to get the stance we want to hold. The justifications for the introduction rule require one or two other sentences above the last line, or one or two subproofs. This means that we will need to prove those lines and those lines are your new goals. As another example, if your conclusion is a conditional A\eif B, plan to use the \eif I rule. This requires starting a subproof where you assume A. The subproof ought to end with B. Then, continue by thinking about what you should do to get B inside that subproof,and how you can use the assumption A. In general, there are methods of working-backwards for all of the logical operators. Here, I will be giving an overview of some default helpful methods to get you started. These are sort of like outlines for the structure a proof could have given the main operator of the conclusion.
+
+\subsection{Working backward from a conjunction}
+
+If we want to prove \metav{A}\eand \metav{B}, working backward means we should write \metav{A}\eand \metav{B} at the bottom of our proof, and try to prove it using \eand I. At the top, we’ll write out the premises of the proof, if there are any. Then, at the bottom, we write the sentence we want to prove. If it is a conjunction, we’ll prove it using \eand I.
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\ellipsesline
+\hypo[k]{PK}{\metav{P}_k}			
+\ellipsesline
+\have[m]{M}{\metav{A}}{}			
+\ellipsesline
+\have[n]{N}{\metav{B}}			
+\have[p]{MN}{\metav{A}\eand \metav{B}}\ae{M,N}	
+\end{fitchproof}
+For \eand I, we need to prove A first, then prove B. You can think of this has having two different proofs mashed together.  For the last line,we have to cite the lines where we (will have) proved A and B,and use \eand I. The parts of the proof labelled ... have to still be filled in. This is sort of a model of how a basic proof would look. Of course, you will need to have the premises in the actual argument for the P's and we're just marking the line numbers with m, n for now. When the proof is complete, these placeholders can be replaced by actual numbers.
+
+\subsection{Working backward from a conditional}
+
+As you might have guessed, if our goal is to prove a conditional \metav{A}\eif\metav{B}, we will, most likely, need to use \eif I. There are some other ways of doing this but, by and large, using \eif I is the most efficient (there are some exceptions to this). Doing this will require a subproof where you assume A and then work to get B. We’ll set up our proof as follows:
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\ellipsesline			
+\hypo[k]{PK}{\metav{P}_k}			
+\open
+\have[m]{M}{\metav{A}}\by{AS}{}			
+\ellipsesline		
+\have[n]{N}{\metav{B}}			
+\close
+\have[p]{MN}{\metav{A}\eif \metav{B}}\ci{M-N}	
+\end{fitchproof}
+
+Again, this is just a general model for how the proofs could look. These are also generic suggestions. There will be arguments where devoutly following this advice will lead to a cumbersome less natural sounding argument. For example, \metav{A}\eif \metav{B} might appear as a subsentence in one of the premises. In which case, you should look to see how to extract it from the premise, see what tools you need for that and then work backwards to get those tools. Another case where this might not be the best route is where you can get just B; then you can use \eor I to get \enot \metav{A}\eor \metav{B} and MC to get \metav{A}\eif \metav{B}. Cases like these are the general exceptions to \eif I being the best route to getting a conditional.
+
+\subsection{Working backward from a negated sentence}
+
+As a general rule, when it is not obvious how to get a negated sentence, we'll want to use \enot I. Sometimes, however, it can be obvious, like that it's a simple use of MT or maybe \eif E.  Remember that the last two lines of a reductio are going to be contradictory. So, in the subproof, you are going to be looking to make something which contradicts what you have or something you can make. This general method can work for all arguments, regardless of main operator in the conclusion; if it's a negated sentence, assume it without the negation and plan to use \enot I; if it is a non-negated sentence, assume the negation of it and plan to use \enot E. Here is a model of a proof using this method for \enot I:
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\ellipsesline			
+\hypo[k]{PK}{\metav{P}_k}			
+\open
+\hypo[m]{M}{\metav{A}}\by{AS}{}			
+\ellipsesline		
+\have[n]{N}{\metav{B}}{}	
+\have[p]{P}{\enot \metav{B}}{}
+\close
+\have[r]{MN}{\enot \metav{A}}\ni{M-P}	
+\end{fitchproof}
+
+For \enot I, we have to start a subproof with assumption A. We’ll cite the subproof, and use \enot I as the rule. When working backward, continue to do so as long as you can. So if you’re working backward to prove \metav{A}\eif\metav{B} and have set up a subproof in which you want to prove B. Now look at B. If, say, it is a conjunction, work backward from it, and write down the two conjuncts inside your subproof. Etc.
+
+\subsection{Working backward from a disjunction}
+
+There are many different routes you can take when working backwards from a disjunction, \metav{A}\eor\metav{B}. Sometimes, this is fairly easy; you can simplify it and choose one of the disjuncts, plan to use \eor I on it and then work backwards to figure out how to get that disjunct. If that doesn't work, you can always try with the other disjunct. Obviously, deleting everything and starting over is frustrating, so you should avoid it, unless it is really obvious how to get one of the disjuncts. Another way to get a disjunction is to read it as a conditional. Make a note to yourself that the last two lines of the argument will look something like this:
+\begin{fitchproof}
+\have[p]{P}{\enot A\eif B} {}
+\have[r]{R}{A\eor B}\mc{P}
+\end{fitchproof}
+
+This shifts our attention, but in a good way. Now, we aren't directly trying to prove a disjunction, rather we are trying to prove a conditional as a step to get to a disjunction. With this new goal, we can follow the advice for proving conditionals, use \eif I, as I noted. So, the overall proof might look something like this, which is almost identical to the form for proving a conditional (with an added step at the end): 
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\ellipsesline			
+\hypo[k]{PK}{\metav{P}_k}			
+\open
+\have[m]{M}{\enot \metav{A}}\by{AS}{}			
+\ellipsesline		
+\have[n]{N}{\metav{B}}			
+\close
+\have[p]{MN}{\enot \metav{A}\eif \metav{B}}\ci{M-N}
+\have[r]{R}{\metav{A}\eor \metav{B}} \mc{MN}	
+\end{fitchproof}
+
+\subsection{Working Backwards From a Biconditional}
+
+The moment you notice that the main operator of the conclusion is a biconditional \metav{A}\eiff\metav{B}, I recommend applying the biconditional exchange rule on it. Like with my advice for the disjunctions, we should shift our attention; our goal is not, necessarily, to get a biconditional, rather our goal is to get the conjunction of two conditionals. Make a note to yourself that the last two lines of your proof should look something like this:
+
+\begin{fitchproof}
+\have[r]{R}{(A\eif B)\eand (B\eif A)} {}
+\have[s]{S}{A\eiff B}\bcx{R}
+\end{fitchproof}
+
+As you can see, our new goal is a conjunction and my advice there was to treat it as two different proofs, you gotta prove one and then the other, having the last line be the conjunction introduction. We also see that the two conjuncts are conditionals. My advice for proving conditionals was to assume the antecedent and get the consequent using \eif I. So, we have a game plan:
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\ellipsesline			
+\hypo[k]{PK}{\metav{P}_k}			
+\open
+\hypo[m]{M}{\metav{A}}\by{AS}{}			
+\ellipsesline		
+\have[n]{N}{\metav{B}}			
+\close
+\have[p]{MN}{A\eif B}\ci{M-N}	
+\open
+\hypo[m_2]{M2}{\metav{B}}\by{AS}{}			
+\ellipsesline		
+\have[n_2]{N2}{\metav{A}}			
+\close
+\have[p_2]{M2N2}{\metav{B}\eif \metav{A}}\ci{M-N}	
+\have[r]{R}{(\metav{A}\eif \metav{B})\eand (\metav{B}\eif \metav{A})} \ai{MN,M2N2}
+\have[s]{S}{\metav{A}\eiff \metav{B}}\bcx{R}
+\end{fitchproof}
+
+\section{Part 17.2 Moving Forward from What You Have}
+
+Sometimes, it doesn't seem right to start by working backwards. For example, in the `real world', we are constantly bombarded with facts and information and we are not sure what we can reasonably derive or conclude from this information; that is, we can't immediately see how these facts mesh together. Failure to adequately and logically coordinate and fit this information together has lead some to wild and, frankly, messy conspiracy theories with networks connecting things looking like a Jackson Pollock painting. In this class, you are given the facts of the cases (the premises) and you are also given what can be derived from it, but out there in the world, you will just be given the premises and asked to draw your own conclusions (be skeptical when a non-expert draws the conclusions for you).
+
+If you already have a conclusion, given to you in this class or through some gut reaction, and you've worked backwards from it, great! This page can serve as some advice about how to fill in the blanks of your proof or reasoning. If you don't have a conclusion to work towards or are just starting a proof where you aren't sure how to work backwards, that's good too. This page will serve as some advice on what to look out for and what quick steps you can do until something clicks or becomes obvious.
+
+\subsection{Working forward from a conjunction}
+
+My first bit of advice is that if you have a conjunction, immediately break it down using \eand E. This rule allows us to do two things: infer A and infer B. So in a proof where we have A\eand B, we can work forward by writing A and/or B immediately below the conjunction:
+\begin{fitchproof}
+\hypo[1]{P1}{A\eand B}			
+\have[2]{P2}{A}\ae{P1}
+\have[3]{P3}B\ae{P1}	
+\end{fitchproof}
+
+More often than not, the conjuncts won't be simple sentences or simple negations of sentences, these will be more complex sentences with connectives all their own. Breaking the conjunction down will potentially reveal what can be done next. Sometimes, once you've isolated one of the conjuncts, it will be clear what the next steps could be, other times, it won't be so obvious. It doesn't hurt to write them both down or keep them both in mind.
+
+\subsection{Working forward from a disjunction}
+
+Working forward from a disjunction works a bit differently. Disjunctions, on their own, really don't give us that much to work with. But, if you look around, I am sure that you can find something you can use with it. For example, look at the other things you have, either as premises or things you have proven and ask yourself what rules can you use right now? If you, somewhere, have the negation of one of the disjuncts, go ahead and use the \eor E rule. Even if what you get isn't obviously necessary, it doesn't hurt to have it and it could prove valuable down the line. Another thing you can do is take a look at the premises you have and see whether the MC version of the disjunction is needed or could be used. Again, it doesn't hurt to have it in the `tool kit'. Maybe, for example, the MC version of the disjunction can be used in a hypothetical syllogism or it could make more obvious a potential \eif E. You can also work forward by setting up for a DIL rule. In order to apply that rule, it is not enough to know what the disjuncts of the disjunction are that we want to use. We must also keep in mind what we want to prove. Suppose we want to prove C\eor D, and we have A\eor B to work with. (That A\eor B may be a premise of the proof, an assumption of a subproof, or something already proved.) In order to be able to apply the DIL rule, we could need to set up two subproofs (in this case, they could be conditionals which we can make):
+
+\begin{fitchproof}
+\have[1]{P1}{\metav{P}_1}			
+\have[2]{P2}{\metav{A}\eor \metav{B}}
+\ellipsesline			
+\hypo[k]{PK}{\metav{P}_k}
+\open
+\hypo[m]{M}{\metav{A}}\by{AS}{}
+\ellipsesline		
+\have[n]{N}{\metav{C}}			
+\close
+\have[p]{MN}{\metav{A}\eif \metav{C}}\ci{M-N}	
+\open
+\hypo[m_2]{M2}{\metav{B}}\by{AS}{}
+\ellipsesline		
+\have[n_2]{N2}{\metav{D}}			
+\close
+\have[p_2]{M2N2}{\metav{B}\eif \metav{D}}\ci{M2-N2}	
+\have[r]{R}{\metav{C}\eor \metav{D}} \dil{P2,MN,M2N2}
+\end{fitchproof}
+
+The first subproof starts with the first disjunct, A, and ends with the sentence we’re looking for, C. The second subproof starts with the other disjunct, B and then itends with something we could maybe use like D. Each of these subproofs have to be filled in further. We can then justify the goal sentence C\eor D by using DIL, citing the line with A\eor B and the results of the two subproofs.
+
+\subsection{Working forward from a conditional}
+
+There are several ways in which you can move forward from a conditional statement. Conditionals are one of the more versatile connectives we have. Obviously, you are going to want to look at the other premises you have to see what fits within the conditional. My first move is to look for how I could make something which can be used for \eif E or for MT. So, you should see how you could derive A or \enot B. If you can derive \enot B, then you will get \enot A from MT, which could be useful in the long haul and it never hurts to have it in the background. Similarly, if you can get A, then you can get B, which also could be useful in the proof. In general, also, you could look around and see whether the antecedent or consequent (negated or not) appears anywhere else in the proof. If they do, there could be the need to do MC and shift things around so that you can make connections or derive things. If they appear conjoined, for example, with a conjunction, as a subsentence of another conditional, here is a neat little trick you can pull to simplify things down:
+\begin{fitchproof}
+\hypo[1]{a}{\metav{A}\eif \metav{B}}	
+\hypo[2]{b}{	(\metav{A}\eand \metav{B})\eif \metav{C}}
+\open
+\hypo[3]{c}{\metav{A}}\by{AS}{}
+\have[4]{d}{\metav{B}}\ce{a,c}
+\have[5]{e}{\metav{A}\eand \metav{B}}\ai{c,d}
+\have[6]{f}{\metav{C}}\ce{b,e}
+\close
+\have[7]{g}{\metav{A}\eif \metav{C}}\ci{c-f}
+\end{fitchproof}
+
+There are other tricks you can do as well. If the antecedent is a disjunction, assume one of the disjuncts for \eif I and derive the consequent. If the consequent is a disjunction, take a look around, if you have the negation of one of the disjuncts, assume the antecedent for \eif I, derive the consequent and perform \eor E to get the other. Here are several examples of different arrangements for conditionals and some things which could, maybe, be done with them:
+\begin{fitchproof}
+\hypo[1]{a}{\metav{A}\eif (\metav{B}\eand \metav{C})}
+\open
+\hypo[2]{b}{\metav{A}}\by{AS}{}
+\have[3]{c}{\metav{B}\eand \metav{C}}\ce{a,b}
+\have[4]{d}{\metav{B}}\ae{c}
+\close
+\have[5]{e}{\metav{A}\eif \metav{B}}\ci{b-d}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{a}{\metav{A}\eif (\metav{B}\eor \metav{C})}
+\hypo[2]{a2}{\enot \metav{B}}
+\open
+\hypo[3]{b}{\metav{A}}\by{AS}{}
+\have[4]{c}{\metav{B}\eor \metav{C}}\ce{a,b}
+\have[5]{d}{\metav{C}}\oe{c,a2}
+\close
+\have[6]{e}{\metav{A}\eif \metav{C}}\ci{b-d}
+\end{fitchproof}

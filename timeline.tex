@@ -1,0 +1,40 @@
+\label{ch.timeline}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Timeline of Formal Logic}
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world, circle split] (aristotle) {Aristotle \nodepart{lower} 384BCE-322BCE};
+
+		\node[world, circle split] (eudemus) [below right=of aristotle]{Eudemus of Rhodes \nodepart{lower} 350BCE-290BCE};
+
+		\node[world, circle split] (theophrastus) [below left=of aristotle]{Theophrastus of Eresus \nodepart{lower} 371BCE-287BCE};
+
+		\node[world, circle split] (zenoofc) [below right=of theophrastus]{Zeno of Citium \nodepart{lower} 334BCE-262BCE};
+
+		\node[world, circle split] (cleanthesofa) [below right=of zenoofc]{Cleanthes of Assos \nodepart{lower} 331BCE-232BCE};
+
+		\node[world, circle split] (chrysippus) [below left=of zenoofc]{Chrysippus \nodepart{lower} 280BCE-207BCE};
+
+		\node[world, circle split] (epictetus) [below right=of chrysippus]{Epictetus \nodepart{lower} 50CE-130CE};
+
+	\end{tikzpicture}
+\end{center}
+
+\begin{chronology}[5]{1983}{2010}{10cm}[7cm]
+\event{1984}{\color{blue}{one}}
+\event[1985]{1986}{\small{two}}
+\event{\decimaldate{25}{12}{2001}}{\huge{three}}
+\end{chronology}
+
+\begin{chronology}[10]{-400}{-325}{10cm}[7cm]
+\event[-384]{-322}{Aristotle}
+\end{chronology}
+\begin{chronology}[50]{-400}{-200}{10cm}[7cm]
+\event[-350]{-290}{Eudemus of Rhodes}
+\end{chronology}
+\begin{chronology}[50]{-400}{-200}{10cm}[7cm]
+\event[-371]{-287}{Theophrastus of Eresus}
+\end{chronology}
+\begin{chronology}[50]{-400}{-200}{10cm}[7cm]
+\event[-334]{-262}{Zeno of Citium}
+\end{chronology}

@@ -1,0 +1,485 @@
+\part{Symbolizing}
+\label{ch.symbolizing}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 4: Symbolization}
+\section{Part 4.1: Validity and the ‘Shape' of the argument }
+\label{s:Part 4.1: Validity and the ‘Shape' of the argument }
+Take a look at the following arguments:
+
+\begin{tabular}{p{4.8cm}p{4.8cm}}
+Argument \exarg{ce1}&Argument \exarg{ce2}\\
+It is raining outside.&Jenny is an anarcho-syndicalist.\\
+If it is raining outside, then Jenny is miserable.	&If Jenny is an anarcho-syndicalist, then Dipan is an avid reader of Tolstoy.\\
+Therefore, Jenny is miserable.&Therefore, Dipan is an avid reader of Tolstoy.\\
+\end{tabular}
+
+Both of these arguments are valid (formally valid). We can see the relationship between them (and thereby why they are both formally valid) because they share the same structure. Remember, as I mentioned in the past, validity doesn't care about the truth of the premises, it only cares about whether the conclusion would be true if the premises were. As a result, we can move the level of abstraction up a peg and represent both arguments simply by their structure:
+\begin{center}
+\begin{earg}
+\item[]A
+\item[]If A, then C 
+\item[\therefore] C
+\end{earg}
+\end{center}
+This looks like an excellent argument structure. In fact, as we will see in Module 3 and beyond, this structure is always valid. But, are there any others? Are there any other structures which are always valid? The answer is yes, with absolute certainty. Logic would be a pretty boring subject otherwise. Consider these examples:
+\begin{tabular}{p{4.8cm}p{4.8cm}}
+Argument \exarg{oe1}&Example \exarg{xoe1}\\
+Jenny is either happy or sad.&It’s not the case that Jim both studied hard and acted in lots of plays.\\
+Jenny is not happy&Jim studied hard.\\
+Therefore, Jenny is sad.&Therefore, Jim didn't act in lots of plays.\\
+\end{tabular}
+Both of these arguments are, again, formally valid. This time, however, they are using different structures. For example, the form of argument \ref{oe1} is like this:
+\begin{center}
+\begin{earg}
+\item[]A or B
+\item[]not-A 
+\item[\therefore] B
+\end{earg}
+\end{center}
+This is a pretty intuitive structure and one which you likely have used quite a bit in your life. For example, whenever you have been presented with two options and you can only pick one, once you have a good reason to discount one of them, you get the other one. Argument \ref{xoe1} uses a different form, which is also formally valid. 
+\begin{center}
+\begin{earg}
+\item[]not-(A and B)
+\item[]A 
+\item[\therefore] not-B
+\end{earg}
+\end{center}
+These examples illustrate an important idea, which we might describe as validity in virtue of form. The validity of the arguments just considered has nothing very much to do with the meanings of English expressions like ‘Jenny is miserable’, ‘Dipan is an avid reader of Tolstoy’, or ‘Jim acted in lots of plays’. If it has to do with meanings at all, it is with the meanings of phrases like ‘and’, ‘or’, ‘not,’ and ‘if\ldots, then\ldots’.
+
+In this module, we will be learning to extract the form of various arguments so that you can better see how the arguments are valid or invalid (Module 3) and then later see how these different forms can be combined and used to either make valid arguments from scratch or prove some claim (Module 4 and on). This module is the first step in you learning why a formal (as in concerning the shape or form) logical language works the way it does and how you can use it. The language will be called ‘Propositional Logic', or PL. There are many other formal logical languages out there, but in virtue of their formality, once you know one, you know them all (with only a minor need to change your ‘accent', so to speak).
+\subsection{The Caveat}
+here are plenty of arguments that are valid but not for reasons relating to their form and there are cases where they are invalid both because of form and meaning. Take a look at these examples:\\
+\begin{tabular}{ll}
+Argument \exarg{special1}: &Argument \exarg{special2}:\\
+Juanita is a vixen.&Juanita is a vixen.\\
+Therefore, Juanita is a fox. &Therefore, Juanita is a cathedral.\\
+\end{tabular}
+\begin{tabular}{ll}
+Argument \exarg{special3}: &Argument \exarg{special4}:\\
+The ball is only green. &The ball is only green.\\
+Therefore, the ball is not red. &Therefore, the ball is not shiny.\\
+\end{tabular}\\
+In argument \ref{special1}, it is impossible for the premise to be true and the conclusion false. So the argument is valid. But, this doesn't have to do with the shape of the argument. Rather it concerns the meaning of the words. We saw this type of validity back in Part 2.2, this is conceptual validity. Argument \ref{special2}, on the other hand, doesn't have formal or conceptual validity. There is nothing about being a female fox which entails that they are a large church. It is easy to come up with a counterexample to this reasoning.  Moving to argument \ref{special3} and \ref{special4}, both of these have the same premise, “the ball is only green" which I am interpreting to mean that the ball is monochromatic and green. Since the ball has only one color and that color is green, it makes sense that it's not red. So argument \ref{special3} is conceptually valid. Argument \ref{special4}, on the other hand, is different. There is nothing about the ball being only green which entails some level of reflectivity (shininess). This argument is both conceptually invalid and formally invalid.  
+
+\section{Part 4.2 Propositions (‘Atomic’ Sentences)}
+We started isolating the form of an argument, in Part 4.1, by replacing subsentences of sentences with individual letters. Thus in the first example of this section, ‘it is raining outside’ is a subsentence of ‘If it is raining outside, then Jenny is miserable’, and we replaced this subsentence with ‘A’. Doing so allowed us to see the form of the argument in question. Our logical language, PL, pursues this idea ruthlessly. We start with some capital letters which we will use to represent the simple propositions which are found in the arguments. These simple propositions are the smallest unit of meaning which we can get. For example, “Patty and Bobby are at the party" is a sentence and its meaning is composed of two simple propositions “Patty is at the party" and “Bobby is at the party". These two are joined together with a connective which we will return to in the next pages. These will be the basic building blocks out of which more complex sentences are built. There are only twenty-six letters of the alphabet, but there is no limit to the number of proposition letters that we might want to consider. By adding subscripts to letters, we obtain new \glspl{sentence letter}. So, here are five different sentence letters of PL:
+\begin{center}$A$,$P$,$P_1$,$P_2$,$A_{234}$\end{center}
+
+We will use proposition letters to represent, or symbolize, the meaning behind certain simple English sentences. But, to make it so that others can understand us, we need to provide a \gls{symbolization key}, such as the following:
+\begin{ekey}
+\item[A] It is raining outside
+\item[C] Jenny is miserable
+\end{ekey}
+In doing this, we are not fixing this symbolization once and for all. We are just saying that, for the time being, we will think of the sentence letter of PL, ‘A’, as symbolizing the English sentence ‘It is raining outside’, and the sentence letter of PL, ‘C ’, as symbolizing the English sentence ‘Jenny is miserable’. Later, when we are dealing with different propositions or different arguments, we can provide a new symbolization key; as it might be:
+\begin{earg}
+\item[A] Jenny is an anarcho-syndicalist
+\item[C] Dipan is an avid reader of Tolstoy
+\end{earg}
+It is important to understand that whatever structure an English sentence might have is lost when it is symbolized by a sentence letter of PL. From the point of view of PL, a sentence letter is just a letter. It can be used to build more complex sentences, but it cannot be taken apart. It is worth noting also that we are only going to use these proposition letters for the simplest propositions possible. For example, you might think that the sentences “Billy is happy" and “Billy is not happy" use two different simple propositions. This, however, is not the case. Both use the same simple proposition, namely “Billy is happy", with the first being just that one and the second being composed out of it and a negation. The negation doesn't change the meaning of the proposition, rather it flips the truth value, as we will see later. In Quantified Logic (also called First Order Logic or Predicate Logic), we will be able to break these propositions apart and get a more fine grained language, but this is the starting point to get to that.
+
+\chrysippus
+
+\chapter{Part 5: Introduction to Connectives}
+In Part 4.2, we considered symbolizing fairly basic propositions with letters of PL. This leaves us wanting to deal with the English expressions ‘and’, ‘or’, ‘not’, and so forth. These are \glspl{connective}—they can be used to form new sentences out of old ones. In PL, we will make use of logical connectives to build complex sentences from atomic components. These connectives are sort of like the machinery which allows logic to work. There are five logical connectives in PL. This table summarizes them, and they are explained throughout this part of the module.
+\begin{center}
+\begin{tabular}{l| l| l| l}
+Symbol &What It's Called&Rough Meaning&How to type in Carnap.io\\\hline
+\enot &Negation&"It is not the case that..."&$\sim$\\
+\eand	&Conjunction&"Both ... and ..."&$/\backslash $ \\
+\eor	&Disjunction&"... or ..."&$\backslash/ $\\
+\eif	&Conditional&"If... then ..."&->\\
+\eiff	&Biconditional&"... if and only if ..."&<->\\
+\end{tabular}
+\end{center}
+
+These are not the only connectives of English of interest. Others are, e.g., ‘unless’, ‘neither \ldots nor \ldots ’, and ‘because’. We will see that the first two can be expressed by the connectives we will discuss, while the last cannot. ‘Because’, in contrast to the others, is not truth functional.
+
+\section{Part 5.1 Negation }
+\label{s:Part 5.1 Negation}
+Consider how we might symbolize these sentences:
+\begin{earg}
+	\item[\ex{not1}] Mary is in Barcelona.
+	\item[\ex{not2}] It is not the case that Mary is in Barcelona.
+	\item[\ex{not3}] Mary is not in Barcelona.
+	\end{earg}
+In order to symbolize sentence \ref{not1}, we will need a sentence letter. We might offer this symbolization key:
+	\begin{ekey}
+		\item[B] Mary is in Barcelona.
+	\end{ekey}
+Since sentence \ref{not2} is obviously related to sentence \ref{not1}, we will not want to symbolize it with a completely different sentence letter. Roughly, sentence \ref{not2} means something like ‘It is not the case that B’. In order to symbolize this, we need a symbol for \gls{negation}. We will use ‘\enot ’. Now we can symbolize sentence \ref{not2} with ‘\enot B’.
+Sentence 3 also contains the word ‘not’, and it is obviously equivalent to sentence 2. As such, we can also symbolize it with ‘\enot B’.
+\factoidbox{A sentence can be symbolized as \enot A if it can be paraphrased in English as ‘It is not the case that\ldots ’.}
+It will help to offer a few more examples:
+	\begin{earg}
+		\item[\ex{not4}] The widget can be replaced.
+		\item[\ex{not5}] The widget is irreplaceable.
+		\item[\ex{not5b}] The widget is not irreplaceable.
+	\end{earg}
+Let us use the following representation key:
+	\begin{ekey}
+		\item[R] The widget is replaceable
+	\end{ekey}
+Sentence \ref{not4} can now be symbolized by ‘R’. Moving on to sentence \ref{not5}: saying the widget is irreplaceable means that it is not the case that the widget is replaceable. So even though sentence 5 does not contain the word ‘not’, we will symbolize it as follows: ‘\enot R’.
+Sentence \ref{not5b} can be paraphrased as ‘It is not the case that the widget is irreplaceable.’ Which can again be paraphrased as ‘It is not the case that it is not the case that the widget is replace- able’. So we might symbolize this English sentence with the PL sentence ‘\enot \enot R’.
+But some care is needed when handling negations. Consider:
+	\begin{earg}
+		\item[\ex{not6}] Jane is happy.
+		\item[\ex{not7}] Jane is unhappy.
+	\end{earg}
+If we let the PL-sentence ‘H’ symbolize ‘Jane is happy’, then we can symbolize sentence \ref{not6} as ‘H’. However, it would be a mistake to symbolize sentence \ref{not7} with ‘\enot H’. If Jane is unhappy, then she is not happy; but sentence  \ref{not7} does not mean the same thing as ‘It is not the case that Jane is happy’. Jane might be neither happy nor unhappy; she might be in a state of blank indifference. In order to symbolize sentence  \ref{not7}, then, we would need a new sentence letter of PL.
+\section{Part 5.2: Conjunction}
+\label{s:Part 5.2: Conjunction}
+Consider these sentences:
+	\begin{earg}
+		\item[\ex{and1}]Adam is athletic.
+		\item[\ex{and2}]Barbara is athletic.
+		\item[\ex{and3}]Adam is athletic, and also Barbara is athletic.
+	\end{earg}
+We will need separate sentence letters of PL to symbolize sentences 9 and 10; perhaps
+	\begin{ekey}
+		\item[A] Adam is athletic.
+		\item[B] Barbara is athletic.
+	\end{ekey}
+Sentence \ref{and1} can now be symbolized as ‘A’, and sentence \ref{and2} can be symbolized as ‘B’. Sentence \ref{and3} roughly says ‘A and B’. We need another symbol, to deal with ‘and’. We will use ‘\eand’. Thus we will symbolize it as ‘(A\eand B)’. This connective is called \gls{conjunction}. We also say that ‘A’ and ‘B’ are the two \glspl{conjunct} of the conjunction ‘(A\eand B)’.
+Notice that we make no attempt to symbolize the word ‘also’ in sentence  \ref{and3}. Words like ‘both’ and ‘also’ function to draw our attention to the fact that two things are being conjoined. Maybe they affect the emphasis of a sentence, but we will not (and cannot) symbolize such things in PL.
+Some more examples will bring out this point:
+	\begin{earg}
+		\item[\ex{and4}]Barbara is athletic and energetic.
+		\item[\ex{and5}]Barbara and Adam are both athletic.
+		\item[\ex{and6}]Although Barbara is energetic, she is not athletic.
+		\item[\ex{and7}]Adam is athletic, but Barbara is more athletic than him.
+	\end{earg}
+Sentence \ref{and4} is obviously a conjunction. The sentence says two things (about Barbara). In English, it is permissible to refer to Barbara only once. It might be tempting to think that we need to symbolize sentence \ref{and4} with something along the lines of ‘B and energetic’. This would be a mistake. Once we symbolize part of a sentence as ‘B’, any further structure is lost, as ‘B’ is a sentence letter of PL. Conversely, ‘energetic’ is not an English sentence at all. What we are aiming for is something like ‘B and Barbara is energetic’. So we need to add another sentence letter to the symbolization key. Let ‘E’ symbolize ‘Barbara is energetic’. Now the entire sentence can be symbolized as ‘(B\eand E)’.
+
+Sentence \ref{and5} says one thing about two different subjects. It says of both Barbara and Adam that they are athletic, even though in English we use the word ‘athletic’ only once. The sentence can be paraphrased as ‘Barbara is athletic, and Adam is athletic’. We can symbolize this in PL as ‘(B\eand A)’, using the same symbolization key that we have been using.
+
+Sentence \ref{and6} is slightly more complicated. The word ‘although’ sets up a contrast between the first part of the sentence and the second part. Nevertheless, the sentence tells us both that Barbara is energetic and that she is not athletic. In order to make each of the conjuncts a sentence letter, we need to replace ‘she’ with ‘Barbara’. So we can paraphrase sentence 14 as, ‘Both Barbara is energetic, and Barbara is not athletic’. The second conjunct contains a negation, so we paraphrase further: ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. Now we can symbolize this with the PL sentence ‘(E\eand \enot B)’. Note that we have lost all sorts of nuance in this symbolization. There is a distinct difference in tone between sentence \ref{and6} and ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. PL does not (and cannot) preserve these nuances.
+
+Sentence \ref{and7} raises similar issues. There is a contrastive structure, but this is not something that PL can deal with. So we can paraphrase the sentence as ‘Both Adam is athletic, and Barbara is more athletic than Adam’. (Notice that we once again replace the pronoun ‘him’ with ‘Adam’.) How should we deal with the second conjunct? We already have the sentence letter ‘A’, which is being used to symbolize ‘Adam is athletic’, and the sentence ‘B’ which is being used to symbolize ‘Barbara is athletic’; but neither of these concerns their relative athleticity. So, to symbolize the entire sentence, we need a new sentence letter. Let the PL sentence ‘R’ symbolize the English sentence ‘Barbara is more athletic than Adam’. Now we can symbolize sentence  \ref{and7} by ‘(A\eand R)’.
+
+\factoidbox{A sentence can be symbolized as (A\eand B) if it can be paraphrased in English as ‘Both\ldots , and\ldots ’, or as ‘\ldots , but \ldots ’, or as ‘although \ldots , \ldots ’.}
+
+You might be wondering why we put brackets around the conjunctions. The reason can be brought out by thinking about how negation interacts with conjunction. Consider:
+	\begin{earg}
+		\item[\ex{negcon1}] It's not the case that you will get both soup and salad.
+		\item[\ex{negcon2}] You will not get soup but you will get salad.
+	\end{earg}
+Sentence \ref{negcon1} can be paraphrased as ‘It is not the case that: both you will get soup and you will get salad’. Using this symbolization key:
+	\begin{ekey}
+		\item[S_1] You will get soup.
+		\item[S_2] You will get salad.
+	\end{ekey}
+we would symbolize ‘both you will get soup and you will get salad’ as ‘($S_1$\eand $S_2$)’. To symbolize sentence  \ref{negcon1}, then, we simply negate the whole sentence, thus: ‘\enot ($S_1$\eand $S_2$)’.
+Sentence \ref{negcon2} is a conjunction: you will not get soup, and you will get salad. ‘You will not get soup’ is symbolized by ‘\enot $S_1$’. So to symbolize sentence  \ref{negcon2} itself, we offer ‘(\enot $S_1$\eand $S_2$)’. These English sentences are very different, and their symbolizations differ accordingly. In one of them, the entire conjunction is negated. In the other, just one conjunct is negated. Brackets help us to keep track of things like the scope of the negation.
+\section{Part 5.3 Disjunction}
+\label{s:Part 5.3 Disjunction}
+Consider these sentences:
+	\begin{earg}
+		\item[\ex{or1}]Either Fatima will play videogames, or she will watch movies.
+		\item[\ex{or2}]Either Fatima or Omar will play videogames.
+	\end{earg}
+For these sentences we can use this symbolization key:
+	\begin{ekey}
+		\item[F] Fatima will play videogames.
+		\item[O] Omar will play videogames.
+		\item[M] Fatima will watch movies.
+	\end{ekey}
+However, we will again need to introduce a new symbol. Sentence \ref{or1} is symbolized by ‘(F\eor M)’. The connective is called \gls{disjunction}. We also say that ‘F ’ and ‘M ’ are the \glspl{disjunct} of the disjunction ‘(F\eor M)’.
+Sentence \ref{or2} is only slightly more complicated. There are two subjects, but the English sentence only gives the verb once. However, we can paraphrase sentence \ref{or2} as ‘Either Fatima will play videogames, or Omar will play videogames’. Now we can obviously symbolize it by ‘(F\eor O)’ again.
+
+\factoidbox{A sentence can be symbolized as (A\eor B) if it can be paraphrased in English as ‘Either\ldots , or\ldots .’}
+
+Sometimes in English, the word ‘or’ is used in a way that excludes the possibility that both disjuncts are true. This is called an exclusive or. An exclusive or is clearly intended when it says, on a restaurant menu, ‘Entrees come with either soup or salad’: you may have soup; you may have salad; but, if you want both soup and salad, then you have to pay extra.
+At other times, the word ‘or’ allows for the possibility that both disjuncts might be true. This is probably the case with sentence \ref{or2}, above. Fatima might play videogames alone, Omar might play videogames alone, or they might both play. Sentence \ref{or2} merely says that at least one of them plays videogames. This is an inclusive or. The PL symbol ‘\eor’ always symbolizes an inclusive or.
+
+It will also help to see how negation interacts with disjunction. Consider:
+	\begin{earg}
+		\item[\ex{or3}] Either you will not have soup, or you will not have salad.
+		\item[\ex{or4}] You will have neither soup nor salad.
+		\item[\ex{or.xor}] You get either soup or salad, but not both.
+	\end{earg}
+
+Using the same symbolization key as before, sentence \ref{or3} can be paraphrased in this way: ‘Either it is not the case that you get soup, or it is not the case that you get salad’. To symbolize this in PL, we need both disjunction and negation. ‘It is not the case that you get soup’ is symbolized by ‘\enot $S_1$’. ‘It is not the case that you get salad’ is symbolized by ‘\enot $S_2$’. So sentence \ref{or3} itself is symbolized by ‘(\enot $S_1$\eor \enot $S_2$)’.
+
+Sentence \ref{or4} also requires negation. It can be paraphrased as, ‘It is not the case that: either you get soup or you get salad’. Since this negates the entire disjunction, we symbolize sentence \ref{or4} with ‘\enot ($S_1$\eor $S_2$)’.
+
+Sentence \ref{or.xor} is an exclusive or. We can break the sentence into two parts. The first part says that you get one or the other. We symbolize this as ‘($S_1$\eor $S_2$)’. The second part says that you do not get both. We can paraphrase this as: ‘It is not the case both that you get soup and that you get salad’. Using both negation and conjunction, we symbolize this with ‘\enot ($S_1$\eand $S_2$)’. Now we just need to put the two parts together. As we saw above, ‘but’ can usually be symbolized with ‘\eand’. So sentence \ref{or.xor} can be symbolized as ‘(($S_1$\eor $S_2$)\eand \enot ($S_1$\eand $S_2$))’.
+
+This last example shows something important. Although the PL symbol ‘\eor’ always symbolizes inclusive or, we can symbolize an exclusive or in PL. We just have to use a few other symbols as well.
+\section{Part 5.4: Conditionals} 
+Consider these sentences:
+	\begin{earg}
+		\item[\ex{if1}] If Jean is in Paris, then Jean is in France.
+		\item[\ex{if2}] Jean is in France only if Jean is in Paris.
+	\end{earg}
+Let's use the following symbolization key:
+	\begin{ekey}
+		\item[P] Jean is in Paris.
+		\item[F] Jean is in France
+	\end{ekey}
+Sentence \ref{if1} is roughly of this form: ‘if P, then F’. We will use the symbol ‘\eif’ to symbolize this ‘if\ldots, then\ldots’ structure. So we symbolize sentence \ref{if1} by ‘(P\eif F)’. The connective is called the \gls{conditional}. Here, ‘P’ is called the \gls{antecedent} of the conditional ‘(P\eif F)’, and ‘F’ is called the \gls{consequent}.
+
+Sentence \ref{if2} is also a conditional. Since the word ‘if’ appears in the second half of the sentence, it might be tempting to symbolize this in the same way as sentence \ref{if1}. That would be a mistake. Your knowledge of geography tells you that sentence \ref{if1} is unproblematically true: there is no way for Jean to be in Paris that doesn’t involve Jean being in France. But sentence \ref{if2} is not so straightforward: were Jean in Dieppe, Lyons, or Toulouse, Jean would be in France without being in Paris, thereby rendering sentence \ref{if2} false. Since geography alone dictates the truth of sentence \ref{if1}, whereas travel plans (say) are needed to know the truth of sentence \ref{if2}, they must mean different things.
+In fact, sentence \ref{if2} can be paraphrased as ‘If Jean is in France, then Jean is in Paris’. So we can symbolize it by ‘(F\eif P)’.
+
+\factoidbox{A sentence can be symbolized as A\eif B if it can be paraphrased in English as ‘If A, then B’ or ‘A only if B’.}
+
+\subsection{Necessary and Sufficient Conditions}
+
+The conditional can be used to represent many different expressions in Englsih. You may have heard or used phrases like ``for\ldots, it is necessary that\ldots'' or ``for\ldots, it is sufficient that\ldots''. Consider:
+\begin{earg}
+		\item[\ex{ifnec1}] For a number to be prime greater than 2, it is necessary that it be odd.
+		\item[\ex{ifnec2}] It is a necessary condition on a number being a prime greater than 2 that it be odd.
+		\item[\ex{ifsuf1}] For Jean to be in France, it is sufficient that Jean be in Paris.
+		\item[\ex{ifsuf2}] It is a sufficient condition on Jean's being in France that she be in Paris.
+	\end{earg}
+Sentences \ref{ifnec1} and \ref{ifnec2} are examples of sentences which give \glspl{necessary condition}. It is, as the name implies, what is necessary for something to be the case (in this case a number being prime greater than 2). This can be paraphrased as ``if a number is a prime greater than 2, then it is odd'' and can be symbolized using the conditional as ``N\eif O''. In PL, the necessary condition is the \emph{consequent} of a conditional. This is whatever is entailed by the antecedent. As a result, the truth of the antecedent guarantees the truth of the consequent. This is important because the \emph{falsity} of the necessary condition (the conequent) entails the \emph{falsity} of the antecedent. Sentences \ref{ifnec1} and \ref{ifnec2} tell us that if a number is \emph{even} and greater than 2, then it is not prime. 
+
+Sentences \ref{ifsuf1} and \ref{ifsuf2} use the word `sufficient'. In this context, it is used to give a \gls{sufficient condition}. A sufficient condition for something to be the case is whatever is `just enough' to guarantee it being the case. It is possible for the condition to be false and the state of affairs to still hold but if the sufficient condition obtains, then it will be the case, guaranteed. For example, it is impossible for Jean to be in Paris without being in France (Paris is in France). We can paraphrase sentences \ref{ifsuf1} and \ref{ifsuf2} as ``if Jean is in Paris, then she is in France'' and then symbolize it as `P\eif F'. It is possible for Jean to be in France without being in Paris, for example, Jean could be in Bordeaux. Being in Bordeaux is sufficient for being in France as well, though it is impossible for a person to be in Bordeaux and Paris at the same time. This means that the falsity of a sufficient condition (the antecedent) does not entail the falsity of the consequent, though the falsity of the necessary condition will entail the falsity of the antecedent. 
+
+\newglossaryentry{sufficient condition}
+{
+name=sufficient condition,
+description={\metav{A} is a sufficient condition for \metav{B} when it is impossible for \metav{A} to be true while \metav{B} is false. That is to say that \metav{A} implies \metav{B}. We symbolize this as \metav{A}\eif\metav{B}}
+}
+
+\newglossaryentry{necessary condition}
+{
+name=necessary condition,
+description={\metav{A} is a necessary condition for \metav{B} when it is impossible for \metav{B} to be true while \metav{A} is false; \metav{B} implies \metav{A}. This is symbolized as \metav{B}\eif\metav{A}},
+plural=necessary conditions
+} 
+
+It is important to bear in mind that the connective ‘\eif’ tells us only that, if the antecedent is true, then the consequent is true. It says nothing about a causal connection between two events (for example). In fact, we lose a huge amount when we use ‘\eif’ to symbolize English conditionals. A very common metaphor which I will use in describing how the operations on conditionals work relies on the idea that it's causation. This is a metaphor, however, and should not be taken literally. 
+\subsection{Unless}
+Now that we have the symbols for conditionals and disjunctions, we can discuss one of the more tricky connectives in English (though other natural languages likely have a connective similar in meaning). This connective is ‘unless'. Take a look at these examples:
+\begin{earg}
+\item[\ex{unless1}] Unless you wear a jacket, you will catch a cold.
+\item[\ex{unless2}] You will catch a cold unless you wear a jacket.
+\end{earg}
+These two sentences are clearly equivalent. To symbolize them, we will use the symbolization key:
+	\begin{ekey}
+		\item[J] You will wear a jacket.
+		\item[D] You will catch a cold.
+	\end{ekey}
+Both sentences mean that if you do not wear a jacket, then you will catch a cold. With this in mind, we might symbolize them as ‘(\enot J\eif D)’. Equally, both sentences mean that if you do not catch a cold, then you must have worn a jacket. With this in mind, we might symbolize them as ‘(\enot D\eif J)’.
+Equally, both sentences mean that either you will wear a jacket or you will catch a cold. With this in mind, we might symbolize them as ‘(J\eor D)’.
+All three are correct symbolizations. Indeed, when we get to rules of replacement (also called equivalency rules) we will have the tools to move between these translations with ease and know that all three of these symbolizations are the same.
+
+\factoidbox{If a sentence can be paraphrased as ‘Unless A, B,’ then it can be symbolized as ‘(A\eor B)’.}
+
+Again, though, there is a little complication. ‘Unless’ can be symbolized as a conditional; but as we said above, people often use the conditional (on its own) when they mean to use the biconditional (next section). Equally, ‘unless’ can be symbolized as a disjunction; but there are two kinds of disjunction (exclusive and inclusive). So it will not surprise you to discover that ordinary speakers of English often use ‘unless’ to mean something more like the biconditional, or like exclusive disjunction. Suppose someone says: ‘I will go running unless it rains’. They probably mean something like ‘I will go running if and only if it does not rain’ (i.e., the biconditional), or ‘either I will go running or it will rain, but not both’ (i.e., exclusive disjunction). Again: be aware of this when interpreting what other people have said, but be precise in your writing. Understanding the intent behind a phrase is essential to translation and also basic understanding of each other. 
+
+\section{Part 5.5: Biconditional}
+Consider these sentences:
+	\begin{earg}
+		\item[\ex{iff1}] Laika is a dog only if she is a mammal
+		\item[\ex{iff2}] Laika is a dog if she is a mammal
+		\item[\ex{iff3}] Laika is a dog if and only if she is a mammal
+	\end{earg}
+We will use the following symbolization key:
+	\begin{ekey}
+		\item[D] Laika is a dog
+		\item[M] Laika is a mammal
+	\end{ekey}
+Sentence \ref{iff1} can paraphrased as `if Laika is a dog, then she is a mammal' and therefore can be symbolised by ‘D\eif M’. This sentence is claiming that being a dog is sufficient condition for being a mammal. This should be seen as true, dogs are mammals, after all, but not all mammals are dogs. 
+
+Sentence \ref{iff2} is importantly different. It can be paraphrased as, ‘If Laika is a mammal then Laika is a dog’. So it can be symbolized by ‘M\eif D’. This sentence is claiming that Laika being a dog is necessary for her being a mammal. More broadly, it is claiming that all mammals are dogs. This should be seen as false because there are some mammals, like humans, cats, and sloths, which are mammals but not dogs. 
+
+Sentence \ref{iff3} says something stronger than either \ref{iff1} or \ref{iff2}. It can be paraphrased as ‘Laika is a dog if Laika is a mammal, and Laika is a dog only if Laika is a mammal’. This is just the conjunction of sentences \ref{iff1} and \ref{iff2}. It is claiming that Laika being a dog is both necessary and sufficient for being a mammal. So, we can symbolize it as ‘(D\eif M)\eand (M\eif D)’. We call this a \gls{biconditional}, because it amounts to stating both directions of the conditional.
+We could treat every biconditional this way. So, just as we do not need a new PL symbol to deal with exclusive or, we do not really need a new PL symbol to deal with biconditionals. Because the biconditional occurs so often, however, we will use the symbol ‘\eiff’ for it. We can then symbolize sentence \ref{iff3} with the PL sentence ‘D\eiff M’.
+The expression ‘if and only if’ occurs a lot especially in philosophy, mathematics, and logic. For brevity, we can abbreviate it with the snappier word ‘iff’. We will follow this practice. So ‘if’ with only one ‘f’ is the English conditional. But ‘iff’ with two ‘f’s is the English biconditional. Armed with this we can say:
+\factoidbox{A sentence can be symbolized as A\eiff B if it can be paraphrased in English as ‘A iff B’; that is, as ‘A if and only if B’.}
+A word of caution. Ordinary speakers of English often use ‘if \ldots , then\ldots ’ when they really mean to use something more like ‘\ldots if and only if \ldots ’. Perhaps your parents told you, when you were a child: ‘if you don’t eat your meat, you won’t get any pudding’. Suppose you ate your meat, but that your parents refused to give you any dessert, on the grounds that they were only committed to the conditional (roughly ‘if you get dessert, then you will have eaten your meat’), rather than the biconditional (roughly, ‘you get dessert iff you eat your meat’). Well, a tantrum would rightly ensue. So, be aware of this when interpreting people; but in your own writing, make sure you use the biconditional iff you mean to.
+
+\russell
+
+\chapter{Part 6: More Complex Sentences in PL}
+\section{Part 6.1: Expressions}
+\label{s:Part 6.1: Expressions}
+We have seen that there are three kinds of symbols in PL:
+\begin{center}
+\begin{tabular}{l l}
+Atomic sentences & $A,B,C,\ldots,Z$\\
+with subscripts, as needed & $A_1, B_1,Z_1,A_2,A_{25},J_{375},\ldots$\\
+\\
+Connectives & $\enot,\eand,\eor,\eif,\eiff$\\
+\\
+Brackets &( ,)\\
+\end{tabular}
+\end{center}
+Define an expression of PL as any string of symbols of PL. So: write down any sequence of symbols of PL, in any order, and you have an expression of PL.
+\section{Part 6.2: Sentences}
+Given what we just said, ‘A\eand B’ is an expression of PL, and so is ‘\enot) (\eor ()\eand (\enot\enot()) ( (B’. But the former is a sentence, and the latter is gibberish. We want some rules to tell us which PL expressions are sentences.
+
+Obviously, individual sentence letters like ‘A’ and ‘$G_{13}$’ should count as sentences. (We’ll also call them atomic sentences.) We can form further sentences out of these by using the various connectives. Using negation, we can get ‘\enot A’ and ‘\enot $G_{13}$’. Using conjunction, we can get ‘(A\eand $G_{13}$)’, ‘($G_{13}$\eand A)’, ‘(A\eand A)’, and ‘($G_{13}$\eand $G_{13}$)’. We could also apply negation repeatedly to get sentences like ‘\enot\enot A’ or apply negation along with conjunction to get sentences like ‘\enot(A\eand $G_{13}$)’ and ‘\enot($G_{13}$\eand \enot $G_{13}$)’. The possible combinations are endless, even starting with just these two sentence letters, and there are infinitely many sentence letters. So there is no point in trying to list all the sentences one by one.
+
+Instead, we will describe the process by which sentences can be constructed. Consider negation: Given any sentence A of PL, \enot A is a sentence of PL. We can say similar things for each of the other connectives. For instance, if A and B are sentences of PL, then (A\eand B) is a \gls{sentence of PL}. Providing clauses like this for all of the connectives, we arrive at the following formal definition for a sentence of PL:
+\factoidbox{\label{PLsentences}
+	\begin{enumerate}
+		\item Every sentence letter is a sentence.
+		\item If \metav{A} is a sentence, then $\enot\metav{A}$ is a sentence.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eand\metav{B})$ is a sentence.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eor\metav{B})$ is a sentence.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eif\metav{B})$ is a sentence.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eiff\metav{B})$ is a sentence.
+		\item Nothing else is a sentence.
+	\end{enumerate}
+	}
+Definitions like this are called inductive. inductive definitions begin with some specifiable base elements, and then present ways to generate indefinitely many more elements by compounding together previously established ones. To give you a better idea of what an inductive definition is, we can give an inductive definition of the idea of an ancestor of mine. We specify a base clause.
+	\begin{ebullet}
+		\item My parents are ancestors of mine.
+	\end{ebullet}
+and then offer further clauses like:
+	\begin{ebullet}
+		\item If $x$ is an ancestor of mine, then $x$'s parents are ancestors of mine.
+		\item Nothing else is an ancestor of mine.
+	\end{ebullet}
+Using this definition, we can easily check to see whether someone is my ancestor: just check whether she is the parent of the parent of\ldots one of my parents. And the same is true for our inductive definition of sentences of PL. Just as the inductive definition allows complex sentences to be built up from simpler parts, the definition allows us to decompose sentences into their simpler parts. Once we get down to sentence letters, then we know we are ok.
+
+Let’s consider some examples.
+
+Suppose we want to know whether or not ‘\enot\enot\enot D’ is a sentence of PL. Looking at the second clause of the definition, we know that ‘\enot\enot\enot D’ is a sentence if ‘\enot\enot D’ is a sentence. So now we need to ask whether or not ‘\enot\enot D’ is a sentence. Again looking at the second clause of the definition, ‘\enot\enot D’ is a sentence if ‘\enot D’  is. So, ‘\enot D’ is a sentence if ‘D’ is a sentence. Now ‘D’ is a sentence letter of PL, so we know that ‘D’ is a sentence by the first clause of the definition. So for a compound sentence like ‘\enot\enot\enot D’, we must apply the definition repeatedly. Eventually we arrive at the sentence letters from which the sentence is built up.
+
+Next, consider the example ‘\enot(P\eand \enot(\enot Q\eor  R))’. Looking at the second clause of the definition, this is a sentence if ‘(P\eand \enot(\enot Q\eor R))’ is, and this is a sentence if both ‘P ’ and ‘\enot(\enot Q\eor  R)’ are sentences. The former is a sentence letter, and the latter is a sentence if ‘(\enot Q\eor  R)’ is a sentence. It is. Looking at the fourth clause of the definition, this is a sentence if both ‘\enot Q’ and ‘R’ are sentences, and both are!
+
+Ultimately, every sentence is constructed nicely out of sentence letters. When we are dealing with a sentence other than a sentence letter, we can see that there must be some sentential connective that was introduced last, when constructing the sentence. We call that connective the \gls{main logical operator} of the sentence. In the case of ‘\enot\enot\enot D’, the main logical operator is the very first ‘\enot’ sign. In the case of ‘(P\eand \enot(\enot Q\eor R))’, the main logical operator is ‘\eand’. In the case of ‘( (\enot E\eor  F) \eif  \enot\enot G)’, the main logical operator is ‘\eif ’.
+
+As a general rule, you can find the main logical operator for a sentence by using the following method:
+\begin{ebullet}
+	\item[\textbullet] If the first symbol in the sentence is `$\enot$', then that is the main logical operator
+	\item[\textbullet] Otherwise, start counting the brackets. For each open-bracket, i.e., `(', add $1$; for each closing-bracket, i.e., `$)$', subtract $1$. When your count is at exactly $1$, the first operator you hit (\emph{apart} from a `$\enot$') is the main logical operator.
+\end{ebullet}
+(Note: if you do use this method, then make sure to include all the brackets in the sentence, rather than omitting some as per the conventions of in the next page!)
+The inductive structure of sentences in PL will be important when we consider the circumstances under which a particular sentence would be true or false. The sentence ‘\enot\enot\enot D’ is true if and only if the sentence ‘\enot\enot D’ is false, and so on through the structure of the sentence, until we arrive at the atomic components. We will return to this point later on.
+The inductive structure of sentences in PL also allows us to give a formal definition of the scope of a negation (mentioned in §5.2). The scope of a ‘\enot’ is the subsentence for which ‘\enot’ is the main logical operator. Consider a sentence like:
+\begin{center}(P\eand (\enot(R\eand B) \eiff  Q))\end{center}
+which was constructed by conjoining ‘P ’ with ‘(\enot(R\eand B) \eiff  Q)’. This last sentence was constructed by placing a biconditional between ‘\enot(R\eand B)’ and ‘Q’. The former of these sentences—a subsentence of our original sentence—is a sentence for which ‘\enot’ is the main logical operator. So the scope of the negation is just ‘\enot(R\eand B)’. More generally:
+\factoidbox{The scope of a connective (in a sentence) is the subsentence for which that connective is the main logical operator.}
+\section{Part 6.3: Brackets}
+Strictly speaking, the brackets in ‘(Q \eand  R)’ are an indispensable part of the sentence. Part of this is because we might use ‘(Q \eand R)’ as a subsentence in a more complicated sentence. For example, we might want to negate ‘(Q \eand  R)’, obtaining ‘ \enot (Q \eand  R)’. If we just had ‘Q \eand R’ without the brackets and put a negation in front of it, we would have ‘ \enot Q \eand  R’. It is most natural to read this as meaning the same thing as ‘( \enot Q \eand R)’, but as we saw in earlier, this is very different from ‘\enot(Q \eand  R)’.
+Strictly speaking, then, ‘Q \eand  R’ is not a sentence. It is a mere expression.
+
+When working with PL, however, it will make our lives easier if we are sometimes a little less than strict. So, here are some convenient conventions.
+
+First, we allow ourselves to omit the outermost brackets of a sentence. Thus we allow ourselves to write ‘Q \eand  R’ instead of the sentence ‘(Q \eand  R)’. However, we must remember to put the brackets back in, when we want to embed the sentence into a more complicated sentence!
+
+Second, it can be a bit painful to stare at long sentences with many nested pairs of brackets. To make things a bit easier on the eyes, we will allow ourselves to use square brackets, ‘[’ and ‘]’, instead of rounded ones. So there is no logical difference between ‘(P \eor  Q)’ and ‘[P \eor  Q]’, for example.
+Combining these two conventions, we can rewrite the unwieldy sentence
+\begin{center}(((H\eif I)\eor (I\eif H))\eand (J\eor K))\end{center}
+rather more clearly as follows:
+\begin{center}[(H\eif I)\eor (I\eif H)]\eand (J\eor K)\end{center} 
+The scope of each connective is now much easier to pick out.
+
+\newglossaryentry{sentence letter}
+{
+name=sentence letter,
+description={An letter used to represent a basic sentence in PL},
+plural=sentence letters
+}
+\newglossaryentry{atomic sentence}
+{
+name=atomic sentence,
+description={An expression used to represent a basic sentence; a sentence letter in PL, or a predicate symbol followed by names in QL}
+}
+
+\newglossaryentry{symbolization key}
+{
+name=symbolization key,
+description={A list that shows which English sentences are represented by which \glspl{sentence letter} in PL}
+}
+
+\newglossaryentry{connective}
+{
+name=connective,
+description={A logical operator in PL used to combine \glspl{sentence letter} into larger sentences},
+plural=connectives
+}
+
+\newglossaryentry{negation}
+{
+name=negation,
+description={The symbol \enot, used to represent words and phrases that function like the English word ``not''}
+}
+
+\newglossaryentry{conjunction}
+{
+name=conjunction,
+description={The symbol \eand, used to represent words and phrases that function like the English word ``and''; or a sentence formed using that symbol}
+}
+
+\newglossaryentry{conjunct}
+{
+name=conjunct,
+description={A sentence joined to another by a \gls{conjunction}},
+plural=conjuncts
+}
+
+\newglossaryentry{disjunction}
+{
+name=disjunction,
+description={The connective \eor, used to represent words and phrases that function like the English word ``or'' in its inclusive sense; or a sentence formed by using this connective}
+}
+
+\newglossaryentry{disjunct}
+{
+name=disjunct,
+description={A sentence joined to another by a \gls{disjunction}},
+plural=disjuncts
+}
+
+\newglossaryentry{conditional}
+{
+name=conditional,
+description={The symbol \eif, used to represent words and phrases that function like the English phrase ``if \dots{} then \dots''; a sentence formed by using this symbol}
+}
+
+\newglossaryentry{antecedent}
+{
+name=antecedent,
+description={The sentence on the left side of a \gls{conditional}}
+}
+
+
+\newglossaryentry{consequent}
+{
+name=consequent,
+description={The sentence on the right side of a \gls{conditional}}
+}
+
+\newglossaryentry{biconditional}
+{
+name=biconditional,
+description={The symbol \eiff, used to represent words and phrases that function like the English phrase ``if and only if''; or a sentence formed using this connective}
+}
+
+\newglossaryentry{sentence of PL}
+{
+name=sentence (of PL),
+description={A string of symbols in PL that can be built up according to the inductive rules given on p.~\pageref{PLsentences}}
+}
+
+\newglossaryentry{main logical operator}
+{
+name=main connective,
+description={The last connective that you add when you assemble a sentence using the inductive definition}
+}
+
+\newglossaryentry{object language}
+{
+name=object language,
+description={A language that is constructed and studied by logicians. In this textbook,
+ the object languages are PL and QL}
+}
+
+\newglossaryentry{metalanguage}
+{
+name=metalanguage,
+description={The language logicians use to talk about the object language. In this textbook, the metalanguage is English, supplemented by certain symbols like metavariables and technical terms like ``valid''}
+}
+
+        \newglossaryentry{metavariables}
+{
+name=metavariables,
+description={A variable in the metalanguage that can represent any sentence in the object language}
+}

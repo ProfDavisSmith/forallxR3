@@ -1,0 +1,559 @@
+\part{Natural Deduction 1}
+\label{ch.plnd1}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 12 Natural Deduction}
+\section{Part 12: The Very Idea Of Natural Deduction}
+Way back in Part 2, we said that an argument is valid iff there is no case in which all of the premises are true and the conclusion is false. In the case of PL, this led us to develop truth tables. Each line of a complete truth table corresponds to a valuation. So, when faced with a PL argument, we have a very direct way to assess whether there is a valuation on which the premises are true and the conclusion is false: just thrash through the truth table. Truth tables, however, may not give us much insight and they are only good after the fact; on their own, truth tables don't give much in the way of guidance for how to construct valid arguments in real-world scenarios and they can't, necessarily, give us methods of inference which we can use in our daily lives. Consider two arguments in PL:
+\begin{earg}
+\item[]P\eor Q, \enot P $\vDash$ Q
+\item[]P\eif Q, P $\vDash$ Q
+\end{earg}
+Clearly, these are valid arguments. You can confirm that they are valid by constructing four-line truth tables, but we might say that they make use of different forms of reasoning. The way they get to the conclusion is fundamentally different, not just in the premises which are used. There are two different tricks, or inference rules at play in this arguments. It might be nice to keep track of these different forms of inference so that we could use them later in our arguments and be certain that the reasoning is valid. This is like adding a tool to your tool chest, so you can have it when needed later.
+
+One of the aims of a natural deduction system, like this one, is to show that particular arguments are valid, this is the role of truth tables. Another goal is to give us an understanding of the reasoning the arguments might involve so that we can replicate it elsewhere.
+
+We begin with very basic rules of inference. These rules can be combined to offer more complicated arguments. Indeed, with just a small starter pack of rules of inference, we hope to capture all valid arguments (eventually, you will have all the rules necessary). This is a very different way of thinking about arguments. With truth tables, we directly consider different ways to make sentences true or false. With natural deduction, we manipulate sentences in accordance with rules that we have set down as good rules. The latter promises to give us a better insight—or at least, a different insight—into how arguments work.
+
+The move to natural deduction might be motivated by more than the search for insight. It might also be motivated by necessity. Consider:
+\begin{center}
+$A_1$\eif $C_1$ $\vDash$ ($A_1$\eand $A_2$\eand $A_3$\eand $A_4$\eand $A_5$)\eif  ($C_1$\eor $C_2$\eor $C_3$\eor $C_4$\eor $C_5$)
+\end{center}
+To test this argument for validity, you might use a 1024-line truth table. If you do it correctly, then you will see that there is no line on which all the premises are true and on which the conclusion is false. So you will know that the argument is valid. (But, as just mentioned, there is a sense in which you will not know why the argument is valid.) But now consider:
+\begin{center}
+$A_1$\eif $C_1$ $\vDash$ \\
+($A_1$\eand $A_2$\eand $A_3$\eand $A_4$\eand $A_5$\eand $A_6$\eand $A_7$\eand $A_8$\eand $A_9$\eand $A_{10}$)\eif \\ ($C_1$\eor $C_2$\eor $C_3$\eor $C_4$\eor $C_5$\eor $C_6$\eor $C_7$\eor $C_8$\eor $C_9$\eor $C_{10}$)
+\end{center}
+This argument is also valid—as you can probably tell—but to test it requires a truth table with $2^{20}$ = 1048576 lines. In principle, we can set a machine to grind through truth tables and report back when it is finished. In practice, complicated arguments in PL can become intractable if we use truth tables. This problem gets even worse once we get into Quantified Logic (QL) (starting in Module 6). There is nothing like the truth table test for QL (though we will have some methods to get the same kind of tests). To assess whether or not an argument is valid, we have to reason about all interpretations, but, as we will see, there are infinitely many possible interpretations. We cannot even in principle set a machine to grind through infinitely many possible interpretations and report back when it is finished: it will never finish. We either need to come up with some more efficient way of reasoning about all interpretations, or we need to look for something different. That said, there are, indeed, systems that codify ways to reason about all possible interpretations. They were developed in the 1950s by Evert Beth and Jaakko Hintikka, but we will not follow this path. We will, instead, look to natural deduction.
+
+Rather than reasoning directly about all valuations (in the case of PL), we will try to select a few basic rules of inference. Some of these will govern the behavior of the connectives. Others will govern the behavior of the quantifiers and identity that are the hallmarks of QL (to be clear, QL deals in statements which concern quantity, relations, and identity, such as "all cats are mammals", "Whoopi Goldberg is Caryn Johnson",  and "some people like scary movies). The resulting system of rules will give us a new way to think about the validity of arguments. The modern development of natural deduction dates from simultaneous and unrelated papers by Gerhard Gentzen and Stanisław Jaśkowski (1934). However, the natural deduction system that we will consider is based largely around work by Frederic Fitch (first published in 1952). Once you have all of the rules ('moves' you can use in natural deduction), you will be able to show that an arguement is valid by making a proof and invalid by making a short-form (single line) truth table. 
+
+
+\chapter{Part 13 The Basic Rules of PL}
+From this point on, we will be developing an understanding of a natural deduction system. Notice that I said 'a natural deduction system', there are others just like how there are other mathematical systems and legal systems aside from the ones we are accustomed to. The interesting thing about mathematical and natural deduction systems is that they all are fundamentally based on the same general principles (mathematical systems are based on different principles than natural deduction systems, however). As a result, once you know one system, you know them all. I may have used this metaphor before but this is a lot like learning a language. Once you know the language, and I mean really know it, then you can use it to understand others and be understood by them, you might just need to change your accent. For this system, there is a nice nomenclature (naming-system) for the different inference rules which naturally sorts them in to nice, bite-sized, chunks. For each connective, there will be introduction rules, which allow us to prove a sentence which has that connective as the main logical operator (we are introducing the connective into the sentence), and elimination rules, which allow us to prove something from a sentence which has that connective as the main logical operator (we are removing that connective from the sentence, in a sense).
+\factoidbox{
+A formal proof or derivation is a sequence of sentences, some of which are marked as being initial assumptions (or premises). The last line of the formal proof is the conclusion. (Henceforth, we will simply call these ‘proofs’ or ‘derivations’, but be aware that there are informal proofs too.)}
+
+As an illustration, consider:
+\begin{center}
+\enot (A\eor B) $\vDash$ \enot A\eand  \enot B
+\end{center}
+We will start a proof by writing the premise. This is so that we can keep track of what we have shown and what was essentially given to us by the assumptions in the argument. Every line of the proof, including the premises, are numbered. This serves two purposes. First, having the lines numbered gives others who may view your proof a means of telling you where you may have gone wrong, they can say something like "hey, buddy, check out line 3, there's something fishy in it". Second, as you work your way through the proof, it gives you a way to refer back to lines which were given or which you have proven by way of citation. Every line which you add to a proof will need to have some kind of citation and often the premises of the argument you are working with will even have citations (namely 'PR' for 'premise'):
+
+\begin{fitchproof}
+\hypo{a1}{\enot (A\eor B)}
+\end{fitchproof}
+
+See how there is a line under this premise? That is to tell you and remind you that everything above that line is a premise which is assumed to be true for the purpose of the argument. In Carnap.io, which is used in this as a course companion for this text, the premises are cited with ':PR'. Officially, there is a line drawn under the last premise so say that the rest is stuff that you worked out through reasoning. Everything written above the line is an assumption and everything which follows it is true given these assumptions. Everything which is not given to you (assumed by the argument as a premise) will be either something which follows from the assumptions, or some new assumption (which we will get to later).
+
+Since all the proofs are under the assumption that the premises are true, there is a bar, a wall (so to speak), between the proof and the outside world. You can't use the stuff you proved in one proof in another. From the example argument above, we are hoping to conclude ‘\enot A\eand \enot B’; so we are hoping ultimately to conclude our proof with
+
+\begin{fitchproof}
+\have[n]{con}{\enot A\eand \enot B}
+\end{fitchproof}
+
+for some number n. It doesn’t matter what line number we end on, but we would obviously prefer a short proof to a long one. For intrecate, involved, proofs, the number of lines could be rediculously high, for other, simpler ones, the number may be fairly small. Just like all other lines which are not assumed as premises, there needs to be a citation for the final line, the conclusion. For another example, suppose we wanted to consider this argument:
+\begin{center}
+A\eor B, \enot (A\eand C), \enot (B\eand \enot D)  $\vDash$ \enot C\eor D
+\end{center}
+This argument has three premises, so we start by writing them all down, numbered, and drawing a line under them or citing as :PR for premise. (I will mention this repeatedly, because it is important):
+
+\begin{fitchproof}
+\hypo{a1}{A\eor B}
+\hypo{a2}{\enot (A\eand C)}
+\hypo{a3}{\enot (B\eand \enot D)}
+\end{fitchproof}
+
+At the end of the argument, the last line of the argument, we are hoping that we will get some line which is like this:
+
+\begin{fitchproof}
+\have[n]{con}{\enot C\eor D}
+\end{fitchproof}
+
+All that remains to do is to explain each of the rules that we can use along the way from premises to conclusion. You can think of these rules as tools to shift and change the premises to extract what you want from them. There is not a one-size fits all rule which can be used to get what you want (the conclusion) from any set of premises, rather there are a bunch of less robust rules which are used together in different ways to extract the conclusion. The rules are broken down by our logical connectives.
+\section{Part 13.1 Reiteration}
+The very first rule is so breathtakingly obvious that it is surprising we bother with it at all. Very often in our arguments, especially very long-winded ones, we will need to call-back to something we have already proven. For example, we say things like "as I have already said..." or "if you remember, ..." These indicate that we are circling back, so to speak. The first and simplest rule of Propositional Logic (PL) functions in the same way. If you already have shown something in the course of a proof, the reiteration rule, cited as 'R'. allows you to repeat it on a new line. For example:
+
+\begin{fitchproof}
+\have[4]{a1}{A\eand B}
+\ellipsesline
+\have[10]{a2}{A\eand B} \by{R}{a1}
+\end{fitchproof}
+
+Every time you make a new line of an argument, prove something, you need to give a citation for what rule was used and what lines the rule was used on to get the new line. This is so we can keep track of the reasoning used and track down exactly what went wrong (if something did go wrong). In this case, we are saying that we got line 10 by simply repeating line 4, hence why there is a '4' after the 'R', which we could read as 'Reiteration of line 4'. This indicates that we have written ‘A\eand B’ on line 4.  You can do this any time you like, but as we will see (it will become very apparent in the next module) the rule is more useful in some cases than in others. Here is a general expression of the rule:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{a}{\metav{A}}
+\have[\ ]{c}{\metav{A}} \by{R}{a}
+\end{fitchproof}}
+
+The point is that, if any sentence A occurs on some line, then we can repeat A on later lines. To reiterate, each new line of our proofs (including repeated ones) must be justified by some rule and here we have ‘R m’. This means something like "Reiteration applied to line m" or "Reiteration of line m". There are two aspects of this which deserve being emphasized: First, in the examples like this, ‘A’ is not a sentence of PL (here). Rather, it a symbol in the metalanguage, which we use when we want to talk about any sentence of PL. Any sentence in PL which I have or have proven could be substituted in for A and this will work. Second, and similarly, ‘m’ and ‘n’ are not how we are going to number our lines in a proof. As before, I am just using these as a stand-in for any two lines, 'm' is the line which I already have and 'n' is the line which I am making. They are, in a sense, symbols in the metalanguage, which we use when we want to talk about any line number of a proof. In an actual proof, the lines are numbered ‘1’, ‘2’, ‘3’, and so forth. But when we define the rule, we use variables like ‘m’ to underscore the point that the rule may be applied at any point.
+\section{Part 13.2 Conjunction Rules}
+\subsection{Conjunction Introduction}
+
+Suppose that we have in someway shown two things, either through proving them or through the argument's assumptions: First, that Ludwig is an economist and second, that Ludwig is a hothead. Also suppose that the main purpose of the argument was to show that Ludwig is both an economist and a hothead. It should seem at this point pretty obvious that the first supposition means that we've done it. Both of those statements are true, so they are true together. With PL, we just need to take an extra step to conjoin them. This step is often implied in ordinary arguments, but PL doesn't allow for implied steps; the Devil is in the details and glossing over a step leaves room for faulty reasoning.  In the example given, we might adopt the following symbolization key:
+\begin{ekey}
+\item[E] Ludwig is an economist
+\item[H] Ludwig is a hothead
+\end{ekey}
+
+Perhaps we are working through a proof, and we have obtained ‘E’ on line 8 and ‘H’ on line 9. Then on any subsequent line we can obtain ‘E\eand H’ thus:
+
+\begin{fitchproof}
+\have[8]{a}{E}
+\have[9]{b}{H}
+\have[10 ]{c}{E\eand H} \ai{a, b}
+\end{fitchproof}
+Note that every line of our proof must either be an assumption, or must be justified by some rule. We cite ‘\eand I 8, 9’ here to indicate that the line is obtained by the rule of conjunction introduction (\eand I) applied to lines 8 and 9. If we wanted to flip those and, rather than get 'E\eand H', get 'H\eand E', all we would need to do is flip the citation's order:
+
+\begin{fitchproof}
+\have[8]{a}{E}
+\have[9]{b}{H}
+\have[10 ]{c}{H\eand E} \ai{b, a}
+\end{fitchproof}
+For conjunction introduction, the idea is that the citations are in the order that they appear in the end result. More generally, here is our conjunction introduction rule:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{a}{\metav{A}}
+\have[n]{b}{\metav{B}}
+\have[p]{c}{\metav{A}\eand \metav{B}} \ai{a, b}
+\end{fitchproof}}
+To be clear, the statement of the rule is schematic. It is not itself a proof. ‘\metav{A}’ and ‘\metav{B}’ are not sentences of PL. Rather, they are symbols in the metalanguage, which we use when we want to talk about any sentence of PL. Similarly, ‘m’ and ‘n’ are not a numerals that will appear on any actual proof. Rather, they are symbols in the metalanguage, which we use when we want to talk about any line number of any proof. In an actual proof, the lines are numbered ‘1’, ‘2’, ‘3’, and so forth, but when we define the rule, we use variables to emphasize that the rule may be applied at any point. The rule requires only that we have both conjuncts available to us somewhere in the proof. They can be separated from one another, and they can appear in any order. The rule is called ‘conjunction introduction’ because it introduces the symbol ‘\eand ’ into our proof where it may have been absent.
+
+\subsection{Conjunction Elimination}
+
+The opposite rule to conjunction introduction is conjunction elimination. For this rule, we are taking a line which has\eand  as the main operator and generating a line which, in a sense, doesn't. Suppose you have shown that Ludwig is both an economist and a hothead. Because conjunctions imply that both of the conjuncts are true, you are entitled to conclude that Ludwig is economist. Through the same reasoning, you are entitled to conclude that Ludwig is a hothead. Generalizing this idea, we obtain our conjunction elimination rule(s):
+\factoidbox{
+\begin{fitchproof}
+\have[m]{ab}{\metav{A}\eand\metav{B}}
+\have[n]{a}{\metav{A}} \ae{ab}
+\end{fitchproof}}
+
+and equally:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{ab}{\metav{A}\eand\metav{B}}
+\have[n]{a}{\metav{B}} \ae{ab}
+\end{fitchproof}}
+The point is simply that, when you have a conjunction on some line of a proof, you can obtain either of the conjuncts by\eand E. One point is worth emphasizing: you can only apply this rule when conjunction is the main logical operator. So you cannot infer ‘D’ just from ‘C\eor (D\eand E)’ and similarly, you can't infer D from ‘C\eand (D\eor E)’, though you could infer C and D\eor E.
+
+Even with just these two rules, we can start to see some of the power of our formal proof system. Consider:
+\begin{earg}
+\item[] $[(A\eor B)\eif(C\eor D)]\eand [(E\eor F)\eif (G\eor H)]$
+\item[\therefore] $[(E\eor F)\eif (G\eor H)]\eand [(A\eor B)\eif(C\eor D)]$
+\end{earg}
+The main logical operator in both the premise and conclusion of this argument is ‘\eand ’. In order to provide a proof, we begin by writing down the premise, which is our assumption. We draw a line below this: everything after this line must follow from our assumptions by (repeated applications of) our rules of inference. So the beginning of the proof looks like this:
+\begin{fitchproof}
+\hypo{ab}{{[}(A\eor B)\eif(C\eor D){]}\eand {[}(E\eor F)\eif (G\eor H){]}}
+\end{fitchproof}
+From the premise, we can get each of the conjuncts by\eand E. The proof now looks like this:
+
+\begin{fitchproof}
+\hypo{ab}{{[}(A\eor B)\eif(C\eor D){]}\eand {[}(E\eor F)\eif (G\eor H){]}}
+\have{a}{{[}(A\eor B)\eif(C\eor D){]}} \ae{ab}
+\have{b}{{[}(E\eor F)\eif (G\eor H){]}} \ae{ab}
+\end{fitchproof}
+
+So by applying the\eand I rule to lines 3 and 2 (in that order), we arrive at the desired conclusion. The finished proof looks like this:
+\begin{fitchproof}
+\hypo{ab}{{[}(A\eor B)\eif(C\eor D){]}\eand {[}(E\eor F)\eif (G\eor H){]}}
+\have{a}{{[}(A\eor B)\eif(C\eor D){]}} \ae{ab}
+\have{b}{{[}(E\eor F)\eif (G\eor H){]}} \ae{ab}
+\have{ba}{{[}(E\eor F)\eif (G\eor H){]}\eand {[}(A\eor B)\eif(C\eor D){]}} \ai{b,a}
+\end{fitchproof}
+This is a very simple proof, but it shows how we can chain rules of proof together into longer proofs. In passing, note that investigating this argument with a truth table would have required 256 lines; our formal proof required only four lines.
+
+It is worth giving another example. Back in Part 8.2, we noted that this argument is valid:
+
+$$A\eand (B\eand C) \vDash (A\eand B)\eand C$$
+
+To provide a proof corresponding to this argument, we start by writing
+\begin{fitchproof}
+\hypo{ab}{A\eand (B\eand C)}
+\end{fitchproof}
+From the premise, we can get each of the conjuncts by applying\eand E twice. We can then apply\eand E twice more, so our proof looks like:
+\begin{fitchproof}
+\hypo{ab}{A\eand (B\eand C)}
+\have{a}{A} \ae{ab}
+\have{bc}{B\eand C} \ae{ab}
+\have{b}{B} \ae{bc}
+\have{c}{C} \ae{bc}
+\end{fitchproof}
+But now we can merrily reintroduce conjunctions in the order we wanted them, so that our final proof is:
+\begin{fitchproof}
+\hypo{abc}{A\eand (B\eand C)}
+\have{a}{A} \ae{abc}
+\have{bc}{B\eand C} \ae{abc}
+\have{b}{B} \ae{bc}
+\have{c}{C} \ae{bc}
+\have{ab}{A\eand B}\ai{a, b}
+\have{con}{(A\eand B)\eand C}\ai{ab, c}
+\end{fitchproof}
+
+Recall that our official definition of sentences in PL only allowed conjunctions with two conjuncts. The proof just given suggests that we could drop inner brackets in all of our proofs. However, this is not standard, and we will not do this. Instead, we will maintain our more austere bracketing conventions. (Though we will still allow ourselves to drop outermost brackets, for legibility.)
+
+Let’s give one final illustration. When using the\eand I rule, there is no requirement to apply it to different sentences. So, if we want, we can formally prove ‘A\eand  A’ from ‘A’ thus:
+
+\begin{fitchproof}
+\hypo{a}{A}
+\have{aa}{A\eand A}\ai{a, a}
+\end{fitchproof}
+Simple, but effective.
+
+\section{Part 13.3 Conditional Rules}
+
+\subsection{Conditional Elimination}
+
+ Suppose that I want to get a candy bar from a vending machine. There is an implied bit of reasoning which I go through, namely something like: If I want a candy bar, then I need to pay and press the buttons 'A' and '3'. So, since I want a candy bar, I pay and press those buttons. Pretty straight forward. We do this sort of reasoning so many times a day that it is very automatic. This reasoning works in causal relations, like the tree falling in the forest causes a crashing sound and also in implications because of meaning, like if Molly is a cat, then she is very cuddly. Consider the following argument as a more formal example:
+\begin{earg}
+\item[] If Jane is smart then she is fast.
+\item[] Jane is smart.
+\item[\therefore] Jane is fast.
+\end{earg}
+This argument is certainly valid and it's valid because of its form. This very simple logical inference is where we get the conditional elimination rule, (\eif E), put abstractly as this:
+
+\factoidbox{
+\begin{fitchproof}
+\have[m]{ab}{\metav{A}\eif\metav{B}}
+\have[n]{a}{\metav{A}}
+\have[p]{b}{\metav{B}} \ce{ab,a}
+\end{fitchproof}}
+
+This rule is also sometimes called modus ponens. Many of the 'old school' logic systems out there retained the original Latin names for their inference rules. This one translates as "The Putting Mode" or "The Putting Way". This meaning can be seen with a sort of metaphor: you are putting A into the conditional to get B out. Again, this is an elimination rule, because it allows us to obtain a sentence which may not contain ‘\eif ’ from a sentence which did contain ‘\eif ’. Note that the conditional A\eif B and the antecedent A can be separated from one another in the proof and they can appear in any order. However, in the citation for\eif E, we always cite the conditional first, followed by the antecedent.
+
+\subsection{Modus Tollens}
+
+Conditionals in any reasonable logic system are going to be special in that they will have multiple elimination and introduction rules. Sadly, the rule which was given the name '\eif I' is a fair bit more complicated than the others, so we will save that one for the next module/chapter. That said, it seems right to also give you one of the other elimination rules for conditionals which we have at our disposal. This is often called modus tollens and, since the name '\eif E' was already taken, we will cite this as MT. Like with\eif E, this is a pretty straightforward, commonsense rule of inference, one which we use quite regularly without realizing it. For example, take a look at this argument:
+\begin{earg}
+\item[]If Hilary has won the election, then she is in the White House.
+\item[]She is not in the White House.
+\item[]So she has not won the election.
+\end{earg}
+You could think of this as sort of the opposite of the conditional elimination rule above. In that one, you can think of it as A causing B to be true. In this case, for MT to work, we need to know that B is not the case, so we know that A didn't cause it. PL has this same sort of reasoning built in like this:
+
+\factoidbox{
+\begin{fitchproof}
+\have[m]{ab}{\metav{A}\eif\metav{B}}
+\have[n]{a}{\enot \metav{B}}
+\have[p ]{b}{\enot \metav{A}} \mt{ab,a}
+\end{fitchproof}}
+
+The name modus tollens, like before, is Latin, meaning "The Carrying Way" or "The Lifting Way" and this sort of follows a similar metaphor in thinking: You are carrying the negation through the conditional from B to A. As usual, the premises may occur in either order, but we always cite the conditional first. But, there is a bit of warning when it comes to this rule. There is a common formal logical fallacy called denying the antecedent. In this, you have \metav{A}\eif \metav{B} and \enot \metav{A}, so you think that \metav{B} must not be the case (\enot \metav{B}). This is not accurate. To see why, I recommend whipping up a truth table but intuitively, A is just one of the things which could have 'caused' B to be the case, there could be others. If it is not the case that \metav{A}, \metav{B} could still be the case; caused by something else, like a \metav{C}.
+
+\tissa
+
+\subsection{Hypothetical Syllogism}
+
+Very often, when we try to figure out what follows from what, like following a chain of events, we will end up with a long series of conditionals. For example, take this example, shamelessly stolen from a DirecTv commercial:\autocite{DirecTv}
+
+\factoidbox{If your cable company keeps you waiting, you are angry.\\
+If you are angry, you blow off some steam.\\
+If you blow off steam, accidents happen.\\
+If accidents happen, you need to wear an eye-patch.\\
+If you need to wear an eye-patch, people think you are tough.\\
+If people think you are tough, they want to see how tough.\\
+If they want to see how tough, you will wake up in a roadside ditch.\\
+Therefore, if your cable company keeps you waiting, you will wake up in a roadside ditch.}
+
+While this sort of reasoning is often called the slippery slope fallacy, there is nothing formally wrong with it. The fallacious part of it is in the content of the sentences, not the form itself. In fact, when the antecedent of one conditional is the same thing as the consequent of another, you can, in a sense, compress them together, removing the middle man, so to speak. Most of the rules in this system will either add to the sentences they cite (make them longer, these are the introduction rules) or make subtract from those lines (make them shorter, these are the elimination rules). This formal inference rule is called hypothetical syllogism, or HS for short. HS is a perfectly valid system of reasoning. The rule in action looks like this:
+
+\factoidbox{
+\begin{fitchproof}
+\have[m]{ab}{\metav{A}\eif\metav{B}}
+\have[n]{a}{\metav{B}\eif\metav{C}}
+\have[p ]{b}{\metav{A}\eif\metav{C}} \by{HS}{ab,a}
+\end{fitchproof}}
+
+
+You can combine this rule with others to make your proofs significantly shorter and more elegant. For example, take this argument with these three premises:
+\begin{fitchproof}
+\hypo[1]{ab}{A\eif B}
+\hypo[2]{a}{B\eif C}
+\hypo[3]{b}{\enot C}
+\end{fitchproof}
+
+The goal is to get \enot A. There are two ways we could go about getting this result, we could have the argument go like this:
+
+\begin{fitchproof}
+\hypo[1]{ab}{A\eif B}
+\hypo[2]{a}{B\eif C}
+\hypo[3]{b}{\enot C}
+           \have[4]{c}{\enot B} \by{MT}{a,b}
+           \have[5]{d}{\enot A} \by{MT}{ab,c}
+\end{fitchproof}
+
+While it is a perfectly valid proof and there are no mistakes, this way sort of bounces around; it is not as direct as some other ways of doing it. For example, we could have solved it like this:
+
+\begin{fitchproof}
+\hypo[1]{ab}{A\eif B}
+\hypo[2]{a}{B\eif C}
+\hypo[3]{b}{\enot C}
+           \have[4]{c}{A\eif C} \by{HS}{ab,a}
+           \have[5]{d}{\enot A} \by{MT}{c,b}
+\end{fitchproof}
+
+They both took 5 lines total, but this second way of doing it is a far more direct path.
+\section{Part 13.4 Disjunction Rules}
+\subsection{Disjunction Introduction}
+
+Unlike some of the other introduction rules, there really isn't an intuitive example of this one in action, on its own, which drives the point or idea of this rule home. Like all introduction rules, we are adding something to the line(s) we are citing; but what are we adding? In this case, we are adding a disjunction,'\eor '. To see this in action, I will use it in conjunction with another rule. Take this example:
+\begin{earg}
+\item[]If either Patty or Tami goes to the party, then Dave will be there.
+\item[]Tami is going to the party.
+\item[]So, Dave will be there.
+\end{earg}
+This should seem straightforward enough. Patty being at the party is sufficient for Dave to go and Tami going is also sufficient. But, how do we show this in PL? This is where we get Disjunction Introduction,\eor I. We know from the truth tables that a disjunction is true when at least one of the disjuncts is true. So, if we know that, say, Patty is going to the party, then we can add an 'or' and then whatever we want after it. In PL, if we have a line with, say, A, then we can make a line starting with A\eor  followed by whatever sentence we want. For example, suppose Ludwig is an economist. From this we can get that Ludwig is either an economist or a hothead. In a sense, we are saying something weaker than before; with 'Ludwig is an economist' we are saying something with certainty, once we add the 'or', however, we are saying something less certain. Generally, it's logically OK to go from a strong point to a weaker one, the other way around is generally not OK. Many of these are strange inferences to draw, but there is nothing logically wrong with them (even if they maybe violate all sorts of implicit conversational norms).
+
+From this, we can introduce the disjunction introduction rule(s):
+\factoidbox{
+\begin{fitchproof}
+     \have[m]{a}{\metav{A}}
+     \have[n]{ab}{\metav{A}\eor \metav{B}} \oi{a}
+\end{fitchproof}}
+and
+\factoidbox{
+\begin{fitchproof}
+     \have[m]{a}{\metav{A}}
+     \have[n]{ab}{\metav{B}\eor \metav{A}} \oi{a}
+\end{fitchproof}}
+A could be any sentence at all, so long as A remains intact where you place the '\eor '. Similarly, you can add anything you want, any sentence at all. So, the following is perfectly fine:
+\begin{fitchproof}
+     \hypo[1]{a}{M}
+     \have[2]{ab}{M\eor ([(A\eiff B)\eif (C\eand D)\eiff [E\eand F])} \oi{a}
+\end{fitchproof}
+
+The validity of this should be easy to see but actually doing a truth table would have taken 128 lines, and we really don't have time for that sort of endeavor.
+
+\subsection{Disjunction Elimination}
+
+Very often in everyday life, we are presented with multiple things which we need to choose from or which could have potentially happened/will happen. In these cases, we work the reasoning and come up with some reasons to say that one of them is false and from that we get the other one. For example, take this example which an auto-mechanic told me years ago when I was having some car trouble (yes, this really did happen):
+
+\factoidbox{\begin{earg}
+\item[]We have seen this sort of trouble before and know that it's either the fuse box or the Engine Control Module (ECM).
+\item[]We went ahead and checked the fusebox and know it's not that.
+\item[]So, your car trouble must be because of the ECM.
+\end{earg}}
+
+This is often called disjunctive syllogism but, keeping with the nice nomenclature for the rules in this system, we will call it '\eor E' or Disjunction Elimination. This is such a common system of reasoning that I don't feel like I need to give too many examples; we generally have an intuitive grasp of it and this logical structure is, arguably, the first one which we really get as an infant. We add it to our proof system as follows:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{m}{\metav{A}\eor \metav{B}}
+\have[n]{n}{\enot \metav{A}}
+\have[p]{p}{\metav{B}}\oe{m,n}
+\end{fitchproof}}
+
+and
+\factoidbox{
+\begin{fitchproof}
+\have[m]{m}{\metav{A}\eor \metav{B}}
+\have[n]{n}{\enot \metav{B}}
+\have[p]{p}{\metav{A}}\oe{m,n}
+\end{fitchproof}}
+
+Either way works. As usual, the disjunction and the negation of one disjunct may occur in either order and need not be adjacent. However, we always cite the disjunction first. As a fair warning, there is a common formal fallacy associated with this one. This is sometimes called affirming a disjunct. In this case, you have something like A\eor B and A, so you think you can get \enot B. This doesn't work in our logical system because disjunctions are inclusive, one or both of the disjuncts could be true. Watch out for this and in everyday life, I strongly recommend purging yourself of the tendency to use this fallacious reasoning, limiting yourself to the valid\eor E.
+\section{Part 13.5 The Dilemma Rule}
+The dilemma rule is going to be slightly different than the others which we have seen. As you may have guessed, disjunctions, just by themselves, really can't do much. Yes, we can introduce them into the argument through the disjunction introduction rule and yes if we have the negation of one of the disjuncts, we can get the other one (this is the disjunction elimination rule) but when they are on their lonesome, they are hard to work with. For example, suppose that Tanya is either a librarian or a teacher. What can we conclude from this? We can't get that Tanya is a librarian, because she could just as easily be a teacher. Similarly, we can't conclude that she is a teacher because she could be a librarian. But suppose that we had or could somehow show two things: First, if Tanya is a librarian, then she has read a lot and second, if Tanya is a teacher, then she is good at public speaking. Since Tanya is either a librarian or a teacher (one or both of these must be true), we know from the basic rule of conditional elimination that Tanya either is well-read (has read a lot) or is good at public speaking. This is essentially how the dilemma rule works. Here is another example of this reasoning at work:
+
+\begin{earg}
+\item[]If Dave goes to the party, then Tami will be excited.
+\item[]If Mat goes to the party, Harry will be excited.
+\item[]Either Dave or Mat will go to the party (maybe both).
+\item[\therefore] either Tami or Harry will be excited (maybe both).
+\end{earg}
+
+Whenever we have two options about what could be the case (a disjunction) and each of the disjuncts entail something (maybe even the same thing), we can use the dilemma rule to show that one of those two consequents must be the case. PL can handle this fairly easily with the following rule, DIL:
+\factoidbox{
+\begin{fitchproof}
+\have[m]{m}{\metav{A}\eif \metav{B}}
+\have[n]{n}{\metav{C}\eif \metav{D}}
+\have[p]{p}{\metav{A}\eor \metav{C}}
+\have[r]{r}{\metav{B}\eor \metav{D}} \by{DIL}{m,n,p}
+\end{fitchproof}}
+
+You should notice that, unlike the rules we have seen up to this point, this needs to cite three (3) different preceding lines. The others only take one or two. This is one of the reasons why DIL is, for lack of a better word, clunkier than the other rules. This rule is not without regular practical uses, however. Often when we are making a choice, the results are not inconsequential; that is, we need to make the choice based on the consequences of what follows were we to go one route versus the other. When we are in a such a situation, when we need to make such a choice, we say that we are in a 'dilemma', hence the name.
+
+Like all rules in this system, you can use it in combination with others. The other rules might build up to DIL being the final blow or DIL could be used to set up for something else. For example, take a look at this argument which we would like to prove, here we want to get W:
+\begin{fitchproof}
+\hypo[1]{m}{A\eif B}
+\hypo[2]{n}{C\eif D}
+\hypo[3]{p}{A\eor C}
+\hypo[4]{r}{(B\eor D)\eif W}
+\end{fitchproof}
+
+What could our first move be? It should be clear (because the first 3 lines are the same as the example above) that DIL is doable in this argument but what would DIL give us? Well, DIL would give us B\eor D and B\eor D is what we need for a \eif E to get W. So, let's go that route:
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif B}
+\hypo[2]{n}{C\eif D}
+\hypo[3]{p}{A\eor C}
+\hypo[4]{q}{(B\eor D)\eif W}
+\have[5]{r}{B\eor D} \by{DIL}{m,n,p}
+\have[6]{s}{W} \ce{q,r}
+\end{fitchproof}
+
+If we did not have DIL, given the rules we have right now, this argument would not be possible for us to prove. Also, in this example, DIL was used as a stepping stone, so to speak, to get to the conclusion. There are plenty of other examples of this logical form at play where it's the final move to get the conclusion, for example, take a look at this argument, here we want E\eor D:
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eor C}
+\hypo[3]{p}{Z\eif E}
+\hypo[4]{q}{C\eif D}
+\end{fitchproof}
+
+We could use DIL immediately on lines 1,4,2 but that would get us something other than what we want; it would get us Z\eor D and then we couldn't use DIL again because we don't have a conditional with D as an antecedent. This might seem like a deadend but we can think ahead a few steps and see what we could do to make DIL give us what we want. Notice that we could do an HS on lines 1 and 3. This would collapse the conditionals down into A\eif E. This gives us something we can use. Looking at the previous route which didn't quite work, we can see that doing the same thing now but using this new line will give us E\eor D, which is what we are after. So, let's go with that!
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eor C}
+\hypo[3]{p}{Z\eif E}
+\hypo[4]{q}{C\eif D}
+\have[5]{r}{A\eif E} \by{HS}{m,p}
+\have[6]{s}{E\eor D} \by{DIL}{n,q,r}
+\end{fitchproof}
+
+Don’t be alarmed if you think that you wouldn’t have been able to come up with the proofs yourself just yet. Some proof require you to tinker with the different options, try one route and not succeed and then get up and try it again. The ability to look at an argument and instantly know what moves it takes to get to the conclusion comes with practice but we will be covering some basic strategies for solving proofs soon. The key question at this stage is whether, looking at the proof, you can see that it conforms to the rules that we have laid down. That just involves checking every line, and making sure that it is justified in accordance with the rules we have laid down.
+\chapter{Part 14 Tips and Tricks for Proofs}
+\section{Part 14.1 Working Backwards From What You Have}
+Sometimes, we will come across an idea or stance, either told to us or something which we came up with, which we thinks is very right (true or correct) or very wrong (false or incorrect). But, as good and logical thinkers, we can't stop there. It is very easy to say what you think, it can be very hard to give reasons why you think it and harder still to prove that what you think is correct. When faced with this situation, it may be useful to work backwards from the stance (the 'conclusion' you want to reach) and see what you would need to have to prove it and what logical moves you would need to take from what you need. 
+
+To work backwards, in this way, a solid starting point would be to look at the main operator, the dominate connective, in the conclusion you wish to reach. We have seen the different possible connectives and have many of the operations which could give us conclusions with those connectives as the main operators. Once you know what the main operator is, look at the different inference rules which you could use to get it and then either match what's needed to use those rules with the premises (what you know in 'real-world' cases) or set those as new goals and continue to work backwards. Below are some tips and examples of working backwards for each of the connectives we have tools for. For all of the examples and for any time you might want to use these methods, you should start by writing out a 'template' or 'incomplete' proof, where you have the first lines being the premises, a space (here represented by three dots), and then the conclusion with a variable letter for the number. When you are done, you fill in the variable letters you had as place-holders with the actual numbers which make sense. There will be examples of this below.
+
+\subsection{Working Backwards From No Connective}
+
+If the conclusion you wish to reach is a simple sentence, say A, then you should look at the premises to see whether A appears anywhere. For example, you might have an argument like this (this is a template for the proof):
+\begin{fitchproof}
+\hypo{1}{Z\eif (A\eand B)}
+\hypo{2}{M\eif Z}
+\hypo{3}{M}
+\ellipsesline
+\have[p]{p}{A}
+\end{fitchproof}
+
+The last line there is marked as 'p', this is because, at this point, we don't know how long it will take to get there. With this argument, we are looking to prove A and we can see A in line 1, Z\eif (A\eand B), so, we should set A\eand B as our new goal, because we know that we can get A from it through\eand E, like so:
+\begin{fitchproof}
+\hypo{1}{Z\eif (A\eand B)}
+\hypo{2}{M\eif Z}
+\hypo{3}{M}
+\ellipsesline
+\have[q]{q}{A\eand B}
+\have[p]{p}{A}\ae{q}
+\end{fitchproof}
+
+Since we still don't know how long this will take, we are still going to have a variable letter for the line to fill in later but now we have this new goal and must ask how we can get that? Looking at the argument, we see that A\eand B is 'trapped' by a conditional, so we will want to remove that, with an elimination rule, like so: 
+\begin{fitchproof}
+\hypo{1}{Z\eif (A\eand B)}
+\hypo{2}{M\eif Z}
+\hypo{3}{M}
+\ellipsesline
+\have[r]{r}{Z}
+\have[q]{q}{A\eand B}\ce{1,r}
+\have[p]{p}{A}\ae{q}
+\end{fitchproof}
+
+To use the elimination rule, we need to prove Z. Looking back, do we see Z anywhere else? Yes, in line 2. So, the new goal is to use an elimination rule to get Z, which we can do. Once we fill in those steps, we can give the variables actual numbers because we are done, like so: 
+\begin{fitchproof}
+\hypo{1}{Z\eif (A\eand B)}
+\hypo{2}{M\eif Z}
+\hypo{3}{M}
+\have{4}{Z}\ce{2,3}
+\have{5}{A\eand B}\ce{1,4}
+\have{6}{A}\ae{5}
+\end{fitchproof}
+
+When working backwards from a simple sentence, elimination rules are your bestfriend. 
+
+\subsection{Working Backwards From A Conjunction}
+
+For all conclusions with connectives, there is the possibility that the conclusion, in its entirety, is nested, or contained, in another line or premise. In such a case, you could treat the entire thing as a 'sentence letter' (it's not really, but you can 'see' it that way) and then use the methods for those. For example, in the argument I gave for working backwards from no connective, if I was looking for A\eand B, I could have ended the argument on line 5 and been done. 
+
+The other possibility, which is more involved, is that you need to make the sentence through some combination of introduction and elimination rules. When your goal is a conjunction, a safe place to start is to think that you will need to use\eand I somewhere. For example, take this argument where the conclusion we want is A\eand B:
+\begin{fitchproof}
+\hypo{1}{Z\eif B}
+\hypo{2}{M\eif A}
+\hypo{3}{\enot M\eor Z}
+\hypo{4}{M}
+\ellipsesline
+\have[p]{p}{A\eand B}\ai{}
+\end{fitchproof}
+
+I have no clue what lines I will need to cite yet, but I know that's the only rule which can generate a conjunction. But, to use that rule, I am going to need to have two lines, one with A and the other with B. So, I should plug in those lines, as I know I will need to get them:
+\begin{fitchproof}
+\hypo{1}{Z\eif B}
+\hypo{2}{M\eif A}
+\hypo{3}{\enot M\eor Z}
+\hypo{4}{M}
+\ellipsesline
+\have[r]{r}{A}
+\have[q]{q}{B}
+\have[p]{p}{A\eand B}\ai{r,q}
+\end{fitchproof}
+
+In this case, both of those are seen in the premises, so I can treat them as simple sentences (which they are in this case). To start with, what do I need to do to get A? Well, A is in the second premise and I can see the components to get it out of confinement. Let's plug that in:
+\begin{fitchproof}
+\hypo{1}{Z\eif B}
+\hypo{2}{M\eif A}
+\hypo{3}{\enot M\eor Z}
+\hypo{4}{M}
+\ellipsesline
+\have[r]{r}{A}\ce{2,4}
+\have[q]{q}{B}
+\have[p]{p}{A\eand B}\ai{r,q}
+\end{fitchproof}
+
+With that, I have the first half sorted, now, let's look for the second half, B. B can be seen in the first line, but it is contained in a conditional. This means that we will need to use\eif E, which needs Z. Let's plug that in:
+\begin{fitchproof}
+\hypo{1}{Z\eif B}
+\hypo{2}{M\eif A}
+\hypo{3}{\enot M\eor Z}
+\hypo{4}{M}
+\ellipsesline
+\have[s]{s}{Z}
+\have[r]{r}{A}\ce{2,4}
+\have[q]{q}{B}\ce{1,s}
+\have[p]{p}{A\eand B}\ai{r,q}
+\end{fitchproof}
+
+
+So, now, how do I get Z? Well, Z is in the third line and to get it out, we need to do the\eor E rule. And, once we do that, the proof is done, we just need to fill in the numbers.
+\begin{fitchproof}
+\hypo{1}{Z\eif B}
+\hypo{2}{M\eif A}
+\hypo{3}{\enot M\eor Z}
+\hypo{4}{M}
+\have{5}{Z}\oe{3,4}
+\have{6}{A}\ce{2,4}
+\have{7}{B}\ce{1,5}
+\have{8}{A\eand B}\ai{6,7}
+\end{fitchproof}
+
+\subsection{Working Backwards From a Disjunction}
+
+Currently, you do not have the tools to convert disjunctions into things which are more manageable and able to use other methods. These tools will be given and explained in the next module. But, there are still ways of proving a disjunction. Namely, you need to prove one of the disjuncts and then use the\eor I rule. Sometimes, it can be pretty obvious which one of them is easier to prove, other times, it could be more difficult to tell. In those cases, choose one and then work backwards from there (whatever it may be). If you can't figure out a way, try the other one. 
+
+\subsection{Working Backwards From a Conditional}
+
+As before, you do not currently have the tools to introduce conditionals, this is the next module. So, as it sits, there are only two options, either the conditional is contained in someway in the premises or you will need to use HS to make it. If the conditional is contained in the premises, then you can treat it as a simple sentence, as before. If, however, you must use HS to make it, you will have two new goals, something like A\eif P and something like P\eif B to get the conclusion A\eif B. 'P', in this case, could be anything. Check for A being the antecedent of a conditional and B being the consequent of another and then work towards getting those conditionals. 
+
+\section{Part 14.2 Working Forwards From What You Have}
+The opposite of working backwards is to work forward. Sometimes, once we see the conclusion we are shooting for, it will be unclear what the reasonable sets should be, even when working backwards. When this happens, it pays to have a more playful attitude and start messing with the premises to see what, if anything, you can derive. You might not need what you get, and you can always cut out the products of your playfulness from the final proof, but working forward in this way, not necessarily with a goal, could clear up the gunk which makes the path to your conclusion unclear. Here are some tips for the connectives we can work with:
+
+\subsection{Working Forward from a Conjunction}
+
+The simplest first step when working forward from a conjunction is to simplify it down with the\eand E rule. You might need one or both of the conjuncts for different things, so why not have them? For example:
+\begin{fitchproof}
+\hypo{1}{A\eand B}
+\have{2}{A}\ae{1}	
+\have{3}{B}\ae{1}	
+\end{fitchproof}
+
+\paragraph{Working Forward from a Disjunction}
+
+Currently, we have two rules which need a disjunction to play and these are\eor E and DIL. To start with, look at the two disjuncts for the disjunction. Are they anywhere else in the argument or premises? If you happen to have the negated form of one of them, use it. It doesn't hurt to have the other disjunct on a line and proven. If you see that the negation is contained in another, think about how to get it out of there (work backwards). This allows you to prove something from the disjunction. 
+
+If you happen to see the disjuncts as antecedents in conditionals, try to employ the DIL rule and see what you get. This could expose a path to getting to the goal from what you have. 
+
+\subsection{Working Forward from a Conditional}
+
+There are several rules which we have access to which use conditionals and could be used to clear things up and make the steps for the proof more clear. For all of them, you are going to want to look at the antecedent and the consequent. Are they present anywhere else in the proof? Given the rules we have right now, here are the options for what we could use the conditional for.
+\factoidbox{
+If you see that the negation of the consequent is somewhere in the proof, go ahead and try to get that and use it for a MT. Having the negation of the antecedent might prove useful.\\ 
+If you see the antecedent somewhere in the proof, go ahead and try to extract it and then use it for\eif E. Having the consequent may prove useful.\\
+If the consequent is the antecedent for another conditional, use HS. The result will cut out the middle-man and might prove useful. This holds also if the antecedent is a consequent of another conditional.\\
+If you see the antecedent as a disjunct in a disjunction, try to see whether you can use DIL.}

@@ -1,0 +1,561 @@
+\part{Quantified Logic}
+\label{ch.qlsymbolizing}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 18 The Next Step: Quantified Logic}
+\section{Part 18.1: The Need to Expand How We Think of Propositions}
+\setcounter{Example}{0}
+Thus far, you have all of the tools necessary to engage with relatively simple arguments. Some arguments, however, refer to the actual content and the structure of the simple propositions (the simple sentences) and other arguments make claims about all things or some things. PL does not have the tools to handle those kinds of arguments and show that they are valid or give advice about the correct logical moves one should take in proving their validity. For example, consider the following argument, which should be obviously valid in English:
+\begin{earg}
+\item[]Willard is a logician.
+\item[]All logicians wear funny hats.
+\item[\therefore]  Willard wears a funny hat.
+\end{earg}
+If we wanted to symbolize this into PL, we might give this key for the meaning behind the propositions: 
+\begin{ekey}
+\item[L] Willard is a logician.
+\item[A] All logicians wear funny hats.
+\item[F] Willard wears a funny hat.
+\end{ekey}
+The argument itself, however, would look like this:
+\begin{center}
+L, A \therefore  F
+\end{center}
+This argument, however, could easily be shown to be invalid. So our question becomes "what went wrong?" The problem is not that we have made a mistake while symbolizing the argument. This is the best symbolization we can give in PL. The problem lies with PL itself.  Like how I mentioned at the start of the page, ‘all logicians wear funny hats’ is about both logicians and hat-wearing, the argument itself concerns the content and the relationship between the things which build into the simple proposition. It would seem that ‘simple propositions' are not all that simple. When we translated to PL, we lost the connection between Willard’s being a logician and Willard’s wearing a hat. The basic units of PL are sentence letters and PL cannot decompose these. To symbolize arguments like the preceding one, we will have to develop a new logical language which will allow us to split the atom. We will call this language Quantified Logic, or QL.
+
+The above argument about Willard is not a unique aberration and it is not valid for a special reason, which we have seen before. There is a general form of that argument which can be replicated to generate valid arguments which PL cannot handle. In this case, though there are others which QL can handle but PL cannot, the argument has this form in quasi-English:
+\begin{earg}
+\item[]X is Y.
+\item[]All Y's are Z's.
+\item[\therefore]  X is Z
+\end{earg}
+So, we could use this form to generate another valid argument; for example,
+\begin{earg}
+\item[]Molly is a cat.
+\item[]All cats are mammals.
+\item[\therefore]  Molly is a mammal.
+\end{earg}
+For another form which PL can't handle, try this example:
+\begin{earg}
+\item[]All mammals give live birth.
+\item[]Everything which gives live birth produce milk.
+\item[\therefore]  All mammals produce milk,
+\end{earg}
+This argument, generalized, has the following form:
+\begin{earg}
+\item[]All X's are Y's.
+\item[]All Y's are Z's.
+\item[\therefore]  All X's is Z's
+\end{earg}
+This, again, should appear obviously valid but it cannot be proven to be so with PL. The details of QL will be explained throughout module, but here is the basic idea for splitting the atom. First, we have names. In QL, we indicate these with lowercase letters. For instance, we might let ‘b’ stand for Bertie, or let ‘i’ stand for Willard. Second, we have predicates. English predicates are expressions like ‘ is a dog’ or ‘ is a logician’. These are not complete sentences by themselves. In order to make a complete sentence, we need to fill in the gap, include a name. We need to say something like ‘Bertie is a dog’ or ‘Willard is a logician’. In QL, we indicate predicates with uppercase letters. For instance, we might let the QL predicate ‘D’ symbolize the English predicate ‘ is a dog’. Then the expression ‘Db’ will be a sentence in QL, which symbolizes the English sentence ‘Bertie is a dog’. Equally, we might let the QL predicate ‘L’ symbolize the English predicate ‘ is a logician’. Then the expression ‘Li’ will symbolize the English sentence ‘Willard is a logician’. Third, we have quantifiers. For instance, ‘$\exists$’ will roughly convey ‘There is at least one . . . ’, or "for some", or "there exists a \blank such that". So we might symbolize the English sentence ‘there is a dog’ with the QL sentence ‘$\exists$xDx’, which we might read aloud as ‘there is at least one thing, x, such that x is a dog’. That is the general idea, but QL is significantly more subtle than PL, so we will come at it slowly.
+
+\section{Part 18.2: Names}
+It is argued that all natural languages have words or phrases which pick out a specific person, place, or thing. It is also claimed that all natural languages have what are called nouns. While I disagree with the claim that all natural languages have the grammatical feature we call ‘nouns' (there are some languages which seem to exclusively have verbs), all languages need to have the ability to pick out particular, singular things. In English as well as most languages in the world, this is done with \glspl{name}. Names are singular terms which refer to one thing uniquely. The word ‘dog’, in English, is not a singular term, because there are a great many dogs. The phrase ‘Bertie’ is a singular term, because it refers to a specific terrier. Likewise, the phrase ‘Philip’s dog Bertie’ is a singular term, because it refers to a specific little terrier. Singular terms could be descriptive phrases, such as "the person talking to Tami with the champagne glass" (assuming only one person matches that description) or they could be proper names.
+
+Proper names are a particularly important kind of singular term. These are expressions that pick out individuals without describing them. Sometimes these are called proper nouns. For example, the term ‘Lewis' is a proper name, it magically picks out a certain individual without conveying anything about this individual. There is nothing, fundamentally, in a name which describes or otherwise gives us information about the thing so named. For example, you might read the name ‘Hilary' and immediately assume that the person with that name is a woman. You would be mistaken, however, if you are reading about the philosopher Hilary Putnam. Along the same vein, you might read the name "The Holy Roman Empire" and assume, wrongfully, that it was Roman (or at least in what is now Italy) (it was actually in what we now think of as Germany). All this leads to the following point: Names, themselves, to not describe the world, all they do is pick out objects in the world and we can't describe the world in any reasonable way without referencing the objects in it. So, propositions are going to be composed of, in part, names and our logical system will need to include names.
+
+In QL, our names are lower-case letters ‘a’ through to ‘r’. Since there are many different names one could need to use in an argument, we can add subscripts if we want to use some letter more than once. So here are some examples of singular terms in QL:
+\begin{center}
+a,b,c,. . . ,r,$a_1$, $f_{32}$, $j_{390}$,$m_{12}$
+\end{center}
+These should be thought of along the lines of proper names in English, but with one difference. Every name in QL is unique, no two (or more) things are assigned the same name. There could be a multitude of people with the name ‘Jack Carter' and there may be some confusion about which one we are talking about in a conversation. We live with this kind of ambiguity in English and, typically, context or other clues help us differentiate between the different people or things with that name. Ideally, we would not need to rely on such contextual clues and in QL, we do not tolerate any such ambiguity. Each name must pick out exactly one thing. It should be noted, however, that two different names may pick out the same thing. As with PL, we can provide symbolization keys. These indicate, temporarily, what a name will pick out. So we might offer:
+\begin{ekey}
+\item[e] Elsa
+\item[g] Gregor
+\item[m] Marybeth
+\end{ekey}
+For any given argument or context, we don't need to list off everything in the universe and give it a unique name. If we did, nothing would ever get done. Rather, we only need to name those which are relevant to the argument at hand. For example, take this simple argument:
+\begin{earg}
+\item[]If Elsa is not happy, then Gregor is in the doghouse. 
+\item[]Elsa is not happy. 
+\item[\therefore] Gregor is in the doghouse.
+\end{earg}
+You should immediately identify this as a case of conditional elimination, and you would be right. But, getting to the point at hand, in this argument, do we need to give Marybeth a name? No, we don't, because they are not involved in the argument. The range of things which we need to name is called the \gls{domain}, which we will return to when we discuss validity in QL.
+\section{Part 18.3: Predicates}
+The simplest \glspl{predicate} are properties of individuals. They are things you can say about an object. For example, one could say "Davis is wearing a red shirt". In this, there are basically two parts; the name "Davis" and then there is the second part "is wearing a red shirt" which ascribes a property to the being with that name, namely wearing a red shit. Most of the time, predicates in English have the copula ‘to be', in its various forms like "am, is, are, be". As a bit of warning though, in English, there are other uses for this copula other that predication, such as identity (Lewis Carroll is Charles Dodgson), we will encounter this usage later and the logical operations which come from it. We use predication all the time, it is essential to how any language describes the world around them (though different languages will use different structures and phrases to denote predication). Here are some examples of English predicates:
+\begin{earg}
+\item[]\blank is a dog
+\item[]\blank  is a member of Monty Python
+\item[]A piano fell on \blank 
+\end{earg}
+In general, you can think about predicates as things which combine with singular terms to make sentences. Conversely, you can start with sentences and make predicates out of them by removing terms. Consider the sentence:
+\begin{center}
+Vinnie borrowed the family car from Nunzio.
+\end{center}
+By removing a singular term, we can obtain any of three different predicates:
+\begin{earg}
+\item[] \blank  borrowed the family car from Nunzio
+\item[] Vinnie borrowed \blank  from Nunzio
+\item[] Vinnie borrowed the family car from \blank 
+\end{earg}
+In QL, predicates are capital letters A through Z, with or without subscripts. There are infinitely many possible predicates one might need to deal with so the subscripts help us keep track once we run out of the standard 26 in the English alphabet. That said, sometimes the characters used in other languages' alphabets are used but it is standard practice for Greek characters to be used as sort of variables, to make generic descriptions of the logical moves without being tied to one particular symbolization key.
+
+Like with names and with propositions, we need to have a symbolization key for the predicates as well. For this, we generally use the end of the English alphabet for the ‘place-holders' for names we will want to put there. So, we might write a symbolization key for predicates thus:
+\begin{ekey}
+\item[Ax] x is angry
+\item[Hx] x is happy
+\end{ekey}
+From the previous page, we know that we also need to make a symbolization key for the names as well. If we combine these two keys, we can start to symbolize some English sentences into this system and actually have them retain most of their meaning.For example, consider the English sentences:
+\begin{earg}
+\item[\ex{nampre1}] Elsa is angry.
+\item[\ex{nampre2}] Gregor and Marybeth are angry.
+\item[\ex{namprecon}] If Elsa is angry, then so are Gregor and Marybeth.
+\end{earg}
+This first sentence, Sentence \ref{nampre1}, is fairly straightforward. We have the predicate, Ax, which means "is angry" and we have the name, e, which means Elsa, so we can symbolize it as ‘Ae’. In the case of Sentence \ref{nampre2}, this is a conjunction of two simpler sentences. The simple sentences can be symbolized just by ‘Ag’ and ‘Am’.  With the next step, it should be noted that we can use everything we have from PL. This is a major point, QL is not something completely different from PL, rather it is an extension of it. So, we can symbolize the entire sentence by ‘Ag\eand Am’. For the last sentence, Sentence \ref{namprecon}, this is a conditional, whose antecedent is Sentence \ref{nampre1} and whose consequent is Sentence \ref{nampre2}, so we can symbolize this with ‘Ae\eif (Ag\eand Am)’.
+
+\subsection{Relational Predicates}
+
+All of the predicates that we have considered so far concern properties that objects might have. Those predicates have one \gls{variable} or place-holder in them. To make a sentence, we simply need to slot in one term. We can call these one-place predicates. In principle. one could attempt to translate any proposition into one-place predicates, for example, take this symbolization key:
+\begin{ekey}
+\item[i] Imre
+\item[k] Karl
+\item[L_1 x] x loves Imre
+\item[L_2 x] x loves Karl
+\end{ekey}
+However, looking at this, you should notice that there is an underlining similarity between $L_1$ and $L_2$. Both of them concern a relation between ‘x' and another object. Such relations don't need to be spelled out like this, we can and should give only one predicate with two (or more) ‘slots' for objects to fill (the variables). There are many predicates which concern the relation between two things, for example:
+\begin{earg}
+\item[] x loves y
+\item[] x is to the left of y
+\item[] x is in debt to y
+\end{earg}
+We can call these two-place predicates. They need to be filled in with two terms in order to make a sentence. Conversely, if we start with an English sentence containing many singular terms, we can remove two singular terms, to obtain different two-place predicates. Consider the sentence ‘Vinnie borrowed the family car from Nunzio’. By deleting two singular terms, we can obtain any of three different two-place predicates Vinnie borrowed from borrowed the family car from borrowed from Nunzio and by removing all three singular terms, we obtain a three-place predicate:
+\begin{center}
+x borrowed y from z
+\end{center}
+Indeed, there is no upper limit on the number of places that our predicates may contain. One could have a 5-place predicate, a 6-place, or even a 20-place.  With this in mind, rather than listing off every object x could love, we simplify things by using a two-place predicate. For example, consider this symbolization key:
+\begin{ekey}
+\item[i] Imre
+\item[k] Karl
+\item[Lxy] x loves y
+\end{ekey}
+
+With this key, we can easily symbolize the following three sentences without needing to fill in more than necessary. The following are three perfectly perfectly good sentences, obtained by filling in the variables in ‘x loves y’ in different ways; but they all have distinctively different meanings:
+\begin{earg}
+\item[\ex{relpre1}] Karl loves Imre.
+\item[\ex{relpre2}] Imre loves Karl.
+\item[\ex{relpre3}] Karl loves Karl.
+\end{earg}
+The point is that we need to keep track of the variables in predicates, so that we can keep track of how we are filling them in. Suppose we want to symbolize the preceding sentences. I use the key to write Sentence \ref{relpre1} as ‘Lki', Sentence \ref{relpre2} as ‘Lik’, and Sentence \ref{relpre3} will be ‘Lkk’. We aren't just limited to where the names are different, we can also use the same names:
+\begin{earg}
+\item[\ex{relpre4}]Imre loves himself.
+\item[\ex{relpre5}]Karl loves Imre, but not vice versa.
+\item[\ex{relpre6}]Karl is loved by Imre.
+\end{earg}
+Sentence \ref{relpre4} can be paraphrased as ‘Imre loves Imre’, and so symbolised by ‘Lii’. Sentence \ref{relpre5} is a conjunction. We can paraphrase it as ‘Karl loves Imre, and Imre does not love Karl’, and so symbolise it as ‘Lki \eand  \enot Lik’. Sentence \ref{relpre6} can be paraphrased by ‘Imre loves Karl’, and so symbolised as ‘Lik’. In this last case, of course, we have lots the difference in tone between the active and passive voice; but we have at least preserved the truth conditions. But the relationship between ‘Imre loves Karl’ and ‘Karl is loved by Imre’ highlights something important and something which could lead to potential confusion if you ever need to translate something in the wild. Take, for example, this addition to the key:
+\begin{ekey}
+\item[Mxy] y loves x
+\end{ekey}
+The entry for ‘Mxy ’ uses exactly the same English word as the entry for ‘Lxy’, the difference is that the variables have been swapped. This matters because when we see a sentence like ‘Lki’, we are being told to take the first name (i.e., ‘k’) and associate its value (i.e., Karl) with the variable labeled ‘x’, then take the second name (i.e.,‘i’) and associate its value (i.e., Imre) with the variable labeled ‘y’, and so come up with: Karl loves Imre. The sentence ‘Mik’ also tells us to take the first name (i.e., ‘i’) and plug its value into the variable labeled ‘x’, and take the second name (i.e., ‘k’) and plug its value into the gap labeled ‘y’, and so come up with: Imre loves Karl. So, ‘Lik’ and ‘Mki’ both symbolize ‘Imre loves Karl’, whereas ‘Lki’ and ‘Mik’ both symbolize ‘Karl loves Imre’. ‘Mki' and ‘Lki' mean different things (love can be unrequited). To avoid this confusion, I recommend putting everything into the active voice and keeping the variables in standard order. 
+
+One last example might be helpful. Suppose we add this to our symbolization key:
+\begin{ekey}
+\item[Pxy] x prefers x to y
+\end{ekey}
+Now the sentence ‘Pik’ symbolizes ‘Imre prefers Imre to Karl’, and ‘Pki’ symbolizes ‘Karl prefers Karl to Imre’. And note that we could have achieved the same effect, if we had instead specified:
+\begin{ekey}
+\item[Pxy] x prefers themselves to y
+\end{ekey}
+In any case, the overall moral of this is simple. When dealing with predicates with more than one place, pay careful attention to the order of the variables!
+\section{Part 18.3 Quantifiers}
+Thus far, you would be right in thinking that there isn't much of a difference between PL and QL. The operations are the same and the only real difference is that we have broken up the propositions into two general parts; names and predicates. Given the name ‘Quantified Logic', you might think that this logical language will have something to do with quantity, amounts, and the relationships between them and in this case, you would be right. We are now ready to introduce \glspl{quantifier}. Quantifiers are what really sets QL apart from PL. Quantifiers give us a reason to break up the propositions and keep a distinction between names and predicates in mind. For example, consider these sentences:
+\newglossaryentry{quantifier}
+{
+name=quantifier,
+description={A logical operator used in QL which specifies the generality of a sentence},
+plural=quantifiers
+}
+
+
+\begin{earg}
+\item[\ex{uq1}] Everyone is happy.
+\item[\ex{eq1}] Someone is angry.
+\end{earg}
+It might be tempting to symbolize Sentence \ref{uq1} as ‘He\eand (Hg\eand Hm)’. This might be correct, if we are only dealing with a context or ‘world' with only Elsa, Gregor, and Marybeth and they are happy.  On the other hand, we have no reason to think that they are the only people in the world or the only things which are logically relevant. We want to say that everyone is happy, even those we haven't assigned names to. This is where we get our first quantifier. This is called the \gls{universal quantifier}. This is shown by using the symbol ‘$\forall$’, which looks like an upside-down capital A. Just like how in natural languages it wouldn't make sense to just say "all" without any context, a quantifier must always be followed by a variable, which gives us a connection between it and the context, the rest of the logical sentence. In QL, variables are lowercase letters and we typically use the end of the English alphabet, ‘s’ through ‘z’, with or without subscripts. For example, we can symbolize Sentence \ref{uq1} as:
+\begin{center}
+$\forall$x Hx
+\end{center}
+The variable ‘x’ is serving as a kind of placeholder. The expression ‘$\forall$x’ intuitively means that you can pick anyone and put them in as ‘x’. The subsequent ‘Hx’ indicates that the thing you picked out is happy. So, for example, if Gregor is in the world or domain, then Hg is true because we just plugged ‘g' in for ‘x'. It should be pointed out that there is no special reason to use ‘x’ rather than some other variable, but it has sort of naturally become the default variable for sentences with only one quantifier. The sentences 
+\begin{center}
+‘$\forall$x Hx’, ‘$\forall$y Hy’, ‘$\forall$z Hz’, ‘$\forall$$x_5$ H$x_5$’ 
+\end{center}
+use different variables, but they will all be logically equivalent. In a future module, I will give you the tools to switch between these. It should be noted, however, that using different variables is often necessary when dealing with sentences with multiple quantifiers. For example, take this sentence:
+\begin{center}
+$\forall$x$\forall$y (Hx\eif Hy)
+\end{center}
+This would be read as something like "for any x and for any y, if x is happy, then y is happy". While this does entail that for anyone, if they're happy, then they're happy ($\forall$x (Hx\eif Hx)) and it might, at first pass, seem like you could symbolize this general idea as ‘$\forall$x$\forall$x (Hx\eif Hx)', there is an added ambiguity, namely, which x connects to which quantifier? Assigning different variable names to the different quantifiers saves us from this worry.
+
+With that, we are able to make claims about all things but what if we want to limit the scope a little bit? For example, take a look at Sentence \ref{eq1}. That one is not claiming that everyone is angry. Rather, it is making the more modest claim that only a few (at least one) are angry. This is different, though they are logically related (we will cover this in a future module). To get this more limited interpretation, we need a new symbol, called  the \gls{existential quantifier}, ‘$\exists$’. Like the universal quantifier, the existential quantifier requires a variable. Sentence \ref{eq1} can be symbolized by
+\begin{center}
+$\exists$x Ax
+\end{center}
+If we were to symbolize this as ‘$\forall$x Ax’, we would have that everyone is angry ‘for all x, x is angry’, ‘$\exists$x Ax’, on the other hand, means that ‘there is something, x, such that x is angry’ or, within the right context or ‘domain', "someone is angry". Once again, the variable is a kind of placeholder; we could just as easily have symbolized sentence \ref{eq1} by ‘$\exists$z Az’, ‘$\exists$$w_{256}$ A$w_{256}$’, or whatever. The importance of using different variable names for the different quantifiers should be even more apparent. For example, take this sentence:
+\begin{center}
+$\forall$x$\exists$y (Hx\eif Ay)
+\end{center}
+This could be read as "for any x there is a y such that if x is happy, then y is angry", which means something like ‘for anyone, their happiness will make another angry'. Using the same variable name will lead to ambiguity between this and something like ‘for anyone, if they are happy, then they are angry'.
+
+Some more examples will help. Consider these further sentences:
+\begin{itemize}
+\item[\ex{neq1}] No one is angry.
+\item[\ex{neq2}] There is someone who is not happy.
+\item[\ex{nuq1}] Not everyone is happy.
+\end{itemize}
+Sentence \ref{neq1} can be paraphrased as, ‘It is not the case that someone is angry’. Pulling from PL again, we can then symbolize it using negation and an existential quantifier:
+\begin{center}
+\enot $\exists$x Ax.
+\end{center}
+Yet Sentence \ref{neq1} could also be paraphrased as, ‘Everyone is not angry’. Both of these are logically equivalent ways of phrasing Sentence \ref{neq1} (this will be the special equivalency rule for QL). With this in mind, it can be symbolized using negation and a universal quantifier:
+\begin{center}
+$\forall$x \enot Ax
+\end{center}
+Both of these are acceptable symbolizations. Symbolizing a sentence one way, rather than the other, might seem more ‘natural’ in some contexts, but it is not much more than a matter of taste and, perhaps, efficiency (we will have equivalency rules for QL which go beyond those found in PL so move between these). Moving on to Sentence \ref{neq2}, this is most naturally paraphrased as, ‘There is some x, such that x is not happy’. A logically equivalent way of phrasing this is ‘it is not the case that for any x, x is happy'. Both of these have different, though equivalent, symbolizations:
+\begin{center}
+$\exists$x \enot Hx\\
+\enot $\forall$x Hx
+\end{center}
+To reiterate, these are equivalent and The second form is an adequate symbolization of sentence \ref{nuq1}.
+
+\subsection{A Warning about Sentences with Multiple Quantifiers}
+
+Consider the sentence ‘everyone loves someone’. This is potentially ambiguous. It might mean either of the following:
+\begin{earg}
+\item[\ex{relpreq1}]For every person x, there is some person that x loves
+\item[\ex{relpreq2}]There is some particular person whom every person loves
+\end{earg}
+Sentence \ref{relpreq1} can be symbolized by ‘$\forall$x$\exists$y Lxy’, and would be true of a love-triangle. For example, suppose that our domain of discourse is restricted to Imre, Juan and Karl. Suppose also that Karl loves Imre but not Juan, that Imre loves Juan but not Karl, and that Juan loves Karl but not Imre. Then sentence \ref{relpreq1} is true.
+
+Sentence \ref{relpreq2} is symbolized by ‘$\exists$y$\forall$x Lxy’. Sentence \ref{relpreq2} is not true in the situation just described. Again, suppose that our domain of discourse is restricted to Imre, Juan and Karl. Then all of Juan, Imre and Karl must converge on (at least) one object of love. The point of the example is to illustrate that the order of the quantifiers matters a great deal. Indeed, to switch them around is called a quantifier shift fallacy. Here is an example, which comes up in various forms throughout the philosophical literature:
+\begin{earg}
+\item[]For every person, there is some truth they cannot know. ($\forall$$\exists$)
+\item[\therefore] There is some particular truth that no person can know. ($\exists$$\forall$)
+\end{earg}
+This argument form is obviously invalid. It’s just as bad as:
+\begin{earg}
+\item[]Every dog has its day. ($\forall$$\exists$)
+\item[\therefore] There is a day for all the dogs. ($\exists$$\forall$)
+\end{earg}
+When we have the inference rules for QL, you might think that you will have the ability to move between these two different placements for the quantifiers. This is incorrect, though you will be very close to making this sort of move (there are restrictions to the rules which prevent it).  So, my advice is to keep the original intent in mind when translating.
+
+\aristotle
+
+\section{Part 18.4.1 Domains}
+Given the symbolization key we have been using, ‘$\forall$x Hx’ symbolizes ‘Everyone is happy’. Who is included in this everyone? When we use sentences like this in English, we usually do not mean everyone now alive on the Earth. We certainly do not mean everyone who was ever alive or who will ever live. We usually mean something more modest: everyone now in the building, everyone enrolled in the ballet class, or whatever.
+
+In order to eliminate this ambiguity, we will need to specify a domain. The domain is the collection of things that we are talking about. So if we want to talk about people in Seattle, we define the domain to be people in Seattle. The quantifiers range over the domain. Given this domain, ‘$\forall$x’ is to be read roughly as ‘Every person in Seattle is such that. . . ’ and  ‘$\exists$x’ is to be read roughly as ‘Some person in Seattle is such that. . . ’. This, in a sense, limits what we are talking about to a given context. In ordinary conversation, this makes sense. Suppose that someone is at a restaurant and the waiter asks "can I get you anything?" It would be quite absurd for the patron to reply "yea, you can get me a million dollars." While a million dollars is a thing, it is beyond the scope, the domain, of the question. Typically, there is an implied domain for your general statements and we carry this over into QL. We write this at the beginning of the symbolization key, like this:
+\begin{ekey}
+\item[domain] people in Seattle
+\end{ekey}
+In QL, the domain must always include at least one thing. Moreover, in English we can legitimately infer ‘something is angry’ from ‘Gregor is angry’. In QL, then, we will want to be able to infer ‘$\exists$x Ax’ from ‘Ag’. This will be one of the special inference rules for QL beyond those in PL. So we will insist that each name must pick out exactly one thing in the domain. If we want to name people in places beside Seattle, then we need to include those people in the domain.
+\factoidbox{
+A domain must have at least one member. Every name must pick out exactly one member of the domain, but a member of the domain may be picked out by one name, many names, or none at all.}
+
+Even allowing for a domain with just one member can produce some strange results. Suppose we have this as a symbolization key:
+\begin{ekey}
+\item[domain] the Space Needle
+\item[Sx] x is in Seattle.
+\end{ekey}
+The sentence $\forall$x Sx might be paraphrased in English as ‘Everything is in Seattle.’ Yet that would be misleading. It means that everything in the domain is in Seattle. This domain contains only the Space Needle, so with this symbolization key $\forall$x Sx just means that ‘everything which is the Space Needle is in Seattle.
+\chapter{Part 19 Bringing It All Together}
+\section{Part 19.1 Sentences with One Quantifier}
+We now have all of the pieces of QL. Symbolizing more complicated sentences is just a matter of knowing how to combine predicates, names, quantifiers, and connectives. There is a knack to this, and there is no substitute for practice. Consider these sentences:
+\begin{earg}
+\item[\ex{coin1}] Every coin in my pocket is a quarter.
+\item[\ex{coin2}] Some coin on the table is a dime.
+\item[\ex{coin3}] Not all the coins on the table are dimes.
+\item[\ex{coin4}] None of the coins in my pocket are dimes.
+\end{earg}
+In providing a symbolization key, we need to specify a domain. Since we are talking about coins in my pocket and on the table, the domain must at least contain all of those coins. Since we are not talking about anything besides coins, we let the domain be all coins. Since we are not talking about any specific coins, we do not need to deal with any names. So here is our key:
+\begin{ekey}
+\item[domain] all coins
+\item[Px]  x is in my pocket
+\item[Tx] x is on the table
+\item[Qx] x is a quarter
+\item[D]: x is a dime
+\end{ekey}
+Sentence \ref{coin1} is most naturally symbolized using a universal quantifier. The universal quantifier says something about everything in the domain, not just about the coins in my pocket. Sentence \ref{coin1} can be paraphrased as ‘for any coin, if that coin is in my pocket then it is a quarter’. So we can symbolize it as:
+\begin{center}
+$\forall$x (Px\eif Qx).
+\end{center}
+Since Sentence \ref{coin1} is about coins that are both in my pocket and that are quarters, it might be tempting to symbolize it using a conjunction. However, the sentence ‘$\forall$x (Px\eand Qx)’ would symbolize the sentence ‘every coin is both a quarter and in my pocket’. This obviously means something very different than Sentence \ref{coin1}. And so we see:
+\factoidbox{
+A sentence can be symbolized as $\forall$x (Fx\eif Gx) if it can be paraphrased in English as ‘every F is G’.
+}
+Sentence \ref{coin2} is most naturally symbolized using an existential quantifier. It can be paraphrased as ‘there is some coin which is both on the table and which is a dime’. So we can symbolize it as:
+\begin{center}
+$\exists$x (Tx\eand Dx)
+\end{center}
+Notice that we needed to use a conditional with the universal quantifier, but we used a conjunction with the existential quantifier. Suppose we had instead written $\exists$x (Tx\eif Dx). That would mean that there is some object in the domain, x, which (Tx\eif  Dx) is true. Recall that, in PL, A\eif B is logically equivalent (in PL) to \enot A\eor B. This equivalence will also hold in QL. So $\exists$x (Tx\eif  Dx) is true if there is some object in the domain, such that ‘(\enot Tx\eor  Dx)’ is true of that object. That is, ‘$\exists$x (Tx \eif  Dx)’ is true if some coin is either not on the table or is a dime. Of course there is a coin that is not on the table: there are coins in lots of other places. So it is very easy for ‘$\exists$x (Tx\eif  Dx)’ to be true. A conditional will usually be the natural connective to use with a universal quantifier, but a conditional within the scope of an existential quantifier tends to say something very weak indeed. As a general rule of thumb, do not put conditionals in the scope of existential quantifiers unless you are sure that you need one.
+\factoidbox{
+A sentence can be symbolized as $\exists$x (Fx \eand  Gx) if it can be paraphrased in English as ‘some F is G’.
+}
+Sentence \ref{coin3} can be paraphrased as, ‘It is not the case that every coin on the table is a dime’. So we can symbolize it as:
+\begin{center}
+\enot $\forall$x (Tx\eif Dx)
+\end{center}
+You might look at sentence \ref{coin3} and paraphrase it instead as, ‘Some coin on the table is not a dime’. You would then symbolize it by ‘$\exists$x (Tx \eand  \enot Dx)’. Although it is probably not immediately obvious yet, these two sentences are logically equivalent. We will see why when we get to testing for validity in QL, which is very similar to testing for validity in PL and again when we have the equivalency rule(s) for QL.
+
+Sentence \ref{coin4} can be paraphrased as, ‘It is not the case that there is some dime in my pocket’. This can be symbolized as:
+\begin{center}
+\enot $\exists$x (Px\eand Dx)
+\end{center}
+It might also be paraphrased as, ‘Everything in my pocket is a non-dime’, and then could be symbolized by ‘$\forall$x (Px\eif  \enot Dx)’. Again the two symbolizations are logically equivalent; both are correct symbolizations of sentence \ref{coin4}.
+\factoidbox{
+A sentence that can be paraphrased as ‘no F is G’ can be symbolized as \enot $\exists$x (Fx\eand Gx) and also as $\forall$x (Fx\eif \enot Gx).
+}
+Finally, consider ‘only’, as in:
+
+\begin{itemize}
+\item[\ex{coin5}]Only dimes are on the table.
+\end{itemize}
+
+How should we symbolize this? A good strategy is to consider when the sentence would be false. If we are saying that only dimes are on the table, we are excluding all the cases where something on the table is a non-dime. So we can symbolize the sentence the same way we would symbolize ‘No non-dimes are on the table.’ Remembering the lesson we just learned, and symbolizing ‘x is a non-dime’ as ‘\enot Dx’, the possible symbolizations are: 
+\begin{center}
+\enot $\exists$x (Tx\eand  \enot Dx)\\
+$\forall$x (Tx\eif Dx)
+\end{center}
+More literally, the second translation would be ‘$\forall$x (Tx\eif \enot \enot Dx)' but the double negations cancel out. In other words, ‘Only dimes are on the table’ and ‘Everything on the table is a dime’ are symbolized the same way.
+\factoidbox{
+A sentence that can be paraphrased as ‘only F s are Gs’ can be symbolized as \enot $\exists$x (Gx\eand \enot Fx) and also as $\forall$x (Gx\eif Fx).
+}
+
+\ghazali
+
+\section{Part 19.2 Brining It All Together}
+We know how to represent English sentences in QL. The time has finally come to define the notion of a \gls{sentence of QL}. Like with PL, I will start us off by listing off the symbols and letters which we have available to us in QL. It is worth remembering that QL is not something fundamentally different from PL, rather it is an extension of it. There are other extensions of PL and then there are extensions of QL which might be fun for you to explore such as Modal Logics, which deal with claims and reasoning about possibility and necessity, Temporal Logics, which deal with reasoning about different points in time (when it is really essential to get the order of events right), Epistemic Logics, which deal with knowledge claims and beliefs, and Deontic Logics which deal with moral obligations and permissibility. QL has 6 base-level components which are listed like so: 
+
+\begin{center}
+\begin{tabular}{l| l}
+Predicates & $A,B,C,\ldots,Z$\\
+with subscripts, as needed & $A_1, B_1,Z_1,A_2,A_{25},J_{375},\ldots$\\\hline
+Names&a,b,c,\ldots ,r\\
+with subscripts, as needed &$a_1,b_{224},h_7,m_{32},\ldots$\\\hline
+Variables&s,t,u,v,w,x,y,z,\ldots\\
+with subscripts, as needed &$s_1,t_1,\ldots,z_1,s_2,\ldots$\\\hline
+Connectives & $\enot,\eand,\eor,\eif,\eiff$\\\hline
+Brackets &( , )\\\hline
+Quantifiers&$\forall,\exists$\\\hline
+\end{tabular}
+\end{center}
+
+Just like in PL, we define an expression of QL as any string of these symbols. Take any of the symbols of QL and write them down, in any order, and you have an expression. Of course, some of them will be complete gibberish, and so we need to isolate which of these actually could mean something or have logical value. To adequately define this, we can't move straight from the vocabulary to the definition of a sentence in QL, rather we need to take a slight detour.  First, we need to talk about \glspl{formula}. The initial idea behind a formula is that it is anything which is a sentence or could be made into a sentence by adding a quantifier to the front. This initial idea, however, will need to be unpacked. So, we will start by defining a \gls{term}.
+\factoidbox{
+A term is any name or any variable.\\
+$a,b,x,x_1,x_2,y,y_{254},z$}
+
+The next step is to define atomic formulas, much like how we defined atomic sentences in PL.
+\factoidbox{\begin{enumerate}
+\item Any sentence letter is an atomic formula.
+\item If R is an n-place predicate and $t_1, t_2,..., t_n$ are terms, then R$t_1$$t_2$...$t_n$ is an atomic formula.
+\item If $t_1$ and $t_2$ are terms, then $t_1$=$t_2$ is an atomic formula.
+\item Nothing else is an atomic formula.
+\end{enumerate}}
+Note that we consider sentence letters also formulas of QL, so every sentence of PL is also a formula of QL. The use of script letters here follows the conventions laid down in earlier. Take the sentence letters from PL and break them up into names and predicates. So, ‘R’ is not itself a predicate of QL. Rather, it is a symbol of our metalanguage (augmented English) that we use to talk about any predicate of QL. Similarly, ‘t1’ is not a term of QL, but a symbol of the metalanguage that we can use to talk about any term of QL. So, where ‘F ’ is a one-place predicate, ‘G’ is a three-place predicate, and ‘S ’ is a six-place predicate, here are some atomic formulas:
+\begin{center}
+Db, Fa\\
+Qxa, Gxay\\
+Mab, Gaaa\\
+Fx, $Sx_{1}x_{2}abyx_{1}$
+\end{center}
+
+Once we know what atomic formulas are, we can offer recursion clauses to define arbitrary formulas. The first few clauses are exactly the same as for PL.
+
+\factoidbox{\label{QLsentences}
+	\begin{enumerate}
+		\item Every sentence letter is a formula.
+		\item If \metav{A} is a sentence, then $\enot\metav{A}$ is a sentence.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eand\metav{B})$ is a formula.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eor\metav{B})$ is a formula.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eif\metav{B})$ is a formula.
+		\item If \metav{A} and \metav{B} are sentences, then $(\metav{A}\eiff\metav{B})$ is a formula.
+		\item If \metav{A} is a formula and x is a variable, then $\forall$x\metav{A} is a formula.
+		\item If \metav{A} is a formula and x is a variable, then $\exists$x\metav{A} is a formula.
+		\item Nothing else is a formula.
+	\end{enumerate}
+	}
+So, assuming again that ‘F’ is a one-place predicate, ‘G’ is a three-place predicate and ‘S’ is a six place-predicate, here are some formulas you can build this way:
+\begin{center}
+Fx, Gxyz\\
+Syzyayx, Gayz\eif Syzyayx\\
+$\forall$z(Gayz\eif Syzyayx), Fx\eand $\forall$z(Gayz\eif Syzyayx)\\
+$\exists$y(Fx\eand $\forall$z(Gayz\eif Syzyayx)), $\forall$x$\exists$y(Fx\eand $\forall$z(Gayz\eif Syzyayx))\\
+\end{center}
+We can now give a formal definition of scope, which incorporates the definition of the scope of a quantifier. Here we follow the case of PL, though we note that a logical operator can be either a connective or a quantifier:
+\factoidbox{
+The \gls{main logical operator} in a formula is the operator that was introduced most recently, when that formula was constructed using the recursion rules.\\
+The \gls{scope} of a logical operator in a formula is the subformula for which that operator is the main logical operator.
+}
+So we can graphically illustrate the scope of the quantifiers in the preceding example thus:
+	$$\overbrace{\forall x \overbrace{\exists y (Fx \eiff \overbrace{\forall z (Gayz \eif Syzyayx)}^{\text{scope of `}\forall z\text{'}}}^{\text{scope of `}\exists y\text{'}})}^{\text{scope of `$\forall x$'}}$$	
+\subsection{Free Variables}
+
+Recall that we are largely concerned in logic with assertoric sentences: sentences that can be either true or false. Many formulas are not sentences. Consider the following symbolization key:
+\begin{ekey}
+\item[domain] people
+\item[Lxy] x loves y
+\item[b] Boris
+\end{ekey}
+Consider the atomic formula ‘Lzz’. All atomic formula are formulas, so ‘Lzz’ is a formula, but can it be true or false? You might think that it will be true just in case the person named by ‘z’ loves themself, in the same way that ‘Lbb’ is true just in case Boris (the person named by ‘b’) loves himself. However, ‘z’ is a variable, and does not name anyone or any thing. Of course, if we put an existential quantifier out front, obtaining ‘$\exists$z Lzz’, then this would be true iff someone loves themselves. Equally, if we wrote ‘$\forall$z Lzz’, this would be true iff everyone loves themselves. The point is that we need a quantifier to tell us how to deal with a variable. In the proofs, you will need to, in a sense, pass through formulae which are not sentences but will typically conclude with sentences. Let’s make this idea precise.
+\factoidbox{
+An occurrence of a variable x is bound (x is a \gls{bound variable}) iff it falls within the scope of either $\forall$x or $\exists$x.\\
+An occurrence of a variable which is not bound is free (\gls{free variable}).}
+
+For example, consider the formula
+\begin{center}
+$\forall$x(Ex\eor Dy)\eif $\exists$z(Ex\eif Lzx)
+\end{center}
+The scope of the universal quantifier ‘$\forall$x’ is ‘$\forall$x(Ex\eor Dy)’, so the first ‘x’ is bound by the universal quantifier. However, the second and third occurrence of ‘x’ are free. Equally, the ‘y’ is free. The scope of the existential quantifier ‘$\exists$z’ is ‘(Ex\eif Lzx)’, so ‘z’ is bound. Finally we can say the following.
+\factoidbox{
+A sentence of QL is any formula of QL that contains no free variables.}
+
+\subsection{Bracketing conventions}
+
+We will adopt the same notation conventions governing brackets that we did for PL. First, we may omit the outermost brackets of a formula. Second, we may use square brackets, ‘[’ and ‘]’, in place of brackets to increase the readability of formulas. Sentences of QL used in our examples can become quite cumbersome, and so we also introduce a convention to deal with conjunctions and disjunctions of more than two sentences. We stipulate that $A_1\eand A_2 \eand ...\eand A_n$ and $A_1\eor A_2\eor ...\eor A_n$ are to be interpreted as, respectively:
+\begin{center}
+(...($A_1$\eand $A_2$)\eand ...\eand $A_n$)\\
+(...($A_1$\eor $A_2$)\eor ...\eor $A_n$)
+\end{center}
+In practice, this just means that you are allowed to leave out parentheses in long conjunctions and disjunctions. But remember that (unless they are the outermost parentheses of the sentence) you must still enclose the entire conjunction or disjunction in parentheses. Also, you cannot mix conjunctions and disjunctions with each other or with other connectives. So the following are still not allowed, and would be ambiguous if they were:
+\begin{center}
+A\eor B\eand C\eand D\\
+B\eor C\eif D
+\end{center}
+\chapter{Part 20 Examples of Symbolization}
+As we are starting to see, symbolization in QL can become a bit tricky. So, when symbolizing a complex sentence, you should lay down several stepping-stones. As usual, the idea is best illustrated by example. Consider this symbolisation key: 
+\begin{ekey}
+\item[\text{domain}] people and dogs
+\item[Dx] \gap{x} is a dog
+\item[Fxy] \gap{x} is a friend of \gap{y}
+\item[Oxy] \gap{x} owns \gap{y}
+\item[g] Geraldo
+\end{ekey}
+Now let's try to symbolize these sentences:
+\@addtoreset{eargnum}{0}
+\begin{earg}
+\item[\ex{dog2}] Geraldo is a dog owner.
+\item[\ex{dog3}] Someone is a dog owner.
+\item[\ex{dog4}] All of Geraldo's friends are dog owners.
+\item[\ex{dog5}] Every dog owner is a friend of a dog owner.
+\item[\ex{dog6}] Every dog owner's friend owns a dog of a friend.
+\end{earg}
+Sentence \ref{dog2} can be paraphrased as, `There is a dog that Geraldo owns'. This can be symbolized by: 
+\begin{center}
+$\exists x(Dx \eand Ogx)$
+\end{center}
+Sentence \ref{dog3} can be paraphrased as, `There is some y such that y is a dog owner'. Dealing with part of this, we might write `$\exists y(y\text{ is a dog owner})$'. Now the fragment we have left as `$y$ is a dog owner' is much like sentence~\ref{dog2}, except that it is not specifically about Geraldo. So we can symbolize sentence~\ref{dog3} by:
+$$\exists y \exists x(Dx \eand Oxy)$$
+We should pause to clarify something here. In working out how to symbolize the last sentence, we wrote down `$\exists y(y\text{ is a dog owner})$'. To be very clear: this is \emph{neither} an QL sentence \emph{nor} an English sentence: it uses bits of QL (`$\exists$', `$y$') and bits of English (`dog owner'). It is really is \emph{just a stepping-stone} on the way to symbolizing the entire English sentence with a QL sentence. You should regard it as a bit of rough-working-out, on a par with the doodles that you might absent-mindedly draw in the margin of this book, whilst you are concentrating fiercely on some problem.  
+
+Sentence \ref{dog4} can be paraphrased as, `Everyone who is a friend of Geraldo is a dog owner'. Using our stepping-stone tactic, we might write 
+$$\forall x \bigl[\atom{F}{xg} \eif x \text{ is a dog owner}\bigr]$$
+Now the fragment that we have left to deal with, `$x$ is a dog owner', is structurally just like sentence \ref{dog2}. However, it would be a mistake for us simply to write 
+$$\forall x \bigl[\atom{F}{xg} \eif \exists x(Dx \eand \atom{O}{xx})\bigr]$$
+for we would here have a \emph{clash of variables}. The scope of the universal quantifier, `$\forall x$', is the entire conditional, so the `$x$' in `$Dx$' should be governed by that, but `$Dx$' also falls under the scope of the existential quantifier `$\exists x$', so the `$x$' in `$Dx$' should be governed by that. Now confusion reigns: which `$x$' are we talking about? Suddenly the sentence becomes ambiguous (if it is even meaningful at all), and logicians hate ambiguity. The broad moral is that a single variable cannot serve two quantifier-masters simultaneously.
+
+To continue our symbolization, then, we must choose some different variable for our existential quantifier. What we want is something like:
+$$\forall x\bigl[\atom{F}{xg} \eif\exists z(\atom{D}{z} \eand \atom{O}{xz})\bigr]$$
+This adequately symbolizes sentence \ref{dog4}.
+
+Sentence \ref{dog5} can be paraphrased as `For any $x$ that is a dog owner, there is a dog owner who $x$ is a friend of'. Using our stepping-stone tactic, this becomes 
+$$\forall x\bigl[\mbox{$x$ is a dog owner}\eif\exists y(\mbox{$y$ is a dog owner}\eand \atom{F}{xy})\bigr]$$
+Completing the symbolization, we end up with
+$$\forall x\bigl[\exists z(\atom{D}{z} \eand \atom{O}{xz})\eif\exists y\bigl(\exists z(\atom{D}{z} \eand \atom{O}{yz})\eand \atom{F}{xy}\bigr)\bigr]$$
+Note that we have used the same letter, `$z$', in both the antecedent and the consequent of the conditional, but that these are governed by two different quantifiers. This is ok: there is no clash here, because it is clear which quantifier that variable falls under. We might graphically represent the scope of the quantifiers thus:
+$$\overbrace{\forall x\bigl[\overbrace{\exists z(\atom{D}{z} \eand \atom{O}{xz})}^{\text{scope of 1st `}\exists z\text{'}}\eif \overbrace{\exists y(\overbrace{\exists z(\atom{D}{z} \eand \atom{O}{yz})}^{\text{scope of 2nd `}\exists z\text{'}}\eand \atom{F}{xy})\bigr]}^{\text{scope of `}\exists y\text{'}}}^{\text{scope of `}\forall x\text{'}}$$
+This shows that no variable is being forced to serve two masters simultaneously.
+
+Sentence \ref{dog6} is the trickiest yet. First we paraphrase it as `For any $x$ that is a friend of a dog owner, $x$ owns a dog which is also owned by a friend of~$x$'. Using our stepping-stone tactic, this becomes:
+\begin{multline*}
+\forall x\bigl[x\text{ is a friend of a dog owner}\eif {}\\
+x\text{ owns a dog which is owned by a friend of }x\bigr]
+\end{multline*}
+Breaking this down a bit more:
+\begin{multline*}
+	\forall x\bigl[\exists y(\atom{F}{xy} \eand y\text{ is a dog owner})\eif {}\\
+\exists y(\atom{D}{y} \eand \atom{O}{xy} \eand y\text{ is owned by a friend of }x)\bigr]
+\end{multline*}
+And a bit more: 
+\begin{multline*}
+\forall x\bigl[\exists y(\atom{F}{xy} \eand \exists z(\atom{D}{z} \eand \atom{O}{yz})) \eif {}\\
+\exists y(\atom{D}{y} \eand \atom{O}{xy} \eand \exists z(\atom{F}{zx} \eand \atom{O}{zy}))\bigr]
+\end{multline*}
+And we are done!
+
+\sina
+
+\newglossaryentry{predicate}{
+  name = predicate,
+  description = {A symbol of QL used to symbolize a property or relation},
+  plural=predicates
+}
+
+
+\newglossaryentry{universal quantifier}{
+  name = universal quantifier,
+  description = {The symbol $\forall$ of QL used to symbolize generality; $\forall x\, Fx$ is true iff every member of the domain is~$F$}
+}
+
+
+\newglossaryentry{variable}{
+  name = variable,
+  description = {A symbol of QL used following quantifiers and as placeholders in atomic formulas; lowercase letters between $s$ and~$z$}
+}
+
+\newglossaryentry{existential quantifier}{
+  name = existential quantifier,
+  description = {The symbol $\exists$ of QL used to symbolize existence; $\exists x\, \atom{F}{x}$ is true iff at least one member of the domain is~$F$}
+}
+
+
+\newglossaryentry{domain}{
+  name = domain,
+  description = {The collection of objects assumed for a symbolization in QL, or that gives the range of the quantifiers in an \gls{interpretation}}
+}
+
+\newglossaryentry{empty predicate}{
+  name = {empty predicate},
+  description = {A \gls{predicate} that applies to no object in the \gls{domain}}
+}
+
+
+\newglossaryentry{term}{
+  name = term,
+  description = {Either a \gls{name} or a \gls{variable}}
+}
+
+\newglossaryentry{formula}{
+  name = formula,
+  description = {An expression of QL built according to the inductive rules inp.~\pageref{QLsentences}},
+  plural=formulae
+}
+
+\newglossaryentry{main logical operator}{
+  name = main logical operator,
+  description = {The operator used last in the construction of a \gls{sentence of PL} or a \gls{formula} of QL}
+}
+
+
+\newglossaryentry{scope}{
+  name = scope,
+  description = {The subformula of a \gls{sentence of PL} or a \gls{formula} of QL for which the \gls{main logical operator} is the operator}
+}
+
+\newglossaryentry{bound variable}{
+  name = bound variable,
+  description = {An occurrence of a variable in a \gls{formula} which is in the scope of a quantifier followed by the same variable}
+}
+
+\newglossaryentry{free variable}{
+  name = free variable,
+  description = {An occurrence of a variable in a \gls{formula} which is not a \gls{bound variable}}
+}
+
+\newglossaryentry{sentence of QL}{
+	name = sentence (of QL),
+	text = sentence of QL,
+	description = {A \gls{formula} of QL which has no \glspl{free variable}}
+}
+
+\newglossaryentry{name}{
+  name = name,
+  description = {A symbol of QL used to pick out an object of the \gls{domain}},
+  plural=names
+  }

@@ -1,0 +1,1046 @@
+\part{Modal Logic}
+\label{ch.ml1}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 28 Introduction to Modal Logic}
+\section{Part 28.1 What Is Modal Logic?}
+In both Propositional Logic and Quantified Logic, we have been dealing with sentences which are either true or false, we haven't had the ability to handle sentences which \emph{could} be true or which are \emph{possibly} false. Words or phrases which change the certainty of a simple sentence are called \glspl{modal}. There are many different modals in English and some other languages have more, less, or even entire verb conjugations which handle the different ways in which a sentence could be true. For example, consider these three English sentences:
+
+\setcounter{Example}{0}
+\begin{earg}
+	\item[\ex{modal1}] Mac ate the cookie.
+	\item[\ex{modal2}] Mac possibly ate the cookie.
+	\item[\ex{modal3}] Mac necessarily ate the cookie. 
+\end{earg}
+
+These three sentences are saying radically different things. They all concern whether Mac ate the cookie, but they differ in the scope of the truth of that fact.  In sentence \ref{modal1}, this is restricted merely to the actual world. There is nothing special going on, just that Mac ate the cookie. Sentence \ref{modal2} is different, however. Adding the adverb `possibly' to the sentence changed the scope or range of the sentence. Rather than saying something definite, like sentence \ref{modal1}, this sentence has some wiggle room. All it is saying is that Mac \emph{could have} eaten the cookie, there is a concievable scenario where Mac did eat the cookie but we do not know whether that scenario was actual. This is significantly weaker than sentence \ref{modal1}. Sentence \ref{modal3}, on the other hand, uses the phrase `necessarily'. This is significantly stronger than sentences \ref{modal1} and \ref{modal2}. This sentence doesn't leave any wiggle room, it is saying that in every single relevant possible scenario, Mac ate the cookie. It is making this claim with a level of certainty not had in the other two sentences. 
+
+Neither PL nor QL has the ability to accurately handle sentences like these. With PL, they would be symbolized as three different simple sentences and the fundamental logical connection between them, had because of the form, would be irretrievably lost. For QL, the connection that all three concern Mac would be preserved but the predicates would be radically different and, again, the formal link connecting them would be lost. Similarly, for both PL and QL, various seemingly valid inferences concerning the nature of possibility and necessity would be judged invalid because neither has the capability to reason in this way. This is why we need a different logical system.
+
+Modal logic (ML) is the logic of modalities, ways in which a statement can be true. Necessity and possibility are two such modalities: a statement can be true, but it can also be necessarily true (true no matter how the world might have been). For instance, logical truths are not just true because of some accidental feature of the world, but true come what may. A possible statement may not actually be true, but it might have been true. ML starts off, much like QL, as an expansion of PL, but rather than adding \emph{quantifiers}, ML incorporates \glspl{qualifier} in order to represent different modalities and give a formal structure for reasoning with or about them. Quantifiers, as the name implies, give information about the amount, the \emph{quantity}, of things which have some feature(s). Qualifiers, on the other hand, \emph{qualify}, or restrict/expand, the truth of the statements. 
+
+\newglossaryentry{modal}
+{
+name=modal,
+description={A word or phrase such as ``possibly'' or ``necessarily'' which qualifies, restricts or gives caveats to, the truth of the sentence in question},
+plural=modals
+}
+
+\newglossaryentry{qualifier}
+{
+name=qualifier,
+description={A logical operator which specifies the \gls{modal} in a sentence},
+plural=qualifiers
+}
+
+As a brief introduction to this family of logics, we use `\ebox' to express necessity, and `\ediamond' to express possibility. So you can read \ebox A as `It is necessarily the case that A', and \ediamond A as `It is possibly the case that A'. It should be noted that there are many different kinds of possibility and necessity. For example, it is not humanly possible for me to run at 100mph but it is physically possible for a person to run that fast (replace my legs with a robot's). Similarly, it is not physically possible to move faster then the speed of light, but doing so is logically possible. 
+
+ML has the power to handle all of them. We can use it in some contexts for logical possibility, in another physical possibility, in another practical possibility, and in yet another human possibility. They all work using the same rules, we just need to specify the range of scenarios we are deeming possible in the context. ML is a very flexible tool.
+
+In fact, ML is so flexible that we don't necessarily need to think of `\ebox'  and `\ediamond'  as expressing necessity and possibility. Doxastic Logic is a branch of ML which deals with beliefs and knowledge. They think of `\ediamond'  as `S believes...' and `\ebox'  as `S knows...'. So, for example, using the same logical rules and operations as ML, Doxastic Logic can prove arguments like:
+\begin{earg}
+\item[]S knows that P and knows that if P is true, then M is true. 
+\item[\therefore] S knows M. 
+\end{earg}
+Another example is  Deontic Logic which deals with moral obligations and permissibility. For this one, we think of `\ebox' as `it is obligatory that...' (doing otherwise is morally wrong, we have a moral obligation to do it) and `\ediamond'  as `it is permissible that...' (doing it is morally fine/OK). Just as before, using the same general rules found in ML, Deontic Logic be used to prove arguments like:
+\begin{earg}
+\item[]C is permissible and if C is the case, then P is. 
+\item[\therefore] P is also permissible. 
+\end{earg}
+Both of these, and a litany of others all boil down to different interpretations and applications of these two operators, `\ebox'  and `\ediamond', though they tend to use different ones to save confusion.
+
+A modal formula is one that includes qualifiers such as `\ebox' and `\ediamond'. Depending on the interpretation we assign to `\ebox' and `\ediamond', different modal formulae will be provable or valid from a set of premises or none at all. These interpretations, in a sense, tell us the system we are working in, what sort of logical moves are allowed. For instance, \ebox A \eif A might say that “if A is necessary, it is true,” if `\ebox'  is interpreted as necessity. It might express “if A is known, then it is true,” if `\ebox'  expresses known truth. Under both these interpretations, \ebox A\eif A is valid: All necessary propositions are true in any scenario, so are true in the actual one. And if a proposition is known to be true, it must be true (one can’t know something that’s false). However, when `\ebox'  is interpreted as “it ought to be the case that,” then \ebox A \eif A is not valid. For example, if we interpret `A' to mean “Every murderer will be brought to justice.” We should hold that this ought to be true, but sadly it isn't.
+
+We will consider different kinds of systems of ML. They differ in the rules of proof allowed and in the semantics we use to define our logical notions. Logicians have reduced the various different possible models or structures which we can reason in down to six generic systems. Here, we will consider four of them, namely: K, T, S4, and S5. 
+
+K is the basic system; everything that is valid or provable in K is also provable in the others. But there are some things that K does not prove, such as the formula \ebox A \eif A for sentence letter A. So K is not an appropriate modal logic for necessity and possibility (where \ebox A \eif A should be provable). But it may be appropriate for moral reasoning (Deontic Logic), as we do not want, for example, to be able to move from A to \ediamond A (it is the case that A to it's permissible that A). These general moves are allowed and provable in the T system, making it appropriate for cases where such moves are reasonable. T, however, cannot handle all of the different reasonable formal moves which we have access to when dealing with possibility and necessity, S4 can handle most of it and S5 can handle all of it.  
+\section{Part 28.2 The Language of ML}
+In order to do modal logic, we have to do two things. First, we want to see how to construct interpretations for ML. Second, we want to learn how to prove things in ML. The interpretations, like with QL, are used to prove invalidity and are essential to understanding where the various logical rules come from; so you can see which ones are allowed in your given context. But before we can do either of these things, we need to explain how to construct sentences in ML.
+
+The language of ML is an extension of PL. We could have started with QL, which would have given us Modal Quantified Logic (MQL). MQL is much more powerful than ML, but it is also much, much more complicated and contentious (there is a substantial amount of debate over the range of the domains in MQL which has a great deal of sway over which inference rules are allowed). So we are going to keep things simple, and start with PL.
+
+Just like PL, ML starts with an infinite stock of atoms. These are written as capital letters, with or without numerical subscripts: A, B, \ldots,$ A_1, B_1$,\ldots We then take all of the rules about how to make sentences from PL, and add two more for \ebox  and \ediamond :
+\factoidbox{\begin{enumerate}\label{langofml}
+\item Every atom of ML is a sentence of ML.
+\item If \metav{A} is a sentence of ML, then \enot \metav{A} is a sentence of ML.
+\item If \metav{A} and \metav{B} are sentences of ML, then (\metav{A}\eand \metav{B}) is a sentence of ML.
+\item If \metav{A} and \metav{B} are sentences of ML, then (\metav{A}\eor \metav{B}) is a sentence of ML.
+\item If \metav{A} and \metav{B} are sentences of ML, then (\metav{A} \eif  \metav{B}) is a sentence of ML.
+\item If \metav{A} and \metav{B} are sentences of ML, then (\metav{A} \eiff  \metav{B}) is a sentence of ML. 
+\item If \metav{A} is a sentence of ML, then \ebox \metav{A} is a sentence of ML.
+\item If \metav{A} is a sentence of ML, then \ediamond \metav{A} is a sentence of ML.
+\item Nothing else is a sentence of ML.
+\end{enumerate}}
+Here are some examples of ML sentences:
+\begin{center}
+A, P \eor  Q, \ebox A, C \eor  \ebox D, \ebox \ebox (A \eif  R), \ebox \ediamond (S \eand  (Z \eiff  (\ebox W \eor  \ediamond Q)))
+\end{center}
+\chapter{Part 29 The Systems of Modal Logic}
+Now that we know how to make sentences in ML, we can look at how one can make interpretations (models), countermodels, and proofs in ML. We will use $\vDash$  to express provability/validity (if it is provable in these systems, then it is valid), just like how we did in PL. So $A_1,A_2,\ldots A_n$ $\vDash$  C means that C can be proven from $A_1,A_2,\ldots A_n$. There are many different applications of ML which we may want to consider and these different applications allow for different inference rules. As mentioned previously, \ebox A $\vDash$ A is just fine if we are working in the T system but it is not if we are working in the more basic K system. We will be looking at a number of these `systems' of ML, and so it will be useful to add a subscript to indicate which system we are working with. So for example, if we want to say that we can prove C from $A_1,A_2,\ldots A_n$ in system K, we will write: $A_1,A_2,\ldots A_n$ $\vDash_K$ C.
+1
+\section{But what are these systems?}
+
+Imagine, if you will, a world consisting of an arbitrary number of insular (island) micro-nations. These nations could wish to set up any number of different trading networks between them, either internally or with other nations or both. Sometimes, all of the nations will have a product similar (for example, all of the nations could grow oranges), other times, there may be products which one island has (or a few islands have) but not all of them do. The different sorts of trading relations these nations have between each other (or internally) represent, on an abstract level, the different systems which ML could be using in a given context or argument. Just for the sake of explanation, we will say that there aren't any laws or the like forbidding a product from being traded once a trade route (either internal or international) is established. For example, suppose that we have a world where there are only two insular nations within trading distance of each other, one of them ($w_1$) has P while the other ($w_2$) has Q. We might diagram (\gls{model}) a trading relationship between them like so, with the arrows representing the `accessibility' of the products (meaning that if an arrow is going from $w_1$ to $w_2$, then $w_1$ has access to the products in $w_2$):\\
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=right:$w_2$, right=of w1]{Q};
+		%\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2$
+\item[R:]$\openntuple w_1,w_2\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\end{itemize}
+   
+ \newglossaryentry{model}
+{
+name={model},
+text={model},
+description={In Modal Logic, this is a list of worlds, an assignment of accessibility relations between those worlds, and an assignment of the sentences true at those worlds. This is represented as either a diagram or as an interpretation like in QL}
+}
+  
+Using this diagram, we can say that $w_1$ has access to the products in $w_2$ but there isn't an arrow from $w_1$ to $w_1$ (an arrow curling back), so $w_1$ doesn't have internal trading. In ML, these `island nations' are called \glspl{world} and the different `trade routes' between them are called the \glspl{accessibility relation}. We can, and do, describe the different models for the worlds and accessibility relations in a very similar way to how we directly stipulated the extension of a two-place predicate for interpretations in QL. W is the list of worlds in the `universe' we wish to consider. The two-place predicate for the accessibility relation is called \gls{R}, which we treat like a two place predicate in QL, though it is `meta' to QL. The worlds are treated as sets of sentences which are true at that world. You may notice that I have given an interpretation with the diagram above. 
+
+\newglossaryentry{world}
+{
+name=world,
+description={A set jointly satisfiable sentences. You can also think of them as possible scenarios or `ways the world could have been'},
+plural=worlds
+}
+
+\newglossaryentry{accessibility relation}
+{
+name=accessibility relation,
+description={A relation between \glspl{world} such that one has access to the other; that is, the world is possible from their perspective},
+plural=accessibility relations
+}
+
+\newglossaryentry{R}
+{
+name=R,
+description={The two place predicate used to define the \gls{accessibility relation} between \glspl{world}}
+}
+
+
+For this simple example, I am merely using one simple sentence in each world, but most of the time, there will be many. You can use this means of directly stipulating the relations and content of an interpretation to give counter examples and prove invalidity withing ML as well, especially when it would be too cumbersome to draw all of the relations and worlds as a diagram. Using models like this, we can define what it means for a statement to be possibly true and for a statement to be necessarily true like so:
+\factoidbox{
+In a model, \ediamond \metav{A} is true at some world ($w_1$) if and only if there is some other world, $w_2$, such that \metav{A} is true at $w_2$ and $w_2$ is accessible to $w_1$ (meaning that there is an arrow pointing from $w_1$ to $w_2$).\\
+In a model, \ebox \metav{A} is true at some world ($w_1$) if and only if for all worlds such that $w_1$ has access to them, \metav{A} is true at those worlds.
+}
+Notice that I said `at some world', this is because in ML the truth of a sentence is relative to the world you are in. When you are doing proofs in ML, there is an assumed `actual world', often given a special label in the models like \metav{a} rather than simply `w' with a subscript number. The truth of the different modal statements is determined by the relation to the `actual world'. So, in this model, \ediamond Q is true at $w_1$. Similarly, since $w_1$ only has access to one other world and Q is true at that world, \ebox Q is also true at $w_1$. But, R$w_1$$w_1$ is not true in the above interpretation and P is true at any of the worlds $w_1$ can `see', so \ediamond P is not true at $w_1$.
+
+Logicians have discovered that there are four (4) general features which the R relation could have in a particular model and the different systems in ML relate to whether or not the R relation has some feature. Each of these four features give us different valid inference rules which we could use if the system has the feature. Here is a quick overview of the four, which I will go over in more detail:
+\factoidbox{
+\begin{earg}
+\item[]R is \gls{serial} if and only if for every world x, there is a world y such that Rxy.
+\item[]R is \gls{reflexive} if and only if for any world w, Rww.
+\item[]R is \gls{symmetric} if and only if for any world x and for any world y, if Rxy, then Ryx.
+\item[]R is \gls{transitive} if and only if for any x, for any y, and for any z, if Rxy and Ryz, then Rxz.
+\end{earg}}
+\subsection{Serial}
+
+Relating back to our trading relations, if every nation has access to the products in some nation (may be another or it may be the same nation), then the R relation in that model is \gls{serial}. For example, the example I gave above is not serial because $w_2$ doesn't have access to any products, not even internal trading is allowed. To make it serial, all we need to do is make it so that $w_2$ has access to its own products, so to speak, or that it can `see' itself:
+
+
+\newglossaryentry{serial}
+{
+name=serial,
+description={A property had by a relation R such that for any x you pick, there is a y such that Rxy. In other words, R is serial if and only if everything has that relation to something (maybe itself)}
+}
+
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=right:$w_2$, right=of w1]{Q};
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2$
+\item[R:]$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_2\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\end{itemize}
+   
+Now, $w_2$ has access to its own products, so to speak, so the R relation for this model is serial as every world has access to products. There are many other ways in which this could be done and being serial is the lowest bar one needs to cross. Just about any context where you would want to employ the tools from ML will be serial. 
+
+\subsection{Reflexive}
+
+A simple way to remember this is that the word `\gls{reflexive}' looks and sounds a lot like the word `reflective', this is to say, roughly, that all of the worlds can see themselves. Using the trading analogy, this says that all of the nations allow for internal trading. The simplest case for a reflexive system is one with only one world and one relation, it can see itself, like so:
+
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\path[->] (w1) edge[reflexive above] (w1);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1$
+\item[R:]$\openntuple w_1,w_1\closentuple$ 
+\item[$w_1$:] P,...
+%\item[$w_2$:] Q,...
+\end{itemize}
+
+
+A minimalist case like this is hardly useful, but it is possible and one which we need to consider for validity and provability in some systems. A more practical model would be based on the previous model used to illustrate being serial. That model did not have this feature because $w_1$ could not `trade' or `see' with itself. If someone in this nation wanted to get a product, they would need to get it from $w_2$, they can't get anything locally, sadly. Reflexivity is easily added to that model:
+
+
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=right:$w_2$, right=of w1]{Q};
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2$
+\item[R:]$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple w_1,w_2\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\end{itemize}
+ 
+ 
+\newglossaryentry{reflexive}
+{
+name=reflexive,
+description={A property had by a relation R such that for any x you pick Rxx. In other words, R is reflexive if and only if everything has that relation to itself}
+}
+\subsection{Symmetric}
+
+One way to think of this is in terms of symmetry, like in art. The accessibility relations are \gls{symmetric} when they go both ways. If I can see you, then you can see me. You might be thinking in our model, that $w_2$ is getting the bad end of the trade deals, $w_1$ has access to all of their products but they don't have access to any of $w_1$'s products. This brings to mind the next feature which a model could have symmetry. This is exactly what it sounds like, the relations go both ways. The simplest diagram for this case is the same as the one for reflexive, but that is not all that explanatory, so another, very simple case looks like this:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=right:$w_2$, right=of w1]{Q};
+		%\path[->] (w2) edge[reflexive above] (w2);
+		\path[<->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2$
+\item[R:]$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_1\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\end{itemize}
+
+
+ As you can see, with this model, the relation isn't just an arrow going one way, but it goes in both directions, this means that they can see each other or the reade relation is equal. This particular model, however, might lead you to make assumptions about how other models might look so here is a more complicated model which better illustrates this feature:
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=above:$w_2$, right=of w1]{Q};
+		\node[world] (w3) [label=right:$w_3$, below=of w1]{R};
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w2) edge[reflexive right] (w2);
+		\path[->] (w3) edge[reflexive left] (w3);
+		\path[<->] (w1) edge (w2);
+		\path[<->] (w1) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2,w_3$
+\item[R:]$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple w_3,w_3\closentuple$,$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_1\closentuple$,$\openntuple w_1,w_3\closentuple$,$\openntuple w_3,w_1\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\item[$w_3$:] R,...
+\end{itemize}
+
+\newglossaryentry{symmetric}
+{
+name=symmetric,
+description={A property had by a relation R such that for any x you pick, for any y you pick if Rxy, then Ryx. In other words, R is symmetric if and only if all of relations go both ways.}
+}
+
+You will notice that this looks a lot like the one which we have been building up but I  I added another world to the diagram, $w_3$, and that this world does not have a connection with $w_2$. This is because symmetry only gives you that the relation goes in both directions, it does not get you that they could `skip the middle man'. From $w_3$'s perspective, \ediamond \ediamond Q is true, because \ediamond Q is true at $w_1$ but \ediamond Q is not true because they don't have access to a world where Q is true, so within this model, moving from possibly possibly Q to just possibly Q would not be allowed.
+
+\subsection{Transitive}
+
+The caveat I gave in the previous feature might not have sat well with you. You might have thought that the additional `possiblies' didn't add anything and that you could drop them. There are contexts in Modal Logic where this is a perfectly valid move, but the models which allow for this need, at the very least, a fourth and final feature; transitivity. This sort of relationship should seem intuitive. If Bob is taller than Mac and Mac is taller than Dave, then Bob is taller than Dave. This particular feature allows you to, in a sense, skip the middle man. A relatively simple diagram for this case, which does not have any of the other features, looks like this:
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=above:$w_2$, right=of w1]{Q};
+		\node[world] (w3) [label=right:$w_3$, right=of w2]{R};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge (w3);
+		\path[->] (w1) edge[bend right] (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2,w_3$
+\item[R:]$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_3\closentuple$,$\openntuple w_1,w_3\closentuple$
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\item[$w_3$:] R,...
+\end{itemize}
+
+
+\newglossaryentry{transitive}
+{
+name=transitive,
+description={A property had by a relation R such that for any x y and z, if Rxy and Ryz, then Rxz. In other words, R is transitive if and only if the relation `bridges the gap' or can `cut out the middle man'.}
+}
+
+With this particular model, a system with only transitivity, we can move from \ediamond\ediamond\metav{A} to \ediamond\metav{A}. Without reflexivity, you can't drop the additional `\ebox', if there is one, but, if you incorporate the other features, like symmetry and reflexivity, we end up with a model like this:
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:$w_1$] {P};
+		\node[world] (w2) [label=right:$w_2$, right=of w1]{Q};
+		\node[world] (w3) [label=right:$w_3$, below=of w1]{R};
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w3) edge[reflexive left] (w3);
+		\path[<->] (w1) edge (w2);
+		\path[<->] (w1) edge (w3);
+		\path[<->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $w_1,w_2,w_3$
+\item[R:]$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple w_3,w_3\closentuple$,$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_1\closentuple$,$\openntuple w_1,w_3\closentuple$,$\openntuple w_3,w_1\closentuple$,$\openntuple w_2,w_3\closentuple$,\\$\openntuple w_3,w_2\closentuple$  
+\item[$w_1$:] P,...
+\item[$w_2$:] Q,...
+\item[$w_3$:] R,...
+\end{itemize}
+
+This model has all of the features in one. Models like this represent the most robust modal system, called S5, which is best for reasoning about logical possibility. There are others which do not have all of the features, and some might have none at all. But, if you know that the model you are working in has an R relation with a certain feature, then there are inference/equivalency rules which you may use depending on the feature had. S5, as it happens, gets all of them unrestricted. 
+
+\section{Part 29.1 Modal Negation (The Equivalency Rule For Modal Logics)}
+In the previous part, I laid out what the general features a Modal Logic system could have. Each of those different features imply different inference rules which one has at their disposal. Those rules, however, are not equivalency rules. Equivalency rules are based on the definitions of the operators (modals, quantifiers, connectives) in question. This means that if ML has a special equivalency rule, then it will work regardless of the system you are working in. Looking back at the section about what makes a \ediamond  statement true and what makes a \ebox  statement true, you might have noticed a similarity between these and the quantifiers in QL. This is not by chance, they are very similar. Because of this similarity, one could, in principle, define \ebox  and \ediamond  in relation to each other, much like how one could define $\forall$  and $\exists$  in relation to each other. For example:
+\factoidbox{
+$\forall$ x\metav{A} $=_{df}$ \enot $\exists$ x\enot \metav{A}\\
+$\exists$ x\metav{A} $=_{df}$ \enot $\forall$ x\enot \metav{A}\\
+\ediamond \metav{A} $=_{df}$ \enot \ebox \enot \metav{A}\\
+\ebox \metav{A} $=_{df}$ \enot \ediamond \enot \metav{A}}
+
+In other words, to say that A is possibly true, is to say that A is not necessarily false. This is akin to the meaning behind the quantifiers in QL, if everything is A, then nothing isn't A, As a result, it isn’t really essential to add a \ediamond . So, we can use this definition to give us some equivalency rules which will always be available to you, this is the Modal Negation Rule (MN), so named because of its similarity to the Quantifier Negation Rule:
+\factoidbox{
+\enot \ebox \metav{A} $\Leftrightarrow$  \ediamond \enot \metav{A}\\
+\enot \ediamond \metav{A} $\Leftrightarrow$ \ebox \enot \metav{A}
+}
+In any system, one can use the Modal Negation Rule and Double Negation to prove \ediamond A \eiff  \enot \ebox \enot A. Similarly, you can prove \ebox A \eiff  \enot \ediamond \enot A. MN and DN are very useful in Modal Logics. Here are some different ways one can read this move, given different interpretations of the two qualifiers:
+\factoidbox{
+It is not necessary that A $\Leftrightarrow$  It is possible that A is false.\\
+It is not possible that A is true $\Leftrightarrow$  It is necessary that A is false.\\
+It's not the case that I know that A is true $\Leftrightarrow$  Given my evidence, A could be false.\\
+It is not the case that given my evidence A is true $\Leftrightarrow$  I know that A is false.\\
+It isn't an obligation to A $\Leftrightarrow$  it is permissible to not A.\\
+It isn't permissible to A $\Leftrightarrow$  It is an obligation not to A (A is forbidden).\\
+It is not the case that A always will be $\Leftrightarrow$  there is a future time where A isn't.\\
+It's not the case that A will happen $\Leftrightarrow$  It will always be the case that A isn't.\\ 
+A wasn't always the case $\Leftrightarrow$  there was a time when A wasn't.  \\
+}
+\section{Part 29.2 The K System}
+We start with a particularly simple system called \Gls{K}, in honor of the philosopher and logician Saul Kripke. Since ML is an expansion upon PL, all systems for Modal Logic will have all of the inference and equivalency rules found in PL and K is no different. K is special, however, because it does not have any requirements about the features the R relation might have. This means that any model or interpretation will count as a K model (a system using K). This also means that if an argument is valid in K (sometimes called K-valid), then it is valid in all other systems. Because there are no special features we can be certain R will have in a K-model, there is very little one can prove in it. The simplest example of a K-model looks like this:
+
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:\metav{a}] {P};
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] \metav{a}
+\item[R:] 
+\item[\metav{a}:] P,...
+%\item[$w_2$:] Q,...
+\end{itemize}
+
+Notice that there are no other worlds except for \metav{a}, which we will use to mark the `actual world'. From \metav{a}'s perspective, nothing is possible because there are no possible worlds it has access to. Even in such a barren model, however, there are modal operations we can use. 
+
+K has a very special kind of subproof (called a `strict subproof') and a few new basic rules for \ebox . These strict subproofs allow us to reason about alternative possibilities by, in a sense, moving into that alternative possibility. We are changing our focus from the actual world to a possible world, working inside of it, and then exporting conclusions back to the actual world. The strict subproofs look like ordinary subproofs, but it has a very special caveat; all assumptions are disregarded, and we are not allowed to appeal to any lines outside the strict subproof (except as allowed by the modal rules given below). Different systems allow for us to import different assumptions into the strict subproof, so as we add more features to R, what we can prove increases.
+
+\kripke
+
+\newglossaryentry{K}
+{
+name=K,
+description={A system in Modal Logic (ML) such that there are no restrictions on the features of the \glspl{accessibility relation} between \glspl{world}.}
+}
+
+\subsection{Necessity Elimination}
+
+We said above that a strict subproof allows us to reason about arbitrary alternate possible situations. What can be proved in the right kind of strict subproof holds in all alternate possible situations, and so is necessary. On the other hand, if we’ve assumed that something is necessary, we have therewith assumed that it is true in all alternate possible situations. Hence, we have the rule \ebox E:
+\factoidbox{\begin{fitchproof}
+\hypo{m}{\ebox \metav{A}}
+\open
+\hypo{n}{\metav{B}}\by{assumed strict subproof}{}
+\have{p}{\metav{A}}	\boxe{m}
+\end{fitchproof}	
+\textbullet \ebox E can only be applied if line m (containing \ebox A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m.}
+
+\ebox E allows you to assert A inside a strict subproof if you have \ebox A outside the strict subproof. The restriction means that you can only do this in the first strict subproof, you cannot apply the \ebox E rule inside a nested strict subproof. So the following is not allowed:
+\begin{fitchproof}
+\hypo{1}{\ebox A}
+\hypo{2}{\ebox B}	
+\hypo{3}{\ebox C}
+\open
+\hypo{4}{B}\by{assumed strict subproof}{}
+\open
+\hypo{5}{C}\by{assumed strict subproof}{}	
+\have{6}{A}	\by{incorrect use of \ebox E}{1}	
+\end{fitchproof}
+The incorrect use of \ebox E on line 6 violates the condition, because although line 1 lies outside the strict subproof in which line 4 falls, the strict subproof containing line 4 lies inside the strict subproof beginning on line 2 which does not contain line 1.
+
+Let’s begin with an example.
+\begin{fitchproof}
+\hypo{1}{\ebox A}
+\hypo{2}{\ebox B}	
+\open
+\hypo{3}{A}
+\have{4}{B}\boxe{2}
+\have{5}{A\eand B}\ai{4,5}
+\close
+\have{6}{\ebox (A\eand B)}\boxi{1,3-5}
+\end{fitchproof}
+We can also mix regular subproofs and strict subproofs:
+\begin{fitchproof}
+\hypo{1}{\ebox (A\eif B)}
+\open
+\hypo{2}{\ebox A}\by{for conditional}{}
+\open
+\hypo{3}{A\eif B}
+\have{4}{A}\boxe{2}
+\have{5}{B}\ce{3,4}
+\close
+\have{6}{\ebox B}\boxi{1, 3-5}
+\close
+\have{7}{\ebox A\eif \ebox B}\ci{2-6}	
+\end{fitchproof}
+This is called the Distribution Rule, because it tells us that \ebox  ‘distributes’ over \eif . You might have noticed in these examples that I used a rule which you don't know yet. This is explained in the next page, but they should seem simple enough and indeed K is a very simple system! But K is more powerful than you might have thought. You can prove a fair few things in it.
+\subsection{Necessity Introductions}
+All strict subproofs in ML have the same fundamental rule: You can only cite lines outside of the subproof if the rule explicitly allows for it. In the K system, there is only one rule which explicitly allows it, namely \ebox E, but we can still use these strict subproofs to derive conclusions and move our proofs forward. There are four different conclusions one can come to using these strict subproofs and they are cited accordingly. These different conclusions are the modal counterparts to the different subproofs (indirect) proof which we have already seen,  \eif I, \enot I (and \enot E), and $\exists$ E (the fourth one is a particular application of the idea behind $\exists$ E). We will start with the modal equivalent of \eif I, namely \ebox \eif I.
+
+\subsection{Necessary Conditional Introduction}
+
+In general, the strict subproofs allow us to derive a formula \ebox A if we can derive A inside of it. It is our fundamental method of introducing \ebox  into proofs. The basic idea is simple enough: if A is a theorem, then \ebox A should be a theorem too. (Remember that to call A a theorem is to say that we can prove A without relying on any undischarged assumptions.) As I mentioned, the first one relates to \eif I and is  \ebox \eif I.
+
+Suppose we wanted to prove \ebox (A \eif  A). The first thing we need to do is prove that A\eif A is a theorem. This is simple enough, you already know how to do that using PL. You simply present a proof of A\eif A which doesn’t start with any premises, like this:
+\begin{fitchproof}
+\open
+\hypo{1}{A}
+\have{2}{A}\by{R}{1}
+\close
+\have{3}{A\eif A}\ci{1-2}	
+\end{fitchproof}
+You will notice that the subproof in this proof did not make any assumptions, call on anything which came before the first line. This means that A\eif A is a tautology (as you may recall). But the thing about tautologies is that they are always true. regardless of what world we are in. Since we did not make any assumptions, import anything (unless allowed in the system), we know that \ebox (A\eif A) is true. The first version of the strict subproof allows us to show this. It works like so:
+\begin{fitchproof}
+\open
+\hypo{1}{A}
+\have{2}{A}\by{R}{1}
+\close
+\have{3}{\ebox(A\eif A)}\by{\ebox\eif I}{1-2}	
+\end{fitchproof}
+
+Put explicitly, here is the rule in the abstract:
+\factoidbox{\begin{fitchproof}
+\open
+\hypo[m]{a}{\metav{A}}
+\ellipsesline
+\have[n]{b}{\metav{B}}
+\close
+\have[p]{c}{\ebox(\metav{A}\eif \metav{B})}\boxci{a-b}	
+\end{fitchproof}
+No line above line m may be cited by any rule within the strict subproof begun at line m unless the rule explicitly allows it.}
+
+It is essential to emphasize that in strict subproof you cannot use any rule which appeals to anything you proved or assumed outside of the strict subproof unless explicitly allowed by that rule, e.g., the \ebox E rule. These rules will explicitly state that they can be used inside strict subproofs and cite lines outside the strict subproof. This restriction is essential, otherwise we would get terrible results. For example, we could provide the following proof to vindicate A \therefore  \ebox A:
+\begin{fitchproof}
+\hypo{1}{A}
+\open
+\hypo{2}{\enot A}
+\have{3}{A}\by{incorrect use of R}{1}
+\close
+\have{4}{\ebox (\enot A\eif A)} \boxci{2-3}
+\have{5}{\ebox (\enot \enot A\eor A)} \mc{4}
+\have{6}{\ebox (A\eor A)} \dn{5}
+\have{7}{\ebox A} \by{TAUT}{6}
+\end{fitchproof}
+
+This is not a legitimate proof, because at line 3 we appealed to line 1, even though line 1 comes before the beginning of the strict subproof at line 2.
+
+\subsection{Necessary Negation Introduction}
+
+For the second variety of strict subproof, we look back to the \enot I and \enot E rules from PL. The modal counterpart to these rules is \ebox \enot I and it works exactly the same way. You make an assumption, derive a contradiction, and then receive the negation of the assumption. The big thing is that if you didn't need to use anything which was merely possible or actual, you can generalize this to a claim about all possible worlds. So, in general, \ebox \enot I looks like this: 
+\factoidbox{\begin{fitchproof}
+\open
+\hypo[m]{m}{\metav{A}}
+\have[n]{n}{\metav{B}}
+\have[p]{p}{\enot \metav{B}}
+\close	
+\have[r]{r}{\ebox \enot \metav{A}}\boxni{m-p}
+\end{fitchproof}
+No line above line m may be cited by any rule within the strict subproof begun at line m unless the rule explicitly allows it.}
+
+The rules for this are the same as before, but now we can show that certain things are necessarily true which are not conditionals. If you assumed a negation, for example \enot A and wanted \ebox A, your conclusion to the subproof will be \ebox \enot \enot A, where you can simply use DN to drop the negations. 
+
+\subsection{Necessity Introduction}
+
+For the third, and final, version of the strict subproofs, we need to take a look at the $\exists$ E rule from QL. As you may recall, this rule was the conclusion to a subproof, just like the ones we have seen so far, but the subproof was made after assuming a name for a thing which made, for example, $\exists$ xAx true, such as `b'. The first line of the subproof was Ab and when we closed it, we got the last line (which was an existential statement) back. The same, sort of, idea applies to the \ebox I rule. Suppose that we know that A is true at every accessible world, let's choose one at random and enter it. All we know about this world is that A is true, so, if we only rely on A (which is true at all accessible worlds) (and what our system allows us to import) and we derive B, then we know that B is true in all accessible worlds and therefore \ebox B is true. This very general argument form looks like this symbolically:
+\factoidbox{\begin{fitchproof}
+\hypo[m]{m}{\ebox \metav{A}}	
+\open
+\hypo[n]{n}{\metav{A}}
+\have[p]{p}{\metav{B}}
+\close
+\have[r]{r}{\ebox \metav{B}}\boxi{m, n-p}	
+\end{fitchproof}}
+Notice that the citation is the same as the one for $\exists$ E. This is because the general idea behind it is the same. Keep this third version in mind, as there is an analogous rule, \ediamond I, which works in the same sort of way.
+\subsection{Possibility Introduction}
+On the bottom of the previous page, I explained one of the conclusions you could draw was structurally similar to $\exists$ E, this was the \ebox I rule. This particular structure for a strict subproof is very powerful and can, in fact, be generalized to give us another introduction rule in ML, namely \ediamond I. For this one, suppose that we know that there is a world accessible to ours where P is true (meaning \ediamond P is true at our world). From an outside perspective, there is not much we can do with this information, but, if we can move into that world and import necessary truths which we have access to, then there is the possibility of deriving another possible truth. For example, take a look at this argument:
+\factoidbox{
+We know three things about the upcoming party: It's necessary that if Patty comes, then Sally comes, it's necessary that if Sally comes, then Mac comes, and it's possible that Patty comes to the party. Let's suppose, as is possible, that Patty comes to the party, this means that Sally will come and since Sally will come, Mac will come. So, it stands to reason that it's possible that Mac will come to the party. 
+}
+In the premises of this argument, we had two necessary truths and one merely possible truth. We then moved into the accessible world where the possibility was actual (the possible circumstance where Patty comes to the party). Since the necessary truths are, well, necessary, we know that they will hold in this world (the one we `moved' into) and we can, therefore, import them (without the qualifier) into the world. The rest is exactly the same as PL until we get to `Mac comes to the party'. Understand that this is only proven within that world, we can't export it back to the actual world without some kind of marking saying that it's merely possible, so, when we leave the subproof, leave that possible world to head back, we get that it's possible Mac comes to the party.  The structure of this reasoning looks like this, formally;
+\begin{fitchproof}
+\hypo{1}{\ebox (P\eif S)}
+\hypo{2}{\ebox (S\eif M)}
+\hypo{3}{\ediamond P}
+\open
+\hypo{4}{P}\by{for strict subproof}{}
+\have{5}{P\eif S}\boxe{1}
+\have{6}{S\eif M}\boxe{2}
+\have{7}{P\eif M}\hs{5,6}
+\have{8}{M}	\ci{7,4}
+\close
+\have{9}{\ediamond M}\posi{3,4-8}
+\end{fitchproof}
+Put abstractly, the rule is defined like so:
+\factoidbox{\begin{fitchproof}
+\hypo[m]{m}{\ediamond \metav{A}}	
+\open
+\hypo[n]{n}{\metav{A}}
+\have[p]{p}{\metav{B}}
+\close
+\have[r]{r}{\ediamond \metav{B}}\posi{m, n-p}	
+\end{fitchproof}}
+
+
+There are certain restrictions to this: You cannot assume that all of the possibility statements are true at the same world; each one must be treated as if it is the worst case scenario (only one of them is true at that world), meaning that you only get the possible truth for that line, you cannot import any other merely possible things. Also, all of the same restrictions for strict subproofs apply. 
+\section{Part 29.3 The T System}
+So far we have focused on K, which is a very simple modal system. K is so weak that it will not even let you prove A from \ebox A. But if we are thinking of \ebox  as expressing necessity, then we will want to be able to make this inference: if A is necessarily true, then it must surely be true! This leads us to a new system, \Gls{T}. T-models have an R relation which is reflexive, meaning that every world in the interpretation can `see' itself. The simplest T model will look like this:
+
+
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:\metav{a}] {P};
+		\path[->] (w1) edge[reflexive above] (w1);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a}$
+\item[R:]$\openntuple \metav{a},\metav{a}\closentuple$ 
+\item[\metav{a}:] P,...
+%\item[$w_2$:] Q,...
+\end{itemize}
+
+There can be and are many different sorts of Modal Logics which do not have this feature. For example, Deontic Logic (the logic for moral obligations and permissibility) is not reflexive (if it were, you would get that if something is the case, then it's morally OK to be the case, which is not true). That said, a world having access to itself gives us a couple very useful rules. Since all models are technically K models, the necessity introduction and the necessity elimination rules are available to you in the T system but it also has the following rule(s):
+
+\newglossaryentry{T}
+{
+name=T,
+description={A system in Modal Logic such that the \gls{accessibility relation} between the \glspl{world} is always \gls{reflexive}}
+}
+
+
+\subsection{Reflexivity}
+
+The name for this rule relates directly to the special feature which the R relation has for the T system, namely being reflexive. Any system which has reflexivity has access to this rule, which we will abbreviate as RF. There are two different things we can use reflexivity to get, the first is directly related to how I started this part, deriving A from \ebox A, like so:
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\have[n]{n}{\metav{A}}\rf{m}	
+\end{fitchproof}}
+The line n on which rule RF is applied must not lie in a strict subproof that begins after line m. The restriction on RF is in a way the opposite of the restriction on \ebox E: you can only use \ebox E in a nested strict subproof, but you cannot use RF in a nested strict subproof. Also, to be clear, this is an inference rule, not an equivalency rule. The necessity must be the main operator to use this. We can prove things in T which we could not prove in K, e.g., \ebox A \eif  A.
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}	
+\have{2}{A}\rf{1}	
+\close
+\have{3}{\ebox A\eif A} \ci{1-2}
+\end{fitchproof}
+
+The other thing which having our worlds be reflexive gets us is the ability to show that something is possible. Remember from the definitions I have given, if A is true at a world which w has access to, then \ediamond A is true at w. Well, because the world is reflexive, it has access to itself, meaning that what is true at that world is possible at that world. So, we have the second version of this rule:
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\rf{m}	
+\end{fitchproof}}
+
+The restrictions for this are the same as before, you cannot use this within a strict subproof. That said, it can be very useful. For example, suppose that we wanted to show that if something, A, was possibly necessary (\ediamond \ebox A), then it is possible (\ediamond A). We can do this with just reflexivity: 
+\begin{fitchproof}
+\open
+\hypo{1}{\ediamond \ebox A}\by{for conditional}{}
+\open
+\hypo{2}{\ebox A} \by{for strict subproof}{}
+\have{3}{A}\rf{2}
+\close
+\have{4}{\ediamond A}\posi{1,2-3}
+\close
+\have{5}{\ediamond \ebox A \eif \ediamond A}\ci{1-4}
+\end{fitchproof}
+
+Notice, though, that we cannot go from \ediamond \ebox A to \ebox A and then from that to A. Those moves would require that the system be both reflexive and symmetric and the T system is only guaranteed to be reflexive. When we `entered' the world where \ebox A is true, we have no clue about whether that world can see the one we started from, only that the one we started from had access to it. The model, put as a diagram, could look like this:  
+\begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=left:\metav{a}] {B};
+		\node[world] (w2) [label=right:$w_1$, right=of w1]{A};
+%		\node[world] (w3) [label=right:$w_3$, below=of w1]{R};
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w2) edge[reflexive above] (w2);
+%		\path[->] (w3) edge[reflexive left] (w3);
+		\path[->] (w1) edge (w2);
+%		\path[<->] (w1) edge (w3);
+%		\path[<->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1$
+\item[R:]$\openntuple \metav{a},\metav{a}\closentuple$,$\openntuple w_1,w_1\closentuple$,$\openntuple \metav{a},w_1\closentuple$  
+\item[\metav{a}:] B,...
+\item[$w_1$:] A,...
+%\item[$w_3$:] R,...
+\end{itemize}
+
+Assuming that our `home world' is \metav{a}, we can \ediamond A is true and that since $w_2$ can only see itself, from its perspective, \ebox A is true, meaning that from our perspective back home at \metav{a} \ediamond \ebox A is true, but we cannot be sure that A is true at home. 
+\section{Part 29.4 The S4 System}
+T allows you to strip away the necessity boxes: from \ebox A, you may infer A. But what if we wanted to add extra boxes? That is, what if we wanted to go from \ebox A to \ebox \ebox A? Well, that would be no problem, if we had proved \ebox A by applying \ebox I to a strict subproof of A which itself does not use \ebox E. In that case, A is a tautology, and by nesting the strict subproof inside another strict subproof and applying the different necessity introductions repeatedly, we can prove \ebox \ebox A. But these can be very long and convoluted and not all that interesting. But what if we didn’t prove \ebox A in this restricted way, but used \ebox E inside the strict subproof of A. If we put that strict subproof inside another strict subproof, the requirement of rule \ebox E to not cite a line containing \ebox A which lies in another strict subproof that has not yet concluded, is violated. Or what if \ebox A were just an assumption we started our proof with? Could we infer \ebox \ebox A then? Not in T, we couldn’t. This is because the R relation in T is not transitive. All T gets us is that every world can `see' itself. Transitivity is where if world a can see world b and world b can see world c, then world a can see world c. If we add transitivity to the R relation in T, we get a new system, namely \Gls{S4}. Transitivity gives us the following inference rules, which are named after it:\autocite[168-69]{Sider}
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\have[n]{n}{\ebox \ebox \metav{A}}\tr{m}	
+\end{fitchproof}}
+
+\newglossaryentry{S4}
+{
+name=S4,
+description={A system in Modal Logic such that the \gls{accessibility relation} between the \glspl{world} is always \gls{reflexive} and \gls{transitive}}
+}
+
+
+Transitivity also gives us a way to strip off additional possibility qualifiers (diamonds). For example, suppose that our world can see a world which can see a world where P is true. This would mean that from our perspective \ediamond \ediamond P is true. Transitivity means that if we can see a world which can see another, then we can see that world. This means that \ediamond P is true from our perspective. Or, put more formally:
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ediamond \ediamond \metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\tr{m}	
+\end{fitchproof}}
+
+Transitivity being in our system also gives us a new way to import lines into a strict subproof, we will call this way R4 for S4-Reiteration. It goes like this
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\open
+\hypo[n]{n}{B} \by{for strict subproof}{}
+\have[p]{p}{\ebox \metav{A}}\rfour{m}	
+\end{fitchproof}}
+
+Note that R4 can only be applied if line m (containing \ebox A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m. Rule R4 looks just like \ebox E, except that instead of yielding A from \ebox A it yields \ebox A inside a strict subproof. The restriction is the same, however: R4 allows us to “import” \ebox A into a strict subproof, but not into a strict subproof itself nested inside a strict subproof. However, if that is necessary, an additional application of R4 would have the same result. Now we can prove even more results. For instance:
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}\by{for conditional}{}
+\open
+\hypo{2}{A} \by{for strict subproof}{}
+\have{3}{\ebox A}\rfour{m}
+\close
+\have{4}{\ebox \ebox A}\boxi{1,2-3}
+\close
+\have{5}{\ebox A\eif \ebox \ebox A}\ci{1-4}	
+\end{fitchproof}
+
+This proves the first general inference rule I gave for S4. You can always use it, if the system is transitive. Going the other way, let's prove the second version of the TR rule:
+\begin{fitchproof}
+\open
+\hypo{1}{\ediamond \ediamond A}\by{for conditional}{}
+\open
+\hypo{2}{\enot \ediamond A}\by{for reductio}{}
+\have{3}{\ebox \enot A}\mn{2}	
+\open
+\hypo{4}{\ediamond A}\by{for strict subproof}{}
+\have{5}{\ebox \enot A}\rfour{3}
+\have{6}{\enot \ediamond A}\mn{5}
+\have{7}{\ediamond A\eor A}\oi{4}
+\have{8}{A}\oe{7,6}
+\close
+\have{9}{\ediamond A}\posi{1, 4-8}
+\have{10}{\enot \ediamond A}\by{R}{2}
+\close
+\have{11}{\ediamond A}\ne{2-10}
+\close
+\have{12}{\ediamond \ediamond A\eif \ediamond A}\ci{1-11}
+\end{fitchproof}
+
+\section{Part 29.5 The S5 System}
+In S4, we can always add a box in front of another box. But S4 does not automatically let us add a box in front of a diamond. That is, S4 does not generally permit the inference from \ediamond A to \ebox \ediamond A. This is because S4 is, merely, reflexive and transitive. If you think that if something is possible then it couldn't not be possible (that is, if \ediamond A, then \ebox \ediamond A), then you will want to include a third additional feature to the R relation, symmetry. This is to say that if I can see you, then you can see me. \Gls{S5} has all three of the aspects we have seen in the other systems, it is reflexive, transitive, and symmetric. This is the final modal system and sometimes called euclidean and also sometimes called universal because it allows for all worlds to have access to all others. Since everyone can see everyone, we get the following inference rule(s), named after this system:\autocite[170]{Sider}
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ebox \ediamond \metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\sfive{m}	
+\end{fitchproof}}
+
+\newglossaryentry{S5}
+{
+name=S5,
+description={A system in Modal Logic such that the \gls{accessibility relation} between the \glspl{world} is always \gls{reflexive}, \gls{transitive}, and \gls{symmetric}}
+}
+
+
+It also allows us to strip away the outermost diamonds as well:
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ediamond \ebox \metav{A}}	
+\have[n]{n}{\ebox \metav{A}}\sfive{m}	
+\end{fitchproof}}
+As a final rule which can be added, the universality of S5 gives us the ability to import possibility statements into the strict subproofs like so:
+\factoidbox{\begin{fitchproof}
+\have[m]{m}{\ediamond \metav{A}}	
+\open
+\hypo[n]{n}{\metav{B}} \by{for strict subproof}{}
+\have[p]{p}{\ediamond \metav{A}}\rfive{m}	
+\end{fitchproof}}
+
+Rule R5 can only be applied if line m (containing \ediamond A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing line m. Similarly, R5 can be used to import negated necessity statements, like this:
+\begin{fitchproof}
+\have{m}{\enot \ebox \metav{A}}	
+\open
+\hypo{n}{\metav{B}} \by{for strict subproof}{}
+\have{p}{\enot \ebox \metav{A}}\rfive{m}	
+\end{fitchproof}
+
+So, as well as adding boxes in front of diamonds, we can also delete diamonds in front of boxes. We got S5 just by adding the rule R5 rule to S4. S5 is strictly stronger than S4: there are things which can be proved in S5, but not in S4 (e.g., \ediamond \ebox A \eif  \ebox A). The important point about S5 can be put like this: if you have a long string of boxes and diamonds, in any combination whatsoever, you can delete all but the last of them. So for example, \ediamond \ebox \ediamond \ediamond \ebox \ebox \ediamond \ebox A can be simplified down to just \ebox A. It might take you a few steps, but you can simplify it down. For the below proof, remember that S5 is reflexive, transitive, and symmetric: 
+\begin{fitchproof}
+\hypo{1}{\ediamond \ebox \ediamond \ediamond \ebox \ebox \ediamond \ebox A}
+\have{2}{\ebox \ediamond \ediamond \ebox \ebox \ediamond \ebox A}\sfive{1}	
+\have{3}{\ediamond \ediamond \ebox \ebox \ediamond \ebox A}\rf{2}	
+\have{4}{\ediamond \ebox \ebox \ediamond \ebox A	}\tr{3}	
+\have{5}{\ebox \ebox \ediamond \ebox A}\sfive{4}	
+\have{6}{\ebox \ediamond \ebox A}\rf{5}	
+\have{7}{\ediamond \ebox A}\rf{6}
+\have{8}{\ebox A}\sfive{7}	
+\have{9}{A}	\rf{8}	
+\end{fitchproof}
+Here, we were able to remove all of the qualifiers because the final one was a box. If the rightmost qualifier was a diamond, on the other hand, then we could not have removed it and this should make sense (necessity implies that it's true in the actual world, possibility does not). It is essential, however, that you work through the steps of your reasoning (not skip a dropping of a qualifier) as you could, when you are working through it, come to a point where something doesn't quite match up with what's intuitive given your application of the box and diamond. If you come to such a case, then the rule used to derive it points to a feature in the R relation which you should not have included when making your interpretation. For example, line 8 could be read as "it's obligatory that A", which means that one has a moral duty to ensure that A becomes or stays the case. While the world would certainly be a better place if all obligations were logically guaranteed to happen, this is not how the world is and shows that the system for Deontic Logic (the logic of obligations) is not reflexive (as that was the rule to drop the box). 
+\chapter{Part 30 Tips and Tricks for Modal Logic}
+\section{Part 30.1 Working Backwards from What You Want}
+As always, it will sometimes pay to look at the conclusion and figure out what you will need to get there. To do so, you will need to identify the main operator. If the main operator is one of the connectives from PL, then you should start by using the methods outlined for those. But, ML is an expansion on PL, there are other operators which could serve as the most dominate. As a result, we should have other methods for dealing with those and plotting the path to get to those conclusions. With ML, there is the added wrinkle that we also have different systems and with those systems, different rules which we could use. Don't lose heart, however, the additional rules found in the different systems are there to increase what we can prove and make proving things easier. So, the general methods one can use in the K system are usable in the other systems; we will be looking at some of the general methods in the K system and then you can use them in the other systems. 
+
+Because ML has features which PL lacks, there are cases where we need the new methods; these are:
+\begin{ebullet}
+\item[\textbullet]When the conclusion is a negated qualifier.
+\item[\textbullet]When the conclusion is a necessary/possible conditional.
+\item[\textbullet]When the conclusion is a necessary/possible negation.
+\item[\textbullet]When the conclusion is a necessary statement.
+\item[\textbullet]When the conclusion is a possible statement.
+\end{ebullet}
+Moving in order, I will give some general tips for moving backwards from each of these.
+\subsection{Moving Backward from a Negated Qualifier}
+The main operator of a conclusion is a negated qualifier when it is of the form \enot \ebox \metav{A} or \enot \ediamond \metav{A}. In either of these cases, the first step should be to apply the MN rule and see what you get. Doing so will allow you to make the main operator a qualifier rather than a negation. This move is allowed in all systems. So, using the general methods from PL, the template for the proof could look something like this:
+\begin{fitchproof}
+\have{1}{P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\ellipsesline
+\have[q]{q}{\ediamond \enot \metav{A}}
+\have[p]{p}{\enot \ebox \metav{A}}\mn{q}	
+\end{fitchproof}
+Or it could look something like this:
+\begin{fitchproof}
+\have{1}{P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\ellipsesline
+\have[q]{q}{\ebox \enot \metav{A}}
+\have[p]{p}{\enot \ediamond \metav{A}}\mn{q}	
+\end{fitchproof}
+
+You now have that as you new goal and should use the methods for those (possible statements or necessary negations) to fill out the rest of the steps. 
+
+\subsection{Moving Backwards from a Necessary/Possible Conditional}
+
+A conclusion is a necessary/possible conditional when it is of the form \ebox (\metav{A}\eif \metav{B}) or \ediamond (\metav{A}\eif \metav{B}). When the conclusion is a necessary conditional, we have a special tool for just that purpose, namely \ebox \eif I. For this case, we have a template very similar to the one we had for when the conclusion is a conditional, using \eif I, and it looks like this: 
+\begin{fitchproof}
+\have{1}{P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}
+\open
+\hypo[m]{m}{\metav{A}}
+\ellipsesline
+\have[n]{n}{\metav{B}}
+\close
+\have[p]{p}{\ebox (\metav{A}\eif \metav{B})}\boxci{m-n}
+\end{fitchproof}
+A key thing to remember is that the system you are working in plays a part in what you can do in the subproof. You cannot use rules which reference lines outside of the subproof unless they explicitly allow for it and you can't use rules which the system doesn't have. That said, you can freely use \ebox E in all systems, with the relevant restrictions. 
+
+When the conclusion is a possible conditional, things are a little more complex. For this, we only have one overarching rule or type of subproof which handles possibility statements, namely \ediamond I. This means that you will need to either have or make a possibility statement to act as the world you are entering. Once you have made the subproof, you can then treat it as a conditional proof. But, be warned, while you can reference lines outside of the conditional proof inside of it, you cannot reference lines outside of the strict subproof while inside of it, unless the rule explicitly allows it. This applies in cases where a regular subproof is inside of a strict one. That said, the proof could look something like this:
+\begin{fitchproof}
+\have{1}{\ediamond P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\open
+\hypo[l]{p}{P_1}
+\open
+\hypo[m]{r}{\metav{A}}
+\ellipsesline
+\have[n]{n}{\metav{B}}
+\close
+\have[q]{q}{\metav{A}\eif \metav{B}}\ci{m-n}
+\close
+\have[r]{s}{\ediamond (\metav{A}\eif \metav{B})}\posi{1,p-q}
+\end{fitchproof}
+
+\subsection{Moving Backwards from a Necessary/Possible Negation}
+
+These are cases of the form \ebox \enot \metav{A} or \ediamond \enot \metav{A}. When it comes to necessary negations, we have a tool for that, \ebox \enot I. In these cases, you can treat them the same as \enot I with the extra restrictions. So, your proof might look something like this: 
+\begin{fitchproof}
+\have{1}{P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}
+\open
+\hypo[m]{m}{\metav{A}}
+\ellipsesline
+\have[n]{n}{\metav{B}}
+\have[q]{q}{\enot \metav{B}}
+\close
+\have[p]{p}{\ebox (\metav{A}\eif \metav{B})}\boxni{m-n}
+\end{fitchproof}
+
+As with possible conditionals, proving possible negations is a bit different. As before, you need to have or make a possibility statement to use as the world to work in. Once you have that, then you can use \enot I inside of that world, with the same restrictions as before, to derive the contradiction and then move out of the \enot I and then out of the \ediamond I to get the possible negation. So, your proof could look like this: 
+\begin{fitchproof}
+\have{1}{\ediamond P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\open
+\hypo[l]{p}{P_1}
+\open
+\hypo[m]{r}{\metav{A}}
+\ellipsesline
+\have[n]{n}{\metav{B}}
+\have[z]{z}{\enot\metav{B}}
+\close
+\have[q]{q}{\enot \metav{A}}\ni{m-z}
+\close
+\have[r]{s}{\ediamond \enot \metav{A}}\posi{1,p-q}
+\end{fitchproof}
+		
+\subsection{Moving Backwards From a Necessary Statement}
+
+A necessary statement is of the form \ebox \metav{A}. Since \metav{A} is merely a placeholder for examples, you could, in principle, use any of the methods I have described to get this and you could work it like a \enot I or \enot E and assume the negation of the statement (i.e. \enot \metav{A} to get \ebox \enot \enot \metav{A} and then \ebox \metav{A}). You could also use \ebox I, if you have a necessary statement already. For example:
+
+\begin{fitchproof}
+\have{1}{\ebox P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\open
+\hypo[l]{p}{P_1}
+\have[]{}{}
+\ellipsesline
+\have[n]{n}{\metav{A}}
+\close
+\have[r]{s}{\ebox \metav{A}}\boxi{1,p-q}
+\end{fitchproof}
+
+Remember that all of the same restrictions apply. While in the assumption, if you are unsure how to continue, just import all of the lines you can in the system. This allows for you to see what else you have access to and can move forwards (or further backwards) from there.
+
+\subsection{Moving Backwards from a Possibility Statement}
+
+A possibility statement is of the form \ediamond \metav{A}. For these, there are many different options which you could go with, but my immediate advice would be to see whether you can open a strict subproof for a \ediamond I. For example, the proof might look something like this:
+
+\begin{fitchproof}
+\have{1}{\ediamond P_1} 			
+\ellipsesline
+\hypo[k]{k}{P_k}			
+\open
+\hypo[l]{p}{P_1}
+\have[]{}{}
+\ellipsesline
+\have[n]{n}{\metav{A}}
+\close
+\have[r]{s}{\ediamond \metav{A}}\posi{1,p-q}
+\end{fitchproof}
+
+This should look like the same advice for moving backwards from a necessity statement, and it is. The methods available to you are very open and there are several different ways to get to the conclusion.
+\section{Part 30.2 Working Forward from What You Have}
+Just like with the previous page, Working Backwards in Modal Logic, the same tricks and tips can be imported from PL into ML when the main operator is not a qualifier. But, just as before, ML has operators which PL lacks, namely the qualifiers. So, we need some tips for what you can do when dealing with those. These cases are:
+\begin{ebullet}
+\item[\textbullet] Moving forward from a (negated) qualifier
+\item[\textbullet] Moving forward from a necessary/possible conditional
+\end{ebullet}
+Just as before, in giving these tips, I will assume that we are working in the minimalist K system. The other systems are additions to this, so, sometimes, the processes will be even easier than what I do here. 
+
+\subsection{Moving forward from a (negated) qualifier}
+
+The first thing to do when you have a negated qualifier and you don't see anything you can do with it (such as \eor E or MT) is to try using MN and see whether this exposes any possible moves. Once you do this, then you will, simply, have a possibility/necessity statement. For example, take this argument:
+\begin{center}
+\enot \ebox A,\ediamond \enot A\eif  \ebox B $\vDash_K$ \ediamond B
+\end{center}
+This argument is valid, but it might not be clear about how to prove it. So, let's start by writing out the premises:
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\end{fitchproof}
+As you can see, the first line is a negated necessity qualifier. There is only one thing we can do with something so simple and that is MN. Let's do that:
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\have{3}{\ediamond \enot A}\mn{1}	
+\end{fitchproof}
+This opens up some options for us, namely, if you look at the second line, you see that we have the components necessary for \eif E. Since that's all we can do here, let's try it:
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\have{3}{\ediamond \enot A}\mn{1}	
+\have{4}{\ebox B}\ci{2,3}	
+\end{fitchproof}
+Now, remember what our goal is, \ediamond B. If we were working in a T system, this would be relatively simple, because the RF rule allows us to go from \ebox B to B and then from B to \ediamond B. The K system, however, doesn't have this but it should be obvious that if something is necessary then it is possible. Basically, if there is a world, w1, such that \ebox B is true at that world, then there is a world, w2, such that Rw1w2  and B is true at w2 (which is the requirement for \ediamond B to be true at w1). How can we go about proving that? Well, since it is a possibility statement, we only have one rule to introduce those, namely \ediamond I and we have a possibility statement to work from, namely \ediamond \enot A. Let's open that subproof:
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\have{3}{\ediamond \enot A}\mn{1}	
+\have{4}{\ebox B}\ci{2,3}	
+\open
+\hypo{5}{\enot A}\by{for strict subproof}{}
+\end{fitchproof}
+
+Now we can use the \ebox E rule to import B into the subproof, because \ebox E explicitly allows for this, like so: 
+
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\have{3}{\ediamond \enot A}\mn{1}	
+\have{4}{\ebox B}\ci{2,3}	
+\open
+\hypo{5}{\enot A}\by{for strict subproof}{}
+\have{6}{B}\boxe{4}
+\end{fitchproof}
+
+At this point, we only need to close the subproof because \ediamond I gives us the last line of the strict subproof with \ediamond  as the main operator, like so:
+
+\begin{fitchproof}
+\hypo{1}{\enot \ebox A}
+\hypo{2}{\ediamond \enot A\eif  \ebox B}
+\have{3}{\ediamond \enot A}\mn{1}	
+\have{4}{\ebox B}\ci{2,3}	
+\open
+\hypo{5}{\enot A}\by{for strict subproof}{}
+\have{6}{B}\boxe{4}
+\close
+\have{7}{\ediamond B}\posi{3,5-6}
+\end{fitchproof}
+
+And we are done! But, this general method does require that you have a possibility statement to work from. This might not always be the case. In an extreme situation, what if you needed to prove \ebox A\eif \ediamond A from nothing? That is:
+\begin{center}
+$\vDash_K$ \ebox A\eif \ediamond A
+\end{center}
+Sadly, this argument is invalid in the K system, but it is valid in all of the other ones we have discussed. To prove this, you need to have the system be at least serial. In our case, we have the T system which is reflexive (reflexivity implies seriality). So, rather than working from K, let's prove this in T:
+\begin{center}
+$\vDash_T$ \ebox A\eif \ediamond A
+\end{center}
+This is fairly simple. Immediately you should see, working backwards a little, that this is a conditional. As a result, we are going to need to do a \eif I. So, let's start there, assuming the antecedent:
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}\by{for conditional}{}
+\end{fitchproof}
+
+Now what should we do? Well, since we are working in the T system, there are a few options we can work from. Since we know that it won't work in K, the only new option is to use RF: 
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}\by{for conditional}{}
+\have{2}{A}\rf{1}
+\end{fitchproof}
+
+From here, since we are after \ediamond A, we can easily make this with RF again:
+
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}\by{for conditional}{}
+\have{2}{A}\rf{1}
+\have{3}{\ediamond A}\rf{2}
+\end{fitchproof}
+
+And now we just need to close the subproof to be done:
+
+\begin{fitchproof}
+\open
+\hypo{1}{\ebox A}\by{for conditional}{}
+\have{2}{A}\rf{1}
+\have{3}{\ediamond A}\rf{2}
+\close
+\have{4}{\ebox A \eif \ediamond A}\ci{1-3}		
+\end{fitchproof}
+
+\subsection{Moving forward from a necessary/possible conditional}
+
+When you encounter a necessary or possible conditional, there are several different options available to you. In the case of a necessary conditional, look to see whether you can use it in a strict subproof and what you could derive in that. Things can be a bit more hairy when dealing with a possible conditional. For example, take this argument: 
+\begin{center}
+\ediamond (A\eif B),\ebox (B\eif C),\ebox A,\ediamond C\eif D $\vDash_K$ D
+\end{center}
+This argument is valid, and to start it, let's write out the premises: 
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\end{fitchproof}
+The only thing we can do immediately is open up a strict subproof, namely \ediamond I using 1, so let's do that:
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\open
+\hypo{5}{A\eif B}\by{for strict subproof}{}
+\end{fitchproof}
+
+Now, we see that we can import A from line 3:
+
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\open
+\hypo{5}{A\eif B}\by{for strict subproof}{}
+\have{6}{A}\boxe{3}
+\end{fitchproof}
+
+This opens up the ability to get B in our strict subproof, like so:
+
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\open
+\hypo{5}{A\eif B}\by{for strict subproof}{}
+\have{6}{A}\boxe{3}
+\have{7}{B}\ce{5,6}
+\end{fitchproof}
+We could end here and get \ediamond B, but that's not what we are after. So, the game is to import line 2 and use that:
+
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\open
+\hypo{5}{A\eif B}\by{for strict subproof}{}
+\have{6}{A}\boxe{3}
+\have{7}{B}\ce{5,6}
+\have{8}{B\eif C}\boxe{2}
+\have{9}{C}\ce{8,7}
+\end{fitchproof}
+From here, it's simply leaving the strict subproof and standard PL work: 
+
+
+\begin{fitchproof}
+\hypo{1}{\ediamond (A\eif B)}
+\hypo{2}{\ebox (B\eif C)}
+\hypo{3}{\ebox A}
+\hypo{4}{\ediamond C\eif D}	
+\open
+\hypo{5}{A\eif B}\by{for strict subproof}{}
+\have{6}{A}\boxe{3}
+\have{7}{B}\ce{5,6}
+\have{8}{B\eif C}\boxe{2}
+\have{9}{C}\ce{8,7}
+\close
+\have{10}{\ediamond C}
+\have{11}{D}\ce{4,10}
+\end{fitchproof}

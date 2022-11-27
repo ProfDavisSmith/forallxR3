@@ -1,0 +1,616 @@
+\part{Truth Tables and All Possible Worlds}
+\label{ch.TruthTables}
+\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+\chapter{Part 7 Truth Tables}
+\section{ Part 7.1 What are Truth Tables?}
+Any sentence of PL is built out of sentence letters, possibly combined using the connectives. This much should be clear from the previous module, when we were doing translating. Much like how the more complex sentence is built out of the sentence letters and the connectives, the \gls{truth value} (whether the sentence as a whole is true or false) is built out of the values of the sentences and how the connectives work (how they are defined). The truth value of the compound sentence depends only on the truth value of the sentence letters that comprise it. In order to know the truth value of ‘(D\eand E)’, for instance, you only need to know the truth value of ‘D’ and the truth value of ‘E’. So far, we have used symbolization keys to assign truth values to PL sentences indirectly. For example, we might say that the PL sentence ‘B’ is to be true iff Big Ben is in London. Since Big Ben is in London, this symbolization would make ‘B’ true. Doing this, however, is working with the content, the meaning, of the sentence and serves as a distraction from what is really important; the form of the argument. As a result, we need a way to look at all of the possible ways a proposition could be (all of the `possible worlds' as some say). This is where we get truth tables. Simply put, they are a means for us to look at every single possible valuations of the sentences letters in an argument and from them determine things like whether the sentence is a tautology, a contradiction, or some contingent fact.  You should have noticed that I used a new term in the previous sentence; `\gls{valuation}'. This is a special term meaning the assignment of a particular truth value to a sentence letter. Note, however, that once a valuation is chosen, it's fixed for the time that we are using it. 
+
+\factoidbox{A valuation is any assignment of truth values to particular sentence letters of PL.}
+
+The truth table for a complex sentence outlines every single possible combination of valuations. This, in turn, allows us to tell whether the statement is a tautology, a contradiction, or anything else like that. Similarly, the truth tables extended to arguments can tell us whether they are \gls{valid} or \gls{invalid} and show us under what circumstances our reasoning wouldn't work.
+
+\subsection{How do we make them?}
+
+Truth tables, as the name implies, are tables. So, we start off by making one. But, a truth table about nothing wouldn't help us in any way, so here is an example for us to start with: `P'. You could give this sentence letter any meaning you like, so long as it could be true or false. Making a truth table for this sentence is very simple. First, you start with the top row of the table; this is the labeling row to give context for the valuations. In this row, there will be one column for each sentence letter used and then one column for each sentence being evaluated; like so:
+
+\begin{center}
+\begin{tabular}{c|c}
+\metav{P} & \metav{P}\\
+\hline
+\end{tabular}
+\end{center}
+The subsequent rows are where things get interesting. For convenience, we abbreviate ‘True’ with ‘T’ and ‘False’ with ‘F’. (But, to be clear, the two truth values are True and False; the truth values are not letters!). In the right most sentence letter column, write T and then F. If the sentences you are evaluating only have one sentence letter (likely used repeatedly), then you are done with this part; there are only two rows (not including the top row) in the table. For example:
+\begin{center}
+\begin{tabular}{c|c}
+\metav{P} & \metav{P}\\
+\hline
+T & \\
+F &  
+\end{tabular}
+\end{center}
+
+If, however, there is more than one sentence letter, you will need to repeat writing T,F in the column until there are a total of $2^n$ rows (not including the labeling row), where n is the number of sentence letters used. This means that, not including the labeling row, if an argument uses 2 sentence letters, there will be 4 rows, if it uses 3, there will be 8, 4 will get 16, and so on. In the next column for the sentence letter to the left, write T,T,F,F, and repeat until you have filled it out. For the next column, it will be 4 T's followed by 4 F's and then it will double every time. For example, here is the incomplete truth table for a sentence which uses 2 sentence letters:
+\begin{center}
+\begin{tabular}{c|c|c}
+\metav{P} & \metav{Q}&\metav{P}\eor \metav{Q}\\
+\hline
+T &T&\\
+T &F&\\
+F&T&\\
+F&F&\\  
+\end{tabular}
+\end{center}
+
+This simple table has a row for every single possible valuation of P and Q, as in every way the world could be with respect to P and Q. This is fine if we are only evaluating single sentence letter statements; but we introduced five connectives in Part 5. So, we just need to explain how they map to truth values. One way to think about this is that the connectives take the truth values of their components as inputs and then return certain truth values as outputs. This is one of the reasons why computer science uses the language of symbolic logic on a basic level. The electrical gates (circuits) are modeled after these connectives. We will now be moving on to the characteristic truth tables for the different connectives. These are what the connective returns when it is given certain inputs.
+\section{Characteristic Truth Tables for Simple Sentence Letters and Negation}
+We will start things off really easily. If the statement you are evaluating is just a single sentence letter without any connectives whatsoever (this happens, but it is typically in the middle of several other sentences), then all you need to do is take the valuation that is in that row and put it underneath the sentence in question. So, let's take a look at the simple example from the previous page:
+
+\begin{center}
+\begin{tabular}{c|c}
+\metav{P} & \metav{P}\\
+\hline
+T &\\
+F&\\
+\end{tabular}
+\end{center}
+
+As you can see, there are two rows beneath the labeling row and they each have P as a different value, the first has it as true and the second has it as false. Since there is nothing in the sentence column which modifies or depends on these values, we can just copy-paste them into the sentence column; like so:
+\begin{center}
+\begin{tabular}{c|c}
+\metav{P} & \metav{P}\\
+\hline
+T &T\\
+F&F\\
+\end{tabular}
+\end{center}
+
+That really is all there is to it, in this case. This same method translates over to more complex sentences, just in those cases the copying will just be of the letter, not the entire cell.
+
+\subsection{Negation}
+
+Negation is the simplest of all of the connectives in logic, it is also one of the most universal. Intuitively, if a person says something like "Patty is going to the party", they are asserting that it's true (excluding cases of sarcasm). If, on the other hand, they claim something like "Patty is not going to the party", they are asserting the opposite, namely that "Patty is going to the party" is false. Negation, in a sense, flips the truth value of the proposition in question. For any sentence A: If A is true, then  \enot A is false; and if  \enot A is true, then A is false. We can summarize this in the characteristic truth table for negation:
+\begin{center}
+\begin{tabular}{c|c}
+\metav{P} & \enot\metav{P}\\
+\hline
+T &F\\
+F&T\\
+\end{tabular}
+\end{center}
+Looking at this table, you will notice that the left-most column has "A" followed by "T" and then "F". That top row labels the column and the subsequent rows list out the way the world could be; namely, A could be true (the second row) or A could be false (the third row). By convention, the top row is always going to be the label for the columns and the second row will always be true. We then take the value of, for example, A as assigned in that row and apply it to the statement(s) we have in the other columns. Truth tables can and will have more than 3 rows (including the labeling row) and the truth table for negation is the shortest.
+\section{Characteristic Truth Tables for Conjunction and Disjunction}
+\subsection{Conjunction}
+
+As you should remember, conjunction requires two sentences, one on each side. While it is possible for these to be the same sentence, for example, A\eand A, more often than not, they will be different. A completed truth table for conjunction treating the two as different will also present the case where they are the same (the top and bottom rows). You should notice that the table below is significantly larger than the one for negation. This is because there are more ways the world could be which we need to look at. If you count the number of sentence letters used in the argument, n, the number of rows required to make the table (not including the labeling row) is 2n. For example, if the argument only has 2 sentence letters, then it will require 4 rows (not including the label). This, in turn, is because we need to see how the world would be if both are true, the first is true and the second false, the first false and the second true, and finally, how the world would be if both were false. 
+
+Intuitively, if someone says "Patty is going to the party and Sam is going to the mall", they are asserting two things: first, that "Patty is going to the party" is true and "Sam is going to the mall" is true. This tracks in our definition for conjunctions. For any sentences A and B, A\eand B is true if and only if both A and B are true. We can summarize this in the characteristic truth table for conjunction:
+\begin{center}
+\begin{tabular}{c|c|c}
+\metav{P} & \metav{Q}&\metav{P}\eand \metav{Q}\\
+\hline
+T&T&T\\
+T&F&F\\
+F&T&F\\
+F&F&F\\
+\end{tabular}
+\end{center}
+Note that conjunction is symmetrical. The truth value for A\eand  B is always the same as the truth value for B\eand  A. This will come in handy later when we discuss how we can more from different ways of symbolizing the same sentence (or what we should treat as the same).
+
+\subsection{Disjunction}
+
+Recall that ‘\eor ’ always represents inclusive or. English, for its part, doesn't have an explicit distinction between when the inclusive or (one or both are true) and the exclusive or (only one is true, both cannot be true together). Various other languages, such as Latin, have two different disjunctions, one for inclusive and the other for exclusive (in Latin, the inclusive or is `vel' and the exclusive is `aut'). Many mistakes in reasoning can be avoided by assuming the inclusive or unless it is very explicitly the case that the exclusive is required. As a result, we will say that for any sentences A and B, A\eor  B is true if and only if  A is true, B is true, or both are true (just to make the inclusive or explicit). Looking at the various ways the world could be for two propositions, we get this in the characteristic truth table for disjunction:
+\begin{center}
+\begin{tabular}{c|c|c}
+\metav{P} & \metav{Q}&\metav{P}\eor \metav{Q}\\
+\hline
+T&T&T\\
+T&F&T\\
+F&T&T\\
+F&F&F\\
+\end{tabular}
+\end{center}
+It is worth noting that A\eor  B is the same as B\eor  A. Like with the conjunction, disjunctions are symmetrical. You should notice that A\eor  B is only false under one circumstance, when both are false. This will come in handy later once we combine these more complex sentences.
+\section{Characteristic Truth Tables for Conditional and Biconditional}
+\subsection{Conditional}
+Any formal logical language worth thinking about is going to need to admit that conditionals are a bit of a mess. Troves of papers have been written and will continue to be written about why they are such a mess. Personally, having tried to explain this to students several times and seeing the common errors, I hold that the reason is because of the final row. Conditionals are true when the antecedent (the `if' part) and the consequent (the `then' part) are both false. Natural languages have cases where this makes perfect sense; namely reasonable counterfactuals (e.g. "if I drove 50mph in my neighborhood, that would be dangerous), and there are other cases where this doesn't make sense. Our assent or dissent from the truth of these cases always concerns the content (the meaning) of the sentence letters, not the form of the argument itself. So, for now, we are going to stipulate the following: A\eif  B is false if and only if A is true and B is false. We can summarize this with a characteristic truth table for the conditional.
+
+\begin{center}
+\begin{tabular}{c|c|c}
+\metav{P} & \metav{Q}&\metav{P}\eif \metav{Q}\\
+\hline
+T&T&T\\
+T&F&F\\
+F&T&T\\
+F&F&T\\
+\end{tabular}
+\end{center}
+
+ Notice that the conditional is asymmetric. You cannot swap the antecedent and consequent without changing the meaning of the sentence; A\eif  B and B\eif  A have different truth tables.
+
+\subsection{Biconditional}
+
+Biconditionals are a little less contentious. You can almost think of \eiff  as an equals sign; A\eiff B is true when A and B have the same truth value (are equal, so to speak). In fact, some formal logical languages will use an underlined equals sign for their symbol for the biconditional. Since a biconditional is to be the same as the conjunction of the conditionals running in both directions (hence the name), we will want the truth table for the biconditional to be:
+\begin{center}
+\begin{tabular}{c|c|c}
+\metav{P} & \metav{Q}&\metav{P}\eiff \metav{Q}\\
+\hline
+T&T&T\\
+T&F&F\\
+F&T&F\\
+F&F&T\\
+\end{tabular}
+\end{center}
+
+\boole
+
+\chapter{Part 8 Complex Truth Tables}
+\section{Part 8.1: Building Complete Truth Tables}
+More often than not, the sentences you will want to evaluate are going to be far more complex than simply two sentence letters and a single connective. They will contain any number of sentence letters, any number of sentences (simple or compound), and any number of connectives. So, we will need a way to transfer what you've learned about the definitions of the connectives to these more robust sentences. A \gls{complete truth table} has a line for every possible assignment of True and False to the relevant sentence letters. Each line represents a valuation, and a complete truth table has a line for all the different valuations. The size of the complete truth table depends on the number of different sentence letters in the table. A sentence that contains only one sentence letter requires only two rows, as in the characteristic truth table for negation. This is true even if the same letter is repeated many times, as in the sentence 
+\begin{center} [(C \eiff  C )\eif  C ]\eand   \enot (C\eif  C )\end{center}
+ As a starting example, I will use that sentence. We start off just as before by having the top row be the labels and have the sentence letter columns giving the possible valuations for those letters, like so:
+\begin{center}
+\begin{tabular}{c|c}
+C&[(C \eiff C )\eif C ]\eand  \enot  (C\eif C )\\\hline
+T&\\
+F&\\
+\end{tabular}
+\end{center}
+
+Next, I copy the sentence I wish to evaluate into the rows, but I replace the sentence letters with the T's and F's as they are assigned in the valuations. I do not change the connectives yet:
+\begin{center}
+\begin{tabular}{c|c}
+C&[(C \eiff C )\eif C ]\eand  \enot  (C\eif C )\\\hline
+T&[(T\eiff T )\eif T]\eand  \enot (T\eif T)\\
+F&[(F\eiff F )\eif F ]\eand  \enot (F\eif F)\\
+\end{tabular}
+\end{center}
+
+Starting with the `least significant operators' (as in the ones in the inner most brackets), I begin to replace the operators with the truth values they would return in that situation. For example, the characteristic truth table for the biconditional has it that T\eiff T returns T, so I replace `T\eiff T' with T and remove the brackets when it's a single letter or just governed by a negation. You should know these from the characteristic truth tables which we just saw; if you have these memorized, awesome! If you don't, then you can refer back to your notes and rely on those until you have them memorized. So, for the first pass, I have:
+\begin{center}
+\begin{tabular}{c|c}
+C&[(C\eiff C)\eif C]\eand  \enot (C\eif C)\\\hline
+T&(T\eif T)\eand  \enot T\\
+F&(T\eif F )\eand  \enot T\\
+\end{tabular}
+\end{center}
+
+In the next step, I repeat this process with the rows I have correctly modified. I then repeat again until every row has a single true or false and no connectives. For example: 
+\begin{center}
+\begin{tabular}{c|c}
+C&[(C\eiff C)\eif C]\eand  \enot (C\eif C)\\\hline
+T&T\eand F\\
+F&F\eand F\\
+\end{tabular}
+\end{center}
+
+And here is the final step:
+\begin{center}
+\begin{tabular}{c|c}
+C&[(C\eiff C)\eif C]\eand  \enot (C\eif C)\\\hline
+T&F\\
+F&F\\
+\end{tabular}
+\end{center}
+
+Looking at that final column, we see that the sentence is false on both rows of the table; i.e., the sentence is false regardless of whether ‘C ’ is true or false. It is false on every valuation. This means that the sentence is a \gls{contradiction of PL}, it could never be true, no matter how the world is.  There will be four lines in the complete truth table for a sentence containing two sentence letters, as in the characteristic truth tables, or the truth table for ‘(H\eand  I )\eif  H ’. For another example, there will be eight lines in the complete truth table for a sentence containing three sentence letters. For this, I will apply the same steps to M\eand  (N\eor P). So, I start by listing out the sentence letter columns and the one for the sentence I wish to evaluate:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+M&N&P&M\eand  (N\eor P)\\\hline
+T&T&T\\
+T&T&F\\
+T&F&T\\
+T&F&F\\
+F&T&T\\
+F&T&F\\
+F&F&T\\
+F&F&F\\
+\end{tabular}
+\end{center}
+
+Next, same as before, I copy the sentence but replace the sentence letters with their valuations:
+
+\begin{center}
+\begin{tabular}{c|c|c|ccc}
+M&N&P&M\eand  (N\eor P)\\\hline
+T&T&T&T\eand  (T\eor T) \\
+T&T&F&T\eand  (T\eor F) \\
+T&F&T&T\eand  (F\eor T) \\
+T&F&F&T\eand  (F\eor F) \\
+F&T&T&F\eand  (T\eor T) \\
+F&T&F&F\eand  (T\eor F) \\
+F&F&T&F\eand  (F\eor T) \\
+F&F&F&F\eand  (F\eor F) \\
+\end{tabular}
+\end{center}
+
+Third, I start with the innermost brackets and apply the characteristic truth tables, like so:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+M&N&P&M\eand  (N\eor P)\\\hline
+T&T&T&T\eand  T\\
+T&T&F&T\eand  T\\
+T&F&T&T\eand  T\\
+T&F&F&T\eand  F\\
+F&T&T&F\eand  T\\
+F&T&F&F\eand  T\\
+F&F&T&F\eand  T\\
+F&F&F&F\eand  F\\
+\end{tabular}
+\end{center}
+
+And, finally, I repeat the process with the main operator:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+M&N&P&M\eand  (N\eor P)\\\hline
+T&T&T&T\\
+T&T&F&T\\
+T&F&T&T\\
+T&F&F&F\\
+F&T&T&F\\
+F&T&F&F\\
+F&F&T&F\\
+F&F&F&F\\
+\end{tabular}
+\end{center}
+
+\section{Part 8.2: Why Brackets are Essential}
+Very often, when we are speaking, how we break up the components of our sentences doesn't change the meaning or the truth behind what we said. This is true in PL as well. For example, consider these two sentences:
+\begin{center}
+(A\eand B)\eand C\\
+A\eand (B\eand C)
+\end{center}
+If you want, you can do a truth table for these but it should be clear that they are \gls{equivalent}. Whenever one is false, so is the other and whenever one is true, the other is true. Consequently, it will never make any difference from the perspective of truth value, which is all that PL cares about, which of the two sentences we assert (or deny). But we should not write the expression `A\eand B\eand C' because it is ambiguous between the two sentences above .Similarly, if I replace the conjunctions with disjunctions, we get that the two are equivalent. For example:
+\begin{center}
+(A\eor B)\eor C\\
+A\eor (B\eor C)
+\end{center}
+For the same reason, we should not simply write `A\eor B\eor C' because it would be ambiguous between the two.  In fact, whenever a sentence only has conjunctions or only has disjunctions (but not both), then the placement of the brackets really doesn't matter. This is because, as I mention in the content about charateristic truth tables, \eor  and\eand  are both symmetric, so the order doesn't matter. This is only true of conjunctions and disjunctions, however. For example, take the case where I replace the conjunctions or disjunctions with conditionals:
+\begin{center}
+(A\eif B)\eif C\\
+A\eif (B\eif C)
+\end{center}
+If we do a complete truth table for these, we will see that they have fundamentally different values. There are several cases where one is true while the other is false. As a result, it would be dangerously ambiguous for us to write `A\eif B\eif C' instead of one of them.  If we are dealing with a mix of connectives (as in there is more than one type), the brackets become even more essential. For example, take a look at these two sentences:
+\begin{center}
+(A\eor B)\eand C\\
+A\eor (B\eand C)
+\end{center}
+These two, like with the ones with only conditionals, have different truth values. Though they may be the same some of the time, this is by luck not design. To see this difference in action, imagine that you are having a conversation about who will come to a birthday party. A is for Abigail coming to the party, B is for Bert, and C is for Carol. In the first way of breaking up the sentence, Carol is coming to the party and either Abigail or Bert is. So from this perspective, Carol is guaranteed to come. In the second way of breaking it up, it's either Abigail is coming to the party or both Bert and Carol are. From this perspective, we have no guarantees about who is coming. As a result, if we were to write something like `A\eor B\eand C', we would have no clue which one applies. Never write like this. The moral is: never drop brackets (except the outermost ones). They are essential to understanding the meaning of a sentence and also how we should use it in our reasoning. 
+\chapter{Part 9 Semantic Concepts}
+In the previous section, we introduced the idea of a valuation and showed how to determine the truth value of any PL sentence, on any valuation, using a truth table. In this section, we will introduce some related ideas, and show how to use truth tables to test whether or not they apply. Since all of those features of a sentence apply depending on under what conditions they are true, truth tables give us the ability to test for those features. 
+
+\subsection{Tautologies and contradictions}
+
+In Part 3, we explained necessary truth and necessary falsity. Both notions have surrogates in PL. We will start with a surrogate for necessary truth. which is a \gls{tautology} (not to be confused with the inference/equivalency rule which we will see later):
+
+\factoidbox{A is a tautology iff it is true on every valuation.}
+
+We can use truth tables to decide whether a sentence is a tautology. Another way of phrasing this definition is that if a sentence is true on every line of its complete truth table, then it is a tautology. For example, one of the examples given was ‘(H\eand I)\eif H’ and this sentence is a tautology. This is only, though, a surrogate for necessary truth. There are some necessary truths that we cannot adequately symbolize in PL. One example is ‘2+2 = 4’. This must be true, but if we try to symbolize it in PL, the best we can offer is an sentence letter, and no sentence letter is a tautology. Still, if we can adequately symbolize some English sentence using a PL sentence which is a tautology, then that English sentence expresses a necessary truth.
+
+On the other hand, in PL, there is a similar concept to necessary falsity:
+
+\factoidbox{A is a contradiction (in PL) iff it is false on every valuation.}
+
+We can use truth tables to decide whether a sentence is a contradiction. If the sentence is false on every line of its complete truth table, then it is false on every valuation, so it is a contradiction. A previous example, namely ‘[(C\eiff C )\eif C ]\eand \enot (C\eif C)’ was false on every line and is therefore a contradiction. As with tautology, there will be some English sentences which are contradictory which will be written as a single letter in PL, for example "the ghost is alive". Still, if we can adequately symbolize some English sentence using a PL sentence which is a contradiction, then that English sentence expresses a necessary falsehood.
+
+\subsection{Equivalence}
+
+Very often in natural languages, there will be several ways of saying the same thing (as in they have the same meaning). We say that the two ways of saying it are equivalent. PL has this same situation and notion:
+
+\factoidbox{A and B are equivalent (in PL) iff, for every valuation, their truth values agree, i.e., if there is no valuation in which they have opposite truth values.}
+
+We have already made use of this notion, in effect, in the section concerning brackets; the point there was that ‘(A\eand B)\eand C’ and ‘A\eand (B\eand C)’ are equivalent, they mean the same thing. We can use truth tables to test this and it is simple enough to do so for less than obvious cases of equivalence. For example, consider the sentences ‘\enot (P\eor Q)’ and ‘\enot P\eand \enot Q’. Are they equivalent? To find out, we construct a truth table.
+\begin{center}
+\begin{tabular}{c|c|cccc|ccc}
+P&Q&\enot &(P&\eor &Q)&\enot P &\eand &\enot Q\\\hline
+T&T&F&(T&T&T)&FT&F&FT\\
+T&F&F&(T&T&F)&FT&F&TF\\
+F&T&F&(F&T&T)&TF&F&FT\\
+F&F&T&(F&F&F)&TF&T&TF\\
+\end{tabular}
+\end{center}
+Look at the columns for the main logical operators; negation for the first sentence, conjunction for the second. On the first three rows, both are false. On the final row, both are true. Since they match on every row, the two sentences are equivalent. As we saw before in the case where arguments are conceptually valid, there are cases in natural languages where two sentences are equivalent but this wouldn't show up in the truth tables. 
+
+\subsection{Satisfiability}
+
+In Part 3, we said that sentences are jointly possible (\gls{joint possibility}) iff it is possible for all of them to be true at once. We can offer a surrogate for this notion too:
+
+\factoidbox{$A_1$,$A_2$,. . . ,$A_n$ are jointly satisfiable (in PL) iff there is some valuation which makes them all true.}
+
+Derivatively, sentences are jointly unsatisfiable iff no valuation makes them all true. Again, it is easy to test for joint \gls{satisfiability in PL} using truth tables.
+
+\subsection{Entailment and validity}
+
+The following idea is closely related to that of joint satisfiability:
+
+\factoidbox{The sentences $A_1$,$A_2$,. . . ,$A_n$ entail (in PL) the sentence C iff no valuation of the relevant sentence letters makes all of $A_1$,$A_2$,. . . ,$A_n$ true and C false.}
+
+Again, it is easy to test this with a truth table. To check whether ‘\enot L\eif (J\eor L)’ and ‘\enot L’ entail ‘J’, we simply need to check whether there is any valuation which makes both ‘\enot L\eif (J\eor L)’ and ‘\enot L’ true whilst making ‘J’ false. So we use a truth table:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&J\\\hline
+T&T&FT&T&(T&T&T)&F T&T\\
+T&F&TF&T&(T&T&F)&T F&T\\
+F&T&FT&T&(F&T&T)&F T&F\\
+F&F&TF&F&(F&F&F)&T F&F\\
+\end{tabular}
+\end{center}
+
+The only row on which both ‘\enot L\eif (J\eor L)’ and ‘\enot L’ are true is the second row, and that is a row on which ‘J’ is also true. So ‘\enot L\eif (J\eor L)’ and ‘\enot L’ entail ‘J’.
+
+We now make an important observation:
+
+\factoidbox{If $A_1$,$A_2$,. . . ,$A_n$ entail C, in PL then $A_1$,$A_2$,. . . ,$A_n$ \therefore  C is valid.}
+
+Here’s why. If $A_1$,$A_2$,. . . ,$A_n$ entail C, then there is no valuation which makes all of $A_1$,$A_2$,. . . ,$A_n$ true and also makes C false. Any case in which all of $A_1$,$A_2$,. . . ,$A_n$ are true and C is false would generate a valuation with this property: take the truth value of any sentence letter to be just the truth value the corresponding sentence in that case. Since there is no such valuation, there is no case in which all of $A_1$,$A_2$,. . . ,$A_n$ are true and C is false. But this is just what it takes for an argument, with premises $A_1$,$A_2$,. . . ,$A_n$ and conclusion C, to be valid!
+
+In short, we have a way to test for the validity of English arguments. First, we symbolize them in PL; then we test for entailment in PL using truth tables.
+\chapter{Part 10 Testing For Validity}
+\section{Part 10.1: Working through Truth Tables}
+When you are working on these more informally, such as in your head during a debate or conversation, you will quickly find that you do not need to copy the truth value of each sentence letter, but can simply refer back to them. So you can speed things up by writing (here I put every sentence letter and connective in its own column for clarity):
+\begin{center}
+\begin{tabular}{c|c|cccccc}
+P&Q&(P&\eor &Q)&\eiff & \enot &P\\\hline
+T&T&&T&&F&F&\\
+T&F&&T&&F&F&\\
+F&T&&T&&T&T&\\
+F&F&&F&&F&T&\\
+\end{tabular}
+\end{center}
+You also know for sure that a disjunction is true whenever one of the disjuncts is true. So if you find a true disjunct, there is no need to work out the truth values of the other disjuncts. Thus, if we were working with something like `(\enot P\eor \enot Q)\eor \enot P' one might offer:
+\begin{center}
+\begin{tabular}{c|c|cccccc}
+P&Q&(\enot P&\eor &\enot Q)&\eor &\enot P\\\hline
+T&T&F&F&F&F&F\\
+T&F&F&T&T&T&F\\
+F&T&&T&&T&T\\
+F&F&&F&&T&T\\
+\end{tabular}
+\end{center}
+
+Equally, you know for sure that a conjunction is false whenever at least one of the conjuncts is false. So, if you find a false conjunct, there is no need to work out the truth value of the other conjunct. Thus, for something like `\enot (P\eand \enot Q)\eand \enot P', you might offer:
+\begin{center}
+\begin{tabular}{c|c|cccccc}
+P&Q&\enot &(P&\eand &\enot Q)&\eand & \enot P\\\hline
+T&T&&&&&F&F\\
+T&F&&&&&F&F\\
+F&T&T&&F&&T&T\\
+F&F&T&&F&&T&T\\
+\end{tabular}
+\end{center}
+A similar short cut is available for conditionals. You immediately know that a conditional is true if either its consequent is true, or its antecedent is false. Thus, for something like `((P\eif Q)\eif P)\eif P' you might present:
+\begin{center}
+\begin{tabular}{c|c|ccccccc}
+P&Q&((P&\eif &Q)&\eif &P)&\eif &P\\\hline
+T&T&&&&&&T&\\
+T&F&&&&&&T&\\
+F&T&F&T&&F&F&T&F\\
+F&F&F&T&&F&F&T&F\\
+\end{tabular}
+\end{center}
+
+So ‘((P\eif Q)\eif P)\eif P’ is a tautology. In fact, it is an instance of Peirce’s Law, named after Charles Sanders Peirce.
+\section{Part 10.2: Testing For Validity}
+In Part 9, we saw how to use truth tables to test for validity. In that test, we look for bad lines: lines where the premises are all true and the conclusion is false. Now:
+
+If the conclusion is true on a line, then that line is not bad. (And we don’t need to evaluate anything else on that line to confirm this.)
+If any premise is false on a line, then that line is not bad. (And we don’t need to evaluate anything else on that line to confirm this.)
+
+With this in mind, we can speed up our tests for validity quite considerably. Let’s consider how we might test the following:
+\begin{center}
+\enot L\eif  ( J \eor  L),\enot L $\vDash$  J
+\end{center}
+You might notice that we have a different symbol here: \gls{vDash}, this is used to signify that the left-hand side of it entails the right-hand side, meaning that it is valid. When we want to prove this, the first thing we should do is evaluate the conclusion. If we find that the conclusion is true on some line, then that is not a bad line. So we can simply ignore the rest of the line. So, after our first stage, we are left with something like this:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
+T&T&&&&&&&T\\
+T&F&&&&&&&T\\
+F&T&&?&&&&?&F\\
+F&F&&?&&&&?&F\\
+\end{tabular}
+\end{center}
+where the blanks indicate that we won’t bother with any more investigation (since the line is not bad), and the question marks indicate that we need to keep digging.
+
+The easiest premise to evaluate is the second, so we do that next, and get:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
+T&T&&&&&&&T\\
+T&F&&&&&&&T\\
+F&T&&?&&&&F&F\\
+F&F&&?&&&&T&F\\
+\end{tabular}
+\end{center}
+
+Note that we no longer need to consider the third line on the table: it is certainly not bad, because some premise is false on that line. And finally, we complete the truth table:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
+T&T&&&&&&&T\\
+T&F&&&&&&&T\\
+F&T&&?&&&&F&F\\
+F&F&T&F&F&F&F&T&F\\
+\end{tabular}
+\end{center}
+
+The truth table has no bad lines, so the argument is valid. Any valuation which makes every premise true makes the conclusion true
+
+It’s probably worth illustrating the tactic again. Consider this argument:
+\begin{center}
+A\eor B,\enot (B\eand  C)$\vDash$ (A\eor \enot C )
+\end{center}
+Again, we start by evaluating the conclusion. Since this is a disjunction, it is true whenever either disjunct is true, so we can speed things along a bit.
+\begin{center}
+\begin{tabular}{c|c|c|ccc|cccc|ccc|}
+A&B&C&A &\eor& B& \enot& (B &\eand &C )&A &\eor &\enot C\\\hline
+T&T&T& & & & & & & & & T &\\
+T&T&F& & & & & & & & & T &\\
+T&F&T& & & & & & & & & T &\\
+T&F&F& & & & & & & & & T &\\
+F&T&T& &T& &F& & & & & F &\\
+F&T&F& & & & & & & & & T &\\
+F&F&T& &F& &?& & & & & F &\\
+F&F&F& & & & & & & & & T &\\
+\end{tabular}
+\end{center}
+
+So the entailment holds! And our shortcuts saved us a lot of work. We have been discussing shortcuts in testing for validity. But exactly the same shortcuts can be used in testing for entailment. By employing a similar notion of bad lines, you can save yourself a huge amount of work.
+\chapter{Part 11 Short-Form Tables}
+Sometimes, we do not need to know what happens on every line of a truth table. Sometimes, just a line or two will do.
+
+\subsection{Tautology}
+
+In order to show that a sentence is a tautology, we need to show that it is true on every valuation. That is to say, we need to know that it comes out true on every line of the truth table. So we need a complete truth table. To show that a sentence is not a tautology, however, we only need one line: a line on which the sentence is false. Therefore, in order to show that some sentence is not a tautology, it is enough to provide a single valuation—a single line of the truth table— which makes the sentence false.
+
+Suppose that we want to show that the sentence ‘(U\eand T)\eif (S\eand W)’ is not a tautology. We set up a partial truth table:
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\\hline
+&&&&&&&F&&&
+\end{tabular}
+\end{center}
+We have only left space for one line, rather than 16, since we are only looking for one line, on which the sentence is false (hence, also, the ‘F’).
+
+The main logical operator of the sentence is a conditional. In order for the conditional to be false, the antecedent must be true and the consequent must be false. So we fill these in on the table:
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\
+\hline
+&&&&&T&&F&&F&\\
+\end{tabular}
+\end{center}
+
+In order for the ‘(U\eand T)’ to be true, both ‘U ’ and ‘T ’ must be true.
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\
+\hline
+&T&T&&T&T&T&F&&F&\\
+\end{tabular}
+\end{center}
+
+Now we just need to make ‘(S\eand W )’ false. To do this, we need to make at least one of ‘S ’ and ‘W ’ false. We can make both ‘S ’ and ‘W ’ false if we want. All that matters is that the whole sentence turns out false on this line. Making an arbitrary decision, we finish the table in this way:
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\
+\hline
+F&T&T&F&T&T&T&F&F&F&F\\
+\end{tabular}
+\end{center}
+
+We now have a partial truth table, which shows that ‘(U\eand T )\eif (S\eand W )’ is not a tautology. Put otherwise, we have shown that there is a valuation which makes ‘(U\eand  T )\eif  (S\eand  W )’ false, namely, the valuation which makes ‘S ’ false, ‘T ’ true, ‘U ’ true and ‘W ’ false.
+
+\subsection{Contradictions}
+
+Showing that something is a contradiction in PL requires a complete truth table: we need to show that there is no valuation which makes the sentence true; that is, we need to show that the sentence is false on every line of the truth table.
+
+However, to show that something is not a contradiction, all we need to do is find a valuation which makes the sentence true, and a single line of a truth table will suffice. We can illustrate this with the same example.
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\
+\hline
+&&&&&&&T&&&\\
+\end{tabular}
+\end{center}
+
+To make the sentence true, it will suffice to ensure that the antecedent is false. Since the antecedent is a conjunction, we can just make one of them false. Making an arbitrary choice, let’s make ‘U ’ false; we can then assign any truth value we like to the other sentence letters.
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccccc}
+S&T&U&W&(U&\eand &T)&\eif  &(S&\eand &W)\\
+\hline
+T&T&T&T&T&T&T&T&T&T&T\\
+\end{tabular}
+\end{center}
+
+\subsection{Equivalence}
+
+To show that two sentences are equivalent, we must show that the sentences have the same truth value on every valuation. So this requires a complete truth table. To show that two sentences are not equivalent, we only need to show that there is a valuation on which they have different truth values. So this requires only a one-line partial truth table: make the table so that one sentence is true and the other false.
+
+\subsection{Consistency}
+
+To show that some sentences are jointly satisfiable, we must show that there is a valuation which makes all of the sentences true ,so this requires only a partial truth table with a single line.
+
+To show that some sentences are jointly unsatisfiable, we must show that there is no valuation which makes all of the sentence true. So this requires a complete truth table: You must show that on every row of the table at least one of the sentences is false.
+
+\subsection{Validity and entailment}
+
+To show that an argument is valid, we must show that there is no valuation which makes all of the premises true and the conclusion false. So this requires a complete truth table. (Likewise for entailment.) To show that argument is invalid, we must show that there is a valuation which makes all of the premises true and the conclusion false. So this requires only a one-line partial truth table on which all of the premises are true and the conclusion is false. (Likewise for a failure of entailment.)
+
+This table summarizes what is required:
+\begin{center}
+\begin{tabular}{c|c|c}
+&YES&NO\\
+\hline
+Tautology?&Complete&One-line\\
+Contradiction?&Complete&One-line\\
+Equivalent?&Complete&One-line\\
+Satisfiable?&One-line&Complete\\
+Valid?&Complete&One-line\\
+Entailment?&Complete&One-line\\
+\end{tabular}
+\end{center}
+
+\newglossaryentry{truth value}
+                 {
+                   name = truth value,
+                   description = {One of the two logical values sentences can have: True and False}
+                   }
+
+\newglossaryentry{truth-functional connective}
+{
+name=truth-functional connective,
+description={An operator that builds larger sentences out of smaller ones and fixes the \gls{truth value} of the resulting sentence based only on the truth value of the component sentences}
+}
+
+\newglossaryentry{valuation}
+{
+name=valuation,
+description={An assignment of \glspl{truth value} to particular \glspl{sentence letter}}
+}
+
+\newglossaryentry{complete truth table}
+{
+name=complete truth table,
+description={A table that gives all the possible \glspl{truth value} for a \gls{sentence of PL} or sentences in PL, with a line for every possible \gls{valuation} of all sentence letters}
+}
+
+\newglossaryentry{tautology}
+{
+name=tautology,
+description={A sentence that has only Ts in the column under the main logical operator of its \gls{complete truth table}; a sentence that is true on every \gls{valuation}}
+}
+
+\newglossaryentry{contradiction of PL}
+{
+  name=contradiction (of PL),
+  text = contradiction,
+description={A sentence that has only Fs in the column under the main logical operator of its \gls{complete truth table}; a sentence that is false on every \gls{valuation}}
+}
+
+\newglossaryentry{equivalent}
+{
+  name=equivalence (in PL),
+  text = equivalent,
+description={A property held by pairs of sentences if and only if the \gls{complete truth table} for those sentences has identical columns under the two main logical operators, i.e., if the sentences have the same truth value on every valuation}
+}
+
+      \newglossaryentry{satisfiability in PL}
+{
+  name=satisfiability (in PL),
+  text=jointly satisfiable,
+description={A property held by sentences if and only if the \gls{complete truth table} for those sentences contains one line on which all the sentences are true, i.e., if some \gls{valuation} makes all the sentences true}
+}
+
+       \newglossaryentry{valid in PL}
+{
+  name= validity of arguments (in PL),
+  text = valid,
+description={A property held by arguments if and only if the \gls{complete truth table} for the argument contains no rows where the \glspl{premise} are all true and the \gls{conclusion} false, i.e., if no \gls{valuation} makes all premises true and the conclusion false}
+}
+
+\newglossaryentry{vDash}
+{
+name = {\ensuremath{\vDash}},
+text = $\vDash$,
+description = {A metalogical symbol used to indicate that the premises of an argument (the sentences on the left side) semantically entail the conclusion (the sentence on the right side).This is related to beiing \gls{valid}}
+} 

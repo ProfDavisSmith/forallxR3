@@ -1,0 +1,118 @@
+% forallxyyc
+% Driver file to produce version of forall x:YYC for screen reading
+
+\documentclass[openany,oneside,11pt]{memoir}
+
+% set stock & paper size with narrow margins
+
+\setstocksize{8in}{5in}
+
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\settrims{0pt}{0pt}
+
+% Text width hard coded to 300pt
+
+% set the size of the type block to golden ratio calculated width
+
+\settypeblocksize{*}{300pt}{1.62}
+
+% set spine and and edge margin
+
+\setlrmargins{*}{*}{1}
+\setulmargins{.6in}{*}{*}
+\setheaderspaces{*}{*}{1}
+
+\checkandfixthelayout
+
+% make output PDF/A compliant
+
+\RequirePackage[a-1b]{pdfx}
+
+% load forall x style and macro definitions
+
+\usepackage{forallx-d-style}
+\usepackage{forallx-d}
+\usepackage{logiciansofhistory}
+\usepackage{chronology}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=mla,autocite=footnote]{biblatex}
+\addbibresource{bibliography.bib}
+\defbibheading{bibliography}{\chapter*{Bibliography}} 
+\bibliography{bibliography.bib}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\definecolor{foallxgreen}{RGB}{0,143,17}
+\definecolor{lyallpink}{RGB}{222,31,149}
+\colorlet{leadbeater}{lyallpink}
+\colorlet{dkleadbeater}{lyallpink!80!black}
+\colorlet{ltleadbeater}{lyallpink!50}
+\colorlet{vltleadbeater}{lyallpink!3}
+\DeclareUnicodeCharacter{FE01}{}
+%s\makeglossaries
+\usepackage{afterpage}
+\begin{document}
+
+\midsloppy
+
+% Cover Page
+\thispagestyle{empty}
+\pagecolor{lyallpink}\afterpage{\nopagecolor}
+\begin{textblock*}{\stockwidth}(0in,3.5in)
+  \noindent\includegraphics{assets/forallx-coverart-screen.pdf}
+\end{textblock*}
+
+% make front cover
+\begin{textblock*}{0in}(0in,0in)
+  \noindent\hfill
+  \begin{minipage}[b][\stockheight][s]{.95\stockwidth}
+    \begin{center}
+      \vspace*{1.5cm}
+      %\hfill
+      \sffamily\fontsize{66pt}{0pt}\selectfont
+      \color{white}
+      \textbf{forall}%
+      \fontsize{66pt}{0pt}\selectfont\rmfamily\textbf{\textit{x}:$R^3$}%
+     \end{center}
+     \begin{center}
+       %\fontsize{70pt}{0pt}\selectfont\rmfamily\textbf{$^3$}\/
+       \vskip0.5cm             
+      \color{white}
+      \sffamily
+      \fontsize{20pt}{22pt}\selectfont
+      \textbf{A Remixed, Revised, and Reimagined} 
+      \vskip0.5cm
+      \textbf{Introduction to Formal Logic}
+	\end{center}
+\begin{raggedleft}
+      \vfill
+      \fontsize{11pt}{14pt}\selectfont
+      \color{white}
+     \textbf{Davis A. Smith}\\
+     \textit{based on the related works by}\\
+      \textbf{P.~D. Magnus}\\
+      \textbf{Tim Button}\\
+%      \textit{with additions by}\\
+      \textbf{J.~Robert Loftis}\\
+      \textbf{Robert Trueman}\\
+      \textbf{Aaron Thomas-Bolduc}\\
+      \textbf{Richard Zach}\\
+ %     \textit{remixed, revised, and expanded by}\\
+    %  \textbf{Davis A. Smith}\par
+      \vspace{1cm}
+      \textbf{\forallxversion}\par
+      \vspace{1cm}
+    \end{raggedleft}
+  \end{minipage}
+  \hspace*{1cm}
+\end{textblock*}
+\ 
+\newpage
+\color{black}
+\setlength{\barlength}{0pt} % no bar next to chapter headings in ebook
+
+\input{forallx-d-content}
+
+\end{document}

@@ -1,0 +1,451 @@
+%!TEX root = foralld.tex
+\chapter[Quick reference]{Quick reference}
+%\pagestyle{plain}
+\section{Characteristic truth tables}
+\label{app.CharacteristicTTs}
+
+\begin{tabular}{c|c}
+\metav{A} & \enot\metav{A}\\
+\hline
+T & F\\
+F & T \\
+\phantom{.}\\
+\phantom{.}
+\end{tabular}
+\hfill
+\begin{tabular}{c c|c|c|c|c}
+\metav{A} & \metav{B} & $\metav{A}\eand\metav{B}$ & $\metav{A}\eor\metav{B}$ & $\metav{A}\eif\metav{B}$ & $\metav{A}\eiff\metav{B}$\\
+\hline
+T & T & T & T & T & T\\
+T & F & F & T & F & F\\
+F & T & F & T & T & F\\
+F & F & F & F & T & T
+\end{tabular}
+
+
+\vfill
+
+\section{Symbolization}
+\begin{center}
+\label{app.symbolization}
+\begin{tabular*}{\textwidth}{rl}
+\multicolumn{2}{c}{\textsc{Sentential Connectives}}\\ \\
+It is not the case that $P$ & $\enot P$\\
+Either $P$ or $Q$ & $(P \eor Q)$\\
+Neither $P$ nor $Q$ & $\enot(P \eor Q)$\ or \ $(\enot P \eand \enot Q)$\\
+Both $P$ and $Q$ & $(P \eand Q)$\\
+If $P$ then $Q$ & $(P \eif Q)$\\
+$P$ only if $Q$ & $(P \eif Q)$\\
+$P$ if and only if $Q$ & $(P \eiff Q)$\\
+$P$ unless $Q$ & $(P \eor Q)$\\
+\\
+\multicolumn{2}{c}{\label{SymbolizingPredicates}\textsc{Predicates}}\\ \\
+All $F$s are $G$s & $\forall x(\atom{F}{x} \eif \atom{G}{x})$\\
+Some $F$s are $G$s & $\exists x(\atom{F}{x} \eand \atom{G}{x})$\\
+Not all $F$s are $G$s & $\enot\forall x(\atom{F}{x} \eif \atom{G}{x})$\ or\\
+& $\exists x(\atom{F}{x} \eand \enot \atom{G}{x})$\\
+No $F$s are $G$s & $\forall x(\atom{F}{x} \eif\enot \atom{G}{x})$\ or\\
+& $\enot\exists x(\atom{F}{x} \eand \atom{G}{x})$\\
+Only $F$s are $G$s & $\forall x(\atom{G}{x} \eif \atom{F}{x})$\\
+& $\enot\exists x(\enot\atom{F}{x} \eand \atom{G}{x})$\\
+\\
+\multicolumn{2}{c}{\textsc{Identity}}\\ \\
+Only $c$ is $G$ & $\forall x(\atom{G}{x} \eiff x=c)$\\
+Everything other than $c$ is $G$ & $\forall x(\enot x = c \eif \atom{G}{x} )$\\
+Everything except $c$ is $G$ & $\forall x(\enot x = c \eiff \atom{G}{x} )$\\
+%$j$ is more $R$ than anyone else. & $\forall x(x\neq j \eif Rjx)$\\
+The $F$ is $G$ & $\exists x(\atom{F}{x} \eand \forall y(\atom{F}{y} \eif x=y) \eand \atom{G}{x} )$\\
+It is not the case that\\
+ the $F$ is $G$ & $\enot\exists x(\atom{F}{x} \eand \forall y(\atom{F}{y} \eif x=y) \eand \atom{G}{x} )$\\
+The $F$ is non-$G$ & $\exists x(\atom{F}{x} \eand \forall y(\atom{F}{y} \eif x=y) \eand \enot \atom{G}{x} )$
+\end{tabular*}
+\end{center}
+% BEGIN: symbolizing cardinality
+\section{Using identity to symbolize quantities}
+
+\subsection*{There are at least \blank\ $F$s.}
+\label{summary.atleast}
+
+\begin{tabular*}{\textwidth}{rl}
+one & $\exists x\,\atom{F}{x}$\\
+two & $\exists x_1\exists x_2(\atom{F}{x_1} \eand \atom{F}{x_2} \eand \enot x_1  = x_2)$\\
+three & $\exists x_1\exists x_2\exists x_3(\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3} \eand {}$\\
+& $\enot x_1 = x_2 \eand\enot x_1 = x_3 \eand \enot x_2 = x_3)$\\
+four & $\exists x_1\exists x_2\exists x_3\exists x_4 (\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3} \eand \atom{F}{x_4} \eand {}$\\
+& $\enot x_1 = x_2 \eand \enot x_1 = x_3 \eand \enot x_1 = x_4 \eand {}$\\
+& $ \enot x_2 = x_3 \eand \enot x_2 = x_4 \eand \enot x_3 = x_4)$\\
+$n$ & $\exists x_1\ldots\exists x_n(\atom{F}{x_1} \eand \ldots \eand \atom{F}{x_n} \eand {}$\\
+& $\enot x_1 = x_2 \eand\ldots\eand \enot x_{n-1} = x_n)$ 
+\end{tabular*}
+
+\subsection*{There are at most \blank\ $F$s.}
+\label{summary.atmost}
+
+One way to say `there are at most $n$ $F$s' is to put a negation sign in front of the symbolization for `there are at least $n+1$ $F$s'. Equivalently, we can offer:
+\begin{tabular*}{\textwidth}{rl}
+one & $\forall x_1\forall x_2\bigl[(\atom{F}{x_1} \eand \atom{F}{x_2}) \eif x_1=x_2\bigr]$\\
+two & $\forall x_1\forall x_2\forall x_3\bigl[(\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3}) \eif {}$\\ & $(x_1=x_2 \eor x_1=x_3 \eor x_2=x_3)\bigr]$\\
+three & $\forall x_1\forall x_2\forall x_3\forall x_4\bigl[(\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3} \eand \atom{F}{x_4}) \eif {}$\\
+& $(x_1=x_2 \eor x_1=x_3 \eor x_1=x_4 \eor {}$\\
+& $x_2=x_3 \eor x_2=x_4 \eor x_3=x_4)\bigr]$\\
+$n$ & $\forall x_1\ldots\forall x_{n+1}
+\bigl[(\atom{F}{x_1} \eand \ldots \eand \atom{F}{x_{n+1}}) \eif {}$\\
+& $(x_1=x_2 \eor \ldots \eor x_n=x_{n+1})\bigr]$ 
+\end{tabular*}
+
+\subsection*{There are exactly \blank\ $F$s.}
+\label{summary.exactly}
+
+One way to say `there are exactly $n$ $F$s' is to conjoin two of the symbolizations above and say `there are at least $n$ $F$s and there are at most $n$ $F$s.' The following equivalent formulas are shorter:
+\begin{tabular*}{\textwidth}{rl}
+zero & $\forall x\,\enot \atom{F}{x}$\\
+one & $\exists x\bigl[\atom{F}{x} \eand \forall y(\atom{F}{y} \eif x = y)\bigr]$\\
+two & $\exists x_1\exists x_2\bigl[\atom{F}{x_1} \eand \atom{F}{x_2} \eand {}$\\
+& $\enot x_1 = x_2 \eand \forall y\bigl(\atom{F}{y} \eif (y= x_1 \eor y = x_2)\bigr) \bigr]$\\
+three & $\exists x_1\exists x_2\exists x_3\bigl[\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3} \eand {}$\\
+& $\enot x_1 =  x_2 \eand \enot  x_1 = x_3 \eand \enot x_2 = x_3 \eand {}$\\
+& $\forall y\bigl(\atom{F}{y} \eif (y = x_1 \eor y = x_2 \eor y =  x_3)\bigr) \bigr]$\\
+$n$ & $\exists x_1\ldots\exists x_n\bigl[\atom{F}{x_1} \eand\ldots\eand \atom{F}{x_n}  \eand {}$\\
+&$ \enot x_1 = x_2 \eand\ldots\eand \enot x_{n-1}= x_n \eand \phantom{.}$\\
+& $\forall y\bigl(\atom{F}{y} \eif (y= x_1 \eor \ldots \eor y= x_n)\bigr)\bigr]$ 
+%\item[one] $\exists x\forall y\bigl[\atom{F}{x} \eand (\atom{F}{y} \eif y = x)\bigr]$
+%\item[two] $\exists x\exists y\forall z\Bigl(\atom{F}{x} \eand \atom{F}{y} \eand \bigl[\atom{F}{z} \eif (z=x \eor z=y)\bigr] \eand x \neq y\Bigr)$
+%\item[three] $\exists x_1\exists x_2\exists x_3\forall y\Bigl(\atom{F}{x_1} \eand \atom{F}{x_2} \eand \atom{F}{x_3} \eand [\atom{F}{y} \eif (y=x_1 \eor y=x_2 \eor y=x_3)] \eand x_1 \neq x_2 \eand x_1 \neq x_3 \eand x_2 \neq x_3\Bigr)$
+%\item[n] $\exists x_1\cdots\exists x_n\forall y\Bigl(\atom{F}{x_1} \eand \cdots \eand \atom{F}{x_n} \eand \bigl[\atom{F}{y} \eif (y=x_1 \eor \cdots \eor y=x_n)\bigr] \eand x_1 \neq x_2 \eand\cdots\eand x_{n-1}\neq x_n\Bigr)$ 
+\end{tabular*}
+
+\label{ProofRules}
+\newpage\section{Basic deduction rules for PL}
+\renewenvironment{fitchproof}
+	{\noindent\par\noindent\small$\begin{nd}}
+	{\end{nd}$\noindent\normalsize\ignorespacesafterend}
+
+%{\LARGE \textbf{Basic Rules of Proof}}
+\subsection*{Reiteration}
+
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}}
+	\have[\ ]{c}{\metav{A}} \by{R}{a}
+\end{fitchproof}
+
+\subsection*{Conjunction}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}}
+	\have[n]{b}{\metav{B}}
+	\have[\ ]{c}{\metav{A}\eand\metav{B}} \ai{a, b}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}}
+	\have[n]{b}{\metav{B}}
+	\have[\ ]{c}{\metav{B}\eand\metav{A}} \ai{b, a}
+\end{fitchproof}
+\end{multicols}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eand\metav{B}}
+	\have[\ ]{a}{\metav{A}} \ae{ab}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eand\metav{B}}
+	\have[\ ]{b}{\metav{B}} \ae{ab}
+\end{fitchproof}
+\end{multicols}
+
+\subsection*{Conditional}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\open
+		\hypo[m]{a}{\metav{A}}
+		\have[n]{b}{\metav{B}}
+	\close
+	\have[\ ]{ab}{\metav{A}\eif\metav{B}}\ci{a-b}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eif\metav{B}}
+	\have[n]{a}{\metav{A}}
+	\have[\ ]{b}{\metav{B}} \ce{ab,a}
+\end{fitchproof}
+\end{multicols}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eif\metav{B}}
+	\have[n]{a}{\enot\metav{B}}
+	\have[\ ]{b}{\enot\metav{A}} \by{MT}{ab,a}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eif\metav{B}}
+	\have[n]{bc}{\metav{B}\eif\metav{C}}
+	\have[\ ]{ac}{\metav{A}\eif\metav{C}}\hs{ab,bc}
+\end{fitchproof}
+\end{multicols}
+\newpage
+\subsection*{Negation}
+\begin{multicols}{2}
+\begin{fitchproof}
+\open
+	\hypo[m]{a}{\enot \metav{A}}
+	\have[n]{nb}{\enot \metav{B}}
+	\have[p ]{b}{\metav{B}}
+\close
+\have[\ ]{na}{\metav{A}}\ne{a-b}
+\end{fitchproof}
+\begin{fitchproof}
+\open
+	\hypo[m]{a}{\metav{A}}
+	\have[n]{nb}{\enot \metav{B}}
+	\have[p]{b}{\metav{B}}
+\close
+\have[\ ]{na}{\enot\metav{A}}\ni{a-b}
+\end{fitchproof}
+\end{multicols}
+
+\subsection*{Disjunction}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}}
+	\have[\ ]{ab}{\metav{A}\eor\metav{B}}\oi{a}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}}
+	\have[\ ]{ba}{\metav{B}\eor\metav{A}}\oi{a}
+\end{fitchproof}
+\end{multicols}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A} \eor \metav{B}}
+	\have[n]{nb}{\enot \metav{A}}
+	\have[\ ]{con}{\metav{B}}\oe{ab, nb}
+\end{fitchproof}
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A} \eor \metav{B}}
+	\have[n]{nb}{\enot \metav{B}}
+	\have[\ ]{con}{\metav{A}}\oe{ab, nb}
+\end{fitchproof}
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{The Dilemma Rule}
+
+\begin{fitchproof}
+	\have[m]{ab}{\metav{A}\eor\metav{B}}
+	\have[n]{ac}{\metav{A}\eif \metav{C}}
+	\have[p]{bd}{\metav{B}\eif \metav{D}}
+	\have[\ ]{c}{\metav{C}\eor\metav{D}} \dil{ab,ac, bd}
+\end{fitchproof}
+
+\end{multicols}
+
+\subsection*{Rules for equivalences}
+
+\begin{align*}
+\lnot\lnot \metav{P} & \Leftrightarrow \metav{P} && \text{DN}\\[2ex]
+(\metav{P} \eif \metav{Q}) & \Leftrightarrow (\lnot \metav{P} \lor \metav{Q})
+&& \text{MC}\\
+(\metav{P} \eiff \metav{Q}) & \Leftrightarrow ((\metav{P} \eif \metav{Q}) \land  (\metav{Q} \eif \metav{P}))
+&& \text{\eiff ex}\\[2ex]
+\lnot(\metav{P} \land \metav{Q}) & \Leftrightarrow (\lnot\metav{P} \lor \lnot\metav{Q})
+&& \text{DeM}\\
+\lnot(\metav{P} \lor \metav{Q}) & \Leftrightarrow (\lnot\metav{P} \land \lnot\metav{Q}) \\[2ex]
+(\metav{P} \lor \metav{Q}) & \Leftrightarrow (\metav{Q} \lor \metav{P}) &&\text{Comm}\\
+(\metav{P} \land \metav{Q}) & \Leftrightarrow (\metav{Q} \land \metav{P})\\[2ex]
+(\metav{P} \lor \metav{P}) & \Leftrightarrow \metav{P} && \text{TAUT}\\
+(\metav{P} \land \metav{P}) & \Leftrightarrow \metav{P}\\[2ex]
+\end{align*}
+\newpage
+\section{Basic Rules for QL}
+\subsection*{Universal elimination/introduction}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{a}{\forall \metav{x}\metav{A}\ldots \metav{x} \ldots \metav{x}\ldots}
+	\have[\ ]{c}{\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots} \Ae{a}
+\end{fitchproof}
+
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots}
+	\have[\ ]{c}{\forall \metav{x}\metav{A}\ldots \metav{x} \ldots \metav{x}\ldots} \Ai{a}
+\end{fitchproof}
+
+\metav{c} must not occur in any undischarged assumption. \metav{x} must not occur in $\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots$
+\end{multicols}
+\subsection*{Existential introduction/elimination}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{a}{\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots}
+	\have[\ ]{c}{\exists \metav{x}\metav{A}\ldots \metav{x} \ldots \metav{c}\ldots}\Ei{a}
+\end{fitchproof}
+
+\noindent \metav{x} must not occur in\\ $\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots$
+%\noindent You can replace one or more instance of \metav{c} with \metav{x}.
+
+\begin{fitchproof}
+	\have[m]{a}{\exists \metav{x}\metav{A}\ldots \metav{x} \ldots \metav{x}\ldots}
+	\open	
+		\hypo[i]{b}{\metav{A}\ldots \metav{c} \ldots \metav{c}\ldots}
+		\have[j]{c}{\metav{B}}
+	\close
+	\have[\ ]{d}{\metav{B}}\Ee{a,b-c}
+\end{fitchproof}
+
+\noindent \metav{c} must not occur in any undischarged assumption, in $\exists \metav{x}\metav{A}\ldots \metav{x} \ldots \metav{x}\ldots$, or in \metav{B}
+\end{multicols}
+
+\subsection*{Identity}
+
+\begin{fitchproof}
+	\have[\ \,\,\,]{x}{\metav{c}=\metav{c}} \by{=I}{}
+\end{fitchproof}
+\begin{multicols}{2}
+\begin{fitchproof}
+	\have[m]{e}{\metav{a}=\metav{b}}
+	\have[n]{a}{\metav{A}\ldots \metav{a} \ldots \metav{a}\ldots}
+	\have[\ ]{ea1}{\metav{A}\ldots \metav{b} \ldots \metav{a}\ldots} \by{=E}{e,a}
+\end{fitchproof}
+
+\begin{fitchproof}
+	\have[m]{e}{\metav{a}=\metav{b}}
+	\have[n]{a}{\metav{A}\ldots \metav{b} \ldots \metav{b}\ldots}
+	\have[\ ]{ea2}{\metav{A}\ldots \metav{a} \ldots \metav{b}\ldots} \by{=E}{e,a}
+\end{fitchproof}
+\end{multicols}
+
+\subsection*{Quantifier Negation}
+
+\begin{align*}
+\forall \metav{x}\enot \metav{A} & \Leftrightarrow \enot \exists \metav{x} \metav{A} &&\text{QN}\\
+\exists \metav{x}\enot \metav{A} & \Leftrightarrow \enot \forall \metav{x} \metav{A}
+\end{align*}
+\newpage
+\section{Basic Rules for ML}
+\subsection*{Modal Negation}
+\begin{align*}
+\ebox\enot\metav{A} & \Leftrightarrow \enot \ediamond\metav{A} &&\text{MN}\\
+\ediamond\enot\metav{A} & \Leftrightarrow \enot \ebox\metav{A}
+\end{align*}
+
+\subsection*{Rules in The K System (Strict Subproofs)}
+
+\paragraph{The Restriction for Strict Subproofs}
+No line above when the strict subproof was opened may be cited by a rule within the strict subproof unless the rule explicitly allows it. 
+\begin{multicols}{2}
+
+\begin{fitchproof}
+\open
+\hypo[m]{m}{\metav{A}}
+\have[n]{n}{\metav{B}}
+\have[p]{p}{\enot \metav{B}}
+\close	
+\have[r]{r}{\ebox \enot \metav{A}}\boxni{m-p}
+\end{fitchproof}
+
+
+\begin{fitchproof}
+\hypo[m]{m}{\ebox \metav{A}}	
+\open
+\hypo[n]{n}{\metav{A}}
+\have[p]{p}{\metav{B}}
+\close
+\have[r]{r}{\ebox \metav{B}}\boxi{m, n-p}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[m]{m}{\ediamond \metav{A}}	
+\open
+\hypo[n]{n}{\metav{A}}
+\have[p]{p}{\metav{B}}
+\close
+\have[r]{r}{\ediamond \metav{B}}\posi{m, n-p}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\open
+\hypo[m]{a}{\metav{A}}
+\have[n]{b}{\metav{B}}
+\close
+\have[p]{c}{\ebox(\metav{A}\eif \metav{B})}\boxci{a-b}	
+\end{fitchproof}
+\end{multicols}
+
+\paragraph{The Restriction for \ebox E}
+This is used inside of a strict subproof and only one strict subproof can be open between line m and the line where the rule occurs. 
+%Line m must lie outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m.
+
+\begin{fitchproof}
+\hypo[m]{m}{\ebox \metav{A}}
+\open
+\hypo[n]{n}{\metav{B}}
+\have[p]{p}{\metav{A}}	\boxe{m}
+\end{fitchproof}	
+
+
+\subsection*{Rules in The T System}
+\paragraph{The Restriction for RF}
+The line n on which rule RF is applied must not lie in a strict subproof that begins after line m.
+
+\begin{multicols}{2}
+\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\have[n]{n}{\metav{A}}\rf{m}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\have[m]{m}{\metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\rf{m}	
+\end{fitchproof}
+\end{multicols}
+
+\subsection*{Rules in The S4 System}
+\begin{multicols}{2}
+\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\have[n]{n}{\ebox \ebox \metav{A}}\tr{m}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\have[m]{m}{\ediamond \ediamond \metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\tr{m}	
+\end{fitchproof}
+\end{multicols}
+
+\paragraph{The Restriction for R4}
+Line m must lie outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m.
+
+\begin{fitchproof}
+\have[m]{m}{\ebox \metav{A}}	
+\open
+\hypo[n]{n}{\metav{B}} 
+\have[p]{p}{\ebox \metav{A}}\rfour{m}	
+\end{fitchproof}
+
+\subsection*{Rules in The S5 System}
+\begin{multicols}{2}
+
+\begin{fitchproof}
+\have[m]{m}{\ebox \ediamond \metav{A}}	
+\have[n]{n}{\ediamond \metav{A}}\sfive{m}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\have[m]{m}{\ediamond \ebox \metav{A}}	
+\have[n]{n}{\ebox \metav{A}}\sfive{m}	
+\end{fitchproof}
+\end{multicols}
+
+\paragraph{The Restriction for R5}
+Line m must lie outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing line m.
+
+\begin{multicols}{2}
+\begin{fitchproof}
+\have[m]{m}{\ediamond \metav{A}}	
+\open
+\hypo[n]{n}{\metav{B}} 
+\have[p]{p}{\ediamond \metav{A}}\rfive{m}	
+\end{fitchproof}
+
+\begin{fitchproof}
+\have[m]{m}{\enot \ebox \metav{A}}	
+\open
+\hypo[n]{n}{\metav{B}} 
+\have[p]{p}{\enot \ebox \metav{A}}\rfive{m}	
+\end{fitchproof}
+\end{multicols}

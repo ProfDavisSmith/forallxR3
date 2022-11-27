@@ -1,0 +1,439 @@
+\label{ch.soundnesscompletenesspl}
+\chapter{Soundness and Completeness}
+As mentioned very early on in this textbook, there are many different systems for representing the connectives and sentence letters for propositional logic and there are also many different systems for representing quantified logic (first-order) and even Modal Logic. Similarly, there are many different systems for natural deduction. In general, these different systems rely on at least some basic inference rules and equivalency rules and then use those to derive others and prove validity. That said, we should be careful about how we define the inference and equivalency rules. One of the main goals for any logical system is for it to accurately mirror ideal thinking or reasoning in daily discourse. For it to be ideal, the logical system must be both sound and complete. Soundness as a feature of a logical system is the fact that everything provable or able to be derived in the system is valid; that is, a logical system \metav{L} is sound if and only if for any set of premises $\phi_1,\phi_2,\ldots,\phi_n$ and conclusion \metav{C}, if $\phi_1,\phi_2,\ldots,\phi_n$ \gls{turnstyle} \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}. Completeness, on the other hand, is the opposite; a system \metav{L} is complete if and only if for any set of premises $\phi_1,\phi_2,\ldots,\phi_n$ and conclusion \metav{C}, if $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash$ \metav{C}. These two required features for ideal logical thinking greatly restrict the number of possible definitions and systems we could come up with. 
+
+\newglossaryentry{turnstyle}
+{
+name = {\ensuremath{\vdash}},
+text = $\vdash$,
+description = {A metalogical symbol used to indicate that the conclusion of an argument (the sentence on the right side) is provable from the premises (the sentences on the left side).This is related to beiing \gls{valid} and Throughout this book,\gls{vDash} and $\vdash$ are treated as equivalent. This equivalency is proven on page \pageref{ch.soundnesscompletenesspl}}
+} 
+
+
+\factoidbox{A logical system \metav{L} is sound if and only if something is provable only if it is valid.\\
+A logical system \metav{L} is complete if and only if something is valid only if it is provable.} 
+
+In this section of this book, I will be proving that PL, QL, and ML are all sound and complete.  We will start with the soundness of PL.
+
+\section{The Soundness of PL} 
+With Propositional Logic (PL), showing that the system explained and used in this textbook is sound is a simple matter of showing that the inference rules never produce something false assuming that the lines cited by that rule are true and showing that the equivalency rules always change to the subsentence to something logically equivalent, they have the same truth value. This is because a proof using only the rules of PL cannot be invalid if every step of the proof is valid; the only steps in a proof using only the rules of PL will be rules of PL. So, if every rule of PL is valid, then every proof using only the rules of PL will be valid. 
+
+Formal logic has already furnished us with a means of showing this, truth tables. So, this is a simple matter of taking each of the inference and equivalency rules in PL and showing that the inference rules are always valid and the equivalency rules are always equivalent. The trick to do this efficiently is to phrase most of the rules as axioms. Looking at the truth conditions for conditionals, we see that they are only false when the antecedent is true and the consequent is false. This is similar to the conditions for invalidity, the premises are all true and the conclusion is false. Similarly, the truth conditions for conjunctions say that they are only true when all of the conjuncts are true. When it comes to the equivalency rules, the standard with those is equivalency, so we will use the biconditional, which is only false when they differ. The same reasoning aside applies. Combining these two means that if all of these are tautologies, the inference and equivalency rules are all valid:
+
+\factoidbox{\begin{enumerate}
+\item \metav{P} \eif \metav{P} (R)
+\item (\metav{P} \eand \metav{Q})\eif(\metav{P}\eand\metav{Q}) (\eand I)
+\item (\metav{P} \eand \metav{Q})\eif\metav{P} (\eand E)
+\item (\metav{P} \eand (\metav{P}\eif\metav{Q}))\eif\metav{Q} (\eif E)
+\item (\enot\metav{Q} \eand (\metav{P}\eif\metav{Q}))\eif\enot\metav{P} (MT)
+\item ((\metav{P}\eif\metav{Q})\eand (\metav{Q}\eif\metav{R}))\eif (\metav{P}\eif\metav{R}) (HS)
+\item \metav{P} \eif (\metav{P}\eor\metav{Q}) (\eor I)
+\item (\enot\metav{Q} \eand (\metav{P}\eor\metav{Q}))\eif\metav{P} (\eor E)
+\item ((\metav{P}\eif\metav{Q})\eand ((\metav{R}\eif\metav{S})\eand(\metav{P}\eor\metav{R})))\eif (\metav{Q}\eor\metav{S}) (DIL)
+\item \enot\enot\metav{P} \eiff \metav{P} (DN)
+\item (\metav{P} \eand \metav{Q})\eiff(\metav{Q}\eand\metav{P}) (COMM)
+\item (\metav{P} \eor \metav{Q})\eiff(\metav{Q}\eor\metav{P}) (COMM)
+\item (\metav{P} \eiff \metav{Q})\eiff(\metav{Q}\eiff\metav{P}) (COMM)
+\item (\metav{P} \eif \metav{Q})\eif(\enot\metav{P}\eor\metav{Q}) (MC)
+\item (\metav{P} \eor \metav{Q})\eif(\enot\metav{P}\eif\metav{Q}) (MC)
+\item (\metav{P} \eiff \metav{Q})\eif((\metav{P}\eif\metav{Q})\eand((\metav{Q}\eif\metav{P})) (\eiff ex)
+\item \enot(\metav{P} \eand \metav{Q})\eiff(\enot\metav{P}\eor\enot\metav{Q}) (DeM) 
+\item \enot(\metav{P} \eor \metav{Q})\eiff(\enot\metav{P}\eand\enot\metav{Q}) (DeM)
+\item (\metav{P} \eor \metav{P})\eiff\metav{P} (TAUT)
+\item (\metav{P} \eand \metav{P})\eiff\metav{P} (TAUT)
+\end{enumerate}}
+
+Another trick which we will use is that for the inference rules, we only need to look at cases where the consequent is false, as that is the only time in which they could be false (otherwise they are true.To make things shorter still, notice that most of them use the same simple sentences. This means that we could use the same truth table for those and if all of them at all true for every line of the truth table, the Propositional Logic system explained in this text is sound. Below are the shortened truth tables for each of these rules:
+
+\begin{tabular}{c|c|ccc|ccc|ccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{R}}&\multicolumn{3}{c}{\textbf{\eand I}}&\multicolumn{3}{c}{\textbf{\eand E}}\\
+\metav{P} & \metav{Q}&\metav{P}&\eif&\metav{P}&(\metav{P}\eand\metav{Q})&\eif&(\metav{P}\eand\metav{Q})&(\metav{P} \eand \metav{Q})&\eif&\metav{P}\\
+\hline
+T&F&T&T&T&F&T&F&F&T&T\\
+F&T&F&T&F&F&T&F&F&T&F\\
+F&F&F&T&F&F&T&F&F&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccccc|ccccc}
+\multicolumn{2}{c}{}&\multicolumn{5}{c}{\textbf{\eif E}}&\multicolumn{5}{c}{\textbf{MT}}\\
+\metav{P} & \metav{Q}&(\metav{P}&\eand&(\metav{P}\eif\metav{Q}))&\eif&\metav{Q}&(\enot\metav{Q}& \eand &(\metav{P}\eif\metav{Q}))&\eif&\enot\metav{P}\\
+\hline
+T&T&T&T&T&T&T&F&F&T&T&F\\
+T&F&T&F&F&T&F&T&F&F&T&F\\
+F&F&F&F&T&T&F&T&T&T&T&T\\
+\end{tabular}
+
+\begin{tabular}{c|c|c|ccccc|}
+\multicolumn{3}{c}{}&\multicolumn{5}{c}{\textbf{HS}}\\
+\metav{P} & \metav{Q}& \metav{R}&((\metav{P}\eif\metav{Q})&\eand&(\metav{Q}\eif\metav{R}))&\eif&(\metav{P}\eif\metav{R})\\
+\hline
+T&T&F&T&F&F&T&F\\
+T&F&F&F&F&T&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccc|ccccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{\eor I}}&\multicolumn{5}{c}{\textbf{\eor E}}\\
+\metav{P} & \metav{Q}&\metav{P}&\eif&(\metav{P}\eor\metav{Q})&(\enot\metav{Q}& \eand& (\metav{P}\eor\metav{Q}))&\eif&\metav{P}\\
+\hline
+F&T&F&T&T&F&F&T&T&F\\
+F&F&F&T&F&T&F&F&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|c|c|ccccccc|}
+\multicolumn{4}{c}{}&\multicolumn{7}{c}{\textbf{DIL}}\\
+\metav{P} & \metav{Q}& \metav{R}&\metav{S}&((\metav{P}\eif\metav{Q})&\eand&((\metav{R}\eif\metav{S})&\eand&(\metav{P}\eor\metav{R})))&\eif& (\metav{Q}\eor\metav{S})\\
+\hline
+T&F&T&F&F&F&F&T&T&T&F\\
+T&F&F&F&F&F&T&T&T&T&F\\
+F&F&T&F&T&F&F&F&T&T&F\\
+F&F&F&F&T&F&T&F&F&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccc|ccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{DN}}&\multicolumn{3}{c}{\textbf{COMM}}\\
+\metav{P} & \metav{Q}&\enot\enot\metav{P} &\eiff&\metav{P}&(\metav{P} \eand \metav{Q})&\eiff&(\metav{Q}\eand\metav{P})\\
+\hline
+T&T&TFT&T&T&T&T&T\\
+T&F&TFT&T&T&F&T&F\\
+F&T&FTF&T&F&F&T&F\\
+F&F&FTF&T&F&F&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccc|ccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{COMM}}&\multicolumn{3}{c}{\textbf{COMM}}\\
+\metav{P} & \metav{Q}&(\metav{P} \eor \metav{Q})&\eiff&(\metav{Q}\eor\metav{P})&(\metav{P} \eiff \metav{Q})&\eiff&(\metav{Q}\eiff\metav{P})\\
+\hline
+T&T&T&T&T&T&T&T\\
+T&F&T&T&T&F&T&F\\
+F&T&T&T&F&F&T&F\\
+F&F&F&T&F&T&T&T\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccc|ccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{MC}}&\multicolumn{3}{c}{\textbf{MC}}\\
+\metav{P} & \metav{Q}&(\metav{P} \eif \metav{Q})&\eiff&(\enot\metav{P}\eor\metav{Q})&(\metav{P} \eor \metav{Q})&\eiff&(\enot\metav{P}\eif\metav{Q})\\
+\hline
+T&T&T&T&T&T&T&T\\
+T&F&F&T&F&T&T&T\\
+F&T&T&T&T&T&T&T\\
+F&F&T&T&T&F&T&F\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccccc|}
+\multicolumn{2}{c}{}&\multicolumn{5}{c}{\textbf{\eiff ex}}\\
+\metav{P} & \metav{Q}&(\metav{P} \eiff \metav{Q})&\eiff&((\metav{P}\eif\metav{Q})&\eand&((\metav{Q}\eif\metav{P}))\\
+\hline
+T&T&T&T&T&T&T\\
+T&F&F&T&F&F&T\\
+F&T&F&T&T&F&F\\
+F&F&T&T&T&T&T\\
+\end{tabular}
+
+\begin{tabular}{c|c|ccc|ccc|}
+\multicolumn{2}{c}{}&\multicolumn{3}{c}{\textbf{DeM}}&\multicolumn{3}{c}{\textbf{DeM}}\\
+\metav{P} & \metav{Q}&\enot(\metav{P} \eand \metav{Q})&\eiff&(\enot\metav{P}\eor\enot\metav{Q}) & \enot(\metav{P} \eor \metav{Q})&\eiff&(\enot\metav{P}\eand\enot\metav{Q})\\
+\hline
+T&T&F&T&F&F&T&F\\
+T&F&T&T&T&F&T&F\\
+F&T&T&T&T&F&T&F\\
+F&F&T&T&T&T&T&T\\
+\end{tabular}
+
+\begin{tabular}{c|ccc|ccc|}
+\multicolumn{1}{c}{}&\multicolumn{3}{c}{\textbf{TAUT}}&\multicolumn{3}{c}{\textbf{TAUT}}\\
+\metav{P} & (\metav{P} \eor \metav{P})&\eiff&\metav{P} &(\metav{P} \eand \metav{P})&\eiff&\metav{P}\\ 
+\hline
+T&T&T&T&T&T&T\\
+F&F&T&F&F&T&F\\
+\end{tabular}
+
+As you can see, the column under the main operator for each of these is true. This means that all of the inference and equivalency rules are valid. So, if we didn't need to use subproofs, we could say that the Propositional Logic system is sound. The next step is to clear up the subproofs and show that those are valid. As you may recall, in PL, there are 3 different rules which use subproofs. These are \eif I, \enot I, and \enot E. Proving that each one of these is valid will require a different method. Consider \eif I: In this case, when you open the subproof, you are, in a sense, adding a premise to the initial set and then, when you close it, saying that if this premise were in the set, then the concluding line of the subproof would follow (\metav{A}\eif\metav{B}). We have already shown that all of the steps one could use aside from this are valid, so, none of the steps other than this could lead us astray. The only way that \eif I could be invalid would be if the opening of the subproof (\metav{A}) were true while the closing line of the subproof (\metav{B}) were false. The only way that this could happen would be that one of the other inference or equivalency rules was invalid, but we have shown that this is not the case,  so, \eif I is valid. 
+
+For \enot I and \enot E, these rules generate a line with or without a negation (basically, the rule(s) show that the opposite is false). This is done in the subproof by showing that it leads to a contradiction, or, more abstractly, that something which must be true according to the premises of the argument must be false when we add the additional premise. Since the sentence must be true, the line added to the premises must actually be false. The only way that this could be invalid is if one of the other inference or equivalency rules was invalid, but we have shown that this is not the case. So, it follows that \enot I and \enot E are valid as well. 
+
+These truth tables and simple arguments suffice to prove that Propositional Logic is sound.  
+
+\section{The Completeness of PL}
+In the previous section, we proved that if something is provable, then it is valid. Now we need to show that if an argument is valid, then it is provable. This is completeness. So, we will do this by assuming that some argument is valid, $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}. This means that it is impossible for  $\phi_1,\phi_2,\ldots,\phi_n$ to all be true while \metav{C} being false. This means that $\phi_1,\phi_2,\ldots,\phi_n$, and \enot \metav{C} are not jointly possible (they are in someway contradictory). With this, we have a proof. For any argument of the form $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}, \metav{C} is provable from $\phi_1,\phi_2,\ldots,\phi_n$ by assuming \enot \metav{C} and deriving a contradiction, such as $\enot\phi_i$ and $\phi_i$, like so:
+\begin{fitchproof}
+\have[1]{p1}{\phi_1}
+\have[2]{p2}{\phi_2}
+\ellipsesline
+\hypo[n]{pn}{\phi_n}
+\open
+\hypo[m]{m}{\enot\metav{C}}
+\ellipsesline
+\have[p]{pi}{\phi_i}
+\have[q]{npi}{\enot\phi_i}
+\close
+\have[r]{c}{\metav{C}}\ne{m-q}
+\end{fitchproof}
+This is able to be done for any valid argument as the inclusion of \enot\metav{C} will make a contradiction with some aspect of  $\phi_1,\phi_2,\ldots,\phi_n$ and the inference and equivalency rules in PL make the extraction of that contradiction possible. 
+
+\section{The Soundness of QL}
+We do not need to start from scratch when trying to prove the soundness of the Quantified Logic system used in this book as the vast majority of the inference and equivalency rules are the same as the ones in PL. So, the validity of those rules transfers over into QL and, for arguments in QL which only require the use of those rules, the fact that provability entails validity carries over as well. This means that we only need to show that all of the additional rules (those had in QL but not in PL) are valid. Once we show this, we have that for any argument in QL, if it is provable, then it is valid, using the same reasoning as before.  There are eight (8) of these additional rules. Sadly, as mentioned in Part \ref{allinterp}, there is not way to prove validity like truth tables for QL, rather we need to write out short arguments in `ordinary' language.All of the arguments I give follow the same general structure, namely that of a reductio argument, like the negation rules we have seen in this textbook, which we know are sound. Below are the arguments for the inference and equivalency rules:
+
+\subsection{QN}
+The Quantifier Negation rule, QN, is the one equivalency rule unique to QL and having this be valid will be very useful in proving the inference rules unique to QL valid; it serves as a helpful first step. QN holds that $\forall$x\enot\metav{A}\ldots x\ldots x\ldots is equivalent to \enot$\exists$x\metav{A}\ldots x\ldots x\ldots and $\exists$x\enot\metav{A}\ldots x\ldots x\ldots is equivalent to \enot$\forall$x\metav{A}\ldots x\ldots x\ldots. For this, we need to show that four (4) different cases are impossible (lead to contradictions).
+
+First, suppose that $\forall$x\enot\metav{A}\ldots x\ldots x\ldots is true and \enot$\exists$x\metav{A}\ldots x\ldots x\ldots is false. For $\forall$x\enot\metav{A}\ldots x\ldots x\ldots  to be true, it would need to be the case that for anything we pick, \metav{d}, \enot\metav{A}\ldots \metav{d}\ldots\metav{d}\ldots is true. For \enot$\exists$x\metav{A}\ldots x\ldots x\ldots to be false, it would need to be the case that $\exists$x\metav{A}\ldots x\ldots x\ldots is true and for that to be true, there would need to be something, call it \metav{c}, such that \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots is true of \metav{c}. But, from $\forall$x\enot\metav{A}\ldots x\ldots x\ldots, we could have picked \metav{c} just as easily as any other object, so \enot\metav{A}\ldots\metav{c}\ldots\metav{c}\ldots must be true (this move uses the same reasoning as for $\forall$E below). It cannot be the case that  both \enot\metav{A}\ldots\metav{c}\ldots\metav{c}\ldots and \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots are true, so it must be impossible for $\forall$x\enot\metav{A}\ldots x\ldots x\ldots to be true and while \enot$\exists$x\metav{A}\ldots x\ldots x\ldots is false.
+
+Second, consider the case where $\forall$x\enot\metav{A}\ldots x\ldots x\ldots is false and \enot$\exists$x\metav{A}\ldots x\ldots x\ldots is true. In this case, in order for \enot$\exists$x\metav{A}\ldots x\ldots x\ldots to be true, it must be the case that $\exists$x\metav{A}\ldots x\ldots x\ldots is false. This means that for any object you pick, \metav{d}, \enot\metav{A}\ldots\metav{d}\ldots\metav{d}\ldots is true of that object. Given the meaning of the universal quantifier, we have that this implies that $\forall$x\enot\metav{A}\ldots x\ldots x\ldots is true. But, a part of our assumption was that $\forall$x\enot\metav{A}\ldots x\ldots x\ldots is false. $\forall$x\enot\metav{A}\ldots x\ldots x\ldots cannot be both true and false, so it must be impossible for $\forall$x\enot\metav{A}\ldots x\ldots x\ldots to be false while \enot$\exists$x\metav{A}\ldots x\ldots x\ldots is true. 
+
+These first two cases give us that $\forall$x\enot\metav{A}\ldots x\ldots x\ldots and \enot$\exists$x\metav{A}\ldots x\ldots x\ldots are equivalent. For the third case (the first to show that $\exists$x\enot\metav{A}\ldots x\ldots x\ldots and \enot$\forall$x\metav{A}\ldots x\ldots x\ldots are equivalent), we have a case where $\exists$x\enot\metav{A}\ldots x\ldots x\ldots is true and \enot$\forall$x\metav{A}\ldots x\ldots x\ldots is false. We have assumed that $\exists$x\enot\metav{A}\ldots x\ldots x\ldots is true, this means that there is something such that it is not \metav{A}, let's call this thing (whatever or whoever it may be) \metav{d}.  For \enot$\forall$x\metav{A}\ldots x\ldots x\ldots to be false, it would need to be the case that $\forall$x\metav{A}\ldots x\ldots x\ldots is true. $\forall$x\metav{A}\ldots x\ldots x\ldots being true implies that everything, including \metav{d}, is \metav{A}. It is impossible for everything to be \metav{A} and for something not to be \metav{A}, so it must be impossible for $\exists$x\enot\metav{A}\ldots x\ldots x\ldots to be true and \enot$\forall$x\metav{A}\ldots x\ldots x\ldots false.
+
+And finally, there is the case where $\exists$x\enot\metav{A}\ldots x\ldots x\ldots is false and \enot$\forall$x\metav{A}\ldots x\ldots x\ldots is true. Following the same general style of reasoning we have seen in the other arguments, for $\exists$x\enot\metav{A}\ldots x\ldots x\ldots to be false, it must be the case that nothing we could pick is not \metav{A}, in other words, everything is \metav{A}. On the other hand, for \enot$\forall$x\metav{A}\ldots x\ldots x\ldots to be true, it must be the case that $\forall$x\metav{A}\ldots x\ldots x\ldots is false, meaning that something is not \metav{A}. It is simply impossible for everything to be \metav{A} and for something not to be. So, it must be impossible for  and for  $\exists$x\enot\metav{A}\ldots x\ldots x\ldots to be false and \enot$\forall$x\metav{A}\ldots x\ldots x\ldots to be true at the same time.
+
+With these four contradictions, we have it that QN is valid. 
+
+\subsection{$\forall$ E}
+The $\forall$ E rule moves from a sentence with a universal quantifier as the main operator, $\forall$x\metav{A}\ldots x\ldots x\ldots, to a sentence without that operator and all instances of the variable replaced with some name,\metav{A}\ldots\metav{c}\ldots\metav{c}\ldots. There are no extra restrictions on this rule. So, the only way in which this could be invalid would be a case where $\forall$x\metav{A}\ldots x\ldots x\ldots is true and \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots is false. Remember the truth conditions for the universal quantifier: $\forall$x\metav{A}\ldots x\ldots x\ldots is true if and only if \metav{A}\ldots\metav{d}\ldots\metav{d}\ldots for any \metav{d} you pick (\metav{d} is a generic name for some object or thing). For \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots to be false, then, \metav{c} must not be an object or thing. This is absurd, contradictory, as \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots being false implies that \enot\metav{A}\ldots\metav{c}\ldots\metav{c}\ldots is true and for this to be true, \enot\metav{A}\ldots\metav{c}\ldots\metav{c}\ldots  must be true of an object or thing. Since \metav{c} cannot be both a thing and not a thing, we have that $\forall$E is valid. 
+
+\subsection{$\forall$I}
+$\forall$I allows us to move from \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots to $\forall$x\metav{A}\ldots x\ldots x\ldots, but there is a special restriction for this inference, namely that \metav{c} cannot appear in any undischarged assumptions and x must not appear in  $\forall$x\metav{A}\ldots x\ldots x\ldots. In other words, \metav{c} must be a generic name, it cannot pick out any thing in particular so that it could be used as a placeholder for any of them. This restriction gives us insight into how to show that this is valid. For this inference to be invalid, it would need to be the case that \metav{A}\ldots\metav{c}\ldots\metav{c}\ldots is true while $\forall$x\metav{A}\ldots x\ldots x\ldots is false. For $\forall$x\metav{A}\ldots x\ldots x\ldots to be false, there would need to be a \metav{d} such that \enot\metav{A}\ldots \metav{d}\ldots \metav{d}\ldots is true. The restriction on this inference removes this possiblity as \metav{c} cannot pick out any particular thing (in other words, it could pick out any particular thing), so it could have just as easily picked out \metav{d}. It is not possible for it to pick out anything and pick out anything except for \metav{d} at the same time. So, with this restriction in place, $\forall$I is valid. 
+
+\subsection{$\exists$I} 
+$\exists$I consists of moving from an individual instance, \metav{A}\ldots \metav{d}\ldots \metav{d}\ldots, to the claim that \emph{something} is that way, $\exists$x\metav{A}\ldots x\ldots x\ldots, with the caveat that x connot appear in \metav{A}\ldots \metav{d}\ldots \metav{d}\ldots. For this to be invalid, there would need to be a case where \metav{A}\ldots \metav{d}\ldots \metav{d}\ldots is true but  $\exists$x\metav{A}\ldots x\ldots x\ldots is false. For  $\exists$x\metav{A}\ldots x\ldots x\ldots to be false, \enot $\exists$x\metav{A}\ldots x\ldots x\ldots would need to be true. Given our assumption, this would mean that  $\forall$x\enot\metav{A}\ldots x\ldots x\ldots would be true (using the QN rule). Using the $\forall$I rule, which we have already shown is valid, we have that \enot\metav{A}\ldots \metav{d}\ldots \metav{d}\ldots is true. This contradicts our assumption that \metav{A}\ldots \metav{d}\ldots \metav{d}\ldots is true, so $\exists$I must be valid. 
+
+\subsection{$\exists$E}
+This particular rule functions as a subproof, like \eif I and the negation rules from PL. Referencing a particular line with $\exists$ as the main operator, $\exists$x\metav{A}\ldots x\ldots x\ldots, we remove the quantifier and replace all of the x's with some name, let's say \metav{c}. Upon closing the subproof, we get the last line back, say \metav{B}, with the following restriction: \metav{c} cannot appear in any undischarged assumptions, in the original $\exists$x\metav{A}\ldots x\ldots x\ldots, or in \metav{B}. In other words, \metav{c} needs to be a placeholder for something, anything, which has the feature \metav{A}. As before, these restrictions point to how this is valid. The only way for this inference to be invalid would be for  $\exists$x\metav{A}\ldots x\ldots x\ldots to be true, for \metav{c} to pick out something, anything, with such that \metav{A}\ldots \metav{c}\ldots\metav{c}\ldots is true, and for \metav{B} to be false. For \metav{B} to be false, it would need to be the case that one of the other inference or equivalency rules is invalid, which is not the case or this is a case excluded by the restriction for this rule. As a result, $\exists$E is valid because otherwise either contradicts what we have already proven or is excluded by the restriction for this rule. 
+
+\subsection{=I}
+This rule is unique in that it can be used without any context or lines to cite, one can throw it in anywhere. Basically, it says that \metav{c}=\metav{c} is a tautology and can be put anywhere, with any name you want. For this to be invalid, there would need to be some \metav{d} such that \metav{d}=\metav{d} is false (in other words, \enot(\metav{d}=\metav{d}) is true). \metav{d}=\metav{c} means, in a sense, \metav{d} and \metav{c} pick out the same object or thing, they are names for the same thing. If \metav{d}=\metav{c} is false, then there is some predicate, \metav{A}, such that \metav{A}\metav{d} is true and \metav{A}\metav{c} is false (or vice versa). In the case of \metav{d}=\metav{d} being false, there would need to be some predicate, \metav{A}, such that \metav{A}\metav{d} and \enot\metav{A}\metav{d} are both true. This contradicts our assumption, meaning that \metav{c}=\metav{c}, \metav{d}=\metav{d}, or any other like that, are all tautologies and so can be inserted into any argument, making this rule valid. 
+
+\subsection{=E}
+This rule is an actual application of identity as a connective rather than as a predicate. It allows us to move from \metav{a}=\metav{b} and \metav{A}\ldots \metav{a}\ldots\metav{a}\ldots (some sentence using the name \metav{a}) to \metav{A}\ldots \metav{a}\ldots\metav{b}\ldots or \metav{A}\ldots \metav{b}\ldots\metav{a}\ldots (replace one instance of \metav{a} with \metav{b}). It also works the other way, from \metav{A}\ldots \metav{b}\ldots\metav{b}\ldots and \metav{a}=\metav{b}, we can get \metav{A}\ldots \metav{a}\ldots\metav{b}\ldots or \metav{A}\ldots \metav{b}\ldots\metav{a}\ldots (basically replace one of the instances of \metav{b} with \metav{a}). For this to be invalid, it would need to be the case that \metav{A}\ldots \metav{a}\ldots\metav{a}\ldots (for example) and \metav{a}=\metav{b}  are both true while (for example)  \metav{A}\ldots \metav{b}\ldots\metav{a}\ldots is false. In other worlds, there would need to be a case where \metav{a} and \metav{b} pick out the same object and \metav{A} is both true and false of that object. This is impossible, so the rule must be valid. 
+
+\subsection{QL is sound}
+We just walked through all of the inference rules unique to QL and found that all of them are valid because assuming otherwise leads to a contradiction. Proving that QL is sound, however, is only half of the task. To accurately represent ideal thinking and reasoning, we must also show that QL is complete. 
+
+\section{The Completeness of QL} 
+Recall that QL has access to all of the inference and equivalency rules which PL uses. This includes the negation rules (\enot I and \enot E). This means that we can use the same reasoning as with PL to prove the completeness of QL and that's what we will do. Remember that soundness, which we already have shown for both PL and QL, is that for any argument, if  $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash$ \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}. To show completeness, we must have that for any argument if  $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash$ \metav{C}. 
+
+As a before, we have access to the negation rules, so, for any argument such that $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash$ \metav{C}, there is a proof of \metav{C} from the premises $\phi_1,\phi_2,\ldots,\phi_n$ which uses the negation rules by assuming \enot\metav{C} and then deriving a contradiction. As before, because of the robustness of the rules in QL, it will have the ability to present the contradiction and thereby show that $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash$ \metav{C}.
+
+\section{The Soundness of ML}
+Just like with QL, ML does not need to start from nothing when trying to prove that it is sound, that if $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash_{ML}$ \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vDash_{ML}$ \metav{C}. For starters, if $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash_{PL}$ \metav{C}, then $\phi_1,\phi_2,\ldots,\phi_n$ $\vdash_{ML}$ \metav{C}. So, we have access to the validity of all of the inference rules in PL.  But that is not all, since ML has additional rules, we will need to prove the validity of those rules and those rules are relative to the system we are working in, meaning that the features we have access to will differ in the different systems. The K system has one equivalency rule and five inference rules and all other systems can use the validity we show for them.  The T system has 2 inference rules and all of the others, other than K, have access to those. The S4 system has 2 rules and the S5 system has access to those. And finally, the S5 system has 2 rules.
+
+\subsection{The Soundness of the K System}
+To begin, four out of the five of the rules in the K system are conclusions to subproofs and all of them have the same basic restriction, no rule used inside of the subproof (strict subproof) may cite a line from before the proof opened unless the rule explicitly allows for it. In K, there is only one rule which explicitly allows for this: \ebox E.  
+
+All of these strict subproofs amount to moving into another prossible world, accessible to the `actual world', proving something in that world, and then exporting the last line with either a \ediamond  or a \ebox  (depending on whether you entered a `generic' world or a particular world) back to the actual world. This entering and then exporting something back to the actual world metaphor will be the primary way that I will explain the validity of these rules. 
+
+\paragraph{MN}
+Modal Negation is very similar to the Quantifier Negation rule found in QL. It will be useful to have this rule in order to prove the soundness of ML (make some of the proofs shorter), so we will start here. MN holds that To prove that MN is valid, we need to show that 4 cases lead to contradictions (this is very similar to how we proved the QN rule in QL). 
+
+The first case is where \ebox\enot\metav{A} is true and \enot\ediamond\metav{A} is false. Using a similar method as before, \enot\ediamond\metav{A} being false requires that \ediamond\metav{A} is true. This means that there is some world, $w_1$ such that it is accessible to the `actual world',\metav{a}, and \metav{A} is true at that world. This contradicts the assumed case as for  \ebox\enot\metav{A} to be true, \enot\metav{A} must be true at all worlds accessible to \metav{a}. \metav{A} cannot be both true and false at $w_1$, so this case is a contradiction.
+
+The next case is where \ebox\enot\metav{A} is false and \enot\ediamond\metav{A} is true. For \ebox\enot\metav{A} to be false, it must be the case that there is some world, $w_1$ accessible to the actual world, \metav{a}, such that \metav{A} is true. At the same time, for  \enot\ediamond\metav{A} to be true,  \ediamond\metav{A} must be false; this means that there is not a world accessible to \metav{a} such that \metav{A} is true at that world. There cannot be the case that there is an accessible world where \metav{A} is true and there not be a world where that is true. So, we have our contradiction.
+
+For the third case, we have that \ediamond\enot\metav{A} is true and  \enot\ebox\metav{A} is false. For \ediamond\enot\metav{A} to be true, it must be the case that there is a world, $w_1$ accessible to the actual world, where \enot\metav{A} is true. Along the same lines, for  \enot\ebox\metav{A} to be false, \ebox\metav{A} must be true and for that to be true, \metav{A} must be true at $w_1$. \enot\metav{A} and \metav{A} cannot both obtain at the same possible world, so we have another contradiction. 
+
+The final case follows a similar line of reasoning as the previous ones. With this one, \ediamond\enot\metav{A} is false and  \enot\ebox\metav{A} is true. For \ediamond\enot\metav{A} to be false, it must be the case that \metav{A} is true at all worlds accessible to the actual one and for \enot\ebox\metav{A} to be true, it must be the case that there is an accessible world where \enot\metav{A} is true. Like with the others, this is a contradiction. 
+
+These four arguments, proofs by contradiction, collectively prove that MN is valid. 
+
+
+\paragraph{\ebox E}
+This rule, \ebox E, allows one to import a necessary sentence (without the qualifier) into a strict subproof, but there is a restriction, the line where, for example, \ebox\metav{A} appears must be in the proof/subproof directly prior to the one being imported into. For example, consider this K-model, given as a diagram, where `\metav{a}' is the actual world:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {P};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{Q};
+		\node[world] (w3) [label=below:$w_2$, right=of w2]{R};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:]$\openntuple \metav{a},w_1\closentuple$,$\openntuple w_1,w_2\closentuple$  
+\item[\metav{a}:] P... 
+\item[$w_1$:] Q,...
+\item[$w_2$:] R,...
+\end{itemize}
+
+From the `actual world's' perspective, \ebox Q is true, despite Q not being true at \metav{a}. The major thing to note is that when we move from \metav{a} to $w_1$, we can then move from $w_1$ to $w_2$ by nesting our subproofs.We could, because \ebox Q is true at \metav{a}, import Q into $w_1$ without much worry. But, we have no clue whether Q is true at $w_2$, meaning that we can't import Q from \metav{a} to $w_2$. 
+
+This explanation of the restriction points out how we can prove that this move is valid. For it to be invalid, it would need to be the case that, for example, \ebox Q is true at \metav{a} and that there is a world, $w_1$, such that \metav{a} has direct access to $w_1$ and Q is false at $w_1$. For \ebox Q to be true, however, at \metav{a}, for any world you pick, if \metav{a} has access to the world, then Q is true at that world. We assumed that there was a world such that \metav{a} has access to it and Q is false at that world. Q cannot be both true ad false at that world, so \ebox E is valid. 
+
+\paragraph{\ebox\eif I}
+This is the first of the rules using strict subproofs, which are unique to the Modal Logic system which we have explained in this text. Functionally, it is similar to the \eif I rule which we have in PL but since it uses a strict subproof rather than a regular subproof, we can derive a modal sentence rather than a `regular' one. The restriction for this rule is that no rule used in the strict subproof may cite lines which are outside of the subproof unless the rule explicitly allows it. This is important and points out why this rule is valid. 
+
+Suppose that \ebox\eif I were invalid. The only way that this could happen is if the line derived from the strict subproof is false at the actual world, \metav{a}. The line derived from the strict subproof using this rule will be of the form \ebox(\metav{A}\eif\metav{B}) and for this to be false, then there must be a world accessible to \metav{a}, $w_1$ such that \enot(\metav{A}\eif\metav{B}) is true at that world (this uses the MN rule). Using the equivalency rules from PL, we know that at $w_1$ \metav{A} is true and \metav{B} is false. For this to happen, either $w_1$ is not a possible world (contains a contradiction) (which means that it is not accessible leading to a contradiction) or one or more of the rules used in the subproof was invalid. This is not possible as the restriction precludes the importing of contingent lines, the PL rules are all valid, and \ebox E is valid. This is the contradiction proving that \ebox\eif I is valid.  
+
+\paragraph{\ebox\enot I}
+Much like \ebox\eif I, \ebox\enot I functions in much the same was as its counterpart in PL, namely \enot I. The distinction, however, is that it uses a strict subproof and the restriction for the strict subproof is the same as the previous. Since it is a strict subproof, it lacks the access to contingent lines and the rules must not cite lines outside of the subproof (with the exception of \ebox E, which we have shown is valid). For \ebox\enot I to be invalid, it must be the case that the line derived using the rule is false. Let's say that it is \ebox\enot\metav{A}. By the assumption, there must be a world accessible to the actual one where \metav{A} is true, call this world $w_1$. But, to conclude the strict subproof and use this rule, the assumption that \metav{A} is true must have derived a contradiction, using the valid rules we have seen previously. This means that there must be a contradiction at $w_1$, which further means that it is not a possible world accessible to the actual one. $w_1$ cannot be both a possible world and not a possible world, so \ebox\enot I must be valid. 
+
+\paragraph{\ebox I and \ediamond I}
+Both of these rules, \ebox I and \ediamond I, are based on the $\exists$E rule which we saw in QL. They both involve strict subproofs but unlike the previous ones we have seen, they cite a line which came before the opening of the strict subproof and the first line, the assumed line for the strict subproof, is the line cited without the qualifier. So, in the case of \ebox I, we would need a line of the form \ebox\metav{A}. When we open the strict subproof, we are, in a sense, entering a world accessible to the actual one knowing that \metav{A} is true at that world. Since the main operator of the cited line is \ebox, we are working in a generic world, much like how we need to be working with a generic name to use $\forall$I in QL. 
+
+For \ebox I to be invalid, the derived line must be false, say it's \ebox\metav{B}. We started from \ebox\metav{A} and entered a generic world accessible to the actual one knowing that \metav{A} is true at that world. For \ebox\metav{B} to be false, there would been to be a world accessible to the actual such that \metav{B} is false at that world. But, in the process of the strict subproof, we used only the the known to be valid rules in PL and/or  \ebox E and MN. This means that, working backwards, at the world where \metav{B} is false, \metav{A} is also false, which contradicts the initial premise \ebox\metav{A}. So, \ebox I must be valid. 
+
+The proof that \ediamond I is valid follows a similar line of reasoning as the one we just saw. To use this rule, we need a line of the form \ediamond\metav{A} and then, when we open the strict subproof, we are entering the world accessible to the actual world at which \metav{A} is true. While the same restrictions apply, we are not working in some generic world, so we cannot generalize to \emph{all} worlds accessible to the actual one; when we close the strict subproof, we only get that what we showed therein was possible, because it is true at the world where \metav{A} is true. For this rule to not work, it would need to be the case that the resulting line, call it \ediamond\metav{B}, is false. For that to be the case, usinig MN, it would need to be the case that \metav{B} is false at all worlds accessible to the actual world. But, this implies that \metav{A} results in a contradiction, so it being true at a world accessible to the actual world would mean that, at that world, there is a contradiction, meaning it is not actually a possible world. Bringing this all together, \ediamond I is valid. 
+
+\paragraph{The K system is sound}
+With this, we have that all of the rules in the K system are valid, which means that if something is provable in K, then it is valid. For completeness, we need only show that if it is valid, then it is provable, which is easy enough, as PL did most of the work. The general structure for a proof would be to assume the negation of the conclusion and derive a contradiction and this is possible because of the assumption that the argument is valid.   
+
+\subsection{The Soundness of the T system}
+The T system is very similar to the K system except that all of the possible worlds in this system have access to themselves. All of the same rules from K are brought over into T. Because of the reflexivity, T gets one additional rule which is only had in systems where the worlds are reflexive, namely RF. To show that this system is sound, we only need to prove that RF is valid. 
+
+\paragraph{RF}
+This rule comes in two different forms, both with the restriction that it can only be done on lines which are `at the same world', meaning that it can't be done to import something into a strict subproof (though it can be used into a regular subproof). 
+
+The first form of RF is that from \ebox\metav{A}, you derive \metav{A}. For this to be invalid, it would need to be the case that \metav{A} is true at every world \metav{a} (the actual world) has access to and that \metav{A} is false at \metav{a}. The issue with this is that \metav{a} has access to itself, because of reflexivity. This means that \metav{A} is both true and false at \metav{a}. This is a contradiction and proves that the first form of RF is valid.
+
+The other form of RF is that from \metav{A} you can derive \ediamond\metav{A}. The reasoning is very similar to what we have used before. \ediamond\metav{A} just means that there is a world accessible to \metav{a} at which \metav{A} is true. Well, \metav{a} is accessible to \metav{a}, so it would be contradictory to say that \metav{A} is true at \metav{a} and \ediamond\metav{A} is false at \metav{a}. This means that the second form of RF is valid. 
+
+\paragraph{The T system is sound}
+With that, we have that both forms of RF are valid and therefore, the T system is sound. To show completeness, we already have that the K system is complete (because of PL) and we can thereby give proofs for any valid argument (in T) using the same methods as before. 
+
+\subsection{The Soundness of the S4 system}
+We have just shown that the T system is sound and complete. S4 adds two more rules into the mix which means that we need only show that those rules are sound and the entire system is thereby sound. As before, also, the completeness of S4 comes with the package, as it has access to all of the negation rules from PL which we used to prove the completeness there. 
+\paragraph{TR}
+What sets S4 apart from K and T is that it requires that all of the accessibility relations be transitive, meaning that if \metav{a} has access to $w_1$ and $w_1$ has access to $w_2$, then \metav{a} has access to $w_2$. This gives us the ability to have add an inference rule to the one from the T system: TR (for transitive). This rule comes in two forms, so we will need to prove that both of them are valid to prove that S4 is sound. 
+
+TR allows us to move from \ebox\metav{A} to \ebox\ebox\metav{A}. For this to be invalid, \ebox\metav{A} would need to be true while \ebox\ebox\metav{A} is false. If \ebox\ebox\metav{A} is false, \enot\ebox\ebox\metav{A} is true. If that is true, then \ediamond\ediamond\enot\metav{A} is true (this was two uses of MN). This means that there is a world, $w_1$ which \metav{a} has access to and which has access to another world, $w_2$ at which \metav{A} is false. Or, using a simple (incomplete) diagram:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{};
+		\node[world] (w3) [label=below:$w_2$, right=of w2]{\enot\metav{A}};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:]$\openntuple \metav{a},w_1\closentuple$,$\openntuple w_1,w_2\closentuple$  
+\item[\metav{a}:] ... 
+\item[$w_1$:] ...
+\item[$w_2$:] \enot\metav{A},...
+\end{itemize}
+
+From $w_1$'s perspective, \ediamond\enot\metav{A} is true and from \metav{a}'s perspective, \ediamond\ediamond\enot\metav{A} is true. So far so good. But, a part of the assumption was that \ebox\metav{A} is true at \metav{a}. So, \metav{A} must be true at all of the worlds \metav{a} has access to. But, since $w_1$ has access to $w_2$, \metav{a} must also have access to $w_2$, meaning that both \enot\metav{A} and \metav{A} are true at $w_2$, which is impossible, meaning that the first form of TR is valid. 
+
+The second form of TR allows us to move from \ediamond\ediamond\metav{A} to \ediamond\metav{A}. The reasoning behind this being valid is similar to the others we have seen. For this to be invalid, \ediamond\ediamond\metav{A} would be true and \ediamond\metav{A} would be false. This, maybe, could be done in this (again, incomplete) diagram:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{\enot\metav{A}};
+		\node[world] (w3) [label=below:$w_2$, right=of w2]{\metav{A}};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:]$\openntuple \metav{a},w_1\closentuple$,$\openntuple w_1,w_2\closentuple$  
+\item[\metav{a}:] ... 
+\item[$w_1$:] \enot\metav{A},...
+\item[$w_2$:] \metav{A},...
+\end{itemize}
+
+Without transitivity, from \metav{a}'s perspective, \enot\ediamond\metav{A} is true and since \ediamond\metav{A} is true at $w_1$, \ediamond\ediamond\metav{A} is true at \metav{a}. This model, however, is not transitive, once we include transitivity, \metav{a} has access to $w_2$ meaning that \ediamond\metav{A} is true at \metav{a} which contradicts the assumption that \enot\ediamond\metav{A} is true at \metav{a}. Thus, both forms of TR are valid.  
+
+\paragraph{R4}
+R4 is a special reiteration-style rule which is added to Modal Logic in the S4 system. It behaves the same as \ebox E except it allows for us to import \ebox\metav{A} into a strict subproof from \ebox\metav{A}. Essentially, it works the same as \ebox E except it lets you keep the box. To prove this valid, we need to show that there couldn't be a case in an S4 system where this move would be improper. Remember that when we are entering/working in a strict subproof we are working in another possible world accessible to the actual one, \metav{a}. Suppose that the move was improper. This would mean that \ebox\metav{A} is true at \metav{a} but not true at some world, $w_1$, which \metav{a} has access to. For that to hold, $w_1$ would need to have access to a world where \enot\metav{A} is true, $w_2$. Here, again, is an incomplete diagram for such a situation: 
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{\metav{A}};
+		\node[world] (w3) [label=below:$w_2$, right=of w2]{\enot\metav{A}};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:]$\openntuple \metav{a},w_1\closentuple$,$\openntuple w_1,w_2\closentuple$  
+\item[\metav{a}:] ... 
+\item[$w_1$:] \metav{A},...
+\item[$w_2$:] \enot\metav{A},...
+\end{itemize}
+ 
+ At $w_1$, \enot\ebox\metav{A} is true and at \metav{a}, \ebox\metav{A} is true, so importing in \ebox\metav{A} into $w_1$ would seem like a contradiction. But, again, this model is not transitive. Once you include transitivity, \metav{a} will have access to $w_2$ and the assumption needed to get this rule to be invalid, that \ebox\metav{A} is true would be contradicted, thereby proving this rule valid. 
+ 
+
+\subsection{The Soundness of the S5 system}
+
+Finally, we have moved on to the last of the Modal Logic systems covered in this textbook, S5. As before, S5 gets everything from the previous systems and then adds a few things. In this case, it adds a new means of importing lines into a strict subproof and ways of dropping leading qualifiers (all but the last one). This is because S5 adds symmectricity to the mix. This means that if a world has access to another then that world has access to them. This opens up a lot of possibilities, which have been distilled into two rules, S5 and R5.
+
+\paragraph{S5}
+There are two formulations of S5, both of which could come from a mixture of transitivity and symmectricity. The first version, however, is much easier to see as an application of RF. It moves from \ebox\ediamond\metav{A} to \ediamond\metav{A}, so we needn't make a separate proof for that. The other form of the rule, however, does require a proof. This one allows us to move from \ediamond\ebox\metav{A} to \ebox\metav{A}. For this to be invalid, following the methods we have always used for this, \ediamond\ebox\metav{A} would need to be true while \ebox\metav{A} false. This would require a few different things: First, an accessible world where \ebox\metav{A} is true and second, an accessible world where \metav{A} is false.This is possible in a model, like so:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{\metav{A}};
+		\node[world] (w3) [label=below:$w_2$, below=of w2]{\enot\metav{A}};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge (w3);
+		\path[->] (w3) edge[reflexive right] (w3);
+		\path[->] (w1) edge[reflexive above] (w1);
+
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:] $\openntuple \metav{a},\metav{a}\closentuple$,$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple \metav{a},w_1\closentuple$,$\openntuple \metav{a},w_2\closentuple$  
+\item[\metav{a}:] ... 
+\item[$w_1$:] \metav{A},...
+\item[$w_2$:] \enot\metav{A},...
+\end{itemize}
+
+This is a perfectly fine S4 model and would serve to demonstrate why this move is not valid in S4. Right now, the diagram is not symmetric and we need that for it to be an S5 model. Once we include this, however, all of the worlds will have access to all of the other ones (and themselves) which means that $w_1$ will have access to $w_2$, so \ebox\metav{A} will no longer be true at $w_1$ and we needed that prove this invalid. Meaning that the S5 rule is valid. 
+
+\paragraph{R5}
+The final rule used in the Modal Logic S5 system covered in this text is R5, this rule is like R4 and \ebox E in that it allows you to import something into a strict subproof. There are two versions of it, but these are equivalent so we only need to prove one of them as valid. The form we will look at is the one which allows us to import \ediamond\metav{A} into a strict subproof from \ediamond\metav{A} outside of the strict subproof. For this to be invalid, using this format one last time, \ediamond\metav{A} would be true at \metav{a} while false at a world accessible to \metav{a}. So, the model might look something like this:
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=below:$w_1$, right=of w1]{\metav{A}};
+		\node[world] (w3) [label=below:$w_2$, below=of w2]{\enot\metav{A}};
+		\path[->] (w1) edge (w2);
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge (w3);
+		\path[->] (w3) edge[reflexive right] (w3);
+		\path[->] (w1) edge[reflexive above] (w1);
+
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:] $\openntuple \metav{a},\metav{a}\closentuple$,$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple \metav{a},w_1\closentuple$,$\openntuple \metav{a},w_2\closentuple$  
+\item[\metav{a}:] ... 
+\item[$w_1$:] \metav{A},...
+\item[$w_2$:] \enot\metav{A},...
+\end{itemize}
+This is the same model we used before, but here we have that \enot\ediamond\metav{A} is true at $w_2$ and it would be a contradition to import \ediamond\metav{A} to there from \metav{a} (where it is true). And again, this is a perfectly fine S4 model, but when we include symmetricity into the model, we get: 
+
+\begin{center}
+\begin{tikzpicture}[modal]
+		\node[world] (w1) [label=below:\metav{a}] {};
+		\node[world] (w2) [label=right:$w_1$, right=of w1]{\metav{A}};
+		\node[world] (w3) [label=below:$w_2$, below=of w2]{\enot\metav{A}};
+		\path[<->] (w1) edge (w2);
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[<->] (w1) edge (w3);
+		\path[->] (w3) edge[reflexive right] (w3);
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[<->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[W:] $\metav{a},w_1,w_2$
+\item[R:] $\openntuple \metav{a},\metav{a}\closentuple$,$\openntuple w_1,w_1\closentuple$,$\openntuple w_2,w_2\closentuple$,$\openntuple \metav{a},w_1\closentuple$,$\openntuple \metav{a},w_2\closentuple$,$\openntuple w_1, \metav{a}\closentuple$,$\openntuple w_2, \metav{a}\closentuple$,$\openntuple w_1,w_2\closentuple$,$\openntuple w_2,w_1\closentuple$    
+\item[\metav{a}:] ... 
+\item[$w_1$:] \metav{A},...
+\item[$w_2$:] \enot\metav{A},...
+\end{itemize}
+ 
+ Now, everyone can see everyone and there is nothing wrong with importing \ediamond\metav{A} into $w_2$ because it is true at that world. This means that R5 is valid and therefore S5 is both sound and complete because it has access to the same methods used previously. 
+

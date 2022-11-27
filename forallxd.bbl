@@ -1,0 +1,671 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ArgumentClinic}{video}{}
+      \name{namea}{1}{}{%
+        {{hash=55e79db90ade625a0e2fb51a945669a0}{%
+           family={Cleese},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BBC1}%
+      }
+      \strng{nameabibnamehash}{55e79db90ade625a0e2fb51a945669a0}
+      \strng{nameanamehash}{55e79db90ade625a0e2fb51a945669a0}
+      \strng{nameafullhash}{55e79db90ade625a0e2fb51a945669a0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{nameatype}{writer}
+      \field{number}{29}
+      \field{origday}{2}
+      \field{origmonth}{11}
+      \field{origyear}{1972}
+      \field{title}{Argument Clinic}
+      \field{origdateera}{ce}
+    \endentry
+    \entry{boole}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ae1608341470e02562d39fb84491201}{%
+           family={Burris},
+           familyi={B\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=1ccb63ec9f508f5b977ddf83f6bf219e}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford U}%
+      }
+      \strng{namehash}{5ae1608341470e02562d39fb84491201}
+      \strng{fullhash}{5ae1608341470e02562d39fb84491201}
+      \strng{bibnamehash}{5ae1608341470e02562d39fb84491201}
+      \strng{authorbibnamehash}{5ae1608341470e02562d39fb84491201}
+      \strng{authornamehash}{5ae1608341470e02562d39fb84491201}
+      \strng{authorfullhash}{5ae1608341470e02562d39fb84491201}
+      \strng{editorbibnamehash}{1ccb63ec9f508f5b977ddf83f6bf219e}
+      \strng{editornamehash}{1ccb63ec9f508f5b977ddf83f6bf219e}
+      \strng{editorfullhash}{1ccb63ec9f508f5b977ddf83f6bf219e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The {Stanford} Encyclopedia of Philosophy}
+      \field{edition}{{S}pring 2022}
+      \field{howpublished}{\url{https://plato.stanford.edu/archives/spr2022/entries/boole/}}
+      \field{title}{George Boole}
+      \field{year}{2022}
+    \endentry
+    \entry{demorganimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0ff9750809aac15e7e6a05322c4f44af}{%
+           family={DeMorgan},
+           familyi={D\bibinitperiod},
+           given={Sophia\bibnamedelima Elizabeth},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0ff9750809aac15e7e6a05322c4f44af}
+      \strng{fullhash}{0ff9750809aac15e7e6a05322c4f44af}
+      \strng{bibnamehash}{0ff9750809aac15e7e6a05322c4f44af}
+      \strng{authorbibnamehash}{0ff9750809aac15e7e6a05322c4f44af}
+      \strng{authornamehash}{0ff9750809aac15e7e6a05322c4f44af}
+      \strng{authorfullhash}{0ff9750809aac15e7e6a05322c4f44af}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Memoir of Augustus De Morgan}
+      \field{title}{Picture of Augustus De Morgan, the mathematician}
+      \field{year}{1882}
+      \field{dateera}{ce}
+    \endentry
+    \entry{DirecTv}{video}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b5c9c1daf0227076ca57004de8e61fc}{%
+           family={Directv},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \strng{fullhash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \strng{bibnamehash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \strng{authorbibnamehash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \strng{authornamehash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \strng{authorfullhash}{2b5c9c1daf0227076ca57004de8e61fc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{origendyear}{2012}
+      \field{origyear}{2011}
+      \field{title}{DirecTv Roadside Ditch Commercial}
+      \field{origenddateera}{ce}
+      \field{origdateera}{ce}
+      \verb{urlraw}
+      \verb www.youtube.com/watch?v=kIv3m2gMgUU
+      \endverb
+      \verb{url}
+      \verb www.youtube.com/watch?v=kIv3m2gMgUU
+      \endverb
+    \endentry
+    \entry{turingimage}{artwork}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0fba5bec5f174b6aeeb984b01788ad04}{%
+           family={Elliott},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=be4990aa4393c80dc49843107b3d6366}{%
+           family={Fry},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Portrait Gallery}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \strng{namehash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \strng{fullhash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \strng{bibnamehash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \strng{authorbibnamehash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \strng{authornamehash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \strng{authorfullhash}{fac20fa5ff65e176f7efeebe8644a79d}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{month}{9}
+      \field{title}{Portrait of Alan Mathison Turing}
+      \field{year}{1951}
+      \field{dateera}{ce}
+    \endentry
+    \entry{leibnizimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4a5e93b69605ad17f73cd85f29a9154}{%
+           family={Francke},
+           familyi={F\bibinitperiod},
+           given={Christoph\bibnamedelima Bernhard},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Herzog Anton Ulrich Museum}%
+      }
+      \list{location}{1}{%
+        {Braunschweig, Germany}%
+      }
+      \strng{namehash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \strng{fullhash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \strng{bibnamehash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \strng{authorbibnamehash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \strng{authornamehash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \strng{authorfullhash}{b4a5e93b69605ad17f73cd85f29a9154}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bildnis des Philosophen Gottfried Wilhelm Freiherr von Leibniz}
+      \field{year}{1695}
+      \field{dateera}{ce}
+    \endentry
+    \entry{barcan}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c9a2ea51e356c694f3aee1ee3321f309}{%
+           family={Gendler},
+           familyi={G\bibinitperiod},
+           given={Tamar\bibnamedelima Szabó},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \strng{fullhash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \strng{bibnamehash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \strng{authorbibnamehash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \strng{authornamehash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \strng{authorfullhash}{c9a2ea51e356c694f3aee1ee3321f309}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{6}
+      \field{title}{Ruth Barcan Marcus}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb jwa.org/encyclopedia/article/marcus-ruth-barcan
+      \endverb
+      \verb{url}
+      \verb jwa.org/encyclopedia/article/marcus-ruth-barcan
+      \endverb
+    \endentry
+    \entry{ghazali}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eb5abc14e4ff228086e02c04b6cce279}{%
+           family={Griffel},
+           familyi={G\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford U}%
+      }
+      \strng{namehash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{fullhash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{bibnamehash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{authorbibnamehash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{authornamehash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{authorfullhash}{eb5abc14e4ff228086e02c04b6cce279}
+      \strng{editorbibnamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editornamehash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \strng{editorfullhash}{5ff1c29ff1cc8f6336533b0ffd842a79}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The {Stanford} Encyclopedia of Philosophy}
+      \field{edition}{{S}ummer 2020}
+      \field{howpublished}{\url{https://plato.stanford.edu/archives/sum2020/entries/al-ghazali/}}
+      \field{title}{{al-Ghazali}}
+      \field{year}{2020}
+    \endentry
+    \entry{sinaimage}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8907f960e66537a46289a8afe791d03}{%
+           family={Kari},
+           familyi={K\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c8907f960e66537a46289a8afe791d03}
+      \strng{fullhash}{c8907f960e66537a46289a8afe791d03}
+      \strng{bibnamehash}{c8907f960e66537a46289a8afe791d03}
+      \strng{authorbibnamehash}{c8907f960e66537a46289a8afe791d03}
+      \strng{authornamehash}{c8907f960e66537a46289a8afe791d03}
+      \strng{authorfullhash}{c8907f960e66537a46289a8afe791d03}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Avicenna (Ibn Sina)}
+      \field{year}{1331}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb www.philosophybasics.com/philosophers_avicenna.html
+      \endverb
+      \verb{url}
+      \verb www.philosophybasics.com/philosophers_avicenna.html
+      \endverb
+    \endentry
+    \entry{chrysippus}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff59c0be537a32f458e0b10b723ec751}{%
+           family={Laërtius},
+           familyi={L\bibinitperiod},
+           given={Diogenes},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=4565bd0323a849b06d4ea9bd97b4c483}{%
+           family={Hicks},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima Drew},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Loeb Classical Library}%
+      }
+      \strng{namehash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{fullhash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{bibnamehash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{authorbibnamehash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{authornamehash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{authorfullhash}{ff59c0be537a32f458e0b10b723ec751}
+      \strng{translatorbibnamehash}{4565bd0323a849b06d4ea9bd97b4c483}
+      \strng{translatornamehash}{4565bd0323a849b06d4ea9bd97b4c483}
+      \strng{translatorfullhash}{4565bd0323a849b06d4ea9bd97b4c483}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lives of the Eminent Philosophers}
+      \field{volume}{2}
+      \field{year}{1925}
+      \field{dateera}{ce}
+    \endentry
+    \entry{aristotleimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8e2f76aece8b5c687e1c06ee457b3ec}{%
+           family={Lysippos},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Museo nazionale romano di palazzo Altemps}%
+      }
+      \list{location}{1}{%
+        {Rome, Italy}%
+      }
+      \strng{namehash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \strng{fullhash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \strng{bibnamehash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \strng{authorbibnamehash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \strng{authornamehash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \strng{authorfullhash}{a8e2f76aece8b5c687e1c06ee457b3ec}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bust of Aristotle}
+      \field{year}{330}
+      \field{dateera}{ce}
+    \endentry
+    \entry{barcanimage}{image}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=295190bc9ce83ec07600b41c970e9ef4}{%
+           family={Marsland},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{295190bc9ce83ec07600b41c970e9ef4}
+      \strng{fullhash}{295190bc9ce83ec07600b41c970e9ef4}
+      \strng{bibnamehash}{295190bc9ce83ec07600b41c970e9ef4}
+      \strng{authorbibnamehash}{295190bc9ce83ec07600b41c970e9ef4}
+      \strng{authornamehash}{295190bc9ce83ec07600b41c970e9ef4}
+      \strng{authorfullhash}{295190bc9ce83ec07600b41c970e9ef4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{8}
+      \field{title}{Ruth Barcan Marcus}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb jwa.org/media/ruth-barcan-marcus
+      \endverb
+      \verb{url}
+      \verb jwa.org/media/ruth-barcan-marcus
+      \endverb
+    \endentry
+    \entry{Katha}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a27daef5e07aa232ca9b7ca44690389}{%
+           family={Moggaliputtatissa},
+           familyi={M\bibinitperiod}}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=135b347689d2a3ede717923a5f8b7cfe}{%
+           family={Aug},
+           familyi={A\bibinitperiod},
+           given={Shwe\bibnamedelima Zan},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=857f83a6526b271b2848ce652d418805}{%
+           family={Davids},
+           familyi={D\bibinitperiod},
+           given={Rhys},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford UP}%
+      }
+      \strng{namehash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{fullhash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{bibnamehash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{authorbibnamehash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{authornamehash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{authorfullhash}{2a27daef5e07aa232ca9b7ca44690389}
+      \strng{translatorbibnamehash}{a8356341f1a8e43a6d3fe692a413dc01}
+      \strng{translatornamehash}{a8356341f1a8e43a6d3fe692a413dc01}
+      \strng{translatorfullhash}{a8356341f1a8e43a6d3fe692a413dc01}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Katha-vatthu}
+      \field{year}{1915}
+      \field{dateera}{ce}
+    \endentry
+    \entry{ockhamimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a9e93f7ca8cd73ae8d93c0df70d413b4}{%
+           family={Salmon},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {All Saints, Ockham}%
+      }
+      \list{location}{1}{%
+        {Surrey, Great Britain}%
+      }
+      \strng{namehash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \strng{fullhash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \strng{bibnamehash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \strng{authorbibnamehash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \strng{authornamehash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \strng{authorfullhash}{a9e93f7ca8cd73ae8d93c0df70d413b4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{William of Ockham c. 1285-1345 Doctor Invincibilis}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{kripkeimage}{online}{}
+      \list{publisher}{1}{%
+        {City U of New York}%
+      }
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{website}
+      \field{title}{Saul Kripke}
+      \verb{urlraw}
+      \verb www.gc.cuny.edu/people/saul-kripke
+      \endverb
+      \verb{url}
+      \verb www.gc.cuny.edu/people/saul-kripke
+      \endverb
+    \endentry
+    \entry{Sider}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7657a050a546951f7834c6884b659d3e}{%
+           family={Sider},
+           familyi={S\bibinitperiod},
+           given={Theodore},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford UP}%
+      }
+      \strng{namehash}{7657a050a546951f7834c6884b659d3e}
+      \strng{fullhash}{7657a050a546951f7834c6884b659d3e}
+      \strng{bibnamehash}{7657a050a546951f7834c6884b659d3e}
+      \strng{authorbibnamehash}{7657a050a546951f7834c6884b659d3e}
+      \strng{authornamehash}{7657a050a546951f7834c6884b659d3e}
+      \strng{authorfullhash}{7657a050a546951f7834c6884b659d3e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \true{singletitle}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Logic for Philosophy}
+      \field{year}{2010}
+    \endentry
+    \entry{tissaimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Nava Jetavana Temple}%
+      }
+      \list{location}{1}{%
+        {Shravasti, Uttar Pradesh}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{1}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Asoka and Moggaliputtatissa at the Third Council}
+      \field{year}{330}
+      \field{dateera}{ce}
+    \endentry
+    \entry{booleimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Library of Congress}%
+      }
+      \list{location}{1}{%
+        {www.loc.gov/item/2007675556/}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{2}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{George Boole, -1964; head and shoulders, facing left}
+      \field{year}{1880}
+      \field{dateera}{ce}
+    \endentry
+    \entry{ghazaliimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{3}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Imam Ghazali}
+    \endentry
+    \entry{russellimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {McMaster U Library}%
+      }
+      \list{location}{2}{%
+        {William Ready Division of Archives}%
+        {Research Collections}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{4}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Bertrand Russell}
+      \field{year}{1907}
+      \field{dateera}{ce}
+    \endentry
+    \entry{chrysippusimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Louvre Museum, Department of Greek, Etruscan}%
+        {Roman Antiquities}%
+      }
+      \list{location}{1}{%
+        {Paris, France}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{5}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Chrysippus of Soli}
+      \field{year}{200}
+      \field{dateera}{ce}
+    \endentry
+    \entry{godelimage}{artwork}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
+           family={unknown},
+           familyi={u\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Princeton U Library, Manuscript Division, Department of Rare Books}%
+        {Special Collections, Kurt Gödel Papers}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ, USA}%
+      }
+      \strng{namehash}{ad921d60486366258809553a3db49a4a}
+      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
+      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
+      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
+      \field{extraname}{6}
+      \field{sortinit}{u}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Kurt Gödel}
+      \field{year}{1925}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

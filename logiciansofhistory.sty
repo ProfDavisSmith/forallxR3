@@ -1,0 +1,182 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{logiciansofhistory}
+\usepackage{forallx-d-style}
+
+% \logician{...}{...} produces an inset paragraph of text with a line around it
+% Used for biographies of famous or influential logicians
+%The general format is \logician{<name>}{<biography>}{<picture-location>}{<shortname-for-picture-citation>} 
+%It is used to define commands which can be used to insert the biographical information about the logician into the text without crowding the rest of the content and make the content easily moveable. \autocite is used for linking with the bibliography and works cited pages.
+%\usepackage{tcolorbox}
+
+
+\newcommand{\logician}[4]{\begin{tcolorbox}[enhanced,sharp corners=downhill, colframe={leadbeater},colback={vltleadbeater},
+%overlay={\node at (frame.north east) {\includegraphics[width=2.5cm, keepaspectratio]{#3}};}
+]\paragraph{#1}%
+	 \begin{wrapfigure}{r}{2.5cm}
+	 \includegraphics[width=2.5cm]{#3}% 
+	 \autocite{#4}
+	 \end{wrapfigure}
+	 #2%
+\end{tcolorbox}}
+
+\newenvironment{logicianboxe}{%
+  \begin{tcolorbox}[sharp corners=downhill, colframe={leadbeater},colback={vltleadbeater}]
+     }{
+\end{tcolorbox}}
+
+%This is the general structure of making a new command to insert the name and biography of a prominent logician:
+%\newcommand{\<name (all one word)>}{\logician{<actual name>}{<biography>}}
+%Replace the `<...>' with the content specified. 
+	%<name (one word)> is to give the content a `tag' so that one can easily add it to the textbook without adding clutter to the surrounding content and messing with the other programs used. The `tag' will be `\' followed immediately by the name you assigned.
+		%I have noticed that the program to generate the glossary entries (makeglossaries) can be finicky, really `freaking out' if there is an extra `squiggle bracket' anywhere, even if it is completely unrelated to the glossary entries.
+	%<actual name> is the header to the content, the name of the logician or prominate figure in the history of formal logic. 
+	%<biography> is the actual biography of the logician or prominate figure in the history of formal logic.  
+
+\newcommand{\turing}{%module1 part 2
+\logician{Alan Turing}{Alan Turing was born in Maida Vale, London, on June 23, 1912. He is considered the father of theoretical computer science. Turing’s interest in the physical
+sciences and mathematics started at a young age. However, as a boy his interests were not represented well in his schools, where emphasis was placed on
+literature and classics. Consequently, he did poorly in school and was reprimanded by many of his teachers.
+Turing attended King’s College, Cambridge as an undergraduate, where he studied mathematics. In 1936 Turing developed (what is now called) the Turing machine as an attempt to precisely define the notion of a computable function and to prove the undecidability ofthe decision problem. He was beaten to the result by Alonzo Church, who proved the result via his own lambda calculus. Turing’s paper was still published with reference to Church’s result. Church invited Turing to Princeton, where he spent 1936–1938, and obtained a doctorate under Church. Despite his interest in logic, Turing’s earlier interests in physical sciences remained prevalent. His practical skills were put to work during his service with the British cryptanalytic department at Bletchley Park during World War II. 
+Turing was a central figure in cracking the cypher used by German Naval communications—the Enigma code. Turing’s expertise in statistics and cryptography, together with the introduction
+of electronic machinery, gave the team the ability to crack the code by creating a decrypting machine called a “bombe.” His ideas also helped in the creation of the world’s first programmable electronic computer, the Colossus, also used at Bletchley park to break the German Lorenz cypher. Turing was gay. Nevertheless, in 1942 he proposed to Joan Clarke, one of his teammates at Bletchley Park, but later broke off the engagement and confessed to her that he was homosexual. He had several lovers throughout his lifetime, although homosexual acts were then criminal offences in the UK. In 1952, Turing’s house was burgled by a friend of his lover at the time, and when filing a police report, Turing admitted to having a homosexual relationship, under the impression that the government was on their way to legalizing homosexual acts. This was not true, and he was charged with gross indecency. Instead of going to prison, Turing opted for a hormone treatment that reduced libido. Turing was found dead on June 8, 1954, of a cyanide overdose—most likely suicide. He was given a royal pardon by Queen Elizabeth II in 2013.}{assets/turing.jpg}{turingimage}
+}
+
+\newcommand{\chrysippus}{%module2 part 4
+\logician{Chrysippus}{
+Chrysippus was born in a city called Soli on the south east coast of Asia Minor in 280 BCE and very early in life moved to Athens where he studied under the philosopher Cleanthes who was a student of Zeno, the founder of a school of thought called Stoicism. When Cleanthes died in 232 BCE, Chrysippus took over as the leader of the school and became very prolific, writing over 700 essays and books where he formalized the Stoic way of thinking. Sadly, all of these works have been lost to time but fragments exist in the writings of various Roman philosophers such as Cicero and Seneca. 
+
+Because of the methods Chrysippus used in formalizing Stoicism, he is considered to be the second founder of this way of thinking and also the founder of Propositional Logic. Unlike Aristotelian Logic, where the basic atoms are names (which later merged with Propositional Logic and evolved into Quantified Logic), the basic unit of truth are propositions, simple sentences. Based on Chrysippus' logical system, Theophrastus worked out the logic behind what we call today the Hypothetical Syllogism and Philo of Megara worked out the truth conditions for conditionals. Continuing their work, Chrysippus divided what he called `propositions' into what we call today simple and complex sentences and introduced many of the logical connectives which are still in use today (though the names and representations have changed); negation, disjunction, conjunction, and conditional. Chrysippus defined the complex sentences as those which were composed of the simple sentences joined together with (a) connective(s) and he was the first to show that the truth value of a complex sentence was a function of the connectives given the truth values of the simple sentences and their position `within' the connectives. This discovery allowed him to formally (related to form) present many of the inference rules found in formal logic today including Modus Ponens (\eif E), Modus Tollens (MT), Disjunctive Syllogism (\eor E), and others. He then was able to use these rules to present a formal system of natural deduction to show `what followed from what' using a series of descrete steps.    
+
+Chrysippus died in 206 BCE at the $143^{rd}$ Olympiad (the equivalent of the modern Olympics) of, according to some accounts, laughter.  According to those accounts, he saw a donkey eating some figs and cried out ``now get that donkey some wine to wash down the figs.'' The pun or humorous aspect of this has been lost to time but it caused him to die from laughing too hard.\autocite[287-319]{chrysippus}  
+}{assets/Chrysippus.jpg}{chrysippusimage}
+}
+
+\newcommand{\russell}{%module2 part 5
+\logician{Bertrand Russell}{Bertrand Russell is hailed as one of the founders of modern analytic philosophy. Born May 18, 1872, Russell was not only known for his work in philosophy and logic, but wrote many popular books in various subject areas. He was also an ardent political activist throughout his life.
+
+Russell was born in Trellech, Monmouthshire, Wales. His parents were members of the British nobility. They were free-thinkers, and even made friends with the radicals in Boston at the time. Unfortunately, Russell’s parents died when he was young, and Russell was sent to live with his grandparents. There, he was given a religious upbringing (something his parents had wanted to avoid at all costs). His grandmother was very strict in all matters of morality. During adolescence he was mostly homeschooled by private tutors.
+
+Russell’s influence in analytic philosophy, and especially logic, is tremendous. He studied mathematics and philosophy at Trinity College, Cambridge, where he was influenced by the mathematician and philosopher Alfred North Whitehead. In 1910, Russell and Whitehead published the first volume of Principia Mathematica, where they championed the view that mathematics is reducible to logic. He went on to publish hundreds of books, essays and political pamphlets. In 1950, he won the Nobel Prize for literature.
+
+Russell’s was deeply entrenched in politics and social activism. During World War I he was arrested and sent to prison for six months due to pacifist activities and protest. While in prison, he was able to write and read, and claims to have found the experience “quite agreeable.” He remained a pacifist throughout his life, and was again incarcerated for attending a nuclear disarmament rally in 1961. He also survived a plane crash in 1948, where the only survivors were those sitting in the smoking section. As such, Russell claimed that he owed his life to smoking. Russell was married four times, but had a reputation for carrying on extra-marital affairs. He died on February 2, 1970 at the age of 97 in Penrhyndeudraeth, Wales.
+}{assets/russell.jpg}{russellimage}
+}
+
+\newcommand{\boole}{%module3 part 7
+\logician{George Boole}{George Boole was born on the second of November,1815 in Lincoln, Lincolnshire, England to a family of modest means. His father was a shoe maker who was more dedicated to learning and reading about science and technology than to his profession. In 1834, his father became the curator of the local mechanics institution's library, but this was not enough to support a family, so he continued to make shoes.Because of the connections his family had with the institution, Boole gained an excellent education through \emph{pro bono} tutors. When Boole turned 16, the shoe making business folded and it fell to Boole to provide income. He worked as a private tutor for wealthy families for three years at which point he opened his own school, where he was the schoolmaster for the next 15 years until 1849 when he became the first professor of mathematics at the Queen's University in Cork Ireland.
+
+Though he is mostly known for his work in formal logic, Boole was a mathematician first and the majority of his work relates to that subject. It wasn't until he became life long friends with Augustus De Morgan so we see him really shift to logic. In 1847, he published the work \emph{Mathematical Analysis of Logic} in which he began the process of importing the formal symbolism of mathematics into formal logic and then in 1854 he publsihed the book \emph{Laws of Thought} which presented a complete system of symbolic, formal, logical reasoning. 
+
+In 1855, Boole married Mary Everest and over the next 9 years, they would have five daughters. George Boole died of pneumonia in 1864.\autocite{boole}  
+}{assets/boole.jpg}{booleimage}
+}
+
+\newcommand{\tissa}{%module4 part 13
+\logician{Moggaliputta Tissa}{Moggaliputta Tissa (also written as `Moggaliputtatissa') was born in 327 BCE in Pataliputra, Magadha, which is today Patna, India and died in 247 BCE. He was and is best known for his efforts in reviving and refining the original philosophical ideals of the Buddha and Buddhism through the use of formal logical reasoning, more particularly, the use of Modus Tollens (MT). For example, his work, \emph{Katha-vatthu} (translated as \emph{Points of Controversy}) contains around two hundred arguments which show the inconsistency of around two hundred propositions central to some schools of Buddhist thought. Here is an example of this in action. It is a discussion between a Sthaviravadin (S) (a member of a school of Buddhist thought) and a Pudgalavadin (P) (a member of another school of thought) and concerns whether the soul is known both truly and ultimately (as real and not as heresay):
+\begin{quote}
+S: Is the soul known as a real thing and not merely as heresay?\\
+P: Yes.\\
+S: Is the soul known in the same way as anything else known as real and not merely as heresay?\\
+P: No.\\
+S: Acknowledge your refutation, if the soul is known as real and not as heresay, then indeed, good sir, you should also say that the soul is known in the same way as anything else known that way. What you say here is wrong: namely, that we ought to say that the soul is known as real and not as heresay; but we ought not to say that the soul is known as real and not as heresay in the same way as anything else known that way. If the latter statement cannot be admitted, then indeed the former statement should not be admitted. It is wrong to affirm the former statement and to deny the latter. \autocite[8-9]{Katha}
+\end{quote}
+S's final reasoning here works something like this: If \metav{A}, then \metav{B}, you claim that \metav{A} is true yet also claim that \metav{B} is false. But, if \metav{B} is false, then so is \metav{A}. It is wrong to claim \metav{A} and yet deny \metav{B}. 
+}{assets/tissa.jpg}{tissaimage}
+}
+
+\newcommand{\demorgan}{%module5 part 15
+\logician{Augustus De Morgan}{Augustus De Morgan was born on 27 June 1806 in Madura, India, where his father was employed by the East India Company.Shortly after birth, he became blind in one eye and when his family moved to England, his fellow students often taunted him and played cruel tricks on him because of his disability. When he was ten, his father died coming home from another trip to India. This left the boy under the influence of his mother, a devout Anglican who wanted her son to become an Anglican priest. De Morgan attended Trinity College, Cambridge where he earned a Bachelor's degree. Cambridge, at the time, required all candidates for Master's degrees to take a theological test, and De Morgan refused to take it because of his commitment to the ideal of religious neutrality, so he did not earn that degree. 
+
+Following his refusal to take the exam, he continued his studies at University College London, a new institution founded on religious neutrality. At age twenty-two, he became the first professor of mathematics there. Three years into his professorship, De Morgan became involved in a disagreement with the administration regarding its treatment of a colleague. De Morgan led a faculty protest and, in the end, he resigned his position on the faculty. After his replacement accidentally drowned five years later, he returned to his former position and remained there for thirty years until he got involved in another dispute with the administration. This time over a decision they made which De Morgan thought violated their principle of religious neutrality. He again resigned in protest, bringing his academic career to an end. 
+
+De Morgan had a son, George, who he was very proud of and who became a distinguished mathematician in his own right, and a daughter. Both of his children suffered untimely deaths in quick succession two years after De Morgan left University College London and De Morgan died three years later, at the age of sixty five, possibly because of the grief and depression.}{assets/demorgan.jpg}{demorganimage}
+}
+
+\newcommand{\aristotle}{%module6 part 18
+\logician{Aristotle}{Aristotle was born in 384 BCE in a small city in the Macedonian region of northeastern Greece called Stagira. We do not know about his childhood, `teen years', or early education,  but he was sent to Plato's Academy in Athens at around the age of 17. During this time in history, Athens was the intellectual center of the western world and the Academy was the best school in Athens. Aristotle remained associated with this school until Plato's death in 347. He then left Athens to move to the city of Assos, which is on the northwest coast of what is today Turkey, where he continued the philosophical work he started in the Academy but also branched into what we would today call biology. He lived in Assos for three years and then, upon the death of his friend and host Hermeias, Aristotle moved to the near by island of Lesbos where he continued his philosophical and biological work for two years. While there, Aristotle married Pythias, a niece or Hermeias, and had a daughter also named Pythias.
+
+In 343 BCE, the king of Macedon (Aristotle's home country) named Philip called upon Aristotle to move to the Macedonian capital of Pella in order to tutor the thirteen year old prince, Alexander, who would eventually grow to be known as Alexander the Great. It is difficult to judge how much influence Aristotle had on Alexander and some historians have been tempted to over estimate that influence. There is little concrete evidence concerning their interaction. Overall, it seems reasonable to say that Aristotle tutored Alexander for two or three years, as at around that point Alexander had started his career as a military commander; there is some evidence, however, to support the claim that the two remained in contact for eight years.
+
+Aristotle moved back to Athens in 335 BCE to set up his own school, called the \emph{Lyceum}. Those associated with the school engaged in a research on a wide range of subjects, all of which Aristotle found interesting: astronomy, biology, botany, cosmology, ethics, history, mathematics, medicine, metaphysics, music, philosophy, political theory, rhetoric, theology, and the arts. They wrote exstensively on these subjects and the Lyceum assembled the first great library. While in Athens this second time, Aristotle's wife died and he developed a relationship with a woman named Herpyllis, with whom he had a son named Nicomachus, named after Aristotle's father and after whom Aristotle's \emph{Nichomachian Ethics} was named.
+
+In 323, there was growing anti-Macedonian sentiment in Athens and fearing for his and his family's safety, Aristotle left Athens for the final time after thirteen years. He moved to Chalcis on the island of Euboea where he died of natural causes in 322.    
+}{assets/aristotle.jpg}{aristotleimage}
+} 
+
+\newcommand{\ghazali}{%module6 part 19
+\logician{Ab\^{u} H\^{a}mid al-Ghaz\^{a}l\^{\i}}{
+From approximately 661-1258CE, the Middle East was a center of teaching and learning in the world. During this time, the Syriac Christians in the region began the regular teaching of formal Aristotelian logic and Aristotle's other works and this tradition continued all the way through the Muslim conquests and even under the Umayyad Caliphate. In 750CE, under the Addasid Caliphate, Muslim groups began to adopt teaching Aristotle and began translating the original Greek into Arabic, especially works on formal logic. Many of Aristotle's works and those of other Greek Philosophers survie today because of this interest and translation effort. 
+
+Al-Ghaz\^{a}l\^{\i} was born in either 1058 or 1059 CE in the town of T\^{u}s which is in modern day Iran. Al-Ghaz\^{a}l\^{\i} received an early enduction in his hometown, including in formal logic, and he then went on to study under influential Muslim theologians in the near by city Nishapur and this allowed him to make contact wth various members of the court of Grand-Seljuq Sultan Maliksh\^{a}h. The Sultan's grand-vizier, al-Mulk, appointed al-Ghaz\^{a}l\^{\i} to Niz\^{a}miyya Madrasa in Baghdad, which was the equivalent of a prestigious university today. 
+
+During al-Ghaz\^{a}l\^{\i}'s lifetime, the tenth and eleventh centuries, there was much debate in the Muslim world about what subjects were proper for a scholar to focus on.  Many scholars in this period divided the subjects into Foreign Sciences and Islamic Sciences, with Philosophy being the mother of the former. Since formal logic is a field in Philosophy, many felt that it was improper for a Muslim scholar to study and use.  was at the center of this debate.  Al-Ghaz\^{a}l\^{\i} changed this. He successfully argued that the theological matters are not distinct from the philosophical and that, in particular, formal logic was devoid of any metaphysical assumptions which may conflict with the faith. This meant that formal logic could be studied and used for theological and juristic matters. 
+
+Al-Ghaz\^{a}l\^{\i} died in 1111CE but his successful defense of formal logic allowed it to grow and florish during the Golden Age of Islamic/Arabic Philosophy. Thanks to al-Ghaz\^{a}l\^{\i}, later Arabic Logicians were able to move past merely learning formal logic and begin to add to it. The logican Ibn Sina (Avicenna) improved upon Aristotle's syllogistic logic through adding a proof theory, a version of propositional logic, and even a basic system of Modal Logic.\autocite{ghazali}    
+}{assets/ghazali.jpeg}{ghazaliimage}
+}
+
+\newcommand{\sina}{%module6 part 20
+\logician{Ibn Sina}{Ibn Sina, whose name was Latinized to `Avicenna', was born in the 970s though it may have been as early as 964CE in a Middle Eastern town called Afshana. His father served as a local administrative official (governor) and was employed by the Persian Samanid dynasty and Sina moved to the capital, Bukhara, with his family while quite young. This capital was the center of a Persian linguistic revival as well as a  center of intellectual trade, meaning that the palace library was massive and extensive, including many original Greek philosophical and logical works with Arabic translations. This allowed Sina to learn everything in the known world at the time and he did so with gusto. Sina, through this library, had an excellent education which, according to him, all started with learning formal logic. Once he had read and interalized all that he could from the library, Sina wrote his first original work, which he dedicated to those who allowed him access to the library. 
+
+In his various works, Sina developed and refined a system of formal logic and natural deduction which was based on the work of Aristotle but Sina took free liberty to reinvent it as he saw fit. Because the system was spread out over many works, it was later synthized by the Persian logician al-Katibi into \emph{al-Risala al-Shamsiyya} which is considered to be the most widely used logic textbook of all time. Sina's logical system sought to merge the syllogistic systems of Aristotle and a propositional logic system which he had compiled. He did this through dividing propositions into subjects, predicates, and quantifiers (which may or may not be present) and recognizing that categorical statements like ``all men are mortal'' can be understood as conditional statements. This advancement allowed him to take the first steps towards Quantified Logic, as we have it today, and start to pioneer modal syllogism, which were read and expanded upon by Thomas Aquinas and William of Ockham. 
+
+After his death in 1037CE,  Sina's works were translated into Latin and other western classical languages (giving him the Latinized name `Avicenna') where they gave the foundation for formal logic, Natural Philosophy, Psychology, Metaphysics, and Ethics. 
+
+}{assets/sina.jpeg}{sinaimage}
+}
+
+\newcommand{\ockham}{%module7 part 22
+\logician{William of Ockham}{
+William of Ockham (“Oak Hamlet”) was born in late 1287 or early 1288. Somewhere between the ages of 7 and 13 he was “given” to the Franciscan order and subsequently educated at Greyfriars, a prestigious Franciscan convent school in London.  Sometime between 1310 and 1318, he began studying theology in Oxford, but returned to London in 1321 without become a “master” of theology. Two years later, someone traveled to the Papal Court in Avignon and accused him of teaching heresy.  He was summoned to Avignon, where he stayed for four years before fleeing with Michael of Cienna, the administrative head of the Franciscan order, to seek refuge under the ruler of the Holy Roman Empire, who was quarreling with the Pope.  
+He lived out his last 20 years in Milan, never returning to his native England.  
+
+Ockham is considered to have been one of the greatest logicians between Chryssipus (3rd century b.c.e.) and Leibniz (18th century c.e.), continuing the work of Aristotle, Ibn Sina, and Thomas Aquinas. He is best known for the methodological principle of parsimony, “Occam’s Razor,” the idea that that, other things being equal, one should favor the explanation that makes the fewest assumptions and posits the fewest entities. In his philosophical career, this cohered with his defense of nominalism, positing only the existence of concrete particulars and thus denying the substantive existence of universals. (This may have been the catalyst for the charge of heresy, as it had profound implications for the doctrine of transubstantiation.) In the natural sciences, he also rejected the concept that human beings could identify Final Causes in nature—understood in that age as the idea that humans could comprehend the Creator’s intentions with respect to natural phenomena. Besides parsimony, Ockham’s rationale also included the idea the human mind was too finite to reliably comprehend or even guess at God’s intentions. He thereby anticipated—albeit with different motives-- the empirical turn British philosophy would take centuries later with Bacon and Hobbes.
+
+His other innovations in logic include: A systematic and comprehensive treatment of modal syllogisms (which he encountered from Sina through Aquinas) including a discussion of then little-understood modality of obligation (both are found in his Summa of Logic); formulating in ordinary language of the principles that would later come known as De Morgan’s Law; and last, but not least, being the first to systematically explore the concept of a tertiary (three-valued) logic, an idea that would not be taken up again until the $19^{th}$ century.
+}{assets/ockham.jpg}{ockhamimage}
+}
+
+
+\newcommand{\godel}{%module8 part 24
+\logician{Kurt G\"{o}del}{Kurt G\"{o}del (ger-dle) was born on April 28, 1906 in Br\"{u}nn in the Austro-Hungarian empire (now Brno in the Czech Republic). Due to his inquisitive and bright nature, young Kurt was often called “Der kleine Herr Warum” (The Little Mr. Why) by his family. He excelled in academics from primary school onward, where he got less than the highest grade only in mathematics. G\"{o}del was often absent from school due to poor health and was exempt from physical education. He was diagnosed with rheumatic fever during his childhood. Throughout his life, he believed this permanently affected his heart despite medical assessment saying otherwise.
+
+G\"{o}del began studying at the University of Vienna in 1924 and completed his doctoral studies in 1929. He first intended to study physics, but his interests soon moved to mathematics and especially logic, in part due to the influence of the philosopher Rudolf Carnap. His dissertation, written under the supervision of Hans Hahn, proved that Quantified Logic (of the sort learned in this class) with identity was complete and sound. Only a year later, he obtained his most famous results—the first and second incompleteness theorems. These showed, roughly, that there are certain statements in mathematics which cannot be proven using mathematics, math is, in this sense, incomplete. During his time in Vienna, G\"{o}del was heavily involved with the Vienna Circle, a group of scientifically-minded philosophers that included Carnap, whose work was especially influenced by G\"{o}del’s results.
+
+In 1938, G\"{o}del married Adele Nimbursky. His parents were not pleased: not only was she six years older than him and already divorced, but she worked as a dancer in a nightclub. Social pressures did not affect G\"{o}del, however, and they remained happily married until his death.
+
+After Nazi Germany annexed Austria in 1938, G\"{o}del and Adele emigrated to the United States, where he took up a position at the Institute for Advanced Study in Princeton, New Jersey. Despite his introversion and eccentric nature, G\"{o}del’s time at Princeton was collaborative and fruitful. He published essays in set theory, philosophy and physics. Notably, he struck up a particularly strong friendship with his colleague at the IAS, Albert Einstein.
+
+In his later years, G\"{o}del’s mental health deteriorated. His wife’s hospitalization in 1977 meant she was no longer able to cook his meals for him. Having suffered from mental health issues throughout his life, he succumbed to paranoia. Deathly afraid of being poisoned, G\"{o}del refused to eat. He died of starvation on January 14, 1978, in Princeton.
+}{assets/godel.jpg}{godelimage}
+}
+
+\newcommand{\leibniz}{%module9 part 26
+\logician{Gottfried Wilhelm Leibniz}{Leibniz was born to a Lutheran family in the city of Leibzig in what was then the Holy Roman Empire (modern Germany),  July first 1646, this was two years prior to the end of the Thirty Years War, a religious conflict between different sects of Christianity (which began because of the doctrine, `his land, his religion', and ended with the compromise `his land, his religion'). Leibniz came from a highly educated family who had ties to both sides of the conflict. When his father died in 1652, his mother used her familial connections and access to his father's library to see that Leibniz was properly educated. In 1661, Leibniz began his formal education at the University of Leipzig. Because the `contemporary' philosophical works of Descartes, Galileo, Hobbes and others had not taken hold in the Holy Roman Empire, Leibniz's education was more historical, though he was exposed to some of the more liberal `contemporary' ideas such as humanism. 
+
+In 1666, Leibniz pubished his first wholely original work, \emph{Dissertation on the Art of Combinations}, which was a sketch of a `logical calculus' (symbolic logic), the continued pursuit of this logical framework would occupy him for much of the rest of his life, including integrating it with areas like Metaphysics and applying these ideas to various theological questions. 
+
+Leibniz's final years were mared with a scandle related to who discovered calculus. This debate is still present in some circles; Isaac Newton and Leibniz both, at around the same time, published works which outlined and introduced the mathematical subject calculus. Both of them, also, wanted credit for this discovery. Newton claimed that Leibniz had stolen the ideas from him and when this came to court in Hanover, Leibniz was mocked for his wig and old-style clothing. Leibniz died there on November 14, 1716. 
+}{assets/leibniz.jpg}{leibnizimage}
+}
+
+
+\newcommand{\barcan}{%module9 part 27
+\logician{Ruth Barcan Marcus}{Ruth Barcan Marcus was born in New York City on the second of August 1921 and was the third daughter of Samuel and Rose Barcan. Her parents were Eastern European Jews who settled in the then uncongested areas of the Bronx. Marcus went to public school and then was accepted into junior and senior high schools for gifted children. In the afternoon, the three daughters attended Yiddish language schools where they learned Jewish history, literature, dance, and history. She went on to receive a Bachelor's degree from New York University in Mathematics and Philosophy and then earned a PhD in Philosophy from Yale. In addition to er academic acomplishments, Barcan became known as a notable athlete, noted as one of the finest fencers to ever attend NYU and had the second world war not canceled the games, she would have competed in the Olympics.   In 1942, Barcan married Jules Alexander Marcus and they had four children. They divorced in 1976. 
+
+From 1964 to 1970, she served as the head of the Philosophy department at the University of Illinois, Chicago and under her leadership it grew from a two-member faculty to a department of twenty and recognized as one of the best in the United States for graduate school. Her contributions to philosophy, in general, were also substantial. She is credited with creating, almost from nothing, Modal Quantified Logic and is now most famous for her very contraversial Barcan Formula, \ebox$\forall$xFx\eif$\forall$x\ebox Fx. This means, roughly that if it's necessary that everythinig is F, then everything is necessarily F. This is controversal because it implies that there are no merely possible things; you, for example, necessarily exist.  
+
+Barcan passed away on the nineteenth of February 2012.\autocite{barcan} 
+
+}{assets/barcan.jpg}{barcanimage}
+}
+
+\newcommand{\kripke}{%module10 part 29
+\logician{Saul A. Kripke}{Saul Kripke was born in 1940 to a rabbi and a teacher. From a young age he showed great mathematical, logical, and (by extension) philosophical abilities. When he was 15 he developed the semantics for Modal Quantified Logic and used those semantics to prove that they are complete (essentially, if it is valid, then it is provable). His proof of the completeness was published when he was 18 years old. According to legend, a mathematics professor at Harvard invited him to take a teaching position prior to even graduating high school. He replied ``my mother said that I should finish high school and go to college first''. Today, Kripke is considered one of the greatest living philosophers. His work \emph{Naming and Necessity} concerning Modal Logic and language, according to some, turned Philosophy on its head over night.}{assets/kripke.jpg}{kripkeimage}
+}
+
+
+%\newcommand{\frege}{%
+%\logician{Gottlob Frege}{
+%
+%}{}{}
+%}
