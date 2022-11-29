@@ -76,7 +76,7 @@ A, P \eor  Q, \ebox A, C \eor  \ebox D, \ebox \ebox (A \eif  R), \ebox \ediamond
 \end{center}
 \chapter{Part 29 The Systems of Modal Logic}
 Now that we know how to make sentences in ML, we can look at how one can make interpretations (models), countermodels, and proofs in ML. We will use $\vDash$  to express provability/validity (if it is provable in these systems, then it is valid), just like how we did in PL. So $A_1,A_2,\ldots A_n$ $\vDash$  C means that C can be proven from $A_1,A_2,\ldots A_n$. There are many different applications of ML which we may want to consider and these different applications allow for different inference rules. As mentioned previously, \ebox A $\vDash$ A is just fine if we are working in the T system but it is not if we are working in the more basic K system. We will be looking at a number of these `systems' of ML, and so it will be useful to add a subscript to indicate which system we are working with. So for example, if we want to say that we can prove C from $A_1,A_2,\ldots A_n$ in system K, we will write: $A_1,A_2,\ldots A_n$ $\vDash_K$ C.
-1
+
 \section{But what are these systems?}
 
 Imagine, if you will, a world consisting of an arbitrary number of insular (island) micro-nations. These nations could wish to set up any number of different trading networks between them, either internally or with other nations or both. Sometimes, all of the nations will have a product similar (for example, all of the nations could grow oranges), other times, there may be products which one island has (or a few islands have) but not all of them do. The different sorts of trading relations these nations have between each other (or internally) represent, on an abstract level, the different systems which ML could be using in a given context or argument. Just for the sake of explanation, we will say that there aren't any laws or the like forbidding a product from being traded once a trade route (either internal or international) is established. For example, suppose that we have a world where there are only two insular nations within trading distance of each other, one of them ($w_1$) has P while the other ($w_2$) has Q. We might diagram (\gls{model}) a trading relationship between them like so, with the arrows representing the `accessibility' of the products (meaning that if an arrow is going from $w_1$ to $w_2$, then $w_1$ has access to the products in $w_2$):\\
@@ -354,7 +354,7 @@ We start with a particularly simple system called \Gls{K}, in honor of the philo
 
 Notice that there are no other worlds except for \metav{a}, which we will use to mark the `actual world'. From \metav{a}'s perspective, nothing is possible because there are no possible worlds it has access to. Even in such a barren model, however, there are modal operations we can use. 
 
-K has a very special kind of subproof (called a `strict subproof') and a few new basic rules for \ebox . These strict subproofs allow us to reason about alternative possibilities by, in a sense, moving into that alternative possibility. We are changing our focus from the actual world to a possible world, working inside of it, and then exporting conclusions back to the actual world. The strict subproofs look like ordinary subproofs, but it has a very special caveat; all assumptions are disregarded, and we are not allowed to appeal to any lines outside the strict subproof (except as allowed by the modal rules given below). Different systems allow for us to import different assumptions into the strict subproof, so as we add more features to R, what we can prove increases.
+K has a very special kind of subproof (called a `strict subproof' or `SS' for short) and a few new basic rules for \ebox . These strict subproofs allow us to reason about alternative possibilities by, in a sense, moving into that alternative possibility. We are changing our focus from the actual world to a possible world, working inside of it, and then exporting conclusions back to the actual world (with the appropriate qualifier). The strict subproofs look like ordinary subproofs, but it has a very special caveat; all assumptions are disregarded, and we are not allowed to appeal to any lines outside the strict subproof (except as allowed by the modal rules given later). Different systems allow for us to import different assumptions into the strict subproof, so as we add more features to R, what we can prove increases.
 
 \kripke
 
@@ -368,12 +368,12 @@ description={A system in Modal Logic (ML) such that there are no restrictions on
 
 We said above that a strict subproof allows us to reason about arbitrary alternate possible situations. What can be proved in the right kind of strict subproof holds in all alternate possible situations, and so is necessary. On the other hand, if we’ve assumed that something is necessary, we have therewith assumed that it is true in all alternate possible situations. Hence, we have the rule \ebox E:
 \factoidbox{\begin{fitchproof}
-\hypo{m}{\ebox \metav{A}}
+\hypo[m]{a}{\ebox \metav{A}}
 \open
-\hypo{n}{\metav{B}}\by{assumed strict subproof}{}
-\have{p}{\metav{A}}	\boxe{m}
+\hypo[n]{b}{\metav{B}}\by{SS}{}
+\have[p]{c}{\metav{A}}	\boxe{a}
 \end{fitchproof}	
-\textbullet \ebox E can only be applied if line m (containing \ebox A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m.}
+\ebox E can only be applied if line m (containing \ebox A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m.}
 
 \ebox E allows you to assert A inside a strict subproof if you have \ebox A outside the strict subproof. The restriction means that you can only do this in the first strict subproof, you cannot apply the \ebox E rule inside a nested strict subproof. So the following is not allowed:
 \begin{fitchproof}
@@ -381,9 +381,9 @@ We said above that a strict subproof allows us to reason about arbitrary alterna
 \hypo{2}{\ebox B}	
 \hypo{3}{\ebox C}
 \open
-\hypo{4}{B}\by{assumed strict subproof}{}
+\hypo{4}{B}\by{SS}{}
 \open
-\hypo{5}{C}\by{assumed strict subproof}{}	
+\hypo{5}{C}\by{SS}{}	
 \have{6}{A}	\by{incorrect use of \ebox E}{1}	
 \end{fitchproof}
 The incorrect use of \ebox E on line 6 violates the condition, because although line 1 lies outside the strict subproof in which line 4 falls, the strict subproof containing line 4 lies inside the strict subproof beginning on line 2 which does not contain line 1.
@@ -393,7 +393,7 @@ Let’s begin with an example.
 \hypo{1}{\ebox A}
 \hypo{2}{\ebox B}	
 \open
-\hypo{3}{A}
+\hypo{3}{A}\by{SS}{}
 \have{4}{B}\boxe{2}
 \have{5}{A\eand B}\ai{4,5}
 \close
@@ -403,9 +403,9 @@ We can also mix regular subproofs and strict subproofs:
 \begin{fitchproof}
 \hypo{1}{\ebox (A\eif B)}
 \open
-\hypo{2}{\ebox A}\by{for conditional}{}
+\hypo{2}{\ebox A}\by{AS \emph{for conditional}}{}
 \open
-\hypo{3}{A\eif B}
+\hypo{3}{A\eif B}\by{SS}{}
 \have{4}{A}\boxe{2}
 \have{5}{B}\ce{3,4}
 \close
@@ -424,7 +424,7 @@ In general, the strict subproofs allow us to derive a formula \ebox A if we can 
 Suppose we wanted to prove \ebox (A \eif  A). The first thing we need to do is prove that A\eif A is a theorem. This is simple enough, you already know how to do that using PL. You simply present a proof of A\eif A which doesn’t start with any premises, like this:
 \begin{fitchproof}
 \open
-\hypo{1}{A}
+\hypo{1}{A}\by{AS}{}
 \have{2}{A}\by{R}{1}
 \close
 \have{3}{A\eif A}\ci{1-2}	
@@ -432,7 +432,7 @@ Suppose we wanted to prove \ebox (A \eif  A). The first thing we need to do is p
 You will notice that the subproof in this proof did not make any assumptions, call on anything which came before the first line. This means that A\eif A is a tautology (as you may recall). But the thing about tautologies is that they are always true. regardless of what world we are in. Since we did not make any assumptions, import anything (unless allowed in the system), we know that \ebox (A\eif A) is true. The first version of the strict subproof allows us to show this. It works like so:
 \begin{fitchproof}
 \open
-\hypo{1}{A}
+\hypo{1}{A}\by{SS}{}
 \have{2}{A}\by{R}{1}
 \close
 \have{3}{\ebox(A\eif A)}\by{\ebox\eif I}{1-2}	
@@ -441,7 +441,7 @@ You will notice that the subproof in this proof did not make any assumptions, ca
 Put explicitly, here is the rule in the abstract:
 \factoidbox{\begin{fitchproof}
 \open
-\hypo[m]{a}{\metav{A}}
+\hypo[m]{a}{\metav{A}} \by{SS}{}
 \ellipsesline
 \have[n]{b}{\metav{B}}
 \close
@@ -453,7 +453,7 @@ It is essential to emphasize that in strict subproof you cannot use any rule whi
 \begin{fitchproof}
 \hypo{1}{A}
 \open
-\hypo{2}{\enot A}
+\hypo{2}{\enot A}\by{SS}{}
 \have{3}{A}\by{incorrect use of R}{1}
 \close
 \have{4}{\ebox (\enot A\eif A)} \boxci{2-3}
@@ -469,7 +469,7 @@ This is not a legitimate proof, because at line 3 we appealed to line 1, even th
 For the second variety of strict subproof, we look back to the \enot I and \enot E rules from PL. The modal counterpart to these rules is \ebox \enot I and it works exactly the same way. You make an assumption, derive a contradiction, and then receive the negation of the assumption. The big thing is that if you didn't need to use anything which was merely possible or actual, you can generalize this to a claim about all possible worlds. So, in general, \ebox \enot I looks like this: 
 \factoidbox{\begin{fitchproof}
 \open
-\hypo[m]{m}{\metav{A}}
+\hypo[m]{m}{\metav{A}}\by{SS}{}
 \have[n]{n}{\metav{B}}
 \have[p]{p}{\enot \metav{B}}
 \close	
@@ -485,7 +485,7 @@ For the third, and final, version of the strict subproofs, we need to take a loo
 \factoidbox{\begin{fitchproof}
 \hypo[m]{m}{\ebox \metav{A}}	
 \open
-\hypo[n]{n}{\metav{A}}
+\hypo[n]{n}{\metav{A}}\by{SS}{}
 \have[p]{p}{\metav{B}}
 \close
 \have[r]{r}{\ebox \metav{B}}\boxi{m, n-p}	
@@ -502,7 +502,7 @@ In the premises of this argument, we had two necessary truths and one merely pos
 \hypo{2}{\ebox (S\eif M)}
 \hypo{3}{\ediamond P}
 \open
-\hypo{4}{P}\by{for strict subproof}{}
+\hypo{4}{P}\by{SS}{}
 \have{5}{P\eif S}\boxe{1}
 \have{6}{S\eif M}\boxe{2}
 \have{7}{P\eif M}\hs{5,6}
@@ -514,7 +514,7 @@ Put abstractly, the rule is defined like so:
 \factoidbox{\begin{fitchproof}
 \hypo[m]{m}{\ediamond \metav{A}}	
 \open
-\hypo[n]{n}{\metav{A}}
+\hypo[n]{n}{\metav{A}}\by{SS}{}
 \have[p]{p}{\metav{B}}
 \close
 \have[r]{r}{\ediamond \metav{B}}\posi{m, n-p}	
@@ -558,7 +558,7 @@ The name for this rule relates directly to the special feature which the R relat
 The line n on which rule RF is applied must not lie in a strict subproof that begins after line m. The restriction on RF is in a way the opposite of the restriction on \ebox E: you can only use \ebox E in a nested strict subproof, but you cannot use RF in a nested strict subproof. Also, to be clear, this is an inference rule, not an equivalency rule. The necessity must be the main operator to use this. We can prove things in T which we could not prove in K, e.g., \ebox A \eif  A.
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}	
+\hypo{1}{\ebox A}	\by{AS}{}
 \have{2}{A}\rf{1}	
 \close
 \have{3}{\ebox A\eif A} \ci{1-2}
@@ -573,9 +573,9 @@ The other thing which having our worlds be reflexive gets us is the ability to s
 The restrictions for this are the same as before, you cannot use this within a strict subproof. That said, it can be very useful. For example, suppose that we wanted to show that if something, A, was possibly necessary (\ediamond \ebox A), then it is possible (\ediamond A). We can do this with just reflexivity: 
 \begin{fitchproof}
 \open
-\hypo{1}{\ediamond \ebox A}\by{for conditional}{}
+\hypo{1}{\ediamond \ebox A}\by{AS \emph{for conditional}}{}
 \open
-\hypo{2}{\ebox A} \by{for strict subproof}{}
+\hypo{2}{\ebox A} \by{SS}{}
 \have{3}{A}\rf{2}
 \close
 \have{4}{\ediamond A}\posi{1,2-3}
@@ -630,16 +630,16 @@ Transitivity being in our system also gives us a new way to import lines into a 
 \factoidbox{\begin{fitchproof}
 \have[m]{m}{\ebox \metav{A}}	
 \open
-\hypo[n]{n}{B} \by{for strict subproof}{}
+\hypo[n]{n}{B} \by{SS}{}
 \have[p]{p}{\ebox \metav{A}}\rfour{m}	
 \end{fitchproof}}
 
 Note that R4 can only be applied if line m (containing \ebox A) lies outside of the strict subproof in which line n falls, and this strict subproof is not itself part of a strict subproof not containing m. Rule R4 looks just like \ebox E, except that instead of yielding A from \ebox A it yields \ebox A inside a strict subproof. The restriction is the same, however: R4 allows us to “import” \ebox A into a strict subproof, but not into a strict subproof itself nested inside a strict subproof. However, if that is necessary, an additional application of R4 would have the same result. Now we can prove even more results. For instance:
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}\by{for conditional}{}
+\hypo{1}{\ebox A}\by{AS \emph{for conditional}}{}
 \open
-\hypo{2}{A} \by{for strict subproof}{}
+\hypo{2}{A} \by{SS}{}
 \have{3}{\ebox A}\rfour{m}
 \close
 \have{4}{\ebox \ebox A}\boxi{1,2-3}
@@ -650,12 +650,12 @@ Note that R4 can only be applied if line m (containing \ebox A) lies outside of 
 This proves the first general inference rule I gave for S4. You can always use it, if the system is transitive. Going the other way, let's prove the second version of the TR rule:
 \begin{fitchproof}
 \open
-\hypo{1}{\ediamond \ediamond A}\by{for conditional}{}
+\hypo{1}{\ediamond \ediamond A}\by{AS \emph{for conditional}}{}
 \open
-\hypo{2}{\enot \ediamond A}\by{for reductio}{}
+\hypo{2}{\enot \ediamond A}\by{AS \emph{for reductio}}{}
 \have{3}{\ebox \enot A}\mn{2}	
 \open
-\hypo{4}{\ediamond A}\by{for strict subproof}{}
+\hypo{4}{\ediamond A}\by{SS}{}
 \have{5}{\ebox \enot A}\rfour{3}
 \have{6}{\enot \ediamond A}\mn{5}
 \have{7}{\ediamond A\eor A}\oi{4}
@@ -692,7 +692,7 @@ As a final rule which can be added, the universality of S5 gives us the ability 
 \factoidbox{\begin{fitchproof}
 \have[m]{m}{\ediamond \metav{A}}	
 \open
-\hypo[n]{n}{\metav{B}} \by{for strict subproof}{}
+\hypo[n]{n}{\metav{B}} \by{SS}{}
 \have[p]{p}{\ediamond \metav{A}}\rfive{m}	
 \end{fitchproof}}
 
@@ -700,7 +700,7 @@ Rule R5 can only be applied if line m (containing \ediamond A) lies outside of t
 \begin{fitchproof}
 \have{m}{\enot \ebox \metav{A}}	
 \open
-\hypo{n}{\metav{B}} \by{for strict subproof}{}
+\hypo{n}{\metav{B}} \by{SS}{}
 \have{p}{\enot \ebox \metav{A}}\rfive{m}	
 \end{fitchproof}
 
@@ -895,7 +895,7 @@ Now, remember what our goal is, \ediamond B. If we were working in a T system, t
 \have{3}{\ediamond \enot A}\mn{1}	
 \have{4}{\ebox B}\ci{2,3}	
 \open
-\hypo{5}{\enot A}\by{for strict subproof}{}
+\hypo{5}{\enot A} \by{SS}{}
 \end{fitchproof}
 
 Now we can use the \ebox E rule to import B into the subproof, because \ebox E explicitly allows for this, like so: 
@@ -906,7 +906,7 @@ Now we can use the \ebox E rule to import B into the subproof, because \ebox E e
 \have{3}{\ediamond \enot A}\mn{1}	
 \have{4}{\ebox B}\ci{2,3}	
 \open
-\hypo{5}{\enot A}\by{for strict subproof}{}
+\hypo{5}{\enot A} \by{SS}{}
 \have{6}{B}\boxe{4}
 \end{fitchproof}
 
@@ -918,7 +918,7 @@ At this point, we only need to close the subproof because \ediamond I gives us t
 \have{3}{\ediamond \enot A}\mn{1}	
 \have{4}{\ebox B}\ci{2,3}	
 \open
-\hypo{5}{\enot A}\by{for strict subproof}{}
+\hypo{5}{\enot A} \by{SS}{}
 \have{6}{B}\boxe{4}
 \close
 \have{7}{\ediamond B}\posi{3,5-6}
@@ -935,13 +935,13 @@ $\vDash_T$ \ebox A\eif \ediamond A
 This is fairly simple. Immediately you should see, working backwards a little, that this is a conditional. As a result, we are going to need to do a \eif I. So, let's start there, assuming the antecedent:
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}\by{for conditional}{}
+\hypo{1}{\ebox A}\by{AS \emph{for conditional}}{}
 \end{fitchproof}
 
 Now what should we do? Well, since we are working in the T system, there are a few options we can work from. Since we know that it won't work in K, the only new option is to use RF: 
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}\by{for conditional}{}
+\hypo{1}{\ebox A}\by{AS \emph{for conditional}}{}
 \have{2}{A}\rf{1}
 \end{fitchproof}
 
@@ -949,7 +949,7 @@ From here, since we are after \ediamond A, we can easily make this with RF again
 
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}\by{for conditional}{}
+\hypo{1}{\ebox A}\by{AS \emph{for conditional}}{}
 \have{2}{A}\rf{1}
 \have{3}{\ediamond A}\rf{2}
 \end{fitchproof}
@@ -958,7 +958,7 @@ And now we just need to close the subproof to be done:
 
 \begin{fitchproof}
 \open
-\hypo{1}{\ebox A}\by{for conditional}{}
+\hypo{1}{\ebox A}\by{AS \emph{for conditional}}{}
 \have{2}{A}\rf{1}
 \have{3}{\ediamond A}\rf{2}
 \close
@@ -985,7 +985,7 @@ The only thing we can do immediately is open up a strict subproof, namely \ediam
 \hypo{3}{\ebox A}
 \hypo{4}{\ediamond C\eif D}	
 \open
-\hypo{5}{A\eif B}\by{for strict subproof}{}
+\hypo{5}{A\eif B} \by{SS}{}
 \end{fitchproof}
 
 Now, we see that we can import A from line 3:
@@ -996,7 +996,7 @@ Now, we see that we can import A from line 3:
 \hypo{3}{\ebox A}
 \hypo{4}{\ediamond C\eif D}	
 \open
-\hypo{5}{A\eif B}\by{for strict subproof}{}
+\hypo{5}{A\eif B} \by{SS}{}
 \have{6}{A}\boxe{3}
 \end{fitchproof}
 
@@ -1008,7 +1008,7 @@ This opens up the ability to get B in our strict subproof, like so:
 \hypo{3}{\ebox A}
 \hypo{4}{\ediamond C\eif D}	
 \open
-\hypo{5}{A\eif B}\by{for strict subproof}{}
+\hypo{5}{A\eif B} \by{SS}{}
 \have{6}{A}\boxe{3}
 \have{7}{B}\ce{5,6}
 \end{fitchproof}
@@ -1020,7 +1020,7 @@ We could end here and get \ediamond B, but that's not what we are after. So, the
 \hypo{3}{\ebox A}
 \hypo{4}{\ediamond C\eif D}	
 \open
-\hypo{5}{A\eif B}\by{for strict subproof}{}
+\hypo{5}{A\eif B} \by{SS}{}
 \have{6}{A}\boxe{3}
 \have{7}{B}\ce{5,6}
 \have{8}{B\eif C}\boxe{2}
@@ -1035,7 +1035,7 @@ From here, it's simply leaving the strict subproof and standard PL work: 
 \hypo{3}{\ebox A}
 \hypo{4}{\ediamond C\eif D}	
 \open
-\hypo{5}{A\eif B}\by{for strict subproof}{}
+\hypo{5}{A\eif B} \by{SS}{}
 \have{6}{A}\boxe{3}
 \have{7}{B}\ce{5,6}
 \have{8}{B\eif C}\boxe{2}

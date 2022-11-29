@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  6 OCT 2022 04:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  29 NOV 2022 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2940,15 +2940,15 @@ Overfull \hbox (34.55347pt too wide) in paragraph at lines 85--93
 <assets/russell.jpg, id=655, 185.69376pt x 274.02374pt>
 File: assets/russell.jpg Graphic file (type jpg)
 <use assets/russell.jpg>
-Package pdftex.def Info: assets/russell.jpg  used on input line 289.
+Package pdftex.def Info: assets/russell.jpg  used on input line 295.
 (pdftex.def)             Requested size: 71.13188pt x 104.97054pt.
 
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
-(biblatex)                Using fallback driver on input line 289.
+(biblatex)                Using fallback driver on input line 295.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 289--289
+Overfull \hbox (3.965pt too wide) in paragraph at lines 295--295
 [][][][][][][] 
  []
 
@@ -3086,11 +3086,7 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
-[139]
-Overfull \vbox (15.61656pt too high) has occurred while \output is active []
-
-
-[140 <./assets/ghazali.jpeg>] [141] [142]
+[139] [140 <./assets/ghazali.jpeg>] [141] [142]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 387.
  [143] [144] [145
@@ -3422,10 +3418,10 @@ Package logreq Info: Writing requests to 'forallxd.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62448 strings out of 477843
- 1213302 string characters out of 2823599
- 2093615 words of memory out of 3000000
- 79344 multiletter control sequences out of 15000+600000
+ 62447 strings out of 477843
+ 1213253 string characters out of 2823599
+ 2093479 words of memory out of 3000000
+ 79343 multiletter control sequences out of 15000+600000
  700397 words of font info for 329 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,23n,131p,2358b,4514s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -3456,7 +3452,7 @@ xsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
 tic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/he
 lvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/boondox/zxxrw8a.pfb>
-Output written on forallxd.pdf (304 pages, 3213443 bytes).
+Output written on forallxd.pdf (304 pages, 3213327 bytes).
 PDF statistics:
  2955 PDF objects out of 2984 (max. 8388607)
  910 named destinations out of 1000 (max. 500000)

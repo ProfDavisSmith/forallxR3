@@ -1,17 +1,17 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'forallxd.blg'
-[142] biber-MSWIN64:340> INFO - === 
-[177] Biber.pm:418> INFO - Reading 'forallxd.bcf'
-[323] Biber.pm:978> INFO - Found 22 citekeys in bib section 0
-[340] Biber.pm:4401> INFO - Processing section 0
-[353] Biber.pm:4592> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[399] bibtex.pm:1713> INFO - LaTeX decoding ...
-[429] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliography.bib'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[565] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[565] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[598] bbl.pm:654> INFO - Writing 'forallxd.bbl' with encoding 'UTF-8'
-[608] bbl.pm:757> INFO - Output to forallxd.bbl
-[609] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\davis\AppData\Local\Temp\biber_tmp_7vey\f4d088b3f9f145b5c3058da33afd57d4_11124.utf8, line 7, warning: 84 characters of junk seen at toplevel
-[609] Biber.pm:132> INFO - WARNINGS: 1
+[130] biber-MSWIN64:340> INFO - === 
+[180] Biber.pm:418> INFO - Reading 'forallxd.bcf'
+[350] Biber.pm:978> INFO - Found 22 citekeys in bib section 0
+[367] Biber.pm:4401> INFO - Processing section 0
+[380] Biber.pm:4592> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[422] bibtex.pm:1713> INFO - LaTeX decoding ...
+[453] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliography.bib'
+[575] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[575] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[575] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[575] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[596] bbl.pm:654> INFO - Writing 'forallxd.bbl' with encoding 'UTF-8'
+[605] bbl.pm:757> INFO - Output to forallxd.bbl
+[605] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\davis\AppData\Local\Temp\biber_tmp_o_MX\f4d088b3f9f145b5c3058da33afd57d4_12928.utf8, line 7, warning: 84 characters of junk seen at toplevel
+[605] Biber.pm:132> INFO - WARNINGS: 1

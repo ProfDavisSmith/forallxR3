@@ -44,6 +44,20 @@
       \field{title}{Argument Clinic}
       \field{origdateera}{ce}
     \endentry
+    \entry{tissaimage}{artwork}{}
+      \list{institution}{1}{%
+        {Nava Jetavana Temple}%
+      }
+      \list{location}{1}{%
+        {Shravasti, Uttar Pradesh}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Asoka and Moggaliputtatissa at the Third Council}
+      \field{year}{330}
+      \field{dateera}{ce}
+    \endentry
     \entry{boole}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5ae1608341470e02562d39fb84491201}{%
@@ -231,6 +245,20 @@
       \verb jwa.org/encyclopedia/article/marcus-ruth-barcan
       \endverb
     \endentry
+    \entry{booleimage}{artwork}{}
+      \list{institution}{1}{%
+        {Library of Congress}%
+      }
+      \list{location}{1}{%
+        {www.loc.gov/item/2007675556/}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{title}{George Boole, -1964; head and shoulders, facing left}
+      \field{year}{1880}
+      \field{dateera}{ce}
+    \endentry
     \entry{ghazali}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eb5abc14e4ff228086e02c04b6cce279}{%
@@ -269,6 +297,12 @@
       \field{howpublished}{\url{https://plato.stanford.edu/archives/sum2020/entries/al-ghazali/}}
       \field{title}{{al-Ghazali}}
       \field{year}{2020}
+    \endentry
+    \entry{ghazaliimage}{artwork}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{Imam Ghazali}
     \endentry
     \entry{sinaimage}{online}{}
       \name{author}{1}{}{%
@@ -436,6 +470,51 @@
       \field{year}{1915}
       \field{dateera}{ce}
     \endentry
+    \entry{russellimage}{artwork}{}
+      \list{institution}{1}{%
+        {McMaster U Library}%
+      }
+      \list{location}{2}{%
+        {William Ready Division of Archives}%
+        {Research Collections}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Bertrand Russell}
+      \field{year}{1907}
+      \field{dateera}{ce}
+    \endentry
+    \entry{chrysippusimage}{artwork}{}
+      \list{institution}{2}{%
+        {Louvre Museum, Department of Greek, Etruscan}%
+        {Roman Antiquities}%
+      }
+      \list{location}{1}{%
+        {Paris, France}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Chrysippus of Soli}
+      \field{year}{200}
+      \field{dateera}{ce}
+    \endentry
+    \entry{godelimage}{artwork}{}
+      \list{institution}{2}{%
+        {Princeton U Library, Manuscript Division, Department of Rare Books}%
+        {Special Collections, Kurt Gödel Papers}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ, USA}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Portrait of Kurt Gödel}
+      \field{year}{1925}
+      \field{dateera}{ce}
+    \endentry
     \entry{ockhamimage}{artwork}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a9e93f7ca8cd73ae8d93c0df70d413b4}{%
@@ -507,163 +586,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Logic for Philosophy}
       \field{year}{2010}
-    \endentry
-    \entry{tissaimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Nava Jetavana Temple}%
-      }
-      \list{location}{1}{%
-        {Shravasti, Uttar Pradesh}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{1}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Asoka and Moggaliputtatissa at the Third Council}
-      \field{year}{330}
-      \field{dateera}{ce}
-    \endentry
-    \entry{booleimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Library of Congress}%
-      }
-      \list{location}{1}{%
-        {www.loc.gov/item/2007675556/}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{2}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{George Boole, -1964; head and shoulders, facing left}
-      \field{year}{1880}
-      \field{dateera}{ce}
-    \endentry
-    \entry{ghazaliimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{3}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Imam Ghazali}
-    \endentry
-    \entry{russellimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {McMaster U Library}%
-      }
-      \list{location}{2}{%
-        {William Ready Division of Archives}%
-        {Research Collections}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{4}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Portrait of Bertrand Russell}
-      \field{year}{1907}
-      \field{dateera}{ce}
-    \endentry
-    \entry{chrysippusimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \list{institution}{2}{%
-        {Louvre Museum, Department of Greek, Etruscan}%
-        {Roman Antiquities}%
-      }
-      \list{location}{1}{%
-        {Paris, France}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{5}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Portrait of Chrysippus of Soli}
-      \field{year}{200}
-      \field{dateera}{ce}
-    \endentry
-    \entry{godelimage}{artwork}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ad921d60486366258809553a3db49a4a}{%
-           family={unknown},
-           familyi={u\bibinitperiod}}}%
-      }
-      \list{institution}{2}{%
-        {Princeton U Library, Manuscript Division, Department of Rare Books}%
-        {Special Collections, Kurt Gödel Papers}%
-      }
-      \list{location}{1}{%
-        {Princeton, NJ, USA}%
-      }
-      \strng{namehash}{ad921d60486366258809553a3db49a4a}
-      \strng{fullhash}{ad921d60486366258809553a3db49a4a}
-      \strng{bibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorbibnamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authornamehash}{ad921d60486366258809553a3db49a4a}
-      \strng{authorfullhash}{ad921d60486366258809553a3db49a4a}
-      \field{extraname}{6}
-      \field{sortinit}{u}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Portrait of Kurt Gödel}
-      \field{year}{1925}
-      \field{dateera}{ce}
     \endentry
   \enddatalist
 \endrefsection
