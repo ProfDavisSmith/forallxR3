@@ -21,7 +21,7 @@ Both of these arguments are valid (formally valid). We can see the relationship 
 \item[\therefore] C
 \end{earg}
 \end{center}
-This looks like an excellent argument structure. In fact, as we will see in Module 3 and beyond, this structure is always valid. But, are there any others? Are there any other structures which are always valid? The answer is yes, with absolute certainty. Logic would be a pretty boring subject otherwise. Consider these examples:
+This looks like an excellent argument structure. In fact, as we will see in Module~\ref{ch.TruthTables} and beyond, this structure is always valid. But, are there any others? Are there any other structures which are always valid? The answer is yes, with absolute certainty. Logic would be a pretty boring subject otherwise. Consider these examples:
 \begin{tabular}{p{4.8cm}p{4.8cm}}
 Argument \exarg{oe1}&Example \exarg{xoe1}\\
 Jenny is either happy or sad.&It’s not the case that Jim both studied hard and acted in lots of plays.\\
@@ -46,7 +46,7 @@ This is a pretty intuitive structure and one which you likely have used quite a 
 \end{center}
 These examples illustrate an important idea, which we might describe as validity in virtue of form. The validity of the arguments just considered has nothing very much to do with the meanings of English expressions like ‘Jenny is miserable’, ‘Dipan is an avid reader of Tolstoy’, or ‘Jim acted in lots of plays’. If it has to do with meanings at all, it is with the meanings of phrases like ‘and’, ‘or’, ‘not,’ and ‘if\ldots, then\ldots’.
 
-In this module, we will be learning to extract the form of various arguments so that you can better see how the arguments are valid or invalid (Module 3) and then later see how these different forms can be combined and used to either make valid arguments from scratch or prove some claim (Module 4 and on). This module is the first step in you learning why a formal (as in concerning the shape or form) logical language works the way it does and how you can use it. The language will be called ‘Propositional Logic', or PL. There are many other formal logical languages out there, but in virtue of their formality, once you know one, you know them all (with only a minor need to change your ‘accent', so to speak).
+In this module, we will be learning to extract the form of various arguments so that you can better see how the arguments are valid or invalid (Module~\ref{ch.TruthTables}) and then later see how these different forms can be combined and used to either make valid arguments from scratch or prove some claim (Module~\ref{ch.plnd1} and on). This module is the first step in you learning why a formal (as in concerning the shape or form) logical language works the way it does and how you can use it. The language will be called ‘Propositional Logic', or PL. There are many other formal logical languages out there, but in virtue of their formality, once you know one, you know them all (with only a minor need to change your ‘accent', so to speak).
 \subsection{The Caveat}
 here are plenty of arguments that are valid but not for reasons relating to their form and there are cases where they are invalid both because of form and meaning. Take a look at these examples:\\
 \begin{tabular}{ll}
@@ -107,7 +107,7 @@ In order to symbolize sentence \ref{not1}, we will need a sentence letter. We mi
 		\item[B] Mary is in Barcelona.
 	\end{ekey}
 Since sentence \ref{not2} is obviously related to sentence \ref{not1}, we will not want to symbolize it with a completely different sentence letter. Roughly, sentence \ref{not2} means something like ‘It is not the case that B’. In order to symbolize this, we need a symbol for \gls{negation}. We will use ‘\enot ’. Now we can symbolize sentence \ref{not2} with ‘\enot B’.
-Sentence 3 also contains the word ‘not’, and it is obviously equivalent to sentence 2. As such, we can also symbolize it with ‘\enot B’.
+Sentence \ref{not3} also contains the word ‘not’, and it is obviously equivalent to sentence \ref{not2}. As such, we can also symbolize it with ‘\enot B’.
 \factoidbox{A sentence can be symbolized as \enot A if it can be paraphrased in English as ‘It is not the case that\ldots ’.}
 It will help to offer a few more examples:
 	\begin{earg}
@@ -119,7 +119,7 @@ Let us use the following representation key:
 	\begin{ekey}
 		\item[R] The widget is replaceable
 	\end{ekey}
-Sentence \ref{not4} can now be symbolized by ‘R’. Moving on to sentence \ref{not5}: saying the widget is irreplaceable means that it is not the case that the widget is replaceable. So even though sentence 5 does not contain the word ‘not’, we will symbolize it as follows: ‘\enot R’.
+Sentence \ref{not4} can now be symbolized by ‘R’. Moving on to sentence \ref{not5}: saying the widget is irreplaceable means that it is not the case that the widget is replaceable. So even though sentence \ref{not5} does not contain the word ‘not’, we will symbolize it as follows: ‘\enot R’.
 Sentence \ref{not5b} can be paraphrased as ‘It is not the case that the widget is irreplaceable.’ Which can again be paraphrased as ‘It is not the case that it is not the case that the widget is replace- able’. So we might symbolize this English sentence with the PL sentence ‘\enot \enot R’.
 But some care is needed when handling negations. Consider:
 	\begin{earg}
@@ -153,7 +153,7 @@ Sentence \ref{and4} is obviously a conjunction. The sentence says two things (ab
 
 Sentence \ref{and5} says one thing about two different subjects. It says of both Barbara and Adam that they are athletic, even though in English we use the word ‘athletic’ only once. The sentence can be paraphrased as ‘Barbara is athletic, and Adam is athletic’. We can symbolize this in PL as ‘(B\eand A)’, using the same symbolization key that we have been using.
 
-Sentence \ref{and6} is slightly more complicated. The word ‘although’ sets up a contrast between the first part of the sentence and the second part. Nevertheless, the sentence tells us both that Barbara is energetic and that she is not athletic. In order to make each of the conjuncts a sentence letter, we need to replace ‘she’ with ‘Barbara’. So we can paraphrase sentence 14 as, ‘Both Barbara is energetic, and Barbara is not athletic’. The second conjunct contains a negation, so we paraphrase further: ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. Now we can symbolize this with the PL sentence ‘(E\eand \enot B)’. Note that we have lost all sorts of nuance in this symbolization. There is a distinct difference in tone between sentence \ref{and6} and ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. PL does not (and cannot) preserve these nuances.
+Sentence \ref{and6} is slightly more complicated. The word ‘although’ sets up a contrast between the first part of the sentence and the second part. Nevertheless, the sentence tells us both that Barbara is energetic and that she is not athletic. In order to make each of the conjuncts a sentence letter, we need to replace ‘she’ with ‘Barbara’. So we can paraphrase sentence \ref{and6} as, ‘Both Barbara is energetic, and Barbara is not athletic’. The second conjunct contains a negation, so we paraphrase further: ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. Now we can symbolize this with the PL sentence ‘(E\eand \enot B)’. Note that we have lost all sorts of nuance in this symbolization. There is a distinct difference in tone between sentence \ref{and6} and ‘Both Barbara is energetic and it is not the case that Barbara is athletic’. PL does not (and cannot) preserve these nuances.
 
 Sentence \ref{and7} raises similar issues. There is a contrastive structure, but this is not something that PL can deal with. So we can paraphrase the sentence as ‘Both Adam is athletic, and Barbara is more athletic than Adam’. (Notice that we once again replace the pronoun ‘him’ with ‘Adam’.) How should we deal with the second conjunct? We already have the sentence letter ‘A’, which is being used to symbolize ‘Adam is athletic’, and the sentence ‘B’ which is being used to symbolize ‘Barbara is athletic’; but neither of these concerns their relative athleticity. So, to symbolize the entire sentence, we need a new sentence letter. Let the PL sentence ‘R’ symbolize the English sentence ‘Barbara is more athletic than Adam’. Now we can symbolize sentence  \ref{and7} by ‘(A\eand R)’.
 
