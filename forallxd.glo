@@ -14,124 +14,124 @@
 \glossaryentry{inductive argument?\glossentry{inductive argument}|setentrycounter[]{page}"\glsnumberformat}{17}
 \glossaryentry{strong?\glossentry{strong inductive argument}|setentrycounter[]{page}"\glsnumberformat}{17}
 \glossaryentry{weak?\glossentry{weak inductive argument}|setentrycounter[]{page}"\glsnumberformat}{18}
-\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{symbolization key?\glossentry{symbolization key}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{connective?\glossentry{connective}|setentrycounter[]{page}"\glsnumberformat}{30}
-\glossaryentry{negation?\glossentry{negation}|setentrycounter[]{page}"\glsnumberformat}{31}
-\glossaryentry{conjunction?\glossentry{conjunction}|setentrycounter[]{page}"\glsnumberformat}{32}
-\glossaryentry{conjunct?\glossentry{conjunct}|setentrycounter[]{page}"\glsnumberformat}{32}
-\glossaryentry{disjunction?\glossentry{disjunction}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{disjunct?\glossentry{disjunct}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{conditional?\glossentry{conditional}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{antecedent?\glossentry{antecedent}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{consequent?\glossentry{consequent}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{necessary condition?\glossentry{necessary condition}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{sufficient condition?\glossentry{sufficient condition}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{biconditional?\glossentry{biconditional}|setentrycounter[]{page}"\glsnumberformat}{38}
-\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{41}
-\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{invalid?\glossentry{invalid}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{contradiction (of PL)?\glossentry{contradiction of PL}|setentrycounter[]{page}"\glsnumberformat}{53}
-\glossaryentry{equivalence (in PL)?\glossentry{equivalent}|setentrycounter[]{page}"\glsnumberformat}{55}
-\glossaryentry{tautology?\glossentry{tautology}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{joint possibility?\glossentry{joint possibility}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{satisfiability (in PL)?\glossentry{satisfiability in PL}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{"\ensuremath {"\vDash }?\glossentry{vDash}|setentrycounter[]{page}"\glsnumberformat}{63}
-\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{126}
-\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{127}
-\glossaryentry{predicate?\glossentry{predicate}|setentrycounter[]{page}"\glsnumberformat}{128}
-\glossaryentry{variable?\glossentry{variable}|setentrycounter[]{page}"\glsnumberformat}{129}
-\glossaryentry{quantifier?\glossentry{quantifier}|setentrycounter[]{page}"\glsnumberformat}{131}
-\glossaryentry{universal quantifier?\glossentry{universal quantifier}|setentrycounter[]{page}"\glsnumberformat}{131}
-\glossaryentry{existential quantifier?\glossentry{existential quantifier}|setentrycounter[]{page}"\glsnumberformat}{132}
-\glossaryentry{sentence (of QL)?\glossentry{sentence of QL}|setentrycounter[]{page}"\glsnumberformat}{141}
-\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{141}
-\glossaryentry{term?\glossentry{term}|setentrycounter[]{page}"\glsnumberformat}{141}
-\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{143}
-\glossaryentry{scope?\glossentry{scope}|setentrycounter[]{page}"\glsnumberformat}{143}
-\glossaryentry{bound variable?\glossentry{bound variable}|setentrycounter[]{page}"\glsnumberformat}{144}
-\glossaryentry{free variable?\glossentry{free variable}|setentrycounter[]{page}"\glsnumberformat}{144}
-\glossaryentry{counter-interpretation?\glossentry{counter-interpretation}|setentrycounter[]{page}"\glsnumberformat}{171}
-\glossaryentry{countermodel?\glossentry{countermodel}|setentrycounter[]{page}"\glsnumberformat}{171}
-\glossaryentry{modal?\glossentry{modal}|setentrycounter[]{page}"\glsnumberformat}{211}
-\glossaryentry{qualifier?\glossentry{qualifier}|setentrycounter[]{page}"\glsnumberformat}{212}
-\glossaryentry{model?\glossentry{model}|setentrycounter[]{page}"\glsnumberformat}{217}
-\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{217}
-\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{217}
-\glossaryentry{R?\glossentry{R}|setentrycounter[]{page}"\glsnumberformat}{217}
-\glossaryentry{serial?\glossentry{serial}|setentrycounter[]{page}"\glsnumberformat}{218}
-\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{218}
-\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{218}
-\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{218}
-\glossaryentry{serial?\glossentry{serial}|setentrycounter[]{page}"\glsnumberformat}{218}
+\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{symbolization key?\glossentry{symbolization key}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{connective?\glossentry{connective}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{negation?\glossentry{negation}|setentrycounter[]{page}"\glsnumberformat}{32}
+\glossaryentry{conjunction?\glossentry{conjunction}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{conjunct?\glossentry{conjunct}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{disjunction?\glossentry{disjunction}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{disjunct?\glossentry{disjunct}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{conditional?\glossentry{conditional}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{antecedent?\glossentry{antecedent}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{consequent?\glossentry{consequent}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{necessary condition?\glossentry{necessary condition}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{sufficient condition?\glossentry{sufficient condition}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{biconditional?\glossentry{biconditional}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{invalid?\glossentry{invalid}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{53}
+\glossaryentry{contradiction (of PL)?\glossentry{contradiction of PL}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{equivalence (in PL)?\glossentry{equivalent}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{tautology?\glossentry{tautology}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{joint possibility?\glossentry{joint possibility}|setentrycounter[]{page}"\glsnumberformat}{60}
+\glossaryentry{satisfiability (in PL)?\glossentry{satisfiability in PL}|setentrycounter[]{page}"\glsnumberformat}{60}
+\glossaryentry{"\ensuremath {"\vDash }?\glossentry{vDash}|setentrycounter[]{page}"\glsnumberformat}{64}
+\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{predicate?\glossentry{predicate}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{variable?\glossentry{variable}|setentrycounter[]{page}"\glsnumberformat}{130}
+\glossaryentry{quantifier?\glossentry{quantifier}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{universal quantifier?\glossentry{universal quantifier}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{existential quantifier?\glossentry{existential quantifier}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{sentence (of QL)?\glossentry{sentence of QL}|setentrycounter[]{page}"\glsnumberformat}{142}
+\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{142}
+\glossaryentry{term?\glossentry{term}|setentrycounter[]{page}"\glsnumberformat}{142}
+\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{scope?\glossentry{scope}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{bound variable?\glossentry{bound variable}|setentrycounter[]{page}"\glsnumberformat}{145}
+\glossaryentry{free variable?\glossentry{free variable}|setentrycounter[]{page}"\glsnumberformat}{145}
+\glossaryentry{counter-interpretation?\glossentry{counter-interpretation}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{countermodel?\glossentry{countermodel}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{modal?\glossentry{modal}|setentrycounter[]{page}"\glsnumberformat}{212}
+\glossaryentry{qualifier?\glossentry{qualifier}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{model?\glossentry{model}|setentrycounter[]{page}"\glsnumberformat}{218}
+\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{218}
+\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{218}
+\glossaryentry{R?\glossentry{R}|setentrycounter[]{page}"\glsnumberformat}{218}
+\glossaryentry{serial?\glossentry{serial}|setentrycounter[]{page}"\glsnumberformat}{219}
 \glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{219}
-\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{220}
-\glossaryentry{K?\glossentry{K}|setentrycounter[]{page}"\glsnumberformat}{223}
-\glossaryentry{T?\glossentry{T}|setentrycounter[]{page}"\glsnumberformat}{231}
-\glossaryentry{S4?\glossentry{S4}|setentrycounter[]{page}"\glsnumberformat}{234}
-\glossaryentry{S5?\glossentry{S5}|setentrycounter[]{page}"\glsnumberformat}{236}
-\glossaryentry{"\ensuremath {"\vdash }?\glossentry{turnstyle}|setentrycounter[]{page}"\glsnumberformat}{259}
-\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{"\ensuremath {"\vDash }?\glossentry{vDash}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{conclusion indicator?\glossentry{conclusion indicator word}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{conditional?\glossentry{conditional}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{premise?\glossentry{premise}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{conclusion?\glossentry{conclusion}|setentrycounter[]{page}"\glsnumberformat}{278}
-\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{conjunction?\glossentry{conjunction}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{219}
+\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{219}
+\glossaryentry{serial?\glossentry{serial}|setentrycounter[]{page}"\glsnumberformat}{219}
+\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{220}
+\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{221}
+\glossaryentry{K?\glossentry{K}|setentrycounter[]{page}"\glsnumberformat}{224}
+\glossaryentry{T?\glossentry{T}|setentrycounter[]{page}"\glsnumberformat}{232}
+\glossaryentry{S4?\glossentry{S4}|setentrycounter[]{page}"\glsnumberformat}{235}
+\glossaryentry{S5?\glossentry{S5}|setentrycounter[]{page}"\glsnumberformat}{237}
+\glossaryentry{"\ensuremath {"\vdash }?\glossentry{turnstyle}|setentrycounter[]{page}"\glsnumberformat}{260}
+\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{"\ensuremath {"\vDash }?\glossentry{vDash}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{conclusion indicator?\glossentry{conclusion indicator word}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{279}
 \glossaryentry{conditional?\glossentry{conditional}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{279}
-\glossaryentry{disjunction?\glossentry{disjunction}|setentrycounter[]{page}"\glsnumberformat}{280}
-\glossaryentry{interpretation?\glossentry{interpretation}|setentrycounter[]{page}"\glsnumberformat}{280}
-\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{premise?\glossentry{premise}|setentrycounter[]{page}"\glsnumberformat}{279}
+\glossaryentry{conclusion?\glossentry{conclusion}|setentrycounter[]{page}"\glsnumberformat}{279}
 \glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{280}
-\glossaryentry{bound variable?\glossentry{bound variable}|setentrycounter[]{page}"\glsnumberformat}{280}
-\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{predicate?\glossentry{predicate}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{281}
-\glossaryentry{argument?\glossentry{argument}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{conclusion?\glossentry{conclusion}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{modal?\glossentry{modal}|setentrycounter[]{page}"\glsnumberformat}{282}
+\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{conjunction?\glossentry{conjunction}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{conditional?\glossentry{conditional}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{280}
+\glossaryentry{disjunction?\glossentry{disjunction}|setentrycounter[]{page}"\glsnumberformat}{281}
+\glossaryentry{interpretation?\glossentry{interpretation}|setentrycounter[]{page}"\glsnumberformat}{281}
+\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{281}
+\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{281}
+\glossaryentry{bound variable?\glossentry{bound variable}|setentrycounter[]{page}"\glsnumberformat}{281}
+\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{282}
+\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{282}
+\glossaryentry{predicate?\glossentry{predicate}|setentrycounter[]{page}"\glsnumberformat}{282}
+\glossaryentry{valid?\glossentry{valid}|setentrycounter[]{page}"\glsnumberformat}{282}
 \glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{282}
 \glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{282}
-\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{283}
-\glossaryentry{free variable?\glossentry{free variable}|setentrycounter[]{page}"\glsnumberformat}{283}
-\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{domain?\glossentry{domain}|setentrycounter[]{page}"\glsnumberformat}{282}
+\glossaryentry{argument?\glossentry{argument}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{conclusion?\glossentry{conclusion}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{modal?\glossentry{modal}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{283}
 \glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{283}
 \glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{283}
 \glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{transitive?\glossentry{transitive}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{symmetric?\glossentry{symmetric}|setentrycounter[]{page}"\glsnumberformat}{283}
 \glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{283}
 \glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{283}
-\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{283}
-\glossaryentry{variable?\glossentry{variable}|setentrycounter[]{page}"\glsnumberformat}{283}
-\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{sentence (of PL)?\glossentry{sentence of PL}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{main connective?\glossentry{main logical operator}|setentrycounter[]{page}"\glsnumberformat}{283}
+\glossaryentry{formula?\glossentry{formula}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{free variable?\glossentry{free variable}|setentrycounter[]{page}"\glsnumberformat}{284}
 \glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{accessibility relation?\glossentry{accessibility relation}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{world?\glossentry{world}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{reflexive?\glossentry{reflexive}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{complete truth table?\glossentry{complete truth table}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{valuation?\glossentry{valuation}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{name?\glossentry{name}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{variable?\glossentry{variable}|setentrycounter[]{page}"\glsnumberformat}{284}
+\glossaryentry{truth value?\glossentry{truth value}|setentrycounter[]{page}"\glsnumberformat}{285}
+\glossaryentry{sentence letter?\glossentry{sentence letter}|setentrycounter[]{page}"\glsnumberformat}{285}

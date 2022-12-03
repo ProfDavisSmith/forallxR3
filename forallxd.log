@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  1 DEC 2022 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  3 DEC 2022 04:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2832,50 +2832,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--287
  []
 
 
-Overfull \hbox (14.5466pt too wide) in paragraph at lines 290--296
+Overfull \hbox (14.5466pt too wide) in paragraph at lines 292--298
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--296
+Underfull \hbox (badness 10000) in paragraph at lines 292--298
 
  []
 
 [17]
-Overfull \hbox (14.5466pt too wide) in paragraph at lines 329--335
+Overfull \hbox (14.5466pt too wide) in paragraph at lines 331--337
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--335
+Underfull \hbox (badness 10000) in paragraph at lines 331--337
 
  []
 
-<assets/turing.jpg, id=389, 1204.5pt x 1204.5pt>
+<assets/turing.jpg, id=393, 1204.5pt x 1204.5pt>
 File: assets/turing.jpg Graphic file (type jpg)
 <use assets/turing.jpg>
-Package pdftex.def Info: assets/turing.jpg  used on input line 342.
+Package pdftex.def Info: assets/turing.jpg  used on input line 344.
 (pdftex.def)             Requested size: 71.13188pt x 71.12737pt.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 342.
+(Font)              scaled to size 7.0pt on input line 344.
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
-(biblatex)                Using fallback driver on input line 342.
+(biblatex)                Using fallback driver on input line 344.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 342--342
+Overfull \hbox (3.965pt too wide) in paragraph at lines 344--344
 [][][][][][][] 
  []
 
-[18]
+[18] [19]
 Overfull \vbox (3.75603pt too high) has occurred while \output is active []
 
 
-[19 <./assets/turing.jpg>] [20
+[20 <./assets/turing.jpg>] [21
 
-] [21]
+] [22]
 LaTeX Font Info:    Trying to load font information for TS1+Baskervaldx-TOsF on
- input line 389.
+ input line 391.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/baskervaldx\ts1baskerva
 ldx-tosf.fd
@@ -2883,8 +2883,8 @@ File: TS1Baskervaldx-TOsF.fd 2014/03/31 (autoinst) Font definitions for TS1/Bas
 kervaldx-TOsF.
 )
 LaTeX Font Info:    Font shape `TS1/Baskervaldx-TOsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 389.
- [22]) (forallx-d-symbolizing.tex [23] [24
+(Font)              scaled to size 9.0pt on input line 391.
+ [23]) (forallx-d-symbolizing.tex [24] [25
 
 ]
 Overfull \hbox (14.1466pt too wide) in paragraph at lines 9--15
@@ -2902,15 +2902,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--32
 []
  []
 
-[25
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 51--63
 []
  []
 
-[26] [27]
-<assets/Chrysippus.jpg, id=475, 451.6875pt x 602.25pt>
+[27] [28]
+<assets/Chrysippus.jpg, id=484, 451.6875pt x 602.25pt>
 File: assets/Chrysippus.jpg Graphic file (type jpg)
 <use assets/Chrysippus.jpg>
 Package pdftex.def Info: assets/Chrysippus.jpg  used on input line 80.
@@ -2925,19 +2925,19 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 80--80
 [][][][][][][] 
  []
 
-[28]
+[29]
 Overfull \vbox (37.61656pt too high) has occurred while \output is active []
 
 
-[29 <./assets/Chrysippus.jpg>]
+[30 <./assets/Chrysippus.jpg>]
 Overfull \hbox (34.55347pt too wide) in paragraph at lines 85--93
  [] 
  []
 
-[30
+[31
 
-] [31] [32] [33] [34] [35] [36] [37] [38]
-<assets/russell.jpg, id=666, 185.69376pt x 274.02374pt>
+] [32] [33] [34] [35] [36] [37] [38] [39]
+<assets/russell.jpg, id=674, 185.69376pt x 274.02374pt>
 File: assets/russell.jpg Graphic file (type jpg)
 <use assets/russell.jpg>
 Package pdftex.def Info: assets/russell.jpg  used on input line 295.
@@ -2952,15 +2952,15 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 295--295
 [][][][][][][] 
  []
 
-[39 <./assets/russell.jpg>] [40
+[40 <./assets/russell.jpg>] [41
 
-] [41] [42]) (forallx-d-truthtables.tex [43]
-[44
+] [42] [43]) (forallx-d-truthtables.tex [44]
+[45
 
-] [45
+] [46
 
-] [46] [47] [48] [49]
-<assets/boole.jpg, id=745, 115.43124pt x 150.5625pt>
+] [47] [48] [49] [50]
+<assets/boole.jpg, id=753, 115.43124pt x 150.5625pt>
 File: assets/boole.jpg Graphic file (type jpg)
 <use assets/boole.jpg>
 Package pdftex.def Info: assets/boole.jpg  used on input line 144.
@@ -2975,24 +2975,24 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 144--144
 [][][][][][][] 
  []
 
-[50] [51 <./assets/boole.jpg>] [52
+[51] [52 <./assets/boole.jpg>] [53
 
-] [53] [54] [55] [56] [57
+] [54] [55] [56] [57] [58
 
-] [58] [59] [60]
-[61
+] [59] [60] [61]
+[62
 
-] [62] [63] [64] [65
+] [63] [64] [65] [66
 
-] [66]) (forallx-d-nd1.tex [67] [68
+] [67]) (forallx-d-nd1.tex [68] [69
 
-] [69
+] [70
 
-] [70] [71]
-[72
+] [71] [72]
+[73
 
-] [73] [74] [75] [76] [77] [78] [79] [80]
-<assets/tissa.jpg, id=922, 1212.9315pt x 727.1165pt>
+] [74] [75] [76] [77] [78] [79] [80] [81]
+<assets/tissa.jpg, id=930, 1212.9315pt x 727.1165pt>
 File: assets/tissa.jpg Graphic file (type jpg)
 <use assets/tissa.jpg>
 Package pdftex.def Info: assets/tissa.jpg  used on input line 242.
@@ -3013,16 +3013,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 n/9 Mog-galiputta
  []
 
-[81] [82 <./assets/tissa.jpg>] [83] [84] [85] [86] [87] [88] [89] [90
+[82] [83 <./assets/tissa.jpg>] [84] [85] [86] [87] [88] [89] [90] [91
 
-] [91]
-[92] [93] [94] [95]) (forallx-d-nd2.tex [96] [97
+] [92]
+[93] [94] [95] [96]) (forallx-d-nd2.tex [97] [98
 
-] [98
+] [99
 
-] [99] [100] [101]
-[102] [103]
-<assets/demorgan.jpg, id=1054, 961.5925pt x 1186.4325pt>
+] [100] [101] [102]
+[103] [104]
+<assets/demorgan.jpg, id=1062, 961.5925pt x 1186.4325pt>
 File: assets/demorgan.jpg Graphic file (type jpg)
 <use assets/demorgan.jpg>
 Package pdftex.def Info: assets/demorgan.jpg  used on input line 144.
@@ -3037,19 +3037,19 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 144--144
 [][][][][][][] 
  []
 
-[104] [105 <./assets/demorgan.jpg>] [106] [107] [108
+[105] [106 <./assets/demorgan.jpg>] [107] [108] [109
 
-] [109] [110] [111]
-[112] [113] [114
+] [110] [111] [112]
+[113] [114] [115
 
-] [115] [116] [117] [118] [119] [120] [121])
-(forallx-d-qlsymbolizing.tex [122] [123
+] [116] [117] [118] [119] [120] [121] [122])
+(forallx-d-qlsymbolizing.tex [123] [124
 
-] [124
+] [125
 
-] [125] [126] [127] [128] [129]
-[130] [131] [132] [133]
-<assets/aristotle.jpg, id=1258, 194.7275pt x 260.975pt>
+] [126] [127] [128] [129] [130]
+[131] [132] [133] [134]
+<assets/aristotle.jpg, id=1266, 194.7275pt x 260.975pt>
 File: assets/aristotle.jpg Graphic file (type jpg)
 <use assets/aristotle.jpg>
 Package pdftex.def Info: assets/aristotle.jpg  used on input line 238.
@@ -3064,14 +3064,14 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 238--238
 [][][][][][][] 
  []
 
-[134]
+[135]
 Overfull \vbox (47.75603pt too high) has occurred while \output is active []
 
 
-[135 <./assets/aristotle.jpg>] [136] [137
+[136 <./assets/aristotle.jpg>] [137] [138
 
-] [138]
-<assets/ghazali.jpeg, id=1302, 667.49374pt x 439.6425pt>
+] [139]
+<assets/ghazali.jpeg, id=1310, 667.49374pt x 439.6425pt>
 File: assets/ghazali.jpeg Graphic file (type jpg)
 <use assets/ghazali.jpeg>
 Package pdftex.def Info: assets/ghazali.jpeg  used on input line 320.
@@ -3086,13 +3086,13 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
-[139] [140 <./assets/ghazali.jpeg>] [141] [142]
+[140] [141 <./assets/ghazali.jpeg>] [142] [143]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 387.
- [143] [144] [145
+ [144] [145] [146
 
-] [146]
-<assets/sina.jpeg, id=1390, 247.92625pt x 327.2225pt>
+] [147]
+<assets/sina.jpeg, id=1398, 247.92625pt x 327.2225pt>
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 482.
@@ -3107,22 +3107,22 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 482--482
 [][][][][][][] 
  []
 
-[147]
+[148]
 
 Package glossaries Warning: Entry `main logical operator' has already been defi
 ned in the document environment (ignoring new definition) on input line 533.
 
-) (forallx-d-qlvalidity.tex [148 <./assets/sina.jpeg>] [149
+) (forallx-d-qlvalidity.tex [149 <./assets/sina.jpeg>] [150
 
-] [150
+] [151
 
-] [151]
-[152] [153] [154] [155] [156] [157]
+] [152]
+[153] [154] [155] [156] [157] [158]
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 42.67912pt x 56.3261pt.
- [158] [159] [160
+ [159] [160] [161
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 270--270
@@ -3134,8 +3134,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--277
 
  []
 
-[161] [162] [163]
-<assets/ockham.jpg, id=1484, 73.09595pt x 132.15086pt>
+[162] [163] [164]
+<assets/ockham.jpg, id=1492, 73.09595pt x 132.15086pt>
 File: assets/ockham.jpg Graphic file (type jpg)
 <use assets/ockham.jpg>
 Package pdftex.def Info: assets/ockham.jpg  used on input line 345.
@@ -3150,20 +3150,20 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 345--345
 [][][][][][][] 
  []
 
-[164]
+[165]
 Overfull \vbox (48.09354pt too high) has occurred while \output is active []
 
 
-[165 <./assets/ockham.jpg>] [166
+[166 <./assets/ockham.jpg>] [167
 
-] [167] [168] [169] [170] [171] [172] [173])
-(forallx-d-qlnd1.tex [174] [175
+] [168] [169] [170] [171] [172] [173] [174])
+(forallx-d-qlnd1.tex [175] [176
 
-] [176
+] [177
 
-] [177] [178] [179] [180] [181] [182]
-[183] [184]
-<assets/godel.jpg, id=1598, 86.3225pt x 130.4875pt>
+] [178] [179] [180] [181] [182] [183]
+[184] [185]
+<assets/godel.jpg, id=1606, 86.3225pt x 130.4875pt>
 File: assets/godel.jpg Graphic file (type jpg)
 <use assets/godel.jpg>
 Package pdftex.def Info: assets/godel.jpg  used on input line 285.
@@ -3178,26 +3178,26 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 285--285
 [][][][][][][] 
  []
 
-[185]
+[186]
 Overfull \vbox (48.09354pt too high) has occurred while \output is active []
 
 
-[186 <./assets/godel.jpg>] [187
+[187 <./assets/godel.jpg>] [188
 
-] [188] [189] [190]) (forallx-d-qlnd2.tex
-[191] [192
+] [189] [190] [191]) (forallx-d-qlnd2.tex
+[192] [193
 
-] [193
+] [194
 
-] [194] [195] [196] [197]
-
-LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
-
+] [195] [196] [197] [198]
 
 LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
 
-[198] [199]
-<assets/leibniz.jpg, id=1717, 487.8225pt x 602.25pt>
+
+LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
+
+[199] [200]
+<assets/leibniz.jpg, id=1725, 487.8225pt x 602.25pt>
 File: assets/leibniz.jpg Graphic file (type jpg)
 <use assets/leibniz.jpg>
 Package pdftex.def Info: assets/leibniz.jpg  used on input line 224.
@@ -3212,10 +3212,10 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 224--224
 [][][][][][][] 
  []
 
-[200] [201 <./assets/leibniz.jpg>] [202
+[201] [202 <./assets/leibniz.jpg>] [203
 
-] [203] [204] [205] [206] [207]
-<assets/barcan.jpg, id=1760, 477.785pt x 601.24625pt>
+] [204] [205] [206] [207] [208]
+<assets/barcan.jpg, id=1769, 477.785pt x 601.24625pt>
 File: assets/barcan.jpg Graphic file (type jpg)
 <use assets/barcan.jpg>
 Package pdftex.def Info: assets/barcan.jpg  used on input line 383.
@@ -3234,25 +3234,25 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 383--383
 Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 383.
 
-) (forallx-d-ml.tex [208] [209 <./assets/barcan.jpg>] [210
+) (forallx-d-ml.tex [209] [210 <./assets/barcan.jpg>] [211
 
-] [211
+] [212
 
-] [212]
-[213] [214] [215]
+] [213]
+[214] [215] [216]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[216
+[217
 
-] [217] [218] [219] [220] [221] [222]
+] [218] [219] [220] [221] [222] [223]
 Underfull \hbox (badness 10000) in paragraph at lines 339--339
 
  []
 
-[223]
-<assets/kripke.jpg, id=1892, 200.75pt x 200.75pt>
+[224]
+<assets/kripke.jpg, id=1900, 200.75pt x 200.75pt>
 File: assets/kripke.jpg Graphic file (type jpg)
 <use assets/kripke.jpg>
 Package pdftex.def Info: assets/kripke.jpg  used on input line 359.
@@ -3267,51 +3267,51 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 359--359
 [][][][][][][] 
  []
 
-[224] [225 <./assets/kripke.jpg>] [226] [227] [228] [229] [230] [231] [232]
-[233] [234] [235] [236] [237] [238] [239
+[225] [226 <./assets/kripke.jpg>] [227] [228] [229] [230] [231] [232] [233]
+[234] [235] [236] [237] [238] [239] [240
 
-] [240] [241] [242] [243] [244]
-[245] [246] [247] [248]) [249] [250
+] [241] [242] [243] [244] [245]
+[246] [247] [248] [249]) [250] [251
 
-] (logicgates.tex [251
+] (logicgates.tex [252
 
-] [252]
+] [253]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 71.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-[253] [254] [255]
+[254] [255] [256]
 Overfull \hbox (4.62782pt too wide) in paragraph at lines 606--607
 [][] 
  []
 
-[256] [257]) (soundnesscompletenesspl.tex [258] [259
+[257] [258]) (soundnesscompletenesspl.tex [259] [260
 
-] [260]
+] [261]
 Overfull \hbox (21.40976pt too wide) in paragraph at lines 57--65
 [][] 
  []
 
-[261]
+[262]
 Overfull \hbox (28.33568pt too wide) in paragraph at lines 82--91
 [][] 
  []
 
-[262] [263] [264]
+[263] [264] [265]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 []\T1/Baskervaldx-TOsF/m/n/9 Second, con-sider the case where $\LMS/ntxsy/m/n/9
  8 $\T1/Baskervaldx-TOsF/m/n/9 x$\LMS/ntxsy/m/n/9 :$$\U/BOONDOX-calo/m/n/9 A$\T
 1/Baskervaldx-TOsF/m/n/9 ...x...x...is false and
  []
 
-[265] [266] [267] [268]
+[266] [267] [268] [269]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
- [269] [270] [271] [272] [273] [274] [275]
+ [270] [271] [272] [273] [274] [275] [276]
 Overfull \hbox (13.30447pt too wide) in paragraph at lines 432--433
 []$\LMS/ntxsy/m/n/9 h\U/BOONDOX-calo/m/n/9 a\T1/Baskervaldx-TLF/m/n/9 , \U/BOON
 DOX-calo/m/n/9 a\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
@@ -3328,16 +3328,16 @@ TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
 9 h[][]\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$ 
  []
 
-[276]) [277] (forallxd.gls [278
+[277]) [278] (forallxd.gls [279
 
 
-] [279] [280] [281] [282] [283]) [284]
+] [280] [281] [282] [283] [284]) [285]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 38.
- [285
+ [286
 
 ]
-(forallx-d-quickreference.tex [286]
+(forallx-d-quickreference.tex [287]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/sc' will be
 (Font)              scaled to size 9.0pt on input line 32.
 
@@ -3345,14 +3345,14 @@ Underfull \hbox (badness 10000) in alignment at lines 31--61
 [][] 
  []
 
-[287
+[288
 
 ]
 Underfull \hbox (badness 10000) in alignment at lines 69--79
 [][] 
  []
 
-[288]
+[289]
 Underfull \hbox (badness 10000) in alignment at lines 85--94
 [][] 
  []
@@ -3368,7 +3368,7 @@ Underfull \hbox (badness 6188) in paragraph at lines 99--116
 $[]$ $[]$s and there
  []
 
-[289] [290] [291] [292]
+[290] [291] [292] [293]
 Overfull \hbox (8.01039pt too wide) in paragraph at lines 259--263
 $[]$ 
  []
@@ -3408,7 +3408,7 @@ Overfull \hbox (5.70963pt too wide) in paragraph at lines 305--310
 $[]$ 
  []
 
-[293] [294]) [295] (forallx-d-backmatter.tex)) [296
+[294] [295]) [296] (forallx-d-backmatter.tex)) [297
 
 
 ]
@@ -3416,14 +3416,17 @@ $[]$
 \openout10 = `forallxd.toc'.
 
  (forallxd.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'forallxd.run.xml'.
 \openout1 = `forallxd.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62454 strings out of 477843
- 1213457 string characters out of 2823599
- 2092507 words of memory out of 3000000
+ 62455 strings out of 477843
+ 1213465 string characters out of 2823599
+ 2093506 words of memory out of 3000000
  79346 multiletter control sequences out of 15000+600000
  700397 words of font info for 329 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3455,9 +3458,9 @@ xsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
 tic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/he
 lvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/boondox/zxxrw8a.pfb>
-Output written on forallxd.pdf (305 pages, 3217546 bytes).
+Output written on forallxd.pdf (306 pages, 3219120 bytes).
 PDF statistics:
- 2970 PDF objects out of 2984 (max. 8388607)
- 911 named destinations out of 1000 (max. 500000)
+ 2978 PDF objects out of 2984 (max. 8388607)
+ 912 named destinations out of 1000 (max. 500000)
  628 words of extra memory for PDF output out of 10000 (max. 10000000)
 
