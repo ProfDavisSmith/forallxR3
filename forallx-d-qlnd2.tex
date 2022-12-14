@@ -222,6 +222,44 @@ We obtain line 3 by replacing one instance of ‘a’ in line 2 with an instance
 We obtain line 4 by replacing ‘b’ in line 3 with ‘a’; this is justified given ‘a = b’.
 
 \leibniz
+\practiceproblems
+\problempart
+\label{pr.TorF3}
+Consider the following interpretation, represented as a model:	
+\begin{center}
+\begin{tikzpicture}
+\node (atom1) at (0,2) {$1$};
+\node (atom2) at (2,2) {$2$};
+\node (atom4) at (0,0) {$3$};
+\node (atom5) at (2,0) {$4$};
+\node (atom6) at (4,0) {$5$};
+\draw[->, thick] (atom1)+(-0.15,0.15) arc (-330:-30:.3); 
+\draw[->, thick] (atom6)+(0.15,-0.15) arc (-150:150:.3); 
+\draw[->, thick] (atom1) -- (atom2);
+\draw[->, thick] (atom1) -- (atom4);
+\draw[<->, thick] (atom1) -- (atom5);
+\draw[->, thick] (atom1) -- (atom6);
+\draw[->, thick] (atom2) -- (atom6);
+\end{tikzpicture}
+\end{center}
+Determine whether each of the following sentences is true or false in that interpretation:
+\begin{enumerate}
+\item $\exists x\, \atom{R}{xx}$
+\item $\forall x\, \atom{R}{xx}$
+\item $\exists x \forall y\, \atom{R}{xy}$
+\item $\exists x \forall y\, \atom{R}{yx}$
+\item $\forall x \forall y \forall z ((\atom{R}{xy} \eand \atom{R}{yz}) \eif \atom{R}{xz})$
+\item $\forall x \forall y \forall z ((\atom{R}{xy} \eand \atom{R}{xz}) \eif \atom{R}{yz})$
+\item $\exists x \forall y\, \enot \atom{R}{xy}$
+\item $\forall x(\exists y\, \atom{R}{xy} \eif \exists y\, \atom{R}{yx})$
+\item $\exists x \exists y (\enot x = y \eand \atom{R}{x,y} \eand \atom{R}{yx})$
+\item $\exists x \forall y(\atom{R}{xy} \eiff x = y)$
+\item $\exists x \forall y(\atom{R}{yx} \eiff x = y)$
+\item $\exists x \exists y(\enot x = y \eand \atom{R}{xy} \eand \forall z(\atom{R}{zx} \eiff y = z))$
+\end{enumerate}
+
+
+
 
 \chapter{Part 27 Equivalency Rules in QL}
 \section{Part 27.1 The Equivalency Rules in PL are in QL}
@@ -381,3 +419,39 @@ Or like this:
 \end{fitchproof}
 
 \barcan
+
+\practiceproblems
+\problempart
+Use the strategies to find proofs for each of the following arguments and theorems:
+\begin{enumerate}
+\item $A \eif \forall x\,\atom{B}{x} \therefore \forall x(A \eif \atom{B}{x})$
+\item $\exists x(A \eif \atom{B}{x}) \therefore A \eif \exists x\, \atom{B}{x}$
+\item $\forall x(\atom{A}{x} \eand \atom{B}{x}) \eiff (\forall x\,\atom{A}{x} \eand \forall x\,\atom{B}{x})$
+\item $\exists x(\atom{A}{x} \eor \atom{B}{x}) \eiff (\exists x\,\atom{A}{x} \eor \exists x\,\atom{B}{x})$
+\item $A \eor \forall x\,\atom{B}{x}) \therefore \forall x(A \eor \atom{B}{x})$
+\item $\forall x(\atom{A}{x} \eif B) \therefore \exists x\,\atom{A}{x} \eif B$
+\item $\exists x(\atom{A}{x} \eif B) \therefore \forall x\,\atom{A}{x} \eif B$
+\item $\forall x(\atom{A}{x} \eif \exists y\,\atom{A}{y})$
+\end{enumerate}
+Use only the basic rules of QL in addition to the basic quantifier rules.
+
+\problempart
+Use the strategies to find proofs for each of the following arguments and theorems:
+\begin{enumerate}
+\item $\forall x\,\atom{R}{xx} \therefore \forall x\,\exists y\,\atom{R}{xy}$
+\item $\forall x\,\forall y\,\forall z[(\atom{R}{xy} \eand \atom{R}{y,z}) \eif \atom{R}{xz}]$ \\
+$\therefore \forall x\,\forall y[\atom{R}{xy} \eif \forall z(\atom{R}{yz} \eif \atom{R}{xz})]$
+\item $\forall x\,\forall y\,\forall z[(\atom{R}{xy} \eand \atom{R}{yz}) \eif \atom{R}{xz}],$\\ $\forall x\,\forall y(\atom{R}{xy} \eif \atom{R}{yx})$ \\ $\therefore \forall x\,\forall y\,\forall z[(\atom{R}{xy} \eand \atom{R}{xz}) \eif \atom{R}{yz}]$
+\item $\forall x\,\forall y(\atom{R}{xy} \eif \atom{R}{yx})$ \\$\therefore \forall x\,\forall y\,\forall z[(\atom{R}{xy} \eand \atom{R}{xz}) \eif \exists u(\atom{R}{yu} \eand \atom{R}{zu})]$
+\item $\enot \exists x\,\forall y (\atom{A}{xy} \eiff \lnot\atom{A}{yy})$
+\end{enumerate}
+
+\problempart
+Use the strategies to find proofs for each of the following arguments and theorems:
+\begin{enumerate}
+\item $\forall x\,\atom{A}{x} \eif B \therefore \exists x(\atom{A}{x} \eif B)$
+\item $A \eif \exists x\, \atom{B}{x} \therefore \exists x(A \eif \atom{B}{x})$
+\item $\forall x(A \eor \atom{B}{x}) \therefore A \eor \forall x\,\atom{B}{x})$
+\item $\exists x(\atom{A}{x} \eif \forall y\,\atom{A}{y})$
+\item $\exists x(\exists y\,\atom{A}{y} \eif \atom{A}{x})$
+\end{enumerate}

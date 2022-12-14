@@ -275,6 +275,58 @@ If we do a complete truth table for these, we will see that they have fundamenta
 A\eor (B\eand C)
 \end{center}
 These two, like with the ones with only conditionals, have different truth values. Though they may be the same some of the time, this is by luck not design. To see this difference in action, imagine that you are having a conversation about who will come to a birthday party. A is for Abigail coming to the party, B is for Bert, and C is for Carol. In the first way of breaking up the sentence, Carol is coming to the party and either Abigail or Bert is. So from this perspective, Carol is guaranteed to come. In the second way of breaking it up, it's either Abigail is coming to the party or both Bert and Carol are. From this perspective, we have no guarantees about who is coming. As a result, if we were to write something like `A\eor B\eand C', we would have no clue which one applies. Never write like this. The moral is: never drop brackets (except the outermost ones). They are essential to understanding the meaning of a sentence and also how we should use it in our reasoning. 
+
+\practiceproblems\label{pr.TT.TTorC}
+\problempart
+Offer complete truth tables for each of the following:
+\begin{enumerate}
+\item $A \eif A$ %taut
+\item $C \eif\enot C$ %contingent
+\item $(A \eiff B) \eiff \enot(A\eiff \enot B)$ %tautology
+\item $(A \eif B) \eor (B \eif A)$ % taut
+\item $(A \eand B) \eif (B \eor A)$  %taut
+\item $\enot(A \eor B) \eiff (\enot A \eand \enot B)$ %taut
+\item $\bigl[(A\eand B) \eand\enot(A\eand B)\bigr] \eand C$ %contradiction
+\item $[(A \eand B) \eand C] \eif B$ %taut
+\item $\enot\bigl[(C\eor A) \eor B\bigr]$ %contingent
+\end{enumerate}
+\problempart
+Using the following symbolization key, symbolize and provide truth tables for the following sentences:
+	\begin{ekey}
+		\item[J]Jack is a jerk
+		\item[M]Jack broke Max's heart
+		\item[O] The oven is hot
+		\item[C] The cookies are done
+		\item[A] Asuna is happy
+		\item[S] Sakura is mad
+		\item[H] Hinata is mad
+		\item[N] Naruto is in trouble
+	\end{ekey}
+
+\begin{enumerate}
+\item Jack is a jerk only if he broke Max's heart.
+\item Jack didn't break Max's heart.
+\item The oven is hot and if the cookies are done, then the oven is hot.
+\item If the oven isn't hot, then the cookies aren't done.
+\item If the coookies aren't done, then Jack is a jerk.
+\item If Asuna is happy, then the cookies are done and the oven is hot.
+\item Either Sakura is mad or Asuna is happy.
+\item If either Sakura or Hinata is mad, the Naruto is in trouble.
+\item Both Hinata is mad if and only if the cookies aren't done and Naruto is in trouble.  
+\end{enumerate}
+\problempart
+Symbolize and offer a truth table for the following. You will also need to provide a symolization key.
+\begin{enumerate}
+\item Either Natuto or Sasuke will be Hokage.
+\item If you give a mouse a cookie, then they will want a glass of milk and a bed time story.
+\item If Max stole the last cookie, then if Sally is home, then Sally is mad.
+\item Green is a color and if it is a color, then it's Charles' favorite.
+\item If Wordle is a game and it's a game only if Jones will win it, then Jones will win Wordle.
+\item She wore a rasberry beret and if she wore it, then she bought it in a second-hand store. 
+\end{enumerate}
+
+
+
 \chapter{Part 9 Semantic Concepts}
 In the previous section, we introduced the idea of a valuation and showed how to determine the truth value of any PL sentence, on any valuation, using a truth table. In this section, we will introduce some related ideas, and show how to use truth tables to test whether or not they apply. Since all of those features of a sentence apply depending on under what conditions they are true, truth tables give us the ability to test for those features. 
 
@@ -549,6 +601,129 @@ Valid?&Complete&One-line\\
 Entailment?&Complete&One-line\\
 \end{tabular}
 \end{center}
+
+\practiceproblems
+\problempart
+\label{pr.TT.satisfiable}
+Use truth tables to determine whether these sentences are jointly satisfiable, or jointly unsatisfiable:
+\begin{enumerate}
+\item $A\eif A$, $\enot A \eif \enot A$, $A\eand A$, $A\eor A$ %satisfiable
+\item $A\eor B$, $A\eif C$, $B\eif C$ %satisfiable
+\item $B\eand(C\eor A)$, $A\eif B$, $\enot(B\eor C)$  %unsatisfiable
+\item $A\eiff(B\eor C)$, $C\eif \enot A$, $A\eif \enot B$ %satisfiable
+\end{enumerate}
+
+
+\solutions
+\problempart
+\label{pr.TT.valid}
+Use truth tables to determine whether each argument is valid or invalid.
+\begin{enumerate}
+\item $A\eif A \therefore A$ %invalid
+\item $A\eif(A\eand\enot A) \therefore \enot A$ %valid
+\item $A\eor(B\eif A) \therefore \enot A \eif \enot B$ %valid
+\item $A\eor B, B\eor C, \enot A \therefore B \eand C$ %invalid
+\item $(B\eand A)\eif C, (C\eand A)\eif B \therefore (C\eand B)\eif A$ %invalid
+\end{enumerate}
+
+\problempart Determine whether each sentence is a tautology, a contradiction, or a contingent sentence, using a complete truth table.
+\begin{enumerate}
+\item $\enot B \eand B$ \vspace{.5ex}%contra
+\item $\enot D \eor D$ \vspace{.5ex}%taut
+\item $(A\eand B) \eor (B\eand A)$\vspace{.5ex} %contingent
+\item $\enot[A \eif (B \eif A)]$\vspace{.5ex} %contra
+\item $A \eiff [A \eif (B \eand \enot B)]$ \vspace{.5ex}%contra
+\item $[(A \eand B) \eiff B] \eif (A \eif B)$ \vspace{.5ex}% contingent.
+\end{enumerate}
+
+\noindent\problempart
+\label{pr.TT.equiv}
+Determine whether each the following sentences are logically equivalent using complete truth tables. If the two sentences really are logically equivalent, write ``equivalent.'' Otherwise write, ``Not equivalent.'' 
+\begin{enumerate}
+\item $A$ and $\enot A$
+\item $A \eand \enot A$ and $\enot B \eiff B$
+\item $[(A \eor B) \eor C]$ and $[A \eor (B \eor C)]$
+\item $A \eor (B \eand C)$ and $(A \eor B) \eand (A \eor C)$
+\item $[A \eand (A \eor B)] \eif B$ and $A \eif B$
+\end{enumerate}
+
+\problempart
+\label{pr.TT.equiv2}
+Determine whether each the following sentences are logically equivalent using complete truth tables. If the two sentences really are equivalent, write ``equivalent.'' Otherwise write, ``not equivalent.''
+\begin{enumerate}
+\item $A\eif A$ and $A \eiff A$
+\item $\enot(A \eif B)$ and $\enot A \eif \enot B$
+\item $A \eor B$ and $\enot A \eif B$
+\item$(A \eif B) \eif C$ and $A \eif (B \eif C)$
+\item $A \eiff (B \eiff C)$ and $A \eand (B \eand C)$
+\end{enumerate}
+
+\problempart
+\label{pr.TT.satisfiable2}
+Determine whether each collection of sentences is jointly satisfiable or jointly unsatisfiable using a complete truth table.
+\begin{enumerate}
+\item $A \eand \enot B$, $\enot(A \eif B)$, $B \eif A$\vspace{.5ex} %Consistent
+\item $A \eor B$, $A \eif \enot A$, $B \eif \enot B$ \vspace{.5ex}%unsatisfiable.
+\item $\enot(\enot A \eor B) $, $A \eif \enot C$, $A \eif (B \eif C)$\vspace{.5ex} %Insatisfiable
+\item $A \eif B$, $A \eand \enot B$\vspace{.5ex} %Insatisfiable
+\item $A \eif (B \eif C)$, $(A \eif B) \eif C$, $A \eif C$\vspace{.5ex} % satisfiable.
+\end{enumerate}
+
+\noindent\problempart
+\label{pr.TT.satisfiable3}
+Determine whether each collection of sentences is jointly satisfiable or jointly unsatisfiable, using a complete truth table.
+\begin{enumerate}
+\item $\enot B$, $A \eif B$, $A$ \vspace{.5ex}%unsatisfiable.
+\item $\enot(A \eor B)$, $A \eiff B$, $B \eif A$\vspace{.5ex} %Consistent
+\item $A \eor B$, $\enot B$, $\enot B \eif \enot A$\vspace{.5ex} %Insatisfiable
+\item $A \eiff B$, $\enot B \eor \enot A$, $A \eif B$\vspace{.5ex} %satisfiable.
+\item $(A \eor B) \eor C$, $\enot A \eor \enot B$, $\enot C \eor \enot B$\vspace{.5ex} %satisfiable
+\end{enumerate}
+\noindent\problempart
+\label{pr.TT.valid2}
+Determine whether each argument is valid or invalid, using a complete truth table.
+\begin{enumerate}
+\item $A\eif B$, $B \therefore  A$ %invalid
+\item $A\eiff B$, $B\eiff C \therefore A\eiff C$ %valid
+\item $A \eif B$, $A \eif C\therefore B \eif C$ %invalid.
+\item $A \eif B$, $B \eif A\therefore A \eiff B$ %valid.
+\end{enumerate}
+
+\noindent\problempart
+\label{pr.TT.valid3}
+Determine whether each argument is valid or invalid, using a complete truth table.
+\begin{enumerate}
+\item $A\eor\bigl[A\eif(A\eiff A)\bigr] \therefore  A $\vspace{.5ex}%invalid
+\item $A\eor B$, $B\eor C$, $\enot B \therefore A \eand C$\vspace{.5ex} %valid
+\item $A \eif B$, $\enot A\therefore \enot B$ \vspace{.5ex}%invalid
+\item $A$, $B\therefore \enot(A\eif \enot B)$ \vspace{.5ex}%valid
+\item $\enot(A \eand B)$, $A \eor B$, $A \eiff B\therefore C$ \vspace{.5ex}%valid 
+\end{enumerate}
+
+\problempart
+\label{pr.TT.concepts}
+Answer each of the questions below and justify your answer.
+\begin{enumerate}
+\item Suppose that \metav{A} and \metav{B} are logically equivalent. What can you say about $\metav{A}\eiff\metav{B}$?
+%\metav{A} and \metav{B} have the same truth value on every line of a complete truth table, so $\metav{A}\eiff\metav{B}$ is true on every line. It is a tautology.
+\item Suppose that $(\metav{A}\eand\metav{B})\eif\metav{C}$ is neither a tautology nor a contradiction. What can you say about whether $\metav{A}, \metav{B} \therefore\metav{C}$ is valid?
+%The sentence is false on some line of a complete truth table. On that line, \metav{A} and \metav{B} are true and \metav{C} is false. So the argument is invalid.
+\item Suppose that $\metav{A}$, $\metav{B}$ and $\metav{C}$  are jointly unsatisfiable. What can you say about $(\metav{A}\eand\metav{B}\eand\metav{C})$?
+\item Suppose that \metav{A} is a contradiction. What can you say about whether $\metav{A}, \metav{B} \entails \metav{C}$?
+%Since \metav{A} is false on every line of a complete truth table, there is no line on which \metav{A} and \metav{B} are true and \metav{C} is false. So the argument is valid.
+\item Suppose that \metav{C} is a tautology. What can you say about whether $\metav{A}, \metav{B}\entails \metav{C}$?
+%Since \metav{C} is true on every line of a complete truth table, there is no line on which \metav{A} and \metav{B} are true and \metav{C} is false. So the argument is valid.
+\item Suppose that \metav{A} and \metav{B} are logically equivalent. What can you say about $(\metav{A}\eor\metav{B})$?
+%Not much. $(\metav{A}\eor\metav{B})$ is a tautology if \metav{A} and \metav{B} are tautologies; it is a contradiction if they are contradictions; it is contingent if they are contingent.
+\item Suppose that \metav{A} and \metav{B} are \emph{not} logically equivalent. What can you say about $(\metav{A}\eor\metav{B})$?
+%\metav{A} and \metav{B} have different truth values on at least one line of a complete truth table, and $(\metav{A}\eor\metav{B})$ will be true on that line. On other lines, it might be true or false. So $(\metav{A}\eor\metav{B})$ is either a tautology or it is contingent; it is \emph{not} a contradiction.
+\end{enumerate}
+\problempart 
+Consider the following principle:
+	\begin{ebullet}
+		\item Suppose $\metav{A}$ and $\metav{B}$ are logically equivalent. Suppose an argument contains $\metav{A}$ (either as a premise, or as the conclusion). The validity of the argument would be unaffected, if we replaced $\metav{A}$ with $\metav{B}$.
+	\end{ebullet}
+Is this principle correct? Explain your answer.
 
 \newglossaryentry{truth value}
                  {

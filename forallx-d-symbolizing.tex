@@ -77,6 +77,85 @@ In doing this, we are not fixing this symbolization once and for all. We are jus
 \end{earg}
 It is important to understand that whatever structure an English sentence might have is lost when it is symbolized by a sentence letter of PL. From the point of view of PL, a sentence letter is just a letter. It can be used to build more complex sentences, but it cannot be taken apart. It is worth noting also that we are only going to use these proposition letters for the simplest propositions possible. For example, you might think that the sentences “Billy is happy" and “Billy is not happy" use two different simple propositions. This, however, is not the case. Both use the same simple proposition, namely “Billy is happy", with the first being just that one and the second being composed out of it and a negation. The negation doesn't change the meaning of the proposition, rather it flips the truth value, as we will see later. In Quantified Logic (also called First Order Logic or Predicate Logic), we will be able to break these propositions apart and get a more fine grained language, but this is the starting point to get to that.
 
+\practiceproblems
+\problempart
+\label{pr.shapeofargs}
+For each of the following: Determine whether these arguments have structure or \emph{form}.
+\begin{enumerate}
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument A&Argument B\\\hline
+	If Max goes to the party, Sally will be happy. & If Jack goes up the hill, Jill will follow him.\\
+	If Sally is happy, Klaus will want to know why. & If Jack and Jill need to fetch  a pail of water, then Jack will go up the hill.\\
+	Therefore, if Max goes to the party, Klaus will want to know why Sally is happy. & Therefore, if Jack and Jill need to fetch a pail of water, then Jill will follow Jack.\\
+	\end{tabular} 
+
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument C&Argument D\\\hline
+	Either Max is going to the party or Sally is. & Either Max or Sally is going to the party.\\
+	If Sally is going to the party, then she will drag John along. & Max isn't going and if Sally comes, then John will be there.\\
+	Therefore, either Max is going to the party or Sally is going and she will drag John along. & Therefore, Both Sally and John are coming to the party.\\
+	\end{tabular} 
+
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument E&Argument F\\\hline
+	Neither Kirito nor Asuna enjoy combat. & Both Kirito and Asuna dislike combat.\\
+	If Kirito doesn't like combat, then he will only use it as a last resort. & If Asuna dislikes combat, then she will avoid it.\\
+	Therefore, Kirito will only engage in combat as a last resort. & Therefore, Both Asuna will avoid combat.\\
+	\end{tabular} 
+
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument G&Argument H\\\hline
+	Video games are addictive and unhealthy. & Cigarettes are either addictive or unhealthy\\
+	If video games are unhealthy, then they should have some manner of warning label. & If they are addictive, then there should be a public information campaign about it.\\
+	If they are addictive, then they should have some warning manner of warning label . & If they are unhealthy, then there should be a warning label on them.\\
+	Therefore, video games should have a warning label about their health risks and how addictive they are.& Therefore, cigarettes either need a warning label or an information campaign.\\
+	\end{tabular} 
+
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument I&Argument J\\\hline
+	There are disagreements about whether the US landed on the moon. & There are disagreements about morality.\\
+	If there are disagreements about whether the US landed on the moon, then there must be no fact of the matter about it. &If there are disagreements about morality, then there must be no fact of the matter about it.\\
+	Therefore, there must be no fact of the matter about whether the US landed on the moon. & Therefore, there must be no fact of the matter about morality.\\
+	\end{tabular} 
+
+\item
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}
+	Argument L&Argument M\\\hline
+	If he came in through the window, then Annie is not OK. & Billie Jean is not Michael's lover.\\
+	He came in through the window. &If she is not his lover, then the kid is not his son.\\
+	Therefore, Annie is not OK. & Therefore, the kid is not his son.\\
+	\end{tabular} 
+\end{enumerate}
+
+\problempart
+\label{pr.atomicsentences}
+Identify the propositions (`atomic' of `simple' sentences) in each of these complex (compound) sentences.
+\begin{enumerate}
+\item If Max goes to the party, Sally will be happy.
+\item If Jack goes up the hill, Jill will follow him.
+\item If Sally is happy, Klaus will want to know why. 
+\item If Jack and Jill need to fetch  a pail of water, then Jack will go up the hill.
+\item Either Max is going to the party or Sally is. 
+\item If Sally is going to the party, then she will drag John along. 
+\item Max isn't going and if Sally comes, then John will be there.
+\item Neither Kirito nor Asuna enjoy combat.
+\item If Kirito doesn't like combat, then he will only use it as a last resort.
+\item Video games are addictive and unhealthy. 
+\item Cigarettes are either addictive or unhealthy.
+\item If there are disagreements about whether the US landed on the moon, then there must be no fact of the matter about it. 
+\end{enumerate}
+
 \chrysippus
 
 \chapter{Part 5: Introduction to Connectives}
@@ -294,6 +373,37 @@ A word of caution. Ordinary speakers of English often use ‘if \ldots , then\ld
 
 \russell
 
+\practiceproblems
+\problempart
+\label{pr.basicsymbol}
+Using the following symbolization key, symbolize these sentences into PL.
+	\begin{ekey}
+		\item[M] Max goes to the party
+		\item[S] Sally is happy
+		\item[J] Jack goes up the hill
+		\item[F] Jill follows Jack
+		\item[P] John will be at the party
+		\item[K] Kirito is heroic
+		\item[A] Asuna loves Kirito
+		\item[V] Video games are healthy
+		\item[C] Cigarettes are healthy
+	\end{ekey}
+
+\begin{enumerate}
+\item Video games are unhealthy.
+\item If Jack goes up the hill, Jill will follow him.
+\item Asuna loves Kirito and he is heroic. 
+\item Jack will go up the hill unless Jill follows him.
+\item if cigarettes are healthy, then video games are too. 
+\item If Sally is happy, then Kirito is heroic. 
+\item Max is going to the party only if Jack goes up the hill.
+\item If Jill follows Jack, then Max will be at the party.
+\item Asuna loves Kirito if and only if he is heroic.
+\item Asuna does not love Kirito.
+\item John won't be at the party. 
+\end{enumerate}
+
+
 \chapter{Part 6: More Complex Sentences in PL}
 \section{Part 6.1: Expressions}
 \label{s:Part 6.1: Expressions}
@@ -370,6 +480,62 @@ Combining these two conventions, we can rewrite the unwieldy sentence
 rather more clearly as follows:
 \begin{center}[(H\eif I)\eor (I\eif H)]\eand (J\eor K)\end{center} 
 The scope of each connective is now much easier to pick out.
+
+\practiceproblems
+\problempart
+\label{pr.morecomplexsymbol}
+Using the following symbolization key, symbolize these arguments into PL.
+	\begin{ekey}
+		\item[M] Max goes to the party
+		\item[S] Sally is happy
+		\item[J] Jack goes up the hill
+		\item[F] Jill follows Jack
+		\item[P] John will be at the party
+		\item[K] Kirito is heroic
+		\item[A] Asuna loves Kirito
+		\item[V] Video games are healthy
+		\item[C] Cigarettes are healthy
+		\item[R] Rika is jealous
+	\end{ekey}
+
+\begin{enumerate}
+\item Cigarettes are unhealthy only if video games are. Cigarettes are, in fact, unhealthy. Therefore, video games are unhealthy.
+\item If Jack goes up the hill, Jill will follow him. Jill isn't following him. Therefore, Jack isn't going up the hill.
+\item If Asuna loves Kirito, Rika is jealous. If Kirito is heroic, then Asuna loves him. Kirito is heroic. Therefore, Asuna loves him and Rika is jealous. 
+\item Jack will go up the hill unless Jill doesn't follow him. Jill is following Jack. Therefore, Jack will go up the hill.
+\item If Sally is happy, then Rika is jealous. If Max goes to the party, then Rika will be jealous. Sally won't be happy unless Max goes to the party. Therefore, Rika is going to be jealous.
+\item John will be at the party if and only if both cigarettes and video games are healthy. Neither cigarettes nor video games are healthy. Therefore, John will not be at the party. 
+\item Max is going to the party if Jack goes up the hill. Either Jack won't go up the hill or Sally is happy. Therefore, if Jack goes up the hill then both Max goes to the party and Sally is happy.
+\item If John will be at the party, then Jack will go up the hill. If Jack goes up the hill, then Jill will follow him. If Jill follows him, then Rika will be jealous. Therefore, if John will be at the party, then Rika will be jealous. 
+\item Asuna loves Kirito if and only if both she loves him and he is heroic. He is heroic only if video games are unhealthy. Therefore, Asuna loves Kirito only if video games are unhealthy. 
+\end{enumerate}
+
+\problempart
+Give a symbolization key and symbolize the following English sentences in TFL.
+\begin{enumerate}
+\item Alice and Bob are both spies.
+\item If either Alice or Bob is a spy, then the code has been broken.
+\item If neither Alice nor Bob is a spy, then the code remains unbroken.
+\item The German embassy will be in an uproar, unless someone has broken the code.
+\item Either the code has been broken or it has not, but the German embassy will be in an uproar regardless.
+\item Either Alice or Bob is a spy, but not both.
+\item If there is food to be found in the pridelands, then Rafiki will talk about squashed bananas.
+\item Rafiki will talk about squashed bananas unless Simba is alive.
+\item Rafiki will either talk about squashed bananas or he won't, but there is food to be found in the pridelands regardless.
+\item Scar will remain as king if and only if there is food to be found in the pridelands.
+\item If Simba is alive, then Scar will not remain as king.
+\end{enumerate}
+
+\problempart
+Symbolize the following arguments. A symbolization key is not provided, so you will need to make one yourself for each argument. Some of these arguments are, in fact, invalid. You may return to these as extra practice problems within the next module.
+\begin{enumerate}
+\item If Tristen is driving, then he is going to work. If he is texting, then he is goofing off. Therefore, if Tristen is both texting and driving, then he is both going to work and goofing off.
+\item The car gets 30 miles to the gallon. If Joe can get to the gas station, then the car gets 30 miles per gallon. Therefore, Joe can get to the gas station.
+\item The car gets 30 miles to the gallon. If the car gets 30 miles per gallon, then Joe can get to the gas station. Therefore, Joe can get to the gas station.
+\item If Dorothy plays the piano in the morning, then Roger wakes up cranky. Dorothy plays piano in the morning unless she is distracted. So if Roger does not wake up cranky, then Dorothy must be distracted.
+\item It will either rain or snow on Tuesday. If it rains, Neville will be sad. If it snows, Neville will be cold. Therefore, Neville will either be sad or cold on Tuesday.
+\item If Zoog remembered to do his chores, then things are clean but not neat. If he forgot, then things are neat but not clean. Therefore, things are either neat or clean; but not both.
+\end{enumerate}
 
 \newglossaryentry{sentence letter}
 {

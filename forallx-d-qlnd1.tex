@@ -284,6 +284,151 @@ It will pay off to keep how this rule works in mind, as this sort of assumption,
 
 \godel
 
+\practiceproblems
+\problempart
+Explain why these two `proofs' are \emph{incorrect}. Also, provide interpretations which would invalidate the fallacious argument forms the `proofs' enshrine:
+\begin{multicols}{2}
+	\begin{fitchproof}
+		\hypo{Rxx}{\forall x\, \atom{R}{x,x}}
+		\have{Raa}{\atom{R}{a,a}}\Ae{Rxx}
+		\have{Ray}{\forall y\, \atom{R}{a,y}}\Ai{Raa}
+		\have{Rxy}{\forall x\, \forall y\, \atom{R}{x,y}}\Ai{Ray}
+	\end{fitchproof}
+	\begin{fitchproof}
+		\hypo{AE}{\forall x\, \exists y\, \atom{R}{x,y}}
+		\have{E}{\exists y\, \atom{R}{a,y}}\Ae{AE}
+		\open
+			\hypo{ass}{\atom{R}{a,a}}
+			\have{Ex}{\exists x\, \atom{R}{x,x}}\Ei{ass}
+		\close
+		\have{con}{\exists x\, \atom{R}{x,x}}\Ee{E, ass-Ex}
+	\end{fitchproof}
+\end{multicols}
+
+\problempart 
+\label{pr.justifyFOLproof}
+The following three proofs are missing their citations (rule and line numbers). Add them, to turn them into bona fide proofs.
+\begin{enumerate}
+\item \begin{fitchproof}
+\hypo{p1}{\forall x\exists y(\atom{R}{x,y} \eor \atom{R}{y,x})}
+\hypo{p2}{\forall x\,\enot \atom{R}{m,x}}
+\have{3}{\exists y(\atom{R}{m,y} \eor \atom{R}{y,m})}{}
+	\open
+		\hypo{a1}{\atom{R}{m,a} \eor \atom{R}{a,m}}
+		\have{a2}{\enot \atom{R}{m,a}}{}
+		\have{a3}{\atom{R}{a,m}}{}
+		\have{a4}{\exists x\, \atom{R}{x,m}}{}
+	\close
+\have{n}{\exists x\, \atom{R}{x,m}} {}
+\end{fitchproof}
+
+\item \begin{fitchproof}
+\hypo{1}{\forall x(\exists y\,\atom{L}{x,y} \eif \forall z\,\atom{L}{z,x})}
+\hypo{2}{\atom{L}{a,b}}
+\have{3}{\exists y\,\atom{L}{a,y} \eif \forall z\atom{L}{z,a}}{}
+\have{4}{\exists y\, \atom{L}{a,y}} {}
+\have{5}{\forall z\, \atom{L}{z,a}} {}
+\have{6}{\atom{L}{c,a}}{}
+\have{7}{\exists y\,\atom{L}{c,y} \eif \forall z\,\atom{L}{z,c}}{}
+\have{8}{\exists y\, \atom{L}{c,y}}{}
+\have{9}{\forall z\, \atom{L}{z,c}}{}
+\have{10}{\atom{L}{c,c}}{}
+\have{11}{\forall x\, \atom{L}{x,x}}{}
+\end{fitchproof}
+
+\item \begin{fitchproof}
+\hypo{a}{\forall x(\atom{J}{x} \eif \atom{K}{x})}
+\hypo{b}{\exists x\,\forall y\, \atom{L}{x,y}}
+\hypo{c}{\forall x\, \atom{J}{x}}
+\open
+	\hypo{2}{\forall y\, \atom{L}{a,y}}
+	\have{3}{\atom{L}{a,a}}{}
+	\have{d}{\atom{J}{a}}{}
+	\have{e}{\atom{J}{a} \eif \atom{K}{a}}{}
+	\have{f}{\atom{K}{a}}{}
+	\have{4}{\atom{K}{a} \eand \atom{L}{a,a}}{}
+	\have{5}{\exists x(\atom{K}{x} \eand \atom{L}{x,x})}{}
+\close
+\have{j}{\exists x(\atom{K}{x} \eand \atom{L}{x,x})}{}
+\end{fitchproof}
+\end{enumerate}
+
+\problempart
+\label{pr.BarbaraEtc.proof2}
+Aristotle and his successors identified other syllogistic forms which depended upon `existential import'. Symbolize each of these argument forms in FOL and offer proofs.
+\begin{enumerate}
+	\item \textbf{Barbari.} Something is H. All G are F. All H are G. So: Some H is F
+	\item \textbf{Celaront.} Something is H. No G are F. All H are G. So: Some H is not F
+	\item \textbf{Cesaro.} Something is H. No F are G. All H are G. So: Some H is not F.
+	\item \textbf{Camestros.} Something is H. All F are G. No H are G. So: Some H is not F.
+	\item \textbf{Felapton.} Something is G. No G are F. All G are H. So: Some H is not F.
+	\item \textbf{Darapti.} Something is G. All G are F. All G are H. So: Some H is F.
+	\item \textbf{Calemos.} Something is H. All F are G. No G are H. So: Some H is not F.
+	\item \textbf{Fesapo.} Something is G. No F is G. All G are H. So: Some H is not F.
+	\item \textbf{Bamalip.} Something is F. All F are G. All G are H. So: Some H are F.
+\end{enumerate}
+
+\problempart
+\label{pr.someFOLproofs}
+Provide a proof of each claim.
+\begin{enumerate}
+\item $\proves \forall x\,\atom{F}{x} \eif \forall y(\atom{F}{y} \eand \atom{F}{y})$
+\item $\forall x(\atom{A}{x}\eif \atom{B}{x}), \exists x\,\atom{A}{x} \proves \exists x\,\atom{B}{x}$
+\item $\forall x(\atom{M}{x} \eiff \atom{N}{x}), \atom{M}{a} \eand \exists x\,\atom{R}{xa} \proves \exists x\,\atom{N}{x}$
+\item $\forall x\, \forall y\,\atom{G}{xy}\proves\exists x\,\atom{G}{xx}$
+\item $\proves\forall x\,\atom{R}{xx} \eif \exists x\, \exists y\,\atom{R}{xy}$
+\item $\proves\forall y\, \exists x (\atom{Q}{y} \eif \atom{Q}{x})$
+\item $\atom{N}{a} \eif \forall x(\atom{M}{x} \eiff \atom{M}{a}), \atom{M}{a}, \enot\atom{M}{b}\proves \enot \atom{N}{a}$
+\item $\forall x\, \forall y (\atom{G}{xy} \eif \atom{G}{yx}) \proves \forall x\forall y (\atom{G}{xy} \eiff \atom{G}{yx})$
+\item $\forall x(\enot\atom{M}{x} \eor \atom{L}{jx}), \forall x(\atom{B}{x}\eif \atom{L}{jx}), \forall x(\atom{M}{x}\eor \atom{B}{x})\proves \forall x\atom{L}{jx}$
+\end{enumerate}
+
+\problempart
+\label{pr.likes}
+Write a symbolization key for the following argument, symbolize it, and prove it:
+\begin{quote}
+There is someone who likes everyone who likes everyone that she likes. Therefore, there is someone who likes herself.
+\end{quote}
+
+
+\problempart
+Show that each pair of sentences is provably equivalent.
+\begin{enumerate}
+\item $\forall x (\atom{A}{x}\eif \enot \atom{B}{x})$, $\enot\exists x(\atom{A}{x} \eand \atom{B}{x})$
+\item $\forall x (\enot\atom{A}{x}\eif \atom{B}{d})$, $\forall x\,\atom{A}{x} \eor \atom{B}{d}$
+\item $\exists x\,\atom{P}{x} \eif \atom{Q}{c}$, $\forall x (\atom{P}{x} \eif \atom{Q}{c})$
+\end{enumerate}
+
+\problempart
+\label{pr.FOLequivornot}
+For each of the following pairs of sentences: If they are provably equivalent, give proofs to show this. If they are not, construct an interpretation to show that they are not logically equivalent.
+\begin{enumerate}
+\item $\forall x\,\atom{P}{x} \eif \atom{Q}{c}, \forall x (\atom{P}{x} \eif \atom{Q}{c})$
+\item $\forall x\,\forall y\, \forall z\,\atom{B}{xyz}, \forall x\,\atom{B}{xx}x$
+\item $\forall x\,\forall y\,\atom{D}{xy}, \forall y\,\forall x\,\atom{D}{xy}$
+\item $\exists x\,\forall y\,\atom{D}{xy}, \forall y\,\exists x\,\atom{D}{xy}$
+\item $\forall x (\atom{R}{c,a} \eiff \atom{R}{xa}), \atom{R}{ca} \eiff \forall x\,\atom{R}{xa}$
+\end{enumerate}
+
+\problempart
+\label{pr.FOLvalidornot}
+For each of the following arguments: If it is valid in FOL, give a proof. If it is invalid, construct an interpretation to show that it is invalid.
+\begin{enumerate}
+\item $\exists y\,\forall x\,\atom{R}{xy} \therefore \forall x\,\exists y\,\atom{R}{xy}$
+\item $\forall x\,\exists y\,\atom{R}{xy} \therefore  \exists y\,\forall x\,\atom{R}{xy}$
+\item $\exists x(\atom{P}{x} \eand \enot \atom{Q}{x}) \therefore \forall x(\atom{P}{x} \eif \enot \atom{Q}{x})$
+\item $\forall x(\atom{S}{x} \eif \atom{T}{a}), \atom{S}{d} \therefore \atom{T}{a}$
+\item $\forall x(\atom{A}{x}\eif \atom{B}{x}), \forall x(\atom{B}{x} \eif \atom{C}{x}) \therefore \forall x(\atom{A}{x} \eif \atom{C}{x})$
+\item $\exists x(\atom{D}{x} \eor \atom{E}{x}), \forall x(\atom{D}{x} \eif \atom{F}{x}) \therefore \exists x(\atom{D}{x} \eand \atom{F}{x})$
+\item $\forall x\,\forall y(\atom{R}{xy} \eor \atom{R}{yx}) \therefore \atom{R}{jj}$
+\item $\exists x\,\exists y(\atom{R}{xy} \eor \atom{R}{yx}) \therefore \atom{R}{jj}$
+\item $\forall x\,\atom{P}{x} \eif \forall x\,\atom{Q}{x}, \exists x\, \enot\atom{P}{x} \therefore \exists x\, \enot \atom{Q}{x}$
+\item $\exists x\,\atom{M}{x} \eif \exists x\,\atom{N}{x}$, $\enot \exists x\,\atom{N}{x}\therefore  \forall x\, \enot \atom{M}{x}$
+\end{enumerate}
+
+
+
+
 \chapter{Part 25 Tips for and an Example of Proofs in QL}
 
 Previously, we discussed strategies for constructing proofs using the basic rules of natural deduction for PL. The same principles apply to the rules for the quantifiers. If we want to prove a quantifier sentence $\forall$ xAx or $\exists$ xAx. We can work backward by justifying the sentence we want by $\forall$ I or $\exists$ I and trying to find a proof of the corresponding premise of that rule. And to work forward from a quantified sentence, we apply $\forall$ E or $\exists$ E, as the case may be.

@@ -167,6 +167,27 @@ Looking back over my experience hearing this rule in action or using it, I have 
 \end{fitchproof}	
 
 As an added, final note, some natural deduction systems ignore or do not use TAUT (they don't have it) and instead expect the reasoner to use convoluted and lengthy series of steps to arrive at this conclusion. Some try to circumvent this by taking the example I just gave and defining DIL that way, saying that it only applies then the consequent of both of the conditionals is the same and then they get it (i.e. A\eor B, A\eif C, B\eif C $\vDash$ C). I found that the inclusion of TAUT is worth it because of the ease it adds to the system while retaining much of the usefulness of DIL.
+\practiceproblems
+\problempart
+\label{pr.solvedTFLproofs}
+Give a proof for each of the following arguments:
+\begin{enumerate}
+\item $J\eif\enot J \therefore \enot J$
+\item $Q\eif(Q\eand\enot Q) \therefore \enot Q$
+\item $A\eif (B\eif C) \therefore (A\eand B)\eif C$
+\item $K\eand L \therefore K\eiff L$
+\item $(C\eand D)\eor E, \enot E, \enot(\enot C\eor \enot D)\eif M \therefore M$
+\item $A\eiff B, B\eiff C \therefore A\eiff C$
+\item $\enot F\eor G, F\eif H, F \therefore G\eand H$
+\item $\enot D\eif K, K \eif D \therefore D$
+\item $P \eand (Q\eor R), P\eif \enot R \therefore Q\eor E$
+\item $S\eiff T \therefore S\eiff (T\eor S)$
+\item $\enot (P \eif Q) \therefore \enot Q$
+\item $\enot (P \eif Q) \therefore P$
+\end{enumerate}
+
+
+
 \chapter{Part 16 Indirect Proofs}
 \section{Part 16.1 Conditional Proofs}
 As you may recall from Part 13.4, I avoided introducing you to the Conditional Introduction rule (\eif I) because it was significantly different and a little bit more complicated than the others we were covering. This is because \eif I is a concluding citation to an indirect proof. The rule for conditional introduction is also quite easy to motivate. The following argument should be valid:
@@ -307,6 +328,34 @@ Another rule which can be seen as short-hand for a longer proof is the DIL rule.
 \close
 \have[11]{X}{Q\eor R} \ne{M-W}
 \end{fitchproof}
+
+\practiceproblems
+
+\problempart
+Use indirect proofs to prove the following:
+\begin{enumerate}
+\item $A \eif B, A \eif C \therefore A \eif (B \eand C)$
+\item $(A \eand B) \eif C \therefore A \eif (B \eif C)$
+\item $A \eif (B \eif C) \therefore (A \eif B) \eif (A \eif C)$
+\item $A \eor (B \eand C) \therefore (A \eor B) \eand (A \eor C)$
+\item $(A \eand B) \eor (A \eand C) \therefore A \eand (B \eor C)$
+\item $A \eor B, A \eif C, B \eif D \therefore C \eor D$
+\item $\enot A \lor \enot B \therefore \enot(A \eand B)$
+\item $A \eand \enot B \therefore \enot(A \eif B)$
+\item $\therefore \enot A \eif (A \eif C)$
+\item $\therefore \enot(A \eand \enot A)$
+\item $\therefore [(A \eif C) \eand (B \eif C)] \eif [(A \lor B) \eif C]$
+\item $\therefore \enot(A \eif B) \eif (A \eand \enot B)$
+\item $\therefore (\enot A \eor B) \eif (A \eif B)$
+\item $\therefore \enot\enot A \eif A$
+\item $\enot A \eif \enot B \therefore B \eif A$
+\item $A \eif B \therefore \enot A \eor B$
+\item $\therefore \enot(A \eand B) \eif (\enot A \eor \enot B)$
+\item $A \eif (B \eor C) \therefore (A \eif B) \eor (A \eif C)$
+\item $\therefore (A \eif B) \lor (B \eif A)$
+\item $\therefore ((A \eif B) \eif A) \eif A$
+\end{enumerate}
+
 \chapter{Part 17 Tips For Proofs}
 \section{Part 17.1 Working Backwards from What You Want}
 Often, when you are trying to make a proof for some conclusion, C, it will not be directly obvious how you should go about doing it; that is, you aren't sure where to start. In these cases, it is useful to work backwards. Start with the conclusion and then figure out what lines you'll need to get for something like it, then figure out what you need to do to get those lines, and so on. In the `real-world', this is a very useful way of thinking. Often, we will encounter a stance, idea, or purported fact and think something along the lines of "that's obviously true" or "dude, that's obviously false." But, as good, logical, thinkers, we can't stop there; we need some supporting reasons or evidence. So, we figure out what else we will need to believe in order to support this stance and work backwards from there.

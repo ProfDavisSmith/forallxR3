@@ -344,6 +344,60 @@ To be clear: all this is doing is formalizing (very pedantically) the intuitive 
 
 \ockham
 
+\practiceproblems
+\problempart
+\label{pr.TorF1}
+Consider the following interpretation:
+	\begin{ebullet}
+		\item The domain comprises only Corwin and Benedict
+		\item `$\atom{A}{x}$' is to be true of both Corwin and Benedict
+		\item `$\atom{B}{x}$' is to be true of Benedict only
+		\item `$\atom{N}{x}$' is to be true of no one
+		\item `$c$' is to refer to Corwin
+	\end{ebullet}
+Determine whether each of the following sentences is true or false in that interpretation:
+\begin{enumerate}
+\item $\atom{B}{c} $
+\item $\atom{A}{c}  \eiff \enot \atom{N}{c}$
+\item $\atom{N}{c}  \eif (\atom{A}{c} \eor \atom{B}{c})$
+\item $\forall x\, \atom{A}{x}$
+\item $\forall x \enot \atom{B}{x}$
+\item $\exists x(\atom{A}{x} \eand \atom{B}{x})$
+\item $\exists x(\atom{A}{x} \eif \atom{N}{x})$
+\item $\forall x(\atom{N}{x} \eor \enot \atom{N}{x})$
+\item $\exists x\, \atom{B}{x} \eif \forall x\, \atom{A}{x}$
+\end{enumerate}
+
+\problempart
+\label{pr.TorF2}
+Consider the following interpretation:	
+	\begin{ebullet}
+		\item The domain comprises only Lemmy, Courtney and Eddy
+		\item `$\atom{G}{x}$' is to be true of Lemmy, Courtney and Eddy.
+		\item `$\atom{H}{x}$' is to be true of and only of Courtney
+		\item `$\atom{M}{x}$' is to be true of and only of Lemmy and Eddy
+		\item `$c$' is to refer to Courtney
+		\item `$e$' is to refer to Eddy
+	\end{ebullet}
+Determine whether each of the following sentences is true or false in that interpretation:
+\begin{enumerate}
+\item $\atom{H}{c} $
+\item $\atom{H}{e} $
+\item $\atom{M}{c}  \eor \atom{M}{e}$
+\item $\atom{G}{c}  \eor \enot \atom{G}{c}$
+\item $\atom{M}{c}  \eif \atom{G}{c}$
+\item $\exists x\, \atom{H}{x}$
+\item $\forall x\, \atom{H}{x}$
+\item $\exists x\, \enot \atom{M}{x}$
+\item $\exists x(\atom{H}{x} \eand \atom{G}{x})$
+\item $\exists x(\atom{M}{x} \eand \atom{G}{x})$
+\item $\forall x(\atom{H}{x} \eor \atom{M}{x})$
+\item $\exists x\, \atom{H}{x} \eand \exists x\, \atom{M}{x}$
+\item $\forall x(\atom{H}{x} \eiff \enot \atom{M}{x})$
+\item $\exists x\, \atom{G}{x} \eand \exists x \enot \atom{G}{x}$
+\item $\forall x\exists y(\atom{G}{x} \eand \atom{H}{y})$
+\end{enumerate}
+
 \chapter{Part 23 Semantic Concepts and Validity}
 \section{Part 23.1: Semantic Concepts}
 Defining truth in QL was quite fiddly. But now that we are done, we can define various other central logical notions. These definitions will look very similar to those for PL, from Part 9. However, remember that they concern interpretations, rather than valuations. We will use the symbol ‘$\entails$’ for QL much as we did for PL. So:
@@ -484,6 +538,7 @@ If some interpretation makes all of $A_1,A_2,\ldots,A_n$ true and C is false, th
 
 An interpretation which refutes a claim—to logical truth, say, or to entailment—is called a \gls{counter-interpretation}, or a \gls{countermodel}.
 
+
 \newglossaryentry{counter-interpretation}
 {
 name={counter-interpretation},
@@ -510,6 +565,73 @@ $\forall$x (Fx\eif Cx) \therefore $\forall$x (Vx\eif Cx)
 However, it is easy to find counter-models which show that $\forall$x (Fx\eif Cx) $\nvDash$ $\forall$x (Vx\eif Cx). (As a fun exercise, try to find one.) So, it would be wrong to infer that the English argument is invalid, just because there is a counter-model to the relevant QL-entailment.
 
 The general moral is this. If you want to infer from the absence of an entailment in QL to the invalidity of some English argument, then you need to argue that nothing important is lost in the way you have symbolized the English argument.
+
+\practiceproblems
+
+\problempart
+\label{pr.Contingent}
+Show that each of the following is neither a validity nor a contradiction:
+\begin{enumerate}
+\item \leftsolutions\ $\atom{D}{a}  \eand \atom{D}{b}$
+\item \leftsolutions\ $\exists x\, \atom{T}{xh}$
+\item \leftsolutions\ $\atom{P}{m}  \eand \enot\forall x\, \atom{P}{x}$
+\item $\forall z \atom{J}{z} \eiff \exists y\, \atom{J}{y}$
+\item $\forall x (\atom{W}{xmn} \eor \exists y\atom{L}{xy})$
+\item $\exists x (\atom{G}{x} \eif \forall y\, \atom{M}{y})$
+\item $\exists x (x = h \eand x = i)$
+\end{enumerate}
+
+\solutions
+\problempart
+\label{pr.NotEquiv}
+Show that the following pairs of sentences are not logically equivalent.
+\begin{enumerate}
+\item $\atom{J}{a} $,  $\atom{K}{a}$
+\item $\exists x\, \atom{J}{x}$,  $\atom{J}{m}$
+\item $\forall x\, \atom{R}{xx}$, $\exists x\, \atom{R}{xx}$
+\item $\exists x\, \atom{P}{x} \eif \atom{Q}{c}$, $\exists x (\atom{P}{x} \eif \atom{Q}{c})$
+\item $\forall x(\atom{P}{x} \eif \enot \atom{Q}{x})$, $\exists x(\atom{P}{x} \eand \enot \atom{Q}{x})$
+\item $\exists x(\atom{P}{x} \eand \atom{Q}{x})$, $\exists x(\atom{P}{x} \eif \atom{Q}{x})$
+\item $\forall x(\atom{P}{x}\eif \atom{Q}{x})$, $\forall x(\atom{P}{x} \eand \atom{Q}{x})$
+\item $\forall x\exists y\, \atom{R}{xy}$, $\exists x\forall y\, \atom{R}{xy}$
+\item $\forall x\exists y\, \atom{R}{xy}$, $\forall x\exists y\, \atom{R}{yx}$
+\end{enumerate}
+
+\problempart
+Show that the following sentences are jointly satisfiable:
+\begin{enumerate}
+\item  $\atom{M}{a}, \enot \atom{N}{a}, \atom{P}{a}, \enot \atom{Q}{a}$
+\item $\atom{L}{ee}, \atom{L}{eg}, \enot \atom{L}{ge}, \enot \atom{L}{gg}$
+\item $\enot (\atom{M}{a} \eand \exists x\, \atom{A}{x}), \atom{M}{a} \eor \atom{F}{a}, \forall x(\atom{F}{x} \eif \atom{A}{x})$
+\item $\atom{M}{a} \eor \atom{M}{b}, \atom{M}{a} \eif \forall x \enot \atom{M}{x}$
+\item $\forall y\, \atom{G}{y}, \forall x (\atom{G}{x} \eif \atom{H}{x}), \exists y \enot \atom{I}{y}$
+\item $\exists x(\atom{B}{x} \eor \atom{A}{x}), \forall x \enot \atom{C}{x}, \forall x\bigl[(\atom{A}{x} \eand \atom{B}{x}) \eif \atom{C}{x}\bigr]$
+\item $\exists x\, \atom{X}{x}, \exists x\, \atom{Y}{x}, \forall x(\atom{X}{x} \eiff \enot \atom{Y}{x})$
+\item $\forall x(\atom{P}{x} \eor \atom{Q}{x}), \exists x\enot(\atom{Q}{x} \eand \atom{P}{x})$
+\item $\exists z(\atom{N}{z} \eand \atom{O}{zz}), \forall x\forall y(\atom{O}{xy} \eif \atom{O}{yx})$
+\item $\enot \exists x \forall y\, \atom{R}{xy}, \forall x \exists y\, \atom{R}{xy}$
+\item $\enot \atom{R}{aa}$, $\forall x (x=a \eor \atom{R}{xa})$
+\item $\forall x\forall y\forall z[(x=y \eor y=z )\eor x=z]$, $\exists x\exists y\ \enot x= y$
+\item $\exists x\exists y((\atom{Z}{x} \eand \atom{Z}{y} )\eand x=y)$, $\enot \atom{Z}{d}$, $d=e$
+\end{enumerate}
+
+\problempart
+Show that the following arguments are invalid:
+\begin{enumerate}
+\item $\forall x(\atom{A}{x} \eif \atom{B}{x}) \therefore \exists x\, \atom{B}{x}$
+\item $\forall x(\atom{R}{x} \eif \atom{D}{x}), \forall x(\atom{R}{x} \eif \atom{F}{x}) \therefore \exists x(\atom{D}{x} \eand \atom{F}{x})$
+\item $\exists x(\atom{P}{x}\eif \atom{Q}{x}) \therefore \exists x\, \atom{P}{x}$
+\item $\atom{N}{a} \eand \atom{N}{b} \eand \atom{N}{c} \therefore \forall x\, \atom{N}{x}$
+\item $\atom{R}{d,e}, \exists x\, \atom{R}{xd} \therefore \atom{R}{ed}$
+\item $\exists x(\atom{E}{x} \eand \atom{F}{x}), \exists x\, \atom{F}{x} \eif \exists x\, \atom{G}{x} \therefore \exists x(\atom{E}{x} \eand \atom{G}{x})$
+\item $\forall x\, \atom{O}{xc}, \forall x\, \atom{O}{cx} \therefore \forall x\, \atom{O}{xx}$
+\item $\exists x(\atom{J}{x} \eand \atom{K}{x}), \exists x \enot \atom{K}{x}, \exists x \enot \atom{J}{x} \therefore \exists x(\enot \atom{J}{x} \eand \enot \atom{K}{x})$
+\item $\atom{L}{a,b} \eif \forall x\, \atom{L}{xb}, \exists x\, \atom{L}{x,b} \therefore \atom{L}{b,b}$
+\item $\forall x(\atom{D}{x} \eif \exists y\, \atom{T}{yx}) \therefore \exists y \exists z\ \enot y= z$
+\end{enumerate}
+
+
+
 \section{Part 23.3: Reasoning about All Interpretations}
 \label{allinterp}
 \subsection{Tautologies and contradictions}
@@ -566,7 +688,6 @@ Entailment?&All Interpretations&One Counter-interpretation\\
 \end{tabular}
 
 You might want to compare this table with the table at the end of the similar content for PL, they are very similar. The key difference resides in the fact that PL concerns truth tables, whereas QL concerns interpretations. This difference is deeply important, since each truth-table only ever has finitely many lines, so that a complete truth table is a relatively tractable object. By contrast, there are infinitely many interpretations for any given sentence(s), so that reasoning about all interpretations can be a deeply tricky business. To avoid this for arguments, one can use a natural deduction system for QL to prove the validity and entailment. We will be going over this next. So, to show that an argument is valid in QL, you need to make a proof and to show that it is invalid, you need to make a counter-interpretation.  
-
 
 \newglossaryentry{interpretation}{
   name = {interpretation},

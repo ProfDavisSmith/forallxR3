@@ -26,7 +26,21 @@ $A_1$\eif $C_1$ $\vDash$ \\
 This argument is also valid—as you can probably tell—but to test it requires a truth table with $2^{20}$ = 1048576 lines. In principle, we can set a machine to grind through truth tables and report back when it is finished. In practice, complicated arguments in PL can become intractable if we use truth tables. This problem gets even worse once we get into Quantified Logic (QL) (starting in Module 6). There is nothing like the truth table test for QL (though we will have some methods to get the same kind of tests). To assess whether or not an argument is valid, we have to reason about all interpretations, but, as we will see, there are infinitely many possible interpretations. We cannot even in principle set a machine to grind through infinitely many possible interpretations and report back when it is finished: it will never finish. We either need to come up with some more efficient way of reasoning about all interpretations, or we need to look for something different. That said, there are, indeed, systems that codify ways to reason about all possible interpretations. They were developed in the 1950s by Evert Beth and Jaakko Hintikka, but we will not follow this path. We will, instead, look to natural deduction.
 
 Rather than reasoning directly about all valuations (in the case of PL), we will try to select a few basic rules of inference. Some of these will govern the behavior of the connectives. Others will govern the behavior of the quantifiers and identity that are the hallmarks of QL (to be clear, QL deals in statements which concern quantity, relations, and identity, such as "all cats are mammals", "Whoopi Goldberg is Caryn Johnson",  and "some people like scary movies). The resulting system of rules will give us a new way to think about the validity of arguments. The modern development of natural deduction dates from simultaneous and unrelated papers by Gerhard Gentzen and Stanisław Jaśkowski (1934). However, the natural deduction system that we will consider is based largely around work by Frederic Fitch (first published in 1952). Once you have all of the rules ('moves' you can use in natural deduction), you will be able to show that an arguement is valid by making a proof and invalid by making a short-form (single line) truth table. 
-
+\practiceproblems
+\problempart
+\label{pr.basicinferencerulestables}
+For each of the following simple arguments, use a complete truth table to show whether they are valid. 
+\begin{enumerate}
+\item A $\vDash$ A
+\item A, B $\vDash$ A\eand B
+\item A\eand B $\vDash$ A
+\item A\eif B, A $\vDash$ B
+\item A\eif B, \enot B $\vDash$ \enot A
+\item A\eif B, B\eif C $\vDash$ A\eif C
+\item A $\vDash$ A\eor B
+\item A\eor B, \enot B $\vDash$ A
+\item A\eif B, C\eif D, A\eor C $\vDash$ B\eor D
+\end{enumerate}
 
 \chapter{Part 13 The Basic Rules of PL}
 From this point on, we will be developing an understanding of a natural deduction system. Notice that I said 'a natural deduction system', there are others just like how there are other mathematical systems and legal systems aside from the ones we are accustomed to. The interesting thing about mathematical and natural deduction systems is that they all are fundamentally based on the same general principles (mathematical systems are based on different principles than natural deduction systems, however). As a result, once you know one system, you know them all. I may have used this metaphor before but this is a lot like learning a language. Once you know the language, and I mean really know it, then you can use it to understand others and be understood by them, you might just need to change your accent. For this system, there is a nice nomenclature (naming-system) for the different inference rules which naturally sorts them in to nice, bite-sized, chunks. For each connective, there will be introduction rules, which allow us to prove a sentence which has that connective as the main logical operator (we are introducing the connective into the sentence), and elimination rules, which allow us to prove something from a sentence which has that connective as the main logical operator (we are removing that connective from the sentence, in a sense).
@@ -409,6 +423,79 @@ We could use DIL immediately on lines 1,4,2 but that would get us something othe
 \end{fitchproof}
 
 Don’t be alarmed if you think that you wouldn’t have been able to come up with the proofs yourself just yet. Some proof require you to tinker with the different options, try one route and not succeed and then get up and try it again. The ability to look at an argument and instantly know what moves it takes to get to the conclusion comes with practice but we will be covering some basic strategies for solving proofs soon. The key question at this stage is whether, looking at the proof, you can see that it conforms to the rules that we have laid down. That just involves checking every line, and making sure that it is justified in accordance with the rules we have laid down.
+
+\practiceproblems
+\problempart
+\label{pr.fillinblankbasics}
+For the following arguments, fill in the missing line, rule, or citations to complete it.
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eor M}
+\have[3]{p}{A\eor M} \by{}{n}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eor M}
+\have[3]{p}{A\eor M} \by{R}{,}
+\end{fitchproof}
+
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eif C}
+\hypo[3]{o}{A}
+\have[4]{p}{Z} \by{}{m,o}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{A\eif C}
+\hypo[3]{o}{A}
+\have[4]{p}{C} \ce{,}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{Z\eif L}
+\hypo[3]{o}{A}
+\have[4]{p}{} \by{HS}{m,n}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif (Z\eor L)}
+\hypo[2]{n}{\enot(Z\eor L)}
+\hypo[3]{o}{\enot Z}
+\have[4]{p}{\enot A} \by{MT}{,}
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eif Z}
+\hypo[2]{n}{\enot Z\eor A}
+\hypo[3]{p}{\enot A}
+\have[4]{q}{\enot Z}\by{\_}{ , }
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eand B}
+\hypo[2]{n}{A\eor B}
+\hypo[3]{p}{\enot A}
+\have[4]{q}{B}\oe{ , }
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eand B}
+\hypo[2]{n}{A\eor B}
+\have[3]{q}{A}\ae{ }
+\end{fitchproof}
+
+\begin{fitchproof}
+\hypo[1]{m}{A\eand B}
+\hypo[2]{n}{A\eif Z}
+\have[3]{p}{A}\ae{ }
+\have[4]{q}{Z}\ce{,}
+\end{fitchproof}
+
 \chapter{Part 14 Tips and Tricks for Proofs}
 \section{Part 14.1 Working Backwards From What You Have}
 Sometimes, we will come across an idea or stance, either told to us or something which we came up with, which we thinks is very right (true or correct) or very wrong (false or incorrect). But, as good and logical thinkers, we can't stop there. It is very easy to say what you think, it can be very hard to give reasons why you think it and harder still to prove that what you think is correct. When faced with this situation, it may be useful to work backwards from the stance (the 'conclusion' you want to reach) and see what you would need to have to prove it and what logical moves you would need to take from what you need. 
@@ -557,3 +644,22 @@ If you see that the negation of the consequent is somewhere in the proof, go ahe
 If you see the antecedent somewhere in the proof, go ahead and try to extract it and then use it for\eif E. Having the consequent may prove useful.\\
 If the consequent is the antecedent for another conditional, use HS. The result will cut out the middle-man and might prove useful. This holds also if the antecedent is a consequent of another conditional.\\
 If you see the antecedent as a disjunct in a disjunction, try to see whether you can use DIL.}
+
+\practiceproblems
+\problempart
+\label{pr.solvesimplePLproofs}
+Give a proof for each of the following arguments:
+\begin{enumerate}
+\item $J\eif\enot A, J \therefore \enot A$
+\item $X\eif(M\eand\enot Q),X \therefore \enot Q$
+\item $A\eif (B\eif C),A\eand B \therefore C$
+\item $K\eand L,K\eif M,L\eif Q \therefore M\eand Q$
+\item $(C\eor D)\eor E,\enot E,\enot D \therefore C\eor M$
+\item $A\eif B, B\eif C, A \therefore C$
+\item $\enot F\eif G, \enot F\eor H, \enot H \therefore G$
+\item $K \eand (\enot K\eor M), M\eif D \therefore D$
+\item $P \eand (Q\eor R), P\eif \enot R \therefore Q\eor E$
+\item $S\eif T,S\eor R,R\eif Q,(T\eor Q)\eif \enot R, \therefore S$
+\item $\enot P, P \therefore Q\eand R$
+\item $P\eif Z,\enot Z\eor M,\enot M \therefore \enot P$
+\end{enumerate}

@@ -319,6 +319,103 @@ A sentence that can be paraphrased as ‘only F s are Gs’ can be symbolized as
 
 \ghazali
 
+\practiceproblems
+\problempart
+\label{pr.BarbaraEtc}
+Here are the syllogistic figures identified by Aristotle and his successors, along with their medieval names. Symbolize each argument in QL.
+\begin{enumerate}
+	\item \textbf{Barbara.} All G are F. All H are G. So:  All H are F
+	\item \textbf{Celarent.} No G are F. All H are G. So: No H are F
+	\item \textbf{Ferio.} No G are F. Some H is G. So: Some H is not F
+	\item \textbf{Darii.} All G are F. Some H is G. So: Some H is F.
+	\item \textbf{Camestres.} All F are G. No H are G. So: No H are F.
+	\item \textbf{Cesare.} No F are G. All H are G. So: No H are F.
+	\item \textbf{Baroko.} All F are G. Some H is not G. So: Some H is not~F.
+	\item \textbf{Festino.} No F are G. Some H are G. So: Some H is not~F.
+	\item \textbf{Datisi.} All G are F. Some G is H. So: Some H is F.
+	\item \textbf{Disamis.} Some G is F. All G are H. So: Some H is F.
+	\item \textbf{Ferison.} No G are F. Some G is H. So: Some H is not F.
+	\item \textbf{Bokardo.} Some G is not F. All G are H. So:  Some H is not~F.
+	\item \textbf{Camenes.} All F are G. No G are H So: No H is F.
+	\item \textbf{Dimaris.} Some F is G. All G are H. So: Some H is F.
+	\item \textbf{Fresison.} No F are G. Some G is H. So: Some H is not~F.
+\end{enumerate}
+
+\problempart
+\label{pr.FOLvegetarians}
+Using the following symbolization key, symbolize the following sentences in QL:
+\begin{ekey}
+\item[\text{domain}] people
+\item[\atom{K}{x}] \gap{x} knows the combination to the safe
+\item[\atom{S}{x}] \gap{x} is a spy
+\item[\atom{V}{x}] \gap{x} is a vegetarian
+%\item[\atom{T}{x,y}] \gap{x} trusts \gap{y}.
+\item[h] Hofthor
+\item[i] Ingmar
+\end{ekey}
+\begin{enumerate}
+\item Neither Hofthor nor Ingmar is a vegetarian.
+\item No spy knows the combination to the safe.
+\item No one knows the combination to the safe unless Ingmar does.
+\item Hofthor is a spy, but no vegetarian is a spy.
+\end{enumerate}
+\problempart\label{pr.FOLalligators}
+Using this symbolization key, symbolize each of the following sentences in QL:
+\begin{ekey}
+\item[\text{domain}] all animals
+\item[\atom{A}{x}] \gap{x} is an alligator.
+\item[\atom{M}{x}] \gap{x} is a monkey.
+\item[\atom{R}{x}] \gap{x} is a reptile.
+\item[\atom{Z}{x}] \gap{x} lives at the zoo.
+\item[a] Amos
+\item[b] Bouncer
+\item[c] Cleo
+\end{ekey}
+\begin{enumerate}
+\item Amos, Bouncer, and Cleo all live at the zoo.
+\item Bouncer is a reptile, but not an alligator.
+%\item If Cleo loves Bouncer, then Bouncer is a monkey.
+%\item If both Bouncer and Cleo are alligators, then Amos loves them both.
+\item Some reptile lives at the zoo.
+\item Every alligator is a reptile.
+\item Any animal that lives at the zoo is either a monkey or an alligator.
+\item There are reptiles which are not alligators.
+%\item Cleo loves a reptile.
+%\item Bouncer loves all the monkeys that live at the zoo.
+%\item All the monkeys that Amos loves love him back.
+\item If any animal is an reptile, then Amos is.
+\item If any animal is an alligator, then it is a reptile.
+%\item Every monkey that Cleo loves is also loved by Amos.
+%\item There is a monkey that loves Bouncer, but sadly Bouncer does not reciprocate this love.
+\end{enumerate}
+
+\problempart
+\label{pr.FOLarguments}
+For each argument, write a symbolization key and symbolize the argument in QL.
+\begin{enumerate}
+\item Willard is a logician. All logicians wear funny hats. So Willard wears a funny hat
+\item Nothing on my desk escapes my attention. There is a computer on my desk. As such, there is a computer that does not escape my attention.
+\item All my dreams are black and white. Old TV shows are in black and white. Therefore, some of my dreams are old TV shows.
+\item Neither Holmes nor Watson has been to Australia. A person could see a kangaroo only if they had been to Australia or to a zoo. Although Watson has not seen a kangaroo, Holmes has. Therefore, Holmes has been to a zoo.
+\item No one expects the Spanish Inquisition. No one knows the troubles I've seen. Therefore, anyone who expects the Spanish Inquisition knows the troubles I've seen.
+\item All babies are illogical. Nobody who is illogical can manage a crocodile. Berthold is a baby. Therefore, Berthold is unable to manage a crocodile.
+\end{enumerate}
+
+%\problempart
+%label{pr.QLarguments}
+%For each argument, write a symbolization key and symbolize the argument into FOL.
+%\begin{earg}
+%\item Nothing on my desk escapes my attention. There is a computer on my desk. As such, there is a computer that does not escape my attention.
+%\item All my dreams are black and white. Old TV shows are in black and white. Therefore, some of my dreams are old TV shows.
+%\item Neither Holmes nor Watson has been to Australia. A person could see a kangaroo only if they had been to Australia or to a zoo. Although Watson has not seen a kangaroo, Holmes has. Therefore, Holmes has been to a zoo.
+%\item No one expects the Spanish Inquisition. No one knows the troubles I've seen. Therefore, anyone who expects the Spanish Inquisition knows the troubles I've seen.
+%\item An antelope is bigger than a bread box. I am thinking of something that is no bigger than a bread box, and it is either an antelope or a cantaloupe. As such, I am thinking of a cantaloupe.
+%\item All babies are illogical. Nobody who is illogical can manage a crocodile. Berthold is a baby. Therefore, Berthold is unable to manage a crocodile.
+%\end{earg}
+
+
+
+
 \section{Part 19.2 Brining It All Together}
 We know how to represent English sentences in QL. The time has finally come to define the notion of a \gls{sentence of QL}. Like with PL, I will start us off by listing off the symbols and letters which we have available to us in QL. It is worth remembering that QL is not something fundamentally different from PL, rather it is an extension of it. There are other extensions of PL and then there are extensions of QL which might be fun for you to explore such as Modal Logics, which deal with claims and reasoning about possibility and necessity, Temporal Logics, which deal with reasoning about different points in time (when it is really essential to get the order of events right), Epistemic Logics, which deal with knowledge claims and beliefs, and Deontic Logics which deal with moral obligations and permissibility. QL has 6 base-level components which are listed like so: 
 
