@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  14 DEC 2022 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  15 JAN 2023 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3041,33 +3041,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 <to be read again> 
                    \relax 
 l.377 \problempart
-                   [46 <./assets/russell.jpg>] [47] [48
+                   [46 <./assets/russell.jpg>]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.405 \problempart
+                   [47] [48
 
 ] [49] [50]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.485 \problempart
+l.492 \problempart
                    [51]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.513 \problempart
+l.520 \problempart
                    [52]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.529 \problempart
+l.536 \problempart
                   ) (forallx-d-truthtables.tex [53] [54
 
 ] [55
 
 ] [56] [57]
 [58] [59]
-<assets/boole.jpg, id=939, 115.43124pt x 150.5625pt>
+<assets/boole.jpg, id=943, 115.43124pt x 150.5625pt>
 File: assets/boole.jpg Graphic file (type jpg)
 <use assets/boole.jpg>
 Package pdftex.def Info: assets/boole.jpg  used on input line 144.
@@ -3106,71 +3112,83 @@ l.317 \problempart
 
 ] [69] [70] [71] [72
 
-] [73] [74] [75] [76
+] [73] [74]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.511 \noindent\problempart
+                           
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.521 \noindent\problempart
+                            [75] [76
 
 ] [77]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.606 \problempart
+l.629 \problempart
                    [78]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.618 \problempart
+l.641 \problempart
                   
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.629 \problempart
+l.652 \problempart
                    Determine whether each sentence is a tautology, a contrad...
 
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.639 \noindent\problempart
+l.662 \noindent\problempart
                            
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.E}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.650 \problempart
+l.673 \problempart
                   
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.F}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.661 \problempart
+l.684 \problempart
                    [79]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.G}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.672 \noindent\problempart
+l.695 \noindent\problempart
                            
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.H}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.682 \noindent\problempart
-                            [80]) (forallx-d-nd1.tex [81] [82
+l.706 \problempart
+                  ) (forallx-d-nd1.tex [80] [81
 
-] [83
+] [82
 
-] [84]
+] [83]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.30 \problempart
-                  [85] [86
+                  [84] [85
 
-] [87] [88] [89] [90] [91] [92] [93] [94]
-<assets/tissa.jpg, id=1224, 1212.9315pt x 727.1165pt>
+] [86] [87] [88] [89] [90] [91] [92] [93]
+<assets/tissa.jpg, id=1222, 1212.9315pt x 727.1165pt>
 File: assets/tissa.jpg Graphic file (type jpg)
 <use assets/tissa.jpg>
 Package pdftex.def Info: assets/tissa.jpg  used on input line 256.
@@ -3191,27 +3209,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
 n/9 Mog-galiputta
  []
 
-[95] [96 <./assets/tissa.jpg>] [97] [98] [99] [100] [101] [102]
+[94] [95 <./assets/tissa.jpg>] [96] [97] [98] [99] [100] [101]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.428 \problempart
-                   [103] [104] [105] [106
+                   [102] [103] [104] [105
 
-] [107] [108] [109] [110] [111]
+] [106] [107] [108] [109] [110]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.649 \problempart
-                   [112]) (forallx-d-nd2.tex [113] [114
+                   [111]) (forallx-d-nd2.tex [112] [113
 
-] [115
+] [114
 
-] [116] [117]
-[118] [119] [120]
-<assets/demorgan.jpg, id=1382, 961.5925pt x 1186.4325pt>
+] [115] [116]
+[117] [118] [119]
+<assets/demorgan.jpg, id=1381, 961.5925pt x 1186.4325pt>
 File: assets/demorgan.jpg Graphic file (type jpg)
 <use assets/demorgan.jpg>
 Package pdftex.def Info: assets/demorgan.jpg  used on input line 144.
@@ -3226,30 +3244,30 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 144--144
 [][][][][][][] 
  []
 
-[121] [122 <./assets/demorgan.jpg>] [123]
+[120] [121 <./assets/demorgan.jpg>] [122]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.171 \problempart
-                   [124] [125
+                   [123] [124
 
-] [126] [127] [128] [129]
+] [125] [126] [127] [128]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.334 \problempart
-                   [130] [131] [132
+                   [129] [130] [131
 
-] [133] [134] [135] [136] [137] [138]
-[139]) (forallx-d-qlsymbolizing.tex [140] [141
+] [132] [133] [134] [135] [136] [137]
+[138]) (forallx-d-qlsymbolizing.tex [139] [140
 
-] [142
+] [141
 
-] [143] [144] [145]
-[146] [147] [148] [149] [150] [151]
-<assets/aristotle.jpg, id=1624, 194.7275pt x 260.975pt>
+] [142] [143] [144]
+[145] [146] [147] [148] [149] [150]
+<assets/aristotle.jpg, id=1623, 194.7275pt x 260.975pt>
 File: assets/aristotle.jpg Graphic file (type jpg)
 <use assets/aristotle.jpg>
 Package pdftex.def Info: assets/aristotle.jpg  used on input line 238.
@@ -3264,14 +3282,14 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 238--238
 [][][][][][][] 
  []
 
-[152]
+[151]
 Overfull \vbox (47.75603pt too high) has occurred while \output is active []
 
 
-[153 <./assets/aristotle.jpg>] [154] [155
+[152 <./assets/aristotle.jpg>] [153] [154
 
-] [156]
-<assets/ghazali.jpeg, id=1668, 667.49374pt x 439.6425pt>
+] [155]
+<assets/ghazali.jpeg, id=1667, 667.49374pt x 439.6425pt>
 File: assets/ghazali.jpeg Graphic file (type jpg)
 <use assets/ghazali.jpeg>
 Package pdftex.def Info: assets/ghazali.jpeg  used on input line 320.
@@ -3286,13 +3304,13 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
-[157]
+[156]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.323 \problempart
-                   [158 <./assets/ghazali.jpeg>]
+                   [157 <./assets/ghazali.jpeg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3307,16 +3325,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 <to be read again> 
                    \relax 
 l.362 \problempart
-                  \label{pr.FOLalligators} [159]
+                  \label{pr.FOLalligators} [158]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.392 \problempart
-                   [160] [161] [162] [163] [164] [165
+                   [159] [160] [161] [162] [163] [164
 
-] [166]
-<assets/sina.jpeg, id=1798, 247.92625pt x 327.2225pt>
+] [165]
+<assets/sina.jpeg, id=1796, 247.92625pt x 327.2225pt>
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 579.
@@ -3331,22 +3349,22 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 579--579
 [][][][][][][] 
  []
 
-[167]
+[166]
 
 Package glossaries Warning: Entry `main logical operator' has already been defi
 ned in the document environment (ignoring new definition) on input line 630.
 
-) (forallx-d-qlvalidity.tex [168 <./assets/sina.jpeg>] [169
+) (forallx-d-qlvalidity.tex [167 <./assets/sina.jpeg>] [168
 
-] [170
+] [169
 
-] [171]
-[172] [173] [174] [175] [176] [177]
+] [170]
+[171] [172] [173] [174] [175] [176]
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 42.67912pt x 56.3261pt.
- [178] [179] [180
+ [177] [178] [179
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 270--270
@@ -3358,8 +3376,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--277
 
  []
 
-[181] [182] [183]
-<assets/ockham.jpg, id=1891, 73.09595pt x 132.15086pt>
+[180] [181] [182]
+<assets/ockham.jpg, id=1890, 73.09595pt x 132.15086pt>
 File: assets/ockham.jpg Graphic file (type jpg)
 <use assets/ockham.jpg>
 Package pdftex.def Info: assets/ockham.jpg  used on input line 345.
@@ -3374,11 +3392,11 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 345--345
 [][][][][][][] 
  []
 
-[184]
+[183]
 Overfull \vbox (48.09354pt too high) has occurred while \output is active []
 
 
-[185 <./assets/ockham.jpg>]
+[184 <./assets/ockham.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3390,9 +3408,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.371 \problempart
-                   [186] [187] [188
+                   [185] [186] [187
 
-] [189] [190] [191] [192]
+] [188] [189] [190] [191]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3403,26 +3421,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.585 \problempart
-                   [193]
+l.584 \problempart
+                   [192]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.600 \problempart
+l.599 \problempart
                   
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.618 \problempart
-                   [194] [195] [196]) (forallx-d-qlnd1.tex [197] [198
+l.617 \problempart
+                   [193] [194] [195]) (forallx-d-qlnd1.tex [196] [197
 
-] [199
+] [198
 
 ]
-[200] [201] [202] [203] [204] [205] [206] [207]
-<assets/godel.jpg, id=2082, 86.3225pt x 130.4875pt>
+[199] [200] [201] [202] [203] [204] [205] [206]
+<assets/godel.jpg, id=2076, 86.3225pt x 130.4875pt>
 File: assets/godel.jpg Graphic file (type jpg)
 <use assets/godel.jpg>
 Package pdftex.def Info: assets/godel.jpg  used on input line 285.
@@ -3437,11 +3455,11 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 285--285
 [][][][][][][] 
  []
 
-[208]
+[207]
 Overfull \vbox (48.09354pt too high) has occurred while \output is active []
 
 
-[209 <./assets/godel.jpg>]
+[208 <./assets/godel.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3453,13 +3471,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.308 \problempart
-                   [210]
+                   [209]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.356 \problempart
-                   [211]
+                   [210]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3489,22 +3507,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.H}
 <to be read again> 
                    \relax 
 l.413 \problempart
-                   [212] [213] [214
+                   [211] [212] [213
 
-] [215] [216] [217]) (forallx-d-qlnd2.tex
-[218] [219
+] [214] [215] [216]) (forallx-d-qlnd2.tex
+[217] [218
 
-] [220
+] [219
 
-] [221] [222] [223] [224]
-
-LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
-
+] [220] [221] [222] [223]
 
 LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
 
-[225] [226]
-<assets/leibniz.jpg, id=2259, 487.8225pt x 602.25pt>
+
+LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
+
+[224] [225]
+<assets/leibniz.jpg, id=2252, 487.8225pt x 602.25pt>
 File: assets/leibniz.jpg Graphic file (type jpg)
 <use assets/leibniz.jpg>
 Package pdftex.def Info: assets/leibniz.jpg  used on input line 224.
@@ -3519,131 +3537,165 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 224--224
 [][][][][][][] 
  []
 
-[227]
+[226]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.226 \problempart
-                   [228 <./assets/leibniz.jpg>] [229] [230
+                   [227 <./assets/leibniz.jpg>]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.260 \problempart
+                   [228] [229
 
-] [231] [232]
-[233] [234] [235]
-<assets/barcan.jpg, id=2319, 477.785pt x 601.24625pt>
+] [230] [231] [232] [233] [234]
+<assets/barcan.jpg, id=2318, 477.785pt x 601.24625pt>
 File: assets/barcan.jpg Graphic file (type jpg)
 <use assets/barcan.jpg>
-Package pdftex.def Info: assets/barcan.jpg  used on input line 421.
+Package pdftex.def Info: assets/barcan.jpg  used on input line 429.
 (pdftex.def)             Requested size: 71.13188pt x 89.50414pt.
 
 
 Package biblatex Warning: No driver for 'footcite:image'.
-(biblatex)                Using fallback driver on input line 421.
+(biblatex)                Using fallback driver on input line 429.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 421--421
+Overfull \hbox (3.965pt too wide) in paragraph at lines 429--429
 [][][][][][][] 
  []
 
 
 Package biblatex Warning: No driver for 'footcite:online'.
-(biblatex)                Using fallback driver on input line 421.
+(biblatex)                Using fallback driver on input line 429.
 
-[236]
+[235]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.424 \problempart
-                   [237 <./assets/barcan.jpg>]
+l.432 \problempart
+                   [236 <./assets/barcan.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.438 \problempart
+l.446 \problempart
                   
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.449 \problempart
-                  ) (forallx-d-ml.tex [238] [239
+l.457 \problempart
+                  ) (forallx-d-ml.tex [237] [238
 
-] [240
+] [239
 
-] [241] [242] [243]
-[244]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+] [240] [241] [242]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \problempart
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 \problempart
+                   [243]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \problempart
+                   [244] [245]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[245
+[246
 
-] [246] [247] [248] [249] [250] [251]
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+] [247] [248] [249] [250] [251] [252]
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
 
  []
 
-[252]
-<assets/kripke.jpg, id=2474, 200.75pt x 200.75pt>
+[253]
+<assets/kripke.jpg, id=2508, 200.75pt x 200.75pt>
 File: assets/kripke.jpg Graphic file (type jpg)
 <use assets/kripke.jpg>
-Package pdftex.def Info: assets/kripke.jpg  used on input line 359.
+Package pdftex.def Info: assets/kripke.jpg  used on input line 414.
 (pdftex.def)             Requested size: 71.13188pt x 71.13348pt.
 
 
 Package biblatex Warning: No driver for 'footcite:online'.
-(biblatex)                Using fallback driver on input line 359.
+(biblatex)                Using fallback driver on input line 414.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 359--359
+Overfull \hbox (3.965pt too wide) in paragraph at lines 414--414
 [][][][][][][] 
  []
 
-[253] [254 <./assets/kripke.jpg>] [255] [256] [257] [258] [259] [260] [261]
-[262] [263] [264] [265] [266] [267] [268
+[254] [255 <./assets/kripke.jpg>] [256] [257] [258] [259] [260]
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.581 \problempart
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.587 \problempart
+                   [261] [262] [263] [264] [265] [266] [267] [268] [269
 
-] [269] [270] [271] [272] [273]
-[274] [275] [276] [277]) [278] [279
+]
+[270] [271] [272] [273] [274] [275] [276] [277] [278]) [279] [280
 
-] (logicgates.tex [280
+]
+(logicgates.tex [281
 
-] [281]
+] [282]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 71.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-[282] [283] [284]
+[283] [284] [285]
 Overfull \hbox (4.62782pt too wide) in paragraph at lines 606--607
 [][] 
  []
 
-[285] [286]) (soundnesscompletenesspl.tex [287] [288
+[286] [287]) (soundnesscompletenesspl.tex [288] [289
 
-] [289]
+] [290]
 Overfull \hbox (21.40976pt too wide) in paragraph at lines 57--65
 [][] 
  []
 
-[290]
+[291]
 Overfull \hbox (28.33568pt too wide) in paragraph at lines 82--91
 [][] 
  []
 
-[291] [292] [293]
+[292] [293] [294]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 []\T1/Baskervaldx-TOsF/m/n/9 Second, con-sider the case where $\LMS/ntxsy/m/n/9
  8 $\T1/Baskervaldx-TOsF/m/n/9 x$\LMS/ntxsy/m/n/9 :$$\U/BOONDOX-calo/m/n/9 A$\T
 1/Baskervaldx-TOsF/m/n/9 ...x...x...is false and
  []
 
-[294] [295] [296] [297]
+[295] [296] [297] [298]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
- [298] [299] [300] [301] [302] [303] [304]
+ [299] [300] [301] [302] [303] [304] [305]
 Overfull \hbox (13.30447pt too wide) in paragraph at lines 432--433
 []$\LMS/ntxsy/m/n/9 h\U/BOONDOX-calo/m/n/9 a\T1/Baskervaldx-TLF/m/n/9 , \U/BOON
 DOX-calo/m/n/9 a\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
@@ -3660,16 +3712,16 @@ TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
 9 h[][]\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$ 
  []
 
-[305]) [306] (forallxd.gls [307
+[306]) [307] (forallxd.gls [308
 
 
-] [308] [309] [310] [311] [312]) [313]
+] [309] [310] [311] [312] [313]) [314]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 38.
- [314
+ [315
 
 ]
-(forallx-d-quickreference.tex [315]
+(forallx-d-quickreference.tex [316]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/sc' will be
 (Font)              scaled to size 9.0pt on input line 32.
 
@@ -3677,14 +3729,14 @@ Underfull \hbox (badness 10000) in alignment at lines 31--61
 [][] 
  []
 
-[316
+[317
 
 ]
 Underfull \hbox (badness 10000) in alignment at lines 69--79
 [][] 
  []
 
-[317]
+[318]
 Underfull \hbox (badness 10000) in alignment at lines 85--94
 [][] 
  []
@@ -3700,7 +3752,7 @@ Underfull \hbox (badness 6188) in paragraph at lines 99--116
 $[]$ $[]$s and there
  []
 
-[318] [319] [320] [321]
+[319] [320] [321] [322]
 Overfull \hbox (8.01039pt too wide) in paragraph at lines 259--263
 $[]$ 
  []
@@ -3740,7 +3792,7 @@ Overfull \hbox (5.70963pt too wide) in paragraph at lines 305--310
 $[]$ 
  []
 
-[322] [323]) [324] (forallx-d-backmatter.tex)) [325
+[323] [324]) [325] (forallx-d-backmatter.tex)) [326
 
 
 ]
@@ -3753,9 +3805,9 @@ Package logreq Info: Writing requests to 'forallxd.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63062 strings out of 477843
- 1219547 string characters out of 2823599
- 2095856 words of memory out of 3000000
+ 63102 strings out of 477843
+ 1219871 string characters out of 2823599
+ 2096856 words of memory out of 3000000
  79468 multiletter control sequences out of 15000+600000
  700397 words of font info for 329 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3787,9 +3839,9 @@ xsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
 tic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/he
 lvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/boondox/zxxrw8a.pfb>
-Output written on forallxd.pdf (334 pages, 3338218 bytes).
+Output written on forallxd.pdf (335 pages, 3348382 bytes).
 PDF statistics:
- 3651 PDF objects out of 4296 (max. 8388607)
- 1397 named destinations out of 1440 (max. 500000)
+ 3702 PDF objects out of 4296 (max. 8388607)
+ 1437 named destinations out of 1440 (max. 500000)
  628 words of extra memory for PDF output out of 10000 (max. 10000000)
 

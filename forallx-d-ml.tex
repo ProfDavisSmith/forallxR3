@@ -74,6 +74,61 @@ Here are some examples of ML sentences:
 \begin{center}
 A, P \eor  Q, \ebox A, C \eor  \ebox D, \ebox \ebox (A \eif  R), \ebox \ediamond (S \eand  (Z \eiff  (\ebox W \eor  \ediamond Q)))
 \end{center}
+\practiceproblems
+\problempart
+Using the following symbolization key, symbolize the following sentences and arguments into ML:
+	\begin{ekey}
+		\item[M] Max goes to the party
+		\item[S] Sally is happy
+		\item[J] Jack goes up the hill
+		\item[F] Jill follows Jack
+		\item[P] John will be at the party
+		\item[K] Kirito is heroic
+		\item[A] Asuna loves Kirito
+		\item[V] Video games are healthy
+		\item[C] Cigarettes are healthy
+		\item[R] Rika is jealous
+	\end{ekey}
+
+\begin{enumerate}
+\item Necessarily, Cigarettes are unhealthy only if video games are. Cigarettes are, in fact, unhealthy. Therefore, video games possibly are unhealthy.
+\item If Jack goes up the hill, Jill will follow him. Jill isn't following him. Therefore, Jack isn't going up the hill.
+\item If Asuna possibly loves Kirito, Rika is jealous. If Kirito is heroic, then Asuna loves him. Kirito possibly is heroic. Therefore, Rika is jealous. 
+\item Necessaily, Jack will go up the hill unless Jill doesn't follow him. Jill is following Jack. Therefore, Jack will go up the hill.
+\item If Sally is happy, then Rika is jealous. If Max goes to the party, then Rika will be jealous. Sally won't be happy unless Max goes to the party. Therefore, Rika is going to be jealous.
+\item John will be at the party if and only if both cigarettes and video games are healthy. Neither cigarettes nor video games are healthy. Therefore, John will not be at the party. 
+\item Max is going to the party if Jack goes up the hill. Either Jack won't go up the hill or Sally is happy. Therefore, if Jack goes up the hill then both Max goes to the party and Sally is happy.
+\item If John will be at the party, then Jack will go up the hill. If Jack goes up the hill, then Jill will follow him. If Jill follows him, then Rika will be jealous. Therefore, if John will be at the party, then Rika will be jealous. 
+\item Asuna loves Kirito if and only if both she loves him and he is heroic. He is heroic only if video games are unhealthy. Therefore, Asuna loves Kirito only if video games are unhealthy. 
+\end{enumerate}
+
+\problempart
+Give a symbolization key and symbolize the following English sentences in ML:
+\begin{enumerate}
+\item Possibly, Alice and Bob are both spies.
+\item Necessarily, if either Alice or Bob is a spy, then the code has been broken.
+\item If neither Alice nor Bob is a spy, then the code remains unbroken.
+\item The German embassy will be in an uproar, unless someone has broken the code.
+\item Either the code has been broken or it has not, but the German embassy will be in an uproar regardless.
+\item Either Alice or Bob is a spy, but not both.
+\item If there is food to be found in the pridelands, then Rafiki will talk about squashed bananas.
+\item Rafiki will talk about squashed bananas unless Simba is alive.
+\item Rafiki will either talk about squashed bananas or he won't, but there is food to be found in the pridelands regardless.
+\item Scar will remain as king if and only if there is food to be found in the pridelands.
+\item If Simba is alive, then Scar will not remain as king.
+\end{enumerate}
+
+\problempart
+Symbolize the following arguments. A symbolization key is not provided, so you will need to make one yourself for each argument. Some of these arguments are, in fact, invalid. You may return to these as extra practice problems within the next module.
+\begin{enumerate}
+\item If Tristen is driving, then he is going to work. If he is texting, then he is goofing off. Therefore, if Tristen is both texting and driving, then he is both going to work and goofing off.
+\item The car gets 30 miles to the gallon. If Joe can get to the gas station, then the car gets 30 miles per gallon. Therefore, Joe can get to the gas station.
+\item The car gets 30 miles to the gallon. If the car gets 30 miles per gallon, then Joe can get to the gas station. Therefore, Joe can get to the gas station.
+\item If Dorothy plays the piano in the morning, then Roger wakes up cranky. Dorothy plays piano in the morning unless she is distracted. So if Roger does not wake up cranky, then Dorothy must be distracted.
+\item It will either rain or snow on Tuesday. If it rains, Neville will be sad. If it snows, Neville will be cold. Therefore, Neville will either be sad or cold on Tuesday.
+\item If Zoog remembered to do his chores, then things are clean but not neat. If he forgot, then things are neat but not clean. Therefore, things are either neat or clean; but not both.
+\end{enumerate}
+
 \chapter{Part 29 The Systems of Modal Logic}
 Now that we know how to make sentences in ML, we can look at how one can make interpretations (models), countermodels, and proofs in ML. We will use $\vDash$  to express provability/validity (if it is provable in these systems, then it is valid), just like how we did in PL. So $A_1,A_2,\ldots A_n$ $\vDash$  C means that C can be proven from $A_1,A_2,\ldots A_n$. There are many different applications of ML which we may want to consider and these different applications allow for different inference rules. As mentioned previously, \ebox A $\vDash$ A is just fine if we are working in the T system but it is not if we are working in the more basic K system. We will be looking at a number of these `systems' of ML, and so it will be useful to add a subscript to indicate which system we are working with. So for example, if we want to say that we can prove C from $A_1,A_2,\ldots A_n$ in system K, we will write: $A_1,A_2,\ldots A_n$ $\vDash_K$ C.
 
@@ -522,6 +577,24 @@ Put abstractly, the rule is defined like so:
 
 
 There are certain restrictions to this: You cannot assume that all of the possibility statements are true at the same world; each one must be treated as if it is the worst case scenario (only one of them is true at that world), meaning that you only get the possible truth for that line, you cannot import any other merely possible things. Also, all of the same restrictions for strict subproofs apply. 
+\practiceproblems
+\problempart
+Create K models which show that the following arguments are invalid:
+\begin{enumerate}
+\item \ediamond P, \ediamond(P\eif Q) $\therefore$ \ediamond Q
+\item \ebox P $\therefore$ P
+\end{enumerate}
+\problempart
+Using the rules in the K system, give proofs for the following arguments:
+\begin{enumerate}
+\item \ediamond P, \ebox(P\eif Q) $\therefore$ \ediamond Q
+\item \ebox P, \ediamond(P\eif Q) $\therefore$ \ediamond Q
+\item \enot \ebox P, \ebox(Q\eif P) $\therefore$ \enot \ebox Q
+\item \enot \ediamond P, \ediamond(Q\eif P) $\therefore$ \ediamond \enot Q
+\item \ebox(P\eif Q), \ebox(Q\eif R)$\therefore$ \ebox(P\eif R)
+\item \enot\ediamond P,\ediamond(P\eor Q)$\therefore$ \ediamond Q
+\end{enumerate}
+
 \section{Part 29.3 The T System}
 So far we have focused on K, which is a very simple modal system. K is so weak that it will not even let you prove A from \ebox A. But if we are thinking of \ebox  as expressing necessity, then we will want to be able to make this inference: if A is necessarily true, then it must surely be true! This leads us to a new system, \Gls{T}. T-models have an R relation which is reflexive, meaning that every world in the interpretation can `see' itself. The simplest T model will look like this:
 

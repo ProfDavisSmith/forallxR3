@@ -507,6 +507,29 @@ F&F&F& & & & & & & & & T &\\
 \end{center}
 
 So the entailment holds! And our shortcuts saved us a lot of work. We have been discussing shortcuts in testing for validity. But exactly the same shortcuts can be used in testing for entailment. By employing a similar notion of bad lines, you can save yourself a huge amount of work.
+\practiceproblems
+\noindent\problempart
+\label{pr.TT.valid2}
+Determine whether each argument is valid or invalid, using a complete truth table.
+\begin{enumerate}
+\item $A\eif B$, $B \therefore  A$ %invalid
+\item $A\eiff B$, $B\eiff C \therefore A\eiff C$ %valid
+\item $A \eif B$, $A \eif C\therefore B \eif C$ %invalid.
+\item $A \eif B$, $B \eif A\therefore A \eiff B$ %valid.
+\end{enumerate}
+
+\noindent\problempart
+\label{pr.TT.valid3}
+Determine whether each argument is valid or invalid, using a complete truth table.
+\begin{enumerate}
+\item $A\eor\bigl[A\eif(A\eiff A)\bigr] \therefore  A $\vspace{.5ex}%invalid
+\item $A\eor B$, $B\eor C$, $\enot B \therefore A \eand C$\vspace{.5ex} %valid
+\item $A \eif B$, $\enot A\therefore \enot B$ \vspace{.5ex}%invalid
+\item $A$, $B\therefore \enot(A\eif \enot B)$ \vspace{.5ex}%valid
+\item $\enot(A \eand B)$, $A \eor B$, $A \eiff B\therefore C$ \vspace{.5ex}%valid 
+\end{enumerate}
+
+
 \chapter{Part 11 Short-Form Tables}
 Sometimes, we do not need to know what happens on every line of a truth table. Sometimes, just a line or two will do.
 
@@ -678,26 +701,6 @@ Determine whether each collection of sentences is jointly satisfiable or jointly
 \item $A \eor B$, $\enot B$, $\enot B \eif \enot A$\vspace{.5ex} %Insatisfiable
 \item $A \eiff B$, $\enot B \eor \enot A$, $A \eif B$\vspace{.5ex} %satisfiable.
 \item $(A \eor B) \eor C$, $\enot A \eor \enot B$, $\enot C \eor \enot B$\vspace{.5ex} %satisfiable
-\end{enumerate}
-\noindent\problempart
-\label{pr.TT.valid2}
-Determine whether each argument is valid or invalid, using a complete truth table.
-\begin{enumerate}
-\item $A\eif B$, $B \therefore  A$ %invalid
-\item $A\eiff B$, $B\eiff C \therefore A\eiff C$ %valid
-\item $A \eif B$, $A \eif C\therefore B \eif C$ %invalid.
-\item $A \eif B$, $B \eif A\therefore A \eiff B$ %valid.
-\end{enumerate}
-
-\noindent\problempart
-\label{pr.TT.valid3}
-Determine whether each argument is valid or invalid, using a complete truth table.
-\begin{enumerate}
-\item $A\eor\bigl[A\eif(A\eiff A)\bigr] \therefore  A $\vspace{.5ex}%invalid
-\item $A\eor B$, $B\eor C$, $\enot B \therefore A \eand C$\vspace{.5ex} %valid
-\item $A \eif B$, $\enot A\therefore \enot B$ \vspace{.5ex}%invalid
-\item $A$, $B\therefore \enot(A\eif \enot B)$ \vspace{.5ex}%valid
-\item $\enot(A \eand B)$, $A \eor B$, $A \eiff B\therefore C$ \vspace{.5ex}%valid 
 \end{enumerate}
 
 \problempart
