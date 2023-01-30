@@ -376,20 +376,68 @@ The following idea is closely related to that of joint satisfiability:
 
 \factoidbox{The sentences $A_1$,$A_2$,. . . ,$A_n$ entail (in PL) the sentence C iff no valuation of the relevant sentence letters makes all of $A_1$,$A_2$,. . . ,$A_n$ true and C false.}
 
-Again, it is easy to test this with a truth table. To check whether ‘\enot L\eif (J\eor L)’ and ‘\enot L’ entail ‘J’, we simply need to check whether there is any valuation which makes both ‘\enot L\eif (J\eor L)’ and ‘\enot L’ true whilst making ‘J’ false. So we use a truth table:
+Again, it is easy to test this with a truth table. For example, let's check whether ‘\enot L\eif (J\eor L)’ and ‘\enot L’ entail ‘J’ or, in put as an argument:
+
 \begin{center}
-\begin{tabular}{c|c|ccccc|c|c}
-J&L&\enot L &\eif & (J &\eor& L)&\enot  L&J\\\hline
-T&T&FT&T&(T&T&T)&F T&T\\
-T&F&TF&T&(T&T&F)&T F&T\\
-F&T&FT&T&(F&T&T)&F T&F\\
-F&F&TF&F&(F&F&F)&T F&F\\
+\enot L\eif (J\eor L), \enot L $\vDash$ J
+\end{center}
+
+Notice the new symbol there, $\vDash$, this means, roughly, `entails'. We will include it in the truth table, but only as a special marker for later. Put simply, we only need to check whether there is any valuation which makes both ‘\enot L\eif (J\eor L)’ and ‘\enot L’ true whilst making ‘J’ false. So we start by making a truth table:
+
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&$\vDash$&J\\\hline
+ & &  & & & & &  & & \\
 \end{tabular}
 \end{center}
 
-The only row on which both ‘\enot L\eif (J\eor L)’ and ‘\enot L’ are true is the second row, and that is a row on which ‘J’ is also true. So ‘\enot L\eif (J\eor L)’ and ‘\enot L’ entail ‘J’.
+Now, we fill in the values for J and L, following the exact same pattern as we have used before when making a truth table. We then use those to fill in the values of the sentence letters n each of the rows, like so:
 
-We now make an important observation:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&$\vDash$&J\\\hline
+T&T&  & & & & &  && \\
+T&F&  & & & & &  && \\
+F&T&  & & & & &  && \\
+F&F&  & & & & &  && \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&$\vDash$&J\\\hline
+T&T& T& &(T& &T)& T&&T\\
+T&F& F& &(T& &F)& F&&T\\
+F&T& T& &(F& &T)& T&&F\\
+F&F& F& &(F& &F)& F&&F\\
+\end{tabular}
+\end{center}
+
+I have kept the parentheses on the rows merely for clarity and demonstration, they are not necessary. Now, row by row, we use the characteristic truth tables to fill in the values for the connectives, starting with the least dominate and ending with the main operator. At this point, our truth table looks like this:
+
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&$\vDash$&J\\\hline
+T&T&FT&T&(T&T&T)&F T&&T\\
+T&F&TF&T&(T&T&F)&T F&&T\\
+F&T&FT&T&(F&T&T)&F T&&F\\
+F&F&TF&F&(F&F&F)&T F&&F\\
+\end{tabular}
+\end{center}
+
+At this point, we only have one column remaining, the one for the turnstile, $\vDash$. As I mentioned before, this is for us to have as a special marker. We will use this to mark out the `good' lines and the `bad' lines. The `bad' lines are those which show invalidity or failed entailment. This is when the premises are all truth and the conclusion is false. If the row is like that, we put an X. A `good' line is one which either has the conclusion as true or has at least one premise as false. For those lines, we give a checkmark, $\checkmark$. Because of this, we can automatically put checkmarks in the first two rows and then the third and fourth rows get checkmarks as well because each has a false premise, like so:
+
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c}
+J&L&\enot L &\eif & (J &\eor& L)&\enot  L&$\vDash$&J\\\hline
+T&T&FT&T&(T&T&T)&F T&$\checkmark$&T\\
+T&F&TF&T&(T&T&F)&T F&$\checkmark$&T\\
+F&T&FT&T&(F&T&T)&F T&$\checkmark$&F\\
+F&F&TF&F&(F&F&F)&T F&$\checkmark$&F\\
+\end{tabular}
+\end{center}
+
+This means that the argument is valid. If there were any Xs, then the argument would have been invalid. But this also means that the premises entail the conclusion. We now make an important observation:
 
 \factoidbox{If $A_1$,$A_2$,. . . ,$A_n$ entail C, in PL then $A_1$,$A_2$,. . . ,$A_n$ \therefore  C is valid.}
 
@@ -451,60 +499,87 @@ With this in mind, we can speed up our tests for validity quite considerably. Le
 \begin{center}
 \enot L\eif  ( J \eor  L),\enot L $\vDash$  J
 \end{center}
-You might notice that we have a different symbol here: \gls{vDash}, this is used to signify that the left-hand side of it entails the right-hand side, meaning that it is valid. When we want to prove this, the first thing we should do is evaluate the conclusion. If we find that the conclusion is true on some line, then that is not a bad line. So we can simply ignore the rest of the line. So, after our first stage, we are left with something like this:
+You might notice that we have a different symbol here: \gls{vDash}, this is used to signify that the left-hand side of it entails the right-hand side, meaning that it is valid. When we want to prove this, the first thing we should do is evaluate the conclusion. If we find that the conclusion is true on some line, then that is not a bad line. So we can simply ignore the rest of the line. We will include the $\vDash$ symbol as a column on its own, as a place to mark whether the line is `good' or `bad'. So, after our first stage, we are left with something like this:
 \begin{center}
-\begin{tabular}{c|c|ccccc|c|c|}
-J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
-T&T&&&&&&&T\\
-T&F&&&&&&&T\\
-F&T&&?&&&&?&F\\
-F&F&&?&&&&?&F\\
+\begin{tabular}{c|c|ccccc|c|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&$\vDash$&J\\\hline
+T&T&&&&&&&&T\\
+T&F&&&&&&&&T\\
+F&T&&?&&&&?&&F\\
+F&F&&?&&&&?&&F\\
 \end{tabular}
 \end{center}
 where the blanks indicate that we won’t bother with any more investigation (since the line is not bad), and the question marks indicate that we need to keep digging.
 
 The easiest premise to evaluate is the second, so we do that next, and get:
 \begin{center}
-\begin{tabular}{c|c|ccccc|c|c|}
-J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
-T&T&&&&&&&T\\
-T&F&&&&&&&T\\
-F&T&&?&&&&F&F\\
-F&F&&?&&&&T&F\\
+\begin{tabular}{c|c|ccccc|c|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&$\vDash$&J\\\hline
+T&T&&&&&&&&T\\
+T&F&&&&&&&&T\\
+F&T&&?&&&&F&&F\\
+F&F&&?&&&&T&&F\\
 \end{tabular}
 \end{center}
 
 Note that we no longer need to consider the third line on the table: it is certainly not bad, because some premise is false on that line. And finally, we complete the truth table:
 \begin{center}
-\begin{tabular}{c|c|ccccc|c|c|}
-J&L&\enot L&\eif &(J&\eor& L)&\enot L&J\\\hline
-T&T&&&&&&&T\\
-T&F&&&&&&&T\\
-F&T&&?&&&&F&F\\
-F&F&T&F&F&F&F&T&F\\
+\begin{tabular}{c|c|ccccc|c|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&$\vDash$&J\\\hline
+T&T&&&&&&&&T\\
+T&F&&&&&&&&T\\
+F&T&&?&&&&F&&F\\
+F&F&T&F&F&F&F&T&&F\\
 \end{tabular}
 \end{center}
 
-The truth table has no bad lines, so the argument is valid. Any valuation which makes every premise true makes the conclusion true
+Now, we can think about what this table, incomplete though it may be, shows us. Going line by line, under the $\vDash$, we put an X if the premises are all true and the conclusion is false and we put a checkmark $\checkmark$ otherwise (if at least one of the premises is false or if the conclusion is true). When we are done, it looks like this: 
 
-It’s probably worth illustrating the tactic again. Consider this argument:
+\begin{center}
+\begin{tabular}{c|c|ccccc|c|c|c|}
+J&L&\enot L&\eif &(J&\eor& L)&\enot L&$\vDash$&J\\\hline
+T&T&&&&&&&$\checkmark$&T\\
+T&F&&&&&&&$\checkmark$&T\\
+F&T&&?&&&&F&$\checkmark$&F\\
+F&F&T&F&F&F&F&T&$\checkmark$&F\\
+\end{tabular}
+\end{center}
+
+The truth table has no bad lines, there are no Xs in the $\vDash$ column. Any valuation which makes every premise true makes the conclusion true.  It’s probably worth illustrating the tactic again. Consider this argument:
 \begin{center}
 A\eor B,\enot (B\eand  C)$\vDash$ (A\eor \enot C )
 \end{center}
-Again, we start by evaluating the conclusion. Since this is a disjunction, it is true whenever either disjunct is true, so we can speed things along a bit.
+Again, we start by evaluating the conclusion. Since this is a disjunction, it is true whenever either disjunct is true, so we can speed things along a bit. Any row where the conclusion is true automatically gets a checkmark $\checkmark$. Once we have done that, we can look at the rows which are unmarked, like so:
 \begin{center}
-\begin{tabular}{c|c|c|ccc|cccc|ccc|}
-A&B&C&A &\eor& B& \enot& (B &\eand &C )&A &\eor &\enot C\\\hline
-T&T&T& & & & & & & & & T &\\
-T&T&F& & & & & & & & & T &\\
-T&F&T& & & & & & & & & T &\\
-T&F&F& & & & & & & & & T &\\
-F&T&T& &T& &F& & & & & F &\\
-F&T&F& & & & & & & & & T &\\
-F&F&T& &F& &?& & & & & F &\\
-F&F&F& & & & & & & & & T &\\
+\begin{tabular}{c|c|c|ccc|cccc|c|ccc|}
+A&B&C&A &\eor& B& \enot& (B &\eand &C )&$\vDash$&A &\eor &\enot C\\\hline
+T&T&T& & & & & & & & $\checkmark$& & T &\\
+T&T&F& & & & & & & & $\checkmark$& & T &\\
+T&F&T& & & & & & & & $\checkmark$& & T &\\
+T&F&F& & & & & & & & $\checkmark$& & T &\\
+F&T&T& &T& &F& & & & & & F &\\
+F&T&F& & & & & & & & $\checkmark$& & T &\\
+F&F&T& &F& &?& & & & & & F &\\
+F&F&F& & & & & & & & $\checkmark$& & T &\\
 \end{tabular}
 \end{center}
+
+Looking at the unmarked ones, we see that for each of them, there is a false premise. This means that they, too, get a checkmark, which we can now fill in: 
+
+\begin{center}
+\begin{tabular}{c|c|c|ccc|cccc|c|ccc|}
+A&B&C&A &\eor& B& \enot& (B &\eand &C )&$\vDash$&A &\eor &\enot C\\\hline
+T&T&T& & & & & & & & $\checkmark$& & T &\\
+T&T&F& & & & & & & & $\checkmark$& & T &\\
+T&F&T& & & & & & & & $\checkmark$& & T &\\
+T&F&F& & & & & & & & $\checkmark$& & T &\\
+F&T&T& &T& &F& & & &$\checkmark$ & & F &\\
+F&T&F& & & & & & & & $\checkmark$& & T &\\
+F&F&T& &F& &?& & & &$\checkmark$ & & F &\\
+F&F&F& & & & & & & & $\checkmark$& & T &\\
+\end{tabular}
+\end{center}
+
 
 So the entailment holds! And our shortcuts saved us a lot of work. We have been discussing shortcuts in testing for validity. But exactly the same shortcuts can be used in testing for entailment. By employing a similar notion of bad lines, you can save yourself a huge amount of work.
 \practiceproblems
@@ -609,7 +684,71 @@ To show that some sentences are jointly unsatisfiable, we must show that there i
 
 \subsection{Validity and entailment}
 
-To show that an argument is valid, we must show that there is no valuation which makes all of the premises true and the conclusion false. So this requires a complete truth table. (Likewise for entailment.) To show that argument is invalid, we must show that there is a valuation which makes all of the premises true and the conclusion false. So this requires only a one-line partial truth table on which all of the premises are true and the conclusion is false. (Likewise for a failure of entailment.)
+To show that an argument is valid, we must show that there is no valuation which makes all of the premises true and the conclusion false. So this requires a complete truth table. (Likewise for entailment.) To show that argument is invalid, we must show that there is a valuation which makes all of the premises true and the conclusion false. So this requires only a one-line partial truth table on which all of the premises are true and the conclusion is false. (Likewise for a failure of entailment.) As an example, take this argument:
+
+\begin{center}
+A\eif(B\eor C),C\eif D $\vDash$ D
+\end{center}
+
+We could do a complete truth table to show whether this is valid. Sometimes, however, we could save ourselves a lot of work by doing a partial first, just to see whether we can make a case proving that the argument is invalid. If we can't, then we will need to make a complete truth table for it. We start by starting the truth table, like so:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+\\
+\end{tabular}
+\end{center}
+
+Next, we assume that the premises are all true and the conclusion is false. This is the case for it being invalid. So, we fill that in:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+&&&&&T&&&&&T&&&F\\
+\end{tabular}
+\end{center}
+
+ Notice that in making the conclusion false, we have assigned false to D. Since we need to be consistent, we need to fill in that D is false to the rest of the line in the table.
+ 
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+&&&F&&T&&&&&T&F&&F\\
+\end{tabular}
+\end{center}
+ 
+At this point, we have some creative thinking we can do. Take a look at the last premise, C\eif D. We need that to be true but we also need D to  be false. When we look back at the characteristic truth table for a conditional, we see that there is only one case where the conditional is true and the consequent is false and that is when the antecedent is false. This means that we can fill in false for C:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+&&F&F&&T&&&F&F&T&F&&F\\
+\end{tabular}
+\end{center}
+
+Ar this point, there are actually a few different options on how we can show that this is invalid, any of them are fine. If we say that A is true, then B would also need to  be true and the argument would be invalid. If we say that B is false, then A would also need to be false, and the argument would be invalid. And if we say that A is false, then we could say that B is either true or false, and the argument would be invalid. For simplicity, let's go with the all-are-false option:
+
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+F&F&F&F&F&T&F&F&F&F&T&F&&F\\
+\end{tabular}
+\end{center}
+
+This one line truth table shows that the argument is invalid. Success! To show this, we will put an X under the turnstile.
+
+\begin{center}
+\begin{tabular}{c|c|c|c|ccccc|ccc|c|c}
+A&B&C&D&A&\eif &(B&\eor&C)&C&\eif&D&$\vDash$&D\\
+\hline
+F&F&F&F&F&T&F&F&F&F&T&F&X&F\\
+\end{tabular}
+\end{center}
 
 This table summarizes what is required:
 \begin{center}
