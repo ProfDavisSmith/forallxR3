@@ -89,7 +89,7 @@ It includes additional material from forallx by P.D. Magnus and
 used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and 
 from [forallx: Lorain County Remix](https://github.com/rob-helpy-chalk/openintroduction),
 by [Cathal Woods](https://sites.google.com/site/cathalwoods/) and
-J. Robert Loftis as well as original material by Davis A. Smith. Biographies for Alan Turing, Bertrand Russell, and Kurt G\"{o}del were provided by 
+J. Robert Loftis as well as original material by Davis A. Smith. Biographies for Alan Turing, Bertrand Russell, and Kurt Gödel were provided by 
 [The Open Logic Project](https://builds.openlogicproject.org/) and used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. 
 The biography for William of Ockham was provided by [Andrew Jeffery](https://sites.google.com/view/andrewjefferyswebpage) and used with his permission. 
 The image used in the biography of William of Ockham was taken by [John Salmon](https://www.geograph.org.uk/profile/9419) and used under a 
