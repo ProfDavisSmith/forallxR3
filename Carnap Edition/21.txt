@@ -1,0 +1,155 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+-   https://cdn.plyr.io/3.6.12/plyr.css
+js: 
+-   https://cdn.plyr.io/3.6.12/plyr.polyfilled.js
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+-   https://hypothes.is/embed.js
+---
+
+
+# Part 2: Types of Arguments
+
+
+## Part 2.1: Consequence and validity
+
+In Part 1, we talked about arguments, i.e., a collection of sentences (the premises), followed by a single sentence (the conclusion). We said that some words, such as “therefore,” indicate which sentence is supposed to be the conclusion. “Therefore,” of course, suggests that there is a connection between the premises and the conclusion, namely that the conclusion follows from, or is a consequence of, the premises. This notion of consequence is one of the primary things logic is concerned with. Referencing back, one might even say that logic is the science of what follows from what. Logic develops theories and tools that tell us when a proposition follows from some others. Take, for example, the argument which I used in Part 1:
+
+\begin{earg}
+	\item[] Either the butler or the gardener did it.
+	\item[] The butler didn't do it.
+	\item[\therefore] The gardener did it.
+\end{earg}
+
+We don’t have any context for what the sentences in this argument refer to. Perhaps you suspect that “did it” here means “was the perpetrator” of some unspecified crime (we don't necessarily know what the correct proposition is for that sentence in this context because we don't know the context). You might imagine that the argument occurs in a mystery novel or TV show, perhaps spoken by a detective working through the evidence. But even without having any of this information, you probably agree that the argument is a good one because of the basic structure which is used. In this sense, whatever the premises refer to, if they are both true, the conclusion must be true as well. If the first premise is true, i.e., it’s true that “the butler did it or the gardener did it,” then at least one of them “did it,” whatever that means. And if the second premise is true, then the butler did not “do it.” That leaves us with only one option: “the gardener did it” must be true. Here, the conclusion follows from the premises. We call arguments that have this property valid.
+
+:::vaside
+[Valid]{.vocab}: A property of arguments where the truth of the premises guarantee the truth of the conclusion; i.e. it is impossible for the premises to be true and the conclusion false.
+:::
+
+
+By way of contrast, consider the following argument:
+
+\begin{earg}\label{argMaidDriver}
+	\item[] If the driver did it, the maid didn't do it.
+	\item[] The maid didn't do it.
+	\item[\therefore] The driver did it.
+\end{earg}
+
+We still have no idea what is being talked about here. But, again, you probably agree that this argument is different from the previous one in an important respect. If the premises are true, it is not guaranteed that the conclusion is also true. (if you disagree, then you have fallen victim to a very common logical fallacy, one which will become clear as we progress through this textbook). The premises of this argument do not rule out, by themselves, that someone other than the maid or the driver “did it.” So there is a case where both premises are true, and yet the driver didn’t do it, i.e., the conclusion is not true. For example, suppose that the context is that they are wondering who stole the last cookie from the jar. In this case, if the driver ‘did it', as in stole the cookie, then the maid couldn't have stolen it, but there was a third person, the gardener, who was feeling peckish, has stolen the cookie. As a result, the maid didn't ‘do it', the driver didn't, but the gardener did. In this second argument, the conclusion does not follow from the premises. If, like in this argument, the conclusion does not follow from the premises, we say it is invalid. As we will see later, a very easy test for validity in a natural language, like English, is to see whether you can concoct a story where the premises are true and the conclusion is false. If you can do this, then the argument is invalid and, to make it valid, you would need to include premises which remove the possibility of such a case.
+
+## Part 2.2 Cases and Types of Validity
+Towards the end of the previous sub-part, I gave a basic reason why the example argument wasn't valid; namely, I was able to give a case in which the premises are true and in which the conclusion is not. This was the scenario where neither the driver nor the maid did it, but some third person, the gardener, did. Let’s call such a case a counterexample to the argument. If there is a counterexample to an argument, the conclusion cannot be a consequence of the premises. For the conclusion to be a consequence of the premises, the truth of the premises must guarantee the truth of the conclusion. If there is a counterexample, the truth of the premises does not guarantee the truth of the conclus1ion. As logicians, we want to be able to determine when the conclusion of an argument follows from the premises. And the conclusion is a consequence of the premises if there is no counterexample—no case where the premises are all true but the conclusion is not. This motivates a definition:
+\factoidbox{A sentence A is a consequence of sentences $B_1$, \ldots,$ B_n$ if and only if there is no case where $B_1$, \ldots,$ B_n$ are all true and A is not true.\\
+We then also say that A follows from $B_1$, \ldots,$ B_n$ or that $B_1$, \ldots,$ B_n$ entail A.}
+This “definition” is incomplete: it does not tell us what a “case” is or what it means to be “true in a case.” So far we’ve only seen an example: a hypothetical scenario involving three people. Of the three people in the scenario—a driver, a maid, and some gardener—the driver and maid didn’t do it, but the gardener did. In this scenario, as described, the driver didn’t do it, and so it is a case in which the sentence “the driver did it” is not true. The premises of our second argument are true, but the conclusion is not true: the scenario is a counterexample. I also said that arguments where the conclusion is a consequence of the premises are called valid, and those where the conclusion isn’t a consequence of the premises are invalid. Since we now have at least a first stab at a definition of “consequence,” we’ll record this:
+
+:::vaside
+[Invalid]{.vocab}: A property of arguments that holds when the conclusion is not a consequence of the premises; i.e. it is possible for the premises to be true and the conclusion false. This is the opposite of valid.
+:::
+
+
+> An argument is valid if and only if the conclusion is a consequence of the premises, i.e. it is not possible to make a counterexample.
+
+This definition also gives us what it means for an argument to be invalid:
+
+> An argument is invalid if and only if it is not valid, i.e., it has a counterexample.
+
+Logicians are in the business of making the notion of “case” more precise, and investigating which arguments are valid when “case” is made precise in one way or another. If we take “case” to mean “hypothetical scenario” like the counterexample to the second argument, it’s clear that the first argument counts as valid. If we imagine a scenario in which either the butler or the gardener did it, and also the butler didn’t do it, we are automatically imagining a scenario in which the gardener did it. So any hypothetical scenario in which the premises of our first argument are true automatically makes the conclusion of our first argument true. This makes the first argument valid.
+Making “case” more specific by interpreting it as “hypothetical scenario” is an advance. But it is not the end of the story. The first problem is that we don’t know what to count as a hypothetical scenario. Are they limited by the laws of physics? By what is conceivable, in a very general sense? What answers we give to these questions determine which arguments we count as valid.
+### Nomological Validity 
+Suppose that we said that we are limited to the laws of physics. Consider the following argument:
+
+\begin{earg}
+\item[]The spaceship Rocinante took six hours to reach Jupiter from Tycho space station.
+\item[\therefore] The distance between Tycho space station and Jupiter is less than 14 billion kilometers.
+\end{earg}
+
+A counterexample to this argument would be a scenario in which the Rocinante makes a trip of over 14 billion kilometers in 6 hours, exceeding the speed of light. Since such a scenario is incompatible with the laws of physics, there is no such scenario if hypothetical scenarios have to conform to the laws of physics. This would mean that the above argument is nomologically valid. We can't come up with a counterexample which conforms to our laws of physics. If we said, however, that counterexamples (hypothetical scenarios) are not limited by the laws of physics, there is a counterexample: a scenario where the Rocinante travels faster than the speed of light. This means that the argument is not valid (full stop) but rather is valid with some assumptions. There could be an implied premise, which needs to be made explicit, that the laws of physics are accurate and that they exclude the possibility of traveling faster than the speed of light.
+
+### Conceptual Validity
+
+Suppose that we said that hypothetical scenarios are limited to what we can imagine (conceive) and consider another argument:
+
+\begin{earg}
+\item[]Priya is an ophthalmologist.
+\item[\therefore] Priya is an eye doctor.
+\end{earg}
+
+If we’re allowing only conceivable scenarios, this is also a valid argument. If you imagine Priya being an ophthalmologist, you thereby imagine Priya being an eye doctor. That’s just what “ophthalmologist” and “eye doctor” mean. A scenario where Priya is an ophthalmologist but not an eye doctor is ruled out by the conceptual connection between these words. We call this sort of validity conceptual validity because the truth of the conclusion is entailed by the meaning of, the proposition expressed by, the premise. Conceptually valid arguments tend to be valid (full stop) but there are some arguments (in fact most arguments) which are valid (full stop) but not necessarily conceptually valid. Such arguments are valid without relying on the definition of some word or phrase and end to be far stronger and better in reasoning.
+
+## Part 2.3 Formal Validity
+One distinguishing feature of logical consequence, however, is that it should not depend on the content of (the concepts in) the premises and conclusion, but only on their logical structure, the general shape or style the argument comes in. In other words, as logicians, we want to develop a theory that can make even more fine-grained distinctions. For instance, both of these arguments are valid:\\
+
+\begin{tabular}{p{4.8cm}p{4.8cm}}
+Argument \exarg{priya1}&Argument \exarg{priya2}\\
+Either Priya is an 
+ophthalmologist or a dentist.&Either Priya is an 
+ophthalmologist or a dentist.\\
+Priya isn’t a dentist.&Priya isn’t a dentist.\\
+\therefore Priya is an eye doctor.&\therefore Priya is an ophthalmologist.
+\end{tabular}\\
+
+The first argument, Argument \ref{priya1}, is valid because of the implied premise about the meaning of the word “ophthalmologist”. It is not possible to come up with a case where the premises are true and the conclusion is false because of the concepts involved. Despite looking very similar to the first, Argument \ref{priya2} does not rely on the concepts in the premises. The second argument is formally valid. This is not because it's valid because of its attire and proper decorum, rather it's valid because of the form (shape or structure) the argument has. We can describe the “form” of this argument as a pattern, something like this:
+
+\begin{earg}
+\item[] Either A is an X or a Y.
+\item[] A isn’t a Y.
+\item[\therefore] A is an X .
+\end{earg}
+
+Here, A, X , and Y are placeholders for appropriate expressions that, when substituted for A, X , and Y , turn the pattern into an argument consisting of sentences. Replacing the key terms or phrases with these placeholders is a really good strategy to be able to strip back the ‘what was said' and look exclusively at the ‘how it was reasoned'. There are many, many, different arguments which all use this same general pattern. Once we make a conclusion about the general pattern, that conclusion trickles down to all of the instances of that pattern. For example,
+
+\begin{earg}
+\item[]Either Mei is a mathematician or a botanist.
+\item[]Mei isn’t a botanist.
+\item[\therefore] Mei is a mathematician.
+\end{earg}
+
+this is an argument of the same form, and we know that it is formally valid for the same reason as the general case. Argument 1, on the other hand, does not use the same form: we would have to replace Y by different expressions (once by “ophthalmologist” and once by “eye doctor”) to obtain it from the pattern. Its form is this:
+
+\begin{earg}
+\item[]Either A is an X or a Y.
+\item[]A isn’t a Y.
+\item[\therefore] A is a Z.
+\end{earg}
+
+In this pattern we can replace X by “ophthalmologist” and Z by “eye doctor” to obtain the original argument, which was valid because of the concepts involved. But here is another argument of the same form:
+
+\begin{earg}
+\item[]Either Mei is a mathematician or a botanist.
+\item[]Mei isn’t a botanist.
+\item[\therefore] Mei is an acrobat.
+\end{earg}
+
+This argument is clearly not valid, since we can imagine a mathematician named Mei who is not an acrobat. This means that the above argument structure is not formally valid and this conclusion trickles down to the various instances of the form. Our strategy as logicians will be to come up with a notion of “case” on which an argument turns out to be valid if it is formally valid. We can say that the arguments are valid, in this sense, when there are no cases where the premises of that form are all true and the conclusion (of that form) is false. Similarly, we can say that an argument is invalid, in this sense, when there is a case where the premises of this form are all true and the conclusion is false. We could say that formal validity trickles down to the instances of the form where as formal invalidity floats up to the general form.
+
+When we consider cases of various kinds in order to evaluate the validity of an argument, we will make a few assumptions/restrictions. First, we will only consider arguments of the same form as the one in question. It wouldn't make sense to judge an argument of one form based on the features of an argument of a radically different form. The second assumption is that when we are considering a hypothetical scenario, ever premise of the argument is true. So, for example, in the mathematician vs botanist example, the hypothetical scenario will be one where Mei is either a mathematician or a botanist (at least one of them) and one where she is not a botanist. This is so that we can test to see whether the form actually entails the conclusion. And the third assumption is that the conclusion to the argument is false. If we can come up with an argument of a particular form which does have a counter example, then that argument is invalid. If we can't, then the argument is valid (we will be exploring more on this in Module III).
+
+## Part 2.4 Soundness
+
+Before we go on and execute this strategy, a few clarifications. Arguments in our sense, as conclusions which (supposedly) follow from premises, are of course used all the time in everyday and scientific discourse. When they are, arguments are given to support or even prove their conclusions. Now, if an argument is valid, it will support its conclusion, but only if its premises are all true. Validity rules out the possibility that the premises are true and the conclusion is not true at the same time. It does not, by itself, rule out the possibility that the conclusion is not true, period. In other words, it is perfectly possibly for a valid argument to have a conclusion that isn’t true!\\
+
+Consider this example,
+
+\begin{earg}
+\item[]Oranges are either fruit or musical instruments.
+\item[]Oranges are not fruit.
+\item[\therefore] Oranges are musical instruments.
+\end{earg}
+
+The conclusion of this argument is ridiculous. Nevertheless, it follows from the premises. If both premises are true, then the conclusion just has to be true. So the argument is valid.
+Conversely, having true premises and a true conclusion is not enough to make an argument valid. Consider this example:
+
+\begin{earg}
+\item[]London is in England.
+\item[]Beijing is in China.
+\item[\therefore] Paris is in France.
+\end{earg}
+
+The premises and conclusion of this argument are, as a matter of fact, all true, but the argument is invalid. If Paris were to declare independence from the rest of France, then the conclusion would no longer be true, even though both of the premises would remain true. Thus, there is a case where the premises of this argument are true without the conclusion being true. So the argument is invalid.
+
+The important thing to remember is that validity is not about the actual truth or falsity of the sentences in the argument. It is about whether it is possible for all the premises to be true and the conclusion to be not true at the same time (in some hypothetical case). What is in fact the case has no special role to play; and what the facts are does not determine whether an argument is valid or not. Nothing about the way things are can by itself determine if an argument is valid. It is often said that logic doesn’t care about feelings. Actually, it doesn’t care about facts, either.
+
+When we use an argument to prove that its conclusion is true, then, we need two things. First, we need the argument to be valid, i.e., we need the conclusion to follow from the premises. But we also need the premises to be true. We will say that an argument is sound if and only if it is both valid and all of its premises are true. The flip side of this is that when you want to rebut an argument, you have two options: you can show that (one or more of) the premises are not true, or you can show that the argument is not valid. Logic, however, will only help you with the latter!

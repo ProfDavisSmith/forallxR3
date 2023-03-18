@@ -1,0 +1,91 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+-   https://cdn.plyr.io/3.6.12/plyr.css
+js: 
+-   https://cdn.plyr.io/3.6.12/plyr.polyfilled.js
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+-   https://hypothes.is/embed.js
+---
+
+
+## Part 1.2 Sentences and Propositions
+
+To be perfectly general, we can define an argument as a series of sentences. The sentences at the beginning of the series are premises. The final sentence in the series is the conclusion. If the premises are true and the argument is a good one, then you have a reason to accept the conclusion.
+
+In logic, we are only interested in sentences that can figure as a premise or conclusion of an argument, i.e., sentences that can be true or false. This helps us avoid the pulls of rhetoric and certain kinds of fallacious reasoning. We also want to make sure that we all have attached the same meaning to a sentence, as to avoid the potential confusion resulting from us talking past each other. So, in general, logic is focused on propositions.
+
+This is where we get into a very basic introduction into Philosophy of Language. This area of philosophy deals with things such as meaning, reference, and so forth (Philosophy of Language is what I mostly work in, it deals with semantics while Linguistics deals with syntax, but the fields overlap quite a bit). Even when we aren't trying very hard, we can use words and sentences in a ton of different ways and there seems to be some vagueness or ambiguity in natural languages. For example, I can easily make examples where sentences might have two or more different interpretations, like double or triple entendres.
+
+1. GOP grills the IRS chief over lost emails.
+2. If your dog poops, you must put it in the trash can.
+3. A woman gives birth in the UK every 48 seconds.
+4. People wanted for pickling and canning.
+
+All four of the above examples have at least 2 different interpretations and, in each case, one seems true while the other seems false. In Example 1, it could be interpreted to mean that the GOP are having an IRS chief BBQ over a server or it could mean that they are harshly questioning the chief. In Example 2, one way to understand this is that it's telling you to put your dog in the garbage can, while another is telling you to put the poop therein. In Example 3, we could say that there's a single woman who is having a baby every 48 seconds (she must be tired) or that some woman, not necessarily the same woman, is having a child in that time. In Example 4, it could be that we have a cannibal looking to store their meats for the winter using canning and fermenting techniques or it could be that a food fermentation business is looking to hire on some more people in those departments. Given these examples, and how often we misunderstand each other on a daily basis,  it might be tempting, therefore, to think that the truth of a sentence must be relative to its interpretation.  In an even more robust example, imagine the following:
+
+> Suppose that we all collectively switched the sorts of things the words ‘dog' and ‘cat' pick-out. So, the word ‘dog' now is used to point out the meowing critters and the word ‘cat' refers to the barking ones. In this case, it would seem that the sentence ‘dogs are canines' would be false and ‘dogs are feline' would be true. If we, again, flipped the meanings of the words ‘feline' and ‘canine', we would get that ‘dogs are canines' as true, but for a totally different reason than it was originally.
+
+But does this make truth open for interpretation? Well, no, but in a sense, yes. When we look at a language, from one perspective, we notice that things like words and sentences are nothing more than characters on a screen/page, random collections of sounds, or certain structured gestures (in the case of sign languages). Those things, on their own, don't have meaning. There must be something extra, beyond the sound and signs, which has the meaning.  Philosophers call the meaning behind a sentence a proposition. A proposition, itself, is not a sentence or a word, rather it's the meaning behind the sentences.
+
+:::vaside
+[Proposition]{.vocab}: The meaning behind a declarative sentence or expression.
+:::
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Sentence</th>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Proposition</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Snow is white</td>
+    <td class="tg-0pky">English</td>
+    <td class="tg-0pky">that snow is white</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Schnee ist Weiss</td>
+    <td class="tg-0pky">German</td>
+    <td class="tg-0pky">that snow is white</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Nix alba est</td>
+    <td class="tg-0pky">Latin</td>
+    <td class="tg-0pky">that snow is white</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">La neige est blanche</td>
+    <td class="tg-0lax">French</td>
+    <td class="tg-0lax">that the snow is white<br></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+All of the above examples are different sentences, made clear because they are in different languages, but they all express the same proposition. The truth of a sentence is relative to the truth of the proposition attached to it, propositions are the things which are true or false, and then the truth of the proposition is determined by its correspondence with reality. Translators, at least the good ones, often take the sentence in one language, figure out the proposition connected to it, and then express the same proposition in the necessary language.
+
+## The Move to Propositions
+
+So, the proposition expressed by a sentence is not itself a linguistic thing. Propositions themselves don't have meaning, but rather they are the meaning behind a sentence. For a bit of language to be open to interpretation is for us to be able to attach different propositions (meanings) to it. But the meanings themselves are not open to further interpretation. And it is the proposition, what is meant by the sentence, which makes the statements, sentences, true or false. So, when I speak of arguments consisting of premises (the supporting evidence and their arrangement in the argument), I am talking about the core meaning behind the sentence, not the sentence itself. If we misinterpret the sentence, then we haven’t yet gotten on to the claim being made and hence probably don’t fully understand the argument.
+
+You should not confuse the idea of a sentence which can express propositions with the difference between fact and opinion. Often, sentences in logic will express things that would count as facts— such as ‘Kierkegaard was a hunchback’ or ‘Kierkegaard liked almonds’ but they can also express things which you might think of as matters of opinion—such as, ‘almonds are tasty.’ In other words, a sentence is not disqualified from being part of an argument because we don’t know if it is true or false or because its truth or falsity is a matter of opinion. If it is the kind of sentence that could be true or false, then it can play the role of premise or conclusion.
+
+Also, there are things that would count as ‘sentences’ in a linguistics or grammar course which do not necessarily express propositions. Here are just a few:
+
+### Questions 
+
+In a grammar class, "Are you sleepy yet?" would count as an interrogative sentence. Although you might be sleepy or you might be alert, the question itself is neither true nor false. For this reason, questions will not count as sentences in logic. Suppose you answer the question: `I am not sleepy.' This is either true or false, and so it is a sentence in the logical sense. Generally, *questions* will not count as sentences, but *answers* will. "What is this course about?" is not a sentence (in our sense). "No one knows what this course is about" is a sentence. 
+
+### Imperatives 
+
+Commands are often phrased as imperatives like "Wake up!", "Sit up straight", and so on. In a grammar class, these would count as imperative sentences. Although it might be good for you to sit up straight or it might not, the command is neither true nor false. Note, however, that commands are not always phrased as imperatives. In the right context, the sentence "you will respect my authority" *is* either true or false---either you will or you will not---and so it counts as a sentence in the logical sense. In another context, however, it is an imperative, so it is not the sort of thing which is true or false. Understanding which is the correct interpretation is essential to understanding language.  
+
+### Exclamations 
+
+"Ouch!" is sometimes called an exclamatory sentence, but it is neither true nor false. We will treat "Ouch, I hurt my toe!" as meaning the same thing as "I hurt my toe." The `ouch' does not add anything that could be true or false. Certain phrases use words and bits of language which in other contexts would amount to sentences but are in fact exclamations. For example, "you jerk!" could be easily seen as a colloquial shortening of "you are a jerk!" which is something which can be true or false, either the *you* in question is a jerk or they are not. But it could also be seen as an exclamation without any additional content. As before, the context very much matters. 
+
+[Previous](11.txt) [Contents](forallxcarnap.txt) [Next](21.txt)

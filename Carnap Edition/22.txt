@@ -1,0 +1,76 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+-   https://cdn.plyr.io/3.6.12/plyr.css
+js: 
+-   https://cdn.plyr.io/3.6.12/plyr.polyfilled.js
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+-   https://hypothes.is/embed.js
+-   https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js
+---
+
+\section{Part 2.5 Deductive vs Inductive Arguments}
+Strictly speaking, only what we call \glspl{deductive argument} can be valid. As I have mentioned previously, an argument is all about intent. The premises are intended to support the conclusion. Deductive arguments are those where the intent is to guarantee the conclusion. When there is that intent, we can and should judge it according to validity. But there are many arguments out there where the intent is not to guarantee the conclusion, but rather to merely make it more likely. These arguments, by their very nature, are going to be invalid but they are still good and have practical use. These arguments are called \glspl{inductive argument}. This is because, generally, they go from a bunch of particular cases and generalize to something larger. Deductive arguments, on the other hand, tend to go from general principles and then reduce (deduce) to particular instances. To see the difference, take a look at these examples:
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}\hline
+Argument \exarg{linecooktime1}:&Argument \exarg{linecooktime2}:\\
+Sam is a line cook.&Sam is a line cook.\\
+All line cooks have good time management skills.&Most line cooks have good time management skills.\\
+Therefore, Sam has good time management skills&Therefore, Sam probably has good time management skills.\\
+\end{tabular}\\
+
+Both of these arguments, \ref{linecooktime1} and \ref{linecooktime2}, start with the same premise, "Sam is a line cook" and they come to \emph{similar} conclusions, but the certainty expressed by these arguments is very different. In argument \ref{linecooktime1}, the conclusion means something certain or absolute while argument \ref{linecooktime2} has a conclusion with room for a little doubt; maybe Sam is a line cook who hasn't been put under the pressure to need to develop the time management skills yet. The difference in the tone of the conclusions gives us a hint about the intent behind these arguments. Argument \ref{linecooktime1} has the intent to guarantee the conclusion while argument \ref{linecooktime2} merely wants to make it more likely. This, roughly, makes argument \ref{linecooktime1} deductive and is thereby judged by validity and the second, argument \ref{linecooktime2} is inductive and is judged by strength. It doesn't make sense to claim that a deductive argument is strong because that standard just doesn't apply. 
+
+Unlike validity, strength does come in degrees. With validity, it's all or nothing, so to speak. With strength, one argument could be stronger than another and both still be strong. The gauge here is how likely the conclusion is relative to the premises. How inductive arguments can have different strengths (meaning that one is stronger than another) is best introduced with examples:
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}\hline
+Argument \exarg{linecook1}:&Argument \exarg{linecook2}:\\
+Sam is a line cook.&Sam is a line cook.\\
+Line cooks generally have good kitchen skills.&Line cooks generally aren't paid well.\\
+Therefore, Sam can probably cook well&Therefore, Sam is probably a billionaire.\\
+\end{tabular}\\
+
+\newglossaryentry{deductive argument}
+{
+name=deductive argument,
+description={An argument such that the intent behind it is to guarantee the conclusion. There is no ‘wiggle room'. In general, deductive arguments move from broad general principles and to more particular instances.},
+plural=deductive arguments
+}
+
+\newglossaryentry{inductive argument}
+{
+name=inductive argument,
+description={An argument such that the intent behind it is \emph{merely} to make the conclusion more likely, assuming the truth of the premises. There is some ‘wiggle room'. In general, inductive arguments move from a collection of particular instances and then use those to support the truth of some general principle},
+plural=inductive
+}
+
+
+In argument \ref{linecook1}, we can see that the arguer, through the argument, doesn't intend to make a claim that couldn't be false. Rather, they are trying to make the claim that it's likely that Sam can cook well. While this argument is invalid (one can easily come up with a case where the premises are true and the conclusion is false, such as a scenario where Sam was just hired by a seafood buffet in Arizona), we are willing to say that the premises make the conclusion more likely than otherwise. When the premises do this, we say that the inductive argument is \gls{strong inductive argument}. 
+
+\newglossaryentry{strong inductive argument}
+{
+name=strong,
+description={An inductive argument such that the premises, assuming that they are true, make the conclusion more likely than otherwise. This comes in degrees; that is, some strong inductive arguments may be stronger than others}
+}
+
+In argument \ref{linecook2}, the conclusion is very unlikely given the premises, so we would say that the argument is \gls{weak inductive argument} (not strong). These arguments, however, have different conclusions. It is certainly possible for two inductive arguments to come to the same conclusion and have different levels of strength. Take a look at these arguments: 
+
+\newglossaryentry{weak inductive argument}
+{
+name=weak,
+description={An inductive argument such that the premises, assuming that they are true, \emph{fail} make the conclusion more likely than otherwise. This comes in degrees; that is, some weak inductive arguments may be weaker than others}
+}
+
+
+\begin{tabular}{p{4.8cm}|p{4.8cm}}\hline
+Argument \exarg{raven1}:&Argument \exarg{raven2}:\\
+All the ravens my son has seen have had black feathers.&All the ravens Patty has seen have had black feathers.\\
+My son is 5 years old.&Patty is an ornithologist.\\
+Therefore, all ravens likely have black feathers.&Therefore, all ravens likely have black feathers.\\
+\end{tabular}\\
+
+As you can see, both of these arguments come to the same conclusion, namely "all ravens likely have black feathers" but the strength of these arguements differ (because of who is cited to support the claim). Argument \ref{raven1} is weak because, given the premises, the conclusion is less likely than otherwise. How much could the average 5 year old know about ravens?  Argument \ref{raven2}, on the other hand, is significantly stronger. If an expert ornithologist (a person who studies birds) says that all ravens have black feathers, while there is still the possibility that they are wrong, we could still take that information to the bank (there is a family of white feathered ravens which frequents some of the beaches in western Washington, USA).  
+
+On a practical level, you should temper your belief that the conclusion of an inductive argument is true according to the strength of the argument. If some actor, with no education in anthropology, archeology, or history appears on your TV claiming that the great pyramids in Egypt were actually landing pads for extraterrestrial space craft, you should be very skeptical of that claim unless they add in more evidence and claims which increase the likelihood. If, on the other hand, an expert in one of those fields claims that they have found evidence that the pyramids were landing pads, we should be less skeptical. With inductive arguments, we assume the premises are true and see how likely it is that the conclusion would be true. Strong arguments are those which make it unlikely that the conclusion would be false and weak arguments are those where the conclusion would still be unlikely.  
+
+The point of all this is that inductive arguments—even good inductive arguments—are not (deductively) valid. They are not watertight. Unlikely though it might be, it is possible for their conclusion to be false, even when all of their premises are true. In this class, we will set aside (entirely) the question of what makes for a good inductive argument. Our interest is simply in sorting the (deductively) valid arguments from the invalid ones. So: we are interested in whether or not a conclusion follows from some premises. Don’t, though, say that the premises infer the conclusion. Entailment is a relation between premises and conclusions; inference is something we do. So if you want to mention inference when the conclusion follows from the premises, you could say that one may infer the conclusion from the premises.

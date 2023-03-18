@@ -1,0 +1,118 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+js: 
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+---
+
+:::: cover
+
+# forall*x*: R<sup>3</sup>
+## Carnap Edition
+![forallx](https://carnap.io/shared/profdavissmith@gmail.com/forallx-coverart-screen.svg){alt="A decorative image of the universal quantifier"}
+
+::: author
+
+### Davis Smith
+
+:::
+
+::: license
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"
+rel="noopener noreferrer">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+</a>
+
+:::
+
+:::
+
+::: enrolled
+
+:::
+
+## Table of Contents
+
+:::
+
+::: tableofcontents
+
+:::
+
+[Front Matter](forallxcarnap.txt)
+
+### Course Mechanics
+
+  [Reading (and Syllabus)](00.txt)
+  
+  [Preface to the Textbook](01.txt)
+
+### Module I: Arguments and Logic
+
+1.  [Arguments and Propositions](11.txt)
+2.  [Types of Arguments](21.txt)
+3.  [Other Logical Notions](31.txt) 
+
+### Module II: Symbolizing
+
+4.  [Symbolization](41.txt)
+5.  [Introduction to Connectives](51.txt)
+6.  [More Complex Sentences in PL](61.txt)
+
+### Module III: Truth Tables and All Possible Worlds
+
+7.  [Truth Tables](71.txt)
+8.  [Complex Truth Tables](81.txt)
+9.  [Semantic Concepts](91.txt)
+10. [Testing for Validity](101.txt)
+11. [Short-Form Tables](111.txt)
+
+### Module IV: Natural Deduction 1
+
+12.  [Natural Deduction](121.txt)
+13.  [The Basic Rules of PL](131.txt)
+14.  [Tips and Tricks for Proofs](141.txt)
+
+### Module V: Natural Deduction 2
+
+15.  [The Idea Behind Equivalency](151.txt)
+16.  [Indirect Proofs](161.txt)
+17.  [Tips for Proofs](171.txt)
+
+### Module VI: Quantified Logic
+
+18.  [The Next Step: Quantified Logic](181.txt)
+19.  [Bringing It All Together](191.txt)
+20.  [Examples of Symbolization](201.txt)
+
+### Module VII: Validity in QL
+
+21.  [Symbolizing vs Translating](211.txt)
+22.  [Truth in QL](221.txt)
+23.  [Semantic Concepts and Validity](231.txt)
+
+### Module VIII: Natural Deduction in QL 1
+
+24.  [The Basic Rules for QL](241.txt)
+25.  [Tips for and an Example of Proofs in QL](251.txt)
+
+### Module IX: Natural Deduction in QL 2
+
+26.  [Identity](261.txt) 
+27.  [Equivalency Rules in QL](271.txt)
+
+### Module X: Modal Logic (NOT CURRENTLY SUPPORTED BY CARNAP)
+
+28.  Introduction to Modal Logic
+29.  The Systems of Modal Logic
+30.  Tips and Tricks for Modal Logic
+
+Appendices
+
+Playgrounds
+
+Soundness and Completeness
+
+Quick Reference

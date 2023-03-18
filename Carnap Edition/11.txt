@@ -1,0 +1,117 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+-   https://cdn.plyr.io/3.6.12/plyr.css
+js: 
+-   https://cdn.plyr.io/3.6.12/plyr.polyfilled.js
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+-   https://hypothes.is/embed.js
+---
+# Part 1: Arguments and Propositions
+
+## Part 1.1 Arguments: What is Logic?
+
+The common-sense, everyday, way to tell whether a claim is true or false is to look at the reasons for or against it. Sometimes our observations give us good reasons. For example, I have a good reason for thinking my bicycle has a flat tire when I see the tire sagging on the rim or hear air hissing out of the tube. But often the business of identifying and evaluating reasons is a bit more involved. Logic is the business of identifying and evaluating reasons. You do this all the time. You give yourself reasons to choose one shirt over another for a job interview, you reason your way through making a choice about which classes to take, you believe certain things based on evidence, and you give reasons for why something isn't your fault (when you make excuses). In all of these cases and more, you are making argument.
+
+:::vaside
+[Argument]{.vocab}:A connected series of sentences, divided into premises and conclusion.
+:::
+
+This is very different from how you might use the term ‘argument'. In everyday language, we sometimes use the word ‘argument’ to talk about belligerent shouting matches. If you and a friend have an argument in this sense, things are not going well between the two of you. Logic is not concerned with such teeth-gnashing and hair-pulling. They are not arguments, in our sense; they are just disagreements. For a humorous example of how arguments and disagreements differ, take a look at this funny exchange from Monty Python:
+
+![Argument Clinic](https://raw.githubusercontent.com/ProfDavisSmith/forallxR3/main/Carnap Edition/ArgumentClinic.mp4)
+
+An argument is a reason for taking something to be true. Arguments are
+made out of two or more claims, one of which is a conclusion. The conclusion is the claim the argument purports to give a reason for believing. The
+other claims are the premises. The premises of an argument taken together
+are offered as a reason for believing its conclusion. In the above exchange, the
+person looking for an argument claims that "An argument is a collected series
+of statements to establish a definite proposition". This is a close approximation
+to how philosophers use the term, but a better, more exact definition is:
+
+> An argument is a collected series of propositions intended to establish others in the series.
+
+We will be returning to what, exactly, propositions are in a moment but the
+propositions (statements, in this case) which support others are our premises.
+The one being supported is the conclusion. This is very different from a disagreement; in the above discussion, the contrarian is conflating disagreement with argument. A disagreement is where you have two things (often people) which do not agree about the truth of some proposition. Often, in at least
+a reasonable disagreement, one or both of the parties will give arguments in
+support of their side. They will give reasons for why they are correct and the
+opposing side is, thereby, wrong. So, an argument, as we will understand it, is
+something more like this:
+
+Either the butler or the gardener did it.
+The butler didn’t do it.
+∴ The gardener did it.
+
+We here have a series of sentences. The three dots on the third line, ∴, of the
+argument are read ‘therefore’. They indicate that the final sentence expresses
+the conclusion of the argument. The two sentences before that are the premises
+of the argument. If you believe the premises and you think the conclusion
+follows from the premises (that the argument, as we will say, is valid), then this
+(perhaps) provides you with a reason to believe the conclusion.
+
+This is the sort of thing that logicians are interested in. Without arguments,
+we would be unable to tell which side is correct. In fact, without arguments,
+we wouldn’t be able to decide anything (all of our choices would be completely
+random). We will say that an argument is any collection of premises, together
+with a conclusion.
+
+Logic, as a discipline, is the study of arguments and structures of reasoning. In this class, you will learn and apply various simple reasoning structures
+(called ‘rules of inference’) and learn to identify when two statements mean the
+same thing and how to move between these statements.
+
+## What are we doing in this first module?
+
+This first module discusses some basic logical notions that apply to arguments
+in a natural language like English (these same principles apply to all natural
+languages and to many artificial languages (sometimes called ‘Conlangs’ for
+constructed languages)). It is important to begin with a clear understanding of
+what arguments are and of what it means for an argument to be valid. Later (in
+Module II), we will translate arguments from English into a formal language
+This move from a natural language to a formal, logical, one is important. The
+formal language allows us to look at how the argument was reasoned and avoid
+the biases we are prone to have when we know what was reasoned. We want
+formal validity, as defined in the formal language, to have at least some of the
+important features of natural-language validity so that it translates over to our
+every-day life.
+
+## The general structure of an argument
+
+In the butler and gardener examples above, we used individual sentences to ex
+press both of the argument’s premises, and we used a third sentence to express
+the argument’s conclusion. Many arguments are expressed in this way, especially when clarity is more important than efficiency or rhetoric, but a single
+sentence can contain a complete argument. Consider:
+
+> The butler has an alibi; so they cannot have done it.
+
+This argument has one premise followed by a conclusion. There are likely some
+implied premises such as "if the butler has an alibi, then they cannot have done
+it". In a formal language, such as the one you will be learning in this class,
+those will need to be explicit. Many arguments, such as that one, start with
+premises, and end with a conclusion, but not all of them. The argument with
+which this section began might equally have been presented with the conclusion
+at the beginning, like so:
+
+> The gardener did it. After all, it was either the butler or the gardener. And the butler didn’t do it.
+
+So, in this case, the premises are "it was either the butler or the gardener" and
+"the butler did it". Here, we don’t have, or don’t need, any implied premises.
+Equally, it might have been presented with the conclusion in the middle:
+
+> The butler didn’t do it. Accordingly, it was the gardener, given that it was either the gardener or the butler.
+
+When approaching an argument, we want to know whether or not the conclusion follows from the premises. So the first thing to do is to separate out
+the conclusion from the premises. As a guide, these words are often used to
+indicate an argument’s conclusion:
+
+> so, therefore, hence, thus, accordingly, consequently
+
+For this reason, they are sometimes called conclusion indicators. By contrast,
+these expressions are premise indicators, as they often indicate that we are
+dealing with a premise, rather than a conclusion:
+
+> since, because, given that
+
+But in analysing an argument, there is no substitute for a good nose.
+
+[Previous](01.txt) [Contents](forallxcarnap.txt) [Next](12.txt)

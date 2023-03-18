@@ -1,0 +1,53 @@
+---
+base-css:
+-   https://carnap.io/shared/dsanson@gmail.com/sanson-book.css
+js: 
+-   https://carnap.io/shared/dsanson@gmail.com/logic-book.js
+---
+
+# Preface
+
+This textbook concerns formal logic. Formal logic, as a field, is a subdiscipline within Philosophy which studies the relationship between assumptions (premises) and conclusions. It is `formal' in the sense that it concerns the *form* or *shape* of the assumptions/conclusions on an abstract level so the same logical structure can be used in many different unrelated contexts with the same level of certainty. The forms of these arguments are expressed through the use of *formal languages*, namely Propositional Logic, Quantified Logic, and Modal Logics. Being formal, these languages are very useful in that it is impossible to be ambiguous. The study of such formal languages centers on entailment, that is, what follows from what; by better understanding entailment, we can better tell what will be a necessary consequence of a state of affairs or situation. We can, in a sense, predict the future. Studying these formal languages also gives us a better understanding of notions like possibility, necessity, validity, and soundness. Formal languages naturally have the ability to precisely define these notions using either the basic aspects of the language or the systems of deduction which the language naturally provides.
+
+The importance of formal logic and these formal languages extends beyond Philosophy and regular reasoning/argumentation into other fields such as Mathematics and Computer Science. In Mathematics, formal languages are used to describe mathematical situations rather than normal "everyday" ones. For their proofs and discoveries, mathematicians are fundamentally interested in the consequences of definitions and assumptions and it is very important for them to establish these consequences (which they call "theorems") using extremely precise and rigorous methods so that they will hold regardless of the circumstances. Formal logic provides those methods. 
+
+In computer science, formal logic is applied to describe the state and behaviours of computational systems, e.g., circuits, programs, databases, and the like. The methods in formal logic are used to establish whether a circuit is error-free, such as whether it returns the correct output given some set of inputs; whether a program does what it's intended to do; whether the structure of a database is consistent, whether the storage of the data is optimally compact, or if something is true of the data in it; and other areas of concern. In fact, the underlying frameworks for computer programming languages are based on the formal languages in formal logic. 
+
+The book is divided into ten (10) modules. Module I introduces the topic and notions of logic in an informal way, without introducing a formal language yet.  Modules II-V concern truth-functional languages. In it, sentences are formed from basic sentences using a number of connectives ("or", "and", "not", "if ... then'") which combine sentences into more complicated ones.  We discuss logical notions such as entailment in two ways: semantically, using the method of truth tables (in Module III) and proof-theoretically, using a system of formal derivations (in Modules IV-V).  Modules VI--IX deal with a more complicated language, that of first-order logic, called Quantified Logic. It includes, in addition to the connectives of truth-functional logic (called Propositional Logic), also names, predicates, identity, and quantifiers. These additional elements of the language make it much more expressive than Propositional Logic and able to handle far more complicated situations. We'll spend a fair amount of time investigating just how much one can express in it.  Again, logical notions for Quantified Logic are defined semantically, using interpretations, and proof-theoretically, using a more complex formal derivation system introduced in Modules VIII and IX.  Module X discusses the extension of PL by non-truth-functional operators for possibility and necessity: modal logic. In the appendices you'll find proofs concerning metalogical concepts such as *soundness* and *completeness*, a chapter outlining the link between computer circuits and Propositional Logic, a quick reference listing the rules and restrictions (if necessary) for the truth conditions and inference rules, and a glossary listing central terms used thoughout the book. Future editions of this book will include content and proof-systems for deviant logics, such as paraconsistent logic and other many-valued logics, content and proof-systems for alternative applications of Modal Logic (such as Temporal, Deontic, and Epistemic Logics), and a more in depth exploration of inductive reasoning and informal fallacies. 
+
+## Copyright and Credits
+
+forallx: R<sup>3</sup> Carnap Edition is [forallx: R<sup>3</sup>](https://github.com/ProfDavisSmith/forallxR3#readme) by Davis A. Smith, used under a 
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, converted and edited to be used in Carnap, without the need for an external LMS. forallx: R<sup>3</sup> is a revision and expansion of [forallx: Calgary](https://forallx.openlogicproject.org/), 
+by Aaron Thomas-Bolduc and Richard Zach, used under a 
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based on
+[forallx: Cambridge](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html), by 
+[Tim Button](https://www.homepages.ucl.ac.uk/~uctytbu/) (University College London), 
+used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based, in turn,
+on [forallx](https://www.fecundity.com/logic/), by
+[P.D. Magnus](https://www.fecundity.com/job/) 
+(University at Albany, State University of New York),
+used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+It includes additional material from forallx by P.D. Magnus and
+[Metatheory](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html) by Tim Button, 
+used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and 
+from [forallx: Lorain County Remix](https://github.com/rob-helpy-chalk/openintroduction),
+by [Cathal Woods](https://sites.google.com/site/cathalwoods/) and
+J. Robert Loftis as well as original material by Davis A. Smith. Biographies for Alan Turing, Bertrand Russell, and Kurt Gödel were provided by 
+[The Open Logic Project](https://builds.openlogicproject.org/) and used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. 
+The biography for William of Ockham was provided by [Andrew Jeffery](https://sites.google.com/view/andrewjefferyswebpage) and used with his permission. 
+The image used in the biography of William of Ockham was taken by [John Salmon](https://www.geograph.org.uk/profile/9419) and used under a 
+[CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/) license. 
+
+This work is licensed under a [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/). You are free to copy and redistribute the material in any medium or format, and remix, transform, and build
+upon the material for any purpose, even commercially, under
+the following terms:
+- You must give appropriate credit, provide a link to the
+license, and indicate if changes were made. You may do
+so in any reasonable manner, but not in any way that
+suggests the licensor endorses you or your use.
+- You may not apply legal terms or technological measures
+that legally restrict others from doing anything the license
+permits.
+
+[Previous](00.txt) [Contents](forallxcarnap.txt) [Next](11.txt)
