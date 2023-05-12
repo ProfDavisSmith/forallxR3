@@ -9,14 +9,13 @@
 %\usepackage{tcolorbox}
 
 
-\newcommand{\logician}[4]{\begin{tcolorbox}[enhanced,sharp corners=downhill, colframe={leadbeater},colback={vltleadbeater},
-%overlay={\node at (frame.north east) {\includegraphics[width=2.5cm, keepaspectratio]{#3}};}
+\newcommand{\logician}[4]{\begin{tcolorbox}[enhanced,sharp corners=downhill, colframe={leadbeater},colback={vltleadbeater}
 ]\paragraph{#1}%
-	 \begin{wrapfigure}{r}{2.5cm}
+	 \begin{wrapfigure}{r}{0cm}
 	 \includegraphics[width=2.5cm]{#3}% 
 	 \autocite{#4}
 	 \end{wrapfigure}
-	 #2%
+	 \small #2%
 \end{tcolorbox}}
 
 \newenvironment{logicianboxe}{%
@@ -33,7 +32,7 @@
 	%<biography> is the actual biography of the logician or prominate figure in the history of formal logic.  
 
 \newcommand{\turing}{%module1 part 2
-\logician{Alan Turing}{Alan Turing was born in Maida Vale, London, on June 23, 1912. He is considered the father of theoretical computer science. Turing’s interest in the physical
+\logician{Alan Turing}{\footnotesize Alan Turing was born in Maida Vale, London, on June 23, 1912. He is considered the father of theoretical computer science. Turing’s interest in the physical
 sciences and mathematics started at a young age. However, as a boy his interests were not represented well in his schools, where emphasis was placed on
 literature and classics. Consequently, he did poorly in school and was reprimanded by many of his teachers.
 Turing attended King’s College, Cambridge as an undergraduate, where he studied mathematics. In 1936 Turing developed (what is now called) the Turing machine as an attempt to precisely define the notion of a computable function and to prove the undecidability ofthe decision problem. He was beaten to the result by Alonzo Church, who proved the result via his own lambda calculus. Turing’s paper was still published with reference to Church’s result. Church invited Turing to Princeton, where he spent 1936–1938, and obtained a doctorate under Church. Despite his interest in logic, Turing’s earlier interests in physical sciences remained prevalent. His practical skills were put to work during his service with the British cryptanalytic department at Bletchley Park during World War II. 
@@ -43,7 +42,7 @@ of electronic machinery, gave the team the ability to crack the code by creating
 
 \newcommand{\chrysippus}{%module2 part 4
 \logician{Chrysippus}{
-Chrysippus was born in a city called Soli on the south east coast of Asia Minor in 280 BCE and very early in life moved to Athens where he studied under the philosopher Cleanthes who was a student of Zeno, the founder of a school of thought called Stoicism. When Cleanthes died in 232 BCE, Chrysippus took over as the leader of the school and became very prolific, writing over 700 essays and books where he formalized the Stoic way of thinking. Sadly, all of these works have been lost to time but fragments exist in the writings of various Roman philosophers such as Cicero and Seneca. 
+\footnotesize Chrysippus was born in a city called Soli on the south east coast of Asia Minor in 280 BCE and very early in life moved to Athens where he studied under the philosopher Cleanthes who was a student of Zeno, the founder of a school of thought called Stoicism. When Cleanthes died in 232 BCE, Chrysippus took over as the leader of the school and became very prolific, writing over 700 essays and books where he formalized the Stoic way of thinking. Sadly, all of these works have been lost to time but fragments exist in the writings of various Roman philosophers such as Cicero and Seneca. 
 
 Because of the methods Chrysippus used in formalizing Stoicism, he is considered to be the second founder of this way of thinking and also the founder of Propositional Logic. Unlike Aristotelian Logic, where the basic atoms are names (which later merged with Propositional Logic and evolved into Quantified Logic), the basic unit of truth are propositions, simple sentences. Based on Chrysippus' logical system, Theophrastus worked out the logic behind what we call today the Hypothetical Syllogism and Philo of Megara worked out the truth conditions for conditionals. Continuing their work, Chrysippus divided what he called `propositions' into what we call today simple and complex sentences and introduced many of the logical connectives which are still in use today (though the names and representations have changed); negation, disjunction, conjunction, and conditional. Chrysippus defined the complex sentences as those which were composed of the simple sentences joined together with (a) connective(s) and he was the first to show that the truth value of a complex sentence was a function of the connectives given the truth values of the simple sentences and their position `within' the connectives. This discovery allowed him to formally (related to form) present many of the inference rules found in formal logic today including Modus Ponens (\eif E), Modus Tollens (MT), Disjunctive Syllogism (\eor E), and others. He then was able to use these rules to present a formal system of natural deduction to show `what followed from what' using a series of discrete steps.    
 

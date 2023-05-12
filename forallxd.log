@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.31)  12 MAY 2023 08:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.12)  12 MAY 2023 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **forallxd.tex lwarpmk html
 (forallxd.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22>
+L3 programming layer <2023-05-05>
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memoir.cls
 Document Class: memoir 2022/11/17 v3.7.19 configurable book, report, article do
 cument class
@@ -418,7 +418,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
 \pdfx@tmptoks=\toks27
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -478,32 +478,29 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \Hy@linkcounter=\count312
 \Hy@pagecounter=\count313
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
 \Hy@SavedSpaceFactor=\count314
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdfa' set `true' on input line 4060.
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Option `pdfa' set `true' on input line 4065.
+Package hyperref Info: Hyper figures OFF on input line 4182.
+Package hyperref Info: Link nesting OFF on input line 4187.
+Package hyperref Info: Hyper index ON on input line 4190.
+Package hyperref Info: Plain pages OFF on input line 4197.
+Package hyperref Info: Backreferencing OFF on input line 4202.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
+Package hyperref Info: Bookmarks ON on input line 4449.
 \c@Hy@tempcnt=\count315
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
+LaTeX Info: Redefining \url on input line 4787.
 \XeTeXLinkMargin=\dimen188
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
@@ -517,13 +514,13 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 \Fld@menulength=\count316
 \Field@Width=\dimen189
 \Fld@charsize=\dimen190
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode ON on input line 6070.
+Package hyperref Info: Hyper figures OFF on input line 6066.
+Package hyperref Info: Link nesting OFF on input line 6071.
+Package hyperref Info: Hyper index ON on input line 6074.
+Package hyperref Info: backreferencing OFF on input line 6081.
+Package hyperref Info: Link coloring OFF on input line 6086.
+Package hyperref Info: Link coloring with OCG OFF on input line 6091.
+Package hyperref Info: PDF/A mode ON on input line 6094.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
@@ -535,7 +532,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver: hpdftex.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+File: hpdftex.def 2023-04-22 v7.00x Hyperref driver for pdfTeX
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
@@ -579,11 +576,11 @@ Package hyperref Info: Option `psdextra' set `true' on input line 1465.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc-greekbas
 ic.def
-File: puenc-greekbasic.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (
+File: puenc-greekbasic.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (
 greek block) (HO)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\psdextra.def
-File: psdextra.def 2023-02-07 v7.00v Hyperref: Additions to PDF string support
+File: psdextra.def 2023-04-22 v7.00x Hyperref: Additions to PDF string support
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/colorprofiles\colorpr
 ofiles.sty
@@ -1326,7 +1323,7 @@ Package: gitinfo2 2015/11/22 v2.0.7 git revision information
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen280
 \ESO@tempdimb=\dimen281
 )
@@ -2052,15 +2049,15 @@ LaTeX Info: Redefining \addtolength on input line 81.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2023-02-22 L3 programming layer (loader) 
+Package: expl3 2023-05-05 L3 programming layer (loader) 
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count437
 \l__pdf_internal_box=\box160
 ))
-Package: xparse 2023-01-16 L3 Experimental document command parser
+Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 \c@step=\count438
 \c@stepstart=\count439
@@ -2075,7 +2072,7 @@ Package: xparse 2023-01-16 L3 Experimental document command parser
 \timelinebox=\box161
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
+Package: babel 2023/04/18 3.88 The Babel package
 \babel@savecnt=\count444
 \U@D=\dimen358
 \l@unhyphenated=\language79
@@ -2368,7 +2365,7 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2023-02-22 L3 programming layer (loader) 
+(biblatex)             2023-05-05 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -2401,42 +2398,24 @@ TextBlockOrigin set to 0pt x 0pt
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pagecolor\pagecolor.sty
-Package: pagecolor 2023-02-14 v1.2b Provides thepagecolor (HMM)
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hardwrap\hardwrap.sty
-Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
+Package: pagecolor 2023-04-18 v1.2c Provides thepagecolor (HMM)
 
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
-ty
-Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
-ty
-Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
-)
-
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
-
-)
-\hw@charcount=\count580
-\hw@wordcount=\count581
-\hw@maxprintline=\count582
-)
 Package pagecolor Info: \nopagecolor did not work with the crop package
-(pagecolor)             2017/11/19 v1.10. Using 
-(pagecolor)             none 
+(pagecolor)             2017/11/19 v1.10. Using
+(pagecolor)             none
 (pagecolor)             as nopagecolor now.
-This message occurred on input line 189.
 
 
-Package pagecolor Warning: Option nopagecolor=none requested but this does not
-(pagecolor)                work with the crop package. By option nopagecolor
-(pagecolor)                the "color" to be used with \nopagecolor is set.
-(pagecolor)                The current value is "none" (maybe by default), but
-(pagecolor)                the crop package broke \nopagecolor. Therefore the
-(pagecolor)                color cannot be "none". Please change the option
-(pagecolor)                accordingly! As first aid nopagecolor is now set to
-(pagecolor)                white.
+Package pagecolor Warning: Option nopagecolor=none requested but this does not 
+work with the
+(pagecolor)                crop package. By option nopagecolor the "color" to b
+e used with
+(pagecolor)                \nopagecolor\ is set. The current value is "none" (m
+aybe by
+(pagecolor)                default), but the crop package broke \nopagecolor.
+(pagecolor)                Therefore the color cannot be "none".
+(pagecolor)                Please change the option accordingly!
+(pagecolor)                As first aid nopagecolor is now set to white.
 
 )
    defining Unicode char U+FE01 (decimal 65025)
@@ -2521,16 +2500,16 @@ LaTeX Font Info:    ... okay on input line 56.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count583
+\scratchcounter=\count580
 \scratchdimen=\dimen368
 \scratchbox=\box167
-\nofMPsegments=\count584
-\nofMParguments=\count585
+\nofMPsegments=\count581
+\nofMParguments=\count582
 \everyMPshowfont=\toks73
-\MPscratchCnt=\count586
+\MPscratchCnt=\count583
 \MPscratchDim=\dimen369
-\MPnumerator=\count587
-\makeMPintoPDFobject=\count588
+\MPnumerator=\count584
+\makeMPintoPDFobject=\count585
 \everyMPtoPDFconversion=\toks74
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -2547,11 +2526,11 @@ Package hyperref Info: Link coloring ON on input line 56.
 LaTeX Info: Command `\dddot' is already robust on input line 56.
 LaTeX Info: Command `\ddddot' is already robust on input line 56.
  (forallxd.glsdefs)
-\c@mv@tabular=\count589
-\c@mv@boldtabular=\count590
+\c@mv@tabular=\count586
+\c@mv@boldtabular=\count587
 Package mathastext Info: current meaning of amsmath \resetMathstrut@ saved on i
 nput line 56.
-\c@lstlisting=\count591
+\c@lstlisting=\count588
 Package biblatex Info: Trying to load language 'american' -> 'american-mla'...
 Package biblatex Info: ... file 'american-mla.lbx' found.
 
@@ -2683,8 +2662,12 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 69--110
 
 \openout5 = `forallxd.ist'.
 
- <./assets/forallx-coverart-screen.pdf>] (forallx-d-content.tex
-(forallx-d-frontmatter.tex
+{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/U
+sers/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_clcsgf
+.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/
+zbv_uguye6.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ba
+skervaldx/zbv_2zeho7.enc} <./assets/forallx-coverart-screen.pdf>]
+(forallx-d-content.tex (forallx-d-frontmatter.tex
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
 (Font)              scaled to size 37.0pt on input line 14.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/it' will be
@@ -2730,7 +2713,9 @@ File: marcom-PierceCollege-Logo.png Graphic file (type png)
 Package pdftex.def Info: marcom-PierceCollege-Logo.png  used on input line 80.
 (pdftex.def)             Requested size: 240.4176pt x 68.41542pt.
 )
-[2] [3 <./marcom-PierceCollege-Logo.png>]
+[2{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-sup
+er-t1.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskerv
+aldx/zbv_y77okd.enc}] [3 <./marcom-PierceCollege-Logo.png>]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 48.0pt on input line 9.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
@@ -2748,10 +2733,10 @@ LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
- [4
 
-] [5])
-(forallx-d-preface.tex [6] [7
+[4
+
+] [5]) (forallx-d-preface.tex [6] [7
 
 ] [8]) [9] (forallx-d-what.tex
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
@@ -2858,13 +2843,8 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 369.
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 369--369
-[][][][][][][] 
- []
-
 [23]
-Overfull \vbox (80.35803pt too high) has occurred while \output is active []
+Overfull \vbox (3.75603pt too high) has occurred while \output is active []
 
 
 [24 <./assets/turing.jpg>]
@@ -2898,7 +2878,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 <to be read again> 
                    \relax 
 l.462 \problempart
-                   [30]
+                   [30{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/d
+vips/baskervaldx/zbv_2xv27p.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -2998,13 +2979,8 @@ Package pdftex.def Info: assets/Chrysippus.jpg  used on input line 159.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 159.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 159--159
-[][][][][][][] 
- []
-
 [41]
-Overfull \vbox (114.88106pt too high) has occurred while \output is active []
+Overfull \vbox (37.61656pt too high) has occurred while \output is active []
 
 
 [42 <./assets/Chrysippus.jpg>]
@@ -3024,16 +3000,6 @@ Package pdftex.def Info: assets/russell.jpg  used on input line 374.
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 374.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 374--374
-[][][][][][][] 
- []
-
-
-Underfull \hbox (badness 4316) in paragraph at lines 374--374
-[]\T1/Baskervaldx-TOsF/m/n/10 Russell was born in Trel-lech, Mon-
- []
 
 [53]
 Overfull \vbox (20.35803pt too high) has occurred while \output is active []
@@ -3086,11 +3052,6 @@ Package pdftex.def Info: assets/boole.jpg  used on input line 144.
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 144.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 144--144
-[][][][][][][] 
- []
 
 [70] [71 <./assets/boole.jpg>] [72
 
@@ -3207,14 +3168,8 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 256.
 
 
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 256--256
-[][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[][]\T1/Baskervaldx-TOsF/b/n/10.95 Moggaliputta Tissa[] \T1/Baskervaldx-TOsF/m/
-n/10 Mog-galiputta
+Underfull \hbox (badness 5802) in paragraph at lines 256--256
+\T1/Baskervaldx-TOsF/m/n/10 Tissa (also writ-ten as `Mog-galiput-
  []
 
 [111]
@@ -3251,16 +3206,6 @@ Package pdftex.def Info: assets/demorgan.jpg  used on input line 144.
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 144.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 144--144
-[][][][][][][] 
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 144--144
-\T1/Baskervaldx-TOsF/m/n/10 in Madura, In-dia, where his fa-ther
- []
 
 [140]
 Overfull \vbox (18.99669pt too high) has occurred while \output is active []
@@ -3299,11 +3244,6 @@ Package pdftex.def Info: assets/aristotle.jpg  used on input line 238.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 238.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 238--238
-[][][][][][][] 
- []
-
 [175]
 Overfull \vbox (139.98303pt too high) has occurred while \output is active []
 
@@ -3321,13 +3261,8 @@ Package pdftex.def Info: assets/ghazali.jpeg  used on input line 320.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 320.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 320--320
-[][][][][][][] 
- []
-
 [182]
-Overfull \vbox (53.88106pt too high) has occurred while \output is active []
+Overfull \vbox (65.88106pt too high) has occurred while \output is active []
 
 
 [183 <./assets/ghazali.jpeg>]
@@ -3366,11 +3301,6 @@ Package pdftex.def Info: assets/sina.jpeg  used on input line 579.
 
 Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 579.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 579--579
-[][][][][][][] 
- []
 
 [193] [194]
 Overfull \vbox (67.35803pt too high) has occurred while \output is active []
@@ -3431,11 +3361,6 @@ Package pdftex.def Info: assets/ockham.jpg  used on input line 345.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 345.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 345--345
-[][][][][][][] 
- []
-
 [213]
 Overfull \vbox (151.35803pt too high) has occurred while \output is active []
 
@@ -3494,13 +3419,8 @@ Package pdftex.def Info: assets/godel.jpg  used on input line 285.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 285.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 285--285
-[][][][][][][] 
- []
-
 [241]
-Overfull \vbox (140.35803pt too high) has occurred while \output is active []
+Overfull \vbox (152.35803pt too high) has occurred while \output is active []
 
 
 [242 <./assets/godel.jpg>]
@@ -3589,11 +3509,6 @@ Package pdftex.def Info: assets/leibniz.jpg  used on input line 224.
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 224.
 
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 224--224
-[][][][][][][] 
- []
-
 [262]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
@@ -3618,11 +3533,6 @@ Package pdftex.def Info: assets/barcan.jpg  used on input line 429.
 
 Package biblatex Warning: No driver for 'footcite:image'.
 (biblatex)                Using fallback driver on input line 429.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 429--429
-[][][][][][][] 
- []
 
 
 Package biblatex Warning: No driver for 'footcite:online'.
@@ -3705,11 +3615,6 @@ Package pdftex.def Info: assets/kripke.jpg  used on input line 414.
 
 Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 414.
-
-
-Overfull \hbox (4.45999pt too wide) in paragraph at lines 414--414
-[][][][][][][] 
- []
 
 [293] [294 <./assets/kripke.jpg>] [295] [296] [297] [298] [299] [300]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
@@ -3820,7 +3725,8 @@ Underfull \hbox (badness 10000) in alignment at lines 69--79
 [][] 
  []
 
-[366]
+[366{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/z
+bv_puztjr.enc}]
 Underfull \hbox (badness 10000) in alignment at lines 85--94
 [][] 
  []
@@ -3901,43 +3807,34 @@ Package logreq Info: Writing requests to 'forallxd.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62118 strings out of 476334
- 1200266 string characters out of 5787971
- 2127974 words of memory out of 5000000
- 79963 multiletter control sequences out of 15000+600000
- 746097 words of font info for 328 fonts, out of 8000000 for 9000
+ 61951 strings out of 476361
+ 1196354 string characters out of 5788244
+ 2126221 words of memory out of 5000000
+ 79780 multiletter control sequences out of 15000+600000
+ 747526 words of font info for 332 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,23n,113p,2371b,4520s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv
-_puztjr.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baske
-rvaldx/zbv_2xv27p.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/d
-vips/base/8r.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-baskervaldx/zbv_y77okd.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/
-enc/dvips/cm-super/cm-super-t1.enc}{C:/Users/davis/AppData/Local/Programs/MiKTe
-X/fonts/enc/dvips/baskervaldx/zbv_clcsgf.enc}{C:/Users/davis/AppData/Local/Prog
-rams/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_2zeho7.enc}{C:/Users/davis/AppData/
-Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_uguye6.enc}<C:/Users/davi
-s/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Bol.
-pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervald
-x/Baskervaldx-BolIta.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/baskervaldx/Baskervaldx-Ita.pfb><C:/Users/davis/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Reg.pfb><C:/Users/davis/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/davi
-s/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Us
-ers/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexas.pfb><C:
-/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><
-C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.p
-fb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txs
-yb.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts
-/txsyc.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
-tx/txsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
-etic/uhvb8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/h
-elvetic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/helvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/boondox/zxxrw8a.pfb>
-Output written on forallxd.pdf (385 pages, 3441526 bytes).
+<C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervaldx/
+Baskervaldx-Bol.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/baskervaldx/Baskervaldx-BolIta.pfb><C:/Users/davis/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Ita.pfb><C:/Users/davis/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Reg.pfb><C
+:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pf
+b><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sft
+t1000.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
+x/txexas.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
+ewtx/txexs.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/txfonts/txsya.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/txfonts/txsyb.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/txfonts/txsyc.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/newtx/txsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/helvetic/uhvb8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/f
+onts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTe
+X/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on forallxd.pdf (385 pages, 3446651 bytes).
 PDF statistics:
- 3886 PDF objects out of 4296 (max. 8388607)
+ 3912 PDF objects out of 4296 (max. 8388607)
  1475 named destinations out of 1728 (max. 500000)
  633 words of extra memory for PDF output out of 10000 (max. 10000000)
 
