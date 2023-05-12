@@ -1,51 +1,51 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.25)  30 JAN 2023 03:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.31)  12 MAY 2023 08:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./forallxd.tex
+**forallxd.tex lwarpmk html
 (forallxd.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-23>
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memoir.cls
-Document Class: memoir 2022/07/29 v3.7r configurable book, report, article docu
-ment class
+Document Class: memoir 2022/11/17 v3.7.19 configurable book, report, article do
+cument class
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count185
 )
-\onelineskip=\skip47
-\lxvchars=\skip48
-\xlvchars=\skip49
+\onelineskip=\skip48
+\lxvchars=\skip49
+\xlvchars=\skip50
 \@memcnta=\count186
 \c@@memmarkcntra=\count187
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-\stockheight=\skip50
-\stockwidth=\skip51
-\trimtop=\skip52
-\trimedge=\skip53
+\stockheight=\dimen140
+\stockwidth=\dimen141
+\trimtop=\skip51
+\trimedge=\skip52
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/memoir\mem11.clo
 File: mem11.clo 2022/07/29 v0.5 memoir class 11pt size option
 )
-\binding=\skip54
-\spinemargin=\skip55
-\foremargin=\skip56
-\uppermargin=\skip57
-\lowermargin=\skip58
-\headdrop=\skip59
-\normalrulethickness=\skip60
-\mem@maxheadheight=\skip61
-\mem@maxfootheight=\skip62
-\headwidth=\skip63
+\binding=\skip53
+\spinemargin=\skip54
+\foremargin=\skip55
+\uppermargin=\skip56
+\lowermargin=\skip57
+\headdrop=\skip58
+\normalrulethickness=\skip59
+\mem@maxheadheight=\skip60
+\mem@maxfootheight=\skip61
+\headwidth=\skip62
 \c@storedpagenumber=\count188
-\memPD=\dimen138
-\m@mabparskip=\skip64
-\thanksmarkwidth=\skip65
-\thanksmarksep=\skip66
-\droptitle=\skip67
+\memPD=\dimen142
+\m@mabparskip=\skip63
+\thanksmarkwidth=\skip64
+\thanksmarksep=\skip65
+\droptitle=\skip66
 \c@book=\count189
 \c@part=\count190
 \c@chapter=\count191
@@ -54,78 +54,78 @@ File: mem11.clo 2022/07/29 v0.5 memoir class 11pt size option
 \c@subsubsection=\count194
 \c@paragraph=\count195
 \c@subparagraph=\count196
-\beforechapskip=\skip68
-\midchapskip=\skip69
-\afterchapskip=\skip70
-\chapindent=\skip71
-\bottomsectionskip=\skip72
-\secindent=\skip73
-\beforesecskip=\skip74
-\aftersecskip=\skip75
-\subsecindent=\skip76
-\beforesubsecskip=\skip77
-\aftersubsecskip=\skip78
-\subsubsecindent=\skip79
-\beforesubsubsecskip=\skip80
-\aftersubsubsecskip=\skip81
-\paraindent=\skip82
-\beforeparaskip=\skip83
-\afterparaskip=\skip84
-\subparaindent=\skip85
-\beforesubparaskip=\skip86
-\aftersubparaskip=\skip87
-\pfbreakskip=\skip88
+\beforechapskip=\skip67
+\midchapskip=\skip68
+\afterchapskip=\skip69
+\chapindent=\skip70
+\bottomsectionskip=\skip71
+\secindent=\skip72
+\beforesecskip=\skip73
+\aftersecskip=\skip74
+\subsecindent=\skip75
+\beforesubsecskip=\skip76
+\aftersubsecskip=\skip77
+\subsubsecindent=\skip78
+\beforesubsubsecskip=\skip79
+\aftersubsubsecskip=\skip80
+\paraindent=\skip81
+\beforeparaskip=\skip82
+\afterparaskip=\skip83
+\subparaindent=\skip84
+\beforesubparaskip=\skip85
+\aftersubparaskip=\skip86
+\pfbreakskip=\skip87
 \c@@ppsavesec=\count197
 \c@@ppsaveapp=\count198
-\ragrparindent=\dimen139
-\everylistparindent=\dimen140
-\parsepi=\skip89
-\topsepi=\skip90
-\itemsepi=\skip91
-\parsepii=\skip92
-\topsepii=\skip93
-\topsepiii=\skip94
-\itemsepii=\skip95
-\itemsepiii=\skip96
-\partopsepii=\skip97
-\partopsepiii=\skip98
-\m@msavetopsep=\skip99
-\m@msavepartopsep=\skip100
+\ragrparindent=\dimen143
+\everylistparindent=\dimen144
+\parsepi=\skip88
+\topsepi=\skip89
+\itemsepi=\skip90
+\parsepii=\skip91
+\topsepii=\skip92
+\topsepiii=\skip93
+\itemsepii=\skip94
+\itemsepiii=\skip95
+\partopsepii=\skip96
+\partopsepiii=\skip97
+\m@msavetopsep=\skip98
+\m@msavepartopsep=\skip99
 \@enLab=\toks16
-\abstitleskip=\skip101
-\absleftindent=\skip102
-\abs@leftindent=\dimen141
-\absrightindent=\skip103
-\absparindent=\skip104
-\absparsep=\skip105
+\abstitleskip=\skip100
+\absleftindent=\skip101
+\abs@leftindent=\dimen145
+\absrightindent=\skip102
+\absparindent=\skip103
+\absparsep=\skip104
 \c@vslineno=\count199
 \c@poemline=\count266
 \c@modulo@vs=\count267
 \c@memfvsline=\count268
-\vleftskip=\skip106
-\vrightskip=\skip107
-\stanzaskip=\skip108
-\versewidth=\skip109
-\vgap=\skip110
-\vindent=\skip111
-\vleftmargin=\dimen142
+\vleftskip=\skip105
+\vrightskip=\skip106
+\stanzaskip=\skip107
+\versewidth=\skip108
+\vgap=\skip109
+\vindent=\skip110
+\vleftmargin=\dimen146
 \c@verse=\count269
 \c@chrsinstr=\count270
-\beforepoemtitleskip=\skip112
-\afterpoemtitleskip=\skip113
+\beforepoemtitleskip=\skip111
+\afterpoemtitleskip=\skip112
 \c@poem=\count271
-\beforePoemTitleskip=\skip114
-\midPoemTitleskip=\skip115
-\afterPoemTitleskip=\skip116
+\beforePoemTitleskip=\skip113
+\midPoemTitleskip=\skip114
+\afterPoemTitleskip=\skip115
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen143
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen147
 \ar@mcellbox=\box51
-\extrarowheight=\dimen144
+\extrarowheight=\dimen148
 \NC@list=\toks17
-\extratabsurround=\skip117
-\backup@length=\skip118
+\extratabsurround=\skip116
+\backup@length=\skip117
 \ar@cellbox=\box52
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
@@ -136,148 +136,148 @@ Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen145
-\TX@old@table=\dimen146
-\TX@old@col=\dimen147
-\TX@target=\dimen148
-\TX@delta=\dimen149
+\TX@col@width=\dimen149
+\TX@old@table=\dimen150
+\TX@old@col=\dimen151
+\TX@target=\dimen152
+\TX@delta=\dimen153
 \TX@cols=\count272
 \TX@ftn=\toks18
 )
-\heavyrulewidth=\dimen150
-\lightrulewidth=\dimen151
-\cmidrulewidth=\dimen152
-\belowrulesep=\dimen153
-\belowbottomsep=\dimen154
-\aboverulesep=\dimen155
-\abovetopsep=\dimen156
-\cmidrulesep=\dimen157
-\cmidrulekern=\dimen158
-\defaultaddspace=\dimen159
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
 \@cmidla=\count273
 \@cmidlb=\count274
-\@aboverulesep=\dimen160
-\@belowrulesep=\dimen161
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
 \@thisruleclass=\count275
 \@lastruleclass=\count276
-\@thisrulewidth=\dimen162
-\ctableftskip=\skip119
-\ctabrightskip=\skip120
+\@thisrulewidth=\dimen166
+\ctableftskip=\skip118
+\ctabrightskip=\skip119
 \abovecolumnspenalty=\count277
 \@linestogo=\count278
 \@cellstogo=\count279
 \@cellsincolumn=\count280
 \crtok=\toks19
-\@mincolumnwidth=\dimen163
+\@mincolumnwidth=\dimen167
 \c@newflo@tctr=\count281
 \mem@margin@floatbox=\box53
-\@contcwidth=\skip121
-\@contindw=\skip122
-\abovecaptionskip=\skip123
-\belowcaptionskip=\skip124
-\subfloattopskip=\skip125
-\subfloatcapskip=\skip126
-\subfloatcaptopadj=\skip127
-\subfloatbottomskip=\skip128
-\subfloatlabelskip=\skip129
-\subfloatcapmargin=\dimen164
+\@contcwidth=\skip120
+\@contindw=\skip121
+\abovecaptionskip=\skip122
+\belowcaptionskip=\skip123
+\subfloattopskip=\skip124
+\subfloatcapskip=\skip125
+\subfloatcaptopadj=\skip126
+\subfloatbottomskip=\skip127
+\subfloatlabelskip=\skip128
+\subfloatcapmargin=\dimen168
 \c@@contsubnum=\count282
 \m@mscap@capbox=\box54
 \m@mscap@fbox=\box55
-\sidecapsep=\dimen165
-\sidecapwidth=\dimen166
-\m@m@tempdima=\dimen167
-\m@mscapraise=\dimen168
-\sidecapraise=\dimen169
-\m@mscapmainwidth=\dimen170
-\m@mscaplkern=\dimen171
-\beforeepigraphskip=\skip130
-\afterepigraphskip=\skip131
-\epigraphwidth=\skip132
-\epigraphrule=\skip133
+\sidecapsep=\dimen169
+\sidecapwidth=\dimen170
+\m@m@tempdima=\dimen171
+\m@mscapraise=\dimen172
+\sidecapraise=\dimen173
+\m@mscapmainwidth=\dimen174
+\m@mscaplkern=\dimen175
+\beforeepigraphskip=\skip129
+\afterepigraphskip=\skip130
+\epigraphwidth=\skip131
+\epigraphrule=\skip132
 LaTeX Info: Redefining \em on input line 7655.
 LaTeX Info: Redefining \emph on input line 7663.
-\tocentryskip=\skip134
-\tocbaseline=\skip135
-\cftparskip=\skip136
-\cftbeforebookskip=\skip137
-\cftbookindent=\dimen172
-\cftbooknumwidth=\dimen173
-\cftbeforepartskip=\skip138
-\cftpartindent=\skip139
-\cftpartnumwidth=\skip140
-\cftbeforechapterskip=\skip141
-\cftchapterindent=\skip142
-\cftchapternumwidth=\skip143
-\cftbeforesectionskip=\skip144
-\cftsectionindent=\skip145
-\cftsectionnumwidth=\skip146
-\cftbeforesubsectionskip=\skip147
-\cftsubsectionindent=\skip148
-\cftsubsectionnumwidth=\skip149
-\cftbeforesubsubsectionskip=\skip150
-\cftsubsubsectionindent=\skip151
-\cftsubsubsectionnumwidth=\skip152
-\cftbeforeparagraphskip=\skip153
-\cftparagraphindent=\skip154
-\cftparagraphnumwidth=\skip155
-\cftbeforesubparagraphskip=\skip156
-\cftsubparagraphindent=\skip157
-\cftsubparagraphnumwidth=\skip158
-\prechapterprecisshift=\dimen174
+\tocentryskip=\skip133
+\tocbaseline=\skip134
+\cftparskip=\skip135
+\cftbeforebookskip=\skip136
+\cftbookindent=\dimen176
+\cftbooknumwidth=\dimen177
+\cftbeforepartskip=\skip137
+\cftpartindent=\skip138
+\cftpartnumwidth=\skip139
+\cftbeforechapterskip=\skip140
+\cftchapterindent=\skip141
+\cftchapternumwidth=\skip142
+\cftbeforesectionskip=\skip143
+\cftsectionindent=\skip144
+\cftsectionnumwidth=\skip145
+\cftbeforesubsectionskip=\skip146
+\cftsubsectionindent=\skip147
+\cftsubsectionnumwidth=\skip148
+\cftbeforesubsubsectionskip=\skip149
+\cftsubsubsectionindent=\skip150
+\cftsubsubsectionnumwidth=\skip151
+\cftbeforeparagraphskip=\skip152
+\cftparagraphindent=\skip153
+\cftparagraphnumwidth=\skip154
+\cftbeforesubparagraphskip=\skip155
+\cftsubparagraphindent=\skip156
+\cftsubparagraphnumwidth=\skip157
+\prechapterprecisshift=\dimen178
 \c@maxsecnumdepth=\count283
-\bibindent=\dimen175
-\bibitemsep=\skip159
-\indexcolsep=\skip160
-\indexrule=\skip161
+\bibindent=\dimen179
+\bibitemsep=\skip158
+\indexcolsep=\skip159
+\indexrule=\skip160
 \indexmarkstyle=\toks20
 \@indexbox=\insert252
-\glossarycolsep=\dimen176
-\glossaryrule=\dimen177
-\sideparvshift=\skip162
+\glossarycolsep=\dimen180
+\glossaryrule=\dimen181
+\sideparvshift=\skip161
 \sideins=\insert251
-\sidebartopsep=\skip163
-\sidebarhsep=\skip164
-\sidebarvsep=\skip165
-\sidebarwidth=\skip166
-\footmarkwidth=\skip167
-\footmarksep=\skip168
-\footparindent=\skip169
-\footinsdim=\skip170
+\sidebartopsep=\skip162
+\sidebarhsep=\skip163
+\sidebarvsep=\skip164
+\sidebarwidth=\skip165
+\footmarkwidth=\skip166
+\footmarksep=\skip167
+\footparindent=\skip168
+\footinsdim=\skip169
 \footinsv@r=\insert250
 \@mpfootinsv@r=\insert249
 \m@m@k=\count284
-\m@m@h=\dimen178
-\m@mipn@skip=\skip171
+\m@m@h=\dimen182
+\m@mipn@skip=\skip170
 \sidefootins=\insert248
-\sidefootadjust=\skip172
-\sidefootheight=\skip173
-\sidefoothsep=\skip174
-\sidefootvsep=\skip175
-\sidefootwidth=\skip176
-\m@mdownsf=\skip177
+\sidefootadjust=\skip171
+\sidefootheight=\skip172
+\sidefoothsep=\skip173
+\sidefootvsep=\skip174
+\sidefootwidth=\skip175
+\m@mdownsf=\skip176
 \c@sidefootnote=\count285
-\sidefootmarkwidth=\skip178
-\sidefootmarksep=\skip179
-\sidefootparindent=\skip180
+\sidefootmarkwidth=\skip177
+\sidefootmarksep=\skip178
+\sidefootparindent=\skip179
 \c@pagenote=\count286
 \c@pagenoteshadow=\count287
-\mem@pn@lastkern=\skip181
+\mem@pn@lastkern=\skip180
 \every@verbatim=\toks21
 \afterevery@verbatim=\toks22
 \verbatim@line=\toks23
 \tab@position=\count288
 \verbatim@in@stream=\read2
-\verbatimindent=\skip182
+\verbatimindent=\skip181
 \verbatim@out=\write3
-\bvboxsep=\skip183
+\bvboxsep=\skip182
 \c@memfbvline=\count289
 \c@bvlinectr=\count290
-\bvnumlength=\skip184
-\fb@frw=\dimen179
-\fb@frh=\dimen180
-\FrameRule=\dimen181
-\FrameSep=\dimen182
+\bvnumlength=\skip183
+\fb@frw=\dimen183
+\fb@frh=\dimen184
+\FrameRule=\dimen185
+\FrameSep=\dimen186
 \c@cp@cntr=\count291
 \c@ism@mctr=\count292
 \c@xsm@mctr=\count293
@@ -300,14 +300,14 @@ Package textcase Info: Defining Legacy names on input line 20.
 )
 \c@figure=\count306
 \c@lofdepth=\count307
-\cftbeforefigureskip=\skip185
-\cftfigureindent=\skip186
-\cftfigurenumwidth=\skip187
+\cftbeforefigureskip=\skip184
+\cftfigureindent=\skip185
+\cftfigurenumwidth=\skip186
 \c@table=\count308
 \c@lotdepth=\count309
-\cftbeforetableskip=\skip188
-\cfttableindent=\skip189
-\cfttablenumwidth=\skip190
+\cftbeforetableskip=\skip187
+\cfttableindent=\skip188
+\cfttablenumwidth=\skip189
 Package abstract [2008/07/23] emulated by memoir.
 Package appendix [2008/07/23] emulated by memoir.
 Package booktabs [2016/05/16] emulated by memoir.
@@ -339,6 +339,13 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 )
+
+! LaTeX Error: File `make4ht.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 
 ******************************************************
 Stock height and width: 578.15999pt by 361.34999pt
@@ -396,10 +403,9 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 )
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcolor.
-ltx)
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -411,10 +417,8 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
 \pdfx@tmptoks=\toks27
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
-
+ (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -435,9 +439,8 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks28
 )
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
 keys.sty
@@ -471,11 +474,11 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count311
 )
-\@linkdim=\dimen183
+\@linkdim=\dimen187
 \Hy@linkcounter=\count312
 \Hy@pagecounter=\count313
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
@@ -484,24 +487,24 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count314
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdfa' set `true' on input line 4045.
-Package hyperref Info: Hyper figures OFF on input line 4162.
-Package hyperref Info: Link nesting OFF on input line 4167.
-Package hyperref Info: Hyper index ON on input line 4170.
-Package hyperref Info: Plain pages OFF on input line 4177.
-Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Option `pdfa' set `true' on input line 4060.
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4408.
+Package hyperref Info: Bookmarks ON on input line 4425.
 \c@Hy@tempcnt=\count315
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4746.
-\XeTeXLinkMargin=\dimen184
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen188
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -512,15 +515,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count316
-\Field@Width=\dimen185
-\Fld@charsize=\dimen186
-Package hyperref Info: Hyper figures OFF on input line 6024.
-Package hyperref Info: Link nesting OFF on input line 6029.
-Package hyperref Info: Hyper index ON on input line 6032.
-Package hyperref Info: backreferencing OFF on input line 6039.
-Package hyperref Info: Link coloring OFF on input line 6044.
-Package hyperref Info: Link coloring with OCG OFF on input line 6049.
-Package hyperref Info: PDF/A mode ON on input line 6052.
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode ON on input line 6070.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
@@ -532,7 +535,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver: hpdftex.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
@@ -553,15 +556,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip191
+\Hy@SectionHShift=\skip190
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memhfixc.sty
-Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir cl
+Package: memhfixc 2022/11/17 v1.20 nameref/hyperref package fixes for memoir cl
 ass
 
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \nameref on input line 106.
 \c@memhycontfloat=\count322
 \c@Hpagenote=\count323
 )
@@ -576,11 +579,11 @@ Package hyperref Info: Option `psdextra' set `true' on input line 1465.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc-greekbas
 ic.def
-File: puenc-greekbasic.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (
+File: puenc-greekbasic.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (
 greek block) (HO)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\psdextra.def
-File: psdextra.def 2022-06-20 v7.00s Hyperref: Additions to PDF string support
+File: psdextra.def 2023-02-07 v7.00v Hyperref: Additions to PDF string support
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/colorprofiles\colorpr
 ofiles.sty
@@ -642,8 +645,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen187
-\Gin@req@width=\dimen188
+\Gin@req@height=\dimen191
+\Gin@req@width=\dimen192
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -666,7 +669,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
 ies.sty
-Package: glossaries 2021/11/01 v4.49 (NLCT)
+Package: glossaries 2022/11/03 v4.52 (NLCT)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -680,7 +683,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
-Package: mfirstuc 2021/10/15 v2.07 (NLCT)
+Package: mfirstuc 2022/10/14 v2.08 (NLCT)
 \@glsmfirst=\toks32
 \@glsmrest=\toks33
 )
@@ -692,7 +695,7 @@ sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip192
+\@mathmargin=\skip191
 For additional information on amsmath, use the `?' option.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
@@ -700,11 +703,11 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
-\ex@=\dimen189
+\ex@=\dimen193
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen190
+\pmbraise@=\dimen194
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -726,7 +729,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen191
+\big@size=\dimen195
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count331
@@ -744,15 +747,15 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count336
 \maxfields@=\count337
 \andhelp@=\toks36
-\eqnshift@=\dimen192
-\alignsep@=\dimen193
-\tagshift@=\dimen194
-\tagwidth@=\dimen195
-\totwidth@=\dimen196
-\lineht@=\dimen197
+\eqnshift@=\dimen196
+\alignsep@=\dimen197
+\tagshift@=\dimen198
+\tagwidth@=\dimen199
+\totwidth@=\dimen256
+\lineht@=\dimen257
 \@envbody=\toks37
-\multlinegap=\skip193
-\multlinetaggap=\skip194
+\multlinegap=\skip192
+\multlinetaggap=\skip193
 \mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -814,7 +817,7 @@ Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks39
 \@dtl@tmpcount=\count350
-\dtl@tmplength=\skip195
+\dtl@tmplength=\skip194
 \dtl@sortresult=\count351
 \@dtl@numgrpsepcount=\count352
 \@dtl@datatype=\count353
@@ -822,20 +825,16 @@ Package: fp-eval 1995/04/03
 \dtl@codeB=\count355
 \@dtl@foreach@level=\count356
 )
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
-ies-compatible-307.sty
-Package: glossaries-compatible-307 2021/11/01 v4.49 (NLCT)
-)
 \gls@level=\count357
 \@gls@tmpb=\toks40
-\gls@tmplen=\skip196
+\gls@tmplen=\skip195
 
 
-Package glossaries Warning: Overriding \printglossary on input line 6052.
+Package glossaries Warning: Overriding \printglossary on input line 6157.
 
 
 Package glossaries Warning: Overriding `theglossary' environment on input line 
-6658.
+6751.
 
 \glskeylisttok=\toks41
 \glslabeltok=\toks42
@@ -844,25 +843,25 @@ Package glossaries Warning: Overriding `theglossary' environment on input line
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-hypernav.sty
-Package: glossary-hypernav 2021/11/01 v4.49 (NLCT)
+Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-list.sty
-Package: glossary-list 2021/11/01 v4.49 (NLCT)
-\glslistdottedwidth=\skip197
+Package: glossary-list 2022/11/03 v4.52 (NLCT)
+\glslistdottedwidth=\skip196
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-long.sty
-Package: glossary-long 2021/11/01 v4.49 (NLCT)
+Package: glossary-long 2022/11/03 v4.52 (NLCT)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip198
-\LTright=\skip199
-\LTpre=\skip256
-\LTpost=\skip257
+\LTleft=\skip197
+\LTright=\skip198
+\LTpre=\skip199
+\LTpost=\skip256
 \LTchunksize=\count358
-\LTcapwidth=\dimen198
+\LTcapwidth=\dimen258
 \LT@head=\box58
 \LT@firsthead=\box59
 \LT@foot=\box60
@@ -874,36 +873,36 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count362
 \LT@p@ftn=\toks45
 )
-\glsdescwidth=\skip258
-\glspagelistwidth=\skip259
+\glsdescwidth=\skip257
+\glspagelistwidth=\skip258
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-super.sty
-Package: glossary-super 2021/11/01 v4.49 (NLCT)
+Package: glossary-super 2022/11/03 v4.52 (NLCT)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
 ar.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count363
-\ST@wd=\dimen199
-\ST@rightskip=\skip260
-\ST@leftskip=\skip261
-\ST@parfillskip=\skip262
-\ST@pageleft=\dimen256
-\ST@headht=\dimen257
-\ST@tailht=\dimen258
-\ST@pagesofar=\dimen259
-\ST@pboxht=\dimen260
-\ST@lineht=\dimen261
-\ST@prevht=\dimen262
-\ST@toadd=\dimen263
-\ST@dimen=\dimen264
+\ST@wd=\dimen259
+\ST@rightskip=\skip259
+\ST@leftskip=\skip260
+\ST@parfillskip=\skip261
+\ST@pageleft=\dimen260
+\ST@headht=\dimen261
+\ST@tailht=\dimen262
+\ST@pagesofar=\dimen263
+\ST@pboxht=\dimen264
+\ST@lineht=\dimen265
+\ST@prevht=\dimen266
+\ST@toadd=\dimen267
+\ST@dimen=\dimen268
 \ST@pbox=\box63
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-tree.sty
-Package: glossary-tree 2021/11/01 v4.49 (NLCT)
-\glstreeindent=\skip263
+Package: glossary-tree 2022/11/03 v4.52 (NLCT)
+\glstreeindent=\skip262
 ))
 \glswrite=\write5
 \glo@main@file=\write6
@@ -918,8 +917,8 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box64
 \sift@deathcycles=\count364
-\@vwid@loff=\dimen265
-\@vwid@roff=\dimen266
+\@vwid@loff=\dimen269
+\@vwid@roff=\dimen270
 )
 \c@taburow=\count365
 \tabu@nbcols=\count366
@@ -927,22 +926,22 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count368
 \tabu@alloc=\count369
 \tabu@nested=\count370
-\tabu@target=\dimen267
-\tabu@spreadtarget=\dimen268
-\tabu@naturalX=\dimen269
-\tabucolX=\dimen270
-\tabu@Xsum=\dimen271
-\extrarowdepth=\dimen272
-\abovetabulinesep=\dimen273
-\belowtabulinesep=\dimen274
-\tabustrutrule=\dimen275
+\tabu@target=\dimen271
+\tabu@spreadtarget=\dimen272
+\tabu@naturalX=\dimen273
+\tabucolX=\dimen274
+\tabu@Xsum=\dimen275
+\extrarowdepth=\dimen276
+\abovetabulinesep=\dimen277
+\belowtabulinesep=\dimen278
+\tabustrutrule=\dimen279
 \tabu@thebody=\toks46
 \tabu@footnotes=\toks47
 \tabu@box=\box65
 \tabu@arstrutbox=\box66
 \tabu@hleads=\box67
 \tabu@vleads=\box68
-\tabu@cellskip=\skip264
+\tabu@cellskip=\skip263
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
@@ -1244,7 +1243,7 @@ LaTeX Info: Redefining \not on input line 2959.
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/mathastext\mathastext.s
 ty
-Package: mathastext 2019/11/16 v1.3w Use the text font in math mode (JFB)
+Package: mathastext 2022/11/04 v1.3y Use the text font in math mode (JFB)
 \mst@exists@muskip=\muskip18
 \mst@forall@muskip=\muskip19
 \mst@prime@muskip=\muskip20
@@ -1257,59 +1256,59 @@ Package: mathastext 2019/11/16 v1.3w Use the text font in math mode (JFB)
 
 ** ! and ?
 ** punctuation: , . : ; and \colon
-LaTeX Info: Redefining \rightarrowfill on input line 790.
-LaTeX Info: Redefining \leftarrowfill on input line 795.
+LaTeX Info: Redefining \rightarrowfill on input line 847.
+LaTeX Info: Redefining \leftarrowfill on input line 852.
 ** + and =
 ** adding = ; and + to \nfss@catcodes
 ** parentheses ( ) [ ] and slash /
 ** alldelims: < > \backslash \setminus | \vert \mid \{ and \}
-LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 932.
-LaTeX Font Info:    Redeclaring math symbol \setminus on input line 944.
-LaTeX Info: Redefining \models on input line 953.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 989.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 1001.
+LaTeX Info: Redefining \models on input line 1010.
 ** \# \mathdollar \% \& 
 ** \imath and \jmath 
 LaTeX Font Info:    Overwriting math alphabet `\mathnormalbold' in version `nor
 mal'
 (Font)                  T1/Baskervaldx-TLF/b/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\mathnormalbold' in version `bol
 d'
 (Font)                  T1/Baskervaldx-TLF/b/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `normal'
 (Font)                  T1/Baskervaldx-TLF/m/n --> T1/Baskervaldx-TLF/m/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `bold'
 (Font)                  T1/Baskervaldx-TLF/m/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `normal
 '
 (Font)                  T1/Baskervaldx-TLF/m/n --> T1/Baskervaldx-TLF/m/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `bold'
 (Font)                  T1/Baskervaldx-TLF/m/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `normal'
 (Font)                  T1/Baskervaldx-TLF/b/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `bold'
 (Font)                  T1/Baskervaldx-TLF/b/n --> T1/Baskervaldx-TLF/b/n on in
-put line 2140.
+put line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `normal'
 (Font)                  T1/Baskervaldx-TLF/m/it --> T1/Baskervaldx-TLF/m/it on 
-input line 2140.
+input line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `bold'
 (Font)                  T1/Baskervaldx-TLF/m/it --> T1/Baskervaldx-TLF/b/it on 
-input line 2140.
+input line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `normal'
-(Font)                  T1/phv/m/n --> T1/phv/m/n on input line 2140.
+(Font)                  T1/phv/m/n --> T1/phv/m/n on input line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 2140.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `normal'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/m/n on input line 2140.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/m/n on input line 2370.
 LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 2140.
-** Latin letters in the normal (resp. bold) math versions are now
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 2370.
+** Latin letters in the `normal' (resp. `bold') math versions are now
 ** set up to use the fonts T1/Baskervaldx-TLF/m(b)/n
 ** Other characters (digits, ...) and \log-like names will be
 ** typeset with the n shape.
@@ -1325,68 +1324,33 @@ Package: gitinfo2 2015/11/22 v2.0.7 git revision information
 \integerpart=\count374
 \decimalpart=\count375
 )
-Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen276
-\ESO@tempdimb=\dimen277
+Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
+\ESO@tempdima=\dimen280
+\ESO@tempdimb=\dimen281
 )
 
 Package gitinfo2 Warning: I can't find the file '.git/gitHeadInfo.gin'.
 (gitinfo2)                All git metadata has been set to '(None)'.
 
 )
-\barlength=\skip265
- (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen278
-\captionmargin=\dimen279
-\caption@leftmargin=\dimen280
-\caption@rightmargin=\dimen281
-\caption@width=\dimen282
-\caption@indent=\dimen283
-\caption@parindent=\dimen284
-\caption@hangindent=\dimen285
-Package caption Info: memoir document class detected.
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-memoir.
-sto
-File: caption-memoir.sto 2022/03/02 v2.2b Adaption of the caption package to th
-e memoir document class (AR)
-))
-\c@caption@flags=\count376
-\c@continuedfloat=\count377
-Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen286
-\caption@adjustwidth@linewidth=\dimen287
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)
-Package caption Info: supertabular package is loaded.
-)
-\c@dummy=\count378
-\c@Example=\count379
-\c@ExampleArg=\count380
+\barlength=\skip264
+\c@dummy=\count376
+\c@Example=\count377
+\c@ExampleArg=\count378
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
-Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
 y
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks55
-\pgfutil@tempdima=\dimen288
-\pgfutil@tempdimb=\dimen289
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common-lists.tex))
+\pgfutil@tempdima=\dimen282
+\pgfutil@tempdimb=\dimen283
+)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
 \pgfutil@abb=\box69
@@ -1394,9 +1358,9 @@ y
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
 sty
@@ -1404,7 +1368,7 @@ sty
 sty
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
@@ -1412,75 +1376,73 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgfkeys@temptoks=\toks57
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-filtered.code.tex
+libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks58
 ))
-\pgf@x=\dimen290
-\pgf@y=\dimen291
-\pgf@xa=\dimen292
-\pgf@ya=\dimen293
-\pgf@xb=\dimen294
-\pgf@yb=\dimen295
-\pgf@xc=\dimen296
-\pgf@yc=\dimen297
-\pgf@xd=\dimen298
-\pgf@yd=\dimen299
+\pgf@x=\dimen284
+\pgf@y=\dimen285
+\pgf@xa=\dimen286
+\pgf@ya=\dimen287
+\pgf@xb=\dimen288
+\pgf@yb=\dimen289
+\pgf@xc=\dimen290
+\pgf@yc=\dimen291
+\pgf@xd=\dimen292
+\pgf@yd=\dimen293
 \w@pgf@writea=\write7
 \r@pgf@reada=\read5
-\c@pgf@counta=\count381
-\c@pgf@countb=\count382
-\c@pgf@countc=\count383
-\c@pgf@countd=\count384
+\c@pgf@counta=\count379
+\c@pgf@countb=\count380
+\c@pgf@countc=\count381
+\c@pgf@countd=\count382
 \t@pgf@toka=\toks59
 \t@pgf@tokb=\toks60
 \t@pgf@tokc=\toks61
-\pgf@sys@id@count=\count385
+\pgf@sys@id@count=\count383
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-common-pdf.def
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count386
-\pgfsyssoftpath@bigbuffer@items=\count387
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count384
+\pgfsyssoftpath@bigbuffer@items=\count385
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 e.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
 code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen300
-\pgfmath@count=\count388
+\pgfmath@dimen=\dimen294
+\pgfmath@count=\count386
 \pgfmath@box=\box70
 \pgfmath@toks=\toks62
 \pgfmath@stack@operand=\toks63
 \pgfmath@stack@operation=\toks64
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex
+ions.code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.basic.code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
@@ -1496,130 +1458,132 @@ ions.round.code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.misc.code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)))
+ions.integerarithmetics.code.tex)
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count389
+\c@pgfmathroundto@lastzeros=\count387
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen301
-\pgf@picmaxx=\dimen302
-\pgf@picminy=\dimen303
-\pgf@picmaxy=\dimen304
-\pgf@pathminx=\dimen305
-\pgf@pathmaxx=\dimen306
-\pgf@pathminy=\dimen307
-\pgf@pathmaxy=\dimen308
-\pgf@xx=\dimen309
-\pgf@xy=\dimen310
-\pgf@yx=\dimen311
-\pgf@yy=\dimen312
-\pgf@zx=\dimen313
-\pgf@zy=\dimen314
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen295
+\pgf@picmaxx=\dimen296
+\pgf@picminy=\dimen297
+\pgf@picmaxy=\dimen298
+\pgf@pathminx=\dimen299
+\pgf@pathmaxx=\dimen300
+\pgf@pathminy=\dimen301
+\pgf@pathmaxy=\dimen302
+\pgf@xx=\dimen303
+\pgf@xy=\dimen304
+\pgf@yx=\dimen305
+\pgf@yy=\dimen306
+\pgf@zx=\dimen307
+\pgf@zy=\dimen308
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen315
-\pgf@path@lasty=\dimen316
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen309
+\pgf@path@lasty=\dimen310
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen317
-\pgf@shorten@start@additional=\dimen318
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen311
+\pgf@shorten@start@additional=\dimen312
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box71
 \pgf@hbox=\box72
 \pgf@layerbox@main=\box73
-\pgf@picture@serial@count=\count390
+\pgf@picture@serial@count=\count388
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen319
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen313
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen320
-\pgf@pt@y=\dimen321
-\pgf@pt@temp=\dimen322
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen314
+\pgf@pt@y=\dimen315
+\pgf@pt@temp=\dimen316
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eobjects.code.tex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen323
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen317
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen324
-\pgf@sys@shading@range@num=\count391
-\pgf@shadingcount=\count392
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen318
+\pgf@sys@shading@range@num=\count389
+\pgf@shadingcount=\count390
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box74
-))
+)
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransparency.code.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epatterns.code.tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 erdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box75
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen325
-\pgf@nodesepend=\dimen326
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen319
+\pgf@nodesepend=\dimen320
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -1632,9 +1596,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box77
 \tcb@lowerbox=\box78
 \tcb@phantombox=\box79
-\c@tcbbreakpart=\count393
-\c@tcblayer=\count394
-\c@tcolorbox@number=\count395
+\c@tcbbreakpart=\count391
+\c@tcblayer=\count392
+\c@tcolorbox@number=\count393
 \tcb@temp=\box80
 \tcb@temp=\box81
 \tcb@temp=\box82
@@ -1642,15 +1606,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
 e.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
-\c@tcbrastercolumn=\count396
-\c@tcbrasterrow=\count397
-\c@tcbrasternum=\count398
-\c@tcbraster=\count399
+Library (tcolorbox): 'tcbraster.code.tex' version '6.0.3'
+\c@tcbrastercolumn=\count394
+\c@tcbrasterrow=\count395
+\c@tcbrasternum=\count396
+\c@tcbraster=\count397
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
 .tex
-Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbskins.code.tex' version '6.0.3'
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -1665,66 +1629,74 @@ ty
 .tex))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex)
-\pgffor@iter=\dimen327
-\pgffor@skip=\dimen328
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen321
+\pgffor@skip=\dimen322
 \pgffor@stack=\toks65
 \pgffor@toks=\toks66
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count400
-\pgfplotmarksize=\dimen329
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count398
+\pgfplotmarksize=\dimen323
 )
-\tikz@lastx=\dimen330
-\tikz@lasty=\dimen331
-\tikz@lastxsaved=\dimen332
-\tikz@lastysaved=\dimen333
-\tikz@lastmovetox=\dimen334
-\tikz@lastmovetoy=\dimen335
-\tikzleveldistance=\dimen336
-\tikzsiblingdistance=\dimen337
+\tikz@lastx=\dimen324
+\tikz@lasty=\dimen325
+\tikz@lastxsaved=\dimen326
+\tikz@lastysaved=\dimen327
+\tikz@lastmovetox=\dimen328
+\tikz@lastmovetoy=\dimen329
+\tikzleveldistance=\dimen330
+\tikzsiblingdistance=\dimen331
 \tikz@figbox=\box84
 \tikz@figbox@bg=\box85
 \tikz@tempbox=\box86
 \tikz@tempbox@bg=\box87
-\tikztreelevel=\count401
-\tikznumberofchildren=\count402
-\tikznumberofcurrentchild=\count403
-\tikz@fig@count=\count404
+\tikztreelevel=\count399
+\tikznumberofchildren=\count400
+\tikznumberofcurrentchild=\count401
+\tikz@fig@count=\count402
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count405
-\pgfmatrixcurrentcolumn=\count406
-\pgf@matrix@numberofcolumns=\count407
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count403
+\pgfmatrixcurrentcolumn=\count404
+\pgf@matrix@numberofcolumns=\count405
 )
-\tikz@expandcount=\count408
+\tikz@expandcount=\count406
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-\tcb@waterbox=\box88
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2022/07/20 v1.0.0 Image filling library for TikZ
 
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-commo
+n.sty
+Package: tikzfill-common 2022/07/20 v1.0.0 Auxiliary code for tikzfill
+)
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
+\l__tikzfill_img_box=\box88
+))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
 w.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.3'
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
 code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
-(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/oberdiek\pdfcol.sty
-Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.3'
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box89
@@ -1733,64 +1705,64 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
 .tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.0.3'
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
 ode.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.0.3'
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
 de.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen338
-\tcb@lowerfitdim=\dimen339
-\tcb@upperfitdim=\dimen340
-\tcb@cur@hbadness=\count409
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.0.3'
+\tcbfitdim=\dimen332
+\tcb@lowerfitdim=\dimen333
+\tcb@upperfitdim=\dimen334
+\tcb@cur@hbadness=\count407
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
 f8.code.tex
-Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.3'
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.c
 ode.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcblistings.code.tex' version '6.0.3'
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count410
+\lst@mode=\count408
 \lst@gtempboxa=\box92
 \lst@token=\toks67
-\lst@length=\count411
-\lst@currlwidth=\dimen341
-\lst@column=\count412
-\lst@pos=\count413
-\lst@lostspace=\dimen342
-\lst@width=\dimen343
-\lst@newlines=\count414
-\lst@lineno=\count415
-\lst@maxwidth=\dimen344
+\lst@length=\count409
+\lst@currlwidth=\dimen335
+\lst@column=\count410
+\lst@pos=\count411
+\lst@lostspace=\dimen336
+\lst@width=\dimen337
+\lst@newlines=\count412
+\lst@lineno=\count413
+\lst@maxwidth=\dimen338
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count416
-\lst@skipnumbers=\count417
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count414
+\lst@skipnumbers=\count415
 \lst@framebox=\box93
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsco
 re.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.0.3'
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing
 .code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.3'
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count418
+\c@tcblisting=\count416
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
 f8.sty
@@ -1798,30 +1770,30 @@ Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.c
 ode.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.0.3'
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.c
 ode.tex
-Library (tcolorbox): 'tcbmagazine.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.0.3'
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.c
 ode.tex
-Library (tcolorbox): 'tcbvignette.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.0.3'
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryfadings.code.tex
-File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.cod
 e.tex
-Library (tcolorbox): 'tcbposter.code.tex' version '5.1.1'
+Library (tcolorbox): 'tcbposter.code.tex' version '6.0.3'
 ))
-\c@ProbPart=\count419
-\c@countSeq=\count420
+\c@ProbPart=\count417
+\c@countSeq=\count418
 
 
 Package hyperref Warning: Option `pdftitle' has already been used,
@@ -1862,19 +1834,19 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count421
-\rotFPtop=\skip266
-\rotFPbot=\skip267
+\c@r@tfl@t=\count419
+\rotFPtop=\skip265
+\rotFPbot=\skip266
 \rot@float@box=\box94
 \rot@mess@toks=\toks68
 )
 (fitch.sty
-\nd*ctr=\count422
-\nd*dim=\skip268
-\nd*depthdim=\dimen345
-\nd*hsep=\dimen346
-\ndindent=\dimen347
-\nd*n=\count423
+\nd*ctr=\count420
+\nd*dim=\skip267
+\nd*depthdim=\dimen339
+\nd*hsep=\dimen340
+\ndindent=\dimen341
+\nd*n=\count421
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalfa.sty)
 
@@ -1886,28 +1858,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
 (Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line
  556.
 )
-\c@eargnum=\count424
-\c@OLDeargnum=\count425
+\c@eargnum=\count422
+\c@OLDeargnum=\count423
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
-Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count426
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count424
 \mult@box=\box95
-\multicol@leftmargin=\dimen348
-\c@unbalance=\count427
-\c@collectmore=\count428
-\doublecol@number=\count429
-\multicoltolerance=\count430
-\multicolpretolerance=\count431
-\full@width=\dimen349
-\page@free=\dimen350
-\premulticols=\dimen351
-\postmulticols=\dimen352
-\multicolsep=\skip269
-\multicolbaselineskip=\skip270
+\multicol@leftmargin=\dimen342
+\c@unbalance=\count425
+\c@collectmore=\count426
+\doublecol@number=\count427
+\multicoltolerance=\count428
+\multicolpretolerance=\count429
+\full@width=\dimen343
+\page@free=\dimen344
+\premulticols=\dimen345
+\postmulticols=\dimen346
+\multicolsep=\skip268
+\multicolbaselineskip=\skip269
 \partial@page=\box96
 \last@line=\box97
-\maxbalancingoverflow=\dimen353
+\maxbalancingoverflow=\dimen347
 \mult@rightbox=\box98
 \mult@grightbox=\box99
 \mult@firstbox=\box100
@@ -1948,72 +1920,72 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box135
 \@tempa=\box136
 \@tempa=\box137
-\c@minrows=\count432
-\c@columnbadness=\count433
-\c@finalcolumnbadness=\count434
-\last@try=\dimen354
-\multicolovershoot=\dimen355
-\multicolundershoot=\dimen356
+\c@minrows=\count430
+\c@columnbadness=\count431
+\c@finalcolumnbadness=\count432
+\last@try=\dimen348
+\multicolovershoot=\dimen349
+\multicolundershoot=\dimen350
 \mult@nat@firstbox=\box138
 \colbreak@box=\box139
-\mc@col@check@num=\count435
+\mc@col@check@num=\count433
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.code.tex
-File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen357
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen351
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen358
-\pgfarrowlength=\dimen359
-\pgfarrowwidth=\dimen360
-\pgfarrowlinewidth=\dimen361
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen352
+\pgfarrowlength=\dimen353
+\pgfarrowwidth=\dimen354
+\pgfarrowlinewidth=\dimen355
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.callouts.code.tex
@@ -2021,11 +1993,11 @@ z/libraries\tikzlibraryshapes.callouts.code.tex
 pgflibraryshapes.callouts.code.tex))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartlowerbox=\box140
 \pgfnodeparttwobox=\box141
 \pgfnodepartthreebox=\box142
@@ -2049,7 +2021,7 @@ File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.gates.logic.US.code.tex
-File: tikzlibraryshapes.gates.logic.US.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryshapes.gates.logic.US.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/
 circuits\pgflibraryshapes.gates.logic.US.code.tex
@@ -2057,7 +2029,7 @@ circuits\pgflibraryshapes.gates.logic.US.code.tex
 circuits\pgflibraryshapes.gates.logic.code.tex)))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (logiciansofhistory.sty
 Package: logiciansofhistory 
 )
@@ -2066,51 +2038,51 @@ ty
 Package: chronology 2015/03/27 v1.1.1 Horizontal timeline
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count436
-\calc@Bcount=\count437
-\calc@Adimen=\dimen362
-\calc@Bdimen=\dimen363
-\calc@Askip=\skip271
-\calc@Bskip=\skip272
+\calc@Acount=\count434
+\calc@Bcount=\count435
+\calc@Adimen=\dimen356
+\calc@Bdimen=\dimen357
+\calc@Askip=\skip270
+\calc@Bskip=\skip271
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count438
-\calc@Cskip=\skip273
+\calc@Ccount=\count436
+\calc@Cskip=\skip272
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-08-23 L3 programming layer (loader) 
+Package: expl3 2023-02-22 L3 programming layer (loader) 
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2022-08-23 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count439
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count437
 \l__pdf_internal_box=\box160
 ))
-Package: xparse 2022-06-22 L3 Experimental document command parser
+Package: xparse 2023-01-16 L3 Experimental document command parser
 )
-\c@step=\count440
-\c@stepstart=\count441
-\c@stepstop=\count442
-\c@yearstart=\count443
-\c@yearstop=\count444
-\c@deltayears=\count445
-\xstart=\skip274
-\xstop=\skip275
-\unit=\skip276
-\timelinewidth=\skip277
+\c@step=\count438
+\c@stepstart=\count439
+\c@stepstop=\count440
+\c@yearstart=\count441
+\c@yearstop=\count442
+\c@deltayears=\count443
+\xstart=\skip273
+\xstop=\skip274
+\unit=\skip275
+\timelinewidth=\skip276
 \timelinebox=\box161
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/07/20 3.78 The Babel package
-\babel@savecnt=\count446
-\U@D=\dimen364
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count444
+\U@D=\dimen358
 \l@unhyphenated=\language79
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read6
-\bbl@dirlevel=\count447
+\bbl@dirlevel=\count445
 
 *************************************
 * Local config file bblopts.cfg used
@@ -2140,12 +2112,12 @@ Package babel Info: Importing font and identification data for american
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count448
-\csq@gtype=\count449
-\csq@glevel=\count450
-\csq@qlevel=\count451
-\csq@maxlvl=\count452
-\csq@tshold=\count453
+\csq@reset=\count446
+\csq@gtype=\count447
+\csq@glevel=\count448
+\csq@qlevel=\count449
+\csq@maxlvl=\count450
+\csq@tshold=\count451
 \csq@ltx@everypar=\toks69
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
@@ -2158,76 +2130,76 @@ Package csquotes Info: ... configuration file loaded successfully.
 File: csquotes.cfg 
 )) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.st
 y
-Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count454
+\lrq@indent=\count452
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count455
-\c@listtotal=\count456
-\c@listcount=\count457
-\c@liststart=\count458
-\c@liststop=\count459
-\c@citecount=\count460
-\c@citetotal=\count461
-\c@multicitecount=\count462
-\c@multicitetotal=\count463
-\c@instcount=\count464
-\c@maxnames=\count465
-\c@minnames=\count466
-\c@maxitems=\count467
-\c@minitems=\count468
-\c@citecounter=\count469
-\c@maxcitecounter=\count470
-\c@savedcitecounter=\count471
-\c@uniquelist=\count472
-\c@uniquename=\count473
-\c@refsection=\count474
-\c@refsegment=\count475
-\c@maxextratitle=\count476
-\c@maxextratitleyear=\count477
-\c@maxextraname=\count478
-\c@maxextradate=\count479
-\c@maxextraalpha=\count480
-\c@abbrvpenalty=\count481
-\c@highnamepenalty=\count482
-\c@lownamepenalty=\count483
-\c@maxparens=\count484
-\c@parenlevel=\count485
-\blx@tempcnta=\count486
-\blx@tempcntb=\count487
-\blx@tempcntc=\count488
-\c@blx@maxsection=\count489
-\blx@maxsegment@0=\count490
-\blx@notetype=\count491
-\blx@parenlevel@text=\count492
-\blx@parenlevel@foot=\count493
-\blx@sectionciteorder@0=\count494
-\blx@sectionciteorderinternal@0=\count495
-\blx@entrysetcounter=\count496
-\blx@biblioinstance=\count497
-\labelnumberwidth=\skip278
-\labelalphawidth=\skip279
-\biblabelsep=\skip280
-\bibnamesep=\skip281
-\bibinitsep=\skip282
-\bibparsep=\skip283
-\bibhang=\skip284
+\c@tabx@nest=\count453
+\c@listtotal=\count454
+\c@listcount=\count455
+\c@liststart=\count456
+\c@liststop=\count457
+\c@citecount=\count458
+\c@citetotal=\count459
+\c@multicitecount=\count460
+\c@multicitetotal=\count461
+\c@instcount=\count462
+\c@maxnames=\count463
+\c@minnames=\count464
+\c@maxitems=\count465
+\c@minitems=\count466
+\c@citecounter=\count467
+\c@maxcitecounter=\count468
+\c@savedcitecounter=\count469
+\c@uniquelist=\count470
+\c@uniquename=\count471
+\c@refsection=\count472
+\c@refsegment=\count473
+\c@maxextratitle=\count474
+\c@maxextratitleyear=\count475
+\c@maxextraname=\count476
+\c@maxextradate=\count477
+\c@maxextraalpha=\count478
+\c@abbrvpenalty=\count479
+\c@highnamepenalty=\count480
+\c@lownamepenalty=\count481
+\c@maxparens=\count482
+\c@parenlevel=\count483
+\blx@tempcnta=\count484
+\blx@tempcntb=\count485
+\blx@tempcntc=\count486
+\c@blx@maxsection=\count487
+\blx@maxsegment@0=\count488
+\blx@notetype=\count489
+\blx@parenlevel@text=\count490
+\blx@parenlevel@foot=\count491
+\blx@sectionciteorder@0=\count492
+\blx@sectionciteorderinternal@0=\count493
+\blx@entrysetcounter=\count494
+\blx@biblioinstance=\count495
+\labelnumberwidth=\skip277
+\labelalphawidth=\skip278
+\biblabelsep=\skip279
+\bibnamesep=\skip280
+\bibinitsep=\skip281
+\bibparsep=\skip282
+\bibhang=\skip283
 \blx@bcfin=\read7
 \blx@bcfout=\write8
 \blx@langwohyphens=\language80
-\c@mincomprange=\count498
-\c@maxcomprange=\count499
-\c@mincompwidth=\count500
+\c@mincomprange=\count496
+\c@maxcomprange=\count497
+\c@mincompwidth=\count498
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
-File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'mla.dbx' found.
@@ -2237,111 +2209,111 @@ File: mla.dbx 2022/02/22 v2.1a biblatex citation style
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count501
-\c@savedafterword=\count502
-\c@annotator=\count503
-\c@savedannotator=\count504
-\c@author=\count505
-\c@savedauthor=\count506
-\c@bookauthor=\count507
-\c@savedbookauthor=\count508
-\c@commentator=\count509
-\c@savedcommentator=\count510
-\c@editor=\count511
-\c@savededitor=\count512
-\c@editora=\count513
-\c@savededitora=\count514
-\c@editorb=\count515
-\c@savededitorb=\count516
-\c@editorc=\count517
-\c@savededitorc=\count518
-\c@foreword=\count519
-\c@savedforeword=\count520
-\c@holder=\count521
-\c@savedholder=\count522
-\c@introduction=\count523
-\c@savedintroduction=\count524
-\c@namea=\count525
-\c@savednamea=\count526
-\c@nameb=\count527
-\c@savednameb=\count528
-\c@namec=\count529
-\c@savednamec=\count530
-\c@translator=\count531
-\c@savedtranslator=\count532
-\c@shortauthor=\count533
-\c@savedshortauthor=\count534
-\c@shorteditor=\count535
-\c@savedshorteditor=\count536
-\c@labelname=\count537
-\c@savedlabelname=\count538
-\c@institution=\count539
-\c@savedinstitution=\count540
-\c@lista=\count541
-\c@savedlista=\count542
-\c@listb=\count543
-\c@savedlistb=\count544
-\c@listc=\count545
-\c@savedlistc=\count546
-\c@listd=\count547
-\c@savedlistd=\count548
-\c@liste=\count549
-\c@savedliste=\count550
-\c@listf=\count551
-\c@savedlistf=\count552
-\c@location=\count553
-\c@savedlocation=\count554
-\c@organization=\count555
-\c@savedorganization=\count556
-\c@origlocation=\count557
-\c@savedoriglocation=\count558
-\c@origpublisher=\count559
-\c@savedorigpublisher=\count560
-\c@publisher=\count561
-\c@savedpublisher=\count562
-\c@language=\count563
-\c@savedlanguage=\count564
-\c@origlanguage=\count565
-\c@savedoriglanguage=\count566
-\c@pageref=\count567
-\c@savedpageref=\count568
-\shorthandwidth=\skip285
-\shortjournalwidth=\skip286
-\shortserieswidth=\skip287
-\shorttitlewidth=\skip288
-\shortauthorwidth=\skip289
-\shorteditorwidth=\skip290
-\locallabelnumberwidth=\skip291
-\locallabelalphawidth=\skip292
-\localshorthandwidth=\skip293
-\localshortjournalwidth=\skip294
-\localshortserieswidth=\skip295
-\localshorttitlewidth=\skip296
-\localshortauthorwidth=\skip297
-\localshorteditorwidth=\skip298
+\c@afterword=\count499
+\c@savedafterword=\count500
+\c@annotator=\count501
+\c@savedannotator=\count502
+\c@author=\count503
+\c@savedauthor=\count504
+\c@bookauthor=\count505
+\c@savedbookauthor=\count506
+\c@commentator=\count507
+\c@savedcommentator=\count508
+\c@editor=\count509
+\c@savededitor=\count510
+\c@editora=\count511
+\c@savededitora=\count512
+\c@editorb=\count513
+\c@savededitorb=\count514
+\c@editorc=\count515
+\c@savededitorc=\count516
+\c@foreword=\count517
+\c@savedforeword=\count518
+\c@holder=\count519
+\c@savedholder=\count520
+\c@introduction=\count521
+\c@savedintroduction=\count522
+\c@namea=\count523
+\c@savednamea=\count524
+\c@nameb=\count525
+\c@savednameb=\count526
+\c@namec=\count527
+\c@savednamec=\count528
+\c@translator=\count529
+\c@savedtranslator=\count530
+\c@shortauthor=\count531
+\c@savedshortauthor=\count532
+\c@shorteditor=\count533
+\c@savedshorteditor=\count534
+\c@labelname=\count535
+\c@savedlabelname=\count536
+\c@institution=\count537
+\c@savedinstitution=\count538
+\c@lista=\count539
+\c@savedlista=\count540
+\c@listb=\count541
+\c@savedlistb=\count542
+\c@listc=\count543
+\c@savedlistc=\count544
+\c@listd=\count545
+\c@savedlistd=\count546
+\c@liste=\count547
+\c@savedliste=\count548
+\c@listf=\count549
+\c@savedlistf=\count550
+\c@location=\count551
+\c@savedlocation=\count552
+\c@organization=\count553
+\c@savedorganization=\count554
+\c@origlocation=\count555
+\c@savedoriglocation=\count556
+\c@origpublisher=\count557
+\c@savedorigpublisher=\count558
+\c@publisher=\count559
+\c@savedpublisher=\count560
+\c@language=\count561
+\c@savedlanguage=\count562
+\c@origlanguage=\count563
+\c@savedoriglanguage=\count564
+\c@pageref=\count565
+\c@savedpageref=\count566
+\shorthandwidth=\skip284
+\shortjournalwidth=\skip285
+\shortserieswidth=\skip286
+\shorttitlewidth=\skip287
+\shortauthorwidth=\skip288
+\shorteditorwidth=\skip289
+\locallabelnumberwidth=\skip290
+\locallabelalphawidth=\skip291
+\localshorthandwidth=\skip292
+\localshortjournalwidth=\skip293
+\localshortserieswidth=\skip294
+\localshorttitlewidth=\skip295
+\localshortauthorwidth=\skip296
+\localshorteditorwidth=\skip297
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
-File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
-File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
-\c@textcitecount=\count569
-\c@textcitetotal=\count570
-\c@textcitemaxnames=\count571
-\c@biburlbigbreakpenalty=\count572
-\c@biburlbreakpenalty=\count573
-\c@biburlnumpenalty=\count574
-\c@biburlucpenalty=\count575
-\c@biburllcpenalty=\count576
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count567
+\c@textcitetotal=\count568
+\c@textcitemaxnames=\count569
+\c@biburlbigbreakpenalty=\count570
+\c@biburlbreakpenalty=\count571
+\c@biburlnumpenalty=\count572
+\c@biburlucpenalty=\count573
+\c@biburllcpenalty=\count574
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count577
+\c@smartand=\count575
 )
 Package biblatex Info: Trying to load bibliography style 'mla'...
 Package biblatex Info: ... file 'mla.bbx' found.
@@ -2358,13 +2330,13 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
-File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count578
-\c@bbx:relatedtotal=\count579
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count576
+\c@bbx:relatedtotal=\count577
 )
 Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
 , overwriting.
-\c@containing=\count580
+\c@containing=\count578
 ))
 Package biblatex Info: Trying to load citation style 'mla'...
 Package biblatex Info: ... file 'mla.cbx' found.
@@ -2396,60 +2368,75 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-08-23 L3 programming layer (loader) 
+(biblatex)             2023-02-22 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
 .sty
-Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
-
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
 \TP@textbox=\box162
 \TP@holdbox=\box163
-\TPHorizModule=\dimen365
-\TPVertModule=\dimen366
-\TP@margin=\dimen367
-\TP@absmargin=\dimen368
+\TPHorizModule=\dimen359
+\TPVertModule=\dimen360
+\TP@margin=\dimen361
+\TP@absmargin=\dimen362
 
 Grid set 16 x 16 = 22.58437pt x 36.135pt
-\TPboxrulesize=\dimen369
-\TP@ox=\dimen370
-\TP@oy=\dimen371
+\TPboxrulesize=\dimen363
+\TP@ox=\dimen364
+\TP@oy=\dimen365
 \TP@tbargs=\toks70
 TextBlockOrigin set to 0pt x 0pt
 ) (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen372
-\WF@size=\dimen373
-\c@WF@wrappedlines=\count581
+\wrapoverhang=\dimen366
+\WF@size=\dimen367
+\c@WF@wrappedlines=\count579
 \WF@box=\box164
 \WF@everypar=\toks71
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/pagecolor\pagecolor.sty
-Package: pagecolor 2017/05/29 v1.0i Provides thepagecolor (HMM)
+Package: pagecolor 2023-02-14 v1.2b Provides thepagecolor (HMM)
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/hardwrap\hardwrap.sty
+Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
 
-Package pagecolor Warning: \nopagecolor does not work with
-(pagecolor)                the used crop package. Using
-(pagecolor)                none
-(pagecolor)                as nopagecolor now
-(pagecolor)                 on input line 231.
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
+ty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+)
+\hw@charcount=\count580
+\hw@wordcount=\count581
+\hw@maxprintline=\count582
+)
+Package pagecolor Info: \nopagecolor did not work with the crop package
+(pagecolor)             2017/11/19 v1.10. Using 
+(pagecolor)             none 
+(pagecolor)             as nopagecolor now.
+This message occurred on input line 189.
 
 
-Package pagecolor Warning: Option nopagecolor=none requested 
-(pagecolor)                but this does not work with the crop package.
-(pagecolor)                By option nopagecolor the "colour" to be used with \
-nopagecolor
-(pagecolor)                is set. The current value is "none" (maybe by defaul
-t),
-(pagecolor)                but the crop package broke \nopagecolor.
-(pagecolor)                Therefore the colour cannot be "none".
-(pagecolor)                Please change the option accordingly!
-(pagecolor)                As first aid nopagecolor is now set to white
-(pagecolor)                 on input line 231.
+Package pagecolor Warning: Option nopagecolor=none requested but this does not
+(pagecolor)                work with the crop package. By option nopagecolor
+(pagecolor)                the "color" to be used with \nopagecolor is set.
+(pagecolor)                The current value is "none" (maybe by default), but
+(pagecolor)                the crop package broke \nopagecolor. Therefore the
+(pagecolor)                color cannot be "none". Please change the option
+(pagecolor)                accordingly! As first aid nopagecolor is now set to
+(pagecolor)                white.
 
 )
    defining Unicode char U+FE01 (decimal 65025)
@@ -2534,16 +2521,16 @@ LaTeX Font Info:    ... okay on input line 56.
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count582
-\scratchdimen=\dimen374
+\scratchcounter=\count583
+\scratchdimen=\dimen368
 \scratchbox=\box167
-\nofMPsegments=\count583
-\nofMParguments=\count584
+\nofMPsegments=\count584
+\nofMParguments=\count585
 \everyMPshowfont=\toks73
-\MPscratchCnt=\count585
-\MPscratchDim=\dimen375
-\MPnumerator=\count586
-\makeMPintoPDFobject=\count587
+\MPscratchCnt=\count586
+\MPscratchDim=\dimen369
+\MPnumerator=\count587
+\makeMPintoPDFobject=\count588
 \everyMPtoPDFconversion=\toks74
 )
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -2560,16 +2547,11 @@ Package hyperref Info: Link coloring ON on input line 56.
 LaTeX Info: Command `\dddot' is already robust on input line 56.
 LaTeX Info: Command `\ddddot' is already robust on input line 56.
  (forallxd.glsdefs)
-\c@mv@tabular=\count588
-\c@mv@boldtabular=\count589
+\c@mv@tabular=\count589
+\c@mv@boldtabular=\count590
 Package mathastext Info: current meaning of amsmath \resetMathstrut@ saved on i
 nput line 56.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: listings package is loaded.
-Package caption Info: rotating package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count590
+\c@lstlisting=\count591
 Package biblatex Info: Trying to load language 'american' -> 'american-mla'...
 Package biblatex Info: ... file 'american-mla.lbx' found.
 
@@ -2581,7 +2563,7 @@ Package biblatex Info: ... file 'american.lbx' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\american.l
 bx
-File: american.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+File: american.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english' -> 'english-mla'...
 Package biblatex Info: ... file 'english-mla.lbx' found.
 
@@ -2593,7 +2575,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
 x
-File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )))
 Package biblatex Info: Trying to load language 'english' -> 'english-mla'...
 Package biblatex Info: ... file 'english-mla.lbx' found.
@@ -2606,7 +2588,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
 x
-File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2724,7 +2706,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
 1.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 41.
@@ -2740,22 +2722,15 @@ LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 6.0pt on input line 41.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 41.
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 65.
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 68.
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 68.
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 68.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 9.0pt on input line 68.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.0pt on input line 68.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 5.0pt on input line 68.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 66.
+<marcom-PierceCollege-Logo.png, id=94, 240.4182pt x 68.4156pt>
+File: marcom-PierceCollege-Logo.png Graphic file (type png)
+<use marcom-PierceCollege-Logo.png>
+Package pdftex.def Info: marcom-PierceCollege-Logo.png  used on input line 80.
+(pdftex.def)             Requested size: 240.4176pt x 68.41542pt.
 )
-[2]
+[2] [3 <./marcom-PierceCollege-Logo.png>]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 48.0pt on input line 9.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
@@ -2764,27 +2739,21 @@ LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/it' will be
 (Font)              scaled to size 48.0pt on input line 9.
  (forallxd.toc
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 2.
+(Font)              scaled to size 10.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
- [3
+(Font)              scaled to size 12.0pt on input line 7.
+ [4
 
-] [4]) (forallx-d-preface.tex [5]
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 3.
- [6
+] [5])
+(forallx-d-preface.tex [6] [7
 
-]
-LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
- [7]) [8]
-(forallx-d-what.tex
+] [8]) [9] (forallx-d-what.tex
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 24.0pt on input line 2.
 
@@ -2802,26 +2771,47 @@ LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 8.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 13.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 13.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 13.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 13.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 13.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 9.0pt on input line 13.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.0pt on input line 13.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 5.0pt on input line 13.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
  [2
 
-] [3]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\T1/Baskervaldx-TOsF/m/n/10 Other Man:(John Cleese)
+ []
+
+[3] [4]
 \@gls@deffile=\write9
 \openout9 = `forallxd.glsdefs'.
 
- [4] [5]
+ [5] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-[7] [8] [9] [10
+[8] [9] [10] [11] [12] [13
 
-] [11] [12] [13] [14] [15] [16]
+] [14] [15] [16] [17] [18] [19] [20]
 Overfull \hbox (14.5466pt too wide) in paragraph at lines 306--312
 [][] 
  []
@@ -2841,7 +2831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--323
 
  []
 
-[17]
+[21]
 Overfull \hbox (14.5466pt too wide) in paragraph at lines 356--362
 [][] 
  []
@@ -2851,27 +2841,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 356--362
 
  []
 
-<assets/turing.jpg, id=408, 1204.5pt x 1204.5pt>
+[22]
+<assets/turing.jpg, id=443, 1204.5pt x 1204.5pt>
 File: assets/turing.jpg Graphic file (type jpg)
 <use assets/turing.jpg>
 Package pdftex.def Info: assets/turing.jpg  used on input line 369.
 (pdftex.def)             Requested size: 71.13188pt x 71.12737pt.
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 369.
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 369.
+
 
 Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 369.
 
+LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 369.
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 369--369
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 369--369
 [][][][][][][] 
  []
 
-[18] [19]
-Overfull \vbox (3.75603pt too high) has occurred while \output is active []
+[23]
+Overfull \vbox (80.35803pt too high) has occurred while \output is active []
 
 
-[20 <./assets/turing.jpg>]
+[24 <./assets/turing.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -2883,9 +2879,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.384 \problempart
-                   [21] [22] [23
+                   [25] [26] [27
 
-] [24]
+] [28] [29]
 LaTeX Font Info:    Trying to load font information for TS1+Baskervaldx-TOsF on
  input line 453.
 
@@ -2895,14 +2891,14 @@ File: TS1Baskervaldx-TOsF.fd 2014/03/31 (autoinst) Font definitions for TS1/Bas
 kervaldx-TOsF.
 )
 LaTeX Font Info:    Font shape `TS1/Baskervaldx-TOsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 453.
- [25]
+(Font)              scaled to size 10.0pt on input line 453.
+
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.462 \problempart
-                  
+                   [30]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -2915,17 +2911,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
                    \relax 
 l.484 \problempart
                    Which of the following pairs of sentences are necessarily...
-[26] [27]) (forallx-d-symbolizing.tex [28] [29
+[31] [32]) (forallx-d-symbolizing.tex [33] [34
 
 ]
-Overfull \hbox (14.1466pt too wide) in paragraph at lines 9--15
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]|\T1/Baskervaldx-TOsF/m/n/10 If Jenny is an anarcho-
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 24--32
-\T1/Baskervaldx-TOsF/m/n/9 ways valid? The an-swer is yes, with ab-so-lute cer-
-tainty. Logic
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+\T1/Baskervaldx-TOsF/m/n/10 syndicalist, then Di-pan is
+ []
+
+
+Overfull \hbox (14.1466pt too wide) in paragraph at lines 9--15
+[][] 
  []
 
 
@@ -2933,14 +2933,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--32
 []
  []
 
-[30
+[35
 
-]
+] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 51--63
 []
  []
 
-[31] [32]
+[37] [38]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -2951,9 +2951,14 @@ Overfull \hbox (24.92166pt too wide) in paragraph at lines 87--93
 [][] 
  []
 
-[33]
+
 Overfull \hbox (24.92166pt too wide) in paragraph at lines 96--102
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[]|\T1/Baskervaldx-TOsF/m/n/10 Therefore, Both Kir-ito and
  []
 
 
@@ -2961,19 +2966,9 @@ Overfull \hbox (24.92166pt too wide) in paragraph at lines 105--111
 [][] 
  []
 
-
+[39]
 Overfull \hbox (24.92166pt too wide) in paragraph at lines 114--121
 [][] 
- []
-
-
-Underfull \hbox (badness 7362) in paragraph at lines 126--126
-[]|\T1/Baskervaldx-TOsF/m/n/9 There are dis-agree-ments about
- []
-
-
-Underfull \hbox (badness 7362) in paragraph at lines 126--127
-[]|\T1/Baskervaldx-TOsF/m/n/9 There are dis-agree-ments about
  []
 
 
@@ -2981,7 +2976,7 @@ Overfull \hbox (24.92166pt too wide) in paragraph at lines 124--130
 [][] 
  []
 
-[34]
+
 Overfull \hbox (24.92166pt too wide) in paragraph at lines 133--139
 [][] 
  []
@@ -2992,8 +2987,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.141 \problempart
-                  
-<assets/Chrysippus.jpg, id=606, 451.6875pt x 602.25pt>
+                   [40]
+<assets/Chrysippus.jpg, id=643, 451.6875pt x 602.25pt>
 File: assets/Chrysippus.jpg Graphic file (type jpg)
 <use assets/Chrysippus.jpg>
 Package pdftex.def Info: assets/Chrysippus.jpg  used on input line 159.
@@ -3004,23 +2999,23 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 159.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 159--159
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 159--159
 [][][][][][][] 
  []
 
-[35]
-Overfull \vbox (37.61656pt too high) has occurred while \output is active []
+[41]
+Overfull \vbox (114.88106pt too high) has occurred while \output is active []
 
 
-[36 <./assets/Chrysippus.jpg>]
-Overfull \hbox (34.55347pt too wide) in paragraph at lines 164--172
+[42 <./assets/Chrysippus.jpg>]
+Overfull \hbox (66.25955pt too wide) in paragraph at lines 164--172
  [] 
  []
 
-[37
+[43
 
-] [38] [39] [40] [41] [42] [43] [44] [45]
-<assets/russell.jpg, id=808, 185.69376pt x 274.02374pt>
+] [44] [45] [46] [47] [48] [49] [50] [51] [52]
+<assets/russell.jpg, id=846, 185.69376pt x 274.02374pt>
 File: assets/russell.jpg Graphic file (type jpg)
 <use assets/russell.jpg>
 Package pdftex.def Info: assets/russell.jpg  used on input line 374.
@@ -3031,49 +3026,58 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 374.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 374--374
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 374--374
 [][][][][][][] 
  []
 
 
+Underfull \hbox (badness 4316) in paragraph at lines 374--374
+[]\T1/Baskervaldx-TOsF/m/n/10 Russell was born in Trel-lech, Mon-
+ []
+
+[53]
+Overfull \vbox (20.35803pt too high) has occurred while \output is active []
+
+
+[54 <./assets/russell.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.377 \problempart
-                   [46 <./assets/russell.jpg>]
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.405 \problempart
-                   [47] [48
+                   [55] [56
 
-] [49] [50]
+] [57] [58] [59]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.492 \problempart
-                   [51]
+                   [60]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.520 \problempart
-                   [52]
+                   [61]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.536 \problempart
-                  ) (forallx-d-truthtables.tex [53] [54
+                  ) (forallx-d-truthtables.tex [62] [63
 
-] [55
+] [64
 
-] [56] [57]
-[58] [59]
-<assets/boole.jpg, id=943, 115.43124pt x 150.5625pt>
+] [65] [66]
+[67] [68] [69]
+<assets/boole.jpg, id=995, 115.43124pt x 150.5625pt>
 File: assets/boole.jpg Graphic file (type jpg)
 <use assets/boole.jpg>
 Package pdftex.def Info: assets/boole.jpg  used on input line 144.
@@ -3084,58 +3088,58 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 144.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 144--144
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 144--144
 [][][][][][][] 
  []
 
-[60] [61 <./assets/boole.jpg>] [62
+[70] [71 <./assets/boole.jpg>] [72
 
-] [63] [64] [65]
+] [73] [74] [75]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.280 \problempart
-                  
+                   [76]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.293 \problempart
-                   [66]
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.317 \problempart
-                   [67] [68
+                   [77] [78] [79
 
-] [69] [70]
+] [80] [81]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 428.
- [71] [72] [73
+(Font)              scaled to size 6.0pt on input line 428.
+ [82] [83] [84
 
-] [74] [75]
+] [85] [86] [87]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.586 \noindent\problempart
-                            [76]
+                           
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.596 \noindent\problempart
-                            [77] [78
+                            [88] [89
 
-] [79] [80]
+] [90] [91] [92]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.768 \problempart
-                   [81]
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3148,7 +3152,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
                    \relax 
 l.791 \problempart
                    Determine whether each sentence is a tautology, a contrad...
-
+[93]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3160,7 +3164,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.E}
 <to be read again> 
                    \relax 
 l.812 \problempart
-                   [82]
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.F}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3172,26 +3176,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.G}
 <to be read again> 
                    \relax 
 l.834 \noindent\problempart
-                           
+                            [94]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.H}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.845 \problempart
-                  ) (forallx-d-nd1.tex [83] [84] [85
+                  ) (forallx-d-nd1.tex [95] [96
 
-] [86
+] [97
 
-] [87]
+] [98]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.30 \problempart
-                  [88] [89
+                  [99] [100] [101
 
-] [90] [91] [92] [93] [94] [95] [96] [97]
-<assets/tissa.jpg, id=1239, 1212.9315pt x 727.1165pt>
+] [102] [103] [104] [105] [106] [107] [108]
+[109] [110]
+<assets/tissa.jpg, id=1302, 1212.9315pt x 727.1165pt>
 File: assets/tissa.jpg Graphic file (type jpg)
 <use assets/tissa.jpg>
 Package pdftex.def Info: assets/tissa.jpg  used on input line 256.
@@ -3202,37 +3207,42 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 256.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 256--256
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 256--256
 [][][][][][][] 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 256--256
 [][]\T1/Baskervaldx-TOsF/b/n/10.95 Moggaliputta Tissa[] \T1/Baskervaldx-TOsF/m/
-n/9 Mog-galiputta
+n/10 Mog-galiputta
  []
 
-[98] [99 <./assets/tissa.jpg>] [100] [101] [102] [103] [104] [105]
+[111]
+Overfull \vbox (39.88106pt too high) has occurred while \output is active []
+
+
+[112 <./assets/tissa.jpg>] [113] [114] [115] [116] [117] [118] [119]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.428 \problempart
-                   [106] [107] [108] [109
+                   [120] [121] [122] [123
 
-] [110] [111] [112] [113] [114]
+] [124] [125] [126] [127] [128]
+[129]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.649 \problempart
-                   [115]) (forallx-d-nd2.tex [116] [117
+                   [130]) (forallx-d-nd2.tex [131] [132
 
-] [118
+] [133
 
-] [119] [120]
-[121] [122] [123]
-<assets/demorgan.jpg, id=1397, 961.5925pt x 1186.4325pt>
+] [134] [135]
+[136] [137] [138] [139]
+<assets/demorgan.jpg, id=1472, 961.5925pt x 1186.4325pt>
 File: assets/demorgan.jpg Graphic file (type jpg)
 <use assets/demorgan.jpg>
 Package pdftex.def Info: assets/demorgan.jpg  used on input line 144.
@@ -3243,34 +3253,43 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 144.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 144--144
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 144--144
 [][][][][][][] 
  []
 
-[124] [125 <./assets/demorgan.jpg>] [126]
+
+Underfull \hbox (badness 4266) in paragraph at lines 144--144
+\T1/Baskervaldx-TOsF/m/n/10 in Madura, In-dia, where his fa-ther
+ []
+
+[140]
+Overfull \vbox (18.99669pt too high) has occurred while \output is active []
+
+
+[141 <./assets/demorgan.jpg>] [142]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.171 \problempart
-                   [127] [128
+                   [143] [144
 
-] [129] [130] [131] [132]
+] [145] [146] [147] [148] [149]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.334 \problempart
-                   [133] [134] [135
+                   [150] [151] [152
 
-] [136] [137] [138] [139] [140] [141]
-[142]) (forallx-d-qlsymbolizing.tex [143] [144
+] [153] [154] [155] [156] [157] [158]
+[159] [160]) (forallx-d-qlsymbolizing.tex [161] [162
 
-] [145
+] [163
 
-] [146] [147] [148]
-[149] [150] [151] [152] [153] [154]
-<assets/aristotle.jpg, id=1640, 194.7275pt x 260.975pt>
+] [164] [165]
+[166] [167] [168] [169] [170] [171] [172] [173] [174]
+<assets/aristotle.jpg, id=1733, 194.7275pt x 260.975pt>
 File: assets/aristotle.jpg Graphic file (type jpg)
 <use assets/aristotle.jpg>
 Package pdftex.def Info: assets/aristotle.jpg  used on input line 238.
@@ -3281,18 +3300,18 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 238.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 238--238
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 238--238
 [][][][][][][] 
  []
 
-[155]
-Overfull \vbox (47.75603pt too high) has occurred while \output is active []
+[175]
+Overfull \vbox (139.98303pt too high) has occurred while \output is active []
 
 
-[156 <./assets/aristotle.jpg>] [157] [158
+[176 <./assets/aristotle.jpg>] [177] [178] [179
 
-] [159]
-<assets/ghazali.jpeg, id=1683, 667.49374pt x 439.6425pt>
+] [180] [181]
+<assets/ghazali.jpeg, id=1782, 667.49374pt x 439.6425pt>
 File: assets/ghazali.jpeg Graphic file (type jpg)
 <use assets/ghazali.jpeg>
 Package pdftex.def Info: assets/ghazali.jpeg  used on input line 320.
@@ -3303,17 +3322,21 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 320.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 320--320
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
-[160]
+[182]
+Overfull \vbox (53.88106pt too high) has occurred while \output is active []
+
+
+[183 <./assets/ghazali.jpeg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.323 \problempart
-                   [161 <./assets/ghazali.jpeg>]
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3325,16 +3348,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 <to be read again> 
                    \relax 
 l.362 \problempart
-                  \label{pr.FOLalligators} [162]
+                  \label{pr.FOLalligators} [184]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.392 \problempart
-                   [163] [164] [165] [166] [167] [168
+                   [185] [186] [187] [188] [189] [190] [191
 
-] [169]
-<assets/sina.jpeg, id=1813, 247.92625pt x 327.2225pt>
+] [192]
+<assets/sina.jpeg, id=1915, 247.92625pt x 327.2225pt>
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 579.
@@ -3345,26 +3368,47 @@ Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 579.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 579--579
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 579--579
 [][][][][][][] 
  []
 
-[170]
+[193] [194]
+Overfull \vbox (67.35803pt too high) has occurred while \output is active []
+
+
+[195 <./assets/sina.jpeg>]
 
 Package glossaries Warning: Entry `main logical operator' has already been defi
 ned in the document environment (ignoring new definition) on input line 630.
 
-) (forallx-d-qlvalidity.tex [171 <./assets/sina.jpeg>] [172
+) (forallx-d-qlvalidity.tex [196
 
-] [173
+] [197
 
-] [174]
-[175] [176] [177] [178] [179] [180]
+] [198] [199] [200] [201]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+[]$\LMS/ntxsy/m/n/10 h$\T1/Baskervaldx-TOsF/m/n/10 Viola,Orsine$\LMS/ntxsy/m/n/
+10 i$\T1/Baskervaldx-TOsF/m/n/10 , $\LMS/ntxsy/m/n/10 h$\T1/Baskervaldx-TOsF/m/
+n/10 Orsine,Olivia$\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy
+/m/n/10 h$\T1/Baskervaldx-TOsF/m/n/10 Olivia,Viola$\LMS/ntxsy/m/n/10 i$\T1/Bask
+ervaldx-TOsF/m/n/10 ,
+ []
+
+[202] [203] [204]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]$\LMS/ntxsy/m/n/10 h$\T1/Baskervaldx-TOsF/m/n/10 Viola,Orsine$\LMS/ntxsy/m/n/
+10 i$\T1/Baskervaldx-TOsF/m/n/10 , $\LMS/ntxsy/m/n/10 h$\T1/Baskervaldx-TOsF/m/
+n/10 Orsine,Olivia$\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy
+/m/n/10 h$\T1/Baskervaldx-TOsF/m/n/10 Olivia,Viola$\LMS/ntxsy/m/n/10 i$\T1/Bask
+ervaldx-TOsF/m/n/10 ,
+ []
+
+[205] [206]
 File: assets/sina.jpeg Graphic file (type jpg)
 <use assets/sina.jpeg>
 Package pdftex.def Info: assets/sina.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 42.67912pt x 56.3261pt.
- [181] [182] [183
+ [207] [208
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 270--270
@@ -3376,8 +3420,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--277
 
  []
 
-[184] [185] [186]
-<assets/ockham.jpg, id=1907, 73.09595pt x 132.15086pt>
+[209] [210] [211] [212]
+<assets/ockham.jpg, id=2020, 73.09595pt x 132.15086pt>
 File: assets/ockham.jpg Graphic file (type jpg)
 <use assets/ockham.jpg>
 Package pdftex.def Info: assets/ockham.jpg  used on input line 345.
@@ -3388,15 +3432,15 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 345.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 345--345
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 345--345
 [][][][][][][] 
  []
 
-[187]
-Overfull \vbox (48.09354pt too high) has occurred while \output is active []
+[213]
+Overfull \vbox (151.35803pt too high) has occurred while \output is active []
 
 
-[188 <./assets/ockham.jpg>]
+[214 <./assets/ockham.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3408,9 +3452,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.371 \problempart
-                   [189] [190] [191
+                   [215] [216] [217
 
-] [192] [193] [194] [195]
+] [218] [219] [220] [221] [222]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3422,7 +3466,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.584 \problempart
-                   [196]
+                   [223]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3434,13 +3478,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 <to be read again> 
                    \relax 
 l.617 \problempart
-                   [197] [198] [199]) (forallx-d-qlnd1.tex [200] [201
-
-] [202
+                   [224] [225] [226] [227]) (forallx-d-qlnd1.tex [228] [229
 
 ]
-[203] [204] [205] [206] [207] [208] [209] [210]
-<assets/godel.jpg, id=2093, 86.3225pt x 130.4875pt>
+[230
+
+] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240]
+<assets/godel.jpg, id=2222, 86.3225pt x 130.4875pt>
 File: assets/godel.jpg Graphic file (type jpg)
 <use assets/godel.jpg>
 Package pdftex.def Info: assets/godel.jpg  used on input line 285.
@@ -3451,15 +3495,15 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 285.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 285--285
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 285--285
 [][][][][][][] 
  []
 
-[211]
-Overfull \vbox (48.09354pt too high) has occurred while \output is active []
+[241]
+Overfull \vbox (140.35803pt too high) has occurred while \output is active []
 
 
-[212 <./assets/godel.jpg>]
+[242 <./assets/godel.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3471,13 +3515,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 <to be read again> 
                    \relax 
 l.308 \problempart
-                   [213]
+                   [243]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.356 \problempart
-                   [214]
+                   [244]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.D}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3495,7 +3539,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.F}
 <to be read again> 
                    \relax 
 l.394 \problempart
-                  
+                   [245]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.G}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3507,22 +3551,35 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.H}
 <to be read again> 
                    \relax 
 l.413 \problempart
-                   [215] [216] [217
+                   [246] [247
 
-] [218] [219] [220]) (forallx-d-qlnd2.tex
-[221] [222
+] [248] [249] [250] [251]) (forallx-d-qlnd2.tex
+[252] [253
 
-] [223
+] [254
 
-] [224] [225] [226] [227]
+] [255] [256] [257]
+Overfull \hbox (16.91164pt too wide) in paragraph at lines 134--135
+ \LMS/ntxsy/m/n/10 9 $\T1/Baskervaldx-TOsF/m/n/10 x$\LMS/ntxsy/m/n/10 9 $\T1/Ba
+skervaldx-TOsF/m/n/10 y((Ax$\LMS/ntxsy/m/n/10 ^$\T1/Baskervaldx-TOsF/m/n/10 Ay)
+$\LMS/ntxsy/m/n/10 ^$$:$\T1/Baskervaldx-TOsF/m/n/10 (x=y)$\LMS/ntxsy/m/n/10 ^$$
+8 $\T1/Baskervaldx-TOsF/m/n/10 x$\LMS/ntxsy/m/n/10 8 $\T1/Baskervaldx-TOsF/m/n/
+10 y$\LMS/ntxsy/m/n/10 8 $\T1/Baskervaldx-TOsF/m/n/10 z[((Ax$\LMS/ntxsy/m/n/10 
+^$\T1/Baskervaldx-TOsF/m/n/10 Ay)$\LMS/ntxsy/m/n/10 ^$\T1/Baskervaldx-TOsF/m/n/
+10 Az)$\LMS/ntxsy/m/n/10 !$\T1/Baskervaldx-TOsF/m/n/10 (((x=y)$\LMS/ntxsy/m/n/1
+0 _$\T1/Baskervaldx-TOsF/m/n/10 (x=y))$\LMS/ntxsy/m/n/10 _$\T1/Baskervaldx-TOsF
+/m/n/10 (y=z))] 
+ []
+
+[258] [259]
 
 LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
 
 
 LaTeX Warning: Command \textbullet invalid in math mode on input line 169.
 
-[228] [229]
-<assets/leibniz.jpg, id=2269, 487.8225pt x 602.25pt>
+[260] [261]
+<assets/leibniz.jpg, id=2406, 487.8225pt x 602.25pt>
 File: assets/leibniz.jpg Graphic file (type jpg)
 <use assets/leibniz.jpg>
 Package pdftex.def Info: assets/leibniz.jpg  used on input line 224.
@@ -3533,26 +3590,26 @@ Package biblatex Warning: No driver for 'footcite:artwork'.
 (biblatex)                Using fallback driver on input line 224.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 224--224
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 224--224
 [][][][][][][] 
  []
 
-[230]
+[262]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.226 \problempart
-                   [231 <./assets/leibniz.jpg>]
+                   [263 <./assets/leibniz.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.260 \problempart
-                   [232] [233
+                   [264] [265
 
-] [234] [235] [236] [237] [238]
-<assets/barcan.jpg, id=2335, 477.785pt x 601.24625pt>
+] [266] [267] [268] [269] [270] [271]
+<assets/barcan.jpg, id=2474, 477.785pt x 601.24625pt>
 File: assets/barcan.jpg Graphic file (type jpg)
 <use assets/barcan.jpg>
 Package pdftex.def Info: assets/barcan.jpg  used on input line 429.
@@ -3563,7 +3620,7 @@ Package biblatex Warning: No driver for 'footcite:image'.
 (biblatex)                Using fallback driver on input line 429.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 429--429
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 429--429
 [][][][][][][] 
  []
 
@@ -3571,13 +3628,13 @@ Overfull \hbox (3.965pt too wide) in paragraph at lines 429--429
 Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 429.
 
-[239]
+[272]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.432 \problempart
-                   [240 <./assets/barcan.jpg>]
+                   [273 <./assets/barcan.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3589,42 +3646,57 @@ pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 <to be read again> 
                    \relax 
 l.457 \problempart
-                  ) (forallx-d-ml.tex [241] [242
+                  ) (forallx-d-ml.tex [274] [275
 
-] [243
+] [276
 
-] [244] [245] [246]
+] [277] [278] [279]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.78 \problempart
-                 
+                  [280]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.105 \problempart
-                   [247]
+                   [281]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.C}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.121 \problempart
-                   [248] [249]
+                   [282] [283]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[250
+[284
 
-] [251] [252] [253] [254] [255] [256]
+] [285] [286] [287] [288] [289]
+Overfull \hbox (30.49945pt too wide) in paragraph at lines 362--363
+[]$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$
+\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10
+ , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][
+]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/
+10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 
+i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/
+10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[
+][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/
+n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/1
+0 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/
+n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 , 
+ []
+
+[290] [291]
 Underfull \hbox (badness 10000) in paragraph at lines 394--394
 
  []
 
-[257]
-<assets/kripke.jpg, id=2525, 200.75pt x 200.75pt>
+[292]
+<assets/kripke.jpg, id=2672, 200.75pt x 200.75pt>
 File: assets/kripke.jpg Graphic file (type jpg)
 <use assets/kripke.jpg>
 Package pdftex.def Info: assets/kripke.jpg  used on input line 414.
@@ -3635,110 +3707,140 @@ Package biblatex Warning: No driver for 'footcite:online'.
 (biblatex)                Using fallback driver on input line 414.
 
 
-Overfull \hbox (3.965pt too wide) in paragraph at lines 414--414
+Overfull \hbox (4.45999pt too wide) in paragraph at lines 414--414
 [][][][][][][] 
  []
 
-[258] [259 <./assets/kripke.jpg>] [260] [261] [262] [263] [264]
+[293] [294 <./assets/kripke.jpg>] [295] [296] [297] [298] [299] [300]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.A}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.581 \problempart
-                  
+                   [301]
 pdfTeX warning (ext4): destination with the same identifier (name{ProbPart.0.B}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.587 \problempart
-                   [265] [266] [267] [268] [269] [270] [271] [272] [273
+                   [302] [303] [304] [305] [306] [307] [308] [309] [310
 
 ]
-[274] [275] [276] [277] [278] [279] [280] [281] [282]) [283] [284
+[311] [312] [313] [314] [315] [316] [317] [318] [319] [320] [321]) [322]
+[323
 
-]
-(logicgates.tex [285
+] (logicgates.tex [324
 
-] [286]
+] [325]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 71.
 
 (C:\Users\davis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-[287] [288] [289]
-Overfull \hbox (4.62782pt too wide) in paragraph at lines 606--607
+[326] [327] [328] [329]
+Overfull \hbox (5.73943pt too wide) in paragraph at lines 606--607
 [][] 
  []
 
-[290] [291]) (soundnesscompletenesspl.tex [292] [293
+[330] [331]) (soundnesscompletenesspl.tex [332] [333
 
-] [294]
-Overfull \hbox (21.40976pt too wide) in paragraph at lines 57--65
+] [334]
+Overfull \hbox (16.0898pt too wide) in paragraph at lines 48--56
 [][] 
  []
 
-[295]
-Overfull \hbox (28.33568pt too wide) in paragraph at lines 82--91
+[335]
+Overfull \hbox (39.09981pt too wide) in paragraph at lines 57--65
 [][] 
  []
 
-[296] [297] [298]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-[]\T1/Baskervaldx-TOsF/m/n/9 Second, con-sider the case where $\LMS/ntxsy/m/n/9
- 8 $\T1/Baskervaldx-TOsF/m/n/9 x$\LMS/ntxsy/m/n/9 :$$\U/BOONDOX-calo/m/n/9 A$\T
-1/Baskervaldx-TOsF/m/n/9 ...x...x...is false and
+
+Overfull \hbox (48.03973pt too wide) in paragraph at lines 82--91
+[][] 
  []
 
-[299] [300] [301] [302]
+[336]
+Overfull \hbox (14.79973pt too wide) in paragraph at lines 132--141
+[][] 
+ []
+
+[337] [338] [339]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[]\T1/Baskervaldx-TOsF/m/n/10 These first two cases give us that $\LMS/ntxsy/m/
+n/10 8 $\T1/Baskervaldx-TOsF/m/n/10 x$\LMS/ntxsy/m/n/10 :$$\U/BOONDOX-calo/m/n/
+10 A$\T1/Baskervaldx-TOsF/m/n/10 ...x...x...and
+ []
+
+[340] [341] [342] [343] [344]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 10.95pt on input line 238.
- [303] [304] [305] [306] [307] [308] [309]
-Overfull \hbox (13.30447pt too wide) in paragraph at lines 432--433
-[]$\LMS/ntxsy/m/n/9 h\U/BOONDOX-calo/m/n/9 a\T1/Baskervaldx-TLF/m/n/9 , \U/BOON
-DOX-calo/m/n/9 a\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
-9 h[][]\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/
-m/n/9 ,$\LMS/ntxsy/m/n/9 h[][]\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 
-i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/9 h\U/BOONDOX-calo/m/n/9 a\T1/Bas
-kervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/n
-txsy/m/n/9 h\U/BOONDOX-calo/m/n/9 a\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m
-/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/9 h[][]\T1/Baskervaldx-TLF/m
-/n/9 , \U/BOONDOX-calo/m/n/9 a\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\
-LMS/ntxsy/m/n/9 h[][]\T1/Baskervaldx-TLF/m/n/9 , \U/BOONDOX-calo/m/n/9 a\LMS/nt
-xsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/9 h[][]\T1/Baskervaldx-
-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$\T1/Baskervaldx-TOsF/m/n/9 ,$\LMS/ntxsy/m/n/
-9 h[][]\T1/Baskervaldx-TLF/m/n/9 , [][]\LMS/ntxsy/m/n/9 i$ 
+ [345] [346] [347] [348] [349] [350] [351]
+[352]
+Overfull \hbox (45.738pt too wide) in paragraph at lines 432--433
+[]$\LMS/ntxsy/m/n/10 h\U/BOONDOX-calo/m/n/10 a\T1/Baskervaldx-TLF/m/n/10 , \U/B
+OONDOX-calo/m/n/10 a\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxs
+y/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskerva
+ldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/
+ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h\U/BOONDOX-calo
+/m/n/10 a\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-T
+OsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h\U/BOONDOX-calo/m/n/10 a\T1/Baskervaldx-TLF/m/n
+/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h
+[][]\T1/Baskervaldx-TLF/m/n/10 , \U/BOONDOX-calo/m/n/10 a\LMS/ntxsy/m/n/10 i$\T
+1/Baskervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 ,
+ \U/BOONDOX-calo/m/n/10 a\LMS/ntxsy/m/n/10 i$\T1/Baskervaldx-TOsF/m/n/10 ,$\LMS
+/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]\LMS/ntxsy/m/n/10 i$\T1/Bas
+kervaldx-TOsF/m/n/10 ,$\LMS/ntxsy/m/n/10 h[][]\T1/Baskervaldx-TLF/m/n/10 , [][]
+\LMS/ntxsy/m/n/10 i$ 
  []
 
-[310]) [311] (forallxd.gls [312
+[353]) [354] (forallxd.gls [355
 
 
-] [313] [314] [315] [316] [317]) [318]
+] [356] [357] [358] [359] [360] [361]) [362]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 38.
- [319
 
-]
-(forallx-d-quickreference.tex [320]
+[363
+
+] (forallx-d-quickreference.tex [364]
 LaTeX Font Info:    Font shape `T1/Baskervaldx-TOsF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 32.
+(Font)              scaled to size 10.0pt on input line 32.
 
 Underfull \hbox (badness 10000) in alignment at lines 31--61
 [][] 
  []
 
-[321
+[365
 
 ]
 Underfull \hbox (badness 10000) in alignment at lines 69--79
 [][] 
  []
 
-[322]
+[366]
 Underfull \hbox (badness 10000) in alignment at lines 85--94
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--95
+\T1/Baskervaldx-TOsF/m/n/10 One way to say `there are at most $[]$ $[]$s' is to
+ put a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--95
+\T1/Baskervaldx-TOsF/m/n/10 nega-tion sign in front of the sym-bol-iza-tion for
+ `there
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--95
+\T1/Baskervaldx-TOsF/m/n/10 are at least $[] \T1/Baskervaldx-TLF/m/n/10 + 1$ $[
+]$\T1/Baskervaldx-TOsF/m/n/10 s'. Equiv-a-lently, we can of-fer:
  []
 
 
@@ -3746,13 +3848,7 @@ Underfull \hbox (badness 10000) in alignment at lines 100--115
 [][] 
  []
 
-
-Underfull \hbox (badness 6188) in paragraph at lines 99--116
-\T1/Baskervaldx-TOsF/m/n/9 sym-bol-iza-tions above and say `there are at least 
-$[]$ $[]$s and there
- []
-
-[323] [324] [325] [326]
+[367] [368] [369] [370] [371]
 Overfull \hbox (8.01039pt too wide) in paragraph at lines 259--263
 $[]$ 
  []
@@ -3774,12 +3870,12 @@ $[]$
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 290--291
-$\U/BOONDOX-calo/m/n/9 c$ \T1/Baskervaldx-TOsF/m/n/9 must not oc-cur in any
+$\U/BOONDOX-calo/m/n/10 c$ \T1/Baskervaldx-TOsF/m/n/10 must not oc-cur in any
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 290--291
-\T1/Baskervaldx-TOsF/m/n/9 undis-charged as-sump-tion, in
+\T1/Baskervaldx-TOsF/m/n/10 undis-charged as-sump-tion, in
  []
 
 
@@ -3792,7 +3888,7 @@ Overfull \hbox (5.70963pt too wide) in paragraph at lines 305--310
 $[]$ 
  []
 
-[327] [328]) [329] (forallx-d-backmatter.tex)) [330
+[372] [373]) [374] (forallx-d-backmatter.tex)) [375
 
 
 ]
@@ -3800,51 +3896,48 @@ $[]$
 \openout10 = `forallxd.toc'.
 
  (forallxd.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'forallxd.run.xml'.
 \openout1 = `forallxd.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63106 strings out of 477843
- 1219903 string characters out of 2823599
- 2095855 words of memory out of 3000000
- 79468 multiletter control sequences out of 15000+600000
- 700397 words of font info for 329 fonts, out of 8000000 for 9000
+ 62118 strings out of 476334
+ 1200266 string characters out of 5787971
+ 2127974 words of memory out of 5000000
+ 79963 multiletter control sequences out of 15000+600000
+ 746097 words of font info for 328 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,23n,131p,2359b,4514s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 109i,23n,113p,2371b,4520s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv
 _puztjr.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/baske
-rvaldx/zbv_2xv27p.enc} <C:\Users\davis\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ectt0900.pk>{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts
-/enc/dvips/base/8r.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/
-dvips/baskervaldx/zbv_y77okd.enc} <C:\Users\davis\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ectt1000.pk>{C:/Users/davis/AppData/Local/Programs/M
-iKTeX/fonts/enc/dvips/baskervaldx/zbv_clcsgf.enc}{C:/Users/davis/AppData/Local/
-Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_2zeho7.enc}{C:/Users/davis/AppD
-ata/Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_uguye6.enc}<C:/Users/
-davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-
-Bol.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/basker
-valdx/Baskervaldx-BolIta.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/font
-s/type1/public/baskervaldx/Baskervaldx-Ita.pfb><C:/Users/davis/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Reg.pfb><C:/Users/davi
-s/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/
-davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexas.pfb><C:/Use
-rs/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/U
-sers/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><
-C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyb.p
+rvaldx/zbv_2xv27p.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/d
+vips/base/8r.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+baskervaldx/zbv_y77okd.enc}{C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/
+enc/dvips/cm-super/cm-super-t1.enc}{C:/Users/davis/AppData/Local/Programs/MiKTe
+X/fonts/enc/dvips/baskervaldx/zbv_clcsgf.enc}{C:/Users/davis/AppData/Local/Prog
+rams/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_2zeho7.enc}{C:/Users/davis/AppData/
+Local/Programs/MiKTeX/fonts/enc/dvips/baskervaldx/zbv_uguye6.enc}<C:/Users/davi
+s/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Bol.
+pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/baskervald
+x/Baskervaldx-BolIta.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/baskervaldx/Baskervaldx-Ita.pfb><C:/Users/davis/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/baskervaldx/Baskervaldx-Reg.pfb><C:/Users/davis/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/davi
+s/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Us
+ers/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexas.pfb><C:
+/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><
+C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.p
 fb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txs
-yc.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/t
-xsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
-/uhvb8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helve
-tic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/he
-lvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/boondox/zxxrw8a.pfb>
-Output written on forallxd.pdf (339 pages, 3356082 bytes).
+yb.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts
+/txsyc.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
+tx/txsys.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
+etic/uhvb8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/h
+elvetic/uhvr8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/helvetic/uhvro8a.pfb><C:/Users/davis/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/boondox/zxxrw8a.pfb>
+Output written on forallxd.pdf (385 pages, 3441526 bytes).
 PDF statistics:
- 3699 PDF objects out of 4296 (max. 8388607)
- 1441 named destinations out of 1728 (max. 500000)
- 628 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3886 PDF objects out of 4296 (max. 8388607)
+ 1475 named destinations out of 1728 (max. 500000)
+ 633 words of extra memory for PDF output out of 10000 (max. 10000000)
 

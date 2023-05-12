@@ -48,7 +48,7 @@ These examples illustrate an important idea, which we might describe as validity
 
 In this module, we will be learning to extract the form of various arguments so that you can better see how the arguments are valid or invalid (Module~\ref{ch.TruthTables}) and then later see how these different forms can be combined and used to either make valid arguments from scratch or prove some claim (Module~\ref{ch.plnd1} and on). This module is the first step in you learning why a formal (as in concerning the shape or form) logical language works the way it does and how you can use it. The language will be called ‘Propositional Logic', or PL. There are many other formal logical languages out there, but in virtue of their formality, once you know one, you know them all (with only a minor need to change your ‘accent', so to speak).
 \subsection{The Caveat}
-here are plenty of arguments that are valid but not for reasons relating to their form and there are cases where they are invalid both because of form and meaning. Take a look at these examples:\\
+There are plenty of arguments that are valid but not for reasons relating to their form and there are cases where they are invalid both because of form and meaning. Take a look at these examples:\\
 \begin{tabular}{ll}
 Argument \exarg{special1}: &Argument \exarg{special2}:\\
 Juanita is a vixen.&Juanita is a vixen.\\
@@ -75,7 +75,7 @@ In doing this, we are not fixing this symbolization once and for all. We are jus
 \item[A] Jenny is an anarcho-syndicalist
 \item[C] Dipan is an avid reader of Tolstoy
 \end{earg}
-It is important to understand that whatever structure an English sentence might have is lost when it is symbolized by a sentence letter of PL. From the point of view of PL, a sentence letter is just a letter. It can be used to build more complex sentences, but it cannot be taken apart. It is worth noting also that we are only going to use these proposition letters for the simplest propositions possible. For example, you might think that the sentences “Billy is happy" and “Billy is not happy" use two different simple propositions. This, however, is not the case. Both use the same simple proposition, namely “Billy is happy", with the first being just that one and the second being composed out of it and a negation. The negation doesn't change the meaning of the proposition, rather it flips the truth value, as we will see later. In Quantified Logic (also called First Order Logic or Predicate Logic), we will be able to break these propositions apart and get a more fine grained language, but this is the starting point to get to that.
+It is important to understand that whatever structure an English sentence might have is lost when it is symbolized by a sentence letter of PL. From the point of view of PL, a sentence letter is just a letter. It can be used to build more complex sentences, but it cannot be taken apart. It is worth noting also that we are only going to use these proposition letters for the simplest propositions possible. For example, you might think that the sentences “Billy is happy" and “Billy is not happy" use two different simple propositions. This, however, is not the case. Both use the same simple proposition, namely “Billy is happy", with the first being just that one and the second being composed out of it and a negation. The negation doesn't change the meaning of the proposition, rather it flips the truth value, as we will see later. In Quantified Logic (also called First Order Logic or Predicate Logic), we will be able to break these propositions apart and get a more fine-grained language, but this is the starting point to get to that.
 
 \practiceproblems
 \problempart
@@ -106,7 +106,7 @@ For each of the following: Determine whether these arguments have structure or \
 	Argument E&Argument F\\\hline
 	Neither Kirito nor Asuna enjoy combat. & Both Kirito and Asuna dislike combat.\\
 	If Kirito doesn't like combat, then he will only use it as a last resort. & If Asuna dislikes combat, then she will avoid it.\\
-	Therefore, Kirito will only engage in combat as a last resort. & Therefore, Both Asuna will avoid combat.\\
+	Therefore, Kirito will only engage in combat as a last resort. & Therefore, Both Kirito and Asuna will avoid combat.\\
 	\end{tabular} 
 
 \item
@@ -115,7 +115,7 @@ For each of the following: Determine whether these arguments have structure or \
 	Argument G&Argument H\\\hline
 	Video games are addictive and unhealthy. & Cigarettes are either addictive or unhealthy\\
 	If video games are unhealthy, then they should have some manner of warning label. & If they are addictive, then there should be a public information campaign about it.\\
-	If they are addictive, then they should have some warning manner of warning label . & If they are unhealthy, then there should be a warning label on them.\\
+	If they are addictive, then they should have some manner of warning label . & If they are unhealthy, then there should be a warning label on them.\\
 	Therefore, video games should have a warning label about their health risks and how addictive they are.& Therefore, cigarettes either need a warning label or an information campaign.\\
 	\end{tabular} 
 
@@ -268,7 +268,7 @@ Sentence \ref{or2} is only slightly more complicated. There are two subjects, bu
 
 \factoidbox{A sentence can be symbolized as (A\eor B) if it can be paraphrased in English as ‘Either\ldots , or\ldots .’}
 
-Sometimes in English, the word ‘or’ is used in a way that excludes the possibility that both disjuncts are true. This is called an exclusive or. An exclusive or is clearly intended when it says, on a restaurant menu, ‘Entrees come with either soup or salad’: you may have soup; you may have salad; but, if you want both soup and salad, then you have to pay extra.
+Sometimes in English, the word ‘or’ is used in a way that excludes the possibility that both disjuncts are true. This is called an `exclusive or'. An exclusive or (sometimes written as `xor') is clearly intended when it says, on a restaurant menu, ‘Entrees come with either soup or salad’: you may have soup; you may have salad; but, if you want both soup and salad, then you have to pay extra.
 At other times, the word ‘or’ allows for the possibility that both disjuncts might be true. This is probably the case with sentence \ref{or2}, above. Fatima might play videogames alone, Omar might play videogames alone, or they might both play. Sentence \ref{or2} merely says that at least one of them plays videogames. This is an inclusive or. The PL symbol ‘\eor’ always symbolizes an inclusive or.
 
 It will also help to see how negation interacts with disjunction. Consider:
@@ -305,7 +305,7 @@ In fact, sentence \ref{if2} can be paraphrased as ‘If Jean is in France, then 
 
 \subsection{Necessary and Sufficient Conditions}
 
-The conditional can be used to represent many different expressions in Englsih. You may have heard or used phrases like ``for\ldots, it is necessary that\ldots'' or ``for\ldots, it is sufficient that\ldots''. Consider:
+The conditional can be used to represent many different expressions in English. You may have heard00 or used phrases like ``for\ldots, it is necessary that\ldots'' or ``for\ldots, it is sufficient that\ldots''. Consider:
 \begin{earg}
 		\item[\ex{ifnec1}] For a number to be prime greater than 2, it is necessary that it be odd.
 		\item[\ex{ifnec2}] It is a necessary condition on a number being a prime greater than 2 that it be odd.
@@ -406,7 +406,7 @@ Using the following symbolization key, symbolize these sentences into PL.
 Writing your own symbolization key, symbolize the following sentences into PL:
 \begin{enumerate}
 \item If Bertrand Russell did not smoke, he would have died at a much younger age.
-\item Aristotle may have noticed that arguments of certain forms were always could, but Chrysippus took it to the next level.
+\item Aristotle may have noticed that arguments of certain forms were always good, but Chrysippus took it to the next level.
 \item Annie has class while Hallie does not.
 \item If the 1918 flu pandemic had not happened, the British would likely still control India and other colonial territories. 
 \end{enumerate}

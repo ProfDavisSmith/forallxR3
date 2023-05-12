@@ -1,322 +1,324 @@
 \babel@toc {american}{}\relax 
-\contentsline {chapter}{Preface}{vi}{chapter*.2}%
-\contentsline {paragraph}{Credits}{vii}{section*.3}%
-\contentsline {paragraph}{Notes for instructors}{viii}{section*.4}%
+\contentsline {subsubsection}{Copyright Status}{ii}{section*.1}%
+\contentsline {subsubsection}{Funding}{ii}{section*.2}%
+\contentsline {chapter}{Preface}{vii}{chapter*.4}%
+\contentsline {paragraph}{Credits}{ix}{section*.5}%
+\contentsline {paragraph}{Notes for instructors}{ix}{section*.6}%
 \contentsline {part}{\partnumberline {I}Arguments and Logic}{1}{part.1}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 1: Arguments and Propositions}{2}{chapter*.6}%
-\contentsline {section}{Part 1.1: Arguments: What is logic?}{2}{section*.7}%
-\contentsline {subsection}{What are we doing in this first module?}{4}{section*.8}%
-\contentsline {subsection}{The general structure of an argument}{5}{section*.9}%
-\contentsline {section}{Part 1.2 Sentences and Propositions}{6}{section*.10}%
-\contentsline {subsection}{The Move to Propositions}{7}{section*.11}%
-\contentsline {subsection}{Questions}{8}{section*.12}%
-\contentsline {subsection}{Imperatives}{8}{section*.13}%
-\contentsline {subsection}{Exclamations}{9}{section*.14}%
-\contentsline {section}{Practice exercises}{9}{section*.15}%
-\contentsline {chapter}{Part 2: Types of Arguments}{10}{chapter*.16}%
-\contentsline {section}{Part 2.1: Consequence and validity}{10}{section*.17}%
-\contentsline {section}{Part 2.2 Cases and Types of Validity}{11}{section*.18}%
-\contentsline {subsection}{Nomological Validity}{13}{section*.19}%
-\contentsline {subsection}{Conceptual Validity}{13}{section*.20}%
-\contentsline {section}{Part 2.3 Formal Validity}{14}{section*.21}%
-\contentsline {section}{Part 2.4 Soundness}{15}{section*.22}%
-\contentsline {section}{Part 2.5 Deductive vs Inductive Arguments}{16}{section*.23}%
-\contentsline {paragraph}{Alan Turing}{20}{figure.caption.25}%
-\contentsline {section}{Practice exercises}{21}{section*.26}%
-\contentsline {chapter}{Part 3: Other Logical Notions}{23}{chapter*.27}%
-\contentsline {section}{3.1 Joint Possibility}{23}{section*.28}%
-\contentsline {section}{3.2 Necessary truths, necessary falsehoods, and contingency}{24}{section*.29}%
-\contentsline {section}{3.3 Necessary equivalence}{25}{section*.30}%
-\contentsline {subsection}{Summary of logical notions}{25}{section*.31}%
-\contentsline {section}{Practice exercises}{26}{section*.32}%
-\contentsline {part}{\partnumberline {II}Symbolizing}{29}{part.2}%
+\contentsline {chapter}{Part 1: Arguments and Propositions}{2}{chapter*.8}%
+\contentsline {section}{Part 1.1: Arguments: What is logic?}{2}{section*.9}%
+\contentsline {subsection}{What are we doing in this first module?}{6}{section*.10}%
+\contentsline {subsection}{The general structure of an argument}{6}{section*.11}%
+\contentsline {section}{Part 1.2 Sentences and Propositions}{7}{section*.12}%
+\contentsline {subsection}{The Move to Propositions}{9}{section*.13}%
+\contentsline {subsection}{Questions}{10}{section*.14}%
+\contentsline {subsection}{Imperatives}{10}{section*.15}%
+\contentsline {subsection}{Exclamations}{10}{section*.16}%
+\contentsline {section}{Practice exercises}{11}{section*.17}%
+\contentsline {chapter}{Part 2: Types of Arguments}{13}{chapter*.18}%
+\contentsline {section}{Part 2.1: Consequence and validity}{13}{section*.19}%
+\contentsline {section}{Part 2.2 Cases and Types of Validity}{14}{section*.20}%
+\contentsline {subsection}{Nomological Validity}{16}{section*.21}%
+\contentsline {subsection}{Conceptual Validity}{17}{section*.22}%
+\contentsline {section}{Part 2.3 Formal Validity}{17}{section*.23}%
+\contentsline {section}{Part 2.4 Soundness}{19}{section*.24}%
+\contentsline {section}{Part 2.5 Deductive vs Inductive Arguments}{21}{section*.25}%
+\contentsline {paragraph}{Alan Turing}{24}{section*.26}%
+\contentsline {section}{Practice exercises}{25}{section*.27}%
+\contentsline {chapter}{Part 3: Other Logical Notions}{27}{chapter*.28}%
+\contentsline {section}{3.1 Joint Possibility}{27}{section*.29}%
+\contentsline {section}{3.2 Necessary truths, necessary falsehoods, and contingency}{29}{section*.30}%
+\contentsline {section}{3.3 Necessary equivalence}{30}{section*.31}%
+\contentsline {subsection}{Summary of logical notions}{30}{section*.32}%
+\contentsline {section}{Practice exercises}{30}{section*.33}%
+\contentsline {part}{\partnumberline {II}Symbolizing}{34}{part.2}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 4: Symbolization}{30}{chapter*.34}%
-\contentsline {section}{Part 4.1: Validity and the ‘Shape' of the argument }{30}{section*.35}%
-\contentsline {subsection}{The Caveat}{32}{section*.36}%
-\contentsline {section}{Part 4.2 Propositions (‘Atomic’ Sentences)}{32}{section*.37}%
-\contentsline {section}{Practice exercises}{33}{section*.38}%
-\contentsline {paragraph}{Chrysippus}{36}{figure.caption.40}%
-\contentsline {chapter}{Part 5: Introduction to Connectives}{37}{chapter*.41}%
-\contentsline {section}{Part 5.1 Negation }{38}{section*.42}%
-\contentsline {section}{Part 5.2: Conjunction}{39}{section*.43}%
-\contentsline {section}{Part 5.3 Disjunction}{41}{section*.44}%
-\contentsline {section}{Part 5.4: Conditionals}{42}{section*.45}%
-\contentsline {subsection}{Necessary and Sufficient Conditions}{43}{section*.46}%
-\contentsline {subsection}{Unless}{44}{section*.47}%
-\contentsline {section}{Part 5.5: Biconditional}{44}{section*.48}%
-\contentsline {paragraph}{Bertrand Russell}{46}{figure.caption.50}%
-\contentsline {section}{Practice exercises}{47}{section*.51}%
-\contentsline {chapter}{Part 6: More Complex Sentences in PL}{48}{chapter*.52}%
-\contentsline {section}{Part 6.1: Expressions}{48}{section*.53}%
-\contentsline {section}{Part 6.2: Sentences}{49}{section*.54}%
-\contentsline {section}{Part 6.3: Brackets}{51}{section*.55}%
-\contentsline {section}{Practice exercises}{52}{section*.56}%
-\contentsline {part}{\partnumberline {III}Truth Tables and All Possible Worlds}{54}{part.3}%
+\contentsline {chapter}{Part 4: Symbolization}{35}{chapter*.35}%
+\contentsline {section}{Part 4.1: Validity and the ‘Shape' of the argument }{35}{section*.36}%
+\contentsline {subsection}{The Caveat}{37}{section*.37}%
+\contentsline {section}{Part 4.2 Propositions (‘Atomic’ Sentences)}{37}{section*.38}%
+\contentsline {section}{Practice exercises}{39}{section*.39}%
+\contentsline {paragraph}{Chrysippus}{42}{section*.40}%
+\contentsline {chapter}{Part 5: Introduction to Connectives}{43}{chapter*.41}%
+\contentsline {section}{Part 5.1 Negation }{44}{section*.42}%
+\contentsline {section}{Part 5.2: Conjunction}{45}{section*.43}%
+\contentsline {section}{Part 5.3 Disjunction}{47}{section*.44}%
+\contentsline {section}{Part 5.4: Conditionals}{49}{section*.45}%
+\contentsline {subsection}{Necessary and Sufficient Conditions}{50}{section*.46}%
+\contentsline {subsection}{Unless}{51}{section*.47}%
+\contentsline {section}{Part 5.5: Biconditional}{52}{section*.48}%
+\contentsline {paragraph}{Bertrand Russell}{54}{section*.49}%
+\contentsline {section}{Practice exercises}{55}{section*.50}%
+\contentsline {chapter}{Part 6: More Complex Sentences in PL}{56}{chapter*.51}%
+\contentsline {section}{Part 6.1: Expressions}{56}{section*.52}%
+\contentsline {section}{Part 6.2: Sentences}{57}{section*.53}%
+\contentsline {section}{Part 6.3: Brackets}{59}{section*.54}%
+\contentsline {section}{Practice exercises}{60}{section*.55}%
+\contentsline {part}{\partnumberline {III}Truth Tables and All Possible Worlds}{63}{part.3}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 7 Truth Tables}{55}{chapter*.58}%
-\contentsline {section}{ Part 7.1 What are Truth Tables?}{55}{section*.59}%
-\contentsline {subsection}{How do we make them?}{56}{section*.60}%
-\contentsline {section}{Characteristic Truth Tables for Simple Sentence Letters and Negation}{57}{section*.61}%
-\contentsline {subsection}{Negation}{58}{section*.62}%
-\contentsline {section}{Characteristic Truth Tables for Conjunction and Disjunction}{58}{section*.63}%
-\contentsline {subsection}{Conjunction}{58}{section*.64}%
-\contentsline {subsection}{Disjunction}{59}{section*.65}%
-\contentsline {section}{Characteristic Truth Tables for Conditional and Biconditional}{60}{section*.66}%
-\contentsline {subsection}{Conditional}{60}{section*.67}%
-\contentsline {subsection}{Biconditional}{60}{section*.68}%
-\contentsline {paragraph}{George Boole}{61}{figure.caption.70}%
-\contentsline {chapter}{Part 8 Complex Truth Tables}{62}{chapter*.71}%
-\contentsline {section}{Part 8.1: Building Complete Truth Tables}{62}{section*.72}%
-\contentsline {section}{Part 8.2: Why Brackets are Essential}{65}{section*.73}%
-\contentsline {section}{Practice exercises}{66}{section*.74}%
-\contentsline {chapter}{Part 9 Semantic Concepts}{68}{chapter*.75}%
-\contentsline {subsection}{Tautologies and contradictions}{68}{section*.76}%
-\contentsline {subsection}{Equivalence}{69}{section*.77}%
-\contentsline {subsection}{Satisfiability}{70}{section*.78}%
-\contentsline {subsection}{Entailment and validity}{70}{section*.79}%
-\contentsline {chapter}{Part 10 Testing For Validity}{73}{chapter*.80}%
-\contentsline {section}{Part 10.1: Working through Truth Tables}{73}{section*.81}%
-\contentsline {section}{Part 10.2: Testing For Validity}{74}{section*.82}%
-\contentsline {section}{Practice exercises}{76}{section*.83}%
-\contentsline {chapter}{Part 11 Short-Form Tables}{78}{chapter*.84}%
-\contentsline {subsection}{Tautology}{78}{section*.85}%
-\contentsline {subsection}{Contradictions}{79}{section*.86}%
-\contentsline {subsection}{Equivalence}{80}{section*.87}%
-\contentsline {subsection}{Consistency}{80}{section*.88}%
-\contentsline {subsection}{Validity and entailment}{80}{section*.89}%
-\contentsline {section}{Practice exercises}{82}{section*.90}%
-\contentsline {part}{\partnumberline {IV}Natural Deduction 1}{85}{part.4}%
+\contentsline {chapter}{Part 7 Truth Tables}{64}{chapter*.57}%
+\contentsline {section}{ Part 7.1 What are Truth Tables?}{64}{section*.58}%
+\contentsline {subsection}{How do we make them?}{65}{section*.59}%
+\contentsline {section}{Characteristic Truth Tables for Simple Sentence Letters and Negation}{66}{section*.60}%
+\contentsline {subsection}{Negation}{67}{section*.61}%
+\contentsline {section}{Characteristic Truth Tables for Conjunction and Disjunction}{68}{section*.62}%
+\contentsline {subsection}{Conjunction}{68}{section*.63}%
+\contentsline {subsection}{Disjunction}{69}{section*.64}%
+\contentsline {section}{Characteristic Truth Tables for Conditional and Biconditional}{69}{section*.65}%
+\contentsline {subsection}{Conditional}{69}{section*.66}%
+\contentsline {subsection}{Biconditional}{70}{section*.67}%
+\contentsline {paragraph}{George Boole}{71}{section*.68}%
+\contentsline {chapter}{Part 8 Complex Truth Tables}{72}{chapter*.69}%
+\contentsline {section}{Part 8.1: Building Complete Truth Tables}{72}{section*.70}%
+\contentsline {section}{Part 8.2: Why Brackets are Essential}{75}{section*.71}%
+\contentsline {section}{Practice exercises}{77}{section*.72}%
+\contentsline {chapter}{Part 9 Semantic Concepts}{79}{chapter*.73}%
+\contentsline {subsection}{Tautologies and contradictions}{79}{section*.74}%
+\contentsline {subsection}{Equivalence}{80}{section*.75}%
+\contentsline {subsection}{Satisfiability}{81}{section*.76}%
+\contentsline {subsection}{Entailment and validity}{81}{section*.77}%
+\contentsline {chapter}{Part 10 Testing For Validity}{84}{chapter*.78}%
+\contentsline {section}{Part 10.1: Working through Truth Tables}{84}{section*.79}%
+\contentsline {section}{Part 10.2: Testing For Validity}{85}{section*.80}%
+\contentsline {section}{Practice exercises}{88}{section*.81}%
+\contentsline {chapter}{Part 11 Short-Form Tables}{89}{chapter*.82}%
+\contentsline {subsection}{Tautology}{89}{section*.83}%
+\contentsline {subsection}{Contradictions}{90}{section*.84}%
+\contentsline {subsection}{Equivalence}{91}{section*.85}%
+\contentsline {subsection}{Consistency}{91}{section*.86}%
+\contentsline {subsection}{Validity and entailment}{91}{section*.87}%
+\contentsline {section}{Practice exercises}{93}{section*.88}%
+\contentsline {part}{\partnumberline {IV}Natural Deduction 1}{96}{part.4}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 12 Natural Deduction}{86}{chapter*.92}%
-\contentsline {section}{Part 12: The Very Idea Of Natural Deduction}{86}{section*.93}%
-\contentsline {section}{Practice exercises}{88}{section*.94}%
-\contentsline {chapter}{Part 13 The Basic Rules of PL}{89}{chapter*.95}%
-\contentsline {section}{Part 13.1 Reiteration}{91}{section*.96}%
-\contentsline {section}{Part 13.2 Conjunction Rules}{92}{section*.97}%
-\contentsline {subsection}{Conjunction Introduction}{92}{section*.98}%
-\contentsline {subsection}{Conjunction Elimination}{94}{section*.99}%
-\contentsline {section}{Part 13.3 Conditional Rules}{96}{section*.100}%
-\contentsline {subsection}{Conditional Elimination}{96}{section*.101}%
-\contentsline {subsection}{Modus Tollens}{97}{section*.102}%
-\contentsline {paragraph}{Moggaliputta Tissa}{99}{figure.caption.104}%
-\contentsline {subsection}{Hypothetical Syllogism}{100}{section*.105}%
-\contentsline {section}{Part 13.4 Disjunction Rules}{101}{section*.106}%
-\contentsline {subsection}{Disjunction Introduction}{101}{section*.107}%
-\contentsline {subsection}{Disjunction Elimination}{102}{section*.108}%
-\contentsline {section}{Part 13.5 The Dilemma Rule}{104}{section*.109}%
-\contentsline {section}{Practice exercises}{106}{section*.110}%
-\contentsline {chapter}{Part 14 Tips and Tricks for Proofs}{109}{chapter*.111}%
-\contentsline {section}{Part 14.1 Working Backwards From What You Have}{109}{section*.112}%
-\contentsline {subsection}{Working Backwards From No Connective}{110}{section*.113}%
-\contentsline {subsection}{Working Backwards From A Conjunction}{111}{section*.114}%
-\contentsline {subsection}{Working Backwards From a Disjunction}{113}{section*.115}%
-\contentsline {subsection}{Working Backwards From a Conditional}{114}{section*.116}%
-\contentsline {section}{Part 14.2 Working Forwards From What You Have}{114}{section*.117}%
-\contentsline {subsection}{Working Forward from a Conjunction}{114}{section*.118}%
-\contentsline {paragraph}{Working Forward from a Disjunction}{114}{section*.119}%
-\contentsline {subsection}{Working Forward from a Conditional}{115}{section*.120}%
-\contentsline {section}{Practice exercises}{115}{section*.121}%
-\contentsline {part}{\partnumberline {V}Natural Deduction 2}{117}{part.5}%
+\contentsline {chapter}{Part 12 Natural Deduction}{97}{chapter*.90}%
+\contentsline {section}{Part 12: The Very Idea Of Natural Deduction}{97}{section*.91}%
+\contentsline {section}{Practice exercises}{99}{section*.92}%
+\contentsline {chapter}{Part 13 The Basic Rules of PL}{101}{chapter*.93}%
+\contentsline {section}{Part 13.1 Reiteration}{103}{section*.94}%
+\contentsline {section}{Part 13.2 Conjunction Rules}{105}{section*.95}%
+\contentsline {subsection}{Conjunction Introduction}{105}{section*.96}%
+\contentsline {subsection}{Conjunction Elimination}{106}{section*.97}%
+\contentsline {section}{Part 13.3 Conditional Rules}{109}{section*.98}%
+\contentsline {subsection}{Conditional Elimination}{109}{section*.99}%
+\contentsline {subsection}{Modus Tollens}{110}{section*.100}%
+\contentsline {paragraph}{Moggaliputta Tissa}{112}{section*.101}%
+\contentsline {subsection}{Hypothetical Syllogism}{113}{section*.102}%
+\contentsline {section}{Part 13.4 Disjunction Rules}{114}{section*.103}%
+\contentsline {subsection}{Disjunction Introduction}{114}{section*.104}%
+\contentsline {subsection}{Disjunction Elimination}{116}{section*.105}%
+\contentsline {section}{Part 13.5 The Dilemma Rule}{117}{section*.106}%
+\contentsline {section}{Practice exercises}{120}{section*.107}%
+\contentsline {chapter}{Part 14 Tips and Tricks for Proofs}{123}{chapter*.108}%
+\contentsline {section}{Part 14.1 Working Backwards From What You Have}{123}{section*.109}%
+\contentsline {subsection}{Working Backwards From No Connective}{124}{section*.110}%
+\contentsline {subsection}{Working Backwards From A Conjunction}{126}{section*.111}%
+\contentsline {subsection}{Working Backwards From a Disjunction}{128}{section*.112}%
+\contentsline {subsection}{Working Backwards From a Conditional}{129}{section*.113}%
+\contentsline {section}{Part 14.2 Working Forwards From What You Have}{129}{section*.114}%
+\contentsline {subsection}{Working Forward from a Conjunction}{129}{section*.115}%
+\contentsline {paragraph}{Working Forward from a Disjunction}{130}{section*.116}%
+\contentsline {subsection}{Working Forward from a Conditional}{130}{section*.117}%
+\contentsline {section}{Practice exercises}{131}{section*.118}%
+\contentsline {part}{\partnumberline {V}Natural Deduction 2}{132}{part.5}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 15 The Idea Behind Equivalency}{118}{chapter*.123}%
-\contentsline {section}{Part 15.1 Double Negation and Communativity}{119}{section*.124}%
-\contentsline {subsection}{Double Negation}{119}{section*.125}%
-\contentsline {subsection}{Commutativity}{121}{section*.126}%
-\contentsline {section}{Part 15.2 Material Conditional and Biconditional Exchange}{121}{section*.127}%
-\contentsline {subsection}{Material Conditional}{121}{section*.128}%
-\contentsline {subsection}{Biconditional Exchange}{122}{section*.129}%
-\contentsline {section}{Part 15.3 De Morgan's Laws and Tautology}{123}{section*.130}%
-\contentsline {subsection}{De Morgan's Laws}{123}{section*.131}%
-\contentsline {paragraph}{Augustus De Morgan}{125}{figure.caption.133}%
-\contentsline {subsection}{Tautology}{125}{section*.134}%
-\contentsline {section}{Practice exercises}{127}{section*.135}%
-\contentsline {chapter}{Part 16 Indirect Proofs}{128}{chapter*.136}%
-\contentsline {section}{Part 16.1 Conditional Proofs}{128}{section*.137}%
-\contentsline {subsection}{Derived Rules from Conditional Introduction}{130}{section*.138}%
-\contentsline {section}{Part 16.2: Reductio Ad Absurdum (Negation Introduction and Negation Elimination)}{131}{section*.139}%
-\contentsline {subsection}{Derived Rules Using \ensuremath {\neg }I and \ensuremath {\neg }E}{132}{section*.140}%
-\contentsline {section}{Practice exercises}{133}{section*.141}%
-\contentsline {chapter}{Part 17 Tips For Proofs}{135}{chapter*.142}%
-\contentsline {section}{Part 17.1 Working Backwards from What You Want}{135}{section*.143}%
-\contentsline {subsection}{Working backward from a conjunction}{136}{section*.144}%
-\contentsline {subsection}{Working backward from a conditional}{136}{section*.145}%
-\contentsline {subsection}{Working backward from a negated sentence}{137}{section*.146}%
-\contentsline {subsection}{Working backward from a disjunction}{138}{section*.147}%
-\contentsline {subsection}{Working Backwards From a Biconditional}{139}{section*.148}%
-\contentsline {section}{Part 17.2 Moving Forward from What You Have}{140}{section*.149}%
-\contentsline {subsection}{Working forward from a conjunction}{141}{section*.150}%
-\contentsline {subsection}{Working forward from a disjunction}{141}{section*.151}%
-\contentsline {subsection}{Working forward from a conditional}{142}{section*.152}%
-\contentsline {part}{\partnumberline {VI}Quantified Logic}{144}{part.6}%
+\contentsline {chapter}{Part 15 The Idea Behind Equivalency}{133}{chapter*.120}%
+\contentsline {section}{Part 15.1 Double Negation and Communativity}{134}{section*.121}%
+\contentsline {subsection}{Double Negation}{134}{section*.122}%
+\contentsline {subsection}{Commutativity}{136}{section*.123}%
+\contentsline {section}{Part 15.2 Material Conditional and Biconditional Exchange}{137}{section*.124}%
+\contentsline {subsection}{Material Conditional}{137}{section*.125}%
+\contentsline {subsection}{Biconditional Exchange}{137}{section*.126}%
+\contentsline {section}{Part 15.3 De Morgan's Laws and Tautology}{139}{section*.127}%
+\contentsline {subsection}{De Morgan's Laws}{139}{section*.128}%
+\contentsline {paragraph}{Augustus De Morgan}{141}{section*.129}%
+\contentsline {subsection}{Tautology}{142}{section*.130}%
+\contentsline {section}{Practice exercises}{143}{section*.131}%
+\contentsline {chapter}{Part 16 Indirect Proofs}{144}{chapter*.132}%
+\contentsline {section}{Part 16.1 Conditional Proofs}{144}{section*.133}%
+\contentsline {subsection}{Derived Rules from Conditional Introduction}{146}{section*.134}%
+\contentsline {section}{Part 16.2: Reductio Ad Absurdum (Negation Introduction and Negation Elimination)}{147}{section*.135}%
+\contentsline {subsection}{Derived Rules Using \ensuremath {\neg }I and \ensuremath {\neg }E}{149}{section*.136}%
+\contentsline {section}{Practice exercises}{150}{section*.137}%
+\contentsline {chapter}{Part 17 Tips For Proofs}{152}{chapter*.138}%
+\contentsline {section}{Part 17.1 Working Backwards from What You Want}{152}{section*.139}%
+\contentsline {subsection}{Working backward from a conjunction}{153}{section*.140}%
+\contentsline {subsection}{Working backward from a conditional}{154}{section*.141}%
+\contentsline {subsection}{Working backward from a negated sentence}{154}{section*.142}%
+\contentsline {subsection}{Working backward from a disjunction}{155}{section*.143}%
+\contentsline {subsection}{Working Backwards From a Biconditional}{156}{section*.144}%
+\contentsline {section}{Part 17.2 Moving Forward from What You Have}{157}{section*.145}%
+\contentsline {subsection}{Working forward from a conjunction}{158}{section*.146}%
+\contentsline {subsection}{Working forward from a disjunction}{158}{section*.147}%
+\contentsline {subsection}{Working forward from a conditional}{160}{section*.148}%
+\contentsline {part}{\partnumberline {VI}Quantified Logic}{162}{part.6}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 18 The Next Step: Quantified Logic}{145}{chapter*.154}%
-\contentsline {section}{Part 18.1: The Need to Expand How We Think of Propositions}{145}{section*.155}%
-\contentsline {section}{Part 18.2: Names}{147}{section*.156}%
-\contentsline {section}{Part 18.3: Predicates}{149}{section*.157}%
-\contentsline {subsection}{Relational Predicates}{150}{section*.158}%
-\contentsline {section}{Part 18.3 Quantifiers}{152}{section*.159}%
-\contentsline {subsection}{A Warning about Sentences with Multiple Quantifiers}{155}{section*.160}%
-\contentsline {paragraph}{Aristotle}{156}{figure.caption.162}%
-\contentsline {section}{Part 18.4.1 Domains}{157}{section*.163}%
-\contentsline {chapter}{Part 19 Bringing It All Together}{158}{chapter*.164}%
-\contentsline {section}{Part 19.1 Sentences with One Quantifier}{158}{section*.165}%
-\contentsline {paragraph}{Ab\^{u} H\^{a}mid al-Ghaz\^{a}l\^{\i }}{161}{figure.caption.167}%
-\contentsline {section}{Practice exercises}{162}{section*.168}%
-\contentsline {section}{Part 19.2 Brining It All Together}{163}{section*.169}%
-\contentsline {subsection}{Free Variables}{166}{section*.170}%
-\contentsline {subsection}{Bracketing conventions}{167}{section*.171}%
-\contentsline {chapter}{Part 20 Examples of Symbolization}{168}{chapter*.172}%
-\contentsline {paragraph}{Ibn Sina}{171}{figure.caption.174}%
-\contentsline {part}{\partnumberline {VII}Validity in QL}{172}{part.7}%
+\contentsline {chapter}{Part 18 The Next Step: Quantified Logic}{163}{chapter*.150}%
+\contentsline {section}{Part 18.1: The Need to Expand How We Think of Propositions}{163}{section*.151}%
+\contentsline {section}{Part 18.2: Names}{165}{section*.152}%
+\contentsline {section}{Part 18.3: Predicates}{167}{section*.153}%
+\contentsline {subsection}{Relational Predicates}{169}{section*.154}%
+\contentsline {section}{Part 18.3 Quantifiers}{171}{section*.155}%
+\contentsline {subsection}{A Warning about Sentences with Multiple Quantifiers}{174}{section*.156}%
+\contentsline {paragraph}{Aristotle}{176}{section*.157}%
+\contentsline {section}{Part 18.4.1 Domains}{177}{section*.158}%
+\contentsline {chapter}{Part 19 Bringing It All Together}{179}{chapter*.159}%
+\contentsline {section}{Part 19.1 Sentences with One Quantifier}{179}{section*.160}%
+\contentsline {paragraph}{Ab\^{u} H\^{a}mid al-Ghaz\^{a}l\^{\i }}{183}{section*.161}%
+\contentsline {section}{Practice exercises}{184}{section*.162}%
+\contentsline {section}{Part 19.2 Brining It All Together}{186}{section*.163}%
+\contentsline {subsection}{Free Variables}{189}{section*.164}%
+\contentsline {subsection}{Bracketing conventions}{190}{section*.165}%
+\contentsline {chapter}{Part 20 Examples of Symbolization}{191}{chapter*.166}%
+\contentsline {paragraph}{Ibn Sina}{195}{section*.167}%
+\contentsline {part}{\partnumberline {VII}Validity in QL}{196}{part.7}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 21 Symbolizing VS Translating}{173}{chapter*.176}%
-\contentsline {section}{Part 21.1 Extensionality}{173}{section*.177}%
-\contentsline {section}{Part 21.2 Extensions}{175}{section*.178}%
-\contentsline {section}{Part 21.3 Many-Placed Predicates}{176}{section*.179}%
-\contentsline {section}{Part 21.4 Interpretations}{178}{section*.180}%
-\contentsline {subsection}{Relational Predicates and `The Knowledge Graph'}{181}{section*.181}%
-\contentsline {chapter}{Part 22 Truth in QL}{183}{chapter*.182}%
-\contentsline {section}{Part 22.1 Atomic Sentences}{184}{section*.183}%
-\contentsline {section}{Part 22.2 Connectives}{184}{section*.184}%
-\contentsline {section}{Part 22.3 Quantifiers}{185}{section*.185}%
-\contentsline {subsection}{The First Way to Think About Them}{185}{section*.186}%
-\contentsline {subsection}{The Second Way}{185}{section*.187}%
-\contentsline {subsection}{The Correct Way}{186}{section*.188}%
-\contentsline {paragraph}{William of Ockham}{188}{figure.caption.190}%
-\contentsline {section}{Practice exercises}{189}{section*.191}%
-\contentsline {chapter}{Part 23 Semantic Concepts and Validity}{191}{chapter*.192}%
-\contentsline {section}{Part 23.1: Semantic Concepts}{191}{section*.193}%
-\contentsline {section}{Part 23.2 Using Interpretations}{192}{section*.194}%
-\contentsline {subsection}{Tautologies and contradictions}{192}{section*.195}%
-\contentsline {subsection}{Logical equivalence}{193}{section*.196}%
-\contentsline {subsection}{Validity, entailment and satisfiability}{194}{section*.197}%
-\contentsline {section}{Practice exercises}{196}{section*.198}%
-\contentsline {section}{Part 23.3: Reasoning about All Interpretations}{198}{section*.199}%
-\contentsline {subsection}{Tautologies and contradictions}{198}{section*.200}%
-\contentsline {subsection}{Other Cases}{199}{section*.201}%
-\contentsline {part}{\partnumberline {VIII}Natural Deduction in QL 1}{201}{part.8}%
+\contentsline {chapter}{Part 21 Symbolizing VS Translating}{197}{chapter*.169}%
+\contentsline {section}{Part 21.1 Extensionality}{197}{section*.170}%
+\contentsline {section}{Part 21.2 Extensions}{199}{section*.171}%
+\contentsline {section}{Part 21.3 Many-Placed Predicates}{201}{section*.172}%
+\contentsline {section}{Part 21.4 Interpretations}{203}{section*.173}%
+\contentsline {subsection}{Relational Predicates and `The Knowledge Graph'}{206}{section*.174}%
+\contentsline {chapter}{Part 22 Truth in QL}{208}{chapter*.175}%
+\contentsline {section}{Part 22.1 Atomic Sentences}{209}{section*.176}%
+\contentsline {section}{Part 22.2 Connectives}{209}{section*.177}%
+\contentsline {section}{Part 22.3 Quantifiers}{210}{section*.178}%
+\contentsline {subsection}{The First Way to Think About Them}{210}{section*.179}%
+\contentsline {subsection}{The Second Way}{211}{section*.180}%
+\contentsline {subsection}{The Correct Way}{211}{section*.181}%
+\contentsline {paragraph}{William of Ockham}{214}{section*.182}%
+\contentsline {section}{Practice exercises}{215}{section*.183}%
+\contentsline {chapter}{Part 23 Semantic Concepts and Validity}{217}{chapter*.184}%
+\contentsline {section}{Part 23.1: Semantic Concepts}{217}{section*.185}%
+\contentsline {section}{Part 23.2 Using Interpretations}{218}{section*.186}%
+\contentsline {subsection}{Tautologies and contradictions}{218}{section*.187}%
+\contentsline {subsection}{Logical equivalence}{220}{section*.188}%
+\contentsline {subsection}{Validity, entailment and satisfiability}{220}{section*.189}%
+\contentsline {section}{Practice exercises}{223}{section*.190}%
+\contentsline {section}{Part 23.3: Reasoning about All Interpretations}{225}{section*.191}%
+\contentsline {subsection}{Tautologies and contradictions}{225}{section*.192}%
+\contentsline {subsection}{Other Cases}{226}{section*.193}%
+\contentsline {part}{\partnumberline {VIII}Natural Deduction in QL 1}{229}{part.8}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 24 The Basic Rules for QL}{202}{chapter*.203}%
-\contentsline {section}{Part 24.1 The Rules in PL are Allowed In QL}{202}{section*.204}%
-\contentsline {section}{Part 24.2 Universal Quantifier Rules (Elimination and Introduction)}{204}{section*.205}%
-\contentsline {subsection}{Universal elimination}{204}{section*.206}%
-\contentsline {subsection}{Universal introduction}{206}{section*.207}%
-\contentsline {section}{Part 24.3 Existential Quantifier Rules (Introduction and Elimination)}{208}{section*.208}%
-\contentsline {subsection}{Existential Introduction}{208}{section*.209}%
-\contentsline {subsection}{Existential elimination}{209}{section*.210}%
-\contentsline {paragraph}{Kurt G\"{o}del}{212}{figure.caption.212}%
-\contentsline {section}{Practice exercises}{213}{section*.213}%
-\contentsline {chapter}{Part 25 Tips for and an Example of Proofs in QL}{217}{chapter*.214}%
-\contentsline {part}{\partnumberline {IX}Natural Deduction in QL 2}{222}{part.9}%
+\contentsline {chapter}{Part 24 The Basic Rules for QL}{230}{chapter*.195}%
+\contentsline {section}{Part 24.1 The Rules in PL are Allowed In QL}{230}{section*.196}%
+\contentsline {section}{Part 24.2 Universal Quantifier Rules (Elimination and Introduction)}{232}{section*.197}%
+\contentsline {subsection}{Universal elimination}{232}{section*.198}%
+\contentsline {subsection}{Universal introduction}{234}{section*.199}%
+\contentsline {section}{Part 24.3 Existential Quantifier Rules (Introduction and Elimination)}{237}{section*.200}%
+\contentsline {subsection}{Existential Introduction}{237}{section*.201}%
+\contentsline {subsection}{Existential elimination}{238}{section*.202}%
+\contentsline {paragraph}{Kurt G\"{o}del}{242}{section*.203}%
+\contentsline {section}{Practice exercises}{243}{section*.204}%
+\contentsline {chapter}{Part 25 Tips for and an Example of Proofs in QL}{247}{chapter*.205}%
+\contentsline {part}{\partnumberline {IX}Natural Deduction in QL 2}{253}{part.9}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 26 Identity (‘=')}{223}{chapter*.216}%
-\contentsline {section}{Part 26.1 Symbolizing Identity Statements}{223}{section*.217}%
-\contentsline {subsection}{The Need for a New Connective/Predicate}{223}{section*.218}%
-\contentsline {subsection}{ Adding identity }{224}{section*.219}%
-\contentsline {subsection}{ ‘Only’ and ‘except’ }{224}{section*.220}%
-\contentsline {subsection}{There are at least\ldots }{225}{section*.221}%
-\contentsline {subsection}{ There are at most\ldots }{226}{section*.222}%
-\contentsline {subsection}{There are exactly\ldots }{227}{section*.223}%
-\contentsline {section}{Part 26.2 The Semantics and Rules for Identity}{228}{section*.224}%
-\contentsline {subsection}{Semantics for identity}{228}{section*.225}%
-\contentsline {subsection}{Rules for identity}{228}{section*.226}%
-\contentsline {paragraph}{Gottfried Wilhelm Leibniz}{231}{figure.caption.228}%
-\contentsline {section}{Practice exercises}{231}{section*.229}%
-\contentsline {chapter}{Part 27 Equivalency Rules in QL}{233}{chapter*.230}%
-\contentsline {section}{Part 27.1 The Equivalency Rules in PL are in QL}{233}{section*.231}%
-\contentsline {subsection}{DN and Comm}{234}{section*.232}%
-\contentsline {subsection}{MC and \ensuremath {\leftrightarrow }ex}{235}{section*.233}%
-\contentsline {subsection}{DeM and TAUT}{236}{section*.234}%
-\contentsline {section}{Part 27.2 Change of Quantifier (Quantifier Negation)}{237}{section*.235}%
-\contentsline {paragraph}{Ruth Barcan Marcus}{240}{figure.caption.237}%
-\contentsline {section}{Practice exercises}{240}{section*.238}%
-\contentsline {part}{\partnumberline {X}Modal Logic}{242}{part.10}%
+\contentsline {chapter}{Part 26 Identity (‘=')}{254}{chapter*.207}%
+\contentsline {section}{Part 26.1 Symbolizing Identity Statements}{254}{section*.208}%
+\contentsline {subsection}{The Need for a New Connective/Predicate}{254}{section*.209}%
+\contentsline {subsection}{ Adding identity }{255}{section*.210}%
+\contentsline {subsection}{ ‘Only’ and ‘except’ }{256}{section*.211}%
+\contentsline {subsection}{There are at least\ldots }{257}{section*.212}%
+\contentsline {subsection}{ There are at most\ldots }{257}{section*.213}%
+\contentsline {subsection}{There are exactly\ldots }{258}{section*.214}%
+\contentsline {section}{Part 26.2 The Semantics and Rules for Identity}{259}{section*.215}%
+\contentsline {subsection}{Semantics for identity}{259}{section*.216}%
+\contentsline {subsection}{Rules for identity}{260}{section*.217}%
+\contentsline {paragraph}{Gottfried Wilhelm Leibniz}{263}{section*.218}%
+\contentsline {section}{Practice exercises}{264}{section*.219}%
+\contentsline {chapter}{Part 27 Equivalency Rules in QL}{265}{chapter*.220}%
+\contentsline {section}{Part 27.1 The Equivalency Rules in PL are in QL}{265}{section*.221}%
+\contentsline {subsection}{DN and Comm}{266}{section*.222}%
+\contentsline {subsection}{MC and \ensuremath {\leftrightarrow }ex}{267}{section*.223}%
+\contentsline {subsection}{DeM and TAUT}{268}{section*.224}%
+\contentsline {section}{Part 27.2 Change of Quantifier (Quantifier Negation)}{269}{section*.225}%
+\contentsline {paragraph}{Ruth Barcan Marcus}{273}{section*.226}%
+\contentsline {section}{Practice exercises}{274}{section*.227}%
+\contentsline {part}{\partnumberline {X}Modal Logic}{275}{part.10}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Part 28 Introduction to Modal Logic}{243}{chapter*.240}%
-\contentsline {section}{Part 28.1 What Is Modal Logic?}{243}{section*.241}%
-\contentsline {section}{Part 28.2 The Language of ML}{246}{section*.242}%
-\contentsline {section}{Practice exercises}{247}{section*.243}%
-\contentsline {chapter}{Part 29 The Systems of Modal Logic}{250}{chapter*.244}%
-\contentsline {section}{But what are these systems?}{250}{section*.245}%
-\contentsline {subsection}{Serial}{252}{section*.246}%
-\contentsline {subsection}{Reflexive}{253}{section*.247}%
-\contentsline {subsection}{Symmetric}{254}{section*.248}%
-\contentsline {subsection}{Transitive}{255}{section*.249}%
-\contentsline {section}{Part 29.1 Modal Negation (The Equivalency Rule For Modal Logics)}{256}{section*.250}%
-\contentsline {section}{Part 29.2 The K System}{257}{section*.251}%
-\contentsline {paragraph}{Saul A. Kripke}{259}{figure.caption.253}%
-\contentsline {subsection}{Necessity Elimination}{259}{section*.254}%
-\contentsline {subsection}{Necessity Introductions}{261}{section*.255}%
-\contentsline {subsection}{Necessary Conditional Introduction}{261}{section*.256}%
-\contentsline {subsection}{Necessary Negation Introduction}{262}{section*.257}%
-\contentsline {subsection}{Necessity Introduction}{263}{section*.258}%
-\contentsline {subsection}{Possibility Introduction}{264}{section*.259}%
-\contentsline {section}{Practice exercises}{265}{section*.260}%
-\contentsline {section}{Part 29.3 The T System}{266}{section*.261}%
-\contentsline {subsection}{Reflexivity}{266}{section*.262}%
-\contentsline {section}{Part 29.4 The S4 System}{268}{section*.263}%
-\contentsline {section}{Part 29.5 The S5 System}{270}{section*.264}%
-\contentsline {chapter}{Part 30 Tips and Tricks for Modal Logic}{273}{chapter*.265}%
-\contentsline {section}{Part 30.1 Working Backwards from What You Want}{273}{section*.266}%
-\contentsline {subsection}{Moving Backward from a Negated Qualifier}{274}{section*.267}%
-\contentsline {subsection}{Moving Backwards from a Necessary/Possible Conditional}{274}{section*.268}%
-\contentsline {subsection}{Moving Backwards from a Necessary/Possible Negation}{276}{section*.269}%
-\contentsline {subsection}{Moving Backwards From a Necessary Statement}{277}{section*.270}%
-\contentsline {subsection}{Moving Backwards from a Possibility Statement}{277}{section*.271}%
-\contentsline {section}{Part 30.2 Working Forward from What You Have}{278}{section*.272}%
-\contentsline {subsection}{Moving forward from a (negated) qualifier}{278}{section*.273}%
-\contentsline {subsection}{Moving forward from a necessary/possible conditional}{281}{section*.274}%
-\contentsline {part}{Appendices}{285}{section*.276}%
+\contentsline {chapter}{Part 28 Introduction to Modal Logic}{276}{chapter*.229}%
+\contentsline {section}{Part 28.1 What Is Modal Logic?}{276}{section*.230}%
+\contentsline {section}{Part 28.2 The Language of ML}{279}{section*.231}%
+\contentsline {section}{Practice exercises}{280}{section*.232}%
+\contentsline {chapter}{Part 29 The Systems of Modal Logic}{284}{chapter*.233}%
+\contentsline {section}{But what are these systems?}{284}{section*.234}%
+\contentsline {subsection}{Serial}{287}{section*.235}%
+\contentsline {subsection}{Reflexive}{287}{section*.236}%
+\contentsline {subsection}{Symmetric}{288}{section*.237}%
+\contentsline {subsection}{Transitive}{290}{section*.238}%
+\contentsline {section}{Part 29.1 Modal Negation (The Equivalency Rule For Modal Logics)}{291}{section*.239}%
+\contentsline {section}{Part 29.2 The K System}{292}{section*.240}%
+\contentsline {paragraph}{Saul A. Kripke}{294}{section*.241}%
+\contentsline {subsection}{Necessity Elimination}{294}{section*.242}%
+\contentsline {subsection}{Necessity Introductions}{296}{section*.243}%
+\contentsline {subsection}{Necessary Conditional Introduction}{296}{section*.244}%
+\contentsline {subsection}{Necessary Negation Introduction}{298}{section*.245}%
+\contentsline {subsection}{Necessity Introduction}{299}{section*.246}%
+\contentsline {subsection}{Possibility Introduction}{300}{section*.247}%
+\contentsline {section}{Practice exercises}{302}{section*.248}%
+\contentsline {section}{Part 29.3 The T System}{302}{section*.249}%
+\contentsline {subsection}{Reflexivity}{303}{section*.250}%
+\contentsline {section}{Part 29.4 The S4 System}{305}{section*.251}%
+\contentsline {section}{Part 29.5 The S5 System}{307}{section*.252}%
+\contentsline {chapter}{Part 30 Tips and Tricks for Modal Logic}{310}{chapter*.253}%
+\contentsline {section}{Part 30.1 Working Backwards from What You Want}{310}{section*.254}%
+\contentsline {subsection}{Moving Backward from a Negated Qualifier}{311}{section*.255}%
+\contentsline {subsection}{Moving Backwards from a Necessary/Possible Conditional}{312}{section*.256}%
+\contentsline {subsection}{Moving Backwards from a Necessary/Possible Negation}{313}{section*.257}%
+\contentsline {subsection}{Moving Backwards From a Necessary Statement}{314}{section*.258}%
+\contentsline {subsection}{Moving Backwards from a Possibility Statement}{315}{section*.259}%
+\contentsline {section}{Part 30.2 Working Forward from What You Have}{316}{section*.260}%
+\contentsline {subsection}{Moving forward from a (negated) qualifier}{316}{section*.261}%
+\contentsline {subsection}{Moving forward from a necessary/possible conditional}{319}{section*.262}%
+\contentsline {part}{Appendices}{324}{section*.264}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{Formal Logic and Computer Circuits}{285}{appendix*.277}%
-\contentsline {section}{Translating The PL Connectives to Logic Gates}{286}{section*.278}%
-\contentsline {subsection}{Translating Negation, Conjunction, and Disjunction}{286}{section*.279}%
-\contentsline {subsection}{Translating Conditional and Biconditional}{287}{section*.280}%
-\contentsline {section}{Translating Complex Sentences from PL to Circuits}{288}{section*.281}%
-\contentsline {section}{Translating from Circuits to PL}{290}{section*.282}%
-\contentsline {chapter}{Soundness and Completeness}{293}{appendix*.283}%
-\contentsline {section}{The Soundness of PL}{294}{section*.284}%
-\contentsline {section}{The Completeness of PL}{297}{section*.285}%
-\contentsline {section}{The Soundness of QL}{298}{section*.286}%
-\contentsline {subsection}{QN}{299}{section*.287}%
-\contentsline {subsection}{$\forall $ E}{300}{section*.288}%
-\contentsline {subsection}{$\forall $I}{300}{section*.289}%
-\contentsline {subsection}{$\exists $I}{300}{section*.290}%
-\contentsline {subsection}{$\exists $E}{301}{section*.291}%
-\contentsline {subsection}{=I}{301}{section*.292}%
-\contentsline {subsection}{=E}{301}{section*.293}%
-\contentsline {subsection}{QL is sound}{302}{section*.294}%
-\contentsline {section}{The Completeness of QL}{302}{section*.295}%
-\contentsline {section}{The Soundness of ML}{302}{section*.296}%
-\contentsline {subsection}{The Soundness of the K System}{302}{section*.297}%
-\contentsline {paragraph}{MN}{303}{section*.298}%
-\contentsline {paragraph}{\ensuremath {\Box }E}{303}{section*.299}%
-\contentsline {paragraph}{\ensuremath {\Box }\ensuremath {\rightarrow }I}{304}{section*.300}%
-\contentsline {paragraph}{\ensuremath {\Box }\ensuremath {\neg }I}{305}{section*.301}%
-\contentsline {paragraph}{\ensuremath {\Box }I and \ensuremath {\Diamond }I}{305}{section*.302}%
-\contentsline {paragraph}{The K system is sound}{306}{section*.303}%
-\contentsline {subsection}{The Soundness of the T system}{306}{section*.304}%
-\contentsline {paragraph}{RF}{306}{section*.305}%
-\contentsline {paragraph}{The T system is sound}{306}{section*.306}%
-\contentsline {subsection}{The Soundness of the S4 system}{306}{section*.307}%
-\contentsline {paragraph}{TR}{307}{section*.308}%
-\contentsline {paragraph}{R4}{308}{section*.309}%
-\contentsline {subsection}{The Soundness of the S5 system}{308}{section*.310}%
-\contentsline {paragraph}{S5}{309}{section*.311}%
-\contentsline {paragraph}{R5}{310}{section*.312}%
-\contentsline {chapter}{Glossary}{312}{section*.313}%
-\contentsline {chapter}{Bibliography}{320}{appendix*.315}%
-\contentsline {chapter}{Quick reference}{321}{appendix*.316}%
-\contentsline {section}{Characteristic truth tables}{321}{section*.317}%
-\contentsline {section}{Symbolization}{322}{section*.318}%
-\contentsline {section}{Using identity to symbolize quantities}{323}{section*.319}%
-\contentsline {section}{Basic deduction rules for PL}{324}{section*.323}%
-\contentsline {section}{Basic Rules for QL}{327}{section*.331}%
-\contentsline {section}{Basic Rules for ML}{328}{section*.336}%
-\contentsline {paragraph}{The Restriction for Strict Subproofs}{328}{section*.339}%
-\contentsline {paragraph}{The Restriction for \ensuremath {\Box }E}{328}{section*.340}%
-\contentsline {paragraph}{The Restriction for RF}{328}{section*.342}%
-\contentsline {paragraph}{The Restriction for R4}{329}{section*.344}%
-\contentsline {paragraph}{The Restriction for R5}{329}{section*.346}%
+\contentsline {chapter}{Formal Logic and Computer Circuits}{324}{appendix*.265}%
+\contentsline {section}{Translating The PL Connectives to Logic Gates}{325}{section*.266}%
+\contentsline {subsection}{Translating Negation, Conjunction, and Disjunction}{325}{section*.267}%
+\contentsline {subsection}{Translating Conditional and Biconditional}{326}{section*.268}%
+\contentsline {section}{Translating Complex Sentences from PL to Circuits}{327}{section*.269}%
+\contentsline {section}{Translating from Circuits to PL}{330}{section*.270}%
+\contentsline {chapter}{Soundness and Completeness}{333}{appendix*.271}%
+\contentsline {section}{The Soundness of PL}{334}{section*.272}%
+\contentsline {section}{The Completeness of PL}{338}{section*.273}%
+\contentsline {section}{The Soundness of QL}{339}{section*.274}%
+\contentsline {subsection}{QN}{339}{section*.275}%
+\contentsline {subsection}{$\forall $ E}{340}{section*.276}%
+\contentsline {subsection}{$\forall $I}{341}{section*.277}%
+\contentsline {subsection}{$\exists $I}{341}{section*.278}%
+\contentsline {subsection}{$\exists $E}{342}{section*.279}%
+\contentsline {subsection}{=I}{342}{section*.280}%
+\contentsline {subsection}{=E}{343}{section*.281}%
+\contentsline {subsection}{QL is sound}{343}{section*.282}%
+\contentsline {section}{The Completeness of QL}{343}{section*.283}%
+\contentsline {section}{The Soundness of ML}{344}{section*.284}%
+\contentsline {subsection}{The Soundness of the K System}{344}{section*.285}%
+\contentsline {paragraph}{MN}{344}{section*.286}%
+\contentsline {paragraph}{\ensuremath {\Box }E}{345}{section*.287}%
+\contentsline {paragraph}{\ensuremath {\Box }\ensuremath {\rightarrow }I}{346}{section*.288}%
+\contentsline {paragraph}{\ensuremath {\Box }\ensuremath {\neg }I}{346}{section*.289}%
+\contentsline {paragraph}{\ensuremath {\Box }I and \ensuremath {\Diamond }I}{347}{section*.290}%
+\contentsline {paragraph}{The K system is sound}{348}{section*.291}%
+\contentsline {subsection}{The Soundness of the T system}{348}{section*.292}%
+\contentsline {paragraph}{RF}{348}{section*.293}%
+\contentsline {paragraph}{The T system is sound}{349}{section*.294}%
+\contentsline {subsection}{The Soundness of the S4 system}{349}{section*.295}%
+\contentsline {paragraph}{TR}{349}{section*.296}%
+\contentsline {paragraph}{R4}{350}{section*.297}%
+\contentsline {subsection}{The Soundness of the S5 system}{351}{section*.298}%
+\contentsline {paragraph}{S5}{351}{section*.299}%
+\contentsline {paragraph}{R5}{352}{section*.300}%
+\contentsline {chapter}{Glossary}{355}{section*.301}%
+\contentsline {chapter}{Bibliography}{364}{appendix*.303}%
+\contentsline {chapter}{Quick reference}{365}{appendix*.304}%
+\contentsline {section}{Characteristic truth tables}{365}{section*.305}%
+\contentsline {section}{Symbolization}{366}{section*.306}%
+\contentsline {section}{Using identity to symbolize quantities}{367}{section*.307}%
+\contentsline {section}{Basic deduction rules for PL}{369}{section*.311}%
+\contentsline {section}{Basic Rules for QL}{372}{section*.319}%
+\contentsline {section}{Basic Rules for ML}{373}{section*.324}%
+\contentsline {paragraph}{The Restriction for Strict Subproofs}{373}{section*.327}%
+\contentsline {paragraph}{The Restriction for \ensuremath {\Box }E}{373}{section*.328}%
+\contentsline {paragraph}{The Restriction for RF}{373}{section*.330}%
+\contentsline {paragraph}{The Restriction for R4}{374}{section*.332}%
+\contentsline {paragraph}{The Restriction for R5}{374}{section*.334}%

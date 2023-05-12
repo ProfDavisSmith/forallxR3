@@ -1,7 +1,22 @@
-This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
-Scanning style file ./forallxd.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file forallxd.glo....done (104 entries accepted, 0 rejected).
-Sorting entries....done (760 comparisons).
-Generating output file forallxd.gls....done (191 lines written, 0 warnings).
-Output written in forallxd.gls.
-Transcript written in forallxd.glg.
+
+
+*** Unable to execute: '"makeindex"  -s "forallxd.ist" -t "forallxd.glg" -o "forallxd.gls" "forallxd.glo"' ***
+
+Failed with error code 1.
+
+Status report:
+
+Index style file forallxd.ist not found.
+Usage: makeindex [-ilqrcg] [-s sty] [-o ind] [-t log] [-p num] [idx0 idx1 ...]
+
+makeindex didn't create a transcript.
+Check that makeindex has been installed and
+is on your system's PATH.
+Your PATH environment variable is set to: 
+C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\texmf\gs10.00.0\bin;C:\texlive\2022\bin\win32;C:\Users\davis\AppData\Local\Microsoft\WindowsApps;C:\Users\davis\AppData\Local\Pandoc\;C:\Users\davis\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\texmf\GnuWin32\bin;C:\Strawberry\perl\bin;C:\texmf\l2h;C:\texmf\gs10.00.0\bin;C:\Users\davis\AppData\Local\MiKTeX\miktex;C:\texmf\gs10.00.0\Resource\Init;C:\texmf\gs10.00.0;C:\Users\davis\AppData\Local\Programs\MiKTeX;
+Try manually running:
+"makeindex"  -s "forallxd.ist" -t "forallxd.glg" -o "forallxd.gls" "forallxd.glo"
+
+
+makeglossaries diagnostic messages:
+Style file not found. (Have you used \noist by mistake?)
