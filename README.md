@@ -75,26 +75,10 @@ You can download PDFs of the **most current version under development** here:
 ## Credits and Copyright Information
 
 forallx: R<sup>3</sup> by Davis A. Smith is a revision and expansion of [forallx: Calgary](https://forallx.openlogicproject.org/), 
-by Aaron Thomas-Bolduc and Richard Zach, used under a 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based on
-[forallx: Cambridge](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html), by 
-[Tim Button](https://www.homepages.ucl.ac.uk/~uctytbu/) (University College London), 
-used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based, in turn,
-on [forallx](https://www.fecundity.com/logic/), by
-[P.D. Magnus](https://www.fecundity.com/job/) 
-(University at Albany, State University of New York),
-used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
-It includes additional material from forallx by P.D. Magnus and
-[Metatheory](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html) by Tim Button, 
-used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and 
-from [forallx: Lorain County Remix](https://github.com/rob-helpy-chalk/openintroduction),
-by [Cathal Woods](https://sites.google.com/site/cathalwoods/) and
-J. Robert Loftis as well as original material by Davis A. Smith. Biographies for Alan Turing, Bertrand Russell, and Kurt Gödel were provided by 
-[The Open Logic Project](https://builds.openlogicproject.org/) and used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. 
-The biography for William of Ockham was provided by [Andrew Jeffery](https://sites.google.com/view/andrewjefferyswebpage) and used with his permission. 
-The image used in the biography of William of Ockham was taken by [John Salmon](https://www.geograph.org.uk/profile/9419) and used under a 
-[CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/) license. 
+by Aaron Thomas-Bolduc and Richard Zach, used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based on [forallx: Cambridge](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html), by [Tim Button](https://www.homepages.ucl.ac.uk/~uctytbu/) (University College London), used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which was based, in turn,
+on [forallx](https://www.fecundity.com/logic/), by [P.D. Magnus](https://www.fecundity.com/job/) (University at Albany, State University of New York), used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. It includes additional material from forallx by P.D. Magnus and [Metatheory](https://www.homepages.ucl.ac.uk/~uctytbu/OERs.html) by Tim Button,  used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, and from [forallx: Lorain County Remix](https://github.com/rob-helpy-chalk/openintroduction), by [Cathal Woods](https://sites.google.com/site/cathalwoods/) and J. Robert Loftis as well as original material by Davis A. Smith. Biographies for Alan Turing, Bertrand Russell, and Kurt Gödel were provided by [The Open Logic Project](https://builds.openlogicproject.org/) and used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. The biography for William of Ockham was provided by [Andrew Jeffery](https://sites.google.com/view/andrewjefferyswebpage) and used with his permission. The image used in the biography of William of Ockham was taken by [John Salmon](https://www.geograph.org.uk/profile/9419) and used under a [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/) license. 
 
+## Copyright Information
 This work is licensed under a [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/). You are free to copy and redistribute the material in any medium or format, and remix, transform, and build
 upon the material for any purpose, even commercially, under
 the following terms:
@@ -105,3 +89,6 @@ suggests the licensor endorses you or your use.
 - [ ] You may not apply legal terms or technological measures
 that legally restrict others from doing anything the license
 permits.
+
+## Funding
+The production of this work was made possible by Professional Development funds provided by [Pierce College's Employee Learning and Development (ELAD)](https://www.pierce.ctc.edu/elad).
