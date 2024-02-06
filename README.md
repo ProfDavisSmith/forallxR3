@@ -50,7 +50,7 @@ natural deduction proofs.
 
 ## About the Author
 
-Davis Smith earned his Master’s Degree in Philosophy from Arizona State University and is an adjunct Philosophy professor at two colleges, Pierce College and Bellevue College. 
+Davis Smith earned his Master’s Degree in Philosophy from Arizona State University and is an adjunct Philosophy professor at three colleges, Pierce College, Bellevue College, and Olympic College, all in Washington, USA. 
 He specializes in teaching introductory level courses. One of his goals in teaching is to make Philosophy
 accessible to all people. The cost and quality of textbooks are under-discussed obstacles to accessibility which Mr. Smith seeks to remove. His other textbooks are: 
 
