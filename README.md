@@ -63,7 +63,10 @@ Outside of his OER textbooks, his current projects relate to the plausibility of
 You can download PDFs of the **most current version under development** here:
 
 - [forallxd.pdf](https://github.com/ProfDavisSmith/forallxR3/blob/main/forallxd.pdf)
-  This is the default, basic edition.
+  This is the latest edition.
+- [forallxd2022.pdf](https://github.com/ProfDavisSmith/forallxR3/blob/main/forallxd2022.pdf)
+  This is the 2022 edition.
+
 ## Planned Future Modifications/Additions
 
 - [ ] Additional explanations for symbolization.
