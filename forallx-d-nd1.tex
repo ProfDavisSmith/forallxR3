@@ -1,9 +1,10 @@
 \part{Natural Deduction 1}
 \label{ch.plnd1}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 12 Natural Deduction}
-\section{Part 12: The Very Idea Of Natural Deduction}
-Way back in Part 2, we said that an argument is valid iff there is no case in which all of the premises are true and the conclusion is false. In the case of PL, this led us to develop truth tables. Each line of a complete truth table corresponds to a valuation. So, when faced with a PL argument, we have a very direct way to assess whether there is a valuation on which the premises are true and the conclusion is false: just thrash through the truth table. Truth tables, however, may not give us much insight and they are only good after the fact; on their own, truth tables don't give much in the way of guidance for how to construct valid arguments in real-world scenarios and they can't, necessarily, give us methods of inference which we can use in our daily lives. Consider two arguments in PL:
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Natural Deduction}
+\section{Part \thechapcount: The Very Idea Of Natural Deduction}
+Way back in \nameref{s:Valid}, we said that an argument is valid iff there is no case in which all of the premises are true and the conclusion is false. In the case of PL, this led us to develop truth tables. Each line of a complete truth table corresponds to a valuation. So, when faced with a PL argument, we have a very direct way to assess whether there is a valuation on which the premises are true and the conclusion is false: just thrash through the truth table. Truth tables, however, may not give us much insight and they are only good after the fact; on their own, truth tables don't give much in the way of guidance for how to construct valid arguments in real-world scenarios and they can't, necessarily, give us methods of inference which we can use in our daily lives. Consider two arguments in PL:
 \begin{earg}
 \item[]P\eor Q, \enot P $\vDash$ Q
 \item[]P\eif Q, P $\vDash$ Q
@@ -41,8 +42,8 @@ For each of the following simple arguments, use a complete truth table to show w
 \item A\eor B, \enot B $\vDash$ A
 \item A\eif B, C\eif D, A\eor C $\vDash$ B\eor D
 \end{enumerate}
-
-\chapter{Part 13 The Basic Rules of PL}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: The Basic Rules of PL}
 From this point on, we will be developing an understanding of a natural deduction system. Notice that I said 'a natural deduction system', there are others just like how there are other mathematical systems and legal systems aside from the ones we are accustomed to. The interesting thing about mathematical and natural deduction systems is that they all are fundamentally based on the same general principles (mathematical systems are based on different principles than natural deduction systems, however). As a result, once you know one system, you know them all. I may have used this metaphor before but this is a lot like learning a language. Once you know the language, and I mean really know it, then you can use it to understand others and be understood by them, you might just need to change your accent. For this system, there is a nice nomenclature (naming-system) for the different inference rules which naturally sorts them in to nice, bite-sized, chunks. For each connective, there will be introduction rules, which allow us to prove a sentence which has that connective as the main logical operator (we are introducing the connective into the sentence), and elimination rules, which allow us to prove something from a sentence which has that connective as the main logical operator (we are removing that connective from the sentence, in a sense).
 \factoidbox{
 A formal proof or derivation is a sequence of sentences, some of which are marked as being initial assumptions (or premises). The last line of the formal proof is the conclusion. (Henceforth, we will simply call these ‘proofs’ or ‘derivations’, but be aware that there are informal proofs too.)}
@@ -84,7 +85,7 @@ At the end of the argument, the last line of the argument, we are hoping that we
 \end{fitchproof}
 
 All that remains to do is to explain each of the rules that we can use along the way from premises to conclusion. You can think of these rules as tools to shift and change the premises to extract what you want from them. There is not a one-size fits all rule which can be used to get what you want (the conclusion) from any set of premises, rather there are a bunch of less robust rules which are used together in different ways to extract the conclusion. The rules are broken down by our logical connectives.
-\section{Part 13.1 Reiteration}
+\section{Part \thechapcount.\theseccount: Reiteration}\stepcounter{seccount}
 The very first rule is so breathtakingly obvious that it is surprising we bother with it at all. Very often in our arguments, especially very long-winded ones, we will need to call-back to something we have already proven. For example, we say things like "as I have already said..." or "if you remember, ..." These indicate that we are circling back, so to speak. The first and simplest rule of Propositional Logic (PL) functions in the same way. If you already have shown something in the course of a proof, the reiteration rule, cited as 'R'. allows you to repeat it on a new line. For example:
 
 \begin{fitchproof}
@@ -101,7 +102,7 @@ Every time you make a new line of an argument, prove something, you need to give
 \end{fitchproof}}
 
 The point is that, if any sentence A occurs on some line, then we can repeat A on later lines. To reiterate, each new line of our proofs (including repeated ones) must be justified by some rule and here we have ‘R m’. This means something like "Reiteration applied to line m" or "Reiteration of line m". There are two aspects of this which deserve being emphasized: First, in the examples like this, ‘A’ is not a sentence of PL (here). Rather, it a symbol in the metalanguage, which we use when we want to talk about any sentence of PL. Any sentence in PL which I have or have proven could be substituted in for A and this will work. Second, and similarly, ‘m’ and ‘n’ are not how we are going to number our lines in a proof. As before, I am just using these as a stand-in for any two lines, 'm' is the line which I already have and 'n' is the line which I am making. They are, in a sense, symbols in the metalanguage, which we use when we want to talk about any line number of a proof. In an actual proof, the lines are numbered ‘1’, ‘2’, ‘3’, and so forth. But when we define the rule, we use variables like ‘m’ to underscore the point that the rule may be applied at any point.
-\section{Part 13.2 Conjunction Rules}
+\section{Part \thechapcount.\theseccount: Conjunction Rules}\stepcounter{seccount}
 \subsection{Conjunction Introduction}
 
 Suppose that we have in someway shown two things, either through proving them or through the argument's assumptions: First, that Ludwig is an economist and second, that Ludwig is a hothead. Also suppose that the main purpose of the argument was to show that Ludwig is both an economist and a hothead. It should seem at this point pretty obvious that the first supposition means that we've done it. Both of those statements are true, so they are true together. With PL, we just need to take an extra step to conjoin them. This step is often implied in ordinary arguments, but PL doesn't allow for implied steps; the Devil is in the details and glossing over a step leaves room for faulty reasoning.  In the example given, we might adopt the following symbolization key:
@@ -213,7 +214,7 @@ Let’s give one final illustration. When using the\eand I rule, there is no req
 \end{fitchproof}
 Simple, but effective.
 
-\section{Part 13.3 Conditional Rules}
+\section{Part \thechapcount.\theseccount: Conditional Rules}\label{chap.conditionalrules}\stepcounter{seccount}
 
 \subsection{Conditional Elimination}
 
@@ -306,7 +307,7 @@ While it is a perfectly valid proof and there are no mistakes, this way sort of 
 \end{fitchproof}
 
 They both took 5 lines total, but this second way of doing it is a far more direct path.
-\section{Part 13.4 Disjunction Rules}
+\section{Part \thechapcount.\theseccount Disjunction Rules}\stepcounter{seccount}
 \subsection{Disjunction Introduction}
 
 Unlike some of the other introduction rules, there really isn't an intuitive example of this one in action, on its own, which drives the point or idea of this rule home. Like all introduction rules, we are adding something to the line(s) we are citing; but what are we adding? In this case, we are adding a disjunction,'\eor '. To see this in action, I will use it in conjunction with another rule. Take this example:
@@ -364,7 +365,7 @@ and
 \end{fitchproof}}
 
 Either way works. As usual, the disjunction and the negation of one disjunct may occur in either order and need not be adjacent. However, we always cite the disjunction first. As a fair warning, there is a common formal fallacy associated with this one. This is sometimes called affirming a disjunct. In this case, you have something like A\eor B and A, so you think you can get \enot B. This doesn't work in our logical system because disjunctions are inclusive, one or both of the disjuncts could be true. Watch out for this and in everyday life, I strongly recommend purging yourself of the tendency to use this fallacious reasoning, limiting yourself to the valid\eor E.
-\section{Part 13.5 The Dilemma Rule}
+\section{Part \thechapcount.\theseccount: The Dilemma Rule}\stepcounter{seccount}
 The dilemma rule is going to be slightly different than the others which we have seen. As you may have guessed, disjunctions, just by themselves, really can't do much. Yes, we can introduce them into the argument through the disjunction introduction rule and yes if we have the negation of one of the disjuncts, we can get the other one (this is the disjunction elimination rule) but when they are on their lonesome, they are hard to work with. For example, suppose that Tanya is either a librarian or a teacher. What can we conclude from this? We can't get that Tanya is a librarian, because she could just as easily be a teacher. Similarly, we can't conclude that she is a teacher because she could be a librarian. But suppose that we had or could somehow show two things: First, if Tanya is a librarian, then she has read a lot and second, if Tanya is a teacher, then she is good at public speaking. Since Tanya is either a librarian or a teacher (one or both of these must be true), we know from the basic rule of conditional elimination that Tanya either is well-read (has read a lot) or is good at public speaking. This is essentially how the dilemma rule works. Here is another example of this reasoning at work:
 
 \begin{earg}
@@ -495,9 +496,9 @@ For the following arguments, fill in the missing line, rule, or citations to com
 \have[3]{p}{A}\ae{ }
 \have[4]{q}{Z}\ce{,}
 \end{fitchproof}
-
-\chapter{Part 14 Tips and Tricks for Proofs}
-\section{Part 14.1 Working Backwards From What You Have}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Tips and Tricks for Proofs}
+\section{Part \thechapcount.\theseccount: Working Backwards From What You Have}\stepcounter{seccount}
 Sometimes, we will come across an idea or stance, either told to us or something which we came up with, which we thinks is very right (true or correct) or very wrong (false or incorrect). But, as good and logical thinkers, we can't stop there. It is very easy to say what you think, it can be very hard to give reasons why you think it and harder still to prove that what you think is correct. When faced with this situation, it may be useful to work backwards from the stance (the 'conclusion' you want to reach) and see what you would need to have to prove it and what logical moves you would need to take from what you need. 
 
 To work backwards, in this way, a solid starting point would be to look at the main operator, the dominate connective, in the conclusion you wish to reach. We have seen the different possible connectives and have many of the operations which could give us conclusions with those connectives as the main operators. Once you know what the main operator is, look at the different inference rules which you could use to get it and then either match what's needed to use those rules with the premises (what you know in 'real-world' cases) or set those as new goals and continue to work backwards. Below are some tips and examples of working backwards for each of the connectives we have tools for. For all of the examples and for any time you might want to use these methods, you should start by writing out a 'template' or 'incomplete' proof, where you have the first lines being the premises, a space (here represented by three dots), and then the conclusion with a variable letter for the number. When you are done, you fill in the variable letters you had as place-holders with the actual numbers which make sense. There will be examples of this below.
@@ -618,7 +619,7 @@ Currently, you do not have the tools to convert disjunctions into things which a
 
 As before, you do not currently have the tools to introduce conditionals, this is the next module. So, as it sits, there are only two options, either the conditional is contained in someway in the premises or you will need to use HS to make it. If the conditional is contained in the premises, then you can treat it as a simple sentence, as before. If, however, you must use HS to make it, you will have two new goals, something like A\eif P and something like P\eif B to get the conclusion A\eif B. 'P', in this case, could be anything. Check for A being the antecedent of a conditional and B being the consequent of another and then work towards getting those conditionals. 
 
-\section{Part 14.2 Working Forwards From What You Have}
+\section{Part \thechapcount.\theseccount: Working Forwards From What You Have}\stepcounter{seccount}
 The opposite of working backwards is to work forward. Sometimes, once we see the conclusion we are shooting for, it will be unclear what the reasonable sets should be, even when working backwards. When this happens, it pays to have a more playful attitude and start messing with the premises to see what, if anything, you can derive. You might not need what you get, and you can always cut out the products of your playfulness from the final proof, but working forward in this way, not necessarily with a goal, could clear up the gunk which makes the path to your conclusion unclear. Here are some tips for the connectives we can work with:
 
 \subsection{Working Forward from a Conjunction}

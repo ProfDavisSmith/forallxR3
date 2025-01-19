@@ -1,8 +1,9 @@
 \part{Natural Deduction in QL 2}
 \label{ch.qlnd2}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 26 Identity (‘=')}
-\section{Part 26.1 Symbolizing Identity Statements}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Identity (‘=')}
+\section{Part \thechapcount.\theseccount: Symbolizing Identity Statements}\stepcounter{seccount}
 \subsection{The Need for a New Connective/Predicate}
 
 Thus far, you have everything necessary to work with QL and hopefully, apply it in your daily life, if we didn't have multiple ways of saying the same thing and we didn't obscure or leave out certain natural inferences. For example, consider this sentence:
@@ -147,7 +148,7 @@ It might be tempting to add a predicate to our symbolization key, to symbolize t
 $\exists$x$\exists$y\enot (x=y)\eand \enot $\exists$x$\exists$y$\exists$z((\enot (x=y)\eand \enot (y=z))\eand \enot (x=z))\\
 $\exists$x$\exists$y[︁\enot (x=y)\eand $\forall$z((x=z)\eor (y=z))]
 \end{center}
-\section{Part 26.2 The Semantics and Rules for Identity}
+\section{Part \thechapcount.\theseccount: The Semantics and Rules for Identity}\stepcounter{seccount}
 \subsection{Semantics for identity}
 
 Identity is a special predicate of QL as it can also function as a connective. Because of this, we write it a bit differently than other two-place predicates: ‘x=y’ instead of ‘Ixy’, or something like that. More important, though, its interpretation is fixed, once and for all. Much like how regardless of the interpretation, the connectives always behave the same way (given their inputs), identity will always mean and behave the same way regardless of interpretation.
@@ -268,9 +269,9 @@ Determine whether each of the following is valid or invalid, construct a proof i
 \end{enumerate}
 
 
-
-\chapter{Part 27 Equivalency Rules in QL}
-\section{Part 27.1 The Equivalency Rules in PL are in QL}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Equivalency Rules in QL}
+\section{Part \thechapcount.\theseccount: The Equivalency Rules in PL are in QL}\stepcounter{seccount}
 As was previously mentioned, QL is an extension of PL. This means that not only do you have access to all of the inferences rules in PL but you also have access to all of the equivalency rules as well. Just like in PL, these rules can be applied to the main operator of a sentence (the entire sentence) or to just a part of it. it is worth remembering that equivalency rules are different from inference rules. Inference rules can only be done on the main operator and typically require two, or more, lines for the citation. Equivalency rules are basically when you are saying the same thing as before but in a different way (as I have mentioned). 
 
 All that said, in QL, you can use Double Negation (DN), Commutativity (Comm), Material Conditional (MC), Biconditional Exchange (\eiff ex), DeMorgan's (DeM), and Tautology (TAUT). Below is a basic overview (refresher) of these rules and some examples of how they can be helpful in QL.
@@ -373,7 +374,7 @@ And here is the proof:
 \end{fitchproof}
 
 We conclude here with everything isn't P. 
-\section{Part 27.2 Change of Quantifier (Quantifier Negation)}
+\section{Part \thechapcount.\theseccount: Change of Quantifier (Quantifier Negation)}\label{s.QN}\stepcounter{seccount}
 When we are symbolizing statements into QL, it should be noted that \enot $\forall$ x\enot Ax is logically equivalent to $\exists$ xAx and this makes sense. For example, if I say "it's not the case that everything isn't purple", this is just a long-winded way of saying that "something is purple". Similarly, \enot $\exists$ x\enot Ax is equivalent to $\forall$ xAx, and this too makes sense; if I say "it's not the case that someone isn't happy", this is, again, a long winded way of saying that "everyone is happy." In QL, these are actually provably equivalent, but it is a rather gruesome, involved proof. If you would like, for an added exersize, try to prove the following:
 \begin{earg}
 \item[]\enot $\forall$ x\enot Ax \therefore  $\exists$ xAx

@@ -1,8 +1,9 @@
 \part{Validity in QL}
 \label{ch.qlvalidity}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 21 Symbolizing VS Translating}
-\section{Part 21.1 Extensionality}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Symbolizing VS Translating}
+\section{Part \thechapcount.\theseccount: Extensionality}\stepcounter{seccount}
 I have often mentioned that PL is a truth-functional language. The sentence letters are, in a sense, assigned a truth value and then the connectives (being truth-functional) return a truth value as an output given the kind of input it was given. This is all we can do with PL; map sentences to particular truth values. We can do this directly; for example, we might stipulate that the PL sentence ‘P’ is to be true, which is what we did with truth tables. We can also map the sentences to truth values indirectly by offering a symbolization key and seeing whether this lines up with reality, for example:
 \begin{ekey}
 \item[B] Big Ben is in London
@@ -31,7 +32,7 @@ So, in particular:
 This is an indirect way of stipulating which things a predicate is true of. Alternatively, we can stipulate predicate extensions directly. For example, we can stipulate that ‘Px’ is to be true of Davis Smith, and Davis Smith alone. As it happens, this direct stipulation would have the same effect as the indirect stipulation, since, as of the time of writing this,  Davis, and Davis alone, teaches Logic at Pierce College. The issue is that the English predicates ‘x is Davis Smith’ and ‘x teaches Logic at Pierce College’ have very different meanings despite being true of the same things. QL simply cannot tell the difference. If we were to incorporate aspects of possibility (and impossibility) into our understanding, then it will help, but those are additions beyond the scope here.
 
 The point is that QL does not have the resources for dealing with nuances of meaning. When we interpret QL, all we are considering is what the predicates are true of, regardless of whether we specify these things directly or indirectly. The things a predicate is true of are known as the extension of that predicate. One could, in principle, think of predicates as sets of terms and ‘Pa' is true if and only if a is a part of the set P (is a part of the extension of P). We say that QL is an extensional language because QL does not represent differences of meaning between predicates that have the same extension. This is why we speak of symbolizing English sentences in QL. It is doubtful that we are translating English into QL, for translation should preserve meaning.
-\section{Part 21.2 Extensions}
+\section{Part \thechapcount.\theseccount: Extensions}\stepcounter{seccount}
 We can stipulate directly what predicates are to be true of. And our stipulations can be as arbitrary as we like. For example, we could stipulate that ‘Hx’ should be true of, and only of, the following objects:
 \begin{earg}
 \item[]Justin Trudeau
@@ -49,7 +50,7 @@ Then ‘Hj’ and ‘Hp’ will both be true, on this interpretation, but ‘Ha�
 Any well-defined collection of objects is a potential extension of a one-place predicate. The example above shows one way of stipulating the extension of ‘Hx’ by enumeration, i.e., we simply list the objects in the extension of ‘Hx’. We can also stipulate the extension, as we have also already seen, by giving an English predicate, such as ‘x teaches Logic at Pierce College or ‘x is an even integer between 3 and 9’. The latter would specify an extension consisting of, and only of, 4, 6, and 8.
 
 As another note, there are some predicates such that either it's impossible for them to be true of anything or which aren't true of anything by chance. For example, consider the predicate in English ‘x is a round square’. It is impossible for anything to be a round square as it is a contradiction of terms. Similarly, a common example is ‘x is a unicorn'. Despite what my lovely little cousins once believed, unicorns do not exist. While unicorns are possible, in the real world, nothing is a unicorn. When a predicate is not true of anything, we say that its extension is empty. We do allow empty extensions, and we can stipulate that the extension of a ‘Hx’ is to be empty simply by not listing any members. (It may be odd to consider collections of no things, but logic is odd this way sometimes.) This is useful when we are dealing with impossible things, such as being a round-square. When an extension is empty, the predicate is not true of anything. This is useful also when considering the possible truth values for a term-predicate pair. In mathematics, more particularly Set Theory, there are empty sets, called ‘The Null Set', which are analogous to what we have here.
-\section{Part 21.3 Many-Placed Predicates}
+\section{Part \thechapcount.\theseccount: Many-Placed Predicates}\label{s.manyplaced}\stepcounter{seccount}
 Extensions are very useful and easy to understand when we are considering one-place predicates. But there are other predicates out there; two-place, three-place, four-place\ldots  The question now is whether we can apply the same general idea behind listing the members of an extension to many-place predicates. The answer is yes, but I will admit that it is a bit messier than one-place predicates. Consider a symbolization key like:
 \begin{ekey}
 \item[Lxy] x loves y
@@ -58,7 +59,7 @@ Previously, we have noted that this symbolization key should be read as saying:
 \begin{center}
 ‘Lxy’ and ‘x loves y’ are to be true of exactly the same things
 \end{center}
-So, in particular]
+So, in particular:
 \begin{center}
 ‘Lxy’ is to be true of x and y (in that order) iff x loves y.
 \end{center}
@@ -96,7 +97,29 @@ And here are the extensions of these predicates directly stipulated: 
 \item[Txy] $\openntuple$Viola,Sebastian$\closentuple$,$\openntuple$Sebastian,Viola$\closentuple$
 \end{ekey}
 And there are many more aside. As you watch the play, you keep track of the relations between the characters and eventually it becomes clear how the humorous events will unfold.
-\section{Part 21.4 Interpretations}
+\subsection{Features of Many-Placed Predicates}\label{ss.featuresmanyplaced}
+
+You might notice that some relational predicates have natural, logical inferences `built in'. For example, in the example from Twelfth Night we have Txy (x is the twin sibling of y). Given the very meaning of the phrase `twin sibling', if x is a twin sibling of y, then y is a twin sibling of x (for that relation, the terms can be flipped, so to speak).\footnote{This does not work for all relations, there are plenty where it's true for one ordering but false for another. For example, if Dave is taller than Abbott, it doesn't make sense to say that it follows that Abbott is taller than Dave.} Similarly, take the `taller than' relation. If Dee is taller than Davis and Davis is taller than Sandie, it follows naturally that Dee is taller than Sandie.\footnote{As before, this only works for some relations. For example, if Malvolio loves Olivia and Olivia loves Viola, it does not follow that Malvolio loves Viola.} This points to the fact that for some relational predicates, there are inferences which one can make by their very nature, regardless of the meaning of the terms plugged into the predicate. 
+
+Here we will look at some of the general features a relational predicate could have which entail some natural logical operations. Later on in this textbook (\ref{ch.ml1}), we will see these same features applied to the logics of possibility, knowledge, and time. There are four generic features which a relational predicate could have, each with some kind of inference one could make.\footnote{A relational predicate could have all of these, some of them, or none of them, shown in the previous examples.} A relational predicate could be serial, reflexive, transitive, or symmetric.
+
+\subsubsection{Seriality}\label{sss.serial}
+
+Although the term `\gls{serial}' might sound like the breakfast item one might have with milk, this term properly relates to the notion of a `series'. In a book, television, or movie series, there is a next one to read or watch, a sequel. A relation is serial when everything bares that relation to something (it could be to itself or to something else). For example, every person has a (biological) parent; we could call this relation Cxy (x is the child of y). Cxy is serial because for any person, x, there is a y such that Cxy. If we know that a relation is serial, then we can deduce that everything (within the relevant domain) bears that relation. 
+
+\subsubsection{Reflexivity}\label{sss.reflexive}
+
+When you look in the mirror, what do you see? Yourself. you see your \emph{reflection}. Some relational predicates are \gls{reflexive} in the same kind of way. A relation is reflective when everything bares that relation to itself. Take as an example the relation `is the same age as', Sxy. After some quick thinking, it should be clear that while different things may or may not be the same age, everything is always the same age as itself. This relation is reflective because for all x, Sxx. If you know that a relation is reflexive, then you can deduce that everything bares that relation to itself. 
+
+\subsubsection{Transitivity}\label{sss.transitive}
+
+Sometimes a feature or property will flow across to others, transition from one place to another. A relation is \gls{transitive} when that sort of notion applies. For example, Sandie is paid more than Davis and Davis is paid more than Ashley, this `paid more' relation transfers down so it makes perfect sense to say that Sandie is paid more than Ashley. The `'paid more'  relation is transitive. A relation, R, is transitive if for any x, y, and z you pick, if Rxy and Ryz, then Rxz. Transitivity is most often seen in relations which are comparisons of value or scale, relations which are `more', `less', `better', or `worse'. But this feature could be in other, non-comparative, relations depending on context.   
+
+\subsubsection{Symmetricity}\label{sss.symmetric}
+
+In geometry, a shape is symmetric when you could flip it along a line and it would look the same. Here, a relation is \gls{symmetric} when you could flip the order of the terms and it would come out with the same truth value. For example, calling back to the example from Twelfth Night, the `twin sibling' relation is symmetric because it works both ways, Viola is the twin of Sebastian and Sebastian is the twin of Viola. One can not be the twin of another without at the same time having them be their twin.\footnote{x is the twin of y if and only if y is the twin of x.} 
+
+\section{Part \thechapcount.\theseccount: Interpretations}\stepcounter{seccount}
 We defined a valuation in PL as any assignment of truth and falsity to sentence letters. We could list out all of the possible assignments of truth and falsity with a truth table. QL, sadly, does not have the equivalent of a truth table where we could list out all of the possible assignments of truth and falsity. Rather, we need to assign the truth and falsity of our name-predicate pairs though interpretations. Interpretations consist of four (4) things:
 \factoidbox{
 \begin{enumerate}
@@ -205,7 +228,79 @@ We can represent this as a diagram, using L, H, B, P, and T as the labels for th
 	\end{tikzpicture}
 \end{center}
  
+ \subsection{Using Features of Relational Predicates in Diagrams}
  
+ While it is true that a relational predicate could have a feature under one interpretation and not have that feature in another, you should notice that, by definition, if a relational predicate as one of the features which we listed, then that feature applies in every instance of it (within that interpretation). For example, we can make a diagram for the relation Lxy with a two member domain \{0,1\}, specifying that L is reflexive like so:
+ 
+ \begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1)  {0};
+		\node[world] (w2) [ right=of w1]{1};
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[domain:] $0,1$
+\item[L:]$\openntuple 0,0\closentuple$,$\openntuple 0,1\closentuple$,$\openntuple 1,1\closentuple$  
+\end{itemize}
+
+Notice that while L is reflexive in this interpretation, it is not only reflexive, it has more relations than just something to itself. This same diagram could be used for a simple case of a relational predicate which is serial because every thing has that relation to something. The above interpretation of L, it should be clear is not symmetric. There is the relation $\openntuple 0,1\closentuple$ but not the relation $\openntuple 1,0\closentuple$. If L were symmetric in a given interpretation, then the diagram would need to have all of the arrows be double arrows, like so: 
+
+ \begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1)  {0};
+		\node[world] (w2) [ right=of w1]{1};
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[<->] (w1) edge (w2);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[domain:] $0,1$
+\item[L:]$\openntuple 0,0\closentuple$,$\openntuple 0,1\closentuple$,$\openntuple 1,0\closentuple$,$\openntuple 1,1\closentuple$  
+\end{itemize}
+
+The above diagram, you might notice, is also transitive, because it only has a domain of two, is symmetric, and is reflexive. It is possible, however, to have an interpretation which is reflexive and symmetric but not transitive, like so:
+
+ \begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1)  {0};
+		\node[world] (w2) [ right=of w1]{1};
+		\node[world] (w3) [right=of w2]{2};
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w3) edge[reflexive above] (w3);
+		\path[<->] (w1) edge (w2);
+		\path[<->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[domain:] $0,1,2$
+\item[L:]$\openntuple 0,0\closentuple$,$\openntuple 0,1\closentuple$,$\openntuple 1,0\closentuple$,$\openntuple 1,1\closentuple$,$\openntuple 1,2\closentuple$,$\openntuple 2,1\closentuple$,$\openntuple 2,2\closentuple$  
+\end{itemize}
+
+The reason it is not transitive is because $\openntuple 0,1\closentuple$ and $\openntuple 1,2\closentuple$ hold but $\openntuple 0,2\closentuple$ does not hold. To finish out this simple example, to make an interpretation where L is also transitive, we need to include that additional double arrow:
+
+ \begin{center}
+	\begin{tikzpicture}[modal]
+		\node[world] (w1)  {0};
+		\node[world] (w2) [ right=of w1]{1};
+		\node[world] (w3) [right=of w2]{2};
+		\path[->] (w2) edge[reflexive above] (w2);
+		\path[->] (w1) edge[reflexive above] (w1);
+		\path[->] (w3) edge[reflexive above] (w3);
+		\path[<->] (w3) edge[bend left] (w1);
+		\path[<->] (w1) edge (w2);
+		\path[<->] (w2) edge (w3);
+	\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item[domain:] $0,1,2$
+\item[L:]$\openntuple 0,0\closentuple$,$\openntuple 0,1\closentuple$,$\openntuple 0,2\closentuple$,$\openntuple 1,0\closentuple$,$\openntuple 1,1\closentuple$,$\openntuple 1,2\closentuple$,$\openntuple 2,0\closentuple$,$\openntuple 2,1\closentuple$,$\openntuple 2,2\closentuple$  
+\end{itemize}
+
 
 \subsection{Relational Predicates and `The Knowledge Graph'}
 
@@ -236,8 +331,8 @@ If you go on to Google and search for a person, place or thing, you might notice
 \end{center}
 
 You might notice that I labeled the `edges' (arrows) in this graph (diagram). This is because we are dealing with multiple different relations between the `nodes'. These `nodes' all link together with relations and Google then presents these relational predicates to you in an understandable way. There is an entire field in Computer Science which deals with the relations between data and how to organize it into these sorts of structures, confusingly called `Ontology' (Philosophy also has a field named that, dealing with the question `what exists?'). These data structures and organizations, fundamentally, reduce to constructing interpretations for a particular domain (namely, the relevant data/information in the computer system).   
-
-\chapter{Part 22 Truth in QL}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Truth in QL}
 We have introduced you to interpretations. Since, among other things, they tell us which predicates are true of which objects, they will provide us with an account of the truth of atomic sentences. However, we now need to say, precisely, what it is for an arbitrary QL sentence to be true or false in an interpretation. We know from the previous content that there are three kinds of sentence in QL:
 \begin{ebullet}
 \item[\textbullet]atomic sentences
@@ -252,14 +347,14 @@ We need to explain truth for all three kinds of sentence. We will provide a comp
 \item[Px] x is a philosopher
 \item[Rxy] x was born before y
 \end{ekey}
-\section{Part 22.1 Atomic Sentences}
+\section{Part \thechapcount.\theseccount: Atomic Sentences}\stepcounter{seccount}
 The truth of atomic sentences should be fairly straightforward. For sentence letters, the interpretation specifies if it is true or false. The sentence ‘Pa’ should be true just in case ‘Px’ is true of ‘a’. Given our go-to interpretation, this is true iff Aristotle is a philosopher. Aristotle is a philosopher. So the sentence is true. Equally, ‘Pb’ is false on our go-to interpretation. Likewise, on this interpretation, ‘Rab’ is true iff the object named by ‘a’ was born before the object named by ‘b’. Well, Aristotle was born before Beyoncé. So ‘Rab’ is true. Equally, ‘Raa’ is false: Aristotle was not born before Aristotle.
 
 Dealing with atomic sentences, then, is very intuitive. 
 \factoidbox{
 When R is a one-place predicate and a is a name, the sentence Ra is true in an interpretation IFF R is true of the object named by a.\\ 
 When R is an n-place predicate and $a_1, a_2, \ldots , a_n$ are names, the sentence R$a_{1}a_{2}\ldots a_{n}$ is true in an interpretation iff R is true of the objects named by $a_1, a_2, \ldots , a_n$ (in that order) in that interpretation.}
-\section{Part 22.2 Connectives}
+\section{Part \thechapcount.\theseccount: Connectives}\stepcounter{seccount}
 Remember that QL sentences can be built up from simpler ones using the truth-functional connectives that were familiar from PL. The rules governing these truth-functional connectives are exactly the same as they were when we considered PL. Here they are:
 \factoidbox{
 \metav{A}\eand \metav{B} is true in an interpretation iff both \metav{A} is true and \metav{B} is true in that interpretation\\
@@ -276,7 +371,7 @@ This presents the very same information as the characteristic truth tables for t
 ‘Pa\eand \enot (Rba\eand Rab)’ is true, because ‘Pa’ is true and ‘Rba' is false\\
 }
 Make sure you understand these examples.
-\section{Part 22.3 Quantifiers}
+\section{Part \thechapcount.\theseccount: Quantifiers}\stepcounter{seccount}
 The exciting innovation in QL, though, is the use of quantifiers, but expressing the truth conditions for quantified sentences is a bit more fiddly than one might first expect. We will go through three different ways in which one could understand the truth conditions for quantifiers (the third being the correct one). 
 
 \subsection{The First Way to Think About Them}
@@ -397,9 +492,9 @@ Determine whether each of the following sentences is true or false in that inter
 \item $\exists x\, \atom{G}{x} \eand \exists x \enot \atom{G}{x}$
 \item $\forall x\exists y(\atom{G}{x} \eand \atom{H}{y})$
 \end{enumerate}
-
-\chapter{Part 23 Semantic Concepts and Validity}
-\section{Part 23.1: Semantic Concepts}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Semantic Concepts and Validity}
+\section{Part \thechapcount.\theseccount: Semantic Concepts}\stepcounter{seccount}
 Defining truth in QL was quite fiddly. But now that we are done, we can define various other central logical notions. These definitions will look very similar to those for PL, from Part 9. However, remember that they concern interpretations, rather than valuations. We will use the symbol ‘$\entails$’ for QL much as we did for PL. So:
 \begin{center}
 $A_1,A_2,\ldots,A_n$ $\entails$ C
@@ -415,7 +510,7 @@ means that A is true in every interpretation, which is the same as saying that i
 \item[\textbullet] Two QL sentences A and B are equivalent iff they are true in exactly the same interpretations as each other; i.e., both A $\entails$ B and B $\entails$ A.
 \item[\textbullet] The QL sentences $A_1,A_2,\ldots,A_n$ are jointly satisfiable iff some interpretation makes all of them true. They are jointly unsatisfiable iff there is no such interpretation.
 \end{ebullet}}
-\section{Part 23.2 Using Interpretations}
+\section{Part \thechapcount.\theseccount: Using Interpretations}\stepcounter{seccount}
 \subsection{Tautologies and contradictions}
 
 Suppose we want to show that ‘$\exists$x Axx\eif Bd’ is not a tautology. This requires showing that the sentence is not true in every interpretation; i.e., that it is false in some interpretation. If we can provide just one interpretation in which the sentence is false, then we will have shown that the sentence is not a tautology.
@@ -631,7 +726,7 @@ Show that the following arguments are invalid:
 
 
 
-\section{Part 23.3: Reasoning about All Interpretations}
+\section{Part \thechapcount.\theseccount: Reasoning about All Interpretations}\stepcounter{seccount}
 \label{allinterp}
 \subsection{Tautologies and contradictions}
 

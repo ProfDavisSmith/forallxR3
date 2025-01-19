@@ -1,13 +1,14 @@
 \part{Natural Deduction 2}
 \label{ch.plnd2}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 15 The Idea Behind Equivalency}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: The Idea Behind Equivalency}
 At the moment, you have almost all of the tools necessary to prove any argument (so long as it is deals with simple sentences) and you would have all of those tools if we didn't have different ways of expressing the same thing. Some of you might have noticed from the exercises for truth tables that there are a few different ways of symbolizing certain English sentences and those different symbolizations are all logically equivalent. This leaves a gaping hole in our ability to handle and prove arguments. Take, as an example, this argument:
 \begin{center}
 \enot P\eor Q, (P\eif Q)\eif R $\vDash$ R
 \end{center}
 We could make a truth table for this argument and see that it is valid but our natural deduction system, currently, doesn't have the tools necessary to make a proof for it. In any language, there are going to be multiple ways of expressing the same thing and PL is no different. What we need is a way to move between statements, to change one to something logically equivalent to it. We will now introduce some derived rules that may be applied to part of a sentence. These are called rules of equivalency but they are also called the rules of replacement because they can be used to replace the whole sentence or just a part of the sentence with a logically equivalent expression. Noticing these is very useful in daily life. Sometimes, we will miss some entailment or string of reasoning because the initial bit or some component of it is not phrased in a way we are familiar or it is phrased in a way which conceals the entailment. This phrasing is not necessarily lying, because the two statements mean the same thing but it is in bad faith. Knowing these rules of equivalency will help you navigate around these sort of situations.  
-\section{Part 15.1 Double Negation and Communativity}
+\section{Part \thechapcount.\theseccount: Double Negation and Communativity}\stepcounter{seccount}
 \subsection{Double Negation}
 The first rule of equivalence (equivalency rule) which we will have at our disposal is called double negation, which we will abbreviate for citations as `DN'. In languages like standard English, when you have two negatives, they cancel each other out. In formal logical languages like this one, this is true as well. That said, you should be aware that context and emphasis can prevent them from doing so. Consider: `Jane is not not happy'. Arguably, one cannot infer `Jane is happy', since the first sentence should be understood as meaning the same as `Jane is not unhappy'. But in the right contexts, that first statement could mean `Jane is in a state of profound indifference'. Similarly, a person might say `I didn't do nothing', which if DN had its way would mean that they did something. Such contextual and vernacular cues should be taken into consideration when you are interpreting the statements.  As usual, moving to PL forces us to sacrifice certain nuances of English expressions. Double negation works like this:
 
@@ -74,7 +75,7 @@ It is possible to give a proof of this using only the basic rules (once you have
 \have[3]{c}{(P\eor M)\eif (M\eand P)}\comm{b}	
 \end{fitchproof}
 If you recall the section about the characteristic truth tables, three of our connectives were symmetric, meaning that it did not matter if you flipped the order of the two subformulae. This is essentially the idea here, transferred into our deductive system.
-\section{Part 15.2 Material Conditional and Biconditional Exchange}
+\section{Part \thechapcount.\theseccount: Material Conditional and Biconditional Exchange}\stepcounter{seccount}
 \subsection{Material Conditional}
 
 You might have noticed that there is a funny similarity to how \eif E and \eor E work. This is not just some interesting coincidence, rather because A \eif  B is what's called a `material conditional', it is equivalent to \enot A \eor  B. With the appropriate equivalency rule, it is possible to have all of the functionality of \eor E, \eif E, and MT with only \eor E and this equivalency rule, though, I will admit, it does become cumbersome, so \eif E and MT are kept around to make thing simpler. The equivalency rule which makes this possible is abbreviated as MC for `material conditional'. It takes two forms:
@@ -119,7 +120,7 @@ This argument is valid and we can use this rule to prove it. The simple proof in
 \end{fitchproof}
 
 Once you have \eif I in your tool-bag, you can use this equivalency rule to generate (create) biconditionals, as all you need to do is prove that the two conditionals are true and then conjoin them.
-\section{Part 15.3 De Morgan's Laws and Tautology}
+\section{Part \thechapcount.\theseccount: De Morgan's Laws and Tautology}\stepcounter{seccount}
 \subsection{De Morgan's Laws}
 Two more replacement rules are called De Morgan's Laws, named for the 19th century British logician August De Morgan (although De Morgan did discover these laws, he was not the first to do so). The rules capture useful relations between negation, conjunction, and disjunction. Here are the rules, for simplicity's sake and because they are so similar, we will use the same abbreviation for both, DeM:
 \factoidbox{\begin{earg}
@@ -187,10 +188,10 @@ Give a proof for each of the following arguments:
 \end{enumerate}
 
 
-
-\chapter{Part 16 Indirect Proofs}
-\section{Part 16.1 Conditional Proofs}
-As you may recall from Part 13.4, I avoided introducing you to the Conditional Introduction rule (\eif I) because it was significantly different and a little bit more complicated than the others we were covering. This is because \eif I is a concluding citation to an indirect proof. The rule for conditional introduction is also quite easy to motivate. The following argument should be valid:
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Indirect Proofs}
+\section{Part \thechapcount.\theseccount: Conditional Proofs}\stepcounter{seccount}
+As you may recall from \nameref{chap.conditionalrules}, I avoided introducing you to the Conditional Introduction rule (\eif I) because it was significantly different and a little bit more complicated than the others we were covering. This is because \eif I is a concluding citation to an indirect proof. The rule for conditional introduction is also quite easy to motivate. The following argument should be valid:
 \factoidbox{\begin{earg}
 \item[] Ludwig is an economist. 
 \item[\therefore] If Ludwig is a hothead, then Ludwig is both an economist and a hothead.
@@ -257,7 +258,7 @@ Many of the rules which we have previously covered are sometimes called `derived
 \close
 \have[6]{A4}{P\eif R} \ci{A2-B2}
 \end{fitchproof}		
-\section{Part 16.2: Reductio Ad Absurdum (Negation Introduction and Negation Elimination)}
+\section{Part \thechapcount.\theseccount: Reductio Ad Absurdum (Negation Introduction and Negation Elimination)}\stepcounter{seccount}
 An effective form of argument is to argue your opponent into contradicting themselves. At that point, you have them on the ropes. They have to give up at least one of their assumptions. For example, suppose that your opponent is arguing that there is a biggest natural number:
 
 \factoidbox{
@@ -355,9 +356,9 @@ Use indirect proofs to prove the following:
 \item $\therefore (A \eif B) \lor (B \eif A)$
 \item $\therefore ((A \eif B) \eif A) \eif A$
 \end{enumerate}
-
-\chapter{Part 17 Tips For Proofs}
-\section{Part 17.1 Working Backwards from What You Want}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Tips For Proofs}\label{tips.pl}
+\section{Part \thechapcount.\theseccount: Working Backwards from What You Want}\stepcounter{seccount}
 Often, when you are trying to make a proof for some conclusion, C, it will not be directly obvious how you should go about doing it; that is, you aren't sure where to start. In these cases, it is useful to work backwards. Start with the conclusion and then figure out what lines you'll need to get for something like it, then figure out what you need to do to get those lines, and so on. In the `real-world', this is a very useful way of thinking. Often, we will encounter a stance, idea, or purported fact and think something along the lines of "that's obviously true" or "dude, that's obviously false." But, as good, logical, thinkers, we can't stop there; we need some supporting reasons or evidence. So, we figure out what else we will need to believe in order to support this stance and work backwards from there.
 
 My advice, both for proofs in this class and the analogous cases in the `real-world', is to start by looking at the main operator of the conclusion, C, and asking what introduction rule is used to get its main logical operator. For example, if the main operator of the conclusion is a conjunction, plan on using \eand I. This gives you an idea of what should happen before the last line of the proof and in the `real world', it tells us what we would need to `have' in order to get the stance we want to hold. The justifications for the introduction rule require one or two other sentences above the last line, or one or two subproofs. This means that we will need to prove those lines and those lines are your new goals. As another example, if your conclusion is a conditional A\eif B, plan to use the \eif I rule. This requires starting a subproof where you assume A. The subproof ought to end with B. Then, continue by thinking about what you should do to get B inside that subproof,and how you can use the assumption A. In general, there are methods of working-backwards for all of the logical operators. Here, I will be giving an overview of some default helpful methods to get you started. These are sort of like outlines for the structure a proof could have given the main operator of the conclusion.
@@ -464,7 +465,7 @@ As you can see, our new goal is a conjunction and my advice there was to treat i
 \have[s]{S}{\metav{A}\eiff \metav{B}}\bcx{R}
 \end{fitchproof}
 
-\section{Part 17.2 Moving Forward from What You Have}
+\section{Part \thechapcount.\theseccount: Moving Forward from What You Have}\stepcounter{seccount}
 
 Sometimes, it doesn't seem right to start by working backwards. For example, in the `real world', we are constantly bombarded with facts and information and we are not sure what we can reasonably derive or conclude from this information; that is, we can't immediately see how these facts mesh together. Failure to adequately and logically coordinate and fit this information together has lead some to wild and, frankly, messy conspiracy theories with networks connecting things looking like a Jackson Pollock painting. In this class, you are given the facts of the cases (the premises) and you are also given what can be derived from it, but out there in the world, you will just be given the premises and asked to draw your own conclusions (be skeptical when a non-expert draws the conclusions for you).
 

@@ -1,8 +1,9 @@
 \part{Truth Tables and All Possible Worlds}
 \label{ch.TruthTables}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 7 Truth Tables}
-\section{ Part 7.1 What are Truth Tables?}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Truth Tables}
+\section{Part \thechapcount.\theseccount: What are Truth Tables?}\stepcounter{seccount}
 Any sentence of PL is built out of sentence letters, possibly combined using the connectives. This much should be clear from the previous module, when we were doing translating. Much like how the more complex sentence is built out of the sentence letters and the connectives, the \gls{truth value} (whether the sentence as a whole is true or false) is built out of the values of the sentences and how the connectives work (how they are defined). The truth value of the compound sentence depends only on the truth value of the sentence letters that comprise it. In order to know the truth value of ‘(D\eand E)’, for instance, you only need to know the truth value of ‘D’ and the truth value of ‘E’. So far, we have used symbolization keys to assign truth values to PL sentences indirectly. For example, we might say that the PL sentence ‘B’ is to be true iff Big Ben is in London. Since Big Ben is in London, this symbolization would make ‘B’ true. Doing this, however, is working with the content, the meaning, of the sentence and serves as a distraction from what is really important; the form of the argument. As a result, we need a way to look at all of the possible ways a proposition could be (all of the `possible worlds' as some say). This is where we get truth tables. Simply put, they are a means for us to look at every single possible valuations of the sentences letters in an argument and from them determine things like whether the sentence is a tautology, a contradiction, or some contingent fact.  You should have noticed that I used a new term in the previous sentence; `\gls{valuation}'. This is a special term meaning the assignment of a particular truth value to a sentence letter. Note, however, that once a valuation is chosen, it's fixed for the time that we are using it. 
 
 \factoidbox{A valuation is any assignment of truth values to particular sentence letters of PL.}
@@ -78,7 +79,7 @@ F&T\\
 \end{tabular}
 \end{center}
 Looking at this table, you will notice that the left-most column has "A" followed by "T" and then "F". That top row labels the column and the subsequent rows list out the way the world could be; namely, A could be true (the second row) or A could be false (the third row). By convention, the top row is always going to be the label for the columns and the second row will always be true. We then take the value of, for example, A as assigned in that row and apply it to the statement(s) we have in the other columns. Truth tables can and will have more than 3 rows (including the labeling row) and the truth table for negation is the shortest.
-\section{Characteristic Truth Tables for Conjunction and Disjunction}
+\section{Part \thechapcount.\theseccount: Characteristic Truth Tables for Conjunction and Disjunction}\stepcounter{seccount}
 \subsection{Conjunction}
 
 As you should remember, conjunction requires two sentences, one on each side. While it is possible for these to be the same sentence, for example, A\eand A, more often than not, they will be different. A completed truth table for conjunction treating the two as different will also present the case where they are the same (the top and bottom rows). You should notice that the table below is significantly larger than the one for negation. This is because there are more ways the world could be which we need to look at. If you count the number of sentence letters used in the argument, n, the number of rows required to make the table (not including the labeling row) is 2n. For example, if the argument only has 2 sentence letters, then it will require 4 rows (not including the label). This, in turn, is because we need to see how the world would be if both are true, the first is true and the second false, the first false and the second true, and finally, how the world would be if both were false. 
@@ -110,7 +111,7 @@ F&F&F\\
 \end{tabular}
 \end{center}
 It is worth noting that A\eor  B is the same as B\eor  A. Like with the conjunction, disjunctions are symmetrical. You should notice that A\eor  B is only false under one circumstance, when both are false. This will come in handy later once we combine these more complex sentences.
-\section{Characteristic Truth Tables for Conditional and Biconditional}
+\section{Part \thechapcount.\theseccount: Characteristic Truth Tables for Conditional and Biconditional}\stepcounter{seccount}
 \subsection{Conditional}
 Any formal logical language worth thinking about is going to need to admit that conditionals are a bit of a mess. Troves of papers have been written and will continue to be written about why they are such a mess. Personally, having tried to explain this to students several times and seeing the common errors, I hold that the reason is because of the final row. Conditionals are true when the antecedent (the `if' part) and the consequent (the `then' part) are both false. Natural languages have cases where this makes perfect sense; namely reasonable counterfactuals (e.g. "if I drove 50mph in my neighborhood, that would be dangerous), and there are other cases where this doesn't make sense. Our assent or dissent from the truth of these cases always concerns the content (the meaning) of the sentence letters, not the form of the argument itself. So, for now, we are going to stipulate the following: A\eif  B is false if and only if A is true and B is false. We can summarize this with a characteristic truth table for the conditional.
 
@@ -142,9 +143,9 @@ F&F&T\\
 \end{center}
 
 \boole
-
-\chapter{Part 8 Complex Truth Tables}
-\section{Part 8.1: Building Complete Truth Tables}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Complex Truth Tables}
+\section{Part \thechapcount.\theseccount: Building Complete Truth Tables}\stepcounter{seccount}
 More often than not, the sentences you will want to evaluate are going to be far more complex than simply two sentence letters and a single connective. They will contain any number of sentence letters, any number of sentences (simple or compound), and any number of connectives. So, we will need a way to transfer what you've learned about the definitions of the connectives to these more robust sentences. A \gls{complete truth table} has a line for every possible assignment of True and False to the relevant sentence letters. Each line represents a valuation, and a complete truth table has a line for all the different valuations. The size of the complete truth table depends on the number of different sentence letters in the table. A sentence that contains only one sentence letter requires only two rows, as in the characteristic truth table for negation. This is true even if the same letter is repeated many times, as in the sentence 
 \begin{center} [(C \eiff  C )\eif  C ]\eand   \enot (C\eif  C )\end{center}
  As a starting example, I will use that sentence. We start off just as before by having the top row be the labels and have the sentence letter columns giving the possible valuations for those letters, like so:
@@ -253,7 +254,7 @@ F&F&F&F\\
 \end{tabular}
 \end{center}
 
-\section{Part 8.2: Why Brackets are Essential}
+\section{Part \thechapcount.\theseccount: Why Brackets are Essential}\stepcounter{seccount}
 Very often, when we are speaking, how we break up the components of our sentences doesn't change the meaning or the truth behind what we said. This is true in PL as well. For example, consider these two sentences:
 \begin{center}
 (A\eand B)\eand C\\
@@ -326,13 +327,14 @@ Symbolize and offer a truth table for the following. You will also need to provi
 \end{enumerate}
 
 
-
-\chapter{Part 9 Semantic Concepts}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Semantic Concepts}
+\label{chap.semanticconcepts}
 In the previous section, we introduced the idea of a valuation and showed how to determine the truth value of any PL sentence, on any valuation, using a truth table. In this section, we will introduce some related ideas, and show how to use truth tables to test whether or not they apply. Since all of those features of a sentence apply depending on under what conditions they are true, truth tables give us the ability to test for those features. 
 
 \subsection{Tautologies and contradictions}
 
-In Part 3, we explained necessary truth and necessary falsity. Both notions have surrogates in PL. We will start with a surrogate for necessary truth. which is a \gls{tautology} (not to be confused with the inference/equivalency rule which we will see later):
+In \nameref{s.nectruth}, we explained necessary truth and necessary falsity. Both notions have surrogates in PL. We will start with a surrogate for necessary truth, which is a \gls{tautology} (not to be confused with the inference/equivalency rule which we will see later):
 
 \factoidbox{A is a tautology iff it is true on every valuation.}
 
@@ -364,7 +366,7 @@ Look at the columns for the main logical operators; negation for the first sente
 
 \subsection{Satisfiability}
 
-In Part 3, we said that sentences are jointly possible (\gls{joint possibility}) iff it is possible for all of them to be true at once. We can offer a surrogate for this notion too:
+In \nameref{s.joint}, we said that sentences are jointly possible (\gls{joint possibility}) iff it is possible for all of them to be true at once. We can offer a surrogate for this notion too:
 
 \factoidbox{$A_1$,$A_2$,. . . ,$A_n$ are jointly satisfiable (in PL) iff there is some valuation which makes them all true.}
 
@@ -444,8 +446,9 @@ This means that the argument is valid. If there were any Xs, then the argument w
 Here’s why. If $A_1$,$A_2$,. . . ,$A_n$ entail C, then there is no valuation which makes all of $A_1$,$A_2$,. . . ,$A_n$ true and also makes C false. Any case in which all of $A_1$,$A_2$,. . . ,$A_n$ are true and C is false would generate a valuation with this property: take the truth value of any sentence letter to be just the truth value the corresponding sentence in that case. Since there is no such valuation, there is no case in which all of $A_1$,$A_2$,. . . ,$A_n$ are true and C is false. But this is just what it takes for an argument, with premises $A_1$,$A_2$,. . . ,$A_n$ and conclusion C, to be valid!
 
 In short, we have a way to test for the validity of English arguments. First, we symbolize them in PL; then we test for entailment in PL using truth tables.
-\chapter{Part 10 Testing For Validity}
-\section{Part 10.1: Working through Truth Tables}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Testing For Validity}
+\section{Part \thechapcount.\theseccount: Working through Truth Tables}\stepcounter{seccount}
 When you are working on these more informally, such as in your head during a debate or conversation, you will quickly find that you do not need to copy the truth value of each sentence letter, but can simply refer back to them. So you can speed things up by writing (here I put every sentence letter and connective in its own column for clarity):
 \begin{center}
 \begin{tabular}{c|c|cccccc}
@@ -489,8 +492,8 @@ F&F&F&T&&F&F&T&F\\
 \end{center}
 
 So ‘((P\eif Q)\eif P)\eif P’ is a tautology. In fact, it is an instance of Peirce’s Law, named after Charles Sanders Peirce.
-\section{Part 10.2: Testing For Validity}
-In Part 9, we saw how to use truth tables to test for validity. In that test, we look for bad lines: lines where the premises are all true and the conclusion is false. Now:
+\section{Part \thechapcount.\theseccount: Testing For Validity}\stepcounter{seccount}
+In \nameref{chap.semanticconcepts}, we saw how to use truth tables to test for validity. In that test, we look for bad lines: lines where the premises are all true and the conclusion is false. Now:
 
 If the conclusion is true on a line, then that line is not bad. (And we don’t need to evaluate anything else on that line to confirm this.)
 If any premise is false on a line, then that line is not bad. (And we don’t need to evaluate anything else on that line to confirm this.)
@@ -604,8 +607,8 @@ Determine whether each argument is valid or invalid, using a complete truth tabl
 \item $\enot(A \eand B)$, $A \eor B$, $A \eiff B\therefore C$ \vspace{.5ex}%valid 
 \end{enumerate}
 
-
-\chapter{Part 11 Short-Form Tables}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Short-Form Tables}
 Sometimes, we do not need to know what happens on every line of a truth table. Sometimes, just a line or two will do.
 
 \subsection{Tautology}

@@ -1,9 +1,10 @@
 \part{Symbolizing}
 \label{ch.symbolizing}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 4: Symbolization}
-\section{Part 4.1: Validity and the ‘Shape' of the argument }
-\label{s:Part 4.1: Validity and the ‘Shape' of the argument }
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Symbolization}
+\section{Part \thechapcount.\theseccount: Validity and the ‘Shape' of the argument }\stepcounter{seccount}
+\label{s:Part 4.1: Validity and the ‘Shape' of the argument}
 Take a look at the following arguments:
 
 \begin{tabular}{p{4.8cm}p{4.8cm}}
@@ -22,12 +23,14 @@ Both of these arguments are valid (formally valid). We can see the relationship 
 \end{earg}
 \end{center}
 This looks like an excellent argument structure. In fact, as we will see in Module~\ref{ch.TruthTables} and beyond, this structure is always valid. But, are there any others? Are there any other structures which are always valid? The answer is yes, with absolute certainty. Logic would be a pretty boring subject otherwise. Consider these examples:
+
 \begin{tabular}{p{4.8cm}p{4.8cm}}
 Argument \exarg{oe1}&Example \exarg{xoe1}\\
 Jenny is either happy or sad.&It’s not the case that Jim both studied hard and acted in lots of plays.\\
 Jenny is not happy&Jim studied hard.\\
 Therefore, Jenny is sad.&Therefore, Jim didn't act in lots of plays.\\
 \end{tabular}
+
 Both of these arguments are, again, formally valid. This time, however, they are using different structures. For example, the form of argument \ref{oe1} is like this:
 \begin{center}
 \begin{earg}
@@ -54,6 +57,8 @@ Argument \exarg{special1}: &Argument \exarg{special2}:\\
 Juanita is a vixen.&Juanita is a vixen.\\
 Therefore, Juanita is a fox. &Therefore, Juanita is a cathedral.\\
 \end{tabular}
+
+
 \begin{tabular}{ll}
 Argument \exarg{special3}: &Argument \exarg{special4}:\\
 The ball is only green. &The ball is only green.\\
@@ -61,8 +66,8 @@ Therefore, the ball is not red. &Therefore, the ball is not shiny.\\
 \end{tabular}\\
 In argument \ref{special1}, it is impossible for the premise to be true and the conclusion false. So the argument is valid. But, this doesn't have to do with the shape of the argument. Rather it concerns the meaning of the words. We saw this type of validity back in Part 2.2, this is conceptual validity. Argument \ref{special2}, on the other hand, doesn't have formal or conceptual validity. There is nothing about being a female fox which entails that they are a large church. It is easy to come up with a counterexample to this reasoning.  Moving to argument \ref{special3} and \ref{special4}, both of these have the same premise, “the ball is only green" which I am interpreting to mean that the ball is monochromatic and green. Since the ball has only one color and that color is green, it makes sense that it's not red. So argument \ref{special3} is conceptually valid. Argument \ref{special4}, on the other hand, is different. There is nothing about the ball being only green which entails some level of reflectivity (shininess). This argument is both conceptually invalid and formally invalid.  
 
-\section{Part 4.2 Propositions (‘Atomic’ Sentences)}
-We started isolating the form of an argument, in Part 4.1, by replacing subsentences of sentences with individual letters. Thus in the first example of this section, ‘it is raining outside’ is a subsentence of ‘If it is raining outside, then Jenny is miserable’, and we replaced this subsentence with ‘A’. Doing so allowed us to see the form of the argument in question. Our logical language, PL, pursues this idea ruthlessly. We start with some capital letters which we will use to represent the simple propositions which are found in the arguments. These simple propositions are the smallest unit of meaning which we can get. For example, “Patty and Bobby are at the party" is a sentence and its meaning is composed of two simple propositions “Patty is at the party" and “Bobby is at the party". These two are joined together with a connective which we will return to in the next pages. These will be the basic building blocks out of which more complex sentences are built. There are only twenty-six letters of the alphabet, but there is no limit to the number of proposition letters that we might want to consider. By adding subscripts to letters, we obtain new \glspl{sentence letter}. So, here are five different sentence letters of PL:
+\section{Part \thechapcount.\theseccount: Propositions (‘Atomic’ Sentences)}\stepcounter{seccount}\label{s.atomic}
+We started isolating the form of an argument, in \nameref{s:Part 4.1: Validity and the ‘Shape' of the argument}, by replacing subsentences of sentences with individual letters. Thus in the first example of this section, ‘it is raining outside’ is a subsentence of ‘If it is raining outside, then Jenny is miserable’, and we replaced this subsentence with ‘A’. Doing so allowed us to see the form of the argument in question. Our logical language, PL, pursues this idea ruthlessly. We start with some capital letters which we will use to represent the simple propositions which are found in the arguments. These simple propositions are the smallest unit of meaning which we can get. For example, “Patty and Bobby are at the party" is a sentence and its meaning is composed of two simple propositions “Patty is at the party" and “Bobby is at the party". These two are joined together with a connective which we will return to in the next pages. These will be the basic building blocks out of which more complex sentences are built. There are only twenty-six letters of the alphabet, but there is no limit to the number of proposition letters that we might want to consider. By adding subscripts to letters, we obtain new \glspl{sentence letter}. So, here are five different sentence letters of PL:
 \begin{center}$A$,$P$,$P_1$,$P_2$,$A_{234}$\end{center}
 
 We will use proposition letters to represent, or symbolize, the meaning behind certain simple English sentences. But, to make it so that others can understand us, we need to provide a \gls{symbolization key}, such as the following:
@@ -157,9 +162,9 @@ Identify the propositions (`atomic' of `simple' sentences) in each of these comp
 \end{enumerate}
 
 \chrysippus
-
-\chapter{Part 5: Introduction to Connectives}
-In Part 4.2, we considered symbolizing fairly basic propositions with letters of PL. This leaves us wanting to deal with the English expressions ‘and’, ‘or’, ‘not’, and so forth. These are \glspl{connective}—they can be used to form new sentences out of old ones. In PL, we will make use of logical connectives to build complex sentences from atomic components. These connectives are sort of like the machinery which allows logic to work. There are five logical connectives in PL. This table summarizes them, and they are explained throughout this part of the module.
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Introduction to Connectives}
+In \nameref{s.atomic}, we considered symbolizing fairly basic propositions with letters of PL. This leaves us wanting to deal with the English expressions ‘and’, ‘or’, ‘not’, and so forth. These are \glspl{connective}—they can be used to form new sentences out of old ones. In PL, we will make use of logical connectives to build complex sentences from atomic components. These connectives are sort of like the machinery which allows logic to work. There are five logical connectives in PL. This table summarizes them, and they are explained throughout this part of the module.
 \begin{center}
 \begin{tabular}{l| l| l| l}
 Symbol &What It's Called&Rough Meaning&How to type in Carnap.io\\\hline
@@ -173,7 +178,7 @@ Symbol &What It's Called&Rough Meaning&How to type in Carnap.io\\\hline
 
 These are not the only connectives of English of interest. Others are, e.g., ‘unless’, ‘neither \ldots nor \ldots ’, and ‘because’. We will see that the first two can be expressed by the connectives we will discuss, while the last cannot. ‘Because’, in contrast to the others, is not truth functional.
 
-\section{Part 5.1 Negation }
+\section{Part \thechapcount.\theseccount: Negation }\stepcounter{seccount}
 \label{s:Part 5.1 Negation}
 Consider how we might symbolize these sentences:
 \begin{earg}
@@ -206,7 +211,7 @@ But some care is needed when handling negations. Consider:
 		\item[\ex{not7}] Jane is unhappy.
 	\end{earg}
 If we let the PL-sentence ‘H’ symbolize ‘Jane is happy’, then we can symbolize sentence \ref{not6} as ‘H’. However, it would be a mistake to symbolize sentence \ref{not7} with ‘\enot H’. If Jane is unhappy, then she is not happy; but sentence  \ref{not7} does not mean the same thing as ‘It is not the case that Jane is happy’. Jane might be neither happy nor unhappy; she might be in a state of blank indifference. In order to symbolize sentence  \ref{not7}, then, we would need a new sentence letter of PL.
-\section{Part 5.2: Conjunction}
+\section{Part \thechapcount.\theseccount: Conjunction}\stepcounter{seccount}
 \label{s:Part 5.2: Conjunction}
 Consider these sentences:
 	\begin{earg}
@@ -250,7 +255,7 @@ Sentence \ref{negcon1} can be paraphrased as ‘It is not the case that: both yo
 	\end{ekey}
 we would symbolize ‘both you will get soup and you will get salad’ as ‘($S_1$\eand $S_2$)’. To symbolize sentence  \ref{negcon1}, then, we simply negate the whole sentence, thus: ‘\enot ($S_1$\eand $S_2$)’.
 Sentence \ref{negcon2} is a conjunction: you will not get soup, and you will get salad. ‘You will not get soup’ is symbolized by ‘\enot $S_1$’. So to symbolize sentence  \ref{negcon2} itself, we offer ‘(\enot $S_1$\eand $S_2$)’. These English sentences are very different, and their symbolizations differ accordingly. In one of them, the entire conjunction is negated. In the other, just one conjunct is negated. Brackets help us to keep track of things like the scope of the negation.
-\section{Part 5.3 Disjunction}
+\section{Part \thechapcount.\theseccount: Disjunction}\stepcounter{seccount}
 \label{s:Part 5.3 Disjunction}
 Consider these sentences:
 	\begin{earg}
@@ -285,7 +290,7 @@ Sentence \ref{or4} also requires negation. It can be paraphrased as, ‘It is no
 Sentence \ref{or.xor} is an exclusive or. We can break the sentence into two parts. The first part says that you get one or the other. We symbolize this as ‘($S_1$\eor $S_2$)’. The second part says that you do not get both. We can paraphrase this as: ‘It is not the case both that you get soup and that you get salad’. Using both negation and conjunction, we symbolize this with ‘\enot ($S_1$\eand $S_2$)’. Now we just need to put the two parts together. As we saw above, ‘but’ can usually be symbolized with ‘\eand’. So sentence \ref{or.xor} can be symbolized as ‘(($S_1$\eor $S_2$)\eand \enot ($S_1$\eand $S_2$))’.
 
 This last example shows something important. Although the PL symbol ‘\eor’ always symbolizes inclusive or, we can symbolize an exclusive or in PL. We just have to use a few other symbols as well.
-\section{Part 5.4: Conditionals} 
+\section{Part \thechapcount.\theseccount: Conditionals} \stepcounter{seccount}
 Consider these sentences:
 	\begin{earg}
 		\item[\ex{if1}] If Jean is in Paris, then Jean is in France.
@@ -349,7 +354,7 @@ All three are correct symbolizations. Indeed, when we get to rules of replacemen
 
 Again, though, there is a little complication. ‘Unless’ can be symbolized as a conditional; but as we said above, people often use the conditional (on its own) when they mean to use the biconditional (next section). Equally, ‘unless’ can be symbolized as a disjunction; but there are two kinds of disjunction (exclusive and inclusive). So it will not surprise you to discover that ordinary speakers of English often use ‘unless’ to mean something more like the biconditional, or like exclusive disjunction. Suppose someone says: ‘I will go running unless it rains’. They probably mean something like ‘I will go running if and only if it does not rain’ (i.e., the biconditional), or ‘either I will go running or it will rain, but not both’ (i.e., exclusive disjunction). Again: be aware of this when interpreting what other people have said, but be precise in your writing. Understanding the intent behind a phrase is essential to translation and also basic understanding of each other. 
 
-\section{Part 5.5: Biconditional}
+\section{Part \thechapcount.\theseccount: Biconditional}\stepcounter{seccount}
 Consider these sentences:
 	\begin{earg}
 		\item[\ex{iff1}] Laika is a dog only if she is a mammal
@@ -410,9 +415,9 @@ Writing your own symbolization key, symbolize the following sentences into PL:
 \item Annie has class while Hallie does not.
 \item If the 1918 flu pandemic had not happened, the British would likely still control India and other colonial territories. 
 \end{enumerate}
-
-\chapter{Part 6: More Complex Sentences in PL}
-\section{Part 6.1: Expressions}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: More Complex Sentences in PL}
+\section{Part \thechapcount.\theseccount: Expressions}\stepcounter{seccount}
 \label{s:Part 6.1: Expressions}
 We have seen that there are three kinds of symbols in PL:
 \begin{center}
@@ -426,7 +431,8 @@ Brackets &( ,)\\
 \end{tabular}
 \end{center}
 Define an expression of PL as any string of symbols of PL. So: write down any sequence of symbols of PL, in any order, and you have an expression of PL.
-\section{Part 6.2: Sentences}
+
+\section{Part \thechapcount.\theseccount: Sentences}\stepcounter{seccount}
 Given what we just said, ‘A\eand B’ is an expression of PL, and so is ‘\enot) (\eor ()\eand (\enot\enot()) ( (B’. But the former is a sentence, and the latter is gibberish. We want some rules to tell us which PL expressions are sentences.
 
 Obviously, individual sentence letters like ‘A’ and ‘$G_{13}$’ should count as sentences. (We’ll also call them atomic sentences.) We can form further sentences out of these by using the various connectives. Using negation, we can get ‘\enot A’ and ‘\enot $G_{13}$’. Using conjunction, we can get ‘(A\eand $G_{13}$)’, ‘($G_{13}$\eand A)’, ‘(A\eand A)’, and ‘($G_{13}$\eand $G_{13}$)’. We could also apply negation repeatedly to get sentences like ‘\enot\enot A’ or apply negation along with conjunction to get sentences like ‘\enot(A\eand $G_{13}$)’ and ‘\enot($G_{13}$\eand \enot $G_{13}$)’. The possible combinations are endless, even starting with just these two sentence letters, and there are infinitely many sentence letters. So there is no point in trying to list all the sentences one by one.
@@ -473,7 +479,7 @@ The inductive structure of sentences in PL also allows us to give a formal defin
 \begin{center}(P\eand (\enot(R\eand B) \eiff  Q))\end{center}
 which was constructed by conjoining ‘P ’ with ‘(\enot(R\eand B) \eiff  Q)’. This last sentence was constructed by placing a biconditional between ‘\enot(R\eand B)’ and ‘Q’. The former of these sentences—a subsentence of our original sentence—is a sentence for which ‘\enot’ is the main logical operator. So the scope of the negation is just ‘\enot(R\eand B)’. More generally:
 \factoidbox{The scope of a connective (in a sentence) is the subsentence for which that connective is the main logical operator.}
-\section{Part 6.3: Brackets}
+\section{Part \thechapcount.\theseccount: Brackets}\stepcounter{seccount}
 Strictly speaking, the brackets in ‘(Q \eand  R)’ are an indispensable part of the sentence. Part of this is because we might use ‘(Q \eand R)’ as a subsentence in a more complicated sentence. For example, we might want to negate ‘(Q \eand  R)’, obtaining ‘ \enot (Q \eand  R)’. If we just had ‘Q \eand R’ without the brackets and put a negation in front of it, we would have ‘ \enot Q \eand  R’. It is most natural to read this as meaning the same thing as ‘( \enot Q \eand R)’, but as we saw in earlier, this is very different from ‘\enot(Q \eand  R)’.
 Strictly speaking, then, ‘Q \eand  R’ is not a sentence. It is a mere expression.
 

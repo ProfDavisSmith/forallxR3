@@ -4,9 +4,9 @@
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 
 
-\chapter{Part 1: Arguments and Propositions}
-\section{Part 1.1: Arguments: What is logic?}
-\label{s:Part 1.1: Arguments: What is logic?}
+\chapter{Part \thechapcount: Arguments and Propositions}
+\section{Part \thechapcount.\theseccount: Arguments: What is logic?}\refstepcounter{seccount}
+\label{s.arguments}
 
 The common-sense, everyday, way to tell whether a claim is true or false is to look at the reasons for or against it. Sometimes our observations give us good reasons. For example, I have a good reason for thinking my bicycle has a flat tire when I see the tire sagging on the rim or hear air hissing out of the tube. But often the business of identifying and evaluating reasons is a bit more involved. Logic is the business of identifying and evaluating reasons. You do this all the time. You give yourself reasons to choose one shirt over another for a job interview, you reason your way through making a choice about which classes to take, you believe certain things based on evidence, and you give reasons for why something isn't your fault (when you make excuses). In all of these cases and more, you are making \glspl{argument}.
 
@@ -125,7 +125,7 @@ description={A premise of an argument which is not explicitly stated but rather 
 }
 
 
-\section{Part 1.2 Sentences and Propositions}
+\section{Part \thechapcount.\theseccount: Sentences and Propositions}\refstepcounter{seccount}
 \label{Some Basics from Philosophy of Language}
 
 To be perfectly general, we can define an \gls{argument} as a series of sentences. The sentences at the beginning of the series are premises. The final sentence in the series is the conclusion. If the premises are true and the argument is a good one, then you have a reason to accept the conclusion.
@@ -199,13 +199,12 @@ For each, identify whether it expresses a proposition. If there are multiple sen
 \item Max is such a jerk. I mean, how could anyone like him? 
 \end{enumerate}
 
-
-\chapter{Part 2: Types of Arguments}
+\refstepcounter{chapcount}
+\chapter{Part \thechapcount: Types of Arguments}\setcounter{seccount}{1}
 \label{s:Valid}
+\section{Part \thechapcount.\theseccount: Consequence and validity}\refstepcounter{seccount}
 
-\section{Part 2.1: Consequence and validity}
-
-In Part 1, we talked about arguments, i.e., a collection of sentences (the premises), followed by a single sentence (the conclusion). We said that some words, such as “therefore,” indicate which sentence is supposed to be the conclusion. “Therefore,” of course, suggests that there is a connection between the premises and the conclusion, namely that the conclusion follows from, or is a consequence of, the premises. This notion of consequence is one of the primary things logic is concerned with. Referencing back, one might even say that logic is the science of what follows from what. Logic develops theories and tools that tell us when a proposition follows from some others. Take, for example, the argument which I used in Part 1:
+In \nameref{s.arguments}, we talked about arguments, i.e., a collection of sentences (the premises), followed by a single sentence (the conclusion). We said that some words, such as “therefore,” indicate which sentence is supposed to be the conclusion. “Therefore,” of course, suggests that there is a connection between the premises and the conclusion, namely that the conclusion follows from, or is a consequence of, the premises. This notion of consequence is one of the primary things logic is concerned with. Referencing back, one might even say that logic is the science of what follows from what. Logic develops theories and tools that tell us when a proposition follows from some others. Take, for example, the argument which I used in Part 1:
 \begin{earg}
 	\item[] Either the butler or the gardener did it.
 	\item[] The butler didn't do it.
@@ -220,7 +219,7 @@ By way of contrast, consider the following argument:
 \end{earg}
 We still have no idea what is being talked about here. But, again, you probably agree that this argument is different from the previous one in an important respect. If the premises are true, it is not guaranteed that the conclusion is also true. (if you disagree, then you have fallen victim to a very common logical fallacy, one which will become clear as we progress through this textbook). The premises of this argument do not rule out, by themselves, that someone other than the maid or the driver “did it.” So there is a case where both premises are true, and yet the driver didn’t do it, i.e., the conclusion is not true. For example, suppose that the context is that they are wondering who stole the last cookie from the jar. In this case, if the driver ‘did it', as in stole the cookie, then the maid couldn't have stolen it, but there was a third person, the gardener, who was feeling peckish, has stolen the cookie. As a result, the maid didn't ‘do it', the driver didn't, but the gardener did. In this second argument, the conclusion does not follow from the premises. If, like in this argument, the conclusion does not follow from the premises, we say it is invalid. As we will see later, a very easy test for validity in a natural language, like English, is to see whether you can concoct a story where the premises are true and the conclusion is false. If you can do this, then the argument is invalid and, to make it valid, you would need to include premises which remove the possibility of such a case.
 
-\section{Part 2.2 Cases and Types of Validity}
+\section{Part \thechapcount.\theseccount: Cases and Types of Validity}\refstepcounter{seccount}
 Towards the end of the previous sub-part, I gave a basic reason why the example argument wasn't valid; namely, I was able to give a case in which the premises are true and in which the conclusion is not. This was the scenario where neither the driver nor the maid did it, but some third person, the gardener, did. Let’s call such a case a counterexample to the argument. If there is a counterexample to an argument, the conclusion cannot be a consequence of the premises. For the conclusion to be a consequence of the premises, the truth of the premises must guarantee the truth of the conclusion. If there is a counterexample, the truth of the premises does not guarantee the truth of the conclusion. As logicians, we want to be able to determine when the conclusion of an argument follows from the premises. And the conclusion is a consequence of the premises if there is no counterexample—no case where the premises are all true but the conclusion is not. This motivates a definition:
 \factoidbox{A sentence A is a consequence of sentences $B_1$, \ldots,$ B_n$ if and only if there is no case where $B_1$, \ldots,$ B_n$ are all true and A is not true.\\
 We then also say that A follows from $B_1$, \ldots,$ B_n$ or that $B_1$, \ldots,$ B_n$ entail A.}
@@ -244,7 +243,7 @@ Suppose that we said that hypothetical scenarios are limited to what we can imag
 \item[\therefore] Priya is an eye doctor.
 \end{earg}
 If we’re allowing only conceivable scenarios, this is also a valid argument. If you imagine Priya being an ophthalmologist, you thereby imagine Priya being an eye doctor. That’s just what “ophthalmologist” and “eye doctor” mean. A scenario where Priya is an ophthalmologist but not an eye doctor is ruled out by the conceptual connection between these words. We call this sort of validity conceptual validity because the truth of the conclusion is entailed by the meaning of, the proposition expressed by, the premise. Conceptually valid arguments tend to be valid (full stop) but there are some arguments (in fact most arguments) which are valid (full stop) but not necessarily conceptually valid. Such arguments are valid without relying on the definition of some word or phrase and end to be far stronger and better in reasoning.
-\section{Part 2.3 Formal Validity}
+\section{Part \thechapcount.\theseccount: Formal Validity}\refstepcounter{seccount}
 One distinguishing feature of logical consequence, however, is that it should not depend on the content of (the concepts in) the premises and conclusion, but only on their logical structure, the general shape or style the argument comes in. In other words, as logicians, we want to develop a theory that can make even more fine-grained distinctions. For instance, both of these arguments are valid:\\
 \begin{tabular}{p{4.8cm}p{4.8cm}}
 Argument \exarg{priya1}&Argument \exarg{priya2}\\
@@ -281,7 +280,7 @@ In this pattern we can replace X by “ophthalmologist” and Z by “eye doctor
 This argument is clearly not valid, since we can imagine a mathematician named Mei who is not an acrobat. This means that the above argument structure is not formally valid and this conclusion trickles down to the various instances of the form. Our strategy as logicians will be to come up with a notion of “case” on which an argument turns out to be valid if it is formally valid. We can say that the arguments are valid, in this sense, when there are no cases where the premises of that form are all true and the conclusion (of that form) is false. Similarly, we can say that an argument is invalid, in this sense, when there is a case where the premises of this form are all true and the conclusion is false. We could say that formal validity trickles down to the instances of the form where as formal invalidity floats up to the general form.
 
 When we consider cases of various kinds in order to evaluate the validity of an argument, we will make a few assumptions/restrictions. First, we will only consider arguments of the same form as the one in question. It wouldn't make sense to judge an argument of one form based on the features of an argument of a radically different form. The second assumption is that when we are considering a hypothetical scenario, ever premise of the argument is true. So, for example, in the mathematician vs botanist example, the hypothetical scenario will be one where Mei is either a mathematician or a botanist (at least one of them) and one where she is not a botanist. This is so that we can test to see whether the form actually entails the conclusion. And the third assumption is that the conclusion to the argument is false. If we can come up with an argument of a particular form which does have a counter example, then that argument is invalid. If we can't, then the argument is valid (we will be exploring more on this in Module~\ref{ch.TruthTables}).
-\section{Part 2.4 Soundness}
+\section{Part \thechapcount.\theseccount: Soundness}\refstepcounter{seccount}
 Before we go on and execute this strategy, a few clarifications. Arguments in our sense, as conclusions which (supposedly) follow from premises, are of course used all the time in everyday and scientific discourse. When they are, arguments are given to support or even prove their conclusions. Now, if an argument is valid, it will support its conclusion, but only if its premises are all true. Validity rules out the possibility that the premises are true and the conclusion is not true at the same time. It does not, by itself, rule out the possibility that the conclusion is not true, period. In other words, it is perfectly possibly for a valid argument to have a conclusion that isn’t true!\\
 Consider this example,
 \begin{earg}
@@ -300,7 +299,7 @@ The premises and conclusion of this argument are, as a matter of fact, all true,
 
 The important thing to remember is that validity is not about the actual truth or falsity of the sentences in the argument. It is about whether it is possible for all the premises to be true and the conclusion to be not true at the same time (in some hypothetical case). What is in fact the case has no special role to play; and what the facts are does not determine whether an argument is valid or not. Nothing about the way things are can by itself determine if an argument is valid. It is often said that logic doesn’t care about feelings. Actually, it doesn’t care about facts, either.
 When we use an argument to prove that its conclusion is true, then, we need two things. First, we need the argument to be valid, i.e., we need the conclusion to follow from the premises. But we also need the premises to be true. We will say that an argument is sound if and only if it is both valid and all of its premises are true. The flip side of this is that when you want to rebut an argument, you have two options: you can show that (one or more of) the premises are not true, or you can show that the argument is not valid. Logic, however, will only help you with the latter!
-\section{Part 2.5 Deductive vs Inductive Arguments}
+\section{Part \thechapcount.\theseccount: Deductive vs Inductive Arguments}\refstepcounter{seccount}
 Strictly speaking, only what we call \glspl{deductive argument} can be valid. As I have mentioned previously, an argument is all about intent. The premises are intended to support the conclusion. Deductive arguments are those where the intent is to guarantee the conclusion. When there is that intent, we can and should judge it according to validity. But there are many arguments out there where the intent is not to guarantee the conclusion, but rather to merely make it more likely. These arguments, by their very nature, are going to be invalid but they are still good and have practical use. These arguments are called \glspl{inductive argument}. This is because, generally, they go from a bunch of particular cases and generalize to something larger. Deductive arguments, on the other hand, tend to go from general principles and then reduce (deduce) to particular instances. To see the difference, take a look at these examples:
 
 \begin{tabular}{p{4.8cm}|p{4.8cm}}\hline
@@ -405,9 +404,11 @@ All of the arguments below are inductive. For each, gauge how strong they are.
 \item Dave and Tami can smell tobacco smoke on their 16 year old son's jacket. When Dave did his son's laundry, he found a Zippo lighter in the bottom of the washer. Therefore, he is likely smoking and they should have a chat with him.  
 \end{enumerate}
 
-\chapter{Part 3: Other Logical Notions}
-In Part 2, we introduced the ideas of consequence and of valid argument. This is one of the most important ideas in logic. In this section, we will introduce some similarly important ideas. They all rely, as did validity, on the idea that sentences are true (or not) in cases. For the rest of this section, we’ll take cases in the sense of conceivable scenario, i.e., in the sense in which we used them to define conceptual validity. The points we made about different kinds of validity can be made about our new notions along similar lines: if we use a different idea of what counts as a “case” we will get different notions. And as logicians we will, eventually, consider a more permissive definition of case than we do here.
-\section{3.1 Joint Possibility}
+\refstepcounter{chapcount}
+\chapter{Part \thechapcount: Other Logical Notions}\setcounter{seccount}{1}
+\label{part.logicalnotions}
+In \nameref{s:Valid}, we introduced the ideas of consequence and of valid argument. This is one of the most important ideas in logic. In this section, we will introduce some similarly important ideas. They all rely, as did validity, on the idea that sentences are true (or not) in cases. For the rest of this section, we’ll take cases in the sense of conceivable scenario, i.e., in the sense in which we used them to define conceptual validity. The points we made about different kinds of validity can be made about our new notions along similar lines: if we use a different idea of what counts as a “case” we will get different notions. And as logicians we will, eventually, consider a more permissive definition of case than we do here.
+\section{Part \thechapcount.\theseccount: Joint Possibility}\refstepcounter{seccount}\label{s.joint}
 Consider these two sentences:
 \begin{ebullet}
 \item[B1.] Jane’s only brother is shorter than her.
@@ -431,7 +432,7 @@ Note that I did not specify anything about the number of sentences. In fact, we 
 \end{ebullet}
 G1 and G4 together entail that there are at least four martian giraffes at the park. This conflicts with G3, which implies that there are no more than two martian giraffes there. So the sentences G1–G4 are jointly impossible. They cannot all be true together. (Note that the sentences G1, G3 and G4 are jointly impossible. But if sentences are already jointly impossible, adding an extra sentence to the mix cannot make them jointly possible!)
 
-\section{3.2 Necessary truths, necessary falsehoods, and contingency}
+\section{Part \thechapcount.\theseccount: Necessary truths, necessary falsehoods, and contingency}\refstepcounter{seccount}\label{s.nectruth}
 In assessing arguments for validity, we care about what would be true if the premises were true, but some sentences just must be true. Consider these sentences:
 \begin{earg}
 \item[\ex{rain1}] It is raining.
@@ -441,7 +442,7 @@ In assessing arguments for validity, we care about what would be true if the pre
 In order to know if sentence \ref{rain1} is true, you would need to look outside or check the weather channel. It is possible that it's true and it is also possible to be false. There is nothing in the structure of the sentence itself which tells us one way or the other. A sentence which is capable of being true and capable of being false (in different circumstances, of course) is called contingent. Sentence \ref{rain2}, on the other hand, is different. I don't need to peak my head out the window or check.  Regardless of what the weather is like, it is either raining or it is not. That is a necessary truth. In general, we can tell these sort of necessary truths by the structure, the form of the statement. We will be returning to these sort of claims in Module~\ref{ch.TruthTables}. There are other ones which rely on the meaning of the words involved, such as "water is H2O", this is a necessary truth but it has the same structure as "my car is silver", which is not necessary (I could have it painted). Equally, you do not need to check the weather to determine whether or not sentence \ref{rain3} is true. It must be false, simply as a matter of logic. It might be raining here and not raining across town; it might be raining now but stop raining even as you finish this sentence; but it is impossible for it to be both raining and not raining in the same place and at the same time. So, whatever the world is like, it is not both raining here and not raining here. It is a necessary falsehood.
 
 Something might always be true and still be contingent. For instance, if there never were a time when the universe contained fewer than seven things, then the sentence ‘At least seven things exist’ would always be true. Yet the sentence is contingent: the world could have been much, much smaller than it is, and then the sentence would have been false.
-\section{3.3 Necessary equivalence}
+\section{Part \thechapcount.\theseccount: Necessary equivalence}\refstepcounter{seccount}
 We can also ask about the logical relations between two sentences. For example:
 \begin{earg}
 \item[]John went to the store after he washed the dishes.

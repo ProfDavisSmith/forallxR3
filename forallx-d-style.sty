@@ -2,8 +2,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{forallx-d-style}
 
-\def\forallxversion{Winter 2023}
-\def\forallxshortversion{W23}
+\def\forallxversion{Spring 2025}
+\def\forallxshortversion{S25}
 
 \RequirePackage{hyperref,ifthen,graphicx,xcolor,amssymb}
 \usepackage[numbered]{bookmark} %TB: added for speedy navigation
@@ -36,6 +36,11 @@
 \renewcommand{\cftchapterpagefont}{\textrm}
 
 % Chapter style
+% Chapter style
+\newcounter{seccount}
+\setcounter{seccount}{1}
+\newcounter{chapcount}
+\setcounter{chapcount}{1}
 
 \newlength{\barlength}
 \setlength{\barlength}{400pt}
@@ -72,7 +77,7 @@
 \makeevenhead{leadbeater}{\color{leadbeater}\sffamily\bfseries\thepage}{}
    {\small\sffamily\color{leadbeater}\leftmark}
 
-\usepackage[font={small,it}]{caption}
+ \PassOptionsToPackage{font={small,it}}{caption}
 
 %    ****************************************
 %    *        TITLE AND VERSION DATA        *
@@ -116,14 +121,15 @@
 % Neither for lists nor an environment, but it really didn't
 % belong anywhere else.
 \usepackage[most]{tcolorbox}
-\newcommand{\factoidbox}[1]{\begin{factoidboxe}#1\end{factoidboxe}}
+\newcommand{\factoidbox}[1]{\begin{singlespace}\begin{factoidboxe}#1\end{factoidboxe}\end{singlespace}}
 \newenvironment{factoidboxe}{%
   \begin{tcolorbox}[%width=.9\textwidth,
       %      leftright skip=.05\textwidth,
-      sharp corners=downhill,
+      rounded corners=all,
       beforeafter skip=.7em,
       colframe={leadbeater},colback={vltleadbeater}]}{
 \end{tcolorbox}}
+
 
 
 % \tablefbox{...} is used in certain tables to put a box around the contents of specific table cells without having lines that run the whole length of the table

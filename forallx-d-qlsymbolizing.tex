@@ -1,8 +1,9 @@
 \part{Quantified Logic}
 \label{ch.qlsymbolizing}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 18 The Next Step: Quantified Logic}
-\section{Part 18.1: The Need to Expand How We Think of Propositions}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: The Next Step: Quantified Logic}
+\section{Part \thechapcount.\theseccount: The Need to Expand How We Think of Propositions}\stepcounter{seccount}
 \setcounter{Example}{0}
 Thus far, you have all of the tools necessary to engage with relatively simple arguments. Some arguments, however, refer to the actual content and the structure of the simple propositions (the simple sentences) and other arguments make claims about all things or some things. PL does not have the tools to handle those kinds of arguments and show that they are valid or give advice about the correct logical moves one should take in proving their validity. For example, consider the following argument, which should be obviously valid in English:
 \begin{earg}
@@ -48,7 +49,7 @@ This argument, generalized, has the following form:
 \end{earg}
 This, again, should appear obviously valid but it cannot be proven to be so with PL. The details of QL will be explained throughout module, but here is the basic idea for splitting the atom. First, we have names. In QL, we indicate these with lowercase letters. For instance, we might let ‘b’ stand for Bertie, or let ‘i’ stand for Willard. Second, we have predicates. English predicates are expressions like ‘ is a dog’ or ‘ is a logician’. These are not complete sentences by themselves. In order to make a complete sentence, we need to fill in the gap, include a name. We need to say something like ‘Bertie is a dog’ or ‘Willard is a logician’. In QL, we indicate predicates with uppercase letters. For instance, we might let the QL predicate ‘D’ symbolize the English predicate ‘ is a dog’. Then the expression ‘Db’ will be a sentence in QL, which symbolizes the English sentence ‘Bertie is a dog’. Equally, we might let the QL predicate ‘L’ symbolize the English predicate ‘ is a logician’. Then the expression ‘Li’ will symbolize the English sentence ‘Willard is a logician’. Third, we have quantifiers. For instance, ‘$\exists$’ will roughly convey ‘There is at least one . . . ’, or "for some", or "there exists a \blank such that". So we might symbolize the English sentence ‘there is a dog’ with the QL sentence ‘$\exists$xDx’, which we might read aloud as ‘there is at least one thing, x, such that x is a dog’. That is the general idea, but QL is significantly more subtle than PL, so we will come at it slowly.
 
-\section{Part 18.2: Names}
+\section{Part \thechapcount.\theseccount: Names}\stepcounter{seccount}
 It is argued that all natural languages have words or phrases which pick out a specific person, place, or thing. It is also claimed that all natural languages have what are called nouns. While I disagree with the claim that all natural languages have the grammatical feature we call ‘nouns' (there are some languages which seem to exclusively have verbs), all languages need to have the ability to pick out particular, singular things. In English as well as most languages in the world, this is done with \glspl{name}. Names are singular terms which refer to one thing uniquely. The word ‘dog’, in English, is not a singular term, because there are a great many dogs. The phrase ‘Bertie’ is a singular term, because it refers to a specific terrier. Likewise, the phrase ‘Philip’s dog Bertie’ is a singular term, because it refers to a specific little terrier. Singular terms could be descriptive phrases, such as "the person talking to Tami with the champagne glass" (assuming only one person matches that description) or they could be proper names.
 
 Proper names are a particularly important kind of singular term. These are expressions that pick out individuals without describing them. Sometimes these are called proper nouns. For example, the term ‘Lewis' is a proper name, it magically picks out a certain individual without conveying anything about this individual. There is nothing, fundamentally, in a name which describes or otherwise gives us information about the thing so named. For example, you might read the name ‘Hilary' and immediately assume that the person with that name is a woman. You would be mistaken, however, if you are reading about the philosopher Hilary Putnam. Along the same vein, you might read the name "The Holy Roman Empire" and assume, wrongfully, that it was Roman (or at least in what is now Italy) (it was actually in what we now think of as Germany). All this leads to the following point: Names, themselves, to not describe the world, all they do is pick out objects in the world and we can't describe the world in any reasonable way without referencing the objects in it. So, propositions are going to be composed of, in part, names and our logical system will need to include names.
@@ -70,7 +71,7 @@ For any given argument or context, we don't need to list off everything in the u
 \item[\therefore] Gregor is in the doghouse.
 \end{earg}
 You should immediately identify this as a case of conditional elimination, and you would be right. But, getting to the point at hand, in this argument, do we need to give Marybeth a name? No, we don't, because they are not involved in the argument. The range of things which we need to name is called the \gls{domain}, which we will return to when we discuss validity in QL.
-\section{Part 18.3: Predicates}
+\section{Part \thechapcount.\theseccount: Predicates}\stepcounter{seccount}
 The simplest \glspl{predicate} are properties of individuals. They are things you can say about an object. For example, one could say "Davis is wearing a red shirt". In this, there are basically two parts; the name "Davis" and then there is the second part "is wearing a red shirt" which ascribes a property to the being with that name, namely wearing a red shit. Most of the time, predicates in English have the copula ‘to be', in its various forms like "am, is, are, be". As a bit of warning though, in English, there are other uses for this copula other that predication, such as identity (Lewis Carroll is Charles Dodgson), we will encounter this usage later and the logical operations which come from it. We use predication all the time, it is essential to how any language describes the world around them (though different languages will use different structures and phrases to denote predication). Here are some examples of English predicates:
 \begin{earg}
 \item[]\blank is a dog
@@ -155,7 +156,7 @@ Now the sentence ‘Pik’ symbolizes ‘Imre prefers Imre to Karl’, and ‘Pk
 \item[Pxy] x prefers themselves to y
 \end{ekey}
 In any case, the overall moral of this is simple. When dealing with predicates with more than one place, pay careful attention to the order of the variables!
-\section{Part 18.3 Quantifiers}
+\section{Part \thechapcount.\theseccount: Quantifiers}
 Thus far, you would be right in thinking that there isn't much of a difference between PL and QL. The operations are the same and the only real difference is that we have broken up the propositions into two general parts; names and predicates. Given the name ‘Quantified Logic', you might think that this logical language will have something to do with quantity, amounts, and the relationships between them and in this case, you would be right. We are now ready to introduce \glspl{quantifier}. Quantifiers are what really sets QL apart from PL. Quantifiers give us a reason to break up the propositions and keep a distinction between names and predicates in mind. For example, consider these sentences:
 \newglossaryentry{quantifier}
 {
@@ -237,7 +238,7 @@ When we have the inference rules for QL, you might think that you will have the 
 
 \aristotle
 
-\section{Part 18.4.1 Domains}
+\section{Part \thechapcount.\theseccount: Domains}\stepcounter{seccount}
 Given the symbolization key we have been using, ‘$\forall$x Hx’ symbolizes ‘Everyone is happy’. Who is included in this everyone? When we use sentences like this in English, we usually do not mean everyone now alive on the Earth. We certainly do not mean everyone who was ever alive or who will ever live. We usually mean something more modest: everyone now in the building, everyone enrolled in the ballet class, or whatever.
 
 In order to eliminate this ambiguity, we will need to specify a domain. The domain is the collection of things that we are talking about. So if we want to talk about people in Seattle, we define the domain to be people in Seattle. The quantifiers range over the domain. Given this domain, ‘$\forall$x’ is to be read roughly as ‘Every person in Seattle is such that. . . ’ and  ‘$\exists$x’ is to be read roughly as ‘Some person in Seattle is such that. . . ’. This, in a sense, limits what we are talking about to a given context. In ordinary conversation, this makes sense. Suppose that someone is at a restaurant and the waiter asks "can I get you anything?" It would be quite absurd for the patron to reply "yea, you can get me a million dollars." While a million dollars is a thing, it is beyond the scope, the domain, of the question. Typically, there is an implied domain for your general statements and we carry this over into QL. We write this at the beginning of the symbolization key, like this:
@@ -254,8 +255,10 @@ Even allowing for a domain with just one member can produce some strange results
 \item[Sx] x is in Seattle.
 \end{ekey}
 The sentence $\forall$x Sx might be paraphrased in English as ‘Everything is in Seattle.’ Yet that would be misleading. It means that everything in the domain is in Seattle. This domain contains only the Space Needle, so with this symbolization key $\forall$x Sx just means that ‘everything which is the Space Needle is in Seattle.
-\chapter{Part 19 Bringing It All Together}
-\section{Part 19.1 Sentences with One Quantifier}
+
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Bringing It All Together}
+\section{Part \thechapcount.\theseccount: Sentences with One Quantifier}
 We now have all of the pieces of QL. Symbolizing more complicated sentences is just a matter of knowing how to combine predicates, names, quantifiers, and connectives. There is a knack to this, and there is no substitute for practice. Consider these sentences:
 \begin{earg}
 \item[\ex{coin1}] Every coin in my pocket is a quarter.
@@ -416,7 +419,7 @@ For each argument, write a symbolization key and symbolize the argument in QL.
 
 
 
-\section{Part 19.2 Brining It All Together}
+\section{Part \thechapcount.\theseccount: Brining It All Together}\stepcounter{seccount}
 We know how to represent English sentences in QL. The time has finally come to define the notion of a \gls{sentence of QL}. Like with PL, I will start us off by listing off the symbols and letters which we have available to us in QL. It is worth remembering that QL is not something fundamentally different from PL, rather it is an extension of it. There are other extensions of PL and then there are extensions of QL which might be fun for you to explore such as Modal Logics, which deal with claims and reasoning about possibility and necessity, Temporal Logics, which deal with reasoning about different points in time (when it is really essential to get the order of events right), Epistemic Logics, which deal with knowledge claims and beliefs, and Deontic Logics which deal with moral obligations and permissibility. QL has 6 base-level components which are listed like so: 
 
 \begin{center}
@@ -515,7 +518,9 @@ In practice, this just means that you are allowed to leave out parentheses in lo
 A\eor B\eand C\eand D\\
 B\eor C\eif D
 \end{center}
-\chapter{Part 20 Examples of Symbolization}
+
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Examples of Symbolization}
 As we are starting to see, symbolization in QL can become a bit tricky. So, when symbolizing a complex sentence, you should lay down several stepping-stones. As usual, the idea is best illustrated by example. Consider this symbolisation key: 
 \begin{ekey}
 \item[\text{domain}] people and dogs

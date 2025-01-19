@@ -1,8 +1,9 @@
 \part{Natural Deduction in QL 1}
 \label{ch.qlnd1}
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Part 24 The Basic Rules for QL}
-\section{Part 24.1 The Rules in PL are Allowed In QL}
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: The Basic Rules for QL}
+\section{Part \thechapcount.\theseccount: The Rules in PL are Allowed In QL}\stepcounter{seccount}
 The language of QL makes use of all of the connectives of PL. So proofs in QL will use all of the basic and derived rules from Propositional Logic. This means that we can prove, for example, this argument:
 \begin{earg}
 \item[]Everyone is wearing yellow stockings.
@@ -45,7 +46,7 @@ Adding Lx: x found the letter to our symbolization key, we can symbolize this ar
 Lm,Lm\eif (Ym\eand Cm),$\exists$ x(Yx\eand Cx)\eif Do \therefore Do
 \end{center}
 Thinking about it for just a moment, one can see that this argument is certainly valid, but we cannot prove it using merely the rules in PL. The first few moves to get to the conclusion involve things which should be easily understandable and in our ‘mental theater'. But, to get to the conclusion, we need to be able to move from Malvolio is wearing yellow stockings and is cross gartered (Ym\eand Cm) to someone is wearing yellow stockings and is cross gartered ($\exists$ x(Yx\eand Cx)). Such a move, in ordinary reasoning, might seem obvious and we often gloss over it, without paying it much mind. It should be clear by now, however, that the Devil is in the details and when we gloss over a logical inference, there is a high liklihood that something could have gone wrong and lead us astray.
-\section{Part 24.2 Universal Quantifier Rules (Elimination and Introduction)}
+\section{Part \thechapcount.\theseccount: Universal Quantifier Rules (Elimination and Introduction)}\stepcounter{seccount}
 \subsection{Universal elimination}
 From the claim that everything is F, you can infer that any particular thing is F. You name it; it’s F. There are many examples of us using this sort of reasoning in daily life. For example, suppose that you are in a restaurant and the cooks are being very, very slow in delivering the orders. Since they are being so slow, you can be sure that everyone in the restaurant is hungry ('Hx'). From this, you can go from the general to the particular and say that your friend Drew ('d') in the restaurant is hungry. We can symbolize this argument like so:
 \begin{center}
@@ -165,7 +166,7 @@ But now suppose we tried to vindicate this terrible argument with the following:
 \end{fitchproof}
 
 Fortunately, our rules do not allow for us to do this: the attempted proof is banned, since it doesn’t replace every occurrence of ‘d’ in line 2 with an ‘x’.
-\section{Part 24.3 Existential Quantifier Rules (Introduction and Elimination)}
+\section{Part \thechapcount.\theseccount: Existential Quantifier Rules (Introduction and Elimination)}\stepcounter{seccount}
 \subsection{Existential Introduction}
 
 From the claim that some particular thing is F, you can infer that something is F. This should seem obvious and, as a result, we ought to allow:
@@ -428,10 +429,10 @@ For each of the following arguments: If it is valid in FOL, give a proof. If it 
 
 
 
+\stepcounter{chapcount}\setcounter{seccount}{1}
+\chapter{Part \thechapcount: Tips for and an Example of Proofs in QL}
 
-\chapter{Part 25 Tips for and an Example of Proofs in QL}
-
-Previously, we discussed strategies for constructing proofs using the basic rules of natural deduction for PL. The same principles apply to the rules for the quantifiers. If we want to prove a quantifier sentence $\forall$ xAx or $\exists$ xAx. We can work backward by justifying the sentence we want by $\forall$ I or $\exists$ I and trying to find a proof of the corresponding premise of that rule. And to work forward from a quantified sentence, we apply $\forall$ E or $\exists$ E, as the case may be.
+In \nameref{tips.pl}, we discussed strategies for constructing proofs using the basic rules of natural deduction for PL. The same principles apply to the rules for the quantifiers. If we want to prove a quantifier sentence $\forall$ xAx or $\exists$ xAx. We can work backward by justifying the sentence we want by $\forall$ I or $\exists$ I and trying to find a proof of the corresponding premise of that rule. And to work forward from a quantified sentence, we apply $\forall$ E or $\exists$ E, as the case may be.
 
 Specifically, suppose you want to prove $\forall$ xAx. To do so using $\forall$ I, we would need a proof of Ac for some name c which does not occur in any undischarged assumption. To apply the corresponding strategy, i.e., to construct a proof of $\forall$ xAx by working backward, is thus to write Ac above it and then to continue to try to find a proof of that sentence.
 \begin{fitchproof}

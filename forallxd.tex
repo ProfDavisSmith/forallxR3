@@ -1,26 +1,22 @@
 % forallxyyc
 % Driver file to produce version of forall x:YYC for screen reading
 
-\documentclass[openany,oneside,11pt]{memoir}
+\documentclass[openany,oneside,14pt]{memoir}
 
-% set stock & paper size with narrow margins
-
-\setstocksize{8in}{5in}
-
+\setstocksize{11in}{8.5in}
 \settrimmedsize{\stockheight}{\stockwidth}{*}
 \settrims{0pt}{0pt}
-
-% Text width hard coded to 300pt
-
-% set the size of the type block to golden ratio calculated width
-
-\settypeblocksize{*}{300pt}{1.62}
-
-% set spine and and edge margin
-
+\settypeblocksize{*}{440pt}{1.62}
 \setlrmargins{*}{*}{1}
 \setulmargins{.6in}{*}{*}
 \setheaderspaces{*}{*}{1}
+\checkandfixthelayout
+ \DisemulatePackage{parskip}
+ \DisemulatePackage{setspace}
+ \usepackage{setspace}
+ \linespread{1.25}
+ \usepackage[skip=14pt]{parskip}
+\RequirePackage[a-1b]{pdfx}
 
 \checkandfixthelayout
 
@@ -29,9 +25,9 @@
 \RequirePackage[a-1b]{pdfx}
 
 % load forall x style and macro definitions
-
 \usepackage{forallx-d-style}
 \usepackage{forallx-d}
+\usepackage{hyperref}
 \usepackage{logiciansofhistory}
 \usepackage{chronology}
 \usepackage[american]{babel}
@@ -52,7 +48,11 @@
 \colorlet{vltleadbeater}{lyallpink!3}
 \DeclareUnicodeCharacter{FE01}{}
 %s\makeglossaries
+\usepackage{nameref}
 \usepackage{afterpage}
+\hypersetup{pdfinfo={Title={forallx:$R^3$}, Author={Davis A. Smith}, Subject={Formal Logic}, Keywords={formal logic, Boolean Algebra, Philosophy, argumentation, modal logic, quantified logic, propositional logic}}} %
+\GetTitleStringSetup{expand}
+
 \begin{document}
 
 \midsloppy
@@ -60,9 +60,6 @@
 % Cover Page
 \thispagestyle{empty}
 \pagecolor{lyallpink}\afterpage{\nopagecolor}
-\begin{textblock*}{\stockwidth}(0in,3.5in)
-  \noindent\includegraphics{assets/forallx-coverart-screen.pdf}
-\end{textblock*}
 
 % make front cover
 \begin{textblock*}{0in}(0in,0in)
@@ -86,12 +83,15 @@
       \vskip0.5cm
       \textbf{Introduction to Formal Logic}
 	\end{center}
+	\begin{textblock*}{\stockwidth}(0in,3.5in)
+  \noindent\includegraphics[width=8.5in]{assets/forallx-coverart-screen.pdf}
+\end{textblock*}
 \begin{raggedleft}
       \vfill
       \fontsize{11pt}{14pt}\selectfont
       \color{white}
      \textbf{Davis A. Smith}\\
-     \textit{based on the related works by}\\
+     \textit{built off of the related works by}\\
       \textbf{P.~D. Magnus}\\
       \textbf{Tim Button}\\
 %      \textit{with additions by}\\
@@ -116,3 +116,5 @@
 \input{forallx-d-content}
 
 \end{document}
+
+
